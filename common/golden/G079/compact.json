@@ -1,0 +1,316 @@
+{
+  "profile_id": "G079",
+  "ruleset_id": "builtin.keno.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "lock_ticket",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "picks": [
+              1,
+              20
+            ],
+            "stake": 10,
+            "returns": [
+              0,
+              1,
+              5
+            ]
+          }
+        }
+      ],
+      "data": {
+        "bet": {
+          "picks": [
+            1,
+            20
+          ],
+          "stake": 10,
+          "returns": [
+            0,
+            1,
+            5
+          ]
+        },
+        "drawn": []
+      },
+      "legal_count": 80
+    },
+    {
+      "id": "two_hit_return",
+      "initial_data": {
+        "bet": {
+          "picks": [
+            1,
+            20
+          ],
+          "stake": 10,
+          "returns": [
+            0,
+            1,
+            5
+          ]
+        },
+        "drawn": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "actions": [
+        {
+          "type": "draw",
+          "params": {
+            "number": 20
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1040,
+            "net": 40,
+            "hits": 2
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "one_hit_returns_stake",
+      "initial_data": {
+        "bet": {
+          "picks": [
+            1,
+            20
+          ],
+          "stake": 10,
+          "returns": [
+            0,
+            1,
+            5
+          ]
+        },
+        "drawn": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "actions": [
+        {
+          "type": "draw",
+          "params": {
+            "number": 21
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "draw",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1000,
+            "net": 0,
+            "hits": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "duplicate_draw",
+      "initial_data": {
+        "bet": {
+          "picks": [
+            1,
+            20
+          ],
+          "stake": 10,
+          "returns": [
+            0,
+            1,
+            5
+          ]
+        },
+        "drawn": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "action": {
+        "type": "draw",
+        "params": {
+          "number": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "repeated_pick",
+      "action": {
+        "type": "bet",
+        "params": {
+          "picks": [
+            1,
+            1
+          ],
+          "stake": 10,
+          "returns": [
+            0,
+            1,
+            5
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "missing_return_entry",
+      "action": {
+        "type": "bet",
+        "params": {
+          "picks": [
+            1,
+            2
+          ],
+          "stake": 10,
+          "returns": [
+            0,
+            5
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "cannot_change_ticket",
+      "initial_data": {
+        "bet": {
+          "picks": [
+            1,
+            20
+          ],
+          "stake": 10,
+          "returns": [
+            0,
+            1,
+            5
+          ]
+        },
+        "drawn": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "action": {
+        "type": "bet",
+        "params": {
+          "picks": [
+            1,
+            20
+          ],
+          "stake": 10,
+          "returns": [
+            0,
+            1,
+            5
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "draw_without_bet",
+      "action": {
+        "type": "draw",
+        "params": {
+          "number": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

@@ -1,0 +1,847 @@
+{
+  "profile_id": "S066",
+  "ruleset_id": "builtin.karate.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "aka"
+    },
+    {
+      "id": "ao"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "active",
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "one_two_three_point_awards",
+      "initial_data": {
+        "phase": "active",
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_scores",
+          "params": {
+            "points": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "type": "award_scores",
+          "params": {
+            "points": [
+              2,
+              0
+            ]
+          }
+        },
+        {
+          "type": "award_scores",
+          "params": {
+            "points": [
+              3,
+              0
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "paused",
+        "scores": [
+          6,
+          0
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eight_point_margin",
+      "initial_data": {
+        "phase": "active",
+        "scores": [
+          7,
+          0
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_scores",
+          "params": {
+            "points": [
+              1,
+              0
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "review",
+        "scores": [
+          8,
+          0
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": 0,
+        "reason": "points"
+      }
+    },
+    {
+      "id": "simultaneous_scores_applied_together",
+      "initial_data": {
+        "phase": "active",
+        "scores": [
+          7,
+          0
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_scores",
+          "params": {
+            "points": [
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "paused",
+        "scores": [
+          8,
+          1
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "winning_margin_cannot_remain_active",
+      "initial_data": {
+        "phase": "active",
+        "scores": [
+          8,
+          0
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "confirm_points_winner",
+      "initial_data": {
+        "phase": "review",
+        "scores": [
+          8,
+          0
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": 0,
+        "reason": "points"
+      },
+      "actions": [
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "aka"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "correction_reopens_provisional_win",
+      "initial_data": {
+        "phase": "review",
+        "scores": [
+          8,
+          0
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": 0,
+        "reason": "points"
+      },
+      "actions": [
+        {
+          "type": "correct_record",
+          "params": {
+            "scores": [
+              7,
+              0
+            ],
+            "remaining_ms": 1000
+          }
+        }
+      ],
+      "data": {
+        "phase": "paused",
+        "scores": [
+          7,
+          0
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 1000,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "time_expiry_with_lead",
+      "initial_data": {
+        "phase": "active",
+        "scores": [
+          1,
+          0
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 180000
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "aka"
+        ]
+      }
+    },
+    {
+      "id": "equal_scores_require_hantei",
+      "initial_data": {
+        "phase": "active",
+        "scores": [
+          2,
+          2
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 180000
+          }
+        }
+      ],
+      "data": {
+        "phase": "decision",
+        "scores": [
+          2,
+          2
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 0,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "hantei_majority",
+      "initial_data": {
+        "phase": "decision",
+        "scores": [
+          2,
+          2
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "hantei",
+          "params": {
+            "votes": [
+              0,
+              1,
+              1,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "ao"
+        ],
+        "reason": "hantei"
+      }
+    },
+    {
+      "id": "no_hantei_before_expiry",
+      "initial_data": {
+        "phase": "active",
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "hantei",
+        "params": {
+          "votes": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "clock_cannot_cross_expiry",
+      "initial_data": {
+        "phase": "active",
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 1000,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "elapse",
+        "params": {
+          "milliseconds": 1001
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "paused_clock_cannot_advance",
+      "initial_data": {
+        "phase": "paused",
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "elapse",
+        "params": {
+          "milliseconds": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "warning_categories_independent",
+      "initial_data": {
+        "phase": "active",
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "warning",
+          "params": {
+            "player": 0,
+            "category": 1,
+            "level": 2
+          }
+        },
+        {
+          "type": "warning",
+          "params": {
+            "player": 0,
+            "category": 2,
+            "level": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "paused",
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          [
+            2,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "warning_cannot_repeat_level",
+      "initial_data": {
+        "phase": "paused",
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          [
+            2,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "warning",
+        "params": {
+          "player": 0,
+          "category": 1,
+          "level": 2
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "hansoku_decides_without_score_award",
+      "initial_data": {
+        "phase": "paused",
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          [
+            2,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "warning",
+          "params": {
+            "player": 0,
+            "category": 1,
+            "level": 4
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "ao"
+        ],
+        "result_kind": "disqualification",
+        "reason": "hansoku"
+      }
+    },
+    {
+      "id": "severe_initial_sanction_allowed",
+      "initial_data": {
+        "phase": "active",
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "warning",
+          "params": {
+            "player": 1,
+            "category": 2,
+            "level": 4
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "aka"
+        ]
+      }
+    },
+    {
+      "id": "no_empty_score_award",
+      "initial_data": {
+        "phase": "active",
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "award_scores",
+        "params": {
+          "points": [
+            0,
+            0
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "double_disqualification",
+      "initial_data": {
+        "phase": "active",
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_ms": 180000,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "both_disqualified",
+          "params": {}
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest",
+        "winners": []
+      }
+    },
+    {
+      "id": "pre_bout_forfeit",
+      "actions": [
+        {
+          "type": "forfeit",
+          "params": {
+            "loser": 1
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "aka"
+        ],
+        "result_kind": "forfeit"
+      }
+    }
+  ]
+}

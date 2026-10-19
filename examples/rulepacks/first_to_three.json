@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "game_id": "user.first_to_three",
+  "name": "First to Three",
+  "ruleset_id": "user.first_to_three.standard",
+  "ruleset_version": "1.0.0",
+  "family": "finite_turn",
+  "description": "Fiktives Beispiel, kein Sportregelwerk.",
+  "participants": {
+    "min": 2,
+    "max": 2
+  },
+  "state": {
+    "fields": {
+      "turn": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "scores": {
+        "type": "array",
+        "items": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "minItems": 2,
+        "maxItems": 2
+      }
+    },
+    "initial": {
+      "turn": 0,
+      "scores": [
+        0,
+        0
+      ]
+    }
+  },
+  "actions": [
+    {
+      "type": "score",
+      "params": {
+        "player": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "when": {
+        "op": "eq",
+        "args": [
+          {
+            "ref": "state.turn"
+          },
+          {
+            "ref": "params.player"
+          }
+        ]
+      },
+      "effects": [
+        {
+          "op": "inc",
+          "path": "/scores/{player}",
+          "by": 1
+        },
+        {
+          "op": "set",
+          "path": "/turn",
+          "value": {
+            "op": "sub",
+            "args": [
+              1,
+              {
+                "ref": "state.turn"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "outcomes": [
+    {
+      "when": {
+        "op": "gte",
+        "args": [
+          {
+            "ref": "state.scores.0"
+          },
+          3
+        ]
+      },
+      "result_kind": "win",
+      "winners": [
+        0
+      ],
+      "reason": "score_threshold"
+    },
+    {
+      "when": {
+        "op": "gte",
+        "args": [
+          {
+            "ref": "state.scores.1"
+          },
+          3
+        ]
+      },
+      "result_kind": "win",
+      "winners": [
+        1
+      ],
+      "reason": "score_threshold"
+    }
+  ],
+  "provenance": {
+    "basis": "explicit_user_defined",
+    "verification_status": "example_only",
+    "source_refs": []
+  },
+  "capabilities": {
+    "validate_state": true,
+    "legal_actions": "enumerated",
+    "apply_action": true,
+    "outcome": true
+  }
+}

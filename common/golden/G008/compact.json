@@ -1,0 +1,1340 @@
+{
+  "profile_id": "G008",
+  "ruleset_id": "builtin.backgammon.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "white"
+    },
+    {
+      "id": "black"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "tied_opening_dice_reroll",
+      "actions": [
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              3,
+              3
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "opening",
+        "turn": 0,
+        "board": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          -5,
+          0,
+          -3,
+          0,
+          0,
+          0,
+          5,
+          -5,
+          0,
+          0,
+          0,
+          3,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          -2
+        ],
+        "bar": [
+          0,
+          0
+        ],
+        "off": [
+          0,
+          0
+        ],
+        "dice": [],
+        "rolled": null,
+        "cube": 1,
+        "cube_owner": null,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      }
+    },
+    {
+      "id": "higher_opening_die_starts_with_both",
+      "actions": [
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              2,
+              5
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "turn": 1,
+        "dice": [
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "id": "doubles_supply_four_moves",
+      "initial_data": {
+        "phase": "roll",
+        "turn": 0,
+        "board": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          -5,
+          0,
+          -3,
+          0,
+          0,
+          0,
+          5,
+          -5,
+          0,
+          0,
+          0,
+          3,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          -2
+        ],
+        "bar": [
+          0,
+          0
+        ],
+        "off": [
+          0,
+          0
+        ],
+        "dice": [],
+        "rolled": null,
+        "cube": 1,
+        "cube_owner": null,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      },
+      "actions": [
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              2,
+              2
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "dice": [
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "id": "four_double_moves_finish_turn",
+      "initial_data": {
+        "phase": "roll",
+        "turn": 0,
+        "board": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          -5,
+          0,
+          -3,
+          0,
+          0,
+          0,
+          5,
+          -5,
+          0,
+          0,
+          0,
+          3,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          -2
+        ],
+        "bar": [
+          0,
+          0
+        ],
+        "off": [
+          0,
+          0
+        ],
+        "dice": [],
+        "rolled": null,
+        "cube": 1,
+        "cube_owner": null,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      },
+      "actions": [
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              2,
+              2
+            ]
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 0,
+            "die": 2
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 0,
+            "die": 2
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 2,
+            "die": 2
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 2,
+            "die": 2
+          }
+        }
+      ],
+      "data": {
+        "phase": "roll",
+        "turn": 1,
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          -5,
+          0,
+          -3,
+          0,
+          0,
+          0,
+          5,
+          -5,
+          0,
+          0,
+          0,
+          3,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          -2
+        ],
+        "bar": [
+          0,
+          0
+        ],
+        "off": [
+          0,
+          0
+        ],
+        "dice": [],
+        "rolled": null,
+        "cube": 1,
+        "cube_owner": null,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      }
+    },
+    {
+      "id": "higher_die_required_if_only_one_can_be_used",
+      "initial_data": {
+        "phase": "move",
+        "turn": 0,
+        "board": [
+          0,
+          0,
+          -2,
+          0,
+          0,
+          -13,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14
+        ],
+        "bar": [
+          1,
+          0
+        ],
+        "off": [
+          0,
+          0
+        ],
+        "dice": [
+          1,
+          2
+        ],
+        "rolled": [
+          1,
+          2
+        ],
+        "cube": 1,
+        "cube_owner": null,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      },
+      "action": {
+        "type": "move",
+        "params": {
+          "source": -1,
+          "die": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "bar_priority_blocks_other_checker",
+      "initial_data": {
+        "phase": "move",
+        "turn": 0,
+        "board": [
+          0,
+          0,
+          -2,
+          0,
+          0,
+          -13,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14
+        ],
+        "bar": [
+          1,
+          0
+        ],
+        "off": [
+          0,
+          0
+        ],
+        "dice": [
+          1,
+          2
+        ],
+        "rolled": [
+          1,
+          2
+        ],
+        "cube": 1,
+        "cube_owner": null,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      },
+      "action": {
+        "type": "move",
+        "params": {
+          "source": 23,
+          "die": 2
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "hit_sends_blot_to_bar",
+      "initial_data": {
+        "phase": "move",
+        "turn": 0,
+        "board": [
+          1,
+          -1,
+          0,
+          0,
+          0,
+          -14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bar": [
+          0,
+          0
+        ],
+        "off": [
+          14,
+          0
+        ],
+        "dice": [
+          1
+        ],
+        "rolled": [
+          1,
+          2
+        ],
+        "cube": 1,
+        "cube_owner": null,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      },
+      "actions": [
+        {
+          "type": "move",
+          "params": {
+            "source": 0,
+            "die": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "roll",
+        "turn": 1,
+        "board": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          -14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bar": [
+          0,
+          1
+        ],
+        "off": [
+          14,
+          0
+        ],
+        "dice": [],
+        "rolled": null,
+        "cube": 1,
+        "cube_owner": null,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      }
+    },
+    {
+      "id": "oversized_die_cannot_skip_farther_checker",
+      "initial_data": {
+        "phase": "move",
+        "turn": 0,
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -15,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "bar": [
+          0,
+          0
+        ],
+        "off": [
+          13,
+          0
+        ],
+        "dice": [
+          6
+        ],
+        "rolled": [
+          6,
+          6
+        ],
+        "cube": 1,
+        "cube_owner": null,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      },
+      "action": {
+        "type": "move",
+        "params": {
+          "source": 23,
+          "die": 6
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "gammon_scores_two",
+      "initial_data": {
+        "phase": "move",
+        "turn": 0,
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -15,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "bar": [
+          0,
+          0
+        ],
+        "off": [
+          14,
+          0
+        ],
+        "dice": [
+          1
+        ],
+        "rolled": [
+          1,
+          1
+        ],
+        "cube": 1,
+        "cube_owner": null,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      },
+      "actions": [
+        {
+          "type": "move",
+          "params": {
+            "source": 23,
+            "die": 1
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "white"
+        ],
+        "placements": [
+          {
+            "player_id": "white",
+            "place": 1,
+            "points": 2
+          },
+          {
+            "player_id": "black",
+            "place": 2,
+            "points": -2
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "backgammon_scores_three",
+      "initial_data": {
+        "phase": "move",
+        "turn": 0,
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -15,
+          0,
+          0,
+          1
+        ],
+        "bar": [
+          0,
+          0
+        ],
+        "off": [
+          14,
+          0
+        ],
+        "dice": [
+          1
+        ],
+        "rolled": [
+          1,
+          1
+        ],
+        "cube": 1,
+        "cube_owner": null,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      },
+      "actions": [
+        {
+          "type": "move",
+          "params": {
+            "source": 23,
+            "die": 1
+          }
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "white",
+            "place": 1,
+            "points": 3
+          },
+          {
+            "player_id": "black",
+            "place": 2,
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "opponent_borne_off_means_single",
+      "initial_data": {
+        "phase": "move",
+        "turn": 0,
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "bar": [
+          0,
+          0
+        ],
+        "off": [
+          14,
+          1
+        ],
+        "dice": [
+          1
+        ],
+        "rolled": [
+          1,
+          1
+        ],
+        "cube": 1,
+        "cube_owner": null,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      },
+      "actions": [
+        {
+          "type": "move",
+          "params": {
+            "source": 23,
+            "die": 1
+          }
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "white",
+            "place": 1,
+            "points": 1
+          },
+          {
+            "player_id": "black",
+            "place": 2,
+            "points": -1
+          }
+        ]
+      }
+    },
+    {
+      "id": "accepted_double_transfers_ownership",
+      "initial_data": {
+        "phase": "roll",
+        "turn": 0,
+        "board": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          -5,
+          0,
+          -3,
+          0,
+          0,
+          0,
+          5,
+          -5,
+          0,
+          0,
+          0,
+          3,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          -2
+        ],
+        "bar": [
+          0,
+          0
+        ],
+        "off": [
+          0,
+          0
+        ],
+        "dice": [],
+        "rolled": null,
+        "cube": 1,
+        "cube_owner": null,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      },
+      "actions": [
+        {
+          "type": "double",
+          "params": {}
+        },
+        {
+          "type": "respond_double",
+          "params": {
+            "accept": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "roll",
+        "turn": 0,
+        "board": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          -5,
+          0,
+          -3,
+          0,
+          0,
+          0,
+          5,
+          -5,
+          0,
+          0,
+          0,
+          3,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          -2
+        ],
+        "bar": [
+          0,
+          0
+        ],
+        "off": [
+          0,
+          0
+        ],
+        "dice": [],
+        "rolled": null,
+        "cube": 2,
+        "cube_owner": 1,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      }
+    },
+    {
+      "id": "declined_double_settles_old_cube",
+      "initial_data": {
+        "phase": "roll",
+        "turn": 0,
+        "board": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          -5,
+          0,
+          -3,
+          0,
+          0,
+          0,
+          5,
+          -5,
+          0,
+          0,
+          0,
+          3,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          -2
+        ],
+        "bar": [
+          0,
+          0
+        ],
+        "off": [
+          0,
+          0
+        ],
+        "dice": [],
+        "rolled": null,
+        "cube": 4,
+        "cube_owner": 0,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      },
+      "actions": [
+        {
+          "type": "double",
+          "params": {}
+        },
+        {
+          "type": "respond_double",
+          "params": {
+            "accept": false
+          }
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "white",
+            "place": 1,
+            "points": 4
+          },
+          {
+            "player_id": "black",
+            "place": 2,
+            "points": -4
+          }
+        ]
+      }
+    },
+    {
+      "id": "cannot_double_opponents_cube",
+      "initial_data": {
+        "phase": "roll",
+        "turn": 0,
+        "board": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          -5,
+          0,
+          -3,
+          0,
+          0,
+          0,
+          5,
+          -5,
+          0,
+          0,
+          0,
+          3,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          -2
+        ],
+        "bar": [
+          0,
+          0
+        ],
+        "off": [
+          0,
+          0
+        ],
+        "dice": [],
+        "rolled": null,
+        "cube": 2,
+        "cube_owner": 1,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      },
+      "action": {
+        "type": "double",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "declined_resignation_restores_dice",
+      "initial_data": {
+        "phase": "move",
+        "turn": 0,
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -15,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "bar": [
+          0,
+          0
+        ],
+        "off": [
+          14,
+          0
+        ],
+        "dice": [
+          1
+        ],
+        "rolled": [
+          1,
+          1
+        ],
+        "cube": 1,
+        "cube_owner": null,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      },
+      "actions": [
+        {
+          "type": "offer_resignation",
+          "params": {
+            "value": 1
+          }
+        },
+        {
+          "type": "respond_resignation",
+          "params": {
+            "accept": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "move",
+        "turn": 0,
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -15,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "bar": [
+          0,
+          0
+        ],
+        "off": [
+          14,
+          0
+        ],
+        "dice": [
+          1
+        ],
+        "rolled": [
+          1,
+          1
+        ],
+        "cube": 1,
+        "cube_owner": null,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      }
+    },
+    {
+      "id": "accepted_resignation_uses_cube",
+      "initial_data": {
+        "phase": "roll",
+        "turn": 0,
+        "board": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          -5,
+          0,
+          -3,
+          0,
+          0,
+          0,
+          5,
+          -5,
+          0,
+          0,
+          0,
+          3,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          -2
+        ],
+        "bar": [
+          0,
+          0
+        ],
+        "off": [
+          0,
+          0
+        ],
+        "dice": [],
+        "rolled": null,
+        "cube": 2,
+        "cube_owner": 0,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      },
+      "actions": [
+        {
+          "type": "offer_resignation",
+          "params": {
+            "value": 3
+          }
+        },
+        {
+          "type": "respond_resignation",
+          "params": {
+            "accept": true
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "black"
+        ],
+        "placements": [
+          {
+            "player_id": "white",
+            "place": 2,
+            "points": -6
+          },
+          {
+            "player_id": "black",
+            "place": 1,
+            "points": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": "excess_checker_invalid",
+      "initial_data": {
+        "phase": "roll",
+        "turn": 0,
+        "board": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          -5,
+          0,
+          -3,
+          0,
+          0,
+          0,
+          5,
+          -5,
+          0,
+          0,
+          0,
+          3,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          -2
+        ],
+        "bar": [
+          1,
+          0
+        ],
+        "off": [
+          0,
+          0
+        ],
+        "dice": [],
+        "rolled": null,
+        "cube": 1,
+        "cube_owner": null,
+        "resume": null,
+        "resign_value": null,
+        "winner": null,
+        "reason": null,
+        "multiplier": null
+      },
+      "valid": false
+    }
+  ]
+}

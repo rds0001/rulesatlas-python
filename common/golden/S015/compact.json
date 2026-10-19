@@ -1,0 +1,6597 @@
+{
+  "profile_id": "S015",
+  "ruleset_id": "builtin.baseball.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "team_away"
+    },
+    {
+      "id": "team_home"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types",
+      "legal_constraints": {
+        "batter": 0,
+        "outs": 0
+      }
+    },
+    {
+      "id": "single",
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "batter": 0,
+            "kind": "hit",
+            "destinations": [
+              1,
+              -1,
+              -1,
+              -1
+            ],
+            "credited": [],
+            "third_out": "none"
+          }
+        },
+        {
+          "type": "confirm_play",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "bases": [
+          0,
+          null,
+          null
+        ],
+        "batter": 1
+      }
+    },
+    {
+      "id": "wrong_batter",
+      "action": {
+        "type": "play",
+        "params": {
+          "batter": 1,
+          "kind": "hit",
+          "destinations": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "credited": [],
+          "third_out": "none"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "walk_loaded_bases",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 1,
+        "batting": 0,
+        "outs": 0,
+        "bases": [
+          1,
+          2,
+          3
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_first",
+          "params": {
+            "batter": 0,
+            "reason": "walk"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "bases": [
+          0,
+          1,
+          2
+        ],
+        "score": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "walk_does_not_force_isolated_runner",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 1,
+        "batting": 0,
+        "outs": 0,
+        "bases": [
+          null,
+          null,
+          3
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_first",
+          "params": {
+            "batter": 0,
+            "reason": "walk"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "bases": [
+          0,
+          null,
+          3
+        ],
+        "score": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "hit_by_pitch_awards_first",
+      "actions": [
+        {
+          "type": "award_first",
+          "params": {
+            "batter": 0,
+            "reason": "hit_by_pitch"
+          }
+        },
+        {
+          "type": "confirm_play",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "bases": [
+          0,
+          null,
+          null
+        ],
+        "batter": 1
+      }
+    },
+    {
+      "id": "third_out_changes_half",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 1,
+        "batting": 0,
+        "outs": 2,
+        "bases": [
+          null,
+          null,
+          null
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "batter": 0,
+            "kind": "out",
+            "destinations": [
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            "credited": [],
+            "third_out": "batter_first"
+          }
+        },
+        {
+          "type": "confirm_play",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "batting": 1,
+        "outs": 0,
+        "inning": 1,
+        "bases": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "id": "third_out_force_cancels_run",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 1,
+        "batting": 0,
+        "outs": 2,
+        "bases": [
+          null,
+          null,
+          3
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "play",
+        "params": {
+          "batter": 0,
+          "kind": "out",
+          "destinations": [
+            0,
+            -1,
+            -1,
+            4
+          ],
+          "credited": [
+            3
+          ],
+          "third_out": "batter_first"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "tag_third_out_prior_run",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 1,
+        "batting": 0,
+        "outs": 2,
+        "bases": [
+          null,
+          null,
+          3
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "batter": 0,
+            "kind": "fielders_choice",
+            "destinations": [
+              0,
+              -1,
+              -1,
+              4
+            ],
+            "credited": [
+              3
+            ],
+            "third_out": "tag"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          0
+        ],
+        "outs": 3
+      }
+    },
+    {
+      "id": "appeal_fourth_force_out_removes_run",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 1,
+        "batting": 0,
+        "outs": 2,
+        "bases": [
+          null,
+          null,
+          3
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "batter": 0,
+            "kind": "fielders_choice",
+            "destinations": [
+              0,
+              -1,
+              -1,
+              4
+            ],
+            "credited": [
+              3
+            ],
+            "third_out": "tag"
+          }
+        },
+        {
+          "type": "appeal",
+          "params": {
+            "runner": 3,
+            "force": true,
+            "cancel_runs": []
+          }
+        },
+        {
+          "type": "confirm_play",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          0,
+          0
+        ],
+        "batting": 1
+      }
+    },
+    {
+      "id": "duplicate_appeal_rejected",
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "batter": 0,
+            "kind": "hit",
+            "destinations": [
+              1,
+              -1,
+              -1,
+              -1
+            ],
+            "credited": [],
+            "third_out": "none"
+          }
+        },
+        {
+          "type": "appeal",
+          "params": {
+            "runner": 0,
+            "force": false,
+            "cancel_runs": []
+          }
+        }
+      ],
+      "action": {
+        "type": "appeal",
+        "params": {
+          "runner": 0,
+          "force": false,
+          "cancel_runs": []
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "runner_passing_rejected",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 1,
+        "batting": 0,
+        "outs": 0,
+        "bases": [
+          1,
+          null,
+          null
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "play",
+        "params": {
+          "batter": 0,
+          "kind": "hit",
+          "destinations": [
+            3,
+            2,
+            -1,
+            -1
+          ],
+          "credited": [],
+          "third_out": "none"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "two_runners_same_base",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 1,
+        "batting": 0,
+        "outs": 0,
+        "bases": [
+          1,
+          null,
+          null
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "play",
+        "params": {
+          "batter": 0,
+          "kind": "hit",
+          "destinations": [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "credited": [],
+          "third_out": "none"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "infield_fly_requires_runners",
+      "action": {
+        "type": "play",
+        "params": {
+          "batter": 0,
+          "kind": "infield_fly",
+          "destinations": [
+            0,
+            -1,
+            -1,
+            -1
+          ],
+          "credited": [],
+          "third_out": "none"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "infield_fly_out_runners_hold",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 1,
+        "batting": 0,
+        "outs": 0,
+        "bases": [
+          1,
+          2,
+          null
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "batter": 0,
+            "kind": "infield_fly",
+            "destinations": [
+              0,
+              1,
+              2,
+              -1
+            ],
+            "credited": [],
+            "third_out": "none"
+          }
+        },
+        {
+          "type": "confirm_play",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "outs": 1,
+        "bases": [
+          1,
+          2,
+          null
+        ]
+      }
+    },
+    {
+      "id": "dropped_third_first_occupied",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 1,
+        "batting": 0,
+        "outs": 0,
+        "bases": [
+          1,
+          null,
+          null
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "play",
+        "params": {
+          "batter": 0,
+          "kind": "dropped_third",
+          "destinations": [
+            1,
+            2,
+            -1,
+            -1
+          ],
+          "credited": [],
+          "third_out": "none"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "dropped_third_two_outs",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 1,
+        "batting": 0,
+        "outs": 2,
+        "bases": [
+          1,
+          null,
+          null
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "batter": 0,
+            "kind": "dropped_third",
+            "destinations": [
+              1,
+              2,
+              -1,
+              -1
+            ],
+            "credited": [],
+            "third_out": "none"
+          }
+        },
+        {
+          "type": "confirm_play",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "bases": [
+          0,
+          1,
+          null
+        ],
+        "outs": 2
+      }
+    },
+    {
+      "id": "runner_only_out_does_not_advance_batter",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 1,
+        "batting": 0,
+        "outs": 0,
+        "bases": [
+          1,
+          null,
+          null
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "batter": null,
+            "kind": "runner_play",
+            "destinations": [
+              -1,
+              0,
+              -1,
+              -1
+            ],
+            "credited": [],
+            "third_out": "none"
+          }
+        },
+        {
+          "type": "confirm_play",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "batter": 0,
+        "outs": 1
+      }
+    },
+    {
+      "id": "home_run_all_runners",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 1,
+        "batting": 0,
+        "outs": 0,
+        "bases": [
+          1,
+          2,
+          3
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "batter": 0,
+            "kind": "home_run",
+            "destinations": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "credited": [
+              3,
+              2,
+              1,
+              0
+            ],
+            "third_out": "none"
+          }
+        },
+        {
+          "type": "confirm_play",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          4,
+          0
+        ],
+        "bases": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "id": "incomplete_home_run",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 1,
+        "batting": 0,
+        "outs": 0,
+        "bases": [
+          1,
+          null,
+          null
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "play",
+        "params": {
+          "batter": 0,
+          "kind": "home_run",
+          "destinations": [
+            4,
+            3,
+            -1,
+            -1
+          ],
+          "credited": [
+            0
+          ],
+          "third_out": "none"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "walkoff_stops_at_winning_run",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 9,
+        "batting": 1,
+        "outs": 0,
+        "bases": [
+          1,
+          2,
+          3
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          1,
+          1
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "batter": 0,
+            "kind": "hit",
+            "destinations": [
+              1,
+              2,
+              4,
+              4
+            ],
+            "credited": [
+              3,
+              2
+            ],
+            "third_out": "none"
+          }
+        },
+        {
+          "type": "confirm_play",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_home"
+        ],
+        "reason": "walkoff"
+      }
+    },
+    {
+      "id": "walkoff_homer_keeps_all_runs",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 9,
+        "batting": 1,
+        "outs": 0,
+        "bases": [
+          1,
+          2,
+          3
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          1,
+          1
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "batter": 0,
+            "kind": "home_run",
+            "destinations": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "credited": [
+              3,
+              2,
+              1,
+              0
+            ],
+            "third_out": "none"
+          }
+        },
+        {
+          "type": "confirm_play",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_home"
+        ],
+        "reason": "walkoff"
+      }
+    },
+    {
+      "id": "home_lead_skips_last_bottom",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 9,
+        "batting": 0,
+        "outs": 2,
+        "bases": [
+          null,
+          null,
+          null
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          1
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "batter": 0,
+            "kind": "out",
+            "destinations": [
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            "credited": [],
+            "third_out": "batter_first"
+          }
+        },
+        {
+          "type": "confirm_play",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_home"
+        ]
+      }
+    },
+    {
+      "id": "visitor_win_after_last_bottom",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 9,
+        "batting": 1,
+        "outs": 2,
+        "bases": [
+          null,
+          null,
+          null
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          1,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "batter": 0,
+            "kind": "out",
+            "destinations": [
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            "credited": [],
+            "third_out": "batter_first"
+          }
+        },
+        {
+          "type": "confirm_play",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_away"
+        ]
+      }
+    },
+    {
+      "id": "substitute_retains_batting_slot",
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slot": 2,
+            "player": 9,
+            "exception": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "batter": 0
+      }
+    },
+    {
+      "id": "pitcher_must_face_batter",
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 1,
+          "slot": 0,
+          "player": 9,
+          "exception": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "official_pitcher_exception",
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 1,
+            "slot": 0,
+            "player": 9,
+            "exception": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "pitcher_locked": [
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "id": "pitcher_can_change_after_batter",
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "batter": 0,
+            "kind": "hit",
+            "destinations": [
+              1,
+              -1,
+              -1,
+              -1
+            ],
+            "credited": [],
+            "third_out": "none"
+          }
+        },
+        {
+          "type": "confirm_play",
+          "params": {}
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 1,
+            "slot": 0,
+            "player": 9,
+            "exception": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "pitcher_locked": [
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "id": "ejected_player_requires_replacement",
+      "actions": [
+        {
+          "type": "eject",
+          "params": {
+            "team": 0,
+            "player": 2
+          }
+        }
+      ],
+      "action": {
+        "type": "resume_play",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "ejection_replacement",
+      "actions": [
+        {
+          "type": "eject",
+          "params": {
+            "team": 0,
+            "player": 2
+          }
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slot": 2,
+            "player": 9,
+            "exception": false
+          }
+        },
+        {
+          "type": "resume_play",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "play"
+      }
+    },
+    {
+      "id": "suspension_resume",
+      "actions": [
+        {
+          "type": "suspend",
+          "params": {}
+        },
+        {
+          "type": "resume",
+          "params": {}
+        }
+      ],
+      "data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 1,
+        "batting": 0,
+        "outs": 0,
+        "bases": [
+          null,
+          null,
+          null
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "forfeit",
+      "actions": [
+        {
+          "type": "forfeit",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_home"
+        ],
+        "reason": "forfeit"
+      }
+    },
+    {
+      "id": "invalid_duplicate_runners",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 1,
+        "batting": 0,
+        "outs": 0,
+        "bases": [
+          1,
+          1,
+          null
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "extra_inning_no_automatic_runner",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 9,
+        "batting": 1,
+        "outs": 2,
+        "bases": [
+          null,
+          null,
+          null
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "batter": 0,
+            "kind": "out",
+            "destinations": [
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            "credited": [],
+            "third_out": "batter_first"
+          }
+        },
+        {
+          "type": "confirm_play",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "inning": 10,
+        "batting": 0,
+        "bases": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "id": "removed_player_cannot_return",
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slot": 2,
+            "player": 9,
+            "exception": false
+          }
+        }
+      ],
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "slot": 2,
+          "player": 2,
+          "exception": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "second_mound_visit_requires_change",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 1,
+        "batting": 0,
+        "outs": 0,
+        "bases": [
+          null,
+          null,
+          null
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          false
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "mound_visit",
+          "params": {
+            "team": 1
+          }
+        },
+        {
+          "type": "mound_visit",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "action": {
+        "type": "resume_play",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "no_temporary_runner",
+      "initial_data": {
+        "softball": false,
+        "regulation_innings": 9,
+        "phase": "play",
+        "saved_phase": "play",
+        "inning": 1,
+        "batting": 0,
+        "outs": 2,
+        "bases": [
+          1,
+          null,
+          null
+        ],
+        "temporary": [
+          null,
+          null,
+          null
+        ],
+        "score": [
+          0,
+          0
+        ],
+        "half_runs": 0,
+        "next_slot": [
+          0,
+          0
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "entries": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "pitcher": [
+          0,
+          0
+        ],
+        "catcher": [
+          1,
+          1
+        ],
+        "pitcher_locked": [
+          true,
+          true
+        ],
+        "pitcher_banned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "visits": [
+          0,
+          0
+        ],
+        "conferences": [
+          0,
+          0
+        ],
+        "last_runs": [],
+        "last_participants": [],
+        "appealed": [],
+        "last_home_run": false,
+        "last_force": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "temporary_runner",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

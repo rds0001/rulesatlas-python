@@ -1,0 +1,6273 @@
+{
+  "profile_id": "S017",
+  "ruleset_id": "builtin.cricket.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "team_a"
+    },
+    {
+      "id": "team_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start_and_nominate",
+      "actions": [
+        {
+          "type": "start_match",
+          "params": {
+            "first_batting": 0
+          }
+        },
+        {
+          "type": "nominate_batter",
+          "params": {
+            "player": 0,
+            "end": "striker"
+          }
+        },
+        {
+          "type": "nominate_batter",
+          "params": {
+            "player": 1,
+            "end": "non_striker"
+          }
+        },
+        {
+          "type": "nominate_bowler",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "delivery_needs_two_batters",
+      "actions": [
+        {
+          "type": "start_match",
+          "params": {
+            "first_batting": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "delivery",
+        "params": {
+          "kind": "legal",
+          "bat_runs": 0,
+          "extra_runs": 0,
+          "extra_kind": "none",
+          "completed_runs": 0,
+          "boundary": 0,
+          "dismissal": "none",
+          "out_player": null
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "single_swaps_ends",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 1,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 1,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "runs": [
+          1,
+          0
+        ],
+        "balls": [
+          1,
+          0
+        ],
+        "striker": 1,
+        "non_striker": 0
+      }
+    },
+    {
+      "id": "four_keeps_ends",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 4,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 4,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "runs": [
+          4,
+          0
+        ],
+        "striker": 0
+      }
+    },
+    {
+      "id": "six",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 6,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 6,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "runs": [
+          6,
+          0
+        ],
+        "balls": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "byes_rotate",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 1,
+            "extra_kind": "byes",
+            "completed_runs": 1,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "runs": [
+          1,
+          0
+        ],
+        "striker": 1
+      }
+    },
+    {
+      "id": "mixed_bat_and_byes_rejected",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "delivery",
+        "params": {
+          "kind": "legal",
+          "bat_runs": 1,
+          "extra_runs": 1,
+          "extra_kind": "byes",
+          "completed_runs": 2,
+          "boundary": 0,
+          "dismissal": "none",
+          "out_player": null
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "wide_not_legal_ball",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "wide",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "runs": [
+          1,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "free_hit": false
+      }
+    },
+    {
+      "id": "wide_with_running",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "wide",
+            "bat_runs": 0,
+            "extra_runs": 1,
+            "extra_kind": "none",
+            "completed_runs": 1,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "runs": [
+          2,
+          0
+        ],
+        "striker": 1,
+        "balls": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "wide_boundary_five",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "wide",
+            "bat_runs": 0,
+            "extra_runs": 4,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 4,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "runs": [
+          5,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "no_ball_plus_bat_runs",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "no_ball",
+            "bat_runs": 4,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 4,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "runs": [
+          5,
+          0
+        ],
+        "free_hit": true,
+        "balls": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "wide_preserves_free_hit",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "no_ball",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        },
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "wide",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "runs": [
+          2,
+          0
+        ],
+        "free_hit": true,
+        "balls": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "legal_delivery_consumes_free_hit",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "no_ball",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        },
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "free_hit": false,
+        "balls": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "cannot_be_caught_on_free_hit",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "no_ball",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "action": {
+        "type": "delivery",
+        "params": {
+          "kind": "legal",
+          "bat_runs": 0,
+          "extra_runs": 0,
+          "extra_kind": "none",
+          "completed_runs": 0,
+          "boundary": 0,
+          "dismissal": "caught",
+          "out_player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "run_out_on_free_hit",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "no_ball",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        },
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "run_out",
+            "out_player": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "wickets": [
+          1,
+          0
+        ],
+        "non_striker": null,
+        "free_hit": false
+      }
+    },
+    {
+      "id": "stumping_on_wide",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "wide",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "stumped",
+            "out_player": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "runs": [
+          1,
+          0
+        ],
+        "wickets": [
+          1,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "striker": null
+      }
+    },
+    {
+      "id": "bowled_on_no_ball_invalid",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "delivery",
+        "params": {
+          "kind": "no_ball",
+          "bat_runs": 0,
+          "extra_runs": 0,
+          "extra_kind": "none",
+          "completed_runs": 0,
+          "boundary": 0,
+          "dismissal": "bowled",
+          "out_player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "non_striker_cannot_be_caught",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "delivery",
+        "params": {
+          "kind": "legal",
+          "bat_runs": 0,
+          "extra_runs": 0,
+          "extra_kind": "none",
+          "completed_runs": 0,
+          "boundary": 0,
+          "dismissal": "caught",
+          "out_player": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "caught_cannot_keep_runs",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "delivery",
+        "params": {
+          "kind": "legal",
+          "bat_runs": 1,
+          "extra_runs": 0,
+          "extra_kind": "none",
+          "completed_runs": 1,
+          "boundary": 0,
+          "dismissal": "caught",
+          "out_player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "new_batter_after_wicket",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "bowled",
+            "out_player": 0
+          }
+        },
+        {
+          "type": "nominate_batter",
+          "params": {
+            "player": 2,
+            "end": "striker"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "striker": 2,
+        "wickets": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "out_batter_cannot_return",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "bowled",
+            "out_player": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "nominate_batter",
+        "params": {
+          "player": 0,
+          "end": "striker"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "over_changes_ends_and_bowler",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          5,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "balls": [
+          6,
+          0
+        ],
+        "striker": 1,
+        "non_striker": 0,
+        "bowler": null
+      }
+    },
+    {
+      "id": "consecutive_over_rejected",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          5,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "action": {
+        "type": "nominate_bowler",
+        "params": {
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "new_over_bowler",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          5,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        },
+        {
+          "type": "nominate_bowler",
+          "params": {
+            "player": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "bowler": 1
+      }
+    },
+    {
+      "id": "bowler_quota",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          23,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            23,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        },
+        {
+          "type": "nominate_bowler",
+          "params": {
+            "player": 1
+          }
+        },
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        },
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        },
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        },
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        },
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        },
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "action": {
+        "type": "nominate_bowler",
+        "params": {
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "replaced_bowler_cannot_resume_same_over",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "replace_bowler",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "nominate_bowler",
+        "params": {
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "retirement_returnable",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "retire",
+          "params": {
+            "player": 0,
+            "may_return": true
+          }
+        },
+        {
+          "type": "nominate_batter",
+          "params": {
+            "player": 0,
+            "end": "striker"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "striker": 0,
+        "wickets": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "retired_out_counts_wicket",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "retire",
+          "params": {
+            "player": 0,
+            "may_return": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "wickets": [
+          1,
+          0
+        ],
+        "striker": null
+      }
+    },
+    {
+      "id": "timed_out_incoming",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "bowled",
+            "out_player": 0
+          }
+        },
+        {
+          "type": "dismiss_non_delivery",
+          "params": {
+            "player": 2,
+            "kind": "timed_out"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "wickets": [
+          2,
+          0
+        ],
+        "balls": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "ten_wickets_end_innings",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          9,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "out",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out",
+            "in",
+            "in"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 9,
+        "non_striker": 10,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "bowled",
+            "out_player": 9
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "interval",
+        "wickets": [
+          10,
+          0
+        ],
+        "target": 1
+      }
+    },
+    {
+      "id": "twenty_overs_end_innings",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          119,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            23,
+            24,
+            24,
+            24,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "interval",
+        "balls": [
+          120,
+          0
+        ],
+        "target": 1
+      }
+    },
+    {
+      "id": "second_innings_roles",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          119,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            23,
+            24,
+            24,
+            24,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        },
+        {
+          "type": "start_second_innings",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "play",
+        "innings": 2,
+        "batting": 1,
+        "target": 1
+      }
+    },
+    {
+      "id": "winning_running_stops_at_target",
+      "initial_data": {
+        "phase": "play",
+        "innings": 2,
+        "first_batting": 0,
+        "runs": [
+          10,
+          9
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": 11,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 3,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 3,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_b"
+        ],
+        "reason": "chase"
+      }
+    },
+    {
+      "id": "winning_boundary_full",
+      "initial_data": {
+        "phase": "play",
+        "innings": 2,
+        "first_batting": 0,
+        "runs": [
+          10,
+          9
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": 11,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 6,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 6,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_b"
+        ],
+        "reason": "chase"
+      }
+    },
+    {
+      "id": "completed_tie",
+      "initial_data": {
+        "phase": "play",
+        "innings": 2,
+        "first_batting": 0,
+        "runs": [
+          10,
+          10
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          119
+        ],
+        "bowled": [
+          [
+            23,
+            24,
+            24,
+            24,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": 11,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw",
+        "reason": "tie"
+      }
+    },
+    {
+      "id": "defended_total",
+      "initial_data": {
+        "phase": "play",
+        "innings": 2,
+        "first_batting": 0,
+        "runs": [
+          10,
+          9
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          119
+        ],
+        "bowled": [
+          [
+            23,
+            24,
+            24,
+            24,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": 11,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "legal",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_a"
+        ],
+        "reason": "defended"
+      }
+    },
+    {
+      "id": "penalty_runs_update_target",
+      "initial_data": {
+        "phase": "play",
+        "innings": 2,
+        "first_batting": 0,
+        "runs": [
+          10,
+          9
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": 11,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "penalty_runs",
+          "params": {
+            "team": 0,
+            "runs": 5
+          }
+        }
+      ],
+      "legal_constraints": {
+        "runs": [
+          15,
+          9
+        ],
+        "target": 16
+      }
+    },
+    {
+      "id": "penalty_runs_can_win",
+      "initial_data": {
+        "phase": "play",
+        "innings": 2,
+        "first_batting": 0,
+        "runs": [
+          10,
+          9
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": 11,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "penalty_runs",
+          "params": {
+            "team": 1,
+            "runs": 5
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_b"
+        ]
+      }
+    },
+    {
+      "id": "dead_delivery_preserves_free_hit",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "no_ball",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        },
+        {
+          "type": "delivery",
+          "params": {
+            "kind": "dead",
+            "bat_runs": 0,
+            "extra_runs": 0,
+            "extra_kind": "none",
+            "completed_runs": 0,
+            "boundary": 0,
+            "dismissal": "none",
+            "out_player": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "balls": [
+          0,
+          0
+        ],
+        "free_hit": true,
+        "runs": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "insufficient_batters_close_innings",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": null,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "end_unavailable",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "interval"
+      }
+    },
+    {
+      "id": "cannot_close_with_eligible_batters",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "end_unavailable",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "excluded_cannot_bowl",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "replace_bowler",
+          "params": {}
+        },
+        {
+          "type": "exclude",
+          "params": {
+            "team": 1,
+            "player": 2
+          }
+        }
+      ],
+      "action": {
+        "type": "nominate_bowler",
+        "params": {
+          "player": 2
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "abandon_official_no_result",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "abandon",
+          "params": {}
+        },
+        {
+          "type": "official_result",
+          "params": {
+            "winner": null
+          }
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "forfeit",
+      "actions": [
+        {
+          "type": "forfeit",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_b"
+        ]
+      }
+    },
+    {
+      "id": "premature_result_invalid",
+      "initial_data": {
+        "phase": "finished",
+        "innings": 2,
+        "first_batting": 0,
+        "runs": [
+          10,
+          9
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": 11,
+        "winner": 0,
+        "reason": "defended"
+      },
+      "valid": false
+    },
+    {
+      "id": "inconsistent_bowler_totals",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          1,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 1,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "same_batter_both_ends",
+      "initial_data": {
+        "phase": "play",
+        "innings": 1,
+        "first_batting": 0,
+        "runs": [
+          0,
+          0
+        ],
+        "wickets": [
+          0,
+          0
+        ],
+        "balls": [
+          0,
+          0
+        ],
+        "bowled": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "batters": [
+          [
+            "in",
+            "in",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ],
+          [
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused",
+            "unused"
+          ]
+        ],
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "striker": 0,
+        "non_striker": 0,
+        "bowler": 0,
+        "over_bowlers": [
+          0
+        ],
+        "previous_bowlers": [],
+        "free_hit": false,
+        "target": null,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

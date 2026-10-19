@@ -1,0 +1,1731 @@
+{
+  "profile_id": "S086",
+  "ruleset_id": "builtin.ski_jumping.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "jumper_0"
+    },
+    {
+      "id": "jumper_1"
+    },
+    {
+      "id": "jumper_2"
+    },
+    {
+      "id": "jumper_3"
+    },
+    {
+      "id": "jumper_4"
+    },
+    {
+      "id": "jumper_5"
+    },
+    {
+      "id": "jumper_6"
+    },
+    {
+      "id": "jumper_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start_order",
+      "actions": [
+        {
+          "type": "set_start_order",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "duplicate_order",
+      "action": {
+        "type": "set_start_order",
+        "params": {
+          "order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "start_next_jumper",
+      "initial_data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "start_jump",
+          "params": {
+            "participant": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "jump",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "wrong_jumper",
+      "initial_data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "start_jump",
+        "params": {
+          "participant": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "marks_require_completion",
+      "initial_data": {
+        "phase": "jump",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "record_marks",
+        "params": {
+          "distance_half_m": 180,
+          "style_half_points": [
+            30,
+            35,
+            36,
+            37,
+            40
+          ],
+          "penalty_tenths": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "completed_jump_judged",
+      "initial_data": {
+        "phase": "jump",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "complete_jump",
+          "params": {}
+        },
+        {
+          "type": "record_marks",
+          "params": {
+            "distance_half_m": 180,
+            "style_half_points": [
+              30,
+              35,
+              36,
+              37,
+              40
+            ],
+            "penalty_tenths": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 180,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "authorized_restart",
+      "initial_data": {
+        "phase": "jump",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "authorized_restart",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "abandon_advances",
+      "initial_data": {
+        "phase": "jump",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "abandon_jump",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "current_participant": 1
+      }
+    },
+    {
+      "id": "distance_and_trimmed_style",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 180,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 179,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 178,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 177,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 176,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 175,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 174,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 173,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "jumper_0"
+        ],
+        "placements": [
+          {
+            "player_id": "jumper_0",
+            "place": 1,
+            "score_units": 1140,
+            "score_unit_denominator": 10
+          },
+          {
+            "player_id": "jumper_1",
+            "place": 2,
+            "score_units": 1130,
+            "score_unit_denominator": 10
+          },
+          {
+            "player_id": "jumper_2",
+            "place": 3,
+            "score_units": 1120,
+            "score_unit_denominator": 10
+          },
+          {
+            "player_id": "jumper_3",
+            "place": 4,
+            "score_units": 1110,
+            "score_unit_denominator": 10
+          },
+          {
+            "player_id": "jumper_4",
+            "place": 5,
+            "score_units": 1100,
+            "score_unit_denominator": 10
+          },
+          {
+            "player_id": "jumper_5",
+            "place": 6,
+            "score_units": 1090,
+            "score_unit_denominator": 10
+          },
+          {
+            "player_id": "jumper_6",
+            "place": 7,
+            "score_units": 1080,
+            "score_unit_denominator": 10
+          },
+          {
+            "player_id": "jumper_7",
+            "place": 8,
+            "score_units": 1070,
+            "score_unit_denominator": 10
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "equal_totals_share",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 180,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 180,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 178,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 177,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 176,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 175,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 174,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 173,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "jumper_0",
+          "jumper_1"
+        ]
+      }
+    },
+    {
+      "id": "distance_is_not_separate_tiebreak",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 180,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 181,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 10
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 178,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 177,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 176,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 175,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 174,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 173,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "jumper_0",
+          "jumper_1"
+        ]
+      }
+    },
+    {
+      "id": "zero_score_floor",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 0,
+              "style_half_points": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 0,
+              "style_half_points": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 0,
+              "style_half_points": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 0,
+              "style_half_points": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 0,
+              "style_half_points": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 0,
+              "style_half_points": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 0,
+              "style_half_points": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 0,
+              "style_half_points": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "penalty_tenths": 0
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "jumper_0",
+          "jumper_1",
+          "jumper_2",
+          "jumper_3",
+          "jumper_4",
+          "jumper_5",
+          "jumper_6",
+          "jumper_7"
+        ]
+      }
+    },
+    {
+      "id": "exclusion_changes_winner",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 180,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 179,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 178,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 177,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 176,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 175,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 174,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 173,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "participant": 0
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "jumper_1"
+        ]
+      }
+    },
+    {
+      "id": "review_correction",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 180,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 179,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 178,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 177,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 176,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 175,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 174,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "distance_half_m": 173,
+              "style_half_points": [
+                30,
+                35,
+                36,
+                37,
+                40
+              ],
+              "penalty_tenths": 0
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "correct_marks",
+          "params": {
+            "participant": 0,
+            "distance_half_m": 180,
+            "style_half_points": [
+              30,
+              35,
+              36,
+              37,
+              40
+            ],
+            "penalty_tenths": 20
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "jumper_1"
+        ]
+      }
+    },
+    {
+      "id": "scored_without_marks_invalid",
+      "initial_data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "all_dns",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "early_confirmation",
+      "initial_data": {
+        "phase": "judging",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "awaiting_marks",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

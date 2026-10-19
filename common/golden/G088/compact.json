@@ -1,0 +1,458 @@
+{
+  "profile_id": "G088",
+  "ruleset_id": "builtin.mafia.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "player_0"
+    },
+    {
+      "id": "player_1"
+    },
+    {
+      "id": "player_2"
+    },
+    {
+      "id": "player_3"
+    },
+    {
+      "id": "player_4"
+    },
+    {
+      "id": "player_5"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "assign_roles",
+      "actions": [
+        {
+          "type": "assign_roles",
+          "params": {
+            "roles": [
+              "town",
+              "mafia",
+              "town",
+              "mafia",
+              "town",
+              "town"
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "night",
+        "roles": [
+          "town",
+          "mafia",
+          "town",
+          "mafia",
+          "town",
+          "town"
+        ],
+        "alive": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "votes": [
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2
+        ],
+        "day": 1
+      },
+      "legal_count": 5
+    },
+    {
+      "id": "night_kill",
+      "initial_data": {
+        "phase": "night",
+        "roles": [
+          "town",
+          "mafia",
+          "town",
+          "mafia",
+          "town",
+          "town"
+        ],
+        "alive": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "votes": [
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2
+        ],
+        "day": 1
+      },
+      "actions": [
+        {
+          "type": "night_choice",
+          "params": {
+            "target": 5
+          }
+        }
+      ],
+      "data": {
+        "phase": "vote",
+        "roles": [
+          "town",
+          "mafia",
+          "town",
+          "mafia",
+          "town",
+          "town"
+        ],
+        "alive": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "votes": [
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2
+        ],
+        "day": 1
+      }
+    },
+    {
+      "id": "cannot_kill_mafia",
+      "initial_data": {
+        "phase": "night",
+        "roles": [
+          "town",
+          "mafia",
+          "town",
+          "mafia",
+          "town",
+          "town"
+        ],
+        "alive": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "votes": [
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2
+        ],
+        "day": 1
+      },
+      "action": {
+        "type": "night_choice",
+        "params": {
+          "target": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "dead_cannot_vote",
+      "initial_data": {
+        "phase": "vote",
+        "roles": [
+          "town",
+          "mafia",
+          "town",
+          "mafia",
+          "town",
+          "town"
+        ],
+        "alive": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "votes": [
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2
+        ],
+        "day": 1
+      },
+      "action": {
+        "type": "vote",
+        "params": {
+          "player": 5,
+          "target": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "majority_lynch",
+      "initial_data": {
+        "phase": "vote",
+        "roles": [
+          "town",
+          "mafia",
+          "town",
+          "mafia",
+          "town",
+          "town"
+        ],
+        "alive": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "votes": [
+          1,
+          0,
+          1,
+          0,
+          -2,
+          -2
+        ],
+        "day": 1
+      },
+      "actions": [
+        {
+          "type": "vote",
+          "params": {
+            "player": 4,
+            "target": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "night",
+        "roles": [
+          "town",
+          "mafia",
+          "town",
+          "mafia",
+          "town",
+          "town"
+        ],
+        "alive": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          false
+        ],
+        "votes": [
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2
+        ],
+        "day": 2
+      }
+    },
+    {
+      "id": "parity_wins",
+      "initial_data": {
+        "phase": "vote",
+        "roles": [
+          "town",
+          "mafia",
+          "town",
+          "mafia",
+          "town",
+          "town"
+        ],
+        "alive": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "votes": [
+          0,
+          0,
+          1,
+          0,
+          -2,
+          -2
+        ],
+        "day": 1
+      },
+      "actions": [
+        {
+          "type": "vote",
+          "params": {
+            "player": 4,
+            "target": -1
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "player_1",
+          "player_3"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "last_mafia_eliminated",
+      "initial_data": {
+        "phase": "vote",
+        "roles": [
+          "town",
+          "mafia",
+          "town",
+          "mafia",
+          "town",
+          "town"
+        ],
+        "alive": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          false
+        ],
+        "votes": [
+          3,
+          -2,
+          3,
+          -2,
+          3,
+          -2
+        ],
+        "day": 2
+      },
+      "actions": [
+        {
+          "type": "vote",
+          "params": {
+            "player": 3,
+            "target": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "player_0",
+          "player_2",
+          "player_4",
+          "player_5"
+        ]
+      }
+    },
+    {
+      "id": "abstentions_do_not_execute",
+      "initial_data": {
+        "phase": "vote",
+        "roles": [
+          "town",
+          "mafia",
+          "town",
+          "mafia",
+          "town",
+          "town"
+        ],
+        "alive": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "votes": [
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2
+        ],
+        "day": 1
+      },
+      "actions": [
+        {
+          "type": "vote",
+          "params": {
+            "player": 0,
+            "target": -1
+          }
+        },
+        {
+          "type": "vote",
+          "params": {
+            "player": 1,
+            "target": -1
+          }
+        },
+        {
+          "type": "vote",
+          "params": {
+            "player": 2,
+            "target": -1
+          }
+        },
+        {
+          "type": "vote",
+          "params": {
+            "player": 3,
+            "target": -1
+          }
+        },
+        {
+          "type": "vote",
+          "params": {
+            "player": 4,
+            "target": -1
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    }
+  ]
+}

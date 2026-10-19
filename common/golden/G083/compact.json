@@ -1,0 +1,427 @@
+{
+  "profile_id": "G083",
+  "ruleset_id": "builtin.liars_dice.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    },
+    {
+      "id": "carol"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "round_rolls",
+      "actions": [
+        {
+          "type": "roll_round",
+          "params": {
+            "dice": [
+              [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              [
+                1,
+                2,
+                3,
+                4,
+                6
+              ],
+              [
+                2,
+                2,
+                3,
+                5,
+                6
+              ]
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "bidding",
+        "counts": [
+          5,
+          5,
+          5
+        ],
+        "dice": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          [
+            2,
+            2,
+            3,
+            5,
+            6
+          ]
+        ],
+        "starter": 0,
+        "turn": 0,
+        "bid": null
+      },
+      "legal_count": 90
+    },
+    {
+      "id": "cannot_challenge_without_bid",
+      "initial_data": {
+        "phase": "bidding",
+        "counts": [
+          5,
+          5,
+          5
+        ],
+        "dice": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          [
+            2,
+            2,
+            3,
+            5,
+            6
+          ]
+        ],
+        "starter": 0,
+        "turn": 0,
+        "bid": null
+      },
+      "action": {
+        "type": "challenge",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "truth_loses_challenger_die",
+      "initial_data": {
+        "phase": "bidding",
+        "counts": [
+          5,
+          5,
+          5
+        ],
+        "dice": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          [
+            2,
+            2,
+            3,
+            5,
+            6
+          ]
+        ],
+        "starter": 0,
+        "turn": 0,
+        "bid": null
+      },
+      "actions": [
+        {
+          "type": "bid",
+          "params": {
+            "quantity": 4,
+            "face": 2
+          }
+        },
+        {
+          "type": "challenge",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "awaiting_roll",
+        "counts": [
+          5,
+          4,
+          5
+        ],
+        "dice": [
+          [],
+          [],
+          []
+        ],
+        "starter": 1,
+        "turn": 1,
+        "bid": null
+      }
+    },
+    {
+      "id": "ones_are_not_wild",
+      "initial_data": {
+        "phase": "bidding",
+        "counts": [
+          5,
+          5,
+          5
+        ],
+        "dice": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          [
+            2,
+            2,
+            3,
+            5,
+            6
+          ]
+        ],
+        "starter": 0,
+        "turn": 0,
+        "bid": null
+      },
+      "actions": [
+        {
+          "type": "bid",
+          "params": {
+            "quantity": 5,
+            "face": 2
+          }
+        },
+        {
+          "type": "challenge",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "awaiting_roll",
+        "counts": [
+          4,
+          5,
+          5
+        ],
+        "dice": [
+          [],
+          [],
+          []
+        ],
+        "starter": 0,
+        "turn": 0,
+        "bid": null
+      }
+    },
+    {
+      "id": "bid_must_increase",
+      "initial_data": {
+        "phase": "bidding",
+        "counts": [
+          5,
+          5,
+          5
+        ],
+        "dice": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          [
+            2,
+            2,
+            3,
+            5,
+            6
+          ]
+        ],
+        "starter": 0,
+        "turn": 0,
+        "bid": null
+      },
+      "actions": [
+        {
+          "type": "bid",
+          "params": {
+            "quantity": 4,
+            "face": 2
+          }
+        }
+      ],
+      "action": {
+        "type": "bid",
+        "params": {
+          "quantity": 4,
+          "face": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "maximum_bid_only_challenge",
+      "initial_data": {
+        "phase": "bidding",
+        "counts": [
+          5,
+          5,
+          5
+        ],
+        "dice": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          [
+            2,
+            2,
+            3,
+            5,
+            6
+          ]
+        ],
+        "starter": 0,
+        "turn": 0,
+        "bid": null
+      },
+      "actions": [
+        {
+          "type": "bid",
+          "params": {
+            "quantity": 15,
+            "face": 6
+          }
+        }
+      ],
+      "legal_params": [
+        {}
+      ]
+    },
+    {
+      "id": "last_die_eliminated",
+      "initial_data": {
+        "phase": "bidding",
+        "counts": [
+          1,
+          1,
+          0
+        ],
+        "dice": [
+          [
+            2
+          ],
+          [
+            3
+          ],
+          []
+        ],
+        "starter": 0,
+        "turn": 1,
+        "bid": {
+          "quantity": 2,
+          "face": 2,
+          "player": 0
+        }
+      },
+      "actions": [
+        {
+          "type": "challenge",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "bob"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "wrong_roll_count",
+      "action": {
+        "type": "roll_round",
+        "params": {
+          "dice": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

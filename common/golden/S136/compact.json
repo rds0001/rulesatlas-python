@@ -1,0 +1,713 @@
+{
+  "profile_id": "S136",
+  "ruleset_id": "builtin.boulder.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types",
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "top_requires_attempt",
+      "action": {
+        "type": "record_top",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "failure_closes_attempt",
+      "initial_data": {
+        "results": [
+          [
+            {
+              "attempts": 1,
+              "active": true,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            }
+          ],
+          [
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            }
+          ]
+        ],
+        "current": 0,
+        "disqualified": [
+          false,
+          false
+        ]
+      },
+      "actions": [
+        {
+          "type": "fail_attempt",
+          "params": {}
+        }
+      ],
+      "data": {
+        "results": [
+          [
+            {
+              "attempts": 1,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            }
+          ],
+          [
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            }
+          ]
+        ],
+        "current": 0,
+        "disqualified": [
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "id": "top_implies_zone",
+      "actions": [
+        {
+          "type": "start_attempt",
+          "params": {}
+        },
+        {
+          "type": "record_top",
+          "params": {}
+        }
+      ],
+      "data": {
+        "results": [
+          [
+            {
+              "attempts": 1,
+              "active": false,
+              "zone_attempt": 1,
+              "top_attempt": 1,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            }
+          ],
+          [
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            }
+          ]
+        ],
+        "current": 1,
+        "disqualified": [
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "id": "zone_persists",
+      "actions": [
+        {
+          "type": "start_attempt",
+          "params": {}
+        },
+        {
+          "type": "record_zone",
+          "params": {}
+        },
+        {
+          "type": "fail_attempt",
+          "params": {}
+        },
+        {
+          "type": "start_attempt",
+          "params": {}
+        },
+        {
+          "type": "record_top",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "attempt_tiebreak",
+      "initial_data": {
+        "results": [
+          [
+            {
+              "attempts": 2,
+              "active": false,
+              "zone_attempt": 1,
+              "top_attempt": 2,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            }
+          ],
+          [
+            {
+              "attempts": 1,
+              "active": false,
+              "zone_attempt": 1,
+              "top_attempt": 1,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            }
+          ]
+        ],
+        "current": 9,
+        "disqualified": [
+          false,
+          false
+        ]
+      },
+      "actions": [
+        {
+          "type": "end_problem",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "bob"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "zones_before_attempts",
+      "initial_data": {
+        "results": [
+          [
+            {
+              "attempts": 2,
+              "active": false,
+              "zone_attempt": 1,
+              "top_attempt": 2,
+              "closed": true
+            },
+            {
+              "attempts": 1,
+              "active": false,
+              "zone_attempt": 1,
+              "top_attempt": null,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            }
+          ],
+          [
+            {
+              "attempts": 1,
+              "active": false,
+              "zone_attempt": 1,
+              "top_attempt": 1,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            }
+          ]
+        ],
+        "current": 9,
+        "disqualified": [
+          false,
+          false
+        ]
+      },
+      "actions": [
+        {
+          "type": "end_problem",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      }
+    },
+    {
+      "id": "disqualification_excludes",
+      "initial_data": {
+        "results": [
+          [
+            {
+              "attempts": 2,
+              "active": false,
+              "zone_attempt": 1,
+              "top_attempt": 2,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            }
+          ],
+          [
+            {
+              "attempts": 1,
+              "active": false,
+              "zone_attempt": 1,
+              "top_attempt": 1,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": true
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            }
+          ]
+        ],
+        "current": 9,
+        "disqualified": [
+          false,
+          false
+        ]
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "player": 1
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      }
+    },
+    {
+      "id": "impossible_scoring_attempt",
+      "initial_data": {
+        "results": [
+          [
+            {
+              "attempts": 1,
+              "active": false,
+              "zone_attempt": 2,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            }
+          ],
+          [
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            },
+            {
+              "attempts": 0,
+              "active": false,
+              "zone_attempt": null,
+              "top_attempt": null,
+              "closed": false
+            }
+          ]
+        ],
+        "current": 0,
+        "disqualified": [
+          false,
+          false
+        ]
+      },
+      "valid": false
+    }
+  ]
+}

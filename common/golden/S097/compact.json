@@ -1,0 +1,8666 @@
+{
+  "profile_id": "S097",
+  "ruleset_id": "builtin.water_polo.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "player_a"
+    },
+    {
+      "id": "player_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "sprint_starts_clock_entitlement",
+      "actions": [
+        {
+          "type": "start_match",
+          "params": {}
+        },
+        {
+          "type": "sprint_winner",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "live",
+        "attack": 0,
+        "shot_ms": 30000
+      }
+    },
+    {
+      "id": "cannot_score_directly_from_sprint",
+      "actions": [
+        {
+          "type": "start_match",
+          "params": {}
+        },
+        {
+          "type": "sprint_winner",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "goal",
+        "params": {
+          "team": 0,
+          "own_goal": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "second_touch_unlocks_goal",
+      "actions": [
+        {
+          "type": "start_match",
+          "params": {}
+        },
+        {
+          "type": "sprint_winner",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "second_touch",
+          "params": {}
+        },
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "own_goal": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          0
+        ],
+        "restart": "centre",
+        "attack": 1
+      }
+    },
+    {
+      "id": "live_clock_reduces_both_timers",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "advance",
+          "params": {
+            "ms": 10000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "period_ms": 470000,
+        "shot_ms": 20000
+      }
+    },
+    {
+      "id": "cannot_advance_past_attack_signal",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "action": {
+        "type": "advance",
+        "params": {
+          "ms": 30001
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "attack_clock_expiry_transfers_entitlement",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "advance",
+          "params": {
+            "ms": 30000
+          }
+        },
+        {
+          "type": "resolve_siren",
+          "params": {
+            "result": "no_goal",
+            "released_before_signal": false,
+            "attacker_touch_after_signal": false,
+            "offender": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "restart",
+        "attack": 1,
+        "shot_ms": 30000
+      }
+    },
+    {
+      "id": "legal_shot_at_attack_signal_can_score",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "advance",
+          "params": {
+            "ms": 30000
+          }
+        },
+        {
+          "type": "resolve_siren",
+          "params": {
+            "result": "goal",
+            "released_before_signal": true,
+            "attacker_touch_after_signal": false,
+            "offender": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          0
+        ],
+        "attack": 1
+      }
+    },
+    {
+      "id": "late_unreleased_shot_rejected",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "advance",
+          "params": {
+            "ms": 30000
+          }
+        }
+      ],
+      "action": {
+        "type": "resolve_siren",
+        "params": {
+          "result": "goal",
+          "released_before_signal": false,
+          "attacker_touch_after_signal": false,
+          "offender": null
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "attacking_touch_after_horn_disallows_goal",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 1000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "advance",
+          "params": {
+            "ms": 1000
+          }
+        }
+      ],
+      "action": {
+        "type": "resolve_siren",
+        "params": {
+          "result": "goal",
+          "released_before_signal": true,
+          "attacker_touch_after_signal": true,
+          "offender": null
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "attacking_rebound_resets_twenty",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 4000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "shot_result",
+          "params": {
+            "result": "attack_rebound"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "shot_ms": 20000,
+        "attack": 0
+      }
+    },
+    {
+      "id": "defending_rebound_resets_thirty",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 4000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "shot_result",
+          "params": {
+            "result": "defence_rebound"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "shot_ms": 30000,
+        "attack": 1
+      }
+    },
+    {
+      "id": "corner_twenty_and_direct_goal",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "shot_result",
+          "params": {
+            "result": "corner"
+          }
+        },
+        {
+          "type": "take_restart",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "own_goal": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "outside_six_free_throw_can_score_directly",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "ordinary_foul",
+          "params": {
+            "team": 1,
+            "outside_six": true
+          }
+        },
+        {
+          "type": "take_restart",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "own_goal": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "inside_six_free_throw_requires_second_touch",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "ordinary_foul",
+          "params": {
+            "team": 1,
+            "outside_six": false
+          }
+        },
+        {
+          "type": "take_restart",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "goal",
+        "params": {
+          "team": 0,
+          "own_goal": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "exclusion_preserves_more_than_twenty_seconds",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 25000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "personal_foul",
+          "params": {
+            "team": 1,
+            "player": 1,
+            "kind": "exclusion"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "shot_ms": 25000,
+        "capacity": [
+          7,
+          6
+        ]
+      }
+    },
+    {
+      "id": "exclusion_restores_twenty_if_lower",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 5000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "personal_foul",
+          "params": {
+            "team": 1,
+            "player": 1,
+            "kind": "exclusion"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "shot_ms": 20000,
+        "capacity": [
+          7,
+          6
+        ]
+      }
+    },
+    {
+      "id": "exclusion_expires_after_twenty_playing_seconds",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "personal_foul",
+          "params": {
+            "team": 1,
+            "player": 1,
+            "kind": "exclusion"
+          }
+        },
+        {
+          "type": "clear_reentry",
+          "params": {
+            "team": 1,
+            "player": 1
+          }
+        },
+        {
+          "type": "take_restart",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "advance",
+          "params": {
+            "ms": 20000
+          }
+        },
+        {
+          "type": "release_exclusion",
+          "params": {
+            "team": 1,
+            "player": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          7,
+          7
+        ],
+        "exclusions": []
+      }
+    },
+    {
+      "id": "expiry_without_reentry_clearance_cannot_release",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "personal_foul",
+          "params": {
+            "team": 1,
+            "player": 1,
+            "kind": "exclusion"
+          }
+        },
+        {
+          "type": "take_restart",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "advance",
+          "params": {
+            "ms": 20000
+          }
+        }
+      ],
+      "action": {
+        "type": "release_exclusion",
+        "params": {
+          "team": 1,
+          "player": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "turnover_releases_ordinary_exclusion",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "excluded",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [
+          {
+            "team": 1,
+            "player": 1,
+            "kind": "ordinary",
+            "ms": 20000,
+            "ready": false,
+            "cleared": false,
+            "paired": false
+          }
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "clear_reentry",
+          "params": {
+            "team": 1,
+            "player": 1
+          }
+        },
+        {
+          "type": "turnover",
+          "params": {}
+        },
+        {
+          "type": "release_exclusion",
+          "params": {
+            "team": 1,
+            "player": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          7,
+          7
+        ],
+        "attack": 1
+      }
+    },
+    {
+      "id": "goal_releases_exclusion_without_location_clearance",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "excluded",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [
+          {
+            "team": 1,
+            "player": 1,
+            "kind": "ordinary",
+            "ms": 20000,
+            "ready": false,
+            "cleared": false,
+            "paired": false
+          }
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "own_goal": false
+          }
+        },
+        {
+          "type": "release_exclusion",
+          "params": {
+            "team": 1,
+            "player": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          7,
+          7
+        ],
+        "exclusions": []
+      }
+    },
+    {
+      "id": "third_exclusion_is_permanent_player_dismissal",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "personal_foul",
+          "params": {
+            "team": 1,
+            "player": 1,
+            "kind": "exclusion"
+          }
+        },
+        {
+          "type": "clear_reentry",
+          "params": {
+            "team": 1,
+            "player": 1
+          }
+        },
+        {
+          "type": "take_restart",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "advance",
+          "params": {
+            "ms": 20000
+          }
+        },
+        {
+          "type": "release_exclusion",
+          "params": {
+            "team": 1,
+            "player": 1
+          }
+        }
+      ],
+      "action": {
+        "type": "lineup",
+        "params": {
+          "team": 1,
+          "players": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "keeper": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "third_penalty_foul_allows_immediate_substitute",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "personal_foul",
+          "params": {
+            "team": 1,
+            "player": 1,
+            "kind": "penalty"
+          }
+        },
+        {
+          "type": "replace_for_penalty",
+          "params": {
+            "team": 1,
+            "outgoing": null,
+            "incoming": 7,
+            "keeper": 0
+          }
+        },
+        {
+          "type": "take_penalty",
+          "params": {
+            "player": 1,
+            "elapsed_ms": 0,
+            "result": "goal"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          0
+        ],
+        "capacity": [
+          7,
+          7
+        ]
+      }
+    },
+    {
+      "id": "ordinary_substitution_not_allowed_before_penalty",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "personal_foul",
+          "params": {
+            "team": 1,
+            "player": 1,
+            "kind": "penalty"
+          }
+        }
+      ],
+      "action": {
+        "type": "lineup",
+        "params": {
+          "team": 0,
+          "players": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "keeper": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "penalty_rebound_remains_playable",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "personal_foul",
+          "params": {
+            "team": 1,
+            "player": 1,
+            "kind": "penalty"
+          }
+        },
+        {
+          "type": "take_penalty",
+          "params": {
+            "player": 1,
+            "elapsed_ms": 0,
+            "result": "attack_rebound"
+          }
+        },
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "own_goal": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "penalty_after_period_horn_has_no_rebound_play",
+      "initial_data": {
+        "phase": "live",
+        "period": 4,
+        "period_ms": 1000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "advance",
+          "params": {
+            "ms": 1000
+          }
+        },
+        {
+          "type": "resolve_siren",
+          "params": {
+            "result": "penalty",
+            "released_before_signal": true,
+            "attacker_touch_after_signal": false,
+            "offender": 1
+          }
+        },
+        {
+          "type": "take_penalty",
+          "params": {
+            "player": 1,
+            "elapsed_ms": 0,
+            "result": "attack_rebound"
+          }
+        },
+        {
+          "type": "end_period",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw"
+      }
+    },
+    {
+      "id": "last_minute_penalty_may_be_declined",
+      "initial_data": {
+        "phase": "live",
+        "period": 4,
+        "period_ms": 59000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "personal_foul",
+          "params": {
+            "team": 1,
+            "player": 1,
+            "kind": "penalty"
+          }
+        },
+        {
+          "type": "decline_penalty",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "restart",
+        "restart": "timeout",
+        "attack": 0,
+        "shot_ms": 30000
+      }
+    },
+    {
+      "id": "penalty_cannot_be_declined_early",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "personal_foul",
+          "params": {
+            "team": 1,
+            "player": 1,
+            "kind": "penalty"
+          }
+        }
+      ],
+      "action": {
+        "type": "decline_penalty",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "brutality_live_awards_penalty_and_four_minutes",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "personal_foul",
+          "params": {
+            "team": 1,
+            "player": 1,
+            "kind": "brutality"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "penalty",
+        "capacity": [
+          7,
+          6
+        ],
+        "exclusions": [
+          {
+            "team": 1,
+            "player": 1,
+            "kind": "brutality",
+            "ms": 240000,
+            "ready": false,
+            "cleared": false,
+            "paired": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "brutality_not_released_by_goal",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "dismissed",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [
+          {
+            "team": 1,
+            "player": 1,
+            "kind": "brutality",
+            "ms": 20000,
+            "ready": false,
+            "cleared": false,
+            "paired": false
+          }
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "own_goal": false
+          }
+        }
+      ],
+      "action": {
+        "type": "release_exclusion",
+        "params": {
+          "team": 1,
+          "player": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "brutality_during_stoppage_does_not_award_penalty",
+      "initial_data": {
+        "phase": "restart",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "free",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "personal_foul",
+          "params": {
+            "team": 1,
+            "player": 1,
+            "kind": "brutality"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "restart",
+        "penalty_queue": [],
+        "exclusions": [
+          {
+            "team": 1,
+            "player": 1,
+            "kind": "brutality",
+            "ms": 240000,
+            "ready": false,
+            "cleared": false,
+            "paired": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "misconduct_after_goal_allows_immediate_replacement",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "own_goal": false
+          }
+        },
+        {
+          "type": "personal_foul",
+          "params": {
+            "team": 1,
+            "player": 1,
+            "kind": "misconduct"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          7,
+          7
+        ],
+        "exclusions": []
+      }
+    },
+    {
+      "id": "misconduct_during_play_keeps_twenty_second_reduction",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "personal_foul",
+          "params": {
+            "team": 1,
+            "player": 1,
+            "kind": "misconduct"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          7,
+          6
+        ],
+        "exclusions": [
+          {
+            "team": 1,
+            "player": 1,
+            "kind": "ordinary",
+            "ms": 20000,
+            "ready": false,
+            "cleared": false,
+            "paired": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "simultaneous_exclusions_keep_existing_attack_clock",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 7000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "simultaneous_exclusions",
+          "params": {
+            "players": [
+              1,
+              1
+            ],
+            "brutality": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "attack": 0,
+        "shot_ms": 7000,
+        "capacity": [
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "id": "simultaneous_brutalities_take_two_penalties_then_original_restart",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "simultaneous_exclusions",
+          "params": {
+            "players": [
+              1,
+              1
+            ],
+            "brutality": true
+          }
+        },
+        {
+          "type": "take_penalty",
+          "params": {
+            "player": 2,
+            "elapsed_ms": 0,
+            "result": "goal"
+          }
+        },
+        {
+          "type": "take_penalty",
+          "params": {
+            "player": 2,
+            "elapsed_ms": 0,
+            "result": "goal"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          1
+        ],
+        "phase": "restart",
+        "attack": 0,
+        "capacity": [
+          6,
+          6
+        ],
+        "restart": "timeout"
+      }
+    },
+    {
+      "id": "timeout_pauses_clocks",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 17000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "timeout_request",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "advance",
+          "params": {
+            "ms": 60000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "period_ms": 480000,
+        "shot_ms": 17000,
+        "timeouts": [
+          1,
+          0
+        ],
+        "restart": "timeout"
+      }
+    },
+    {
+      "id": "third_timeout_transfers_entitlement",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          2,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "timeout_request",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "attack": 1,
+        "phase": "restart",
+        "shot_ms": 30000
+      }
+    },
+    {
+      "id": "opponent_timeout_awards_penalty_without_personal_foul",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "timeout_request",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "penalty",
+        "penalty_queue": [
+          0
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "no_timeout_during_penalty",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "personal_foul",
+          "params": {
+            "team": 1,
+            "player": 1,
+            "kind": "penalty"
+          }
+        }
+      ],
+      "action": {
+        "type": "timeout_request",
+        "params": {
+          "team": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "goalkeeper_reserve_cannot_replace_field_player_while_field_subs_remain",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "action": {
+        "type": "lineup",
+        "params": {
+          "team": 0,
+          "players": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            12
+          ],
+          "keeper": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "seven_players_require_goalkeeper",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "action": {
+        "type": "lineup",
+        "params": {
+          "team": 0,
+          "players": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "keeper": null
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "fewer_than_seven_may_play_without_goalkeeper",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "lineup",
+          "params": {
+            "team": 0,
+            "players": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "keeper": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          7,
+          7
+        ]
+      }
+    },
+    {
+      "id": "goalkeeper_can_be_replaced_by_reserve",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "lineup",
+          "params": {
+            "team": 0,
+            "players": [
+              12,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "keeper": 12
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "live"
+      }
+    },
+    {
+      "id": "half_time_is_three_minutes",
+      "initial_data": {
+        "phase": "live",
+        "period": 2,
+        "period_ms": 1000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "advance",
+          "params": {
+            "ms": 1000
+          }
+        },
+        {
+          "type": "resolve_siren",
+          "params": {
+            "result": "no_goal",
+            "released_before_signal": false,
+            "attacker_touch_after_signal": false,
+            "offender": null
+          }
+        },
+        {
+          "type": "end_period",
+          "params": {}
+        },
+        {
+          "type": "advance",
+          "params": {
+            "ms": 180000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "period": 3,
+        "phase": "start",
+        "period_ms": 480000
+      }
+    },
+    {
+      "id": "ordinary_interval_is_two_minutes",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 1000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "advance",
+          "params": {
+            "ms": 1000
+          }
+        },
+        {
+          "type": "resolve_siren",
+          "params": {
+            "result": "no_goal",
+            "released_before_signal": false,
+            "attacker_touch_after_signal": false,
+            "offender": null
+          }
+        },
+        {
+          "type": "end_period",
+          "params": {}
+        },
+        {
+          "type": "advance",
+          "params": {
+            "ms": 120000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "period": 2,
+        "phase": "start"
+      }
+    },
+    {
+      "id": "regulation_league_draw",
+      "initial_data": {
+        "phase": "live",
+        "period": 4,
+        "period_ms": 1000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "advance",
+          "params": {
+            "ms": 1000
+          }
+        },
+        {
+          "type": "resolve_siren",
+          "params": {
+            "result": "no_goal",
+            "released_before_signal": false,
+            "attacker_touch_after_signal": false,
+            "offender": null
+          }
+        },
+        {
+          "type": "end_period",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw"
+      }
+    },
+    {
+      "id": "legal_goal_at_final_signal_decides_match",
+      "initial_data": {
+        "phase": "live",
+        "period": 4,
+        "period_ms": 1000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "advance",
+          "params": {
+            "ms": 1000
+          }
+        },
+        {
+          "type": "resolve_siren",
+          "params": {
+            "result": "goal",
+            "released_before_signal": true,
+            "attacker_touch_after_signal": false,
+            "offender": null
+          }
+        },
+        {
+          "type": "end_period",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "win",
+        "winners": [
+          "player_a"
+        ]
+      }
+    },
+    {
+      "id": "abandoned_requires_official_result",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "abandon",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    },
+    {
+      "id": "penalty_awarded_at_horn_without_a_prior_shot",
+      "initial_data": {
+        "phase": "live",
+        "period": 4,
+        "period_ms": 1000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": false,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "advance",
+          "params": {
+            "ms": 1000
+          }
+        },
+        {
+          "type": "penalty_at_signal",
+          "params": {
+            "team": 1,
+            "player": 1
+          }
+        },
+        {
+          "type": "take_penalty",
+          "params": {
+            "player": 1,
+            "elapsed_ms": 0,
+            "result": "goal"
+          }
+        },
+        {
+          "type": "end_period",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "win",
+        "winners": [
+          "player_a"
+        ]
+      }
+    },
+    {
+      "id": "penalty_execution_counts_playing_time",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "personal_foul",
+          "params": {
+            "team": 1,
+            "player": 1,
+            "kind": "penalty"
+          }
+        },
+        {
+          "type": "take_penalty",
+          "params": {
+            "player": 1,
+            "elapsed_ms": 1000,
+            "result": "goal"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "period_ms": 479000,
+        "score": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "period_expires_during_penalty_rebound_is_dead",
+      "initial_data": {
+        "phase": "live",
+        "period": 4,
+        "period_ms": 1000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "personal_foul",
+          "params": {
+            "team": 1,
+            "player": 1,
+            "kind": "penalty"
+          }
+        },
+        {
+          "type": "take_penalty",
+          "params": {
+            "player": 1,
+            "elapsed_ms": 1000,
+            "result": "attack_rebound"
+          }
+        },
+        {
+          "type": "end_period",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw"
+      }
+    },
+    {
+      "id": "invalid_live_zero_attack_clock",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 0,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "valid": false
+    },
+    {
+      "id": "invalid_three_fouls_still_eligible",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          0,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "valid": false
+    },
+    {
+      "id": "invalid_seven_without_goalkeeper",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "period_ms": 480000,
+        "shot_ms": 30000,
+        "pause_ms": 0,
+        "attack": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ],
+          [
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible",
+            "eligible"
+          ]
+        ],
+        "fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "keeper": [
+          null,
+          0
+        ],
+        "exclusions": [],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_corner": false,
+        "restart": "sprint",
+        "direct_allowed": false,
+        "second_touch": true,
+        "penalty_queue": [],
+        "penalty_resume": null,
+        "forced_replacements": [
+          0,
+          0
+        ],
+        "staff_yellow": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "staff_red": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "team_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "valid": false
+    }
+  ]
+}

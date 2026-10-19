@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0",
+  "game_id": "user.timed_duel",
+  "name": "Timed Duel (fictional event pilot)",
+  "ruleset_id": "user.timed_duel.standard",
+  "ruleset_version": "1.0.0",
+  "family": "measured_rank",
+  "participants": {
+    "min": 2,
+    "max": 2
+  },
+  "state": {
+    "fields": {
+      "time_a": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "time_b": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "initial": {
+      "time_a": 0,
+      "time_b": 0
+    }
+  },
+  "actions": [
+    {
+      "type": "record_a",
+      "params": {
+        "milliseconds": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "when": {
+        "op": "eq",
+        "args": [
+          {
+            "ref": "state.time_a"
+          },
+          0
+        ]
+      },
+      "effects": [
+        {
+          "op": "set",
+          "path": "/time_a",
+          "value": {
+            "ref": "params.milliseconds"
+          }
+        }
+      ]
+    },
+    {
+      "type": "record_b",
+      "params": {
+        "milliseconds": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "when": {
+        "op": "eq",
+        "args": [
+          {
+            "ref": "state.time_b"
+          },
+          0
+        ]
+      },
+      "effects": [
+        {
+          "op": "set",
+          "path": "/time_b",
+          "value": {
+            "ref": "params.milliseconds"
+          }
+        }
+      ]
+    }
+  ],
+  "outcomes": [
+    {
+      "when": {
+        "op": "and",
+        "args": [
+          {
+            "op": "gt",
+            "args": [
+              {
+                "ref": "state.time_a"
+              },
+              0
+            ]
+          },
+          {
+            "op": "gt",
+            "args": [
+              {
+                "ref": "state.time_b"
+              },
+              0
+            ]
+          },
+          {
+            "op": "lt",
+            "args": [
+              {
+                "ref": "state.time_a"
+              },
+              {
+                "ref": "state.time_b"
+              }
+            ]
+          }
+        ]
+      },
+      "result_kind": "win",
+      "winners": [
+        0
+      ],
+      "reason": "measured_times"
+    },
+    {
+      "when": {
+        "op": "and",
+        "args": [
+          {
+            "op": "gt",
+            "args": [
+              {
+                "ref": "state.time_a"
+              },
+              0
+            ]
+          },
+          {
+            "op": "gt",
+            "args": [
+              {
+                "ref": "state.time_b"
+              },
+              0
+            ]
+          },
+          {
+            "op": "gt",
+            "args": [
+              {
+                "ref": "state.time_a"
+              },
+              {
+                "ref": "state.time_b"
+              }
+            ]
+          }
+        ]
+      },
+      "result_kind": "win",
+      "winners": [
+        1
+      ],
+      "reason": "measured_times"
+    },
+    {
+      "when": {
+        "op": "and",
+        "args": [
+          {
+            "op": "gt",
+            "args": [
+              {
+                "ref": "state.time_a"
+              },
+              0
+            ]
+          },
+          {
+            "op": "gt",
+            "args": [
+              {
+                "ref": "state.time_b"
+              },
+              0
+            ]
+          },
+          {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "state.time_a"
+              },
+              {
+                "ref": "state.time_b"
+              }
+            ]
+          }
+        ]
+      },
+      "result_kind": "draw",
+      "winners": [],
+      "reason": "measured_times"
+    }
+  ],
+  "provenance": {
+    "basis": "explicit_user_defined; two externally measured positive integer milliseconds; smaller time wins; equal times draw",
+    "verification_status": "user_defined",
+    "source_refs": []
+  }
+}

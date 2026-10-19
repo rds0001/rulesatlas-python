@@ -1,0 +1,4196 @@
+{
+  "profile_id": "S023",
+  "ruleset_id": "builtin.sepaktakraw.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "team_a"
+    },
+    {
+      "id": "team_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "choose_initial_service",
+      "actions": [
+        {
+          "type": "choose_service",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "only_tekong_can_serve",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "serve",
+        "params": {
+          "team": 0,
+          "player": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "receiving_team_cannot_serve",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "serve",
+        "params": {
+          "team": 1,
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "roles_can_be_reassigned",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "assign_roles",
+          "params": {
+            "team": 0,
+            "players": [
+              1,
+              0,
+              2
+            ]
+          }
+        },
+        {
+          "type": "serve",
+          "params": {
+            "team": 0,
+            "player": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "rally",
+        "substitutions": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "roles_cannot_hide_substitution",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "assign_roles",
+        "params": {
+          "team": 0,
+          "players": [
+            3,
+            0,
+            2
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "three_services_regardless_winner",
+      "initial_data": {
+        "phase": "rally",
+        "starter": 0,
+        "points": [
+          1,
+          1
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "fault",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "points": [
+          1,
+          2
+        ],
+        "server": 1
+      }
+    },
+    {
+      "id": "service_block_switches_back",
+      "initial_data": {
+        "phase": "rally",
+        "starter": 0,
+        "points": [
+          3,
+          2
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "fault",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "points": [
+          4,
+          2
+        ],
+        "server": 0
+      }
+    },
+    {
+      "id": "deuce_service_each_point",
+      "initial_data": {
+        "phase": "rally",
+        "starter": 0,
+        "points": [
+          20,
+          20
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "fault",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "points": [
+          20,
+          21
+        ],
+        "server": 0
+      }
+    },
+    {
+      "id": "deuce_back_to_equal",
+      "initial_data": {
+        "phase": "rally",
+        "starter": 0,
+        "points": [
+          20,
+          21
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "fault",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "points": [
+          21,
+          21
+        ],
+        "server": 1
+      }
+    },
+    {
+      "id": "twenty_one_not_enough_at_deuce",
+      "initial_data": {
+        "phase": "rally",
+        "starter": 0,
+        "points": [
+          20,
+          20
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "fault",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "ready",
+        "sets_won": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "win_by_two",
+      "initial_data": {
+        "phase": "rally",
+        "starter": 0,
+        "points": [
+          21,
+          20
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "fault",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "interval",
+        "sets_won": [
+          1,
+          0
+        ],
+        "points": [
+          22,
+          20
+        ]
+      }
+    },
+    {
+      "id": "cap_twenty_five",
+      "initial_data": {
+        "phase": "rally",
+        "starter": 0,
+        "points": [
+          24,
+          24
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "fault",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "interval",
+        "points": [
+          25,
+          24
+        ],
+        "sets_won": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "next_set_service_alternates_and_allowances_reset",
+      "initial_data": {
+        "phase": "rally",
+        "starter": 0,
+        "points": [
+          20,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          2,
+          1
+        ],
+        "timeouts": [
+          true,
+          true
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "fault",
+          "params": {
+            "team": 1
+          }
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "milliseconds": 120000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "points": [
+          0,
+          0
+        ],
+        "server": 1,
+        "timeouts": [
+          false,
+          false
+        ],
+        "substitutions": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "two_sets_win",
+      "initial_data": {
+        "phase": "rally",
+        "starter": 1,
+        "points": [
+          20,
+          0
+        ],
+        "sets": [
+          {
+            "score": [
+              21,
+              0
+            ],
+            "winner": 0,
+            "reason": "points"
+          }
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "fault",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_a"
+        ],
+        "reason": "two_sets"
+      }
+    },
+    {
+      "id": "third_set_also_twenty_one",
+      "initial_data": {
+        "phase": "rally",
+        "starter": 0,
+        "points": [
+          14,
+          0
+        ],
+        "sets": [
+          {
+            "score": [
+              21,
+              0
+            ],
+            "winner": 0,
+            "reason": "points"
+          },
+          {
+            "score": [
+              0,
+              21
+            ],
+            "winner": 1,
+            "reason": "points"
+          }
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": true,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "fault",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "ready",
+        "points": [
+          15,
+          0
+        ],
+        "sets_won": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "third_set_end_change_at_eleven",
+      "initial_data": {
+        "phase": "rally",
+        "starter": 0,
+        "points": [
+          10,
+          0
+        ],
+        "sets": [
+          {
+            "score": [
+              21,
+              0
+            ],
+            "winner": 0,
+            "reason": "points"
+          },
+          {
+            "score": [
+              0,
+              21
+            ],
+            "winner": 1,
+            "reason": "points"
+          }
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "fault",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "change_ends",
+        "points": [
+          11,
+          0
+        ],
+        "server": 1
+      }
+    },
+    {
+      "id": "end_change_does_not_change_service",
+      "initial_data": {
+        "phase": "change_ends",
+        "starter": 0,
+        "points": [
+          11,
+          0
+        ],
+        "sets": [
+          {
+            "score": [
+              21,
+              0
+            ],
+            "winner": 0,
+            "reason": "points"
+          },
+          {
+            "score": [
+              0,
+              21
+            ],
+            "winner": 1,
+            "reason": "points"
+          }
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "change_ends",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "ready",
+        "server": 1
+      }
+    },
+    {
+      "id": "replay_preserves_score_and_service",
+      "initial_data": {
+        "phase": "rally",
+        "starter": 0,
+        "points": [
+          3,
+          2
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "replay",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "points": [
+          3,
+          2
+        ],
+        "server": 1
+      }
+    },
+    {
+      "id": "reentry_consumes_second_substitution",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slot": 0,
+            "incoming": 3
+          }
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slot": 0,
+            "incoming": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "substitutions": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "id": "third_substitution_rejected",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slot": 0,
+            "incoming": 3
+          }
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slot": 0,
+            "incoming": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "slot": 0,
+          "incoming": 4
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "substitution_during_rally_rejected",
+      "initial_data": {
+        "phase": "rally",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "slot": 0,
+          "incoming": 3
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "second_yellow_requires_replacement",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "yellow"
+          }
+        },
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "yellow"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "stopped",
+        "lineup": [
+          [
+            null,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "id": "replacement_after_red",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "red"
+          }
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slot": 0,
+            "incoming": 3
+          }
+        },
+        {
+          "type": "resume",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "ready",
+        "lineup": [
+          [
+            3,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "substitutions": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "red_with_exhausted_substitutions_loses_set",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          2,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "red"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "interval",
+        "sets_won": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "id": "red_reserve_does_not_lose_set",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 3,
+            "kind": "red"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "ready",
+        "sets_won": [
+          0,
+          0
+        ],
+        "substitutions": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "excluded_cannot_return",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "red"
+          }
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slot": 0,
+            "incoming": 3
+          }
+        }
+      ],
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "slot": 0,
+          "incoming": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "unavailability_with_no_substitution_loses_set",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          2,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "unavailable",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "interval",
+        "sets_won": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "id": "replacement_in_new_set_counts",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          2,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "red"
+          }
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "milliseconds": 120000
+          }
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slot": 0,
+            "incoming": 3
+          }
+        }
+      ],
+      "legal_constraints": {
+        "substitutions": [
+          1,
+          0
+        ],
+        "lineup": [
+          [
+            3,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "id": "service_delay_warning_then_fault",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "service_delay",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "service_delay",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "points": [
+          0,
+          1
+        ],
+        "server": 0
+      }
+    },
+    {
+      "id": "timeout_one_minute",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "milliseconds": 60000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "ready",
+        "timeouts": [
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "id": "second_timeout_rejected",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          true,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "timeout",
+        "params": {
+          "team": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "timeout_during_rally_rejected",
+      "initial_data": {
+        "phase": "rally",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "timeout",
+        "params": {
+          "team": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "abandon_awaits_decision",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "abandon",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    },
+    {
+      "id": "invalid_duplicate_lineup",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "invalid_completed_set_score",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [
+          {
+            "score": [
+              22,
+              0
+            ],
+            "winner": 0,
+            "reason": "points"
+          }
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "invalid_active_decided_score",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          21,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "invalid_second_yellow_without_red",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "red_during_end_change_preserves_required_change",
+      "initial_data": {
+        "phase": "change_ends",
+        "starter": 0,
+        "points": [
+          11,
+          0
+        ],
+        "sets": [
+          {
+            "score": [
+              21,
+              0
+            ],
+            "winner": 0,
+            "reason": "points"
+          },
+          {
+            "score": [
+              0,
+              21
+            ],
+            "winner": 1,
+            "reason": "points"
+          }
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "red"
+          }
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slot": 0,
+            "incoming": 3
+          }
+        },
+        {
+          "type": "resume",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "change_ends",
+        "server": 1
+      }
+    },
+    {
+      "id": "missing_end_change_invalid",
+      "initial_data": {
+        "phase": "ready",
+        "starter": 0,
+        "points": [
+          12,
+          0
+        ],
+        "sets": [
+          {
+            "score": [
+              21,
+              0
+            ],
+            "winner": 0,
+            "reason": "points"
+          },
+          {
+            "score": [
+              0,
+              21
+            ],
+            "winner": 1,
+            "reason": "points"
+          }
+        ],
+        "lineup": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "changed_ends": false,
+        "break_ms": 0,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

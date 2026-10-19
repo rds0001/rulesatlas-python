@@ -1,0 +1,8941 @@
+{
+  "profile_id": "S009",
+  "ruleset_id": "builtin.basketball.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "home"
+    },
+    {
+      "id": "away"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start_with_five_players",
+      "actions": [
+        {
+          "type": "start_match",
+          "params": {
+            "first_control": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "three_point_goal",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "field_goal",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "value": 3,
+            "at_buzzer": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": true,
+        "scores": [
+          3,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "bench_player_cannot_score",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "field_goal",
+        "params": {
+          "team": 0,
+          "player": 5,
+          "value": 2,
+          "at_buzzer": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "running_clock_blocks_substitution",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "out": 0,
+          "in": 5
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "fifth_team_foul_two_throws",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 4,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "personal",
+            "shooter": 0,
+            "shooting_points": 0,
+            "basket_made": false,
+            "team_control": false,
+            "at_buzzer": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_free_throw": {
+          "id": 1,
+          "team": 1,
+          "shooter": 0,
+          "total": 2,
+          "remaining": 2,
+          "kind": "personal",
+          "restart": "normal"
+        }
+      }
+    },
+    {
+      "id": "team_control_foul_has_no_bonus",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 4,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "personal",
+            "shooter": 0,
+            "shooting_points": 0,
+            "basket_made": false,
+            "team_control": true,
+            "at_buzzer": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_free_throw": null
+      }
+    },
+    {
+      "id": "three_point_shooting_foul",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "personal",
+            "shooter": 0,
+            "shooting_points": 3,
+            "basket_made": false,
+            "team_control": false,
+            "at_buzzer": false
+          }
+        },
+        {
+          "type": "free_throw",
+          "params": {
+            "made": true,
+            "violation": "none"
+          }
+        },
+        {
+          "type": "free_throw",
+          "params": {
+            "made": true,
+            "violation": "none"
+          }
+        },
+        {
+          "type": "free_throw",
+          "params": {
+            "made": true,
+            "violation": "none"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      },
+      "legal_constraints": {
+        "next_free_throw": null
+      }
+    },
+    {
+      "id": "made_basket_and_one",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "personal",
+            "shooter": 0,
+            "shooting_points": 3,
+            "basket_made": true,
+            "team_control": false,
+            "at_buzzer": false
+          }
+        },
+        {
+          "type": "free_throw",
+          "params": {
+            "made": true,
+            "violation": "none"
+          }
+        }
+      ],
+      "data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          4
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 1,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 2,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "fifth_personal_excludes_player",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 4,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "personal",
+            "shooter": 0,
+            "shooting_points": 0,
+            "basket_made": false,
+            "team_control": false,
+            "at_buzzer": false
+          }
+        },
+        {
+          "type": "enter_player",
+          "params": {
+            "team": 0,
+            "player": 5
+          }
+        }
+      ],
+      "legal_constraints": {
+        "active": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "id": "excluded_player_cannot_return",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 4,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "personal",
+            "shooter": 0,
+            "shooting_points": 0,
+            "basket_made": false,
+            "team_control": false,
+            "at_buzzer": false
+          }
+        }
+      ],
+      "action": {
+        "type": "enter_player",
+        "params": {
+          "team": 0,
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "technical_plus_unsporting_disqualifies",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "unsporting",
+            "shooter": 0,
+            "shooting_points": 0,
+            "basket_made": false,
+            "team_control": false,
+            "at_buzzer": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "active": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "next_free_throw": {
+          "id": 1,
+          "team": 1,
+          "shooter": 0,
+          "total": 2,
+          "remaining": 2,
+          "kind": "unsporting",
+          "restart": "retained"
+        }
+      }
+    },
+    {
+      "id": "defensive_violation_repeats_miss",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [
+          {
+            "id": 1,
+            "team": 1,
+            "shooter": 0,
+            "total": 2,
+            "remaining": 2,
+            "kind": "personal",
+            "restart": "normal"
+          }
+        ],
+        "next_penalty_id": 2,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "free_throw",
+          "params": {
+            "made": false,
+            "violation": "defense"
+          }
+        }
+      ],
+      "data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [
+          {
+            "id": 1,
+            "team": 1,
+            "shooter": 0,
+            "total": 2,
+            "remaining": 2,
+            "kind": "personal",
+            "restart": "normal"
+          }
+        ],
+        "next_penalty_id": 2,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "shooter_violation_cancels_basket",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [
+          {
+            "id": 1,
+            "team": 1,
+            "shooter": 0,
+            "total": 2,
+            "remaining": 2,
+            "kind": "personal",
+            "restart": "normal"
+          }
+        ],
+        "next_penalty_id": 2,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "free_throw",
+          "params": {
+            "made": true,
+            "violation": "shooter"
+          }
+        }
+      ],
+      "data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [
+          {
+            "id": 1,
+            "team": 1,
+            "shooter": 0,
+            "total": 2,
+            "remaining": 1,
+            "kind": "personal",
+            "restart": "normal"
+          }
+        ],
+        "next_penalty_id": 2,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "double_lane_violation_last_miss_uses_arrow",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [
+          {
+            "id": 1,
+            "team": 1,
+            "shooter": 0,
+            "total": 2,
+            "remaining": 1,
+            "kind": "personal",
+            "restart": "normal"
+          }
+        ],
+        "next_penalty_id": 2,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "free_throw",
+          "params": {
+            "made": false,
+            "violation": "both"
+          }
+        }
+      ],
+      "data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 2,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": true,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "no_substitution_inside_series",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [
+          {
+            "id": 1,
+            "team": 1,
+            "shooter": 0,
+            "total": 2,
+            "remaining": 2,
+            "kind": "personal",
+            "restart": "normal"
+          }
+        ],
+        "next_penalty_id": 2,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "free_throw",
+          "params": {
+            "made": true,
+            "violation": "none"
+          }
+        }
+      ],
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "out": 0,
+          "in": 5
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "technical_penalty_precedes_interrupted_series",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [
+          {
+            "id": 1,
+            "team": 1,
+            "shooter": 0,
+            "total": 2,
+            "remaining": 2,
+            "kind": "personal",
+            "restart": "normal"
+          }
+        ],
+        "next_penalty_id": 2,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "free_throw",
+          "params": {
+            "made": true,
+            "violation": "none"
+          }
+        },
+        {
+          "type": "bench_technical",
+          "params": {
+            "team": 1,
+            "shooter": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_free_throw": {
+          "id": 2,
+          "team": 0,
+          "shooter": 1,
+          "total": 1,
+          "remaining": 1,
+          "kind": "bench",
+          "restart": "status_quo"
+        }
+      }
+    },
+    {
+      "id": "equal_opposite_penalties_cancel",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "unsporting",
+            "shooter": 0,
+            "shooting_points": 0,
+            "basket_made": false,
+            "team_control": false,
+            "at_buzzer": false
+          }
+        },
+        {
+          "type": "foul",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "kind": "unsporting",
+            "shooter": 0,
+            "shooting_points": 0,
+            "basket_made": false,
+            "team_control": false,
+            "at_buzzer": false
+          }
+        },
+        {
+          "type": "cancel_equal_penalties",
+          "params": {
+            "first_id": 1,
+            "second_id": 2
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_free_throw": null
+      }
+    },
+    {
+      "id": "unequal_penalties_do_not_cancel",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [
+          {
+            "id": 1,
+            "team": 1,
+            "shooter": 0,
+            "total": 2,
+            "remaining": 2,
+            "kind": "personal",
+            "restart": "normal"
+          }
+        ],
+        "next_penalty_id": 2,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "bench_technical",
+          "params": {
+            "team": 1,
+            "shooter": 1
+          }
+        }
+      ],
+      "action": {
+        "type": "cancel_equal_penalties",
+        "params": {
+          "first_id": 1,
+          "second_id": 2
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "timeout_blocks_clock",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "resume",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "two_timeouts_first_half",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "end_timeout",
+          "params": {}
+        },
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "end_timeout",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "timeout",
+        "params": {
+          "team": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "late_fourth_only_two_timeouts",
+      "initial_data": {
+        "phase": "period",
+        "period": 4,
+        "remaining_ms": 120000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "end_timeout",
+          "params": {}
+        },
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "end_timeout",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "timeout",
+        "params": {
+          "team": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "last_two_minutes_goal_stops_clock",
+      "initial_data": {
+        "phase": "period",
+        "period": 4,
+        "remaining_ms": 120000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "field_goal",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "value": 2,
+            "at_buzzer": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "running": false
+      }
+    },
+    {
+      "id": "arrow_defender_violation_preserves_right",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": true,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "resolve_arrow_throwin",
+          "params": {
+            "result": "defender_violation"
+          }
+        }
+      ],
+      "data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": true,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "arrow_thrower_violation_consumes_right",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": true,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "resolve_arrow_throwin",
+          "params": {
+            "result": "thrower_violation"
+          }
+        }
+      ],
+      "data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 0,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "team_control_foul_consumes_pending_arrow",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": true,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "kind": "personal",
+            "shooter": 0,
+            "shooting_points": 0,
+            "basket_made": false,
+            "team_control": true,
+            "at_buzzer": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "arrow": 0
+      }
+    },
+    {
+      "id": "quarter_fouls_reset",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 0,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 4,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": true,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "end_period",
+          "params": {}
+        },
+        {
+          "type": "start_next_period",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "period",
+        "period": 2,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": true,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "overtime_retains_fourth_quarter_team_fouls",
+      "initial_data": {
+        "phase": "period",
+        "period": 4,
+        "remaining_ms": 0,
+        "running": false,
+        "scores": [
+          70,
+          70
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 4,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": true,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "end_period",
+          "params": {}
+        },
+        {
+          "type": "start_next_period",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "period",
+        "period": 5,
+        "remaining_ms": 300000,
+        "running": false,
+        "scores": [
+          70,
+          70
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 4,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": true,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "buzzer_goal_decides_regulation",
+      "initial_data": {
+        "phase": "period",
+        "period": 4,
+        "remaining_ms": 0,
+        "running": false,
+        "scores": [
+          70,
+          70
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": true,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "field_goal",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "value": 2,
+            "at_buzzer": true
+          }
+        },
+        {
+          "type": "end_period",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "home"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "cannot_score_after_resolved_buzzer",
+      "initial_data": {
+        "phase": "period",
+        "period": 4,
+        "remaining_ms": 0,
+        "running": false,
+        "scores": [
+          70,
+          70
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": true,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "field_goal",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "value": 2,
+            "at_buzzer": true
+          }
+        }
+      ],
+      "action": {
+        "type": "field_goal",
+        "params": {
+          "team": 0,
+          "player": 0,
+          "value": 2,
+          "at_buzzer": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "buzzer_foul_requires_free_throws_before_end",
+      "initial_data": {
+        "phase": "period",
+        "period": 4,
+        "remaining_ms": 0,
+        "running": false,
+        "scores": [
+          70,
+          70
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": true,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "personal",
+            "shooter": 0,
+            "shooting_points": 2,
+            "basket_made": false,
+            "team_control": false,
+            "at_buzzer": true
+          }
+        }
+      ],
+      "action": {
+        "type": "end_period",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "buzzer_free_throw_decides_match",
+      "initial_data": {
+        "phase": "period",
+        "period": 4,
+        "remaining_ms": 0,
+        "running": false,
+        "scores": [
+          70,
+          70
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": true,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "personal",
+            "shooter": 0,
+            "shooting_points": 2,
+            "basket_made": false,
+            "team_control": false,
+            "at_buzzer": true
+          }
+        },
+        {
+          "type": "free_throw",
+          "params": {
+            "made": true,
+            "violation": "none"
+          }
+        },
+        {
+          "type": "free_throw",
+          "params": {
+            "made": false,
+            "violation": "none"
+          }
+        },
+        {
+          "type": "end_period",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "away"
+        ]
+      }
+    },
+    {
+      "id": "overtime_win",
+      "initial_data": {
+        "phase": "period",
+        "period": 5,
+        "remaining_ms": 300000,
+        "running": false,
+        "scores": [
+          70,
+          70
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": true,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "resolve_arrow_throwin",
+          "params": {
+            "result": "completed"
+          }
+        },
+        {
+          "type": "resume",
+          "params": {}
+        },
+        {
+          "type": "field_goal",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "value": 2,
+            "at_buzzer": false
+          }
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 300000
+          }
+        },
+        {
+          "type": "end_period",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "home"
+        ]
+      }
+    },
+    {
+      "id": "default_below_two_players",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "excluded",
+              "excluded",
+              "excluded",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "disqualifying",
+            "shooter": 0,
+            "shooting_points": 0,
+            "basket_made": false,
+            "team_control": false,
+            "at_buzzer": false
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "away"
+        ],
+        "reason": "default"
+      }
+    },
+    {
+      "id": "forfeit_twenty_zero",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "forfeit",
+          "params": {
+            "loser": 1
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "home"
+        ],
+        "reason": "forfeit"
+      }
+    },
+    {
+      "id": "six_active_players_invalid",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "no_contest",
+      "initial_data": {
+        "phase": "period",
+        "period": 1,
+        "remaining_ms": 600000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "no_contest",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "interval_substitution",
+      "initial_data": {
+        "phase": "interval",
+        "period": 4,
+        "remaining_ms": 0,
+        "running": false,
+        "scores": [
+          70,
+          70
+        ],
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "fouls": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "technical": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unsporting": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "disqualified": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "team_fouls": 0,
+            "timeouts_first": 0,
+            "timeouts_second": 0,
+            "timeouts_overtime": 0,
+            "timeouts_late_fourth": 0
+          }
+        ],
+        "free_throws": [],
+        "next_penalty_id": 1,
+        "timeout_team": null,
+        "arrow": 1,
+        "pending_arrow": false,
+        "buzzer_pending": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "out": 0,
+            "in": 5
+          }
+        }
+      ],
+      "legal_constraints": {
+        "active": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ]
+      }
+    }
+  ]
+}

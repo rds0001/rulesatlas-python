@@ -1,0 +1,5748 @@
+{
+  "profile_id": "S011",
+  "ruleset_id": "builtin.korfball.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "team_a"
+    },
+    {
+      "id": "team_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types",
+      "legal_constraints": {
+        "playable": true
+      }
+    },
+    {
+      "id": "home_throw_off",
+      "actions": [
+        {
+          "type": "restart",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "milliseconds": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 750000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "attack_zone": 0,
+        "zones": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "gender": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "cooldown_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "withdrawn": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "missing": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "return_blocked": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_used_stop": false,
+        "coach_cards": [
+          0,
+          0
+        ],
+        "coach_ms": [
+          0,
+          0
+        ],
+        "restart_team": 0,
+        "restart_kind": "throw_off",
+        "taker": null,
+        "free_faults": 0,
+        "late_used": false,
+        "shoot_first": null,
+        "shoot_order": [
+          [],
+          []
+        ],
+        "shoot_taken": [
+          0,
+          0
+        ],
+        "shoot_score": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "away_cannot_start",
+      "action": {
+        "type": "restart",
+        "params": {
+          "team": 1,
+          "player": 0,
+          "milliseconds": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "defender_cannot_score",
+      "actions": [
+        {
+          "type": "restart",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "milliseconds": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "goal",
+        "params": {
+          "team": 0,
+          "player": 4
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "goal_and_throw_off",
+      "actions": [
+        {
+          "type": "restart",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "milliseconds": 0
+          }
+        },
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          0
+        ],
+        "restart_team": 1,
+        "phase": "stopped"
+      }
+    },
+    {
+      "id": "two_goals_switch_roles",
+      "actions": [
+        {
+          "type": "restart",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "milliseconds": 0
+          }
+        },
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        },
+        {
+          "type": "restart",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "milliseconds": 0
+          }
+        },
+        {
+          "type": "goal",
+          "params": {
+            "team": 1,
+            "player": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          1
+        ],
+        "attack_zone": 1
+      }
+    },
+    {
+      "id": "technical_break",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 1,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "attack_zone": 0,
+        "zones": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "gender": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "cooldown_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "withdrawn": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "missing": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "return_blocked": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_used_stop": false,
+        "coach_cards": [
+          0,
+          0
+        ],
+        "coach_ms": [
+          0,
+          0
+        ],
+        "restart_team": 0,
+        "restart_kind": "throw_off",
+        "taker": null,
+        "free_faults": 0,
+        "late_used": false,
+        "shoot_first": null,
+        "shoot_order": [
+          [],
+          []
+        ],
+        "shoot_taken": [
+          0,
+          0
+        ],
+        "shoot_score": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1
+          }
+        },
+        {
+          "type": "close_period",
+          "params": {
+            "next_throw_off": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "period": 2,
+        "phase": "interval",
+        "restart_team": 1
+      }
+    },
+    {
+      "id": "half_time_away_start",
+      "initial_data": {
+        "phase": "review",
+        "period": 2,
+        "clock_ms": 0,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "attack_zone": 0,
+        "zones": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "gender": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "cooldown_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "withdrawn": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "missing": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "return_blocked": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_used_stop": false,
+        "coach_cards": [
+          0,
+          0
+        ],
+        "coach_ms": [
+          0,
+          0
+        ],
+        "restart_team": 0,
+        "restart_kind": "throw_off",
+        "taker": null,
+        "free_faults": 0,
+        "late_used": false,
+        "shoot_first": null,
+        "shoot_order": [
+          [],
+          []
+        ],
+        "shoot_taken": [
+          0,
+          0
+        ],
+        "shoot_score": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_period",
+          "params": {
+            "next_throw_off": 0
+          }
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "milliseconds": 600000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "period": 3,
+        "phase": "stopped",
+        "restart_team": 1
+      }
+    },
+    {
+      "id": "regulation_win",
+      "initial_data": {
+        "phase": "review",
+        "period": 4,
+        "clock_ms": 0,
+        "break_ms": 0,
+        "score": [
+          1,
+          0
+        ],
+        "attack_zone": 0,
+        "zones": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "gender": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "cooldown_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "withdrawn": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "missing": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "return_blocked": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_used_stop": false,
+        "coach_cards": [
+          0,
+          0
+        ],
+        "coach_ms": [
+          0,
+          0
+        ],
+        "restart_team": 0,
+        "restart_kind": "throw_off",
+        "taker": null,
+        "free_faults": 0,
+        "late_used": false,
+        "shoot_first": null,
+        "shoot_order": [
+          [],
+          []
+        ],
+        "shoot_taken": [
+          0,
+          0
+        ],
+        "shoot_score": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_period",
+          "params": {
+            "next_throw_off": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_a"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "golden_goal",
+      "initial_data": {
+        "phase": "stopped",
+        "period": 5,
+        "clock_ms": 600000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "attack_zone": 0,
+        "zones": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "gender": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "cooldown_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "withdrawn": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "missing": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "return_blocked": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_used_stop": false,
+        "coach_cards": [
+          0,
+          0
+        ],
+        "coach_ms": [
+          0,
+          0
+        ],
+        "restart_team": 0,
+        "restart_kind": "throw_off",
+        "taker": null,
+        "free_faults": 0,
+        "late_used": false,
+        "shoot_first": null,
+        "shoot_order": [
+          [],
+          []
+        ],
+        "shoot_taken": [
+          0,
+          0
+        ],
+        "shoot_score": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "restart",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "milliseconds": 0
+          }
+        },
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_a"
+        ],
+        "reason": "golden_goal"
+      }
+    },
+    {
+      "id": "late_equalizer",
+      "initial_data": {
+        "phase": "review",
+        "period": 4,
+        "clock_ms": 0,
+        "break_ms": 0,
+        "score": [
+          1,
+          0
+        ],
+        "attack_zone": 0,
+        "zones": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "gender": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "cooldown_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "withdrawn": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "missing": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "return_blocked": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_used_stop": false,
+        "coach_cards": [
+          0,
+          0
+        ],
+        "coach_ms": [
+          0,
+          0
+        ],
+        "restart_team": 0,
+        "restart_kind": "throw_off",
+        "taker": null,
+        "free_faults": 0,
+        "late_used": false,
+        "shoot_first": null,
+        "shoot_order": [
+          [],
+          []
+        ],
+        "shoot_taken": [
+          0,
+          0
+        ],
+        "shoot_score": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "late_goal",
+          "params": {
+            "team": 1,
+            "player": 0
+          }
+        },
+        {
+          "type": "close_period",
+          "params": {
+            "next_throw_off": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "period": 5,
+        "clock_ms": 600000,
+        "score": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "only_one_late_shot",
+      "initial_data": {
+        "phase": "review",
+        "period": 1,
+        "clock_ms": 0,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "attack_zone": 0,
+        "zones": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "gender": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "cooldown_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "withdrawn": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "missing": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "return_blocked": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_used_stop": false,
+        "coach_cards": [
+          0,
+          0
+        ],
+        "coach_ms": [
+          0,
+          0
+        ],
+        "restart_team": 0,
+        "restart_kind": "throw_off",
+        "taker": null,
+        "free_faults": 0,
+        "late_used": false,
+        "shoot_first": null,
+        "shoot_order": [
+          [],
+          []
+        ],
+        "shoot_taken": [
+          0,
+          0
+        ],
+        "shoot_score": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "late_goal",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "late_goal",
+        "params": {
+          "team": 1,
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "penalty_after_horn",
+      "initial_data": {
+        "phase": "review",
+        "period": 4,
+        "clock_ms": 0,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "attack_zone": 0,
+        "zones": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "gender": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "cooldown_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "withdrawn": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "missing": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "return_blocked": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_used_stop": false,
+        "coach_cards": [
+          0,
+          0
+        ],
+        "coach_ms": [
+          0,
+          0
+        ],
+        "restart_team": 0,
+        "restart_kind": "throw_off",
+        "taker": null,
+        "free_faults": 0,
+        "late_used": false,
+        "shoot_first": null,
+        "shoot_order": [
+          [],
+          []
+        ],
+        "shoot_taken": [
+          0,
+          0
+        ],
+        "shoot_score": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_restart",
+          "params": {
+            "team": 0,
+            "kind": "penalty",
+            "player": 0
+          }
+        },
+        {
+          "type": "penalty",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "result": "goal"
+          }
+        },
+        {
+          "type": "close_period",
+          "params": {
+            "next_throw_off": 1
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_a"
+        ]
+      }
+    },
+    {
+      "id": "pending_penalty_blocks_period",
+      "initial_data": {
+        "phase": "review",
+        "period": 1,
+        "clock_ms": 0,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "attack_zone": 0,
+        "zones": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "gender": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "cooldown_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "withdrawn": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "missing": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "return_blocked": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_used_stop": false,
+        "coach_cards": [
+          0,
+          0
+        ],
+        "coach_ms": [
+          0,
+          0
+        ],
+        "restart_team": 0,
+        "restart_kind": "throw_off",
+        "taker": null,
+        "free_faults": 0,
+        "late_used": false,
+        "shoot_first": null,
+        "shoot_order": [
+          [],
+          []
+        ],
+        "shoot_taken": [
+          0,
+          0
+        ],
+        "shoot_score": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_restart",
+          "params": {
+            "team": 0,
+            "kind": "penalty",
+            "player": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "close_period",
+        "params": {
+          "next_throw_off": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "penalty_correct_taker",
+      "actions": [
+        {
+          "type": "award_restart",
+          "params": {
+            "team": 0,
+            "kind": "penalty",
+            "player": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "penalty",
+        "params": {
+          "team": 0,
+          "player": 1,
+          "result": "goal"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "penalty_retake",
+      "actions": [
+        {
+          "type": "award_restart",
+          "params": {
+            "team": 0,
+            "kind": "penalty",
+            "player": 0
+          }
+        },
+        {
+          "type": "penalty",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "result": "retake"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          0,
+          0
+        ],
+        "restart_kind": "penalty"
+      }
+    },
+    {
+      "id": "free_pass_second_defensive_fault",
+      "actions": [
+        {
+          "type": "award_restart",
+          "params": {
+            "team": 0,
+            "kind": "free_pass",
+            "player": 0
+          }
+        },
+        {
+          "type": "free_pass_fault",
+          "params": {
+            "team": 1
+          }
+        },
+        {
+          "type": "free_pass_fault",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "restart_kind": "penalty"
+      }
+    },
+    {
+      "id": "escalated_penalty_retains_taker",
+      "actions": [
+        {
+          "type": "award_restart",
+          "params": {
+            "team": 0,
+            "kind": "free_pass",
+            "player": 0
+          }
+        },
+        {
+          "type": "free_pass_fault",
+          "params": {
+            "team": 1
+          }
+        },
+        {
+          "type": "free_pass_fault",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "action": {
+        "type": "penalty",
+        "params": {
+          "team": 0,
+          "player": 1,
+          "result": "goal"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "shot_clock_official_breach",
+      "actions": [
+        {
+          "type": "restart",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "milliseconds": 0
+          }
+        },
+        {
+          "type": "shot_clock_violation",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "stopped",
+        "restart_team": 1
+      }
+    },
+    {
+      "id": "same_gender_substitution",
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "out": 0,
+            "in": 8
+          }
+        }
+      ],
+      "legal_constraints": {
+        "substitutions": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "wrong_gender_substitution",
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "out": 0,
+          "in": 11
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "no_live_substitution",
+      "actions": [
+        {
+          "type": "restart",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "milliseconds": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "out": 0,
+          "in": 8
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "no_immediate_return",
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "out": 0,
+            "in": 8
+          }
+        }
+      ],
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "out": 8,
+          "in": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "return_after_restart",
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "out": 0,
+            "in": 8
+          }
+        },
+        {
+          "type": "restart",
+          "params": {
+            "team": 0,
+            "player": 8,
+            "milliseconds": 0
+          }
+        },
+        {
+          "type": "stop",
+          "params": {}
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "out": 8,
+            "in": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "substitutions": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "id": "eight_normal_substitutions",
+      "initial_data": {
+        "phase": "stopped",
+        "period": 1,
+        "clock_ms": 750000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "attack_zone": 0,
+        "zones": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "gender": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "cooldown_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "withdrawn": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "missing": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "return_blocked": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "substitutions": [
+          8,
+          0
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_used_stop": false,
+        "coach_cards": [
+          0,
+          0
+        ],
+        "coach_ms": [
+          0,
+          0
+        ],
+        "restart_team": 0,
+        "restart_kind": "throw_off",
+        "taker": null,
+        "free_faults": 0,
+        "late_used": false,
+        "shoot_first": null,
+        "shoot_order": [
+          [],
+          []
+        ],
+        "shoot_taken": [
+          0,
+          0
+        ],
+        "shoot_score": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "out": 0,
+          "in": 8
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "yellow_bench_restriction",
+      "actions": [
+        {
+          "type": "card",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "color": "yellow"
+          }
+        },
+        {
+          "type": "replace_missing",
+          "params": {
+            "team": 0,
+            "slot": 0,
+            "player": 8
+          }
+        },
+        {
+          "type": "restart",
+          "params": {
+            "team": 0,
+            "player": 8,
+            "milliseconds": 0
+          }
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 240000
+          }
+        },
+        {
+          "type": "stop",
+          "params": {}
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "out": 8,
+            "in": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "substitutions": [
+          2,
+          0
+        ],
+        "cooldown_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "yellow_cannot_return_early",
+      "actions": [
+        {
+          "type": "card",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "color": "yellow"
+          }
+        },
+        {
+          "type": "replace_missing",
+          "params": {
+            "team": 0,
+            "slot": 0,
+            "player": 8
+          }
+        },
+        {
+          "type": "restart",
+          "params": {
+            "team": 0,
+            "player": 8,
+            "milliseconds": 0
+          }
+        },
+        {
+          "type": "stop",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "out": 8,
+          "in": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "red_exception_after_eight",
+      "initial_data": {
+        "phase": "stopped",
+        "period": 1,
+        "clock_ms": 750000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "attack_zone": 0,
+        "zones": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "gender": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "cooldown_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "withdrawn": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "missing": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "return_blocked": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "substitutions": [
+          8,
+          0
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_used_stop": false,
+        "coach_cards": [
+          0,
+          0
+        ],
+        "coach_ms": [
+          0,
+          0
+        ],
+        "restart_team": 0,
+        "restart_kind": "throw_off",
+        "taker": null,
+        "free_faults": 0,
+        "late_used": false,
+        "shoot_first": null,
+        "shoot_order": [
+          [],
+          []
+        ],
+        "shoot_taken": [
+          0,
+          0
+        ],
+        "shoot_score": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "card",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "color": "red"
+          }
+        },
+        {
+          "type": "replace_missing",
+          "params": {
+            "team": 0,
+            "slot": 0,
+            "player": 8
+          }
+        },
+        {
+          "type": "appoint_captain",
+          "params": {
+            "team": 0,
+            "player": 8
+          }
+        },
+        {
+          "type": "restart",
+          "params": {
+            "team": 0,
+            "player": 8,
+            "milliseconds": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "play",
+        "substitutions": [
+          9,
+          0
+        ]
+      }
+    },
+    {
+      "id": "second_yellow_excludes",
+      "actions": [
+        {
+          "type": "card",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "color": "yellow"
+          }
+        },
+        {
+          "type": "card",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "color": "yellow"
+          }
+        }
+      ],
+      "action": {
+        "type": "replace_missing",
+        "params": {
+          "team": 0,
+          "slot": 0,
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "vacancy_blocks_other_subs",
+      "actions": [
+        {
+          "type": "card",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "color": "red"
+          }
+        }
+      ],
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "out": 1,
+          "in": 9
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "coach_card_blocks_timeout",
+      "actions": [
+        {
+          "type": "coach_card",
+          "params": {
+            "team": 0,
+            "color": "yellow"
+          }
+        }
+      ],
+      "action": {
+        "type": "timeout",
+        "params": {
+          "team": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "timeout_needs_restart_before_another",
+      "actions": [
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "milliseconds": 60000
+          }
+        }
+      ],
+      "action": {
+        "type": "timeout",
+        "params": {
+          "team": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "timeout_limit",
+      "initial_data": {
+        "phase": "stopped",
+        "period": 1,
+        "clock_ms": 750000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "attack_zone": 0,
+        "zones": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "gender": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "cooldown_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "withdrawn": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "missing": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "return_blocked": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          2,
+          0
+        ],
+        "timeout_used_stop": false,
+        "coach_cards": [
+          0,
+          0
+        ],
+        "coach_ms": [
+          0,
+          0
+        ],
+        "restart_team": 0,
+        "restart_kind": "throw_off",
+        "taker": null,
+        "free_faults": 0,
+        "late_used": false,
+        "shoot_first": null,
+        "shoot_order": [
+          [],
+          []
+        ],
+        "shoot_taken": [
+          0,
+          0
+        ],
+        "shoot_score": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "timeout",
+        "params": {
+          "team": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "shootout_equal_attempts",
+      "initial_data": {
+        "phase": "shoot_setup",
+        "period": 5,
+        "clock_ms": 0,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "attack_zone": 0,
+        "zones": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "gender": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "cooldown_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "withdrawn": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "missing": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "return_blocked": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_used_stop": false,
+        "coach_cards": [
+          0,
+          0
+        ],
+        "coach_ms": [
+          0,
+          0
+        ],
+        "restart_team": 0,
+        "restart_kind": "throw_off",
+        "taker": null,
+        "free_faults": 0,
+        "late_used": false,
+        "shoot_first": null,
+        "shoot_order": [
+          [],
+          []
+        ],
+        "shoot_taken": [
+          0,
+          0
+        ],
+        "shoot_score": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "set_shootout",
+          "params": {
+            "first": 0,
+            "orders": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            ]
+          }
+        },
+        {
+          "type": "shoot_penalty",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "scored": true
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "shootout_first_pair_decides",
+      "initial_data": {
+        "phase": "shoot_setup",
+        "period": 5,
+        "clock_ms": 0,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "attack_zone": 0,
+        "zones": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "gender": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "cooldown_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "withdrawn": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "missing": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "return_blocked": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_used_stop": false,
+        "coach_cards": [
+          0,
+          0
+        ],
+        "coach_ms": [
+          0,
+          0
+        ],
+        "restart_team": 0,
+        "restart_kind": "throw_off",
+        "taker": null,
+        "free_faults": 0,
+        "late_used": false,
+        "shoot_first": null,
+        "shoot_order": [
+          [],
+          []
+        ],
+        "shoot_taken": [
+          0,
+          0
+        ],
+        "shoot_score": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "set_shootout",
+          "params": {
+            "first": 0,
+            "orders": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            ]
+          }
+        },
+        {
+          "type": "shoot_penalty",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "scored": true
+          }
+        },
+        {
+          "type": "shoot_penalty",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "scored": false
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_a"
+        ],
+        "reason": "shootout"
+      }
+    },
+    {
+      "id": "shootout_player_order",
+      "initial_data": {
+        "phase": "shoot_setup",
+        "period": 5,
+        "clock_ms": 0,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "attack_zone": 0,
+        "zones": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "gender": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "cooldown_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "withdrawn": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "missing": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "return_blocked": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_used_stop": false,
+        "coach_cards": [
+          0,
+          0
+        ],
+        "coach_ms": [
+          0,
+          0
+        ],
+        "restart_team": 0,
+        "restart_kind": "throw_off",
+        "taker": null,
+        "free_faults": 0,
+        "late_used": false,
+        "shoot_first": null,
+        "shoot_order": [
+          [],
+          []
+        ],
+        "shoot_taken": [
+          0,
+          0
+        ],
+        "shoot_score": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "set_shootout",
+          "params": {
+            "first": 0,
+            "orders": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            ]
+          }
+        }
+      ],
+      "action": {
+        "type": "shoot_penalty",
+        "params": {
+          "team": 0,
+          "player": 1,
+          "scored": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "abandoned_pending_result",
+      "actions": [
+        {
+          "type": "abandon",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    },
+    {
+      "id": "invalid_role_switch",
+      "initial_data": {
+        "phase": "stopped",
+        "period": 1,
+        "clock_ms": 750000,
+        "break_ms": 0,
+        "score": [
+          1,
+          1
+        ],
+        "attack_zone": 0,
+        "zones": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "gender": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "cooldown_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "withdrawn": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "missing": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "return_blocked": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_used_stop": false,
+        "coach_cards": [
+          0,
+          0
+        ],
+        "coach_ms": [
+          0,
+          0
+        ],
+        "restart_team": 0,
+        "restart_kind": "throw_off",
+        "taker": null,
+        "free_faults": 0,
+        "late_used": false,
+        "shoot_first": null,
+        "shoot_order": [
+          [],
+          []
+        ],
+        "shoot_taken": [
+          0,
+          0
+        ],
+        "shoot_score": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "expired_live_clock",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 0,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "attack_zone": 0,
+        "zones": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "gender": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "cooldown_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "withdrawn": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "missing": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "return_blocked": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "substitutions": [
+          0,
+          0
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_used_stop": false,
+        "coach_cards": [
+          0,
+          0
+        ],
+        "coach_ms": [
+          0,
+          0
+        ],
+        "restart_team": 0,
+        "restart_kind": "throw_off",
+        "taker": null,
+        "free_faults": 0,
+        "late_used": false,
+        "shoot_first": null,
+        "shoot_order": [
+          [],
+          []
+        ],
+        "shoot_taken": [
+          0,
+          0
+        ],
+        "shoot_score": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

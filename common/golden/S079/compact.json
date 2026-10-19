@@ -1,0 +1,2490 @@
+{
+  "profile_id": "S079",
+  "ruleset_id": "builtin.curling.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "red"
+    },
+    {
+      "id": "yellow"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start_eight_ends",
+      "actions": [
+        {
+          "type": "start_match",
+          "params": {
+            "hammer": 1,
+            "ends": 8
+          }
+        }
+      ],
+      "data": {
+        "phase": "delivering",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 0,
+        "board": [
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [],
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "start_ten_ends",
+      "actions": [
+        {
+          "type": "start_match",
+          "params": {
+            "hammer": 0,
+            "ends": 10
+          }
+        }
+      ],
+      "legal_constraints": {
+        "delivering_team": 1,
+        "delivering_player": 0,
+        "stone_index": 8
+      }
+    },
+    {
+      "id": "first_delivery",
+      "initial_data": {
+        "phase": "delivering",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 0,
+        "board": [
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "deliver_stone",
+          "params": {
+            "board": [
+              {
+                "status": "guard",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              }
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "delivering",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 1,
+        "board": [
+          {
+            "status": "guard",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [],
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "protected_opponent_guard_restored",
+      "initial_data": {
+        "phase": "delivering",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 1,
+        "board": [
+          {
+            "status": "guard",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "deliver_stone",
+          "params": {
+            "board": [
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "house",
+                "rank": 1
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              }
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "delivering",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 2,
+        "board": [
+          {
+            "status": "guard",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [],
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "sixth_delivery_may_remove_guard",
+      "initial_data": {
+        "phase": "delivering",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 5,
+        "board": [
+          {
+            "status": "guard",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "deliver_stone",
+          "params": {
+            "board": [
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "house",
+                "rank": 1
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              }
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "delivering",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 6,
+        "board": [
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "house",
+            "rank": 1
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [],
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "player_delivery_order",
+      "initial_data": {
+        "phase": "delivering",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 5,
+        "board": [
+          {
+            "status": "guard",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [],
+        "conceded_by": null
+      },
+      "legal_constraints": {
+        "delivering_team": 1,
+        "delivering_player": 1,
+        "stone_index": 10
+      }
+    },
+    {
+      "id": "future_stone_cannot_appear",
+      "initial_data": {
+        "phase": "delivering",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 0,
+        "board": [
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "house",
+            "rank": 1
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [],
+        "conceded_by": null
+      },
+      "valid": false
+    },
+    {
+      "id": "last_delivery_enters_review",
+      "initial_data": {
+        "phase": "delivering",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 15,
+        "board": [
+          {
+            "status": "house",
+            "rank": 1
+          },
+          {
+            "status": "house",
+            "rank": 2
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "house",
+            "rank": 3
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "deliver_stone",
+          "params": {
+            "board": [
+              {
+                "status": "house",
+                "rank": 1
+              },
+              {
+                "status": "house",
+                "rank": 2
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "house",
+                "rank": 3
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              }
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "end_review",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 16,
+        "board": [
+          {
+            "status": "house",
+            "rank": 1
+          },
+          {
+            "status": "house",
+            "rank": 2
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "house",
+            "rank": 3
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [],
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "two_stones_nearer_than_opponent",
+      "initial_data": {
+        "phase": "end_review",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 16,
+        "board": [
+          {
+            "status": "house",
+            "rank": 1
+          },
+          {
+            "status": "house",
+            "rank": 2
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "house",
+            "rank": 3
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [],
+        "conceded_by": null
+      },
+      "legal_constraints": {
+        "provisional_end_score": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "id": "confirm_two_point_end",
+      "initial_data": {
+        "phase": "end_review",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 16,
+        "board": [
+          {
+            "status": "house",
+            "rank": 1
+          },
+          {
+            "status": "house",
+            "rank": 2
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "house",
+            "rank": 3
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "confirm_end",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "delivering",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 0,
+        "board": [
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "scores": [
+          2,
+          0
+        ],
+        "end_scores": [
+          [
+            2,
+            0
+          ]
+        ],
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "opponent_scores_hammer_changes",
+      "initial_data": {
+        "phase": "end_review",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 16,
+        "board": [
+          {
+            "status": "house",
+            "rank": 2
+          },
+          {
+            "status": "house",
+            "rank": 3
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "house",
+            "rank": 1
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "confirm_end",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "delivering",
+        "hammer": 0,
+        "scheduled_ends": 8,
+        "delivered": 0,
+        "board": [
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          1
+        ],
+        "end_scores": [
+          [
+            0,
+            1
+          ]
+        ],
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "blank_retains_hammer",
+      "initial_data": {
+        "phase": "end_review",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 16,
+        "board": [
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "confirm_end",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "delivering",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 0,
+        "board": [
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [
+          [
+            0,
+            0
+          ]
+        ],
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "opposing_equal_nearest_blank",
+      "initial_data": {
+        "phase": "end_review",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 16,
+        "board": [
+          {
+            "status": "house",
+            "rank": 1
+          },
+          {
+            "status": "house",
+            "rank": 2
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "house",
+            "rank": 1
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [],
+        "conceded_by": null
+      },
+      "legal_constraints": {
+        "provisional_end_score": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "measurement_changes_provisional_score",
+      "initial_data": {
+        "phase": "end_review",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 16,
+        "board": [
+          {
+            "status": "house",
+            "rank": 1
+          },
+          {
+            "status": "house",
+            "rank": 2
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "house",
+            "rank": 3
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "measure_stones",
+          "params": {
+            "board": [
+              {
+                "status": "house",
+                "rank": 1
+              },
+              {
+                "status": "house",
+                "rank": 2
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "house",
+                "rank": 1
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              }
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "provisional_end_score": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "cannot_confirm_incomplete_end",
+      "initial_data": {
+        "phase": "delivering",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 1,
+        "board": [
+          {
+            "status": "guard",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [],
+        "conceded_by": null
+      },
+      "action": {
+        "type": "confirm_end",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "eighth_end_decides_match",
+      "initial_data": {
+        "phase": "end_review",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 16,
+        "board": [
+          {
+            "status": "house",
+            "rank": 1
+          },
+          {
+            "status": "house",
+            "rank": 2
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "house",
+            "rank": 3
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "confirm_end",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "red"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "tied_eighth_end_requires_extra",
+      "initial_data": {
+        "phase": "end_review",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 16,
+        "board": [
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "confirm_end",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "end_number": 9,
+        "delivering_team": 0
+      }
+    },
+    {
+      "id": "concession",
+      "initial_data": {
+        "phase": "delivering",
+        "hammer": 1,
+        "scheduled_ends": 8,
+        "delivered": 1,
+        "board": [
+          {
+            "status": "guard",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "end_scores": [],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "concede",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "yellow"
+        ],
+        "reason": "concession"
+      }
+    }
+  ]
+}

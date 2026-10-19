@@ -1,0 +1,589 @@
+{
+  "profile_id": "S028",
+  "ruleset_id": "builtin.roundnet.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "a1"
+    },
+    {
+      "id": "a2"
+    },
+    {
+      "id": "b1"
+    },
+    {
+      "id": "b2"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start_game",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "serve",
+        "scores": [
+          0,
+          0
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 0,
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "alternating_team_service_order",
+      "initial_data": {
+        "phase": "ready",
+        "scores": [
+          0,
+          0
+        ],
+        "service_order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "service_index": 0,
+        "faults": 0,
+        "conceded_by": null
+      },
+      "valid": false
+    },
+    {
+      "id": "first_fault_second_attempt",
+      "initial_data": {
+        "phase": "serve",
+        "scores": [
+          0,
+          0
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 0,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "serve",
+          "params": {
+            "result": "fault"
+          }
+        }
+      ],
+      "data": {
+        "phase": "serve",
+        "scores": [
+          0,
+          0
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 1,
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "second_fault_point_and_service",
+      "initial_data": {
+        "phase": "serve",
+        "scores": [
+          0,
+          0
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 1,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "serve",
+          "params": {
+            "result": "fault"
+          }
+        }
+      ],
+      "data": {
+        "phase": "serve",
+        "scores": [
+          0,
+          1
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 1,
+        "faults": 0,
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "let_preserves_second_attempt",
+      "initial_data": {
+        "phase": "serve",
+        "scores": [
+          0,
+          0
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 1,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "serve",
+          "params": {
+            "result": "let"
+          }
+        }
+      ],
+      "data": {
+        "phase": "serve",
+        "scores": [
+          0,
+          0
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 1,
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "ace_keeps_server",
+      "initial_data": {
+        "phase": "serve",
+        "scores": [
+          0,
+          0
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 1,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "serve",
+          "params": {
+            "result": "ace"
+          }
+        }
+      ],
+      "data": {
+        "phase": "serve",
+        "scores": [
+          1,
+          0
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 0,
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "valid_serve_starts_rally",
+      "initial_data": {
+        "phase": "serve",
+        "scores": [
+          0,
+          0
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 0,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "serve",
+          "params": {
+            "result": "in_play"
+          }
+        }
+      ],
+      "data": {
+        "phase": "rally",
+        "scores": [
+          0,
+          0
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 0,
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "no_rally_before_serve",
+      "initial_data": {
+        "phase": "serve",
+        "scores": [
+          0,
+          0
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 0,
+        "conceded_by": null
+      },
+      "action": {
+        "type": "rally_result",
+        "params": {
+          "winner": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "cannot_serve_mid_rally",
+      "initial_data": {
+        "phase": "rally",
+        "scores": [
+          0,
+          0
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 0,
+        "conceded_by": null
+      },
+      "action": {
+        "type": "serve",
+        "params": {
+          "result": "ace"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "four_service_changes_cycle_all_players",
+      "initial_data": {
+        "phase": "serve",
+        "scores": [
+          0,
+          0
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 0,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "serve",
+          "params": {
+            "result": "in_play"
+          }
+        },
+        {
+          "type": "rally_result",
+          "params": {
+            "winner": 1
+          }
+        },
+        {
+          "type": "serve",
+          "params": {
+            "result": "in_play"
+          }
+        },
+        {
+          "type": "rally_result",
+          "params": {
+            "winner": 0
+          }
+        },
+        {
+          "type": "serve",
+          "params": {
+            "result": "in_play"
+          }
+        },
+        {
+          "type": "rally_result",
+          "params": {
+            "winner": 1
+          }
+        },
+        {
+          "type": "serve",
+          "params": {
+            "result": "in_play"
+          }
+        },
+        {
+          "type": "rally_result",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "serve",
+        "scores": [
+          2,
+          2
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 0,
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "service_order_locked",
+      "initial_data": {
+        "phase": "serve",
+        "scores": [
+          0,
+          0
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 0,
+        "conceded_by": null
+      },
+      "action": {
+        "type": "set_service_order",
+        "params": {
+          "order": [
+            1,
+            3,
+            0,
+            2
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "deuce_requires_two_point_margin",
+      "initial_data": {
+        "phase": "serve",
+        "scores": [
+          20,
+          20
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 0,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "serve",
+          "params": {
+            "result": "ace"
+          }
+        }
+      ],
+      "data": {
+        "phase": "serve",
+        "scores": [
+          21,
+          20
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 0,
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "advantage_converts_to_win",
+      "initial_data": {
+        "phase": "serve",
+        "scores": [
+          21,
+          20
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 0,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "serve",
+          "params": {
+            "result": "ace"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "a1",
+          "a2"
+        ],
+        "losers": [
+          "b1",
+          "b2"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "already_decided_score_not_ongoing",
+      "initial_data": {
+        "phase": "serve",
+        "scores": [
+          21,
+          19
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 0,
+        "conceded_by": null
+      },
+      "valid": false
+    },
+    {
+      "id": "concession",
+      "initial_data": {
+        "phase": "rally",
+        "scores": [
+          0,
+          0
+        ],
+        "service_order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "service_index": 0,
+        "faults": 0,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "concede",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "b1",
+          "b2"
+        ],
+        "reason": "concession"
+      }
+    }
+  ]
+}

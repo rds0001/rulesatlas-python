@@ -1,0 +1,455 @@
+{
+  "profile_id": "S033",
+  "ruleset_id": "builtin.racquetball.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "first_fault_keeps_service",
+      "actions": [
+        {
+          "type": "service_fault",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "games": [],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "first_server": 0,
+        "faults": 1,
+        "started": true,
+        "rallies": 0,
+        "decision": null
+      },
+      "legal_constraints": {
+        "serve_attempt": 2
+      }
+    },
+    {
+      "id": "second_fault_is_sideout",
+      "actions": [
+        {
+          "type": "service_fault",
+          "params": {}
+        },
+        {
+          "type": "service_fault",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "games": [],
+        "points": [
+          0,
+          0
+        ],
+        "server": 1,
+        "first_server": 0,
+        "faults": 0,
+        "started": true,
+        "rallies": 1,
+        "decision": null
+      }
+    },
+    {
+      "id": "out_serve_is_immediate_sideout",
+      "actions": [
+        {
+          "type": "out_serve",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "games": [],
+        "points": [
+          0,
+          0
+        ],
+        "server": 1,
+        "first_server": 0,
+        "faults": 0,
+        "started": true,
+        "rallies": 1,
+        "decision": null
+      }
+    },
+    {
+      "id": "receiver_win_does_not_score",
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "games": [],
+        "points": [
+          0,
+          0
+        ],
+        "server": 1,
+        "first_server": 0,
+        "faults": 0,
+        "started": true,
+        "rallies": 1,
+        "decision": null
+      }
+    },
+    {
+      "id": "replay_restores_first_attempt",
+      "actions": [
+        {
+          "type": "service_fault",
+          "params": {}
+        },
+        {
+          "type": "replay",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "games": [],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "first_server": 0,
+        "faults": 0,
+        "started": true,
+        "rallies": 0,
+        "decision": null
+      }
+    },
+    {
+      "id": "fifteen_fourteen_closes_game",
+      "initial_data": {
+        "phase": "playing",
+        "games": [],
+        "points": [
+          14,
+          14
+        ],
+        "server": 0,
+        "first_server": 0,
+        "faults": 0,
+        "started": true,
+        "rallies": 40,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "games": [
+          [
+            15,
+            14
+          ]
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 1,
+        "first_server": 0,
+        "faults": 0,
+        "started": true,
+        "rallies": 41,
+        "decision": null
+      }
+    },
+    {
+      "id": "tied_aggregate_requires_choice",
+      "initial_data": {
+        "phase": "playing",
+        "games": [
+          [
+            15,
+            10
+          ]
+        ],
+        "points": [
+          10,
+          14
+        ],
+        "server": 1,
+        "first_server": 0,
+        "faults": 0,
+        "started": true,
+        "rallies": 60,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "choose_server",
+        "games": [
+          [
+            15,
+            10
+          ],
+          [
+            10,
+            15
+          ]
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 1,
+        "first_server": 0,
+        "faults": 0,
+        "started": true,
+        "rallies": 61,
+        "decision": null
+      }
+    },
+    {
+      "id": "cannot_play_before_tied_service_choice",
+      "initial_data": {
+        "phase": "playing",
+        "games": [
+          [
+            15,
+            10
+          ]
+        ],
+        "points": [
+          10,
+          14
+        ],
+        "server": 1,
+        "first_server": 0,
+        "faults": 0,
+        "started": true,
+        "rallies": 60,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 1
+          }
+        }
+      ],
+      "action": {
+        "type": "rally",
+        "params": {
+          "winner": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "tiebreak_service_choice",
+      "initial_data": {
+        "phase": "playing",
+        "games": [
+          [
+            15,
+            10
+          ]
+        ],
+        "points": [
+          10,
+          14
+        ],
+        "server": 1,
+        "first_server": 0,
+        "faults": 0,
+        "started": true,
+        "rallies": 60,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 1
+          }
+        },
+        {
+          "type": "choose_tiebreak_server",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "server": 0,
+        "target": 11
+      }
+    },
+    {
+      "id": "aggregate_points_determine_third_server",
+      "initial_data": {
+        "phase": "playing",
+        "games": [
+          [
+            15,
+            10
+          ]
+        ],
+        "points": [
+          5,
+          14
+        ],
+        "server": 1,
+        "first_server": 0,
+        "faults": 0,
+        "started": true,
+        "rallies": 60,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "games": [
+          [
+            15,
+            10
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 1,
+        "first_server": 0,
+        "faults": 0,
+        "started": true,
+        "rallies": 61,
+        "decision": null
+      }
+    },
+    {
+      "id": "eleven_ten_wins_match",
+      "initial_data": {
+        "phase": "playing",
+        "games": [
+          [
+            15,
+            10
+          ],
+          [
+            10,
+            15
+          ]
+        ],
+        "points": [
+          10,
+          10
+        ],
+        "server": 0,
+        "first_server": 0,
+        "faults": 0,
+        "started": true,
+        "rallies": 80,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "first_fault_prevents_walkover",
+      "actions": [
+        {
+          "type": "service_fault",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "end_match",
+        "params": {
+          "player": 0,
+          "kind": "walkover"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "game_at_sixteen_invalid",
+      "initial_data": {
+        "phase": "playing",
+        "games": [
+          [
+            16,
+            14
+          ]
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "first_server": 0,
+        "faults": 0,
+        "started": true,
+        "rallies": 40,
+        "decision": null
+      },
+      "valid": false
+    }
+  ]
+}

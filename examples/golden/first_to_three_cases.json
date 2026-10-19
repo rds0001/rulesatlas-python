@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "ruleset": "user.first_to_three.standard@1.0.0",
+  "description": "Golden-Cases zur parallelen Entwicklung von Python- und R-DSL-Interpreter. Output-Felder werden gemäß docs/07_PARITAET... normalisiert.",
+  "cases": [
+    {
+      "id": "initial",
+      "initial_data": {
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ]
+      },
+      "expected_valid": true,
+      "expected_legal": [
+        {
+          "type": "score",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "expected_outcome": {
+        "status": "ongoing",
+        "result_kind": "none"
+      }
+    },
+    {
+      "id": "score_once",
+      "initial_data": {
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ]
+      },
+      "action": {
+        "type": "score",
+        "params": {
+          "player": 0
+        }
+      },
+      "expected_data": {
+        "turn": 1,
+        "scores": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "reject_wrong_turn",
+      "initial_data": {
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ]
+      },
+      "action": {
+        "type": "score",
+        "params": {
+          "player": 1
+        }
+      },
+      "expected_error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "terminal",
+      "initial_data": {
+        "turn": 1,
+        "scores": [
+          3,
+          2
+        ]
+      },
+      "expected_outcome": {
+        "status": "terminal",
+        "result_kind": "win",
+        "winners": [
+          0
+        ]
+      },
+      "expected_legal": []
+    },
+    {
+      "id": "refuse_terminal_move",
+      "initial_data": {
+        "turn": 1,
+        "scores": [
+          3,
+          2
+        ]
+      },
+      "action": {
+        "type": "score",
+        "params": {
+          "player": 0
+        }
+      },
+      "expected_error": "ILLEGAL_ACTION"
+    }
+  ],
+  "players": [
+    {
+      "id": "p0"
+    },
+    {
+      "id": "p1"
+    }
+  ]
+}

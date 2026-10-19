@@ -1,0 +1,2256 @@
+{
+  "profile_id": "S058",
+  "ruleset_id": "builtin.golf_croquet.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "player_a"
+    },
+    {
+      "id": "player_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "colors",
+      "actions": [
+        {
+          "type": "choose_colors",
+          "params": {
+            "blue_owner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "alternate_owner",
+      "actions": [
+        {
+          "type": "choose_colors",
+          "params": {
+            "blue_owner": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_player": 1
+      }
+    },
+    {
+      "id": "blue_then_red",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "player": 0,
+            "ball": 0,
+            "hoops": [],
+            "offside": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "fault": false,
+            "remedy": "none",
+            "entered_court": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_ball": 1,
+        "next_player": 1
+      }
+    },
+    {
+      "id": "four_color_cycle",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "player": 0,
+            "ball": 0,
+            "hoops": [],
+            "offside": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "fault": false,
+            "remedy": "none",
+            "entered_court": true
+          }
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "player": 1,
+            "ball": 1,
+            "hoops": [],
+            "offside": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "fault": false,
+            "remedy": "none",
+            "entered_court": true
+          }
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "player": 0,
+            "ball": 2,
+            "hoops": [],
+            "offside": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "fault": false,
+            "remedy": "none",
+            "entered_court": true
+          }
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "player": 1,
+            "ball": 3,
+            "hoops": [],
+            "offside": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "fault": false,
+            "remedy": "none",
+            "entered_court": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_ball": 0
+      }
+    },
+    {
+      "id": "wrong_side",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "stroke",
+        "params": {
+          "player": 1,
+          "ball": 1,
+          "hoops": [],
+          "offside": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "fault": false,
+          "remedy": "none",
+          "entered_court": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "credit_opponent_ball",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "player": 0,
+            "ball": 0,
+            "hoops": [
+              1
+            ],
+            "offside": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "fault": false,
+            "remedy": "none",
+            "entered_court": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          0,
+          1
+        ],
+        "hoop_in_order": 2
+      }
+    },
+    {
+      "id": "two_ordered_hoops",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "player": 0,
+            "ball": 0,
+            "hoops": [
+              0,
+              1
+            ],
+            "offside": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "fault": false,
+            "remedy": "none",
+            "entered_court": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          1
+        ],
+        "hoop_in_order": 3
+      }
+    },
+    {
+      "id": "seventh_point_wins",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "player": 0,
+            "ball": 0,
+            "hoops": [
+              0
+            ],
+            "offside": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "fault": false,
+            "remedy": "none",
+            "entered_court": true
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "player_a"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "no_score_beyond_seventh",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "stroke",
+        "params": {
+          "player": 0,
+          "ball": 0,
+          "hoops": [
+            0,
+            1
+          ],
+          "offside": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "fault": false,
+          "remedy": "none",
+          "entered_court": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "partner_ball_needs_remedy",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "stroke",
+        "params": {
+          "player": 0,
+          "ball": 2,
+          "hoops": [],
+          "offside": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "fault": false,
+          "remedy": "none",
+          "entered_court": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "partner_ball_replay",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "player": 0,
+            "ball": 2,
+            "hoops": [],
+            "offside": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "fault": false,
+            "remedy": "replay",
+            "entered_court": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "partner_ball_swap",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "player": 0,
+            "ball": 2,
+            "hoops": [
+              2
+            ],
+            "offside": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "fault": false,
+            "remedy": "swap",
+            "entered_court": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          0
+        ],
+        "next_ball": 1
+      }
+    },
+    {
+      "id": "opponent_ball_cannot_swap",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "stroke",
+        "params": {
+          "player": 0,
+          "ball": 1,
+          "hoops": [],
+          "offside": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "fault": false,
+          "remedy": "swap",
+          "entered_court": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "opponent_ball_replay",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "player": 0,
+            "ball": 1,
+            "hoops": [],
+            "offside": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "fault": false,
+            "remedy": "replay",
+            "entered_court": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "fault_retains_opponent_point",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "player": 0,
+            "ball": 0,
+            "hoops": [
+              1
+            ],
+            "offside": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "fault": true,
+            "remedy": "leave",
+            "entered_court": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          0,
+          1
+        ],
+        "next_ball": 1
+      }
+    },
+    {
+      "id": "fault_cannot_retain_own_point",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "stroke",
+        "params": {
+          "player": 0,
+          "ball": 0,
+          "hoops": [
+            0
+          ],
+          "offside": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "fault": true,
+          "remedy": "leave",
+          "entered_court": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "fault_replacement_loses_turn",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "player": 0,
+            "ball": 0,
+            "hoops": [],
+            "offside": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "fault": true,
+            "remedy": "replace",
+            "entered_court": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_ball": 1
+      }
+    },
+    {
+      "id": "replacement_cancels_score",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "stroke",
+        "params": {
+          "player": 0,
+          "ball": 0,
+          "hoops": [
+            1
+          ],
+          "offside": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "fault": true,
+          "remedy": "replace",
+          "entered_court": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "boundary_stroke_cannot_score_without_entry",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "stroke",
+        "params": {
+          "player": 0,
+          "ball": 0,
+          "hoops": [
+            0
+          ],
+          "offside": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "fault": false,
+          "remedy": "none",
+          "entered_court": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "offside_needs_new_hoop",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "stroke",
+        "params": {
+          "player": 0,
+          "ball": 0,
+          "hoops": [],
+          "offside": [
+            false,
+            true,
+            false,
+            false
+          ],
+          "fault": false,
+          "remedy": "none",
+          "entered_court": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "offside_requires_opponent_choice",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 1,
+        "hoops": [
+          0
+        ],
+        "offside": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "stroke",
+        "params": {
+          "player": 1,
+          "ball": 1,
+          "hoops": [],
+          "offside": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "fault": false,
+          "remedy": "none",
+          "entered_court": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "offside_penalty_area",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 1,
+        "hoops": [
+          0
+        ],
+        "offside": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "offside_decision",
+          "params": {
+            "player": 0,
+            "ball": 1,
+            "direction": "D"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "D",
+          "none",
+          "none"
+        ]
+      }
+    },
+    {
+      "id": "owner_cannot_waive",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 1,
+        "hoops": [
+          0
+        ],
+        "offside": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "offside_decision",
+        "params": {
+          "player": 1,
+          "ball": 1,
+          "direction": "waive"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "offside_waiver",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 1,
+        "hoops": [
+          0
+        ],
+        "offside": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "offside_decision",
+          "params": {
+            "player": 0,
+            "ball": 1,
+            "direction": "waive"
+          }
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "player": 1,
+            "ball": 1,
+            "hoops": [],
+            "offside": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "fault": false,
+            "remedy": "none",
+            "entered_court": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_ball": 2
+      }
+    },
+    {
+      "id": "opponent_turn_expires_direction_right",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 1,
+        "hoops": [
+          0
+        ],
+        "offside": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "player": 1,
+            "ball": 1,
+            "hoops": [],
+            "offside": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "fault": false,
+            "remedy": "none",
+            "entered_court": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "id": "replay_restores_score_and_turn",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "player": 0,
+            "ball": 0,
+            "hoops": [
+              0
+            ],
+            "offside": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "fault": false,
+            "remedy": "none",
+            "entered_court": true
+          }
+        },
+        {
+          "type": "replay_last",
+          "params": {
+            "reason": "outside_interference"
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "impasse_new_toss",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "penalty_continuation",
+          "params": {
+            "reason": "impasse",
+            "cancel_hoops": 0
+          }
+        },
+        {
+          "type": "penalty_toss",
+          "params": {
+            "first_ball": 3,
+            "area": "E"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_ball": 3,
+        "next_player": 1,
+        "penalty_area": [
+          "E",
+          "E",
+          "E",
+          "E"
+        ]
+      }
+    },
+    {
+      "id": "impasse_does_not_remove_points",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [
+          0
+        ],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "penalty_continuation",
+        "params": {
+          "reason": "impasse",
+          "cancel_hoops": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "first_warning_no_loss",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "misconduct",
+          "params": {
+            "player": 0,
+            "severity": "ordinary"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "warnings": [
+          1,
+          0
+        ],
+        "next_ball": 0
+      }
+    },
+    {
+      "id": "second_warning_loses_next_stroke",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "misconduct",
+          "params": {
+            "player": 0,
+            "severity": "ordinary"
+          }
+        },
+        {
+          "type": "misconduct",
+          "params": {
+            "player": 0,
+            "severity": "ordinary"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "warnings": [
+          2,
+          0
+        ],
+        "next_ball": 1
+      }
+    },
+    {
+      "id": "third_warning_match_award",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [
+          0,
+          1,
+          0
+        ],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "misconduct",
+          "params": {
+            "player": 0,
+            "severity": "ordinary"
+          }
+        },
+        {
+          "type": "misconduct",
+          "params": {
+            "player": 0,
+            "severity": "ordinary"
+          }
+        },
+        {
+          "type": "misconduct",
+          "params": {
+            "player": 0,
+            "severity": "ordinary"
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "player_b"
+        ]
+      },
+      "data": {
+        "phase": "finished",
+        "blue_owner": 0,
+        "next_ball": 1,
+        "hoops": [
+          0,
+          1,
+          0
+        ],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          6
+        ],
+        "warnings": [
+          3,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": 1,
+        "reason": "misconduct"
+      }
+    },
+    {
+      "id": "future_stroke_loss",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "overlap_penalty",
+          "params": {
+            "player": 1
+          }
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "player": 0,
+            "ball": 0,
+            "hoops": [],
+            "offside": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "fault": false,
+            "remedy": "none",
+            "entered_court": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_ball": 2,
+        "lost_strokes": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "declared_stroke_uses_turn",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "declare_stroke",
+          "params": {
+            "player": 0,
+            "ball": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_ball": 1
+      }
+    },
+    {
+      "id": "abandonment",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "abandon",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    },
+    {
+      "id": "invalid_ongoing_winning_score",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 0,
+        "hoops": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "offside": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "invalid_directed_offside_ball",
+      "initial_data": {
+        "phase": "ready",
+        "blue_owner": 0,
+        "next_ball": 1,
+        "hoops": [
+          0
+        ],
+        "offside": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "penalty_area": [
+          "none",
+          "D",
+          "none",
+          "none"
+        ],
+        "lost_strokes": [
+          0,
+          0
+        ],
+        "awarded": [
+          0,
+          0
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "last": null,
+        "last_actor": null,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

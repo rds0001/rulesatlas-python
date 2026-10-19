@@ -1,0 +1,1005 @@
+{
+  "profile_id": "S121",
+  "ruleset_id": "builtin.s121.qualification",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "athlete_0"
+    },
+    {
+      "id": "athlete_1"
+    },
+    {
+      "id": "athlete_2"
+    },
+    {
+      "id": "athlete_3"
+    },
+    {
+      "id": "athlete_4"
+    },
+    {
+      "id": "athlete_5"
+    },
+    {
+      "id": "athlete_6"
+    },
+    {
+      "id": "athlete_7"
+    },
+    {
+      "id": "athlete_8"
+    },
+    {
+      "id": "athlete_9"
+    },
+    {
+      "id": "athlete_10"
+    },
+    {
+      "id": "athlete_11"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "configure",
+      "actions": [
+        {
+          "type": "configure",
+          "params": {
+            "places": 8,
+            "qualifying_mm": 71000
+          }
+        }
+      ],
+      "data": {
+        "configured": true,
+        "places": 8,
+        "qualifying_mm": 71000,
+        "current": 0,
+        "status": [
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active"
+        ],
+        "attempts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      }
+    },
+    {
+      "id": "normal_mark",
+      "initial_data": {
+        "configured": true,
+        "places": 8,
+        "qualifying_mm": 71000,
+        "current": 0,
+        "status": [
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active"
+        ],
+        "attempts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      "actions": [
+        {
+          "type": "attempt",
+          "params": {
+            "kind": "valid",
+            "distance_mm": 70000
+          }
+        }
+      ],
+      "data": {
+        "configured": true,
+        "places": 8,
+        "qualifying_mm": 71000,
+        "current": 1,
+        "status": [
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active"
+        ],
+        "attempts": [
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 70000
+            }
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      }
+    },
+    {
+      "id": "precision_rejected",
+      "initial_data": {
+        "configured": true,
+        "places": 8,
+        "qualifying_mm": 71000,
+        "current": 1,
+        "status": [
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active"
+        ],
+        "attempts": [
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 70001
+            }
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "automatic_qualifier_skipped",
+      "initial_data": {
+        "configured": true,
+        "places": 8,
+        "qualifying_mm": 71000,
+        "current": 13,
+        "status": [
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active"
+        ],
+        "attempts": [
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 71000
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "attempt",
+          "params": {
+            "kind": "foul",
+            "distance_mm": 0
+          }
+        }
+      ],
+      "data": {
+        "configured": true,
+        "places": 8,
+        "qualifying_mm": 71000,
+        "current": 14,
+        "status": [
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active"
+        ],
+        "attempts": [
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 71000
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "second_best_tiebreak",
+      "initial_data": {
+        "configured": true,
+        "places": 1,
+        "qualifying_mm": null,
+        "current": 35,
+        "status": [
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active"
+        ],
+        "attempts": [
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 70000
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69980
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 70000
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69990
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 69800
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69780
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 69700
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69680
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 69600
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69580
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 69500
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69480
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 69400
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69380
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 69300
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69280
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 69200
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69180
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 69100
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69080
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 69000
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 68980
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 68900
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 68880
+            }
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "attempt",
+          "params": {
+            "kind": "pass",
+            "distance_mm": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "athlete_1"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "equal_marks_shared_rank",
+      "initial_data": {
+        "configured": true,
+        "places": 1,
+        "qualifying_mm": null,
+        "current": 35,
+        "status": [
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active"
+        ],
+        "attempts": [
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 70000
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69990
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 70000
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69990
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 69800
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69780
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 69700
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69680
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 69600
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69580
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 69500
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69480
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 69400
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69380
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 69300
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69280
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 69200
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69180
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 69100
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 69080
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 69000
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 68980
+            },
+            {
+              "kind": "foul",
+              "distance_mm": 0
+            }
+          ],
+          [
+            {
+              "kind": "valid",
+              "distance_mm": 68900
+            },
+            {
+              "kind": "valid",
+              "distance_mm": 68880
+            }
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "attempt",
+          "params": {
+            "kind": "foul",
+            "distance_mm": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "athlete_0",
+          "athlete_1"
+        ],
+        "placements": [
+          {
+            "player_id": "athlete_0",
+            "place": 1,
+            "best_mm": 70000,
+            "qualified": true
+          },
+          {
+            "player_id": "athlete_1",
+            "place": 1,
+            "best_mm": 70000,
+            "qualified": true
+          },
+          {
+            "player_id": "athlete_2",
+            "place": 3,
+            "best_mm": 69800,
+            "qualified": false
+          },
+          {
+            "player_id": "athlete_3",
+            "place": 4,
+            "best_mm": 69700,
+            "qualified": false
+          },
+          {
+            "player_id": "athlete_4",
+            "place": 5,
+            "best_mm": 69600,
+            "qualified": false
+          },
+          {
+            "player_id": "athlete_5",
+            "place": 6,
+            "best_mm": 69500,
+            "qualified": false
+          },
+          {
+            "player_id": "athlete_6",
+            "place": 7,
+            "best_mm": 69400,
+            "qualified": false
+          },
+          {
+            "player_id": "athlete_7",
+            "place": 8,
+            "best_mm": 69300,
+            "qualified": false
+          },
+          {
+            "player_id": "athlete_8",
+            "place": 9,
+            "best_mm": 69200,
+            "qualified": false
+          },
+          {
+            "player_id": "athlete_9",
+            "place": 10,
+            "best_mm": 69100,
+            "qualified": false
+          },
+          {
+            "player_id": "athlete_10",
+            "place": 11,
+            "best_mm": 69000,
+            "qualified": false
+          },
+          {
+            "player_id": "athlete_11",
+            "place": 12,
+            "best_mm": 68900,
+            "qualified": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "withdraw_current",
+      "initial_data": {
+        "configured": true,
+        "places": 8,
+        "qualifying_mm": 71000,
+        "current": 0,
+        "status": [
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active"
+        ],
+        "attempts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      "actions": [
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "wrong_actor",
+      "initial_data": {
+        "configured": true,
+        "places": 8,
+        "qualifying_mm": 71000,
+        "current": 0,
+        "status": [
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active"
+        ],
+        "attempts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      "action": {
+        "type": "attempt",
+        "actor": "athlete_1",
+        "params": {
+          "kind": "valid",
+          "distance_mm": 70000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

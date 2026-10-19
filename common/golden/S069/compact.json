@@ -1,0 +1,783 @@
+{
+  "profile_id": "S069",
+  "ruleset_id": "builtin.bjj.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "white"
+    },
+    {
+      "id": "blue"
+    }
+  ],
+  "cases": [
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "resume",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "fighting",
+        "remaining_ms": 600000,
+        "running": true,
+        "points": [
+          0,
+          0
+        ],
+        "advantages": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "technical_point_values",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 600000,
+        "running": true,
+        "points": [
+          0,
+          0
+        ],
+        "advantages": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_points",
+          "params": {
+            "player": 0,
+            "technique": "takedown"
+          }
+        },
+        {
+          "type": "award_points",
+          "params": {
+            "player": 0,
+            "technique": "guard_pass"
+          }
+        },
+        {
+          "type": "award_points",
+          "params": {
+            "player": 1,
+            "technique": "back_control"
+          }
+        }
+      ],
+      "data": {
+        "phase": "fighting",
+        "remaining_ms": 600000,
+        "running": true,
+        "points": [
+          5,
+          4
+        ],
+        "advantages": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "unknown_technique_rejected",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 600000,
+        "running": true,
+        "points": [
+          0,
+          0
+        ],
+        "advantages": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "award_points",
+        "params": {
+          "player": 0,
+          "technique": "punch"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "first_penalty_warning",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 600000,
+        "running": true,
+        "points": [
+          0,
+          0
+        ],
+        "advantages": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "penalize",
+          "params": {
+            "players": [
+              0
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "fighting",
+        "remaining_ms": 600000,
+        "running": true,
+        "points": [
+          0,
+          0
+        ],
+        "advantages": [
+          0,
+          0
+        ],
+        "penalties": [
+          1,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "second_penalty_advantage",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 600000,
+        "running": true,
+        "points": [
+          0,
+          0
+        ],
+        "advantages": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "penalize",
+          "params": {
+            "players": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "penalize",
+          "params": {
+            "players": [
+              0
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "fighting",
+        "remaining_ms": 600000,
+        "running": true,
+        "points": [
+          0,
+          0
+        ],
+        "advantages": [
+          0,
+          1
+        ],
+        "penalties": [
+          2,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "third_penalty_two_points",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 600000,
+        "running": true,
+        "points": [
+          0,
+          0
+        ],
+        "advantages": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "penalize",
+          "params": {
+            "players": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "penalize",
+          "params": {
+            "players": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "penalize",
+          "params": {
+            "players": [
+              0
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "fighting",
+        "remaining_ms": 600000,
+        "running": true,
+        "points": [
+          0,
+          2
+        ],
+        "advantages": [
+          0,
+          1
+        ],
+        "penalties": [
+          3,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "fourth_penalty_disqualifies",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 600000,
+        "running": true,
+        "points": [
+          0,
+          0
+        ],
+        "advantages": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "penalize",
+          "params": {
+            "players": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "penalize",
+          "params": {
+            "players": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "penalize",
+          "params": {
+            "players": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "penalize",
+          "params": {
+            "players": [
+              0
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "disqualification",
+        "winners": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "id": "simultaneous_fourth_penalties_no_winner",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 600000,
+        "running": true,
+        "points": [
+          2,
+          2
+        ],
+        "advantages": [
+          1,
+          1
+        ],
+        "penalties": [
+          3,
+          3
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "penalize",
+          "params": {
+            "players": [
+              0,
+              1
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "disqualification",
+        "winners": [],
+        "losers": [
+          "white",
+          "blue"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "time_expiry_requires_review",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 600000,
+        "running": true,
+        "points": [
+          0,
+          0
+        ],
+        "advantages": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "advance_clock",
+          "params": {
+            "elapsed_ms": 600000
+          }
+        }
+      ],
+      "data": {
+        "phase": "review",
+        "remaining_ms": 0,
+        "running": false,
+        "points": [
+          0,
+          0
+        ],
+        "advantages": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      },
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    },
+    {
+      "id": "higher_points_win",
+      "initial_data": {
+        "phase": "review",
+        "remaining_ms": 0,
+        "running": false,
+        "points": [
+          4,
+          2
+        ],
+        "advantages": [
+          0,
+          3
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "white"
+        ],
+        "reason": "score"
+      }
+    },
+    {
+      "id": "advantages_break_point_tie",
+      "initial_data": {
+        "phase": "review",
+        "remaining_ms": 0,
+        "running": false,
+        "points": [
+          4,
+          4
+        ],
+        "advantages": [
+          0,
+          1
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "id": "fewer_penalties_break_remaining_tie",
+      "initial_data": {
+        "phase": "review",
+        "remaining_ms": 0,
+        "running": false,
+        "points": [
+          0,
+          0
+        ],
+        "advantages": [
+          0,
+          0
+        ],
+        "penalties": [
+          1,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "id": "complete_tie_needs_referee",
+      "initial_data": {
+        "phase": "review",
+        "remaining_ms": 0,
+        "running": false,
+        "points": [
+          0,
+          0
+        ],
+        "advantages": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "referee_selects_tied_winner",
+      "initial_data": {
+        "phase": "review",
+        "remaining_ms": 0,
+        "running": false,
+        "points": [
+          0,
+          0
+        ],
+        "advantages": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "referee_decision",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "white"
+        ],
+        "reason": "referee_decision"
+      }
+    },
+    {
+      "id": "referee_cannot_override_scoring_lead",
+      "initial_data": {
+        "phase": "review",
+        "remaining_ms": 0,
+        "running": false,
+        "points": [
+          2,
+          0
+        ],
+        "advantages": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "referee_decision",
+        "params": {
+          "winner": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "paused_clock_cannot_advance",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 600000,
+        "running": true,
+        "points": [
+          0,
+          0
+        ],
+        "advantages": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "pause",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "advance_clock",
+        "params": {
+          "elapsed_ms": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "submission",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 600000,
+        "running": true,
+        "points": [
+          0,
+          0
+        ],
+        "advantages": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "end_contest",
+          "params": {
+            "loser": 0,
+            "reason": "submission"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "blue"
+        ],
+        "reason": "submission"
+      }
+    },
+    {
+      "id": "penalty_missing_automatic_award_invalid",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 600000,
+        "running": true,
+        "points": [
+          0,
+          0
+        ],
+        "advantages": [
+          0,
+          0
+        ],
+        "penalties": [
+          2,
+          0
+        ],
+        "excluded": [],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

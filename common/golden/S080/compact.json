@@ -1,0 +1,3022 @@
+{
+  "profile_id": "S080",
+  "ruleset_id": "builtin.icestock.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "home"
+    },
+    {
+      "id": "away"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start_match",
+          "params": {
+            "first_team": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 0,
+        "last_team": null,
+        "board": [
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      }
+    },
+    {
+      "id": "first_valid_stock_changes_team",
+      "initial_data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 0,
+        "last_team": null,
+        "board": [
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      },
+      "actions": [
+        {
+          "type": "deliver_stock",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "board": [
+              {
+                "status": "live",
+                "rank": 2
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              }
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 1,
+        "last_team": 0,
+        "board": [
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      }
+    },
+    {
+      "id": "miss_requires_same_team",
+      "initial_data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 0,
+        "last_team": null,
+        "board": [
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      },
+      "actions": [
+        {
+          "type": "deliver_stock",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "board": [
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              }
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 0,
+        "last_team": 0,
+        "board": [
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      }
+    },
+    {
+      "id": "equal_distance_no_best_position",
+      "initial_data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 1,
+        "last_team": 0,
+        "board": [
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      },
+      "actions": [
+        {
+          "type": "deliver_stock",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "board": [
+              {
+                "status": "live",
+                "rank": 2
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "live",
+                "rank": 2
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              }
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 1,
+        "last_team": 1,
+        "board": [
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      }
+    },
+    {
+      "id": "closer_stock_changes_team",
+      "initial_data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 1,
+        "last_team": 0,
+        "board": [
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      },
+      "actions": [
+        {
+          "type": "deliver_stock",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "board": [
+              {
+                "status": "live",
+                "rank": 2
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "live",
+                "rank": 1
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              },
+              {
+                "status": "unplayed",
+                "rank": null
+              }
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 0,
+        "last_team": 1,
+        "board": [
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "live",
+            "rank": 1
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      }
+    },
+    {
+      "id": "wrong_team_rejected",
+      "initial_data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 1,
+        "last_team": 0,
+        "board": [
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      },
+      "action": {
+        "type": "deliver_stock",
+        "params": {
+          "team": 0,
+          "player": 1,
+          "board": [
+            {
+              "status": "live",
+              "rank": 2
+            },
+            {
+              "status": "unplayed",
+              "rank": null
+            },
+            {
+              "status": "unplayed",
+              "rank": null
+            },
+            {
+              "status": "unplayed",
+              "rank": null
+            },
+            {
+              "status": "live",
+              "rank": 1
+            },
+            {
+              "status": "unplayed",
+              "rank": null
+            },
+            {
+              "status": "unplayed",
+              "rank": null
+            },
+            {
+              "status": "unplayed",
+              "rank": null
+            }
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "imported_wrong_turn",
+      "initial_data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 0,
+        "last_team": 0,
+        "board": [
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      },
+      "valid": false
+    },
+    {
+      "id": "player_delivers_only_once",
+      "initial_data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 0,
+        "last_team": 0,
+        "board": [
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      },
+      "action": {
+        "type": "deliver_stock",
+        "params": {
+          "team": 0,
+          "player": 0,
+          "board": [
+            {
+              "status": "dead",
+              "rank": null
+            },
+            {
+              "status": "unplayed",
+              "rank": null
+            },
+            {
+              "status": "unplayed",
+              "rank": null
+            },
+            {
+              "status": "unplayed",
+              "rank": null
+            },
+            {
+              "status": "unplayed",
+              "rank": null
+            },
+            {
+              "status": "unplayed",
+              "rank": null
+            },
+            {
+              "status": "unplayed",
+              "rank": null
+            },
+            {
+              "status": "unplayed",
+              "rank": null
+            }
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "one_point_per_counting_stock",
+      "initial_data": {
+        "phase": "end_review",
+        "first_team": 0,
+        "turn": null,
+        "last_team": 1,
+        "board": [
+          {
+            "status": "live",
+            "rank": 1
+          },
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "live",
+            "rank": 3
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      },
+      "legal_constraints": {
+        "provisional_end_score": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "id": "end_starter_alternates",
+      "initial_data": {
+        "phase": "end_review",
+        "first_team": 0,
+        "turn": null,
+        "last_team": 1,
+        "board": [
+          {
+            "status": "live",
+            "rank": 1
+          },
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "live",
+            "rank": 3
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      },
+      "actions": [
+        {
+          "type": "confirm_end",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 1,
+        "last_team": null,
+        "board": [
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          2,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": [
+          [
+            2,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "equal_nearest_scores_zero",
+      "initial_data": {
+        "phase": "end_review",
+        "first_team": 0,
+        "turn": null,
+        "last_team": 1,
+        "board": [
+          {
+            "status": "live",
+            "rank": 1
+          },
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "live",
+            "rank": 1
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      },
+      "legal_constraints": {
+        "provisional_end_score": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "mutual_early_end",
+      "initial_data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 1,
+        "last_team": 0,
+        "board": [
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      },
+      "actions": [
+        {
+          "type": "agree_end",
+          "params": {}
+        },
+        {
+          "type": "confirm_end",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 1,
+        "last_team": null,
+        "board": [
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          1,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": [
+          [
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "no_unilateral_early_confirmation",
+      "initial_data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 1,
+        "last_team": 0,
+        "board": [
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      },
+      "action": {
+        "type": "confirm_end",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "official_repeat_end",
+      "initial_data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 1,
+        "last_team": 0,
+        "board": [
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      },
+      "actions": [
+        {
+          "type": "assess_penalty",
+          "params": {
+            "team": 0,
+            "points": 1
+          }
+        },
+        {
+          "type": "repeat_end",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 0,
+        "last_team": null,
+        "board": [
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          1,
+          0
+        ],
+        "end_scores": []
+      }
+    },
+    {
+      "id": "measurement_changes_score",
+      "initial_data": {
+        "phase": "end_review",
+        "first_team": 0,
+        "turn": null,
+        "last_team": 1,
+        "board": [
+          {
+            "status": "live",
+            "rank": 1
+          },
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "live",
+            "rank": 3
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      },
+      "actions": [
+        {
+          "type": "measure_stocks",
+          "params": {
+            "board": [
+              {
+                "status": "live",
+                "rank": 1
+              },
+              {
+                "status": "live",
+                "rank": 2
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "live",
+                "rank": 1
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              },
+              {
+                "status": "dead",
+                "rank": null
+              }
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "provisional_end_score": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "sixth_end_enters_match_review",
+      "initial_data": {
+        "phase": "end_review",
+        "first_team": 0,
+        "turn": null,
+        "last_team": 1,
+        "board": [
+          {
+            "status": "live",
+            "rank": 1
+          },
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "live",
+            "rank": 3
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_end",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "match_review",
+        "first_team": 0,
+        "turn": null,
+        "last_team": 1,
+        "board": [
+          {
+            "status": "live",
+            "rank": 1
+          },
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "live",
+            "rank": 3
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          2,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "confirm_winner",
+      "initial_data": {
+        "phase": "match_review",
+        "first_team": 0,
+        "turn": null,
+        "last_team": 1,
+        "board": [
+          {
+            "status": "live",
+            "rank": 1
+          },
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "live",
+            "rank": 3
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          2,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_match",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "home"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "penalty_changes_match_winner",
+      "initial_data": {
+        "phase": "match_review",
+        "first_team": 0,
+        "turn": null,
+        "last_team": 1,
+        "board": [
+          {
+            "status": "live",
+            "rank": 1
+          },
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "live",
+            "rank": 3
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          2,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "assess_penalty",
+          "params": {
+            "team": 0,
+            "points": 3
+          }
+        },
+        {
+          "type": "confirm_match",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "away"
+        ]
+      }
+    },
+    {
+      "id": "penalty_can_make_draw",
+      "initial_data": {
+        "phase": "match_review",
+        "first_team": 0,
+        "turn": null,
+        "last_team": 1,
+        "board": [
+          {
+            "status": "live",
+            "rank": 1
+          },
+          {
+            "status": "live",
+            "rank": 2
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "live",
+            "rank": 3
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          },
+          {
+            "status": "dead",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          2,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "assess_penalty",
+          "params": {
+            "team": 0,
+            "points": 2
+          }
+        },
+        {
+          "type": "confirm_match",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw"
+      }
+    },
+    {
+      "id": "three_players_can_continue",
+      "initial_data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 0,
+        "last_team": null,
+        "board": [
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      },
+      "actions": [
+        {
+          "type": "set_available",
+          "params": {
+            "team": 0,
+            "player": 3,
+            "available": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "available_players": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "id": "two_players_require_adjudication",
+      "initial_data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 0,
+        "last_team": null,
+        "board": [
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      },
+      "actions": [
+        {
+          "type": "disqualify_player",
+          "params": {
+            "team": 0,
+            "player": 3
+          }
+        },
+        {
+          "type": "disqualify_player",
+          "params": {
+            "team": 0,
+            "player": 2
+          }
+        }
+      ],
+      "outcome": {
+        "status": "awaiting_adjudication",
+        "reason": "competition_decision_required"
+      }
+    },
+    {
+      "id": "dismissed_player_cannot_return",
+      "initial_data": {
+        "phase": "playing",
+        "first_team": 0,
+        "turn": 0,
+        "last_team": null,
+        "board": [
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          },
+          {
+            "status": "unplayed",
+            "rank": null
+          }
+        ],
+        "available": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "dismissed": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "early_end": false,
+        "scores": [
+          0,
+          0
+        ],
+        "penalties": [
+          0,
+          0
+        ],
+        "end_scores": []
+      },
+      "actions": [
+        {
+          "type": "disqualify_player",
+          "params": {
+            "team": 0,
+            "player": 3
+          }
+        }
+      ],
+      "action": {
+        "type": "set_available",
+        "params": {
+          "team": 0,
+          "player": 3,
+          "available": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

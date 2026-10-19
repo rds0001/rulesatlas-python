@@ -1,0 +1,6752 @@
+{
+  "profile_id": "S152",
+  "ruleset_id": "builtin.eventing.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "p0"
+    },
+    {
+      "id": "p1"
+    },
+    {
+      "id": "p2"
+    },
+    {
+      "id": "p3"
+    },
+    {
+      "id": "p4"
+    },
+    {
+      "id": "p5"
+    },
+    {
+      "id": "p6"
+    },
+    {
+      "id": "p7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "dressage_before_cross_country",
+      "action": {
+        "type": "record_cross_country",
+        "params": {
+          "player": 0,
+          "completed": 12,
+          "refusals": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "frangibles": 0,
+          "missed_flags": 0,
+          "dangerous_riding": 0,
+          "time_ms": 360000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "all_dressage_sheets_required",
+      "actions": [
+        {
+          "type": "record_dressage",
+          "params": {
+            "player": 0,
+            "percentage_bp": 7000,
+            "collective_half_points": 80,
+            "errors": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "next_phase",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "dressage_advances_to_cross_country",
+      "actions": [
+        {
+          "type": "record_dressage",
+          "params": {
+            "player": 0,
+            "percentage_bp": 7000,
+            "collective_half_points": 80,
+            "errors": 0
+          }
+        },
+        {
+          "type": "record_dressage",
+          "params": {
+            "player": 1,
+            "percentage_bp": 7000,
+            "collective_half_points": 80,
+            "errors": 0
+          }
+        },
+        {
+          "type": "record_dressage",
+          "params": {
+            "player": 2,
+            "percentage_bp": 7000,
+            "collective_half_points": 80,
+            "errors": 0
+          }
+        },
+        {
+          "type": "record_dressage",
+          "params": {
+            "player": 3,
+            "percentage_bp": 7000,
+            "collective_half_points": 80,
+            "errors": 0
+          }
+        },
+        {
+          "type": "record_dressage",
+          "params": {
+            "player": 4,
+            "percentage_bp": 7000,
+            "collective_half_points": 80,
+            "errors": 0
+          }
+        },
+        {
+          "type": "record_dressage",
+          "params": {
+            "player": 5,
+            "percentage_bp": 7000,
+            "collective_half_points": 80,
+            "errors": 0
+          }
+        },
+        {
+          "type": "record_dressage",
+          "params": {
+            "player": 6,
+            "percentage_bp": 7000,
+            "collective_half_points": 80,
+            "errors": 0
+          }
+        },
+        {
+          "type": "record_dressage",
+          "params": {
+            "player": 7,
+            "percentage_bp": 7000,
+            "collective_half_points": 80,
+            "errors": 0
+          }
+        },
+        {
+          "type": "next_phase",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "cross_country",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "no_duplicate_dressage_sheet",
+      "actions": [
+        {
+          "type": "record_dressage",
+          "params": {
+            "player": 0,
+            "percentage_bp": 7000,
+            "collective_half_points": 80,
+            "errors": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "record_dressage",
+        "params": {
+          "player": 0,
+          "percentage_bp": 7000,
+          "collective_half_points": 80,
+          "errors": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "third_dressage_error_eliminates",
+      "actions": [
+        {
+          "type": "record_dressage",
+          "params": {
+            "player": 0,
+            "percentage_bp": null,
+            "collective_half_points": 80,
+            "errors": 3
+          }
+        }
+      ],
+      "legal_constraints": {
+        "eligible": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": "third_error_cannot_have_scored_percentage",
+      "action": {
+        "type": "record_dressage",
+        "params": {
+          "player": 0,
+          "percentage_bp": 7000,
+          "collective_half_points": 80,
+          "errors": 3
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "cross_country_third_refusal_eliminates",
+      "initial_data": {
+        "phase": "cross_country",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "record_cross_country",
+          "params": {
+            "player": 0,
+            "completed": 12,
+            "refusals": [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "frangibles": 0,
+            "missed_flags": 0,
+            "dangerous_riding": 0,
+            "time_ms": 360000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "eligible": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": "incomplete_course_eliminates",
+      "initial_data": {
+        "phase": "cross_country",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "record_cross_country",
+          "params": {
+            "player": 0,
+            "completed": 11,
+            "refusals": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "frangibles": 0,
+            "missed_flags": 0,
+            "dangerous_riding": 0,
+            "time_ms": 360000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "eligible": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": "cross_country_time_limit_eliminates",
+      "initial_data": {
+        "phase": "cross_country",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "record_cross_country",
+          "params": {
+            "player": 0,
+            "completed": 12,
+            "refusals": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "frangibles": 0,
+            "missed_flags": 0,
+            "dangerous_riding": 0,
+            "time_ms": 720001
+          }
+        }
+      ],
+      "legal_constraints": {
+        "eligible": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": "exact_cross_country_time_limit_allowed",
+      "initial_data": {
+        "phase": "cross_country",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "record_cross_country",
+          "params": {
+            "player": 0,
+            "completed": 12,
+            "refusals": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "frangibles": 0,
+            "missed_flags": 0,
+            "dangerous_riding": 0,
+            "time_ms": 720000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "eligible": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": "refusal_vector_matches_course",
+      "initial_data": {
+        "phase": "cross_country",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": null,
+            "jump": null
+          }
+        ]
+      },
+      "action": {
+        "type": "record_cross_country",
+        "params": {
+          "player": 0,
+          "completed": 12,
+          "refusals": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "frangibles": 0,
+          "missed_flags": 0,
+          "dangerous_riding": 0,
+          "time_ms": 360000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "jumping_second_refusal_eliminates",
+      "initial_data": {
+        "phase": "jumping",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "record_jumping",
+          "params": {
+            "player": 0,
+            "completed": 12,
+            "knockdowns": 0,
+            "refusals": 2,
+            "time_ms": 80000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "eligible": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": "jumping_time_limit_eliminates",
+      "initial_data": {
+        "phase": "jumping",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "record_jumping",
+          "params": {
+            "player": 0,
+            "completed": 12,
+            "knockdowns": 0,
+            "refusals": 0,
+            "time_ms": 160001
+          }
+        }
+      ],
+      "legal_constraints": {
+        "eligible": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": "more_knockdowns_than_completed_efforts_rejected",
+      "initial_data": {
+        "phase": "jumping",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": null
+          }
+        ]
+      },
+      "action": {
+        "type": "record_jumping",
+        "params": {
+          "player": 0,
+          "completed": 2,
+          "knockdowns": 3,
+          "refusals": 0,
+          "time_ms": 80000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "exact_final_tie_retained",
+      "initial_data": {
+        "phase": "review",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "p0",
+          "p1",
+          "p2",
+          "p3",
+          "p4",
+          "p5",
+          "p6",
+          "p7"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "all_withdrawn_no_contest",
+      "actions": [
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 1
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 2
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 3
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 4
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 5
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 6
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 7
+          }
+        },
+        {
+          "type": "next_phase",
+          "params": {}
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "course_configuration_locks_after_first_sheet",
+      "actions": [
+        {
+          "type": "record_dressage",
+          "params": {
+            "player": 0,
+            "percentage_bp": 7000,
+            "collective_half_points": 80,
+            "errors": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "configure",
+        "params": {
+          "xc_fences": 10,
+          "jump_efforts": 10,
+          "xc_optimum_ms": 300000,
+          "jump_allowed_ms": 70000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "dressage_half_up_rounding",
+      "initial_data": {
+        "phase": "review",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 6665,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "p0",
+            "place": 1,
+            "penalty_tenths": 334
+          }
+        ]
+      }
+    },
+    {
+      "id": "dressage_below_half_rounds_down",
+      "initial_data": {
+        "phase": "review",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 6666,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "p0",
+            "place": 1,
+            "penalty_tenths": 333
+          }
+        ]
+      }
+    },
+    {
+      "id": "first_xc_refusal_twenty",
+      "initial_data": {
+        "phase": "review",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "p0",
+            "place": 1,
+            "penalty_tenths": 500
+          }
+        ]
+      }
+    },
+    {
+      "id": "second_same_fence_refusal_adds_forty",
+      "initial_data": {
+        "phase": "review",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "p0",
+            "place": 1,
+            "penalty_tenths": 900
+          }
+        ]
+      }
+    },
+    {
+      "id": "two_different_fence_refusals_add_twenty_each",
+      "initial_data": {
+        "phase": "review",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "p0",
+            "place": 1,
+            "penalty_tenths": 700
+          }
+        ]
+      }
+    },
+    {
+      "id": "cross_country_special_fault_values",
+      "initial_data": {
+        "phase": "review",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 1,
+              "missed_flags": 1,
+              "dangerous_riding": 1,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "p0",
+            "place": 1,
+            "penalty_tenths": 810
+          }
+        ]
+      }
+    },
+    {
+      "id": "cross_country_commenced_second",
+      "initial_data": {
+        "phase": "review",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360001
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "p0",
+            "place": 1,
+            "penalty_tenths": 304
+          }
+        ]
+      }
+    },
+    {
+      "id": "jumping_obstacle_penalties",
+      "initial_data": {
+        "phase": "review",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 1,
+              "refusals": 1,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "p0",
+            "place": 1,
+            "penalty_tenths": 380
+          }
+        ]
+      }
+    },
+    {
+      "id": "jumping_exact_allowed_time",
+      "initial_data": {
+        "phase": "review",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "p0",
+            "place": 1,
+            "penalty_tenths": 300
+          }
+        ]
+      }
+    },
+    {
+      "id": "jumping_one_millisecond_over",
+      "initial_data": {
+        "phase": "review",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80001
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "p0",
+            "place": 1,
+            "penalty_tenths": 304
+          }
+        ]
+      }
+    },
+    {
+      "id": "tie_prefers_lower_cross_country_penalties",
+      "initial_data": {
+        "phase": "review",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 5000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "p1"
+        ]
+      }
+    },
+    {
+      "id": "tie_prefers_closest_cross_country_time",
+      "initial_data": {
+        "phase": "review",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 350000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 355000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "p1"
+        ]
+      }
+    },
+    {
+      "id": "tie_prefers_lower_jumping_penalties",
+      "initial_data": {
+        "phase": "review",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 1,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 6600,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "p1"
+        ]
+      }
+    },
+    {
+      "id": "tie_prefers_faster_jumping_time",
+      "initial_data": {
+        "phase": "review",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 79000
+            }
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 78000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "p1"
+        ]
+      }
+    },
+    {
+      "id": "final_tiebreak_collective_marks",
+      "initial_data": {
+        "phase": "review",
+        "xc_fences": 12,
+        "jump_efforts": 12,
+        "xc_optimum_ms": 360000,
+        "jump_allowed_ms": 80000,
+        "entrants": [
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "eligible",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 90,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          },
+          {
+            "status": "withdrawn",
+            "dressage": {
+              "percentage_bp": 7000,
+              "collective_half_points": 80,
+              "errors": 0
+            },
+            "xc": {
+              "completed": 12,
+              "refusals": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "frangibles": 0,
+              "missed_flags": 0,
+              "dangerous_riding": 0,
+              "time_ms": 360000
+            },
+            "jump": {
+              "completed": 12,
+              "knockdowns": 0,
+              "refusals": 0,
+              "time_ms": 80000
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "p1"
+        ]
+      }
+    }
+  ]
+}

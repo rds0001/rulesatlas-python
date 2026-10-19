@@ -1,0 +1,859 @@
+{
+  "profile_id": "S035",
+  "ruleset_id": "builtin.padel.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "pair_a"
+    },
+    {
+      "id": "pair_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "configuration_required",
+      "action": {
+        "type": "rally",
+        "params": {
+          "winner": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "pair_orders_configured",
+      "actions": [
+        {
+          "type": "configure_pair",
+          "params": {
+            "team": 0,
+            "first_server": 0,
+            "right_receiver": 0
+          }
+        },
+        {
+          "type": "configure_pair",
+          "params": {
+            "team": 1,
+            "first_server": 0,
+            "right_receiver": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "started": false,
+        "decision": null,
+        "first_team": 0,
+        "set_started": false,
+        "configured": [
+          true,
+          true
+        ],
+        "first_members": [
+          0,
+          0
+        ],
+        "right_receivers": [
+          0,
+          0
+        ],
+        "faults": 0
+      },
+      "legal_constraints": {
+        "server_member": 0,
+        "receiver_member": 2,
+        "next_service_attempt": 1
+      }
+    },
+    {
+      "id": "first_fault_keeps_point",
+      "actions": [
+        {
+          "type": "configure_pair",
+          "params": {
+            "team": 0,
+            "first_server": 0,
+            "right_receiver": 0
+          }
+        },
+        {
+          "type": "configure_pair",
+          "params": {
+            "team": 1,
+            "first_server": 0,
+            "right_receiver": 0
+          }
+        },
+        {
+          "type": "service_fault",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "started": true,
+        "decision": null,
+        "first_team": 0,
+        "set_started": true,
+        "configured": [
+          true,
+          true
+        ],
+        "first_members": [
+          0,
+          0
+        ],
+        "right_receivers": [
+          0,
+          0
+        ],
+        "faults": 1
+      },
+      "legal_constraints": {
+        "next_service_attempt": 2
+      }
+    },
+    {
+      "id": "second_fault_loses_point",
+      "actions": [
+        {
+          "type": "configure_pair",
+          "params": {
+            "team": 0,
+            "first_server": 0,
+            "right_receiver": 0
+          }
+        },
+        {
+          "type": "configure_pair",
+          "params": {
+            "team": 1,
+            "first_server": 0,
+            "right_receiver": 0
+          }
+        },
+        {
+          "type": "service_fault",
+          "params": {}
+        },
+        {
+          "type": "service_fault",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          0,
+          1
+        ],
+        "server": 0,
+        "started": true,
+        "decision": null,
+        "first_team": 0,
+        "set_started": true,
+        "configured": [
+          true,
+          true
+        ],
+        "first_members": [
+          0,
+          0
+        ],
+        "right_receivers": [
+          0,
+          0
+        ],
+        "faults": 0
+      },
+      "legal_constraints": {
+        "receiver_member": 3
+      }
+    },
+    {
+      "id": "service_let_keeps_first_fault",
+      "actions": [
+        {
+          "type": "configure_pair",
+          "params": {
+            "team": 0,
+            "first_server": 0,
+            "right_receiver": 0
+          }
+        },
+        {
+          "type": "configure_pair",
+          "params": {
+            "team": 1,
+            "first_server": 0,
+            "right_receiver": 0
+          }
+        },
+        {
+          "type": "service_fault",
+          "params": {}
+        },
+        {
+          "type": "service_let",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "started": true,
+        "decision": null,
+        "first_team": 0,
+        "set_started": true,
+        "configured": [
+          true,
+          true
+        ],
+        "first_members": [
+          0,
+          0
+        ],
+        "right_receivers": [
+          0,
+          0
+        ],
+        "faults": 1
+      }
+    },
+    {
+      "id": "whole_point_replay_resets_service",
+      "actions": [
+        {
+          "type": "configure_pair",
+          "params": {
+            "team": 0,
+            "first_server": 0,
+            "right_receiver": 0
+          }
+        },
+        {
+          "type": "configure_pair",
+          "params": {
+            "team": 1,
+            "first_server": 0,
+            "right_receiver": 0
+          }
+        },
+        {
+          "type": "service_fault",
+          "params": {}
+        },
+        {
+          "type": "replay",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "started": true,
+        "decision": null,
+        "first_team": 0,
+        "set_started": true,
+        "configured": [
+          true,
+          true
+        ],
+        "first_members": [
+          0,
+          0
+        ],
+        "right_receivers": [
+          0,
+          0
+        ],
+        "faults": 0
+      }
+    },
+    {
+      "id": "member_cannot_change_midset",
+      "actions": [
+        {
+          "type": "configure_pair",
+          "params": {
+            "team": 0,
+            "first_server": 0,
+            "right_receiver": 0
+          }
+        },
+        {
+          "type": "configure_pair",
+          "params": {
+            "team": 1,
+            "first_server": 0,
+            "right_receiver": 0
+          }
+        },
+        {
+          "type": "rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "configure_pair",
+        "params": {
+          "team": 0,
+          "first_server": 1,
+          "right_receiver": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "third_game_second_member_serves",
+      "initial_data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          2,
+          0
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "started": true,
+        "decision": null,
+        "first_team": 0,
+        "set_started": true,
+        "configured": [
+          true,
+          true
+        ],
+        "first_members": [
+          0,
+          0
+        ],
+        "right_receivers": [
+          0,
+          0
+        ],
+        "faults": 0
+      },
+      "legal_constraints": {
+        "server_member": 1,
+        "receiver_member": 2
+      }
+    },
+    {
+      "id": "fourth_game_other_pair_second_member",
+      "initial_data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          3,
+          0
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 1,
+        "started": true,
+        "decision": null,
+        "first_team": 0,
+        "set_started": true,
+        "configured": [
+          true,
+          true
+        ],
+        "first_members": [
+          0,
+          0
+        ],
+        "right_receivers": [
+          0,
+          0
+        ],
+        "faults": 0
+      },
+      "legal_constraints": {
+        "server_member": 3,
+        "receiver_member": 0,
+        "current_set_end_changes": 2,
+        "service_court": "right"
+      }
+    },
+    {
+      "id": "advantage_required",
+      "initial_data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          3,
+          3
+        ],
+        "server": 0,
+        "started": true,
+        "decision": null,
+        "first_team": 0,
+        "set_started": true,
+        "configured": [
+          true,
+          true
+        ],
+        "first_members": [
+          0,
+          0
+        ],
+        "right_receivers": [
+          0,
+          0
+        ],
+        "faults": 0
+      },
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          4,
+          3
+        ],
+        "server": 0,
+        "started": true,
+        "decision": null,
+        "first_team": 0,
+        "set_started": true,
+        "configured": [
+          true,
+          true
+        ],
+        "first_members": [
+          0,
+          0
+        ],
+        "right_receivers": [
+          0,
+          0
+        ],
+        "faults": 0
+      }
+    },
+    {
+      "id": "return_from_advantage_to_deuce",
+      "initial_data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          4,
+          3
+        ],
+        "server": 0,
+        "started": true,
+        "decision": null,
+        "first_team": 0,
+        "set_started": true,
+        "configured": [
+          true,
+          true
+        ],
+        "first_members": [
+          0,
+          0
+        ],
+        "right_receivers": [
+          0,
+          0
+        ],
+        "faults": 0
+      },
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          3,
+          3
+        ],
+        "server": 0,
+        "started": true,
+        "decision": null,
+        "first_team": 0,
+        "set_started": true,
+        "configured": [
+          true,
+          true
+        ],
+        "first_members": [
+          0,
+          0
+        ],
+        "right_receivers": [
+          0,
+          0
+        ],
+        "faults": 0
+      }
+    },
+    {
+      "id": "tiebreak_second_service_block",
+      "initial_data": {
+        "phase": "tiebreak",
+        "sets": [],
+        "games": [
+          6,
+          6
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "started": true,
+        "decision": null,
+        "first_team": 0,
+        "set_started": true,
+        "configured": [
+          true,
+          true
+        ],
+        "first_members": [
+          0,
+          0
+        ],
+        "right_receivers": [
+          0,
+          0
+        ],
+        "faults": 0
+      },
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "server_member": 2,
+        "receiver_member": 1
+      }
+    },
+    {
+      "id": "tiebreak_third_service_block",
+      "initial_data": {
+        "phase": "tiebreak",
+        "sets": [],
+        "games": [
+          6,
+          6
+        ],
+        "points": [
+          2,
+          0
+        ],
+        "server": 1,
+        "started": true,
+        "decision": null,
+        "first_team": 0,
+        "set_started": true,
+        "configured": [
+          true,
+          true
+        ],
+        "first_members": [
+          0,
+          0
+        ],
+        "right_receivers": [
+          0,
+          0
+        ],
+        "faults": 0
+      },
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "server_member": 1,
+        "receiver_member": 3
+      }
+    },
+    {
+      "id": "new_set_requires_new_pair_orders",
+      "initial_data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          5,
+          0
+        ],
+        "points": [
+          3,
+          0
+        ],
+        "server": 1,
+        "started": true,
+        "decision": null,
+        "first_team": 0,
+        "set_started": true,
+        "configured": [
+          true,
+          true
+        ],
+        "first_members": [
+          0,
+          0
+        ],
+        "right_receivers": [
+          0,
+          0
+        ],
+        "faults": 0
+      },
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "game",
+        "sets": [
+          [
+            6,
+            0
+          ]
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "started": true,
+        "decision": null,
+        "first_team": 0,
+        "set_started": false,
+        "configured": [
+          false,
+          false
+        ],
+        "first_members": [
+          0,
+          0
+        ],
+        "right_receivers": [
+          0,
+          0
+        ],
+        "faults": 0
+      }
+    },
+    {
+      "id": "second_set_finishes_match",
+      "initial_data": {
+        "phase": "game",
+        "sets": [
+          [
+            6,
+            0
+          ]
+        ],
+        "games": [
+          5,
+          0
+        ],
+        "points": [
+          3,
+          0
+        ],
+        "server": 1,
+        "started": true,
+        "decision": null,
+        "first_team": 0,
+        "set_started": true,
+        "configured": [
+          true,
+          true
+        ],
+        "first_members": [
+          0,
+          0
+        ],
+        "right_receivers": [
+          0,
+          0
+        ],
+        "faults": 0
+      },
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "pair_a"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "walkover_after_service_let_rejected",
+      "actions": [
+        {
+          "type": "configure_pair",
+          "params": {
+            "team": 0,
+            "first_server": 0,
+            "right_receiver": 0
+          }
+        },
+        {
+          "type": "configure_pair",
+          "params": {
+            "team": 1,
+            "first_server": 0,
+            "right_receiver": 0
+          }
+        },
+        {
+          "type": "service_let",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "end_match",
+        "params": {
+          "kind": "walkover",
+          "player": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "unconfigured_started_set_invalid",
+      "initial_data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "started": true,
+        "decision": null,
+        "first_team": 0,
+        "set_started": true,
+        "configured": [
+          true,
+          false
+        ],
+        "first_members": [
+          0,
+          0
+        ],
+        "right_receivers": [
+          0,
+          0
+        ],
+        "faults": 0
+      },
+      "valid": false
+    }
+  ]
+}

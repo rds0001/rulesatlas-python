@@ -1,0 +1,723 @@
+{
+  "profile_id": "S029",
+  "ruleset_id": "builtin.tennis.best_of_three",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "data": {
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "phase": "game",
+        "decision": null
+      },
+      "status": "ongoing",
+      "winners": []
+    },
+    {
+      "id": "deuce_to_advantage",
+      "data": {
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          3,
+          3
+        ],
+        "server": 0,
+        "phase": "game",
+        "decision": null
+      },
+      "action": {
+        "type": "award_point",
+        "params": {
+          "player": 0
+        }
+      },
+      "expected_data": {
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          4,
+          3
+        ],
+        "server": 0,
+        "phase": "game",
+        "decision": null
+      }
+    },
+    {
+      "id": "advantage_lost",
+      "data": {
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          4,
+          3
+        ],
+        "server": 0,
+        "phase": "game",
+        "decision": null
+      },
+      "action": {
+        "type": "award_point",
+        "params": {
+          "player": 1
+        }
+      },
+      "expected_data": {
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          3,
+          3
+        ],
+        "server": 0,
+        "phase": "game",
+        "decision": null
+      }
+    },
+    {
+      "id": "advantage_game",
+      "data": {
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          4,
+          3
+        ],
+        "server": 0,
+        "phase": "game",
+        "decision": null
+      },
+      "action": {
+        "type": "award_point",
+        "params": {
+          "player": 0
+        }
+      },
+      "expected_data": {
+        "sets": [],
+        "games": [
+          1,
+          0
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 1,
+        "phase": "game",
+        "decision": null
+      }
+    },
+    {
+      "id": "set_boundary",
+      "data": {
+        "sets": [],
+        "games": [
+          5,
+          4
+        ],
+        "points": [
+          3,
+          0
+        ],
+        "server": 1,
+        "phase": "game",
+        "decision": null
+      },
+      "action": {
+        "type": "award_point",
+        "params": {
+          "player": 0
+        }
+      },
+      "expected_data": {
+        "sets": [
+          [
+            6,
+            4
+          ]
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "phase": "game",
+        "decision": null
+      }
+    },
+    {
+      "id": "tiebreak_entry",
+      "data": {
+        "sets": [],
+        "games": [
+          6,
+          5
+        ],
+        "points": [
+          0,
+          3
+        ],
+        "server": 1,
+        "phase": "game",
+        "decision": null
+      },
+      "action": {
+        "type": "award_point",
+        "params": {
+          "player": 1
+        }
+      },
+      "expected_data": {
+        "sets": [],
+        "games": [
+          6,
+          6
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "phase": "tiebreak",
+        "decision": null
+      }
+    },
+    {
+      "id": "tiebreak_first_server_switch",
+      "data": {
+        "sets": [],
+        "games": [
+          6,
+          6
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "phase": "tiebreak",
+        "decision": null
+      },
+      "action": {
+        "type": "award_point",
+        "params": {
+          "player": 0
+        }
+      },
+      "expected_data": {
+        "sets": [],
+        "games": [
+          6,
+          6
+        ],
+        "points": [
+          1,
+          0
+        ],
+        "server": 1,
+        "phase": "tiebreak",
+        "decision": null
+      }
+    },
+    {
+      "id": "tiebreak_two_point_service",
+      "data": {
+        "sets": [],
+        "games": [
+          6,
+          6
+        ],
+        "points": [
+          1,
+          0
+        ],
+        "server": 1,
+        "phase": "tiebreak",
+        "decision": null
+      },
+      "action": {
+        "type": "award_point",
+        "params": {
+          "player": 1
+        }
+      },
+      "expected_data": {
+        "sets": [],
+        "games": [
+          6,
+          6
+        ],
+        "points": [
+          1,
+          1
+        ],
+        "server": 1,
+        "phase": "tiebreak",
+        "decision": null
+      }
+    },
+    {
+      "id": "tiebreak_service_pair_ends",
+      "data": {
+        "sets": [],
+        "games": [
+          6,
+          6
+        ],
+        "points": [
+          1,
+          1
+        ],
+        "server": 1,
+        "phase": "tiebreak",
+        "decision": null
+      },
+      "action": {
+        "type": "award_point",
+        "params": {
+          "player": 1
+        }
+      },
+      "expected_data": {
+        "sets": [],
+        "games": [
+          6,
+          6
+        ],
+        "points": [
+          1,
+          2
+        ],
+        "server": 0,
+        "phase": "tiebreak",
+        "decision": null
+      }
+    },
+    {
+      "id": "match_tiebreak_win",
+      "data": {
+        "sets": [
+          [
+            6,
+            4
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "games": [
+          6,
+          6
+        ],
+        "points": [
+          6,
+          5
+        ],
+        "server": 0,
+        "phase": "tiebreak",
+        "decision": null
+      },
+      "action": {
+        "type": "award_point",
+        "params": {
+          "player": 0
+        }
+      },
+      "expected_data": {
+        "sets": [
+          [
+            6,
+            4
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            6
+          ]
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 1,
+        "phase": "finished",
+        "decision": null
+      },
+      "after_status": "terminal",
+      "after_winners": [
+        "alice"
+      ]
+    },
+    {
+      "id": "extended_tiebreak",
+      "data": {
+        "sets": [],
+        "games": [
+          6,
+          6
+        ],
+        "points": [
+          7,
+          7
+        ],
+        "server": 1,
+        "phase": "tiebreak",
+        "decision": null
+      },
+      "action": {
+        "type": "award_point",
+        "params": {
+          "player": 0
+        }
+      },
+      "expected_data": {
+        "sets": [],
+        "games": [
+          6,
+          6
+        ],
+        "points": [
+          8,
+          7
+        ],
+        "server": 0,
+        "phase": "tiebreak",
+        "decision": null
+      }
+    },
+    {
+      "id": "straight_sets",
+      "data": {
+        "sets": [
+          [
+            6,
+            0
+          ]
+        ],
+        "games": [
+          5,
+          0
+        ],
+        "points": [
+          3,
+          0
+        ],
+        "server": 1,
+        "phase": "game",
+        "decision": null
+      },
+      "action": {
+        "type": "award_point",
+        "params": {
+          "player": 0
+        }
+      },
+      "expected_data": {
+        "sets": [
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "phase": "finished",
+        "decision": null
+      },
+      "after_status": "terminal",
+      "after_winners": [
+        "alice"
+      ]
+    },
+    {
+      "id": "retirement",
+      "data": {
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          1,
+          0
+        ],
+        "server": 0,
+        "phase": "game",
+        "decision": null
+      },
+      "action": {
+        "type": "end_match",
+        "params": {
+          "kind": "retirement",
+          "player": 0
+        }
+      },
+      "expected_data": {
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          1,
+          0
+        ],
+        "server": 0,
+        "phase": "finished",
+        "decision": {
+          "kind": "retirement",
+          "player": 0
+        }
+      },
+      "after_status": "terminal",
+      "after_winners": [
+        "bob"
+      ]
+    },
+    {
+      "id": "walkover_before_play",
+      "data": {
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "phase": "game",
+        "decision": null
+      },
+      "action": {
+        "type": "end_match",
+        "params": {
+          "kind": "walkover",
+          "player": 1
+        }
+      },
+      "expected_data": {
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "phase": "finished",
+        "decision": {
+          "kind": "walkover",
+          "player": 1
+        }
+      },
+      "after_status": "terminal",
+      "after_winners": [
+        "alice"
+      ]
+    },
+    {
+      "id": "walkover_after_play_rejected",
+      "data": {
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          1,
+          0
+        ],
+        "server": 0,
+        "phase": "game",
+        "decision": null
+      },
+      "action": {
+        "type": "end_match",
+        "params": {
+          "kind": "walkover",
+          "player": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ],
+  "invalid_data": [
+    {
+      "sets": [],
+      "games": [
+        0,
+        0
+      ],
+      "points": [
+        4,
+        0
+      ],
+      "server": 0,
+      "phase": "game",
+      "decision": null
+    },
+    {
+      "sets": [],
+      "games": [
+        6,
+        0
+      ],
+      "points": [
+        0,
+        0
+      ],
+      "server": 0,
+      "phase": "game",
+      "decision": null
+    },
+    {
+      "sets": [],
+      "games": [
+        6,
+        6
+      ],
+      "points": [
+        0,
+        0
+      ],
+      "server": 0,
+      "phase": "game",
+      "decision": null
+    },
+    {
+      "sets": [],
+      "games": [
+        6,
+        6
+      ],
+      "points": [
+        7,
+        5
+      ],
+      "server": 0,
+      "phase": "tiebreak",
+      "decision": null
+    },
+    {
+      "sets": [
+        [
+          6,
+          5
+        ]
+      ],
+      "games": [
+        0,
+        0
+      ],
+      "points": [
+        0,
+        0
+      ],
+      "server": 0,
+      "phase": "game",
+      "decision": null
+    },
+    {
+      "sets": [],
+      "games": [
+        0,
+        0
+      ],
+      "points": [
+        1,
+        0
+      ],
+      "server": 1,
+      "phase": "game",
+      "decision": null
+    },
+    {
+      "sets": [
+        [
+          6,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      "games": [
+        0,
+        0
+      ],
+      "points": [
+        0,
+        0
+      ],
+      "server": 0,
+      "phase": "finished",
+      "decision": null
+    }
+  ]
+}

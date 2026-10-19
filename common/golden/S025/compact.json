@@ -1,0 +1,6073 @@
+{
+  "profile_id": "S025",
+  "ruleset_id": "builtin.kho_kho.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "team_a"
+    },
+    {
+      "id": "team_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start_match",
+          "params": {
+            "first_chaser": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      }
+    },
+    {
+      "id": "touch_out_one_point",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 1,
+            "kind": "touch"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          0
+        ],
+        "defenders": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "id": "same_out_twice_rejected",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 1,
+            "kind": "touch"
+          }
+        }
+      ],
+      "action": {
+        "type": "defender_out",
+        "params": {
+          "slot": 1,
+          "kind": "touch"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "next_batch_after_three_outs",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 0,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 1,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 2,
+            "kind": "touch"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "batch": 1,
+        "pending": [
+          3,
+          4,
+          5
+        ],
+        "defenders": [],
+        "needs_kho": true
+      }
+    },
+    {
+      "id": "new_batch_needs_kho_before_touch",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 0,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 1,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 2,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "enter_batch",
+          "params": {
+            "slots": [
+              3,
+              4,
+              5
+            ]
+          }
+        }
+      ],
+      "action": {
+        "type": "defender_out",
+        "params": {
+          "slot": 3,
+          "kind": "touch"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "one_kho_suffices_for_entered_batch",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 0,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 1,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 2,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "enter_batch",
+          "params": {
+            "slots": [
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "correct_kho",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 3,
+            "kind": "touch"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          4,
+          0
+        ],
+        "defenders": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "id": "self_out_does_not_need_attacker_handover",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 0,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 1,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 2,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "enter_batch",
+          "params": {
+            "slots": [
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 3,
+            "kind": "self_out"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          4,
+          0
+        ],
+        "needs_kho": true
+      }
+    },
+    {
+      "id": "missing_batch_after_two_khos_out",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 0,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 1,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 2,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "correct_kho",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "correct_kho",
+          "params": {
+            "player": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          6,
+          0
+        ],
+        "batch": 2,
+        "pending": [
+          6,
+          7,
+          8
+        ],
+        "needs_kho": true
+      }
+    },
+    {
+      "id": "partial_late_entry",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 0,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 1,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 2,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "enter_batch",
+          "params": {
+            "slots": [
+              3
+            ]
+          }
+        },
+        {
+          "type": "correct_kho",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "correct_kho",
+          "params": {
+            "player": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          5,
+          0
+        ],
+        "defenders": [
+          3
+        ],
+        "pending": []
+      }
+    },
+    {
+      "id": "wrong_batch_cannot_enter",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 0,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 1,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 2,
+            "kind": "touch"
+          }
+        }
+      ],
+      "action": {
+        "type": "enter_batch",
+        "params": {
+          "slots": [
+            6
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "cannot_kho_to_self",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "action": {
+        "type": "correct_kho",
+        "params": {
+          "player": 8
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "batches_cycle_in_order",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 0,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 1,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 2,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "correct_kho",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "enter_batch",
+          "params": {
+            "slots": [
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 3,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 4,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 5,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "correct_kho",
+          "params": {
+            "player": 1
+          }
+        },
+        {
+          "type": "enter_batch",
+          "params": {
+            "slots": [
+              6,
+              7,
+              8
+            ]
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 6,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 7,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 8,
+            "kind": "touch"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          9,
+          0
+        ],
+        "batch": 0,
+        "pending": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "id": "reorder_only_before_turn",
+      "actions": [
+        {
+          "type": "set_order",
+          "params": {
+            "team": 1,
+            "players": [
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "type": "start_match",
+          "params": {
+            "first_chaser": 0
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 0,
+            "kind": "touch"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "no_mid_turn_reorder",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "action": {
+        "type": "set_order",
+        "params": {
+          "team": 1,
+          "players": [
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            0
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "defender_contact_warning_then_out",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "defender_contact",
+          "params": {
+            "slot": 0
+          }
+        },
+        {
+          "type": "defender_contact",
+          "params": {
+            "slot": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          0
+        ],
+        "defenders": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "id": "active_defender_cannot_be_substituted",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 1,
+          "slot": 0,
+          "incoming": 9
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "out_defender_place_can_be_substituted_for_future_batch",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 0,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 1,
+            "slot": 0,
+            "incoming": 9
+          }
+        }
+      ],
+      "legal_constraints": {
+        "defenders": [
+          1,
+          2
+        ],
+        "score": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "incoming_attacker_must_give_kho",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slot": 8,
+            "incoming": 9
+          }
+        }
+      ],
+      "action": {
+        "type": "defender_out",
+        "params": {
+          "slot": 0,
+          "kind": "touch"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "substituted_attacker_handover",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slot": 8,
+            "incoming": 9
+          }
+        },
+        {
+          "type": "correct_kho",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 0,
+            "kind": "touch"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          0
+        ],
+        "chaser": 0
+      }
+    },
+    {
+      "id": "red_defender_out_and_replacement_cannot_join_current_batch",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "card",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "kind": "red"
+          }
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 1,
+            "slot": 0,
+            "incoming": 9
+          }
+        },
+        {
+          "type": "resume",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          0
+        ],
+        "defenders": [
+          1,
+          2
+        ],
+        "phase": "ready"
+      }
+    },
+    {
+      "id": "red_attacker_replaced_then_handover",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "card",
+          "params": {
+            "team": 0,
+            "player": 8,
+            "kind": "red"
+          }
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slot": 8,
+            "incoming": 9
+          }
+        },
+        {
+          "type": "resume",
+          "params": {}
+        },
+        {
+          "type": "correct_kho",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 0,
+            "kind": "touch"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "excluded_player_cannot_reenter",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "card",
+          "params": {
+            "team": 0,
+            "player": 8,
+            "kind": "red"
+          }
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slot": 8,
+            "incoming": 9
+          }
+        }
+      ],
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "slot": 7,
+          "incoming": 8
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "clock_expiry_and_five_minute_interval",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "ms": 540000
+          }
+        },
+        {
+          "type": "close_turn",
+          "params": {}
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "ms": 300000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "turn": 2,
+        "chasing": 1,
+        "clock_ms": 540000,
+        "phase": "ready"
+      }
+    },
+    {
+      "id": "official_stop_freezes_clock",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "official_stop",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "elapse",
+        "params": {
+          "ms": 1000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "early_turn_closure",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "close_early",
+          "params": {}
+        },
+        {
+          "type": "close_turn",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "turn": 2,
+        "phase": "interval"
+      }
+    },
+    {
+      "id": "follow_on_optional_at_nine",
+      "initial_data": {
+        "phase": "turn_end",
+        "turn": 2,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          10,
+          1
+        ],
+        "first_chaser": 0,
+        "chasing": 1,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "close_turn",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "follow_choice"
+      }
+    },
+    {
+      "id": "optional_follow_on_accepted",
+      "initial_data": {
+        "phase": "turn_end",
+        "turn": 2,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          10,
+          1
+        ],
+        "first_chaser": 0,
+        "chasing": 1,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "close_turn",
+          "params": {}
+        },
+        {
+          "type": "follow_on",
+          "params": {
+            "require": true
+          }
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "ms": 540000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "turn": 3,
+        "chasing": 1,
+        "followed_on": true
+      }
+    },
+    {
+      "id": "optional_follow_on_declined",
+      "initial_data": {
+        "phase": "turn_end",
+        "turn": 2,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          10,
+          1
+        ],
+        "first_chaser": 0,
+        "chasing": 1,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "close_turn",
+          "params": {}
+        },
+        {
+          "type": "follow_on",
+          "params": {
+            "require": false
+          }
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "ms": 540000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "turn": 3,
+        "chasing": 0,
+        "followed_on": false
+      }
+    },
+    {
+      "id": "follow_on_mandatory_above_nine",
+      "initial_data": {
+        "phase": "turn_end",
+        "turn": 2,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          12,
+          1
+        ],
+        "first_chaser": 0,
+        "chasing": 1,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "close_turn",
+          "params": {}
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "ms": 540000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "turn": 3,
+        "chasing": 1,
+        "followed_on": true
+      }
+    },
+    {
+      "id": "no_follow_on_below_nine",
+      "initial_data": {
+        "phase": "turn_end",
+        "turn": 2,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          8,
+          1
+        ],
+        "first_chaser": 0,
+        "chasing": 1,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "close_turn",
+          "params": {}
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "ms": 540000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "turn": 3,
+        "chasing": 0,
+        "followed_on": false
+      }
+    },
+    {
+      "id": "win_by_innings",
+      "initial_data": {
+        "phase": "turn_end",
+        "turn": 3,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          12,
+          7
+        ],
+        "first_chaser": 0,
+        "chasing": 1,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": true,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "close_turn",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_a"
+        ],
+        "reason": "innings"
+      }
+    },
+    {
+      "id": "follow_on_target_exceeded_requires_last_turn",
+      "initial_data": {
+        "phase": "turn_end",
+        "turn": 3,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          12,
+          13
+        ],
+        "first_chaser": 0,
+        "chasing": 1,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": true,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "close_turn",
+          "params": {}
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "ms": 300000
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 0,
+            "kind": "touch"
+          }
+        },
+        {
+          "type": "defender_out",
+          "params": {
+            "slot": 1,
+            "kind": "touch"
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_a"
+        ]
+      }
+    },
+    {
+      "id": "league_draw",
+      "initial_data": {
+        "phase": "turn_end",
+        "turn": 4,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          8,
+          8
+        ],
+        "first_chaser": 0,
+        "chasing": 1,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "close_turn",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw"
+      }
+    },
+    {
+      "id": "invalid_repeated_places",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "valid": false
+    },
+    {
+      "id": "invalid_active_batch",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          4
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "valid": false
+    },
+    {
+      "id": "invalid_expired_live_turn",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 0,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "valid": false
+    },
+    {
+      "id": "abandon_awaits_adjudication",
+      "initial_data": {
+        "phase": "ready",
+        "turn": 1,
+        "clock_ms": 540000,
+        "break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "first_chaser": 0,
+        "chasing": 0,
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "chaser": 8,
+        "batch": 0,
+        "defenders": [
+          0,
+          1,
+          2
+        ],
+        "pending": [],
+        "handoffs": 0,
+        "needs_kho": false,
+        "followed_on": false,
+        "yellow": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "contact_warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "abandon",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "profile_id": "S046",
+  "ruleset_id": "builtin.darts.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_count": 63,
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "triple_twenty",
+      "actions": [
+        {
+          "type": "throw",
+          "params": {
+            "segment": 20,
+            "multiplier": 3
+          }
+        }
+      ],
+      "data": {
+        "remaining": [
+          441,
+          501
+        ],
+        "turn": 0,
+        "darts_used": 1,
+        "turn_start": 501
+      }
+    },
+    {
+      "id": "double_out",
+      "initial_data": {
+        "remaining": [
+          40,
+          501
+        ],
+        "turn": 0,
+        "darts_used": 0,
+        "turn_start": 40
+      },
+      "actions": [
+        {
+          "type": "throw",
+          "params": {
+            "segment": 20,
+            "multiplier": 2
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "bull_checkout",
+      "initial_data": {
+        "remaining": [
+          50,
+          501
+        ],
+        "turn": 0,
+        "darts_used": 0,
+        "turn_start": 50
+      },
+      "actions": [
+        {
+          "type": "throw",
+          "params": {
+            "segment": 25,
+            "multiplier": 2
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      }
+    },
+    {
+      "id": "bust_restores_entire_turn",
+      "initial_data": {
+        "remaining": [
+          20,
+          501
+        ],
+        "turn": 0,
+        "darts_used": 1,
+        "turn_start": 40
+      },
+      "actions": [
+        {
+          "type": "throw",
+          "params": {
+            "segment": 20,
+            "multiplier": 1
+          }
+        }
+      ],
+      "data": {
+        "remaining": [
+          40,
+          501
+        ],
+        "turn": 1,
+        "darts_used": 0,
+        "turn_start": 501
+      }
+    },
+    {
+      "id": "third_dart_changes_turn",
+      "initial_data": {
+        "remaining": [
+          381,
+          501
+        ],
+        "turn": 0,
+        "darts_used": 2,
+        "turn_start": 501
+      },
+      "actions": [
+        {
+          "type": "throw",
+          "params": {
+            "segment": 20,
+            "multiplier": 3
+          }
+        }
+      ],
+      "data": {
+        "remaining": [
+          321,
+          501
+        ],
+        "turn": 1,
+        "darts_used": 0,
+        "turn_start": 501
+      }
+    },
+    {
+      "id": "invalid_target",
+      "action": {
+        "type": "throw",
+        "params": {
+          "segment": 25,
+          "multiplier": 3
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "one_is_impossible",
+      "initial_data": {
+        "remaining": [
+          1,
+          501
+        ],
+        "turn": 0,
+        "darts_used": 1,
+        "turn_start": 21
+      },
+      "valid": false
+    }
+  ]
+}

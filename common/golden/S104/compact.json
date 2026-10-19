@@ -1,0 +1,5824 @@
+{
+  "profile_id": "S104",
+  "ruleset_id": "builtin.canoe_slalom.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "paddler_0"
+    },
+    {
+      "id": "paddler_1"
+    },
+    {
+      "id": "paddler_2"
+    },
+    {
+      "id": "paddler_3"
+    },
+    {
+      "id": "paddler_4"
+    },
+    {
+      "id": "paddler_5"
+    },
+    {
+      "id": "paddler_6"
+    },
+    {
+      "id": "paddler_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "course_required",
+      "action": {
+        "type": "start",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "configure_and_start",
+      "actions": [
+        {
+          "type": "configure_course",
+          "params": {
+            "upstream": [
+              false,
+              false,
+              true,
+              false,
+              false,
+              true,
+              false,
+              false,
+              true,
+              false,
+              false,
+              true,
+              false,
+              false,
+              true,
+              false,
+              false,
+              true,
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "type": "start",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          }
+        ],
+        "upstream": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "id": "six_upstream_gates_required",
+      "action": {
+        "type": "configure_course",
+        "params": {
+          "upstream": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "course_locked_during_race",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          }
+        ],
+        "upstream": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      "action": {
+        "type": "configure_course",
+        "params": {
+          "upstream": [
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            false
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "gate_touch_recorded_once",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          }
+        ],
+        "upstream": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      "actions": [
+        {
+          "type": "record_gate",
+          "params": {
+            "participant": 0,
+            "gate": 0,
+            "passed_correctly": true,
+            "touched": true,
+            "time_us": 1000000
+          }
+        }
+      ],
+      "data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 1,
+            "last_checkpoint_time": 1000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": true
+              }
+            ]
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          }
+        ],
+        "upstream": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "id": "cannot_skip_gate_judgment",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          }
+        ],
+        "upstream": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      "action": {
+        "type": "record_gate",
+        "params": {
+          "participant": 0,
+          "gate": 1,
+          "passed_correctly": true,
+          "touched": false,
+          "time_us": 1000000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "unclassified_checkpoint_event_rejected",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          }
+        ],
+        "upstream": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      "action": {
+        "type": "visit_control",
+        "params": {
+          "participant": 0,
+          "control": "gate_1",
+          "time_us": 1000000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "missing_gate_prevents_finish",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 1,
+            "last_checkpoint_time": 1000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": true
+              }
+            ]
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          }
+        ],
+        "upstream": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      "action": {
+        "type": "record_finish",
+        "params": {
+          "participant": 0,
+          "time_us": 90000000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "gate_times_monotonic",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 1,
+            "last_checkpoint_time": 1000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": true
+              }
+            ]
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          }
+        ],
+        "upstream": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      "action": {
+        "type": "record_gate",
+        "params": {
+          "participant": 0,
+          "gate": 1,
+          "passed_correctly": true,
+          "touched": false,
+          "time_us": 999999
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "all_finished_before_review",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 90000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 91000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 92000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 93000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 94000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 95000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 96000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          }
+        ],
+        "upstream": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      "actions": [
+        {
+          "type": "record_finish",
+          "params": {
+            "participant": 7,
+            "time_us": 97000000
+          }
+        }
+      ],
+      "data": {
+        "phase": "review",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 90000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 91000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 92000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 93000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 94000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 95000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 96000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 97000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          }
+        ],
+        "upstream": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "id": "hundredth_second_finish_precision",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 90000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 91000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 92000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 93000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 94000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 95000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 96000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          }
+        ],
+        "upstream": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      "action": {
+        "type": "record_finish",
+        "params": {
+          "participant": 7,
+          "time_us": 97000001
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "two_second_touch_changes_winner",
+      "initial_data": {
+        "phase": "review",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 90000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": true
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 91000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 92000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 93000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 94000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 95000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 96000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 97000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          }
+        ],
+        "upstream": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "paddler_1"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "fifty_seconds_replaces_touch_penalty",
+      "initial_data": {
+        "phase": "review",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 90000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": false,
+                "touched": true
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 91000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 92000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 93000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 94000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 95000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 96000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 97000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          }
+        ],
+        "upstream": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "paddler_1"
+        ],
+        "placements": [
+          {
+            "player_id": "paddler_1",
+            "place": 1,
+            "time_us": 91000000,
+            "elapsed_us": 91000000,
+            "penalty_us": 0
+          },
+          {
+            "player_id": "paddler_2",
+            "place": 2,
+            "time_us": 92000000,
+            "elapsed_us": 92000000,
+            "penalty_us": 0
+          },
+          {
+            "player_id": "paddler_3",
+            "place": 3,
+            "time_us": 93000000,
+            "elapsed_us": 93000000,
+            "penalty_us": 0
+          },
+          {
+            "player_id": "paddler_4",
+            "place": 4,
+            "time_us": 94000000,
+            "elapsed_us": 94000000,
+            "penalty_us": 0
+          },
+          {
+            "player_id": "paddler_5",
+            "place": 5,
+            "time_us": 95000000,
+            "elapsed_us": 95000000,
+            "penalty_us": 0
+          },
+          {
+            "player_id": "paddler_6",
+            "place": 6,
+            "time_us": 96000000,
+            "elapsed_us": 96000000,
+            "penalty_us": 0
+          },
+          {
+            "player_id": "paddler_7",
+            "place": 7,
+            "time_us": 97000000,
+            "elapsed_us": 97000000,
+            "penalty_us": 0
+          },
+          {
+            "player_id": "paddler_0",
+            "place": 8,
+            "time_us": 140000000,
+            "elapsed_us": 90000000,
+            "penalty_us": 50000000
+          }
+        ]
+      }
+    },
+    {
+      "id": "gate_review_correction",
+      "initial_data": {
+        "phase": "review",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 90000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": true
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 91000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 92000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 93000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 94000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 95000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 96000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          },
+          {
+            "status": "finished",
+            "time_us": 97000000,
+            "warnings": 0,
+            "checkpoints_completed": 20,
+            "last_checkpoint_time": 80000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              },
+              {
+                "passed_correctly": true,
+                "touched": false
+              }
+            ]
+          }
+        ],
+        "upstream": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      "actions": [
+        {
+          "type": "correct_gate",
+          "params": {
+            "participant": 0,
+            "gate": 0,
+            "passed_correctly": true,
+            "touched": false
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "paddler_0"
+        ]
+      }
+    },
+    {
+      "id": "correction_requires_review",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 1,
+            "last_checkpoint_time": 1000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": true
+              }
+            ]
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          }
+        ],
+        "upstream": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      "action": {
+        "type": "correct_gate",
+        "params": {
+          "participant": 0,
+          "gate": 0,
+          "passed_correctly": true,
+          "touched": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "unresolved_entries_prevent_confirmation",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          }
+        ],
+        "upstream": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "gate_prefix_matches_checkpoint_count",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 2,
+            "last_checkpoint_time": 1000000,
+            "gates": [
+              {
+                "passed_correctly": true,
+                "touched": true
+              }
+            ]
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null,
+            "gates": []
+          }
+        ],
+        "upstream": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      "valid": false
+    }
+  ]
+}

@@ -1,0 +1,1721 @@
+{
+  "profile_id": "G061",
+  "ruleset_id": "builtin.jass.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    },
+    {
+      "id": "carol"
+    },
+    {
+      "id": "dan"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "external_deal",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "deck": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "choose_trump",
+        "dealer": 3,
+        "turn": 0,
+        "hands": [
+          [
+            0,
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28,
+            32
+          ],
+          [
+            1,
+            5,
+            9,
+            13,
+            17,
+            21,
+            25,
+            29,
+            33
+          ],
+          [
+            2,
+            6,
+            10,
+            14,
+            18,
+            22,
+            26,
+            30,
+            34
+          ],
+          [
+            3,
+            7,
+            11,
+            15,
+            19,
+            23,
+            27,
+            31,
+            35
+          ]
+        ],
+        "trump": null,
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "scores": [
+          0,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": null
+      },
+      "legal_count": 5
+    },
+    {
+      "id": "push_to_partner",
+      "initial_data": {
+        "phase": "choose_trump",
+        "dealer": 3,
+        "turn": 0,
+        "hands": [
+          [
+            0,
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28,
+            32
+          ],
+          [
+            1,
+            5,
+            9,
+            13,
+            17,
+            21,
+            25,
+            29,
+            33
+          ],
+          [
+            2,
+            6,
+            10,
+            14,
+            18,
+            22,
+            26,
+            30,
+            34
+          ],
+          [
+            3,
+            7,
+            11,
+            15,
+            19,
+            23,
+            27,
+            31,
+            35
+          ]
+        ],
+        "trump": null,
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "scores": [
+          0,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": null
+      },
+      "actions": [
+        {
+          "type": "push",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "choose_partner",
+        "dealer": 3,
+        "turn": 2,
+        "hands": [
+          [
+            0,
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28,
+            32
+          ],
+          [
+            1,
+            5,
+            9,
+            13,
+            17,
+            21,
+            25,
+            29,
+            33
+          ],
+          [
+            2,
+            6,
+            10,
+            14,
+            18,
+            22,
+            26,
+            30,
+            34
+          ],
+          [
+            3,
+            7,
+            11,
+            15,
+            19,
+            23,
+            27,
+            31,
+            35
+          ]
+        ],
+        "trump": null,
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "scores": [
+          0,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": null
+      },
+      "legal_count": 4
+    },
+    {
+      "id": "partner_cannot_push_back",
+      "initial_data": {
+        "phase": "choose_partner",
+        "dealer": 3,
+        "turn": 2,
+        "hands": [
+          [
+            0,
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28,
+            32
+          ],
+          [
+            1,
+            5,
+            9,
+            13,
+            17,
+            21,
+            25,
+            29,
+            33
+          ],
+          [
+            2,
+            6,
+            10,
+            14,
+            18,
+            22,
+            26,
+            30,
+            34
+          ],
+          [
+            3,
+            7,
+            11,
+            15,
+            19,
+            23,
+            27,
+            31,
+            35
+          ]
+        ],
+        "trump": null,
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "scores": [
+          0,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": null
+      },
+      "action": {
+        "type": "push",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "forehand_leads_after_partner_choice",
+      "initial_data": {
+        "phase": "choose_partner",
+        "dealer": 3,
+        "turn": 2,
+        "hands": [
+          [
+            0,
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28,
+            32
+          ],
+          [
+            1,
+            5,
+            9,
+            13,
+            17,
+            21,
+            25,
+            29,
+            33
+          ],
+          [
+            2,
+            6,
+            10,
+            14,
+            18,
+            22,
+            26,
+            30,
+            34
+          ],
+          [
+            3,
+            7,
+            11,
+            15,
+            19,
+            23,
+            27,
+            31,
+            35
+          ]
+        ],
+        "trump": null,
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "scores": [
+          0,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": null
+      },
+      "actions": [
+        {
+          "type": "choose_trump",
+          "params": {
+            "trump": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 0,
+        "hands": [
+          [
+            0,
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28,
+            32
+          ],
+          [
+            1,
+            5,
+            9,
+            13,
+            17,
+            21,
+            25,
+            29,
+            33
+          ],
+          [
+            2,
+            6,
+            10,
+            14,
+            18,
+            22,
+            26,
+            30,
+            34
+          ],
+          [
+            3,
+            7,
+            11,
+            15,
+            19,
+            23,
+            27,
+            31,
+            35
+          ]
+        ],
+        "trump": 0,
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "scores": [
+          0,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": null
+      }
+    },
+    {
+      "id": "sole_jack_need_not_follow_trump",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 1,
+        "hands": [
+          [
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            17
+          ],
+          [
+            5,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ]
+        ],
+        "trump": 0,
+        "won": [
+          [],
+          []
+        ],
+        "trick": [
+          {
+            "player": 0,
+            "card": 0
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 9,
+            "announce": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "other_trump_removes_jack_exception",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 1,
+        "hands": [
+          [
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            16,
+            17
+          ],
+          [
+            1,
+            5,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ]
+        ],
+        "trump": 0,
+        "won": [
+          [],
+          []
+        ],
+        "trick": [
+          {
+            "player": 0,
+            "card": 0
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": null
+      },
+      "action": {
+        "type": "play",
+        "params": {
+          "card": 9,
+          "announce": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "trump_lead_does_not_require_heading",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 1,
+        "hands": [
+          [
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            16,
+            17
+          ],
+          [
+            1,
+            5,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ]
+        ],
+        "trump": 0,
+        "won": [
+          [],
+          []
+        ],
+        "trick": [
+          {
+            "player": 0,
+            "card": 0
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 1,
+            "announce": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "may_trump_while_holding_led_suit",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 1,
+        "hands": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ]
+        ],
+        "trump": 0,
+        "won": [
+          [],
+          []
+        ],
+        "trick": [
+          {
+            "player": 0,
+            "card": 9
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 0,
+            "announce": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "undertrumping_forbidden_with_other_cards",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 2,
+        "hands": [
+          [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            18
+          ],
+          [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ]
+        ],
+        "trump": 0,
+        "won": [
+          [],
+          []
+        ],
+        "trick": [
+          {
+            "player": 0,
+            "card": 9
+          },
+          {
+            "player": 1,
+            "card": 5
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": null
+      },
+      "action": {
+        "type": "play",
+        "params": {
+          "card": 0,
+          "announce": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "discard_when_unable_to_overtrump",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 2,
+        "hands": [
+          [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            18
+          ],
+          [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ]
+        ],
+        "trump": 0,
+        "won": [
+          [],
+          []
+        ],
+        "trick": [
+          {
+            "player": 0,
+            "card": 9
+          },
+          {
+            "player": 1,
+            "card": 5
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": null
+      },
+      "legal_params": [
+        {
+          "card": 18,
+          "announce": false
+        }
+      ]
+    },
+    {
+      "id": "all_trump_hand_may_undertrump",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 2,
+        "hands": [
+          [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          [
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8
+          ],
+          [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            35
+          ]
+        ],
+        "trump": 0,
+        "won": [
+          [
+            34,
+            33,
+            32,
+            31
+          ],
+          []
+        ],
+        "trick": [
+          {
+            "player": 0,
+            "card": 9
+          },
+          {
+            "player": 1,
+            "card": 5
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 0,
+            "announce": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "first_stoeck_announcement",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 0,
+        "hands": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ]
+        ],
+        "trump": 0,
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "scores": [
+          0,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 6,
+            "announce": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 1,
+        "hands": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8
+          ],
+          [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ]
+        ],
+        "trump": 0,
+        "won": [
+          [],
+          []
+        ],
+        "trick": [
+          {
+            "player": 0,
+            "card": 6
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "stoeck_player": 0,
+        "stoeck_card": 7,
+        "stoeck_team": null
+      }
+    },
+    {
+      "id": "second_stoeck_announcement",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 0,
+        "hands": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ]
+        ],
+        "trump": 0,
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "scores": [
+          0,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 6,
+            "announce": true
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 9,
+            "announce": false
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 18,
+            "announce": false
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 27,
+            "announce": false
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 7,
+            "announce": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 1,
+        "hands": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            8
+          ],
+          [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          [
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ]
+        ],
+        "trump": 0,
+        "won": [
+          [
+            6,
+            9,
+            18,
+            27
+          ],
+          []
+        ],
+        "trick": [
+          {
+            "player": 0,
+            "card": 7
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": 0
+      }
+    },
+    {
+      "id": "false_stoeck_rejected",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 0,
+        "hands": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ]
+        ],
+        "trump": 0,
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "scores": [
+          0,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": null
+      },
+      "action": {
+        "type": "play",
+        "params": {
+          "card": 0,
+          "announce": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "sweep_two_hundred_fifty_seven",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 0,
+        "hands": [
+          [
+            5
+          ],
+          [
+            9
+          ],
+          [
+            18
+          ],
+          [
+            27
+          ]
+        ],
+        "trump": 0,
+        "won": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ],
+          []
+        ],
+        "trick": [],
+        "scores": [
+          800,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 5,
+            "announce": false
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 9,
+            "announce": false
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 18,
+            "announce": false
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 27,
+            "announce": false
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "alice",
+          "carol"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "nontrump_ten_beats_king",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 0,
+        "hands": [
+          [
+            13
+          ],
+          [
+            16
+          ],
+          [
+            14
+          ],
+          [
+            15
+          ]
+        ],
+        "trump": 0,
+        "won": [
+          [],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ]
+        ],
+        "trick": [],
+        "scores": [
+          980,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 13,
+            "announce": false
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 16,
+            "announce": false
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 14,
+            "announce": false
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 15,
+            "announce": false
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "alice",
+          "carol"
+        ]
+      }
+    },
+    {
+      "id": "duplicate_card_invalid",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 0,
+        "hands": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ]
+        ],
+        "trump": 0,
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "scores": [
+          0,
+          0
+        ],
+        "stoeck_player": null,
+        "stoeck_card": null,
+        "stoeck_team": null
+      },
+      "valid": false
+    }
+  ]
+}

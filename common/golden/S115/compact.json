@@ -1,0 +1,1111 @@
+{
+  "profile_id": "S115",
+  "ruleset_id": "builtin.s115.qualification",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "athlete_0"
+    },
+    {
+      "id": "athlete_1"
+    },
+    {
+      "id": "athlete_2"
+    },
+    {
+      "id": "athlete_3"
+    },
+    {
+      "id": "athlete_4"
+    },
+    {
+      "id": "athlete_5"
+    },
+    {
+      "id": "athlete_6"
+    },
+    {
+      "id": "athlete_7"
+    },
+    {
+      "id": "athlete_8"
+    },
+    {
+      "id": "athlete_9"
+    },
+    {
+      "id": "athlete_10"
+    },
+    {
+      "id": "athlete_11"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "configure",
+      "actions": [
+        {
+          "type": "configure",
+          "params": {
+            "heights_mm": [
+              5000,
+              5100
+            ],
+            "places": 8
+          }
+        }
+      ],
+      "data": {
+        "configured": true,
+        "heights_mm": [
+          5000,
+          5100
+        ],
+        "places": 8,
+        "height": 0,
+        "turn": 0,
+        "status": [
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active"
+        ],
+        "attempts": [
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ]
+        ]
+      }
+    },
+    {
+      "id": "clear_rotates",
+      "initial_data": {
+        "configured": true,
+        "heights_mm": [
+          5000,
+          5100
+        ],
+        "places": 8,
+        "height": 0,
+        "turn": 0,
+        "status": [
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active"
+        ],
+        "attempts": [
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "attempt",
+          "params": {
+            "result": "clear"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "failures_carry_across_pass",
+      "initial_data": {
+        "configured": true,
+        "heights_mm": [
+          5000,
+          5100
+        ],
+        "places": 8,
+        "height": 1,
+        "turn": 0,
+        "status": [
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active"
+        ],
+        "attempts": [
+          [
+            [
+              "fail",
+              "fail",
+              "pass"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "attempt",
+          "params": {
+            "result": "fail"
+          }
+        }
+      ],
+      "data": {
+        "configured": true,
+        "heights_mm": [
+          5000,
+          5100
+        ],
+        "places": 8,
+        "height": 1,
+        "turn": 1,
+        "status": [
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active"
+        ],
+        "attempts": [
+          [
+            [
+              "fail",
+              "fail",
+              "pass"
+            ],
+            [
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ]
+        ]
+      }
+    },
+    {
+      "id": "attempt_after_elimination",
+      "initial_data": {
+        "configured": true,
+        "heights_mm": [
+          5000,
+          5100
+        ],
+        "places": 8,
+        "height": 1,
+        "turn": 1,
+        "status": [
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active"
+        ],
+        "attempts": [
+          [
+            [
+              "fail",
+              "fail",
+              "pass"
+            ],
+            [
+              "fail",
+              "clear"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ],
+          [
+            [
+              "clear"
+            ],
+            []
+          ]
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "attempts_at_best_tiebreak",
+      "initial_data": {
+        "configured": true,
+        "heights_mm": [
+          5000,
+          5100
+        ],
+        "places": 1,
+        "height": 1,
+        "turn": 11,
+        "status": [
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active"
+        ],
+        "attempts": [
+          [
+            [
+              "clear"
+            ],
+            [
+              "clear"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "clear"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail"
+            ]
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "attempt",
+          "params": {
+            "result": "fail"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "athlete_0"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "total_failure_countback",
+      "initial_data": {
+        "configured": true,
+        "heights_mm": [
+          5000,
+          5100
+        ],
+        "places": 1,
+        "height": 1,
+        "turn": 11,
+        "status": [
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active"
+        ],
+        "attempts": [
+          [
+            [
+              "fail",
+              "clear"
+            ],
+            [
+              "fail",
+              "clear"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "clear"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail"
+            ]
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "attempt",
+          "params": {
+            "result": "fail"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "athlete_1"
+        ]
+      }
+    },
+    {
+      "id": "shared_rank",
+      "initial_data": {
+        "configured": true,
+        "heights_mm": [
+          5000,
+          5100
+        ],
+        "places": 1,
+        "height": 1,
+        "turn": 11,
+        "status": [
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active"
+        ],
+        "attempts": [
+          [
+            [
+              "clear"
+            ],
+            [
+              "clear"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "clear"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail",
+              "fail"
+            ]
+          ],
+          [
+            [
+              "clear"
+            ],
+            [
+              "fail",
+              "fail"
+            ]
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "attempt",
+          "params": {
+            "result": "fail"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "athlete_0",
+          "athlete_1"
+        ]
+      }
+    },
+    {
+      "id": "wrong_actor",
+      "initial_data": {
+        "configured": true,
+        "heights_mm": [
+          5000,
+          5100
+        ],
+        "places": 8,
+        "height": 0,
+        "turn": 0,
+        "status": [
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active",
+          "active"
+        ],
+        "attempts": [
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ],
+          [
+            [],
+            []
+          ]
+        ]
+      },
+      "action": {
+        "type": "attempt",
+        "actor": "athlete_1",
+        "params": {
+          "result": "clear"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

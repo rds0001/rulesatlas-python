@@ -1,0 +1,2329 @@
+{
+  "profile_id": "S061",
+  "ruleset_id": "builtin.trap.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "shooter_0"
+    },
+    {
+      "id": "shooter_1"
+    },
+    {
+      "id": "shooter_2"
+    },
+    {
+      "id": "shooter_3"
+    },
+    {
+      "id": "shooter_4"
+    },
+    {
+      "id": "shooter_5"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start_round",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "hit_requires_call",
+      "initial_data": {
+        "phase": "ready",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      },
+      "action": {
+        "type": "record_target",
+        "params": {
+          "hit": true,
+          "shots": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "first_hit",
+      "initial_data": {
+        "phase": "called",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "record_target",
+          "params": {
+            "hit": true,
+            "shots": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [
+              true
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "no_target_repeats",
+      "initial_data": {
+        "phase": "called",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "no_target",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "third_shot_rejected",
+      "initial_data": {
+        "phase": "called",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      },
+      "action": {
+        "type": "record_target",
+        "params": {
+          "hit": true,
+          "shots": 3
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "third_malfunction_loses_target",
+      "initial_data": {
+        "phase": "called",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [],
+            "malfunctions": 2,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "malfunction",
+          "params": {
+            "after_first_miss": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [
+              false
+            ],
+            "malfunctions": 2,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "accepted_malfunction_preserves_turn",
+      "initial_data": {
+        "phase": "called",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "malfunction",
+          "params": {
+            "after_first_miss": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_participant": 0,
+        "phase": "ready"
+      }
+    },
+    {
+      "id": "second_shot_repeat_rejects_first_shot_hit",
+      "initial_data": {
+        "phase": "called",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "malfunction",
+          "params": {
+            "after_first_miss": true
+          }
+        },
+        {
+          "type": "call_target",
+          "params": {}
+        },
+        {
+          "type": "record_target",
+          "params": {
+            "hit": true,
+            "shots": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [
+              false
+            ],
+            "malfunctions": 1,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "second_shot_repeat_can_hit_second",
+      "initial_data": {
+        "phase": "called",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "malfunction",
+          "params": {
+            "after_first_miss": true
+          }
+        },
+        {
+          "type": "call_target",
+          "params": {}
+        },
+        {
+          "type": "record_target",
+          "params": {
+            "hit": true,
+            "shots": 2
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [
+              true
+            ],
+            "malfunctions": 1,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "warning_does_not_consume_target",
+      "initial_data": {
+        "phase": "ready",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "time_violation",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "next_participant": 0
+      }
+    },
+    {
+      "id": "repeat_delay_loses_target",
+      "initial_data": {
+        "phase": "ready",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "time_violation",
+          "params": {}
+        },
+        {
+          "type": "time_violation",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "next_participant": 1
+      }
+    },
+    {
+      "id": "last_target_opens_review",
+      "initial_data": {
+        "phase": "called",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "record_target",
+          "params": {
+            "hit": false,
+            "shots": 2
+          }
+        }
+      ],
+      "data": {
+        "phase": "review",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "countback_breaks_tie",
+      "initial_data": {
+        "phase": "review",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              false,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "shooter_1"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "exact_tie_shared",
+      "initial_data": {
+        "phase": "review",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "shooter_0",
+          "shooter_1",
+          "shooter_2",
+          "shooter_3",
+          "shooter_4",
+          "shooter_5"
+        ]
+      }
+    },
+    {
+      "id": "correction_changes_winner",
+      "initial_data": {
+        "phase": "review",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "correct_target",
+          "params": {
+            "participant": 0,
+            "target": 24,
+            "hit": true
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "shooter_0"
+        ]
+      }
+    },
+    {
+      "id": "penalty_removes_countback_winner",
+      "initial_data": {
+        "phase": "review",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              false,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "assess_penalty",
+          "params": {
+            "participant": 1,
+            "targets": 1
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "shooter_0",
+          "shooter_2",
+          "shooter_3",
+          "shooter_4",
+          "shooter_5"
+        ]
+      }
+    },
+    {
+      "id": "premature_confirmation",
+      "initial_data": {
+        "phase": "ready",
+        "repeat_second_only": false,
+        "shooters": [
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          },
+          {
+            "targets": [],
+            "malfunctions": 0,
+            "delay_warning": false,
+            "penalty_targets": 0,
+            "disqualified": false
+          }
+        ]
+      },
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

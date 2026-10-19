@@ -1,0 +1,1166 @@
+{
+  "profile_id": "S139",
+  "ruleset_id": "builtin.bodybuilding.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "athlete_0"
+    },
+    {
+      "id": "athlete_1"
+    },
+    {
+      "id": "athlete_2"
+    },
+    {
+      "id": "athlete_3"
+    },
+    {
+      "id": "athlete_4"
+    },
+    {
+      "id": "athlete_5"
+    },
+    {
+      "id": "athlete_6"
+    },
+    {
+      "id": "athlete_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start_comparison",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "comparing",
+        "status": [
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered"
+        ],
+        "rankings": null
+      }
+    },
+    {
+      "id": "complete",
+      "initial_data": {
+        "phase": "comparing",
+        "status": [
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered"
+        ],
+        "rankings": null
+      },
+      "actions": [
+        {
+          "type": "complete_comparison",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "judging",
+        "status": [
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered"
+        ],
+        "rankings": null
+      }
+    },
+    {
+      "id": "ballots_need_completion",
+      "initial_data": {
+        "phase": "comparing",
+        "status": [
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered"
+        ],
+        "rankings": null
+      },
+      "action": {
+        "type": "submit_rankings",
+        "params": {
+          "rankings": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "submit",
+      "initial_data": {
+        "phase": "judging",
+        "status": [
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered"
+        ],
+        "rankings": null
+      },
+      "actions": [
+        {
+          "type": "submit_rankings",
+          "params": {
+            "rankings": [
+              [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ]
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "review",
+        "status": [
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered"
+        ],
+        "rankings": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "id": "strict_ballot_permutation",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered"
+        ],
+        "rankings": [
+          [
+            1,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "excluded_entrant_has_no_rank",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          "dns",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered"
+        ],
+        "rankings": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "trim_and_rank",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered"
+        ],
+        "rankings": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "athlete_0"
+        ],
+        "placements": [
+          {
+            "player_id": "athlete_0",
+            "place": 1,
+            "judge_place_sum": 3
+          },
+          {
+            "player_id": "athlete_1",
+            "place": 2,
+            "judge_place_sum": 6
+          },
+          {
+            "player_id": "athlete_2",
+            "place": 3,
+            "judge_place_sum": 9
+          },
+          {
+            "player_id": "athlete_3",
+            "place": 4,
+            "judge_place_sum": 12
+          },
+          {
+            "player_id": "athlete_4",
+            "place": 5,
+            "judge_place_sum": 15
+          },
+          {
+            "player_id": "athlete_5",
+            "place": 6,
+            "judge_place_sum": 18
+          },
+          {
+            "player_id": "athlete_6",
+            "place": 7,
+            "judge_place_sum": 21
+          },
+          {
+            "player_id": "athlete_7",
+            "place": 8,
+            "judge_place_sum": 24
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "three_way_trimmed_tie",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered"
+        ],
+        "rankings": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            3,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            2,
+            3,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            3,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            4,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "athlete_0",
+          "athlete_1",
+          "athlete_2"
+        ]
+      }
+    },
+    {
+      "id": "dq_compresses_ballots",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered"
+        ],
+        "rankings": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "participant": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "review",
+        "status": [
+          "dq",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered"
+        ],
+        "rankings": [
+          [
+            null,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          [
+            null,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          [
+            null,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          [
+            null,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          [
+            null,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "dq_changes_winner",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          "dq",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered"
+        ],
+        "rankings": [
+          [
+            null,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          [
+            null,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          [
+            null,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          [
+            null,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          [
+            null,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "athlete_1"
+        ]
+      }
+    },
+    {
+      "id": "review_correction",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered"
+        ],
+        "rankings": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "correct_rankings",
+          "params": {
+            "rankings": [
+              [
+                2,
+                1,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              [
+                2,
+                1,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              [
+                2,
+                1,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              [
+                2,
+                1,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              [
+                2,
+                1,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ]
+            ]
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "athlete_1"
+        ]
+      }
+    },
+    {
+      "id": "withdraw_before_comparison",
+      "actions": [
+        {
+          "type": "withdraw",
+          "params": {
+            "participant": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "status": [
+          "dns",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered"
+        ],
+        "rankings": null
+      }
+    },
+    {
+      "id": "withdraw_during_comparison",
+      "initial_data": {
+        "phase": "comparing",
+        "status": [
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered"
+        ],
+        "rankings": null
+      },
+      "actions": [
+        {
+          "type": "withdraw",
+          "params": {
+            "participant": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "comparing",
+        "status": [
+          "dnf",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered",
+          "entered"
+        ],
+        "rankings": null
+      }
+    },
+    {
+      "id": "all_dns",
+      "initial_data": {
+        "phase": "judging",
+        "status": [
+          "dns",
+          "dns",
+          "dns",
+          "dns",
+          "dns",
+          "dns",
+          "dns",
+          "dns"
+        ],
+        "rankings": null
+      },
+      "actions": [
+        {
+          "type": "submit_rankings",
+          "params": {
+            "rankings": [
+              [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            ]
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest",
+        "winners": []
+      }
+    },
+    {
+      "id": "premature_confirmation",
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

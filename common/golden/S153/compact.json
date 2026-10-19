@@ -1,0 +1,910 @@
+{
+  "profile_id": "S153",
+  "ruleset_id": "builtin.ordered_race_s153.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "entrant_0"
+    },
+    {
+      "id": "entrant_1"
+    },
+    {
+      "id": "entrant_2"
+    },
+    {
+      "id": "entrant_3"
+    },
+    {
+      "id": "entrant_4"
+    },
+    {
+      "id": "entrant_5"
+    },
+    {
+      "id": "entrant_6"
+    },
+    {
+      "id": "entrant_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types",
+      "legal_constraints": {
+        "ranking_basis": "official_order"
+      }
+    },
+    {
+      "id": "finish_requires_start",
+      "action": {
+        "type": "record_finish",
+        "params": {
+          "participant": 0,
+          "time_us": 100000000,
+          "official_order": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "recall_preserves_exclusion",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "disqualify",
+          "params": {
+            "participant": 0
+          }
+        },
+        {
+          "type": "recall_start",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "runners": [
+          {
+            "status": "dq",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "recall_requires_start",
+      "action": {
+        "type": "recall_start",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "recall_after_finish_rejected",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 1
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 2
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 3
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 4
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 5
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 6
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 7
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          }
+        ]
+      },
+      "action": {
+        "type": "recall_start",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "missing_order_rejected",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          }
+        ]
+      },
+      "action": {
+        "type": "record_finish",
+        "params": {
+          "participant": 0,
+          "time_us": 100000000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "last_finish_opens_review",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 1
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 2
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 3
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 4
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 5
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 6
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 7
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "record_finish",
+          "params": {
+            "participant": 7,
+            "time_us": 100000000,
+            "official_order": 8
+          }
+        }
+      ],
+      "data": {
+        "phase": "review",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 1
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 2
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 3
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 4
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 5
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 6
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 7
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "official_order_distinguishes_equal_times",
+      "initial_data": {
+        "phase": "review",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 1
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 2
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 3
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 4
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 5
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 6
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 7
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 8
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "entrant_0"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "dead_heat",
+      "initial_data": {
+        "phase": "review",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 1
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 1
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 3
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 4
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 5
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 6
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 7
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 8
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "entrant_0",
+          "entrant_1"
+        ]
+      }
+    },
+    {
+      "id": "review_demotion",
+      "initial_data": {
+        "phase": "review",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 1
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 2
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 3
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 4
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 5
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 6
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 7
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 8
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "amend_result",
+          "params": {
+            "participant": 0,
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 3
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "entrant_1"
+        ]
+      }
+    },
+    {
+      "id": "review_exclusion",
+      "initial_data": {
+        "phase": "review",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 1
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 2
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 3
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 4
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 5
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 6
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 7
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 8
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "participant": 0
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "entrant_1"
+        ]
+      }
+    },
+    {
+      "id": "nonfinisher_order_invalid",
+      "initial_data": {
+        "phase": "ready",
+        "runners": [
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": 1
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          }
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "unresolved_result_rejected",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          }
+        ]
+      },
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "amend_nonfinisher_with_order_rejected",
+      "initial_data": {
+        "phase": "review",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 1
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 2
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 3
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 4
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 5
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 6
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 7
+          },
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0,
+            "official_order": 8
+          }
+        ]
+      },
+      "action": {
+        "type": "amend_result",
+        "params": {
+          "participant": 0,
+          "status": "dq",
+          "time_us": null,
+          "warnings": 0,
+          "official_order": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "automatic_false_start_penalty_unavailable",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "official_order": null
+          }
+        ]
+      },
+      "action": {
+        "type": "false_start",
+        "params": {
+          "participant": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

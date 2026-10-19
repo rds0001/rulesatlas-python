@@ -1,0 +1,966 @@
+{
+  "profile_id": "S038",
+  "ruleset_id": "builtin.pelota.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "player_a"
+    },
+    {
+      "id": "player_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "first_toss",
+      "actions": [
+        {
+          "type": "choose_server",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "start_service",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "start_serve",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "serve",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "wrong_server",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "start_serve",
+        "params": {
+          "player": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "good_service_starts_rally",
+      "initial_data": {
+        "phase": "serve",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "service_decision",
+          "params": {
+            "result": "good"
+          }
+        }
+      ],
+      "data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "first_long_service_retry",
+      "initial_data": {
+        "phase": "serve",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "service_decision",
+          "params": {
+            "result": "long"
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": true,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "second_long_service_loses_point",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": true,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "start_serve",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "service_decision",
+          "params": {
+            "result": "long"
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          1
+        ],
+        "games": [],
+        "server": 1,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "ordinary_fault_immediate_point",
+      "initial_data": {
+        "phase": "serve",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "service_decision",
+          "params": {
+            "result": "fault"
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          1
+        ],
+        "games": [],
+        "server": 1,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "service_replay_retains_long_fault",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": true,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "start_serve",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "service_decision",
+          "params": {
+            "result": "replay"
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": true,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "valid_retry_enters_rally",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": true,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "start_serve",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "service_decision",
+          "params": {
+            "result": "good"
+          }
+        }
+      ],
+      "data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "rally_replay",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "replay_rally",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "receiver_wins_service",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_rally",
+          "params": {
+            "winner": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          1
+        ],
+        "games": [],
+        "server": 1,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "one_point_margin_ends_game",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          9,
+          9
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "interval"
+      }
+    },
+    {
+      "id": "two_games_win",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          9,
+          9
+        ],
+        "games": [
+          [
+            10,
+            5
+          ]
+        ],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "player_a"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "second_game_other_initial_server",
+      "initial_data": {
+        "phase": "interval",
+        "points": [
+          10,
+          5
+        ],
+        "games": [
+          [
+            10,
+            5
+          ]
+        ],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "next_game",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "server": 1,
+        "target": 10
+      }
+    },
+    {
+      "id": "deciding_game_new_toss",
+      "initial_data": {
+        "phase": "interval",
+        "points": [
+          5,
+          10
+        ],
+        "games": [
+          [
+            10,
+            5
+          ],
+          [
+            5,
+            10
+          ]
+        ],
+        "server": 1,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "next_game",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "choose_server",
+        "server": null,
+        "target": 5
+      }
+    },
+    {
+      "id": "decider_to_five",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          4,
+          4
+        ],
+        "games": [
+          [
+            10,
+            5
+          ],
+          [
+            5,
+            10
+          ]
+        ],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_rally",
+          "params": {
+            "winner": 1
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "player_b"
+        ]
+      }
+    },
+    {
+      "id": "one_timeout_either_player",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "timeout",
+          "params": {
+            "player": 1
+          }
+        }
+      ],
+      "action": {
+        "type": "timeout",
+        "params": {
+          "player": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "timeout_not_during_rally",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "timeout",
+        "params": {
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "official_penalty_point",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "penalty_point",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          1
+        ],
+        "games": [],
+        "server": 1,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "disqualification",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": true,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "player_b"
+        ]
+      }
+    },
+    {
+      "id": "concession",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "concede",
+          "params": {
+            "player": 1
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "player_a"
+        ]
+      }
+    },
+    {
+      "id": "abandonment",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "abandon",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    },
+    {
+      "id": "no_contest",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "abandon",
+          "params": {}
+        },
+        {
+          "type": "official_result",
+          "params": {
+            "winner": null
+          }
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "tied_completed_game_invalid",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          [
+            10,
+            10
+          ]
+        ],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "target_score_requires_transition",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          10,
+          0
+        ],
+        "games": [],
+        "server": 0,
+        "first_server": 0,
+        "long_fault": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

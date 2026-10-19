@@ -1,0 +1,4717 @@
+{
+  "profile_id": "S105",
+  "ruleset_id": "builtin.canoe_polo.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "team_a"
+    },
+    {
+      "id": "team_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start_five_players",
+      "actions": [
+        {
+          "type": "start_match",
+          "params": {}
+        },
+        {
+          "type": "sprint_start",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "cannot_start_with_four",
+      "actions": [
+        {
+          "type": "set_lineup",
+          "params": {
+            "team": 0,
+            "players": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        }
+      ],
+      "action": {
+        "type": "start_match",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "rolling_substitution",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "set_lineup",
+          "params": {
+            "team": 0,
+            "players": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "id": "goal_stops_clock_and_awards_centre_restart",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "player": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          0
+        ],
+        "clock_running": false,
+        "restart": {
+          "kind": "centre",
+          "team": 1
+        }
+      }
+    },
+    {
+      "id": "wrong_restart_team_rejected",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "player": 1
+          }
+        }
+      ],
+      "action": {
+        "type": "take_restart",
+        "params": {
+          "team": 0,
+          "player": 0,
+          "result": "play",
+          "milliseconds": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "free_throw_cannot_score_direct",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_restart",
+          "params": {
+            "kind": "free_throw",
+            "team": 0,
+            "stop_clock": true
+          }
+        }
+      ],
+      "action": {
+        "type": "take_restart",
+        "params": {
+          "team": 0,
+          "player": 0,
+          "result": "direct_goal",
+          "milliseconds": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "free_shot_can_score_direct",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_restart",
+          "params": {
+            "kind": "free_shot",
+            "team": 0,
+            "stop_clock": true
+          }
+        },
+        {
+          "type": "take_restart",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "result": "direct_goal",
+            "milliseconds": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          0
+        ],
+        "restart": {
+          "kind": "centre",
+          "team": 1
+        }
+      }
+    },
+    {
+      "id": "neutral_referees_ball",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_restart",
+          "params": {
+            "kind": "referee_ball",
+            "team": null,
+            "stop_clock": true
+          }
+        },
+        {
+          "type": "take_restart",
+          "params": {
+            "team": null,
+            "player": null,
+            "result": "play",
+            "milliseconds": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "nonnull_thrower_required_for_team_restart",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_restart",
+          "params": {
+            "kind": "free_throw",
+            "team": 0,
+            "stop_clock": true
+          }
+        }
+      ],
+      "action": {
+        "type": "take_restart",
+        "params": {
+          "team": 0,
+          "player": null,
+          "result": "play",
+          "milliseconds": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "ordinary_restart_cannot_cross_horn",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 100,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_restart",
+          "params": {
+            "kind": "free_throw",
+            "team": 0,
+            "stop_clock": true
+          }
+        }
+      ],
+      "action": {
+        "type": "take_restart",
+        "params": {
+          "team": 0,
+          "player": 0,
+          "result": "play",
+          "milliseconds": 200
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "green_is_two_minute_suspension",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "level": 1,
+            "ejection": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          4,
+          5
+        ],
+        "penalties": [
+          {
+            "team": 0,
+            "player": 0,
+            "remaining_ms": 120000
+          }
+        ],
+        "cards": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "green_expires_after_playing_time",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "level": 1,
+            "ejection": false
+          }
+        },
+        {
+          "type": "take_restart",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "result": "play",
+            "milliseconds": 0
+          }
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 120000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          5,
+          5
+        ],
+        "penalties": []
+      }
+    },
+    {
+      "id": "goal_releases_earliest_timed_sanction",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "level": 1,
+            "ejection": false
+          }
+        },
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 1,
+            "level": 1,
+            "ejection": false
+          }
+        },
+        {
+          "type": "take_restart",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "result": "play",
+            "milliseconds": 0
+          }
+        },
+        {
+          "type": "goal",
+          "params": {
+            "team": 1,
+            "player": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          4,
+          5
+        ],
+        "penalties": [
+          {
+            "team": 0,
+            "player": 1,
+            "remaining_ms": 120000
+          }
+        ]
+      }
+    },
+    {
+      "id": "equal_sanctions_still_release_on_opposition_goal",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "level": 1,
+            "ejection": false
+          }
+        },
+        {
+          "type": "sanction",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "level": 1,
+            "ejection": false
+          }
+        },
+        {
+          "type": "take_restart",
+          "params": {
+            "team": 1,
+            "player": 1,
+            "result": "play",
+            "milliseconds": 0
+          }
+        },
+        {
+          "type": "goal",
+          "params": {
+            "team": 1,
+            "player": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          5,
+          4
+        ],
+        "penalties": [
+          {
+            "team": 1,
+            "player": 0,
+            "remaining_ms": 120000
+          }
+        ]
+      }
+    },
+    {
+      "id": "sanction_red_replacement_after_two_minutes",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "level": 3,
+            "ejection": false
+          }
+        },
+        {
+          "type": "take_restart",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "result": "play",
+            "milliseconds": 0
+          }
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 120000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          5,
+          5
+        ],
+        "penalties": []
+      }
+    },
+    {
+      "id": "sanction_red_player_cannot_return",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "level": 3,
+            "ejection": false
+          }
+        },
+        {
+          "type": "take_restart",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "result": "play",
+            "milliseconds": 0
+          }
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 120000
+          }
+        }
+      ],
+      "action": {
+        "type": "set_lineup",
+        "params": {
+          "team": 0,
+          "players": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "ejection_reduction_permanent_despite_goal",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "level": 1,
+            "ejection": true
+          }
+        },
+        {
+          "type": "take_restart",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "result": "play",
+            "milliseconds": 0
+          }
+        },
+        {
+          "type": "goal",
+          "params": {
+            "team": 1,
+            "player": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          4,
+          5
+        ],
+        "penalties": []
+      }
+    },
+    {
+      "id": "card_level_must_advance",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "level": 1,
+            "ejection": false
+          }
+        }
+      ],
+      "action": {
+        "type": "sanction",
+        "params": {
+          "team": 0,
+          "player": 0,
+          "level": 1,
+          "ejection": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "green_yellow_red_progression",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "level": 1,
+            "ejection": false
+          }
+        },
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "level": 2,
+            "ejection": false
+          }
+        },
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "level": 3,
+            "ejection": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          4,
+          5
+        ],
+        "cards": [
+          [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalties": [
+          {
+            "team": 0,
+            "player": 0,
+            "remaining_ms": 120000
+          }
+        ]
+      }
+    },
+    {
+      "id": "third_simultaneous_reduction_requires_official_result",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "level": 1,
+            "ejection": false
+          }
+        },
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 1,
+            "level": 1,
+            "ejection": false
+          }
+        },
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 2,
+            "level": 1,
+            "ejection": false
+          }
+        }
+      ],
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    },
+    {
+      "id": "bench_sanction_requires_lineup_reduction",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 5,
+            "level": 1,
+            "ejection": false
+          }
+        }
+      ],
+      "action": {
+        "type": "take_restart",
+        "params": {
+          "team": 1,
+          "player": 0,
+          "result": "play",
+          "milliseconds": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "bench_sanction_lineup_can_be_corrected",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 5,
+            "level": 1,
+            "ejection": false
+          }
+        },
+        {
+          "type": "set_lineup",
+          "params": {
+            "team": 0,
+            "players": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "type": "take_restart",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "result": "play",
+            "milliseconds": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "live",
+        "capacity": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "id": "penalty_includes_mandatory_sanction",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_penalty",
+          "params": {
+            "team": 1,
+            "offender": 0,
+            "level": 1,
+            "ejection": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "penalty",
+        "pending": 1,
+        "penalties": [
+          {
+            "team": 0,
+            "player": 0,
+            "remaining_ms": 120000
+          }
+        ]
+      }
+    },
+    {
+      "id": "penalty_goal_releases_sanction",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_penalty",
+          "params": {
+            "team": 1,
+            "offender": 0,
+            "level": 1,
+            "ejection": false
+          }
+        },
+        {
+          "type": "take_penalty",
+          "params": {
+            "shooter": 0,
+            "goalkeeper": 1,
+            "result": "goal",
+            "milliseconds": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          0,
+          1
+        ],
+        "capacity": [
+          5,
+          5
+        ],
+        "pending": null
+      }
+    },
+    {
+      "id": "penalty_miss_resumes_play",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_penalty",
+          "params": {
+            "team": 1,
+            "offender": 0,
+            "level": 1,
+            "ejection": false
+          }
+        },
+        {
+          "type": "take_penalty",
+          "params": {
+            "shooter": 0,
+            "goalkeeper": 1,
+            "result": "miss",
+            "milliseconds": 1000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "live",
+        "clock_running": true,
+        "clock_ms": 599000,
+        "penalties": [
+          {
+            "team": 0,
+            "player": 0,
+            "remaining_ms": 119000
+          }
+        ]
+      }
+    },
+    {
+      "id": "penalty_retake_preserves_award",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_penalty",
+          "params": {
+            "team": 1,
+            "offender": 0,
+            "level": 1,
+            "ejection": false
+          }
+        },
+        {
+          "type": "take_penalty",
+          "params": {
+            "shooter": 0,
+            "goalkeeper": 1,
+            "result": "retake",
+            "milliseconds": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "penalty",
+        "pending": 1,
+        "score": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "penalty_after_horn",
+      "initial_data": {
+        "phase": "live",
+        "period": 2,
+        "clock_ms": 1000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_penalty",
+          "params": {
+            "team": 1,
+            "offender": 0,
+            "level": 1,
+            "ejection": false
+          }
+        },
+        {
+          "type": "take_penalty",
+          "params": {
+            "shooter": 0,
+            "goalkeeper": 1,
+            "result": "goal",
+            "milliseconds": 2000
+          }
+        },
+        {
+          "type": "close_period",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_b"
+        ],
+        "reason": "regulation"
+      }
+    },
+    {
+      "id": "restricted_exit_waits_for_stoppage",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "restricted_exit",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "set_lineup",
+        "params": {
+          "team": 0,
+          "players": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "restricted_exit_cleared_at_stoppage",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "restricted_exit",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        },
+        {
+          "type": "award_restart",
+          "params": {
+            "kind": "free_throw",
+            "team": 0,
+            "stop_clock": true
+          }
+        },
+        {
+          "type": "clear_exit",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        },
+        {
+          "type": "set_lineup",
+          "params": {
+            "team": 0,
+            "players": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "id": "staff_warning_has_no_player_reduction",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "staff_misconduct",
+          "params": {
+            "team": 0,
+            "severe": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          5,
+          5
+        ],
+        "clock_running": true
+      }
+    },
+    {
+      "id": "staff_ejection_blocks_restart",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "staff_misconduct",
+          "params": {
+            "team": 0,
+            "severe": true
+          }
+        }
+      ],
+      "action": {
+        "type": "take_restart",
+        "params": {
+          "team": 1,
+          "player": 0,
+          "result": "play",
+          "milliseconds": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "staff_refusal_abandons",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "staff_misconduct",
+          "params": {
+            "team": 0,
+            "severe": true
+          }
+        },
+        {
+          "type": "confirm_staff_departure",
+          "params": {
+            "complied": false
+          }
+        }
+      ],
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    },
+    {
+      "id": "halftime_three_minutes",
+      "initial_data": {
+        "phase": "review",
+        "period": 1,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_period",
+          "params": {}
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "milliseconds": 180000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "period": 2,
+        "phase": "start",
+        "clock_ms": 600000
+      }
+    },
+    {
+      "id": "tied_knockout_starts_overtime",
+      "initial_data": {
+        "phase": "review",
+        "period": 2,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_period",
+          "params": {}
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "milliseconds": 180000
+          }
+        },
+        {
+          "type": "sprint_start",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "period": 3,
+        "phase": "live",
+        "clock_ms": 300000
+      }
+    },
+    {
+      "id": "overtime_first_goal_wins",
+      "initial_data": {
+        "phase": "live",
+        "period": 3,
+        "clock_ms": 300000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_a"
+        ],
+        "reason": "sudden_goal"
+      }
+    },
+    {
+      "id": "overtime_tie_repeats_after_one_minute",
+      "initial_data": {
+        "phase": "review",
+        "period": 3,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_period",
+          "params": {}
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "milliseconds": 60000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "period": 4,
+        "phase": "start",
+        "clock_ms": 300000
+      }
+    },
+    {
+      "id": "declared_league_mode_allows_draw",
+      "initial_data": {
+        "phase": "review",
+        "period": 2,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "knockout": false,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_period",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw"
+      }
+    },
+    {
+      "id": "late_goal_counts_once",
+      "initial_data": {
+        "phase": "review",
+        "period": 1,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "late_goal",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "late_goal",
+        "params": {
+          "team": 0,
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "invalid_suspension_without_timer",
+      "initial_data": {
+        "phase": "live",
+        "period": 1,
+        "clock_ms": 600000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "suspended",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "invalid_ongoing_overtime_lead",
+      "initial_data": {
+        "phase": "live",
+        "period": 3,
+        "clock_ms": 300000,
+        "clock_running": true,
+        "break_ms": 0,
+        "knockout": true,
+        "score": [
+          1,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cards": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "ejected": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "penalties": [],
+        "restart": null,
+        "pending": null,
+        "late_used": false,
+        "staff_warning": [
+          false,
+          false
+        ],
+        "staff_pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

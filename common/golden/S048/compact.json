@@ -1,0 +1,1571 @@
+{
+  "profile_id": "S048",
+  "ruleset_id": "builtin.snooker.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 15,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "red_then_black",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 15,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "reds": 1,
+            "on_potted": false,
+            "free_potted": false
+          }
+        },
+        {
+          "type": "nominate_colour",
+          "params": {
+            "value": 7
+          }
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "reds": 0,
+            "on_potted": true,
+            "free_potted": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          8,
+          0
+        ],
+        "reds": 14,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "two_reds_one_stroke",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 15,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "reds": 2,
+            "on_potted": false,
+            "free_potted": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          2,
+          0
+        ],
+        "reds": 13,
+        "stage": "colour",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "colour_requires_nomination",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          1,
+          0
+        ],
+        "reds": 14,
+        "stage": "colour",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "stroke",
+        "params": {
+          "reds": 0,
+          "on_potted": true,
+          "free_potted": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "red_cannot_be_potted_with_colour_on",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          1,
+          0
+        ],
+        "reds": 14,
+        "stage": "colour",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "nominate_colour",
+          "params": {
+            "value": 2
+          }
+        }
+      ],
+      "action": {
+        "type": "stroke",
+        "params": {
+          "reds": 1,
+          "on_potted": false,
+          "free_potted": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "missed_colour_returns_to_red",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          1,
+          0
+        ],
+        "reds": 14,
+        "stage": "colour",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "nominate_colour",
+          "params": {
+            "value": 7
+          }
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "reds": 0,
+            "on_potted": false,
+            "free_potted": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "turn",
+        "turn": 1,
+        "scores": [
+          1,
+          0
+        ],
+        "reds": 14,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "last_red_allows_one_extra_colour",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 1,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "reds": 1,
+            "on_potted": false,
+            "free_potted": false
+          }
+        },
+        {
+          "type": "nominate_colour",
+          "params": {
+            "value": 7
+          }
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "reds": 0,
+            "on_potted": true,
+            "free_potted": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          8,
+          0
+        ],
+        "reds": 0,
+        "stage": "clearance",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "yellow_then_green_clearance",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 0,
+        "stage": "clearance",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "reds": 0,
+            "on_potted": true,
+            "free_potted": false
+          }
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "reds": 0,
+            "on_potted": true,
+            "free_potted": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          5,
+          0
+        ],
+        "reds": 0,
+        "stage": "clearance",
+        "clearance": 4,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "cannot_pot_more_reds_than_remain",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 1,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "stroke",
+        "params": {
+          "reds": 2,
+          "on_potted": false,
+          "free_potted": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "free_ball_and_red_both_count",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 15,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": true,
+        "free_nomination": 7,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "reds": 1,
+            "on_potted": false,
+            "free_potted": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          2,
+          0
+        ],
+        "reds": 14,
+        "stage": "colour",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "free_ball_without_nomination_rejected",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 15,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": true,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "stroke",
+        "params": {
+          "reds": 0,
+          "on_potted": false,
+          "free_potted": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "free_ball_black_as_red_has_four_point_minimum",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 15,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": true,
+        "free_nomination": 7,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "points": 4,
+            "reds_removed": 0,
+            "miss": false,
+            "full_ball_available": false,
+            "free_ball_available": false
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      },
+      "legal_constraints": {
+        "phase": "choice",
+        "player": 1
+      }
+    },
+    {
+      "id": "free_ball_clearance_does_not_remove_ball_on",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 0,
+        "stage": "clearance",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": true,
+        "free_nomination": 7,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "reds": 0,
+            "on_potted": false,
+            "free_potted": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          2,
+          0
+        ],
+        "reds": 0,
+        "stage": "clearance",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "both_free_and_ball_on_score_once_in_clearance",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 0,
+        "stage": "clearance",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": true,
+        "free_nomination": 7,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "reds": 0,
+            "on_potted": true,
+            "free_potted": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          2,
+          0
+        ],
+        "reds": 0,
+        "stage": "clearance",
+        "clearance": 3,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "removed_colour_cannot_be_free_ball",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 0,
+        "stage": "clearance",
+        "clearance": 5,
+        "nominated": null,
+        "free_ball": true,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "nominate_free_ball",
+        "params": {
+          "value": 3
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "ball_on_cannot_nominate_itself",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 0,
+        "stage": "clearance",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": true,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "nominate_free_ball",
+        "params": {
+          "value": 2
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "foul_on_black_requires_seven",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          1,
+          0
+        ],
+        "reds": 14,
+        "stage": "colour",
+        "clearance": 2,
+        "nominated": 7,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "foul",
+        "params": {
+          "points": 4,
+          "reds_removed": 0,
+          "miss": false,
+          "full_ball_available": false,
+          "free_ball_available": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "ordinary_foul_cannot_restore_position",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 15,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "points": 4,
+            "reds_removed": 0,
+            "miss": false,
+            "full_ball_available": false,
+            "free_ball_available": false
+          }
+        }
+      ],
+      "action": {
+        "type": "choose_after_foul",
+        "params": {
+          "choice": "replace"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "foul_reds_stay_removed",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 15,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "points": 4,
+            "reds_removed": 2,
+            "miss": false,
+            "full_ball_available": false,
+            "free_ball_available": false
+          }
+        },
+        {
+          "type": "choose_after_foul",
+          "params": {
+            "choice": "play"
+          }
+        }
+      ],
+      "data": {
+        "phase": "turn",
+        "turn": 1,
+        "scores": [
+          0,
+          4
+        ],
+        "reds": 13,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "last_red_foul_goes_direct_to_yellow",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 1,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "points": 4,
+            "reds_removed": 1,
+            "miss": false,
+            "full_ball_available": false,
+            "free_ball_available": false
+          }
+        },
+        {
+          "type": "choose_after_foul",
+          "params": {
+            "choice": "play"
+          }
+        }
+      ],
+      "data": {
+        "phase": "turn",
+        "turn": 1,
+        "scores": [
+          0,
+          4
+        ],
+        "reds": 0,
+        "stage": "clearance",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "offender_can_be_required_to_play_again",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 15,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "points": 4,
+            "reds_removed": 0,
+            "miss": false,
+            "full_ball_available": false,
+            "free_ball_available": false
+          }
+        },
+        {
+          "type": "choose_after_foul",
+          "params": {
+            "choice": "return"
+          }
+        }
+      ],
+      "data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          4
+        ],
+        "reds": 15,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "free_ball_only_for_incoming_player",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 15,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "points": 4,
+            "reds_removed": 0,
+            "miss": false,
+            "full_ball_available": false,
+            "free_ball_available": true
+          }
+        },
+        {
+          "type": "choose_after_foul",
+          "params": {
+            "choice": "return"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "free_ball": false
+      }
+    },
+    {
+      "id": "incoming_player_receives_free_ball",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 15,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "points": 4,
+            "reds_removed": 0,
+            "miss": false,
+            "full_ball_available": false,
+            "free_ball_available": true
+          }
+        },
+        {
+          "type": "choose_after_foul",
+          "params": {
+            "choice": "play"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "free_ball": true,
+        "player": 1
+      }
+    },
+    {
+      "id": "miss_restores_reds_but_keeps_penalty",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 15,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "points": 4,
+            "reds_removed": 2,
+            "miss": true,
+            "full_ball_available": false,
+            "free_ball_available": false
+          }
+        },
+        {
+          "type": "choose_after_foul",
+          "params": {
+            "choice": "replace"
+          }
+        }
+      ],
+      "data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          4
+        ],
+        "reds": 15,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "two_misses_require_warning",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 15,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "points": 4,
+            "reds_removed": 0,
+            "miss": true,
+            "full_ball_available": true,
+            "free_ball_available": false
+          }
+        },
+        {
+          "type": "choose_after_foul",
+          "params": {
+            "choice": "replace"
+          }
+        },
+        {
+          "type": "foul",
+          "params": {
+            "points": 4,
+            "reds_removed": 0,
+            "miss": true,
+            "full_ball_available": true,
+            "free_ball_available": false
+          }
+        },
+        {
+          "type": "choose_after_foul",
+          "params": {
+            "choice": "replace"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "miss_warning": true
+      }
+    },
+    {
+      "id": "third_full_ball_miss_loses_frame",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 15,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "points": 4,
+            "reds_removed": 0,
+            "miss": true,
+            "full_ball_available": true,
+            "free_ball_available": false
+          }
+        },
+        {
+          "type": "choose_after_foul",
+          "params": {
+            "choice": "replace"
+          }
+        },
+        {
+          "type": "foul",
+          "params": {
+            "points": 4,
+            "reds_removed": 0,
+            "miss": true,
+            "full_ball_available": true,
+            "free_ball_available": false
+          }
+        },
+        {
+          "type": "choose_after_foul",
+          "params": {
+            "choice": "replace"
+          }
+        },
+        {
+          "type": "foul",
+          "params": {
+            "points": 4,
+            "reds_removed": 0,
+            "miss": true,
+            "full_ball_available": true,
+            "free_ball_available": false
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "bob"
+        ],
+        "reason": "three_misses"
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "playing_from_new_position_resets_miss_sequence",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 15,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 1,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "points": 4,
+            "reds_removed": 0,
+            "miss": true,
+            "full_ball_available": true,
+            "free_ball_available": false
+          }
+        },
+        {
+          "type": "choose_after_foul",
+          "params": {
+            "choice": "return"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "miss_warning": false
+      }
+    },
+    {
+      "id": "final_black_ends_frame",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          40,
+          30
+        ],
+        "reds": 0,
+        "stage": "clearance",
+        "clearance": 7,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "reds": 0,
+            "on_potted": true,
+            "free_potted": false
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "alice"
+        ],
+        "reason": "points"
+      }
+    },
+    {
+      "id": "tied_final_black_is_respotted",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          30,
+          37
+        ],
+        "reds": 0,
+        "stage": "clearance",
+        "clearance": 7,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "reds": 0,
+            "on_potted": true,
+            "free_potted": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "black_toss",
+        "turn": 0,
+        "scores": [
+          37,
+          37
+        ],
+        "reds": 0,
+        "stage": "black_tie",
+        "clearance": 7,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "respotted_black_needs_toss",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          30,
+          37
+        ],
+        "reds": 0,
+        "stage": "clearance",
+        "clearance": 7,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "reds": 0,
+            "on_potted": true,
+            "free_potted": false
+          }
+        }
+      ],
+      "action": {
+        "type": "stroke",
+        "params": {
+          "reds": 0,
+          "on_potted": true,
+          "free_potted": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "respotted_black_foul_decides",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          30,
+          37
+        ],
+        "reds": 0,
+        "stage": "clearance",
+        "clearance": 7,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "reds": 0,
+            "on_potted": true,
+            "free_potted": false
+          }
+        },
+        {
+          "type": "choose_black_start",
+          "params": {
+            "player": 1
+          }
+        },
+        {
+          "type": "foul",
+          "params": {
+            "points": 7,
+            "reds_removed": 0,
+            "miss": false,
+            "full_ball_available": false,
+            "free_ball_available": false
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "alice"
+        ]
+      }
+    },
+    {
+      "id": "final_black_foul_can_leave_current_leader_winning",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          40,
+          30
+        ],
+        "reds": 0,
+        "stage": "clearance",
+        "clearance": 7,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "points": 7,
+            "reds_removed": 0,
+            "miss": false,
+            "full_ball_available": false,
+            "free_ball_available": false
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "alice"
+        ]
+      }
+    },
+    {
+      "id": "final_black_foul_can_create_tie",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          37,
+          30
+        ],
+        "reds": 0,
+        "stage": "clearance",
+        "clearance": 7,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "points": 7,
+            "reds_removed": 0,
+            "miss": false,
+            "full_ball_available": false,
+            "free_ball_available": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "black_toss"
+      }
+    },
+    {
+      "id": "no_red_stage_with_empty_rack",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 0,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "concession",
+      "initial_data": {
+        "phase": "turn",
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "reds": 15,
+        "stage": "reds",
+        "clearance": 2,
+        "nominated": null,
+        "free_ball": false,
+        "free_nomination": null,
+        "miss_count": 0,
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "concede",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "bob"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2508 @@
+{
+  "profile_id": "S137",
+  "ruleset_id": "builtin.weightlifting.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "lifter_0"
+    },
+    {
+      "id": "lifter_1"
+    },
+    {
+      "id": "lifter_2"
+    },
+    {
+      "id": "lifter_3"
+    },
+    {
+      "id": "lifter_4"
+    },
+    {
+      "id": "lifter_5"
+    },
+    {
+      "id": "lifter_6"
+    },
+    {
+      "id": "lifter_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "opening_declarations",
+      "actions": [
+        {
+          "type": "declare_openers",
+          "params": {
+            "weights_kg": [
+              100,
+              100,
+              100,
+              100,
+              100,
+              100,
+              100,
+              100
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "lift": 0,
+        "bar_kg": 20,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lot_breaks_equal_openers",
+      "initial_data": {
+        "phase": "ready",
+        "lift": 0,
+        "bar_kg": 20,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      },
+      "legal_constraints": {
+        "next_participant": 0
+      }
+    },
+    {
+      "id": "call_lowest",
+      "initial_data": {
+        "phase": "ready",
+        "lift": 0,
+        "bar_kg": 20,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "call_next",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "called",
+        "lift": 0,
+        "bar_kg": 100,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      }
+    },
+    {
+      "id": "majority_success",
+      "initial_data": {
+        "phase": "called",
+        "lift": 0,
+        "bar_kg": 100,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "judge_attempt",
+          "params": {
+            "votes": [
+              true,
+              false,
+              true
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "lift": 0,
+        "bar_kg": 100,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          101,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 1
+              }
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      }
+    },
+    {
+      "id": "majority_failure",
+      "initial_data": {
+        "phase": "called",
+        "lift": 0,
+        "bar_kg": 100,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "judge_attempt",
+          "params": {
+            "votes": [
+              false,
+              true,
+              false
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "lift": 0,
+        "bar_kg": 100,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [
+              {
+                "weight_kg": 100,
+                "passed": false,
+                "sequence": 1
+              }
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      }
+    },
+    {
+      "id": "timeout_consumes_attempt",
+      "initial_data": {
+        "phase": "called",
+        "lift": 0,
+        "bar_kg": 100,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "time_expired",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "lift": 0,
+        "bar_kg": 100,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [
+              {
+                "weight_kg": 100,
+                "passed": false,
+                "sequence": 1
+              }
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lower_attempt_number_precedes_repeat",
+      "initial_data": {
+        "phase": "ready",
+        "lift": 0,
+        "bar_kg": 100,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [
+              {
+                "weight_kg": 100,
+                "passed": false,
+                "sequence": 1
+              }
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      },
+      "legal_constraints": {
+        "next_participant": 1
+      }
+    },
+    {
+      "id": "judge_without_call_rejected",
+      "initial_data": {
+        "phase": "ready",
+        "lift": 0,
+        "bar_kg": 20,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      },
+      "action": {
+        "type": "judge_attempt",
+        "params": {
+          "votes": [
+            true,
+            true,
+            true
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "bar_cannot_be_reduced",
+      "initial_data": {
+        "phase": "called",
+        "lift": 0,
+        "bar_kg": 100,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      },
+      "action": {
+        "type": "change_declaration",
+        "params": {
+          "participant": 0,
+          "weight_kg": 99
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "third_change_rejected",
+      "initial_data": {
+        "phase": "ready",
+        "lift": 0,
+        "bar_kg": 20,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "change_declaration",
+          "params": {
+            "participant": 0,
+            "weight_kg": 101
+          }
+        },
+        {
+          "type": "change_declaration",
+          "params": {
+            "participant": 0,
+            "weight_kg": 102
+          }
+        }
+      ],
+      "action": {
+        "type": "change_declaration",
+        "params": {
+          "participant": 0,
+          "weight_kg": 103
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "called_raise_reorders",
+      "initial_data": {
+        "phase": "called",
+        "lift": 0,
+        "bar_kg": 100,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "change_declaration",
+          "params": {
+            "participant": 0,
+            "weight_kg": 110
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_participant": 1,
+        "phase": "ready"
+      }
+    },
+    {
+      "id": "success_requires_increment",
+      "initial_data": {
+        "phase": "ready",
+        "lift": 0,
+        "bar_kg": 100,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 1
+              }
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "consecutive_attempt_two_minutes",
+      "initial_data": {
+        "phase": "called",
+        "lift": 0,
+        "bar_kg": 100,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          100,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "judge_attempt",
+          "params": {
+            "votes": [
+              false,
+              false,
+              false
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "ordinary_attempt_seconds": 120,
+        "next_participant": 0
+      }
+    },
+    {
+      "id": "three_attempt_limit",
+      "initial_data": {
+        "phase": "called",
+        "lift": 0,
+        "bar_kg": 100,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          100,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "judge_attempt",
+          "params": {
+            "votes": [
+              false,
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "type": "call_next",
+          "params": {}
+        },
+        {
+          "type": "judge_attempt",
+          "params": {
+            "votes": [
+              false,
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "type": "call_next",
+          "params": {}
+        },
+        {
+          "type": "judge_attempt",
+          "params": {
+            "votes": [
+              false,
+              false,
+              false
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    },
+    {
+      "id": "earliest_total_breaks_tie",
+      "initial_data": {
+        "phase": "review",
+        "lift": 1,
+        "bar_kg": 120,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 1
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 2
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 3
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 4
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 5
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 6
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 7
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 8
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 9
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 10
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 11
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 12
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 13
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 14
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 15
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 16
+              }
+            ]
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_lift",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "lifter_0"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "no_snatch_no_total",
+      "initial_data": {
+        "phase": "review",
+        "lift": 1,
+        "bar_kg": 120,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [
+              {
+                "weight_kg": 100,
+                "passed": false,
+                "sequence": 1
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 2
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 3
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 4
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 5
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 6
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 7
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 8
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 9
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 10
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 11
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 12
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 13
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 14
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 15
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 16
+              }
+            ]
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_lift",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "lifter_1"
+        ]
+      }
+    },
+    {
+      "id": "official_exclusion_changes_winner",
+      "initial_data": {
+        "phase": "review",
+        "lift": 1,
+        "bar_kg": 120,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 1
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 2
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 3
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 4
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 5
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 6
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 7
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": true,
+                "sequence": 8
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 9
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 10
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 11
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 12
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 13
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 14
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 15
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 16
+              }
+            ]
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "participant": 0
+          }
+        },
+        {
+          "type": "confirm_lift",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "lifter_1"
+        ]
+      }
+    },
+    {
+      "id": "all_fail_no_contest",
+      "initial_data": {
+        "phase": "review",
+        "lift": 1,
+        "bar_kg": 120,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [
+              {
+                "weight_kg": 100,
+                "passed": false,
+                "sequence": 1
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": false,
+                "sequence": 2
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": false,
+                "sequence": 3
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": false,
+                "sequence": 4
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": false,
+                "sequence": 5
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": false,
+                "sequence": 6
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": false,
+                "sequence": 7
+              }
+            ],
+            [
+              {
+                "weight_kg": 100,
+                "passed": false,
+                "sequence": 8
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 9
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 10
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 11
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 12
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 13
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 14
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 15
+              }
+            ],
+            [
+              {
+                "weight_kg": 120,
+                "passed": true,
+                "sequence": 16
+              }
+            ]
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_lift",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "premature_confirmation_rejected",
+      "initial_data": {
+        "phase": "ready",
+        "lift": 0,
+        "bar_kg": 20,
+        "lots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "declared": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "changes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "attempts": [
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      },
+      "action": {
+        "type": "confirm_lift",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

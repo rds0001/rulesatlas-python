@@ -1,0 +1,2217 @@
+[
+  {
+    "id": "unknown_reference",
+    "pack": {
+      "schema_version": "1.0",
+      "game_id": "user.first_to_three",
+      "name": "First to Three",
+      "ruleset_id": "user.first_to_three.standard",
+      "ruleset_version": "1.0.0",
+      "family": "finite_turn",
+      "description": "Fiktives Beispiel, kein Sportregelwerk.",
+      "participants": {
+        "min": 2,
+        "max": 2
+      },
+      "state": {
+        "fields": {
+          "turn": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "initial": {
+          "turn": 0,
+          "scores": [
+            0,
+            0
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "when": {
+            "ref": "state.missing"
+          },
+          "effects": [
+            {
+              "op": "inc",
+              "path": "/scores/{player}",
+              "by": 1
+            },
+            {
+              "op": "set",
+              "path": "/turn",
+              "value": {
+                "op": "sub",
+                "args": [
+                  1,
+                  {
+                    "ref": "state.turn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.0"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            0
+          ],
+          "reason": "score_threshold"
+        },
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.1"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            1
+          ],
+          "reason": "score_threshold"
+        }
+      ],
+      "provenance": {
+        "basis": "explicit_user_defined",
+        "verification_status": "example_only",
+        "source_refs": []
+      },
+      "capabilities": {
+        "validate_state": true,
+        "legal_actions": "enumerated",
+        "apply_action": true,
+        "outcome": true
+      }
+    },
+    "valid": false
+  },
+  {
+    "id": "bad_arity",
+    "pack": {
+      "schema_version": "1.0",
+      "game_id": "user.first_to_three",
+      "name": "First to Three",
+      "ruleset_id": "user.first_to_three.standard",
+      "ruleset_version": "1.0.0",
+      "family": "finite_turn",
+      "description": "Fiktives Beispiel, kein Sportregelwerk.",
+      "participants": {
+        "min": 2,
+        "max": 2
+      },
+      "state": {
+        "fields": {
+          "turn": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "initial": {
+          "turn": 0,
+          "scores": [
+            0,
+            0
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "when": {
+            "op": "not",
+            "args": [
+              true,
+              false
+            ]
+          },
+          "effects": [
+            {
+              "op": "inc",
+              "path": "/scores/{player}",
+              "by": 1
+            },
+            {
+              "op": "set",
+              "path": "/turn",
+              "value": {
+                "op": "sub",
+                "args": [
+                  1,
+                  {
+                    "ref": "state.turn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.0"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            0
+          ],
+          "reason": "score_threshold"
+        },
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.1"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            1
+          ],
+          "reason": "score_threshold"
+        }
+      ],
+      "provenance": {
+        "basis": "explicit_user_defined",
+        "verification_status": "example_only",
+        "source_refs": []
+      },
+      "capabilities": {
+        "validate_state": true,
+        "legal_actions": "enumerated",
+        "apply_action": true,
+        "outcome": true
+      }
+    },
+    "valid": false
+  },
+  {
+    "id": "unknown_operator",
+    "pack": {
+      "schema_version": "1.0",
+      "game_id": "user.first_to_three",
+      "name": "First to Three",
+      "ruleset_id": "user.first_to_three.standard",
+      "ruleset_version": "1.0.0",
+      "family": "finite_turn",
+      "description": "Fiktives Beispiel, kein Sportregelwerk.",
+      "participants": {
+        "min": 2,
+        "max": 2
+      },
+      "state": {
+        "fields": {
+          "turn": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "initial": {
+          "turn": 0,
+          "scores": [
+            0,
+            0
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "when": {
+            "op": "eval",
+            "args": [
+              "1+1"
+            ]
+          },
+          "effects": [
+            {
+              "op": "inc",
+              "path": "/scores/{player}",
+              "by": 1
+            },
+            {
+              "op": "set",
+              "path": "/turn",
+              "value": {
+                "op": "sub",
+                "args": [
+                  1,
+                  {
+                    "ref": "state.turn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.0"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            0
+          ],
+          "reason": "score_threshold"
+        },
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.1"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            1
+          ],
+          "reason": "score_threshold"
+        }
+      ],
+      "provenance": {
+        "basis": "explicit_user_defined",
+        "verification_status": "example_only",
+        "source_refs": []
+      },
+      "capabilities": {
+        "validate_state": true,
+        "legal_actions": "enumerated",
+        "apply_action": true,
+        "outcome": true
+      }
+    },
+    "valid": false
+  },
+  {
+    "id": "unknown_index",
+    "pack": {
+      "schema_version": "1.0",
+      "game_id": "user.first_to_three",
+      "name": "First to Three",
+      "ruleset_id": "user.first_to_three.standard",
+      "ruleset_version": "1.0.0",
+      "family": "finite_turn",
+      "description": "Fiktives Beispiel, kein Sportregelwerk.",
+      "participants": {
+        "min": 2,
+        "max": 2
+      },
+      "state": {
+        "fields": {
+          "turn": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "initial": {
+          "turn": 0,
+          "scores": [
+            0,
+            0
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "when": {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "state.turn"
+              },
+              {
+                "ref": "params.player"
+              }
+            ]
+          },
+          "effects": [
+            {
+              "op": "inc",
+              "path": "/scores/{absent}",
+              "by": 1
+            },
+            {
+              "op": "set",
+              "path": "/turn",
+              "value": {
+                "op": "sub",
+                "args": [
+                  1,
+                  {
+                    "ref": "state.turn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.0"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            0
+          ],
+          "reason": "score_threshold"
+        },
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.1"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            1
+          ],
+          "reason": "score_threshold"
+        }
+      ],
+      "provenance": {
+        "basis": "explicit_user_defined",
+        "verification_status": "example_only",
+        "source_refs": []
+      },
+      "capabilities": {
+        "validate_state": true,
+        "legal_actions": "enumerated",
+        "apply_action": true,
+        "outcome": true
+      }
+    },
+    "valid": false
+  },
+  {
+    "id": "overlap",
+    "pack": {
+      "schema_version": "1.0",
+      "game_id": "user.first_to_three",
+      "name": "First to Three",
+      "ruleset_id": "user.first_to_three.standard",
+      "ruleset_version": "1.0.0",
+      "family": "finite_turn",
+      "description": "Fiktives Beispiel, kein Sportregelwerk.",
+      "participants": {
+        "min": 2,
+        "max": 2
+      },
+      "state": {
+        "fields": {
+          "turn": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "initial": {
+          "turn": 0,
+          "scores": [
+            0,
+            0
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "when": {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "state.turn"
+              },
+              {
+                "ref": "params.player"
+              }
+            ]
+          },
+          "effects": [
+            {
+              "op": "inc",
+              "path": "/scores/{player}",
+              "by": 1
+            },
+            {
+              "op": "set",
+              "path": "/turn",
+              "value": {
+                "op": "sub",
+                "args": [
+                  1,
+                  {
+                    "ref": "state.turn"
+                  }
+                ]
+              }
+            },
+            {
+              "op": "inc",
+              "path": "/scores/{player}",
+              "by": 1
+            }
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.0"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            0
+          ],
+          "reason": "score_threshold"
+        },
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.1"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            1
+          ],
+          "reason": "score_threshold"
+        }
+      ],
+      "provenance": {
+        "basis": "explicit_user_defined",
+        "verification_status": "example_only",
+        "source_refs": []
+      },
+      "capabilities": {
+        "validate_state": true,
+        "legal_actions": "enumerated",
+        "apply_action": true,
+        "outcome": true
+      }
+    },
+    "valid": false
+  },
+  {
+    "id": "null_score",
+    "pack": {
+      "schema_version": "1.0",
+      "game_id": "user.first_to_three",
+      "name": "First to Three",
+      "ruleset_id": "user.first_to_three.standard",
+      "ruleset_version": "1.0.0",
+      "family": "finite_turn",
+      "description": "Fiktives Beispiel, kein Sportregelwerk.",
+      "participants": {
+        "min": 2,
+        "max": 2
+      },
+      "state": {
+        "fields": {
+          "turn": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "initial": {
+          "turn": 0,
+          "scores": [
+            0,
+            null
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "when": {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "state.turn"
+              },
+              {
+                "ref": "params.player"
+              }
+            ]
+          },
+          "effects": [
+            {
+              "op": "inc",
+              "path": "/scores/{player}",
+              "by": 1
+            },
+            {
+              "op": "set",
+              "path": "/turn",
+              "value": {
+                "op": "sub",
+                "args": [
+                  1,
+                  {
+                    "ref": "state.turn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.0"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            0
+          ],
+          "reason": "score_threshold"
+        },
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.1"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            1
+          ],
+          "reason": "score_threshold"
+        }
+      ],
+      "provenance": {
+        "basis": "explicit_user_defined",
+        "verification_status": "example_only",
+        "source_refs": []
+      },
+      "capabilities": {
+        "validate_state": true,
+        "legal_actions": "enumerated",
+        "apply_action": true,
+        "outcome": true
+      }
+    },
+    "valid": false
+  },
+  {
+    "id": "builtin_hijack",
+    "pack": {
+      "schema_version": "1.0",
+      "game_id": "builtin.hijack",
+      "name": "First to Three",
+      "ruleset_id": "user.first_to_three.standard",
+      "ruleset_version": "1.0.0",
+      "family": "finite_turn",
+      "description": "Fiktives Beispiel, kein Sportregelwerk.",
+      "participants": {
+        "min": 2,
+        "max": 2
+      },
+      "state": {
+        "fields": {
+          "turn": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "initial": {
+          "turn": 0,
+          "scores": [
+            0,
+            0
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "when": {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "state.turn"
+              },
+              {
+                "ref": "params.player"
+              }
+            ]
+          },
+          "effects": [
+            {
+              "op": "inc",
+              "path": "/scores/{player}",
+              "by": 1
+            },
+            {
+              "op": "set",
+              "path": "/turn",
+              "value": {
+                "op": "sub",
+                "args": [
+                  1,
+                  {
+                    "ref": "state.turn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.0"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            0
+          ],
+          "reason": "score_threshold"
+        },
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.1"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            1
+          ],
+          "reason": "score_threshold"
+        }
+      ],
+      "provenance": {
+        "basis": "explicit_user_defined",
+        "verification_status": "example_only",
+        "source_refs": []
+      },
+      "capabilities": {
+        "validate_state": true,
+        "legal_actions": "enumerated",
+        "apply_action": true,
+        "outcome": true
+      }
+    },
+    "valid": false
+  },
+  {
+    "id": "owner_hijack",
+    "pack": {
+      "schema_version": "1.0",
+      "game_id": "user.first_to_three",
+      "name": "First to Three",
+      "ruleset_id": "user.other.standard",
+      "ruleset_version": "1.0.0",
+      "family": "finite_turn",
+      "description": "Fiktives Beispiel, kein Sportregelwerk.",
+      "participants": {
+        "min": 2,
+        "max": 2
+      },
+      "state": {
+        "fields": {
+          "turn": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "initial": {
+          "turn": 0,
+          "scores": [
+            0,
+            0
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "when": {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "state.turn"
+              },
+              {
+                "ref": "params.player"
+              }
+            ]
+          },
+          "effects": [
+            {
+              "op": "inc",
+              "path": "/scores/{player}",
+              "by": 1
+            },
+            {
+              "op": "set",
+              "path": "/turn",
+              "value": {
+                "op": "sub",
+                "args": [
+                  1,
+                  {
+                    "ref": "state.turn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.0"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            0
+          ],
+          "reason": "score_threshold"
+        },
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.1"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            1
+          ],
+          "reason": "score_threshold"
+        }
+      ],
+      "provenance": {
+        "basis": "explicit_user_defined",
+        "verification_status": "example_only",
+        "source_refs": []
+      },
+      "capabilities": {
+        "validate_state": true,
+        "legal_actions": "enumerated",
+        "apply_action": true,
+        "outcome": true
+      }
+    },
+    "valid": false
+  },
+  {
+    "id": "depth_limit",
+    "pack": {
+      "schema_version": "1.0",
+      "game_id": "user.first_to_three",
+      "name": "First to Three",
+      "ruleset_id": "user.first_to_three.standard",
+      "ruleset_version": "1.0.0",
+      "family": "finite_turn",
+      "description": "Fiktives Beispiel, kein Sportregelwerk.",
+      "participants": {
+        "min": 2,
+        "max": 2
+      },
+      "state": {
+        "fields": {
+          "turn": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "initial": {
+          "turn": 0,
+          "scores": [
+            0,
+            0
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "when": {
+            "op": "not",
+            "args": [
+              {
+                "op": "not",
+                "args": [
+                  {
+                    "op": "not",
+                    "args": [
+                      {
+                        "op": "not",
+                        "args": [
+                          {
+                            "op": "not",
+                            "args": [
+                              {
+                                "op": "not",
+                                "args": [
+                                  {
+                                    "op": "not",
+                                    "args": [
+                                      {
+                                        "op": "not",
+                                        "args": [
+                                          {
+                                            "op": "not",
+                                            "args": [
+                                              {
+                                                "op": "not",
+                                                "args": [
+                                                  {
+                                                    "op": "not",
+                                                    "args": [
+                                                      {
+                                                        "op": "not",
+                                                        "args": [
+                                                          {
+                                                            "op": "not",
+                                                            "args": [
+                                                              {
+                                                                "op": "not",
+                                                                "args": [
+                                                                  {
+                                                                    "op": "not",
+                                                                    "args": [
+                                                                      {
+                                                                        "op": "not",
+                                                                        "args": [
+                                                                          {
+                                                                            "op": "not",
+                                                                            "args": [
+                                                                              {
+                                                                                "op": "not",
+                                                                                "args": [
+                                                                                  {
+                                                                                    "op": "not",
+                                                                                    "args": [
+                                                                                      {
+                                                                                        "op": "not",
+                                                                                        "args": [
+                                                                                          {
+                                                                                            "op": "not",
+                                                                                            "args": [
+                                                                                              {
+                                                                                                "op": "not",
+                                                                                                "args": [
+                                                                                                  {
+                                                                                                    "op": "not",
+                                                                                                    "args": [
+                                                                                                      {
+                                                                                                        "op": "not",
+                                                                                                        "args": [
+                                                                                                          {
+                                                                                                            "op": "not",
+                                                                                                            "args": [
+                                                                                                              {
+                                                                                                                "op": "not",
+                                                                                                                "args": [
+                                                                                                                  {
+                                                                                                                    "op": "not",
+                                                                                                                    "args": [
+                                                                                                                      {
+                                                                                                                        "op": "not",
+                                                                                                                        "args": [
+                                                                                                                          {
+                                                                                                                            "op": "not",
+                                                                                                                            "args": [
+                                                                                                                              {
+                                                                                                                                "op": "not",
+                                                                                                                                "args": [
+                                                                                                                                  {
+                                                                                                                                    "op": "not",
+                                                                                                                                    "args": [
+                                                                                                                                      {
+                                                                                                                                        "op": "not",
+                                                                                                                                        "args": [
+                                                                                                                                          {
+                                                                                                                                            "op": "not",
+                                                                                                                                            "args": [
+                                                                                                                                              {
+                                                                                                                                                "op": "not",
+                                                                                                                                                "args": [
+                                                                                                                                                  true
+                                                                                                                                                ]
+                                                                                                                                              }
+                                                                                                                                            ]
+                                                                                                                                          }
+                                                                                                                                        ]
+                                                                                                                                      }
+                                                                                                                                    ]
+                                                                                                                                  }
+                                                                                                                                ]
+                                                                                                                              }
+                                                                                                                            ]
+                                                                                                                          }
+                                                                                                                        ]
+                                                                                                                      }
+                                                                                                                    ]
+                                                                                                                  }
+                                                                                                                ]
+                                                                                                              }
+                                                                                                            ]
+                                                                                                          }
+                                                                                                        ]
+                                                                                                      }
+                                                                                                    ]
+                                                                                                  }
+                                                                                                ]
+                                                                                              }
+                                                                                            ]
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    ]
+                                                                                  }
+                                                                                ]
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "effects": [
+            {
+              "op": "inc",
+              "path": "/scores/{player}",
+              "by": 1
+            },
+            {
+              "op": "set",
+              "path": "/turn",
+              "value": {
+                "op": "sub",
+                "args": [
+                  1,
+                  {
+                    "ref": "state.turn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.0"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            0
+          ],
+          "reason": "score_threshold"
+        },
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.1"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            1
+          ],
+          "reason": "score_threshold"
+        }
+      ],
+      "provenance": {
+        "basis": "explicit_user_defined",
+        "verification_status": "example_only",
+        "source_refs": []
+      },
+      "capabilities": {
+        "validate_state": true,
+        "legal_actions": "enumerated",
+        "apply_action": true,
+        "outcome": true
+      }
+    },
+    "valid": false
+  },
+  {
+    "id": "inert_string",
+    "pack": {
+      "schema_version": "1.0",
+      "game_id": "user.first_to_three",
+      "name": "First to Three",
+      "ruleset_id": "user.first_to_three.standard",
+      "ruleset_version": "1.0.0",
+      "family": "finite_turn",
+      "description": "system(\"touch /tmp/never-executed\")",
+      "participants": {
+        "min": 2,
+        "max": 2
+      },
+      "state": {
+        "fields": {
+          "turn": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "initial": {
+          "turn": 0,
+          "scores": [
+            0,
+            0
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "when": {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "state.turn"
+              },
+              {
+                "ref": "params.player"
+              }
+            ]
+          },
+          "effects": [
+            {
+              "op": "inc",
+              "path": "/scores/{player}",
+              "by": 1
+            },
+            {
+              "op": "set",
+              "path": "/turn",
+              "value": {
+                "op": "sub",
+                "args": [
+                  1,
+                  {
+                    "ref": "state.turn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.0"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            0
+          ],
+          "reason": "score_threshold"
+        },
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.1"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            1
+          ],
+          "reason": "score_threshold"
+        }
+      ],
+      "provenance": {
+        "basis": "explicit_user_defined",
+        "verification_status": "example_only",
+        "source_refs": []
+      },
+      "capabilities": {
+        "validate_state": true,
+        "legal_actions": "enumerated",
+        "apply_action": true,
+        "outcome": true
+      }
+    },
+    "valid": true
+  },
+  {
+    "id": "noninteger_dynamic_index",
+    "pack": {
+      "schema_version": "1.0",
+      "game_id": "user.first_to_three",
+      "name": "First to Three",
+      "ruleset_id": "user.first_to_three.standard",
+      "ruleset_version": "1.0.0",
+      "family": "finite_turn",
+      "description": "Fiktives Beispiel, kein Sportregelwerk.",
+      "participants": {
+        "min": 2,
+        "max": 2
+      },
+      "state": {
+        "fields": {
+          "turn": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "initial": {
+          "turn": 0,
+          "scores": [
+            0,
+            0
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "when": {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "state.turn"
+              },
+              {
+                "ref": "params.player"
+              }
+            ]
+          },
+          "effects": [
+            {
+              "op": "inc",
+              "path": "/scores/{player}",
+              "by": 1
+            },
+            {
+              "op": "set",
+              "path": "/turn",
+              "value": {
+                "op": "sub",
+                "args": [
+                  1,
+                  {
+                    "ref": "state.turn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.0"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            0
+          ],
+          "reason": "score_threshold"
+        },
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.1"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            1
+          ],
+          "reason": "score_threshold"
+        }
+      ],
+      "provenance": {
+        "basis": "explicit_user_defined",
+        "verification_status": "example_only",
+        "source_refs": []
+      },
+      "capabilities": {
+        "validate_state": true,
+        "legal_actions": "enumerated",
+        "apply_action": true,
+        "outcome": true
+      }
+    },
+    "valid": false
+  },
+  {
+    "id": "duplicate_winner",
+    "pack": {
+      "schema_version": "1.0",
+      "game_id": "user.first_to_three",
+      "name": "First to Three",
+      "ruleset_id": "user.first_to_three.standard",
+      "ruleset_version": "1.0.0",
+      "family": "finite_turn",
+      "description": "Fiktives Beispiel, kein Sportregelwerk.",
+      "participants": {
+        "min": 2,
+        "max": 2
+      },
+      "state": {
+        "fields": {
+          "turn": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "initial": {
+          "turn": 0,
+          "scores": [
+            0,
+            0
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "when": {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "state.turn"
+              },
+              {
+                "ref": "params.player"
+              }
+            ]
+          },
+          "effects": [
+            {
+              "op": "inc",
+              "path": "/scores/{player}",
+              "by": 1
+            },
+            {
+              "op": "set",
+              "path": "/turn",
+              "value": {
+                "op": "sub",
+                "args": [
+                  1,
+                  {
+                    "ref": "state.turn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.0"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            0,
+            0
+          ],
+          "reason": "score_threshold"
+        },
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.1"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            1
+          ],
+          "reason": "score_threshold"
+        }
+      ],
+      "provenance": {
+        "basis": "explicit_user_defined",
+        "verification_status": "example_only",
+        "source_refs": []
+      },
+      "capabilities": {
+        "validate_state": true,
+        "legal_actions": "enumerated",
+        "apply_action": true,
+        "outcome": true
+      }
+    },
+    "valid": false
+  },
+  {
+    "id": "description_type",
+    "pack": {
+      "schema_version": "1.0",
+      "game_id": "user.first_to_three",
+      "name": "First to Three",
+      "ruleset_id": "user.first_to_three.standard",
+      "ruleset_version": "1.0.0",
+      "family": "finite_turn",
+      "description": [],
+      "participants": {
+        "min": 2,
+        "max": 2
+      },
+      "state": {
+        "fields": {
+          "turn": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "initial": {
+          "turn": 0,
+          "scores": [
+            0,
+            0
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "when": {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "state.turn"
+              },
+              {
+                "ref": "params.player"
+              }
+            ]
+          },
+          "effects": [
+            {
+              "op": "inc",
+              "path": "/scores/{player}",
+              "by": 1
+            },
+            {
+              "op": "set",
+              "path": "/turn",
+              "value": {
+                "op": "sub",
+                "args": [
+                  1,
+                  {
+                    "ref": "state.turn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.0"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            0
+          ],
+          "reason": "score_threshold"
+        },
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.1"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            1
+          ],
+          "reason": "score_threshold"
+        }
+      ],
+      "provenance": {
+        "basis": "explicit_user_defined",
+        "verification_status": "example_only",
+        "source_refs": []
+      },
+      "capabilities": {
+        "validate_state": true,
+        "legal_actions": "enumerated",
+        "apply_action": true,
+        "outcome": true
+      }
+    },
+    "valid": false
+  },
+  {
+    "id": "source_refs_type",
+    "pack": {
+      "schema_version": "1.0",
+      "game_id": "user.first_to_three",
+      "name": "First to Three",
+      "ruleset_id": "user.first_to_three.standard",
+      "ruleset_version": "1.0.0",
+      "family": "finite_turn",
+      "description": "Fiktives Beispiel, kein Sportregelwerk.",
+      "participants": {
+        "min": 2,
+        "max": 2
+      },
+      "state": {
+        "fields": {
+          "turn": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "initial": {
+          "turn": 0,
+          "scores": [
+            0,
+            0
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "when": {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "state.turn"
+              },
+              {
+                "ref": "params.player"
+              }
+            ]
+          },
+          "effects": [
+            {
+              "op": "inc",
+              "path": "/scores/{player}",
+              "by": 1
+            },
+            {
+              "op": "set",
+              "path": "/turn",
+              "value": {
+                "op": "sub",
+                "args": [
+                  1,
+                  {
+                    "ref": "state.turn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.0"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            0
+          ],
+          "reason": "score_threshold"
+        },
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.1"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            1
+          ],
+          "reason": "score_threshold"
+        }
+      ],
+      "provenance": {
+        "basis": "explicit_user_defined",
+        "verification_status": "example_only",
+        "source_refs": "not_an_array"
+      },
+      "capabilities": {
+        "validate_state": true,
+        "legal_actions": "enumerated",
+        "apply_action": true,
+        "outcome": true
+      }
+    },
+    "valid": false
+  },
+  {
+    "id": "string_guard",
+    "pack": {
+      "schema_version": "1.0",
+      "game_id": "user.first_to_three",
+      "name": "First to Three",
+      "ruleset_id": "user.first_to_three.standard",
+      "ruleset_version": "1.0.0",
+      "family": "finite_turn",
+      "description": "Fiktives Beispiel, kein Sportregelwerk.",
+      "participants": {
+        "min": 2,
+        "max": 2
+      },
+      "state": {
+        "fields": {
+          "turn": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "initial": {
+          "turn": 0,
+          "scores": [
+            0,
+            0
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "when": "true",
+          "effects": [
+            {
+              "op": "inc",
+              "path": "/scores/{player}",
+              "by": 1
+            },
+            {
+              "op": "set",
+              "path": "/turn",
+              "value": {
+                "op": "sub",
+                "args": [
+                  1,
+                  {
+                    "ref": "state.turn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.0"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            0
+          ],
+          "reason": "score_threshold"
+        },
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.1"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            1
+          ],
+          "reason": "score_threshold"
+        }
+      ],
+      "provenance": {
+        "basis": "explicit_user_defined",
+        "verification_status": "example_only",
+        "source_refs": []
+      },
+      "capabilities": {
+        "validate_state": true,
+        "legal_actions": "enumerated",
+        "apply_action": true,
+        "outcome": true
+      }
+    },
+    "valid": false
+  },
+  {
+    "id": "mixed_type_comparison",
+    "pack": {
+      "schema_version": "1.0",
+      "game_id": "user.first_to_three",
+      "name": "First to Three",
+      "ruleset_id": "user.first_to_three.standard",
+      "ruleset_version": "1.0.0",
+      "family": "finite_turn",
+      "description": "Fiktives Beispiel, kein Sportregelwerk.",
+      "participants": {
+        "min": 2,
+        "max": 2
+      },
+      "state": {
+        "fields": {
+          "turn": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "initial": {
+          "turn": 0,
+          "scores": [
+            0,
+            0
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "when": {
+            "op": "eq",
+            "args": [
+              true,
+              1
+            ]
+          },
+          "effects": [
+            {
+              "op": "inc",
+              "path": "/scores/{player}",
+              "by": 1
+            },
+            {
+              "op": "set",
+              "path": "/turn",
+              "value": {
+                "op": "sub",
+                "args": [
+                  1,
+                  {
+                    "ref": "state.turn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.0"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            0
+          ],
+          "reason": "score_threshold"
+        },
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "ref": "state.scores.1"
+              },
+              3
+            ]
+          },
+          "result_kind": "win",
+          "winners": [
+            1
+          ],
+          "reason": "score_threshold"
+        }
+      ],
+      "provenance": {
+        "basis": "explicit_user_defined",
+        "verification_status": "example_only",
+        "source_refs": []
+      },
+      "capabilities": {
+        "validate_state": true,
+        "legal_actions": "enumerated",
+        "apply_action": true,
+        "outcome": true
+      }
+    },
+    "valid": false
+  }
+]

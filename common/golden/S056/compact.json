@@ -1,0 +1,1849 @@
+{
+  "profile_id": "S056",
+  "ruleset_id": "builtin.kubb.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "team_a"
+    },
+    {
+      "id": "team_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "choose_team",
+      "actions": [
+        {
+          "type": "choose_first_team",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "batons",
+        "team": 0,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "hit_base",
+      "initial_data": {
+        "phase": "batons",
+        "team": 0,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "throw_baton",
+          "params": {
+            "knocked": [
+              5
+            ],
+            "king": false,
+            "from_baseline": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "batons",
+        "team": 0,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 5,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "turn_returns_fallen_kubbs",
+      "initial_data": {
+        "phase": "batons",
+        "team": 0,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 5,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "end_turn",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "insert",
+        "team": 1,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "valid_insertion_creates_opposing_field",
+      "initial_data": {
+        "phase": "insert",
+        "team": 1,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "throw_kubb",
+          "params": {
+            "kubb": 5,
+            "valid": true,
+            "king": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "batons",
+        "team": 1,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "field",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      },
+      "legal_constraints": {
+        "field_targets": [
+          5
+        ],
+        "base_targets": []
+      }
+    },
+    {
+      "id": "first_insertion_failure",
+      "initial_data": {
+        "phase": "insert",
+        "team": 1,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "throw_kubb",
+          "params": {
+            "kubb": 5,
+            "valid": false,
+            "king": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "insert",
+        "team": 1,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": 5,
+        "failed_insertion": 1,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "second_failure_opponent_places",
+      "initial_data": {
+        "phase": "insert",
+        "team": 1,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": 5,
+        "failed_insertion": 1,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "throw_kubb",
+          "params": {
+            "kubb": 5,
+            "valid": false,
+            "king": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "penalty_placement",
+        "team": 1,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": 5,
+        "failed_insertion": 2,
+        "winner": null,
+        "reason": null
+      },
+      "legal_constraints": {
+        "penalty_placer": 0
+      }
+    },
+    {
+      "id": "penalty_placement",
+      "initial_data": {
+        "phase": "penalty_placement",
+        "team": 1,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": 5,
+        "failed_insertion": 2,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "place_penalty_kubb",
+          "params": {
+            "kubb": 5
+          }
+        }
+      ],
+      "data": {
+        "phase": "batons",
+        "team": 1,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "field",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "third_insertion_forbidden",
+      "initial_data": {
+        "phase": "penalty_placement",
+        "team": 1,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": 5,
+        "failed_insertion": 2,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "throw_kubb",
+        "params": {
+          "kubb": 5,
+          "valid": true,
+          "king": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "base_hit_before_field_restored",
+      "initial_data": {
+        "phase": "batons",
+        "team": 1,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "field",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "throw_baton",
+          "params": {
+            "knocked": [
+              0
+            ],
+            "king": false,
+            "from_baseline": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "batons",
+        "team": 1,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "field",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 5,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "field_then_base_same_baton",
+      "initial_data": {
+        "phase": "batons",
+        "team": 1,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "field",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "throw_baton",
+          "params": {
+            "knocked": [
+              5,
+              0
+            ],
+            "king": false,
+            "from_baseline": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "batons",
+        "team": 1,
+        "kubbs": [
+          {
+            "status": "down",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "down",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 5,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "duplicate_impact_rejected",
+      "initial_data": {
+        "phase": "batons",
+        "team": 0,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "throw_baton",
+        "params": {
+          "knocked": [
+            5,
+            5
+          ],
+          "king": false,
+          "from_baseline": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "own_kubb_not_scoring_target",
+      "initial_data": {
+        "phase": "batons",
+        "team": 0,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "throw_baton",
+        "params": {
+          "knocked": [
+            0
+          ],
+          "king": false,
+          "from_baseline": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "advanced_line_requires_own_field",
+      "initial_data": {
+        "phase": "batons",
+        "team": 0,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "throw_baton",
+        "params": {
+          "knocked": [],
+          "king": false,
+          "from_baseline": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "unhit_field_allows_opponent_advance",
+      "initial_data": {
+        "phase": "batons",
+        "team": 1,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "field",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "end_turn",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "team": 0,
+        "advanced_line_available": true
+      }
+    },
+    {
+      "id": "last_baton_changes_turn",
+      "initial_data": {
+        "phase": "batons",
+        "team": 0,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 1,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "throw_baton",
+          "params": {
+            "knocked": [],
+            "king": false,
+            "from_baseline": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "batons",
+        "team": 1,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "premature_king_loses",
+      "initial_data": {
+        "phase": "batons",
+        "team": 0,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "throw_baton",
+          "params": {
+            "knocked": [],
+            "king": true,
+            "from_baseline": true
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_b"
+        ],
+        "reason": "premature_king"
+      }
+    },
+    {
+      "id": "insertion_king_loses",
+      "initial_data": {
+        "phase": "insert",
+        "team": 1,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "throw_kubb",
+          "params": {
+            "kubb": 5,
+            "valid": false,
+            "king": true
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_a"
+        ],
+        "reason": "premature_king"
+      }
+    },
+    {
+      "id": "legal_final_king",
+      "initial_data": {
+        "phase": "batons",
+        "team": 0,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "down",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "throw_baton",
+          "params": {
+            "knocked": [],
+            "king": true,
+            "from_baseline": true
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_a"
+        ],
+        "reason": "king"
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "king_from_advanced_line_loses",
+      "initial_data": {
+        "phase": "batons",
+        "team": 0,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "down",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "throw_baton",
+          "params": {
+            "knocked": [],
+            "king": true,
+            "from_baseline": false
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_b"
+        ],
+        "reason": "illegal_king"
+      }
+    },
+    {
+      "id": "base_cannot_switch_half",
+      "initial_data": {
+        "phase": "batons",
+        "team": 0,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": null,
+        "failed_insertion": 0,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "concede_during_insertion",
+      "initial_data": {
+        "phase": "insert",
+        "team": 1,
+        "kubbs": [
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "base",
+            "half": 0
+          },
+          {
+            "status": "down",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          },
+          {
+            "status": "base",
+            "half": 1
+          }
+        ],
+        "batons_left": 6,
+        "inserting": 5,
+        "failed_insertion": 1,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "concede",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_a"
+        ],
+        "reason": "concede"
+      }
+    }
+  ]
+}

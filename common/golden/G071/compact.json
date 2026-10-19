@@ -1,0 +1,1169 @@
+{
+  "profile_id": "G071",
+  "ruleset_id": "builtin.draw_poker.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "draw_phase_after_big_blind_option",
+      "actions": [
+        {
+          "type": "start",
+          "params": {
+            "deck": [
+              0,
+              12,
+              14,
+              25,
+              28,
+              38,
+              42,
+              11,
+              7,
+              24,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              13,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              26,
+              27,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              39,
+              40,
+              41,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "stacks": [
+              1000,
+              1000
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {}
+        },
+        {
+          "type": "check",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "drawing",
+        "street": 1,
+        "dealer": 0,
+        "turn": 1,
+        "initial_stacks": [
+          1000,
+          1000
+        ],
+        "stacks": [
+          960,
+          960
+        ],
+        "committed": [
+          40,
+          40
+        ],
+        "street_bets": [
+          0,
+          0
+        ],
+        "payouts": [
+          0,
+          0
+        ],
+        "last_raise": 40,
+        "acted": [
+          false,
+          false
+        ],
+        "folded": null,
+        "holes": [
+          [
+            12,
+            25,
+            38,
+            11,
+            24
+          ],
+          [
+            0,
+            14,
+            28,
+            42,
+            7
+          ]
+        ],
+        "board": [],
+        "burned": [],
+        "deck": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          26,
+          27,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          39,
+          40,
+          41,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51
+        ],
+        "discard": [],
+        "draw_done": [
+          false,
+          false
+        ]
+      },
+      "legal_count": 33
+    },
+    {
+      "id": "cannot_draw_before_betting_closes",
+      "actions": [
+        {
+          "type": "start",
+          "params": {
+            "deck": [
+              0,
+              12,
+              14,
+              25,
+              28,
+              38,
+              42,
+              11,
+              7,
+              24,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              13,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              26,
+              27,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              39,
+              40,
+              41,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "stacks": [
+              1000,
+              1000
+            ]
+          }
+        }
+      ],
+      "action": {
+        "type": "draw",
+        "params": {
+          "indices": []
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "stand_pat_full_house_wins",
+      "actions": [
+        {
+          "type": "start",
+          "params": {
+            "deck": [
+              0,
+              12,
+              14,
+              25,
+              28,
+              38,
+              42,
+              11,
+              7,
+              24,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              13,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              26,
+              27,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              39,
+              40,
+              41,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "stacks": [
+              1000,
+              1000
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {}
+        },
+        {
+          "type": "check",
+          "params": {}
+        },
+        {
+          "type": "draw",
+          "params": {
+            "indices": []
+          }
+        },
+        {
+          "type": "draw",
+          "params": {
+            "indices": []
+          }
+        },
+        {
+          "type": "check",
+          "params": {}
+        },
+        {
+          "type": "check",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ],
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "stack": 1040,
+            "net": 40
+          },
+          {
+            "player_id": "bob",
+            "place": 2,
+            "stack": 960,
+            "net": -40
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "replace_five_to_make_straight_flush",
+      "actions": [
+        {
+          "type": "start",
+          "params": {
+            "deck": [
+              0,
+              12,
+              14,
+              25,
+              28,
+              38,
+              42,
+              11,
+              7,
+              24,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              13,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              26,
+              27,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              39,
+              40,
+              41,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "stacks": [
+              1000,
+              1000
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {}
+        },
+        {
+          "type": "check",
+          "params": {}
+        },
+        {
+          "type": "draw",
+          "params": {
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "type": "draw",
+          "params": {
+            "indices": []
+          }
+        },
+        {
+          "type": "check",
+          "params": {}
+        },
+        {
+          "type": "check",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "bob"
+        ],
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 2,
+            "stack": 960,
+            "net": -40
+          },
+          {
+            "player_id": "bob",
+            "place": 1,
+            "stack": 1040,
+            "net": 40
+          }
+        ]
+      }
+    },
+    {
+      "id": "duplicate_exchange_index_rejected",
+      "actions": [
+        {
+          "type": "start",
+          "params": {
+            "deck": [
+              0,
+              12,
+              14,
+              25,
+              28,
+              38,
+              42,
+              11,
+              7,
+              24,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              13,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              26,
+              27,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              39,
+              40,
+              41,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "stacks": [
+              1000,
+              1000
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {}
+        },
+        {
+          "type": "check",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "draw",
+        "params": {
+          "indices": [
+            0,
+            0
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "allin_still_requires_draw_choices",
+      "actions": [
+        {
+          "type": "start",
+          "params": {
+            "deck": [
+              0,
+              12,
+              14,
+              25,
+              28,
+              38,
+              42,
+              11,
+              7,
+              24,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              13,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              26,
+              27,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              39,
+              40,
+              41,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "stacks": [
+              10,
+              10
+            ]
+          }
+        }
+      ],
+      "legal_count": 33
+    },
+    {
+      "id": "allin_finishes_after_both_draws",
+      "actions": [
+        {
+          "type": "start",
+          "params": {
+            "deck": [
+              0,
+              12,
+              14,
+              25,
+              28,
+              38,
+              42,
+              11,
+              7,
+              24,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              13,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              26,
+              27,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              39,
+              40,
+              41,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "stacks": [
+              10,
+              10
+            ]
+          }
+        },
+        {
+          "type": "draw",
+          "params": {
+            "indices": []
+          }
+        },
+        {
+          "type": "draw",
+          "params": {
+            "indices": []
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ],
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "stack": 20,
+            "net": 10
+          },
+          {
+            "player_id": "bob",
+            "place": 2,
+            "stack": 0,
+            "net": -10
+          }
+        ]
+      }
+    },
+    {
+      "id": "short_call_refund_then_draw",
+      "actions": [
+        {
+          "type": "start",
+          "params": {
+            "deck": [
+              0,
+              12,
+              14,
+              25,
+              28,
+              38,
+              42,
+              11,
+              7,
+              24,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              13,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              26,
+              27,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              39,
+              40,
+              41,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "stacks": [
+              30,
+              200
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {}
+        },
+        {
+          "type": "draw",
+          "params": {
+            "indices": []
+          }
+        },
+        {
+          "type": "draw",
+          "params": {
+            "indices": []
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ],
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "stack": 60,
+            "net": 30
+          },
+          {
+            "player_id": "bob",
+            "place": 2,
+            "stack": 170,
+            "net": -30
+          }
+        ]
+      }
+    },
+    {
+      "id": "postdraw_betting_limits_reset",
+      "actions": [
+        {
+          "type": "start",
+          "params": {
+            "deck": [
+              0,
+              12,
+              14,
+              25,
+              28,
+              38,
+              42,
+              11,
+              7,
+              24,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              13,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              26,
+              27,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              39,
+              40,
+              41,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "stacks": [
+              1000,
+              1000
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {}
+        },
+        {
+          "type": "check",
+          "params": {}
+        },
+        {
+          "type": "draw",
+          "params": {
+            "indices": []
+          }
+        },
+        {
+          "type": "draw",
+          "params": {
+            "indices": []
+          }
+        }
+      ],
+      "legal_constraints": {
+        "to_call": 0,
+        "pot": 80,
+        "minimum_full_raise_to": 40
+      }
+    },
+    {
+      "id": "fold_during_draw",
+      "actions": [
+        {
+          "type": "start",
+          "params": {
+            "deck": [
+              0,
+              12,
+              14,
+              25,
+              28,
+              38,
+              42,
+              11,
+              7,
+              24,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              13,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              26,
+              27,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              39,
+              40,
+              41,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "stacks": [
+              1000,
+              1000
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {}
+        },
+        {
+          "type": "check",
+          "params": {}
+        },
+        {
+          "type": "fold",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ],
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "stack": 1040,
+            "net": 40
+          },
+          {
+            "player_id": "bob",
+            "place": 2,
+            "stack": 960,
+            "net": -40
+          }
+        ]
+      }
+    },
+    {
+      "id": "cannot_draw_twice",
+      "actions": [
+        {
+          "type": "start",
+          "params": {
+            "deck": [
+              0,
+              12,
+              14,
+              25,
+              28,
+              38,
+              42,
+              11,
+              7,
+              24,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              13,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              26,
+              27,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              39,
+              40,
+              41,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "stacks": [
+              1000,
+              1000
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {}
+        },
+        {
+          "type": "check",
+          "params": {}
+        },
+        {
+          "type": "draw",
+          "params": {
+            "indices": []
+          }
+        },
+        {
+          "type": "draw",
+          "params": {
+            "indices": []
+          }
+        }
+      ],
+      "action": {
+        "type": "draw",
+        "params": {
+          "indices": [
+            0
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

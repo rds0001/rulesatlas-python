@@ -1,0 +1,408 @@
+{
+  "profile_id": "G103",
+  "ruleset_id": "builtin.nonogram.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types",
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "setup",
+      "actions": [
+        {
+          "type": "set_puzzle",
+          "params": {
+            "rows": [
+              [
+                1
+              ],
+              [
+                3
+              ],
+              [
+                1
+              ]
+            ],
+            "columns": [
+              [
+                1
+              ],
+              [
+                3
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        }
+      ],
+      "legal_count": 18
+    },
+    {
+      "id": "finish_cross",
+      "initial_data": {
+        "configured": true,
+        "rows": [
+          [
+            1
+          ],
+          [
+            3
+          ],
+          [
+            1
+          ]
+        ],
+        "columns": [
+          [
+            1
+          ],
+          [
+            3
+          ],
+          [
+            1
+          ]
+        ],
+        "board": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          -1
+        ]
+      },
+      "actions": [
+        {
+          "type": "write",
+          "params": {
+            "cell": 8,
+            "value": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "wrong_completed_grid",
+      "initial_data": {
+        "configured": true,
+        "rows": [
+          [
+            1
+          ],
+          [
+            3
+          ],
+          [
+            1
+          ]
+        ],
+        "columns": [
+          [
+            1
+          ],
+          [
+            3
+          ],
+          [
+            1
+          ]
+        ],
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "outcome": {
+        "status": "ongoing"
+      },
+      "legal_count": 18
+    },
+    {
+      "id": "erase_guess",
+      "initial_data": {
+        "configured": true,
+        "rows": [
+          [
+            1
+          ],
+          [
+            3
+          ],
+          [
+            1
+          ]
+        ],
+        "columns": [
+          [
+            1
+          ],
+          [
+            3
+          ],
+          [
+            1
+          ]
+        ],
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "actions": [
+        {
+          "type": "write",
+          "params": {
+            "cell": 0,
+            "value": -1
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "unchanged_mark",
+      "initial_data": {
+        "configured": true,
+        "rows": [
+          [
+            1
+          ],
+          [
+            3
+          ],
+          [
+            1
+          ]
+        ],
+        "columns": [
+          [
+            1
+          ],
+          [
+            3
+          ],
+          [
+            1
+          ]
+        ],
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "action": {
+        "type": "write",
+        "params": {
+          "cell": 0,
+          "value": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "clue_cannot_fit",
+      "initial_data": {
+        "configured": true,
+        "rows": [
+          [
+            2,
+            2
+          ],
+          [
+            3
+          ],
+          [
+            1
+          ]
+        ],
+        "columns": [
+          [
+            1
+          ],
+          [
+            3
+          ],
+          [
+            1
+          ]
+        ],
+        "board": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          -1
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "unequal_totals",
+      "initial_data": {
+        "configured": true,
+        "rows": [
+          [
+            1
+          ],
+          [
+            3
+          ],
+          [
+            1
+          ]
+        ],
+        "columns": [
+          [],
+          [
+            3
+          ],
+          [
+            1
+          ]
+        ],
+        "board": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          -1
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "separated_runs",
+      "actions": [
+        {
+          "type": "set_puzzle",
+          "params": {
+            "rows": [
+              [
+                1,
+                1
+              ]
+            ],
+            "columns": [
+              [
+                1
+              ],
+              [],
+              [
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "type": "write",
+          "params": {
+            "cell": 0,
+            "value": 1
+          }
+        },
+        {
+          "type": "write",
+          "params": {
+            "cell": 1,
+            "value": 0
+          }
+        },
+        {
+          "type": "write",
+          "params": {
+            "cell": 2,
+            "value": 1
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      }
+    },
+    {
+      "id": "empty_puzzle",
+      "actions": [
+        {
+          "type": "set_puzzle",
+          "params": {
+            "rows": [
+              []
+            ],
+            "columns": [
+              []
+            ]
+          }
+        },
+        {
+          "type": "write",
+          "params": {
+            "cell": 0,
+            "value": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      }
+    }
+  ]
+}

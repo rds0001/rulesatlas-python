@@ -1,0 +1,1144 @@
+{
+  "profile_id": "S073",
+  "ruleset_id": "builtin.fencing.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "fencer_0"
+    },
+    {
+      "id": "fencer_1"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "fencing",
+        "remaining_ms": 180000,
+        "scores": [
+          0,
+          0
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": null,
+        "winner": null,
+        "no_contest": false
+      }
+    },
+    {
+      "id": "touch_before_start_rejected",
+      "action": {
+        "type": "exchange",
+        "params": {
+          "touches": [
+            true,
+            false
+          ],
+          "elapsed_ms": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "ordinary_double_counts_both",
+      "initial_data": {
+        "phase": "fencing",
+        "remaining_ms": 180000,
+        "scores": [
+          0,
+          0
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": null,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "exchange",
+          "params": {
+            "touches": [
+              true,
+              true
+            ],
+            "elapsed_ms": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "fencing",
+        "remaining_ms": 180000,
+        "scores": [
+          1,
+          1
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": null,
+        "winner": null,
+        "no_contest": false
+      }
+    },
+    {
+      "id": "four_all_double_ignored",
+      "initial_data": {
+        "phase": "fencing",
+        "remaining_ms": 180000,
+        "scores": [
+          4,
+          4
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": null,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "exchange",
+          "params": {
+            "touches": [
+              true,
+              true
+            ],
+            "elapsed_ms": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "fencing",
+        "remaining_ms": 180000,
+        "scores": [
+          4,
+          4
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": null,
+        "winner": null,
+        "no_contest": false
+      }
+    },
+    {
+      "id": "double_can_complete_leading_score",
+      "initial_data": {
+        "phase": "fencing",
+        "remaining_ms": 180000,
+        "scores": [
+          4,
+          3
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": null,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "exchange",
+          "params": {
+            "touches": [
+              true,
+              true
+            ],
+            "elapsed_ms": 0
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "fencer_0"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "single_decides_four_all",
+      "initial_data": {
+        "phase": "fencing",
+        "remaining_ms": 180000,
+        "scores": [
+          4,
+          4
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": null,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "exchange",
+          "params": {
+            "touches": [
+              false,
+              true
+            ],
+            "elapsed_ms": 0
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "fencer_1"
+        ]
+      }
+    },
+    {
+      "id": "time_lead_wins",
+      "initial_data": {
+        "phase": "fencing",
+        "remaining_ms": 180000,
+        "scores": [
+          2,
+          1
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": null,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 180000
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "fencer_0"
+        ]
+      }
+    },
+    {
+      "id": "time_tie_needs_priority",
+      "initial_data": {
+        "phase": "fencing",
+        "remaining_ms": 180000,
+        "scores": [
+          2,
+          2
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": null,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 180000
+          }
+        }
+      ],
+      "data": {
+        "phase": "priority_setup",
+        "remaining_ms": 0,
+        "scores": [
+          2,
+          2
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": null,
+        "winner": null,
+        "no_contest": false
+      }
+    },
+    {
+      "id": "priority_selection",
+      "initial_data": {
+        "phase": "priority_setup",
+        "remaining_ms": 0,
+        "scores": [
+          2,
+          2
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": null,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "start_priority",
+          "params": {
+            "priority": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "priority",
+        "remaining_ms": 60000,
+        "scores": [
+          2,
+          2
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": 1,
+        "winner": null,
+        "no_contest": false
+      }
+    },
+    {
+      "id": "extra_minute_double_ignored",
+      "initial_data": {
+        "phase": "priority",
+        "remaining_ms": 60000,
+        "scores": [
+          2,
+          2
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": 1,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "exchange",
+          "params": {
+            "touches": [
+              true,
+              true
+            ],
+            "elapsed_ms": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "priority",
+        "remaining_ms": 60000,
+        "scores": [
+          2,
+          2
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": 1,
+        "winner": null,
+        "no_contest": false
+      }
+    },
+    {
+      "id": "single_beats_opponents_priority",
+      "initial_data": {
+        "phase": "priority",
+        "remaining_ms": 60000,
+        "scores": [
+          2,
+          2
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": 1,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "exchange",
+          "params": {
+            "touches": [
+              true,
+              false
+            ],
+            "elapsed_ms": 0
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "fencer_0"
+        ]
+      }
+    },
+    {
+      "id": "expired_extra_minute_awards_priority",
+      "initial_data": {
+        "phase": "priority",
+        "remaining_ms": 60000,
+        "scores": [
+          2,
+          2
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": 1,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 60000
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "fencer_1"
+        ]
+      }
+    },
+    {
+      "id": "first_group_one_is_warning",
+      "initial_data": {
+        "phase": "fencing",
+        "remaining_ms": 180000,
+        "scores": [
+          0,
+          0
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": null,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "infringement",
+          "params": {
+            "team": 0,
+            "group": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "repeated_group_one_penalty_touch",
+      "initial_data": {
+        "phase": "fencing",
+        "remaining_ms": 180000,
+        "scores": [
+          0,
+          0
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": null,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "infringement",
+          "params": {
+            "team": 0,
+            "group": 1
+          }
+        },
+        {
+          "type": "infringement",
+          "params": {
+            "team": 0,
+            "group": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "id": "prior_group_two_red_skips_yellow",
+      "initial_data": {
+        "phase": "fencing",
+        "remaining_ms": 180000,
+        "scores": [
+          0,
+          0
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": null,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "infringement",
+          "params": {
+            "team": 0,
+            "group": 2
+          }
+        },
+        {
+          "type": "infringement",
+          "params": {
+            "team": 0,
+            "group": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "id": "repeated_group_three_excludes",
+      "initial_data": {
+        "phase": "fencing",
+        "remaining_ms": 180000,
+        "scores": [
+          0,
+          0
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": null,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "infringement",
+          "params": {
+            "team": 0,
+            "group": 3
+          }
+        },
+        {
+          "type": "infringement",
+          "params": {
+            "team": 0,
+            "group": 3
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "fencer_1"
+        ]
+      }
+    },
+    {
+      "id": "priority_penalty_touch_decides",
+      "initial_data": {
+        "phase": "priority",
+        "remaining_ms": 60000,
+        "scores": [
+          2,
+          2
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": 1,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "infringement",
+          "params": {
+            "team": 1,
+            "group": 2
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "fencer_0"
+        ]
+      }
+    },
+    {
+      "id": "exclusion_overrides_provisional_winner",
+      "initial_data": {
+        "phase": "fencing",
+        "remaining_ms": 180000,
+        "scores": [
+          4,
+          4
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": null,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "exchange",
+          "params": {
+            "touches": [
+              true,
+              false
+            ],
+            "elapsed_ms": 0
+          }
+        },
+        {
+          "type": "infringement",
+          "params": {
+            "team": 0,
+            "group": 4
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "fencer_1"
+        ]
+      }
+    },
+    {
+      "id": "double_exclusion_needs_resolution",
+      "actions": [
+        {
+          "type": "withdraw",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "double_exclusion_no_contest",
+      "actions": [
+        {
+          "type": "withdraw",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "team": 1
+          }
+        },
+        {
+          "type": "confirm_no_contest",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "priority_time_overrun_rejected",
+      "initial_data": {
+        "phase": "priority",
+        "remaining_ms": 60000,
+        "scores": [
+          2,
+          2
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": 1,
+        "winner": null,
+        "no_contest": false
+      },
+      "action": {
+        "type": "elapse",
+        "params": {
+          "milliseconds": 60001
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "penalty_flag_without_red_invalid",
+      "initial_data": {
+        "phase": "fencing",
+        "remaining_ms": 180000,
+        "scores": [
+          0,
+          0
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          true,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": null,
+        "winner": null,
+        "no_contest": false
+      },
+      "valid": false
+    },
+    {
+      "id": "expired_active_state_invalid",
+      "initial_data": {
+        "phase": "fencing",
+        "remaining_ms": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": null,
+        "winner": null,
+        "no_contest": false
+      },
+      "valid": false
+    },
+    {
+      "id": "premature_confirmation_rejected",
+      "initial_data": {
+        "phase": "fencing",
+        "remaining_ms": 180000,
+        "scores": [
+          0,
+          0
+        ],
+        "yellow": [
+          false,
+          false
+        ],
+        "red_count": [
+          0,
+          0
+        ],
+        "group_three_red": [
+          false,
+          false
+        ],
+        "excluded": [
+          false,
+          false
+        ],
+        "priority": null,
+        "winner": null,
+        "no_contest": false
+      },
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

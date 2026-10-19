@@ -1,0 +1,169 @@
+{
+  "profile_id": "S031",
+  "ruleset_id": "builtin.badminton.best_of_three",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types",
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "rally_winner_serves",
+      "actions": [
+        {
+          "type": "award_point",
+          "params": {
+            "player": 1
+          }
+        }
+      ],
+      "data": {
+        "games": [],
+        "points": [
+          0,
+          1
+        ],
+        "server": 1,
+        "phase": "game",
+        "decision": null
+      }
+    },
+    {
+      "id": "deuce",
+      "initial_data": {
+        "games": [],
+        "points": [
+          20,
+          19
+        ],
+        "server": 0,
+        "phase": "game",
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "award_point",
+          "params": {
+            "player": 1
+          }
+        }
+      ],
+      "data": {
+        "games": [],
+        "points": [
+          20,
+          20
+        ],
+        "server": 1,
+        "phase": "game",
+        "decision": null
+      }
+    },
+    {
+      "id": "cap_and_match",
+      "initial_data": {
+        "games": [
+          [
+            21,
+            0
+          ]
+        ],
+        "points": [
+          29,
+          29
+        ],
+        "server": 1,
+        "phase": "game",
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "award_point",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "games": [
+          [
+            21,
+            0
+          ],
+          [
+            30,
+            29
+          ]
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "phase": "finished",
+        "decision": null
+      },
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "invalid_player",
+      "action": {
+        "type": "award_point",
+        "params": {
+          "player": -1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "unclosed_game",
+      "initial_data": {
+        "games": [],
+        "points": [
+          21,
+          19
+        ],
+        "server": 0,
+        "phase": "game",
+        "decision": null
+      },
+      "valid": false
+    },
+    {
+      "id": "retirement",
+      "actions": [
+        {
+          "type": "end_match",
+          "params": {
+            "kind": "retirement",
+            "player": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "technical",
+        "winners": [
+          "bob"
+        ]
+      }
+    }
+  ]
+}

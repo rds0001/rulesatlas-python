@@ -1,0 +1,1398 @@
+{
+  "profile_id": "S072",
+  "ruleset_id": "builtin.judged_s072.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "red"
+    },
+    {
+      "id": "blue"
+    }
+  ],
+  "cases": [
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "resume",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "fighting",
+        "round": 0,
+        "remaining_ms": 300000,
+        "break_ms": 0,
+        "running": true,
+        "started": true,
+        "cards": [],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "paused_time_cannot_advance",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 0,
+        "remaining_ms": 300000,
+        "break_ms": 0,
+        "running": true,
+        "started": true,
+        "cards": [],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "pause",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "advance_clock",
+        "params": {
+          "elapsed_ms": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "round_expiry_requires_scores",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 0,
+        "remaining_ms": 300000,
+        "break_ms": 0,
+        "running": true,
+        "started": true,
+        "cards": [],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "advance_clock",
+          "params": {
+            "elapsed_ms": 300000
+          }
+        }
+      ],
+      "data": {
+        "phase": "judging",
+        "round": 0,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "running": false,
+        "started": true,
+        "cards": [],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    },
+    {
+      "id": "score_submission_starts_minute_break",
+      "initial_data": {
+        "phase": "judging",
+        "round": 0,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "running": false,
+        "started": true,
+        "cards": [],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "submit_scores",
+          "params": {
+            "scores": [
+              [
+                10,
+                9
+              ],
+              [
+                10,
+                9
+              ],
+              [
+                10,
+                9
+              ]
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "break",
+        "round": 0,
+        "remaining_ms": 0,
+        "break_ms": 60000,
+        "running": true,
+        "started": true,
+        "cards": [
+          [
+            [
+              10,
+              9
+            ],
+            [
+              10,
+              9
+            ],
+            [
+              10,
+              9
+            ]
+          ]
+        ],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "cannot_start_during_break",
+      "initial_data": {
+        "phase": "judging",
+        "round": 0,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "running": false,
+        "started": true,
+        "cards": [],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "submit_scores",
+          "params": {
+            "scores": [
+              [
+                10,
+                9
+              ],
+              [
+                10,
+                9
+              ],
+              [
+                10,
+                9
+              ]
+            ]
+          }
+        }
+      ],
+      "action": {
+        "type": "resume",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "break_completion_prepares_next_round",
+      "initial_data": {
+        "phase": "judging",
+        "round": 0,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "running": false,
+        "started": true,
+        "cards": [],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "submit_scores",
+          "params": {
+            "scores": [
+              [
+                10,
+                9
+              ],
+              [
+                10,
+                9
+              ],
+              [
+                10,
+                9
+              ]
+            ]
+          }
+        },
+        {
+          "type": "advance_clock",
+          "params": {
+            "elapsed_ms": 60000
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "round": 1,
+        "remaining_ms": 300000,
+        "break_ms": 0,
+        "running": false,
+        "started": true,
+        "cards": [
+          [
+            [
+              10,
+              9
+            ],
+            [
+              10,
+              9
+            ],
+            [
+              10,
+              9
+            ]
+          ]
+        ],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "ten_point_must_rejects_nine_nine",
+      "initial_data": {
+        "phase": "judging",
+        "round": 0,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "running": false,
+        "started": true,
+        "cards": [],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "submit_scores",
+        "params": {
+          "scores": [
+            [
+              9,
+              9
+            ],
+            [
+              10,
+              9
+            ],
+            [
+              10,
+              9
+            ]
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "unanimous_decision",
+      "initial_data": {
+        "phase": "judging",
+        "round": 2,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "running": false,
+        "started": true,
+        "cards": [
+          [
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ]
+          ],
+          [
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ]
+          ]
+        ],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "submit_scores",
+          "params": {
+            "scores": [
+              [
+                10,
+                9
+              ],
+              [
+                10,
+                9
+              ],
+              [
+                10,
+                9
+              ]
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "red"
+        ],
+        "reason": "unanimous_decision"
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "referee_deductions_apply_to_all_judges",
+      "initial_data": {
+        "phase": "judging",
+        "round": 2,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "running": false,
+        "started": true,
+        "cards": [
+          [
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ]
+          ],
+          [
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ]
+          ]
+        ],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "deduct_points",
+          "params": {
+            "player": 0,
+            "points": 2
+          }
+        },
+        {
+          "type": "submit_scores",
+          "params": {
+            "scores": [
+              [
+                10,
+                9
+              ],
+              [
+                10,
+                9
+              ],
+              [
+                10,
+                9
+              ]
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ],
+        "reason": "unanimous_decision"
+      }
+    },
+    {
+      "id": "premature_technical_score_rejected",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 0,
+        "remaining_ms": 300000,
+        "break_ms": 0,
+        "running": true,
+        "started": true,
+        "cards": [],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "technical_stop",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "technical_score_includes_partial_round",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 2,
+        "remaining_ms": 300000,
+        "break_ms": 0,
+        "running": true,
+        "started": true,
+        "cards": [
+          [
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ]
+          ],
+          [
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ]
+          ]
+        ],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "technical_stop",
+          "params": {}
+        },
+        {
+          "type": "submit_scores",
+          "params": {
+            "scores": [
+              [
+                10,
+                9
+              ],
+              [
+                10,
+                9
+              ],
+              [
+                10,
+                9
+              ]
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "technical",
+        "winners": [
+          "red"
+        ],
+        "reason": "technical_unanimous_decision"
+      }
+    },
+    {
+      "id": "no_contest_has_no_winner",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 0,
+        "remaining_ms": 300000,
+        "break_ms": 0,
+        "running": true,
+        "started": true,
+        "cards": [],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stop",
+          "params": {
+            "method": "no_contest",
+            "winner": null
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "no_contest",
+        "winners": [],
+        "losers": []
+      }
+    },
+    {
+      "id": "official_technical_draw",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 0,
+        "remaining_ms": 300000,
+        "break_ms": 0,
+        "running": true,
+        "started": true,
+        "cards": [],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stop",
+          "params": {
+            "method": "technical_draw",
+            "winner": null
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "draw",
+        "winners": [],
+        "losers": [],
+        "reason": "technical_draw"
+      }
+    },
+    {
+      "id": "future_deduction_invalid",
+      "initial_data": {
+        "phase": "ready",
+        "round": 0,
+        "remaining_ms": 300000,
+        "break_ms": 0,
+        "running": false,
+        "started": false,
+        "cards": [],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "majority_decision",
+      "initial_data": {
+        "phase": "judging",
+        "round": 2,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "running": false,
+        "started": true,
+        "cards": [
+          [
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ]
+          ],
+          [
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ]
+          ]
+        ],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "submit_scores",
+          "params": {
+            "scores": [
+              [
+                10,
+                9
+              ],
+              [
+                10,
+                9
+              ],
+              [
+                10,
+                10
+              ]
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ],
+        "reason": "majority_decision"
+      }
+    },
+    {
+      "id": "split_decision",
+      "initial_data": {
+        "phase": "judging",
+        "round": 2,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "running": false,
+        "started": true,
+        "cards": [
+          [
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ]
+          ],
+          [
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ]
+          ]
+        ],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "submit_scores",
+          "params": {
+            "scores": [
+              [
+                10,
+                9
+              ],
+              [
+                9,
+                10
+              ],
+              [
+                10,
+                9
+              ]
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ],
+        "reason": "split_decision"
+      }
+    },
+    {
+      "id": "unanimous_draw",
+      "initial_data": {
+        "phase": "judging",
+        "round": 2,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "running": false,
+        "started": true,
+        "cards": [
+          [
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ]
+          ],
+          [
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ]
+          ]
+        ],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "submit_scores",
+          "params": {
+            "scores": [
+              [
+                10,
+                10
+              ],
+              [
+                10,
+                10
+              ],
+              [
+                10,
+                10
+              ]
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw",
+        "winners": [],
+        "reason": "unanimous_draw"
+      }
+    },
+    {
+      "id": "majority_draw",
+      "initial_data": {
+        "phase": "judging",
+        "round": 2,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "running": false,
+        "started": true,
+        "cards": [
+          [
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ]
+          ],
+          [
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ]
+          ]
+        ],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "submit_scores",
+          "params": {
+            "scores": [
+              [
+                10,
+                10
+              ],
+              [
+                10,
+                10
+              ],
+              [
+                10,
+                9
+              ]
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw",
+        "reason": "majority_draw"
+      }
+    },
+    {
+      "id": "split_draw",
+      "initial_data": {
+        "phase": "judging",
+        "round": 2,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "running": false,
+        "started": true,
+        "cards": [
+          [
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ]
+          ],
+          [
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              10
+            ]
+          ]
+        ],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "submit_scores",
+          "params": {
+            "scores": [
+              [
+                10,
+                9
+              ],
+              [
+                9,
+                10
+              ],
+              [
+                10,
+                10
+              ]
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw",
+        "reason": "split_draw"
+      }
+    },
+    {
+      "id": "submission_stops_immediately",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 0,
+        "remaining_ms": 300000,
+        "break_ms": 0,
+        "running": true,
+        "started": true,
+        "cards": [],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stop",
+          "params": {
+            "method": "submission",
+            "winner": 1
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "blue"
+        ],
+        "reason": "submission"
+      }
+    },
+    {
+      "id": "mma_has_no_knockdown_count",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 0,
+        "remaining_ms": 300000,
+        "break_ms": 0,
+        "running": true,
+        "started": true,
+        "cards": [],
+        "deductions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "technical": false,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "knockdown",
+        "params": {
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

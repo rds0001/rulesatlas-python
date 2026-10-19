@@ -1,0 +1,481 @@
+{
+  "profile_id": "S102",
+  "ruleset_id": "builtin.race_s102.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "crew_0"
+    },
+    {
+      "id": "crew_1"
+    },
+    {
+      "id": "crew_2"
+    },
+    {
+      "id": "crew_3"
+    },
+    {
+      "id": "crew_4"
+    },
+    {
+      "id": "crew_5"
+    },
+    {
+      "id": "crew_6"
+    },
+    {
+      "id": "crew_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "first_false_start_warns_and_recalls",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "false_start",
+          "params": {
+            "participant": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "runners": [
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 1
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "second_false_start_excludes",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "false_start",
+          "params": {
+            "participant": 0
+          }
+        },
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "false_start",
+          "params": {
+            "participant": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "runners": [
+          {
+            "status": "dq",
+            "time_us": null,
+            "warnings": 2
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "conduct_warning_combines_with_false_start",
+      "actions": [
+        {
+          "type": "warn",
+          "params": {
+            "participant": 0
+          }
+        },
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "false_start",
+          "params": {
+            "participant": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "runners": [
+          {
+            "status": "dq",
+            "time_us": null,
+            "warnings": 2
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "two_race_warnings_exclude",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "warn",
+          "params": {
+            "participant": 0
+          }
+        },
+        {
+          "type": "warn",
+          "params": {
+            "participant": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "finish_requires_start",
+      "action": {
+        "type": "record_finish",
+        "params": {
+          "participant": 0,
+          "time_us": 360000000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "cannot_recall_after_a_finish",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "record_finish",
+          "params": {
+            "participant": 0,
+            "time_us": 360000000
+          }
+        }
+      ],
+      "action": {
+        "type": "false_start",
+        "params": {
+          "participant": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "official_dead_heat",
+      "initial_data": {
+        "phase": "review",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 360000000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 360000000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 360020000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 360030000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 360040000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 360050000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 360060000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 360070000,
+            "warnings": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "crew_0",
+          "crew_1"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "review_exclusion_changes_winner",
+      "initial_data": {
+        "phase": "review",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 360000000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 360000000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 360020000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 360030000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 360040000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 360050000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 360060000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 360070000,
+            "warnings": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "participant": 0
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "crew_1"
+        ]
+      }
+    },
+    {
+      "id": "timing_precision_rejected",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "record_finish",
+        "params": {
+          "participant": 0,
+          "time_us": 360000001
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "second_warning_without_exclusion_invalid",
+      "initial_data": {
+        "phase": "ready",
+        "runners": [
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 2
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          }
+        ]
+      },
+      "valid": false
+    }
+  ]
+}

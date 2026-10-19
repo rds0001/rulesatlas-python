@@ -1,0 +1,10313 @@
+{
+  "profile_id": "S154",
+  "ruleset_id": "builtin.polo.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "player_a"
+    },
+    {
+      "id": "player_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start_chukka",
+      "actions": [
+        {
+          "type": "restart_play",
+          "params": {
+            "team": null,
+            "wait_ms": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "live",
+        "chukka": 1,
+        "remaining_ms": 420000
+      }
+    },
+    {
+      "id": "first_bell_enters_thirty_second_tail",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 1000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "advance",
+          "params": {
+            "ms": 1000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "tail": true,
+        "remaining_ms": 30000,
+        "phase": "live"
+      }
+    },
+    {
+      "id": "normal_tail_break_ends_chukka",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 20000,
+        "pause_ms": 0,
+        "tail": true,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "official_stop",
+          "params": {
+            "restart": "throw_in",
+            "team": null,
+            "whistle": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "horn"
+      }
+    },
+    {
+      "id": "tail_foul_carried_to_next_chukka",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 20000,
+        "pause_ms": 0,
+        "tail": true,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "award_penalty",
+          "params": {
+            "team": 0,
+            "penalty": "p2"
+          }
+        },
+        {
+          "type": "close_chukka",
+          "params": {}
+        },
+        {
+          "type": "advance",
+          "params": {
+            "ms": 180000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "chukka": 2,
+        "phase": "restart",
+        "restart": "p2",
+        "restart_team": 0,
+        "remaining_ms": 420000
+      }
+    },
+    {
+      "id": "second_bell_ends_normal_chukka",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 1000,
+        "pause_ms": 0,
+        "tail": true,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "advance",
+          "params": {
+            "ms": 1000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "horn",
+        "restart": "throw_in",
+        "restart_team": null
+      }
+    },
+    {
+      "id": "first_bell_when_out_of_play_ends_normal_chukka",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 1000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "official_stop",
+          "params": {
+            "restart": "sideline",
+            "team": 0,
+            "whistle": false
+          }
+        },
+        {
+          "type": "advance",
+          "params": {
+            "ms": 1000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "horn",
+        "tail": false
+      }
+    },
+    {
+      "id": "final_chukka_ends_at_first_bell_if_not_tied",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 6,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 1000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          1,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "advance",
+          "params": {
+            "ms": 1000
+          }
+        },
+        {
+          "type": "close_chukka",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "win",
+        "winners": [
+          "player_a"
+        ]
+      }
+    },
+    {
+      "id": "tied_final_chukka_tail_goal_wins",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 6,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 1000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "advance",
+          "params": {
+            "ms": 1000
+          }
+        },
+        {
+          "type": "goal",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "outcome": {
+        "result_kind": "win",
+        "winners": [
+          "player_b"
+        ]
+      }
+    },
+    {
+      "id": "league_allows_tied_second_bell_draw",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 6,
+        "knockout": false,
+        "handicap": true,
+        "remaining_ms": 1000,
+        "pause_ms": 0,
+        "tail": true,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "advance",
+          "params": {
+            "ms": 1000
+          }
+        },
+        {
+          "type": "close_chukka",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw"
+      }
+    },
+    {
+      "id": "knockout_tie_enters_extra_chukka",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 6,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 1000,
+        "pause_ms": 0,
+        "tail": true,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "advance",
+          "params": {
+            "ms": 1000
+          }
+        },
+        {
+          "type": "close_chukka",
+          "params": {}
+        },
+        {
+          "type": "advance",
+          "params": {
+            "ms": 300000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "chukka": 7,
+        "phase": "restart",
+        "remaining_ms": 420000
+      }
+    },
+    {
+      "id": "extra_chukka_goal_wins_immediately",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 7,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "outcome": {
+        "result_kind": "win",
+        "winners": [
+          "player_a"
+        ]
+      }
+    },
+    {
+      "id": "half_time_five_minute_break",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 3,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 1000,
+        "pause_ms": 0,
+        "tail": true,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "advance",
+          "params": {
+            "ms": 1000
+          }
+        },
+        {
+          "type": "close_chukka",
+          "params": {}
+        },
+        {
+          "type": "advance",
+          "params": {
+            "ms": 300000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "chukka": 4,
+        "phase": "restart"
+      }
+    },
+    {
+      "id": "stopped_clock_does_not_advance",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "official_stop",
+          "params": {
+            "restart": "throw_in",
+            "team": null,
+            "whistle": true
+          }
+        }
+      ],
+      "action": {
+        "type": "advance",
+        "params": {
+          "ms": 1000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "goal_restart_clock_runs",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "advance",
+          "params": {
+            "ms": 10000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score_half_goals": [
+          2,
+          0
+        ],
+        "remaining_ms": 290000,
+        "phase": "restart"
+      }
+    },
+    {
+      "id": "handicap_fraction_counts_half_goal",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 4,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          2,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "legal_constraints": {
+        "score_half_goals": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "id": "open_match_ignores_handicap_allowance",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 4,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": false,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          2,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "legal_constraints": {
+        "score_half_goals": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "higher_substitute_recalculates_handicap",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slots": [
+              4,
+              1,
+              2,
+              3
+            ],
+            "approved": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "rating_peak": [
+          2,
+          0
+        ],
+        "score_half_goals": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "id": "substitution_requires_tournament_approval",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "slots": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "approved": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "original_cannot_return_mid_chukka",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slots": [
+              4,
+              1,
+              2,
+              3
+            ],
+            "approved": true
+          }
+        }
+      ],
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "slots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "approved": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "original_returns_at_next_chukka_start_without_lowering_handicap",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 1000,
+        "pause_ms": 0,
+        "tail": true,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slots": [
+              4,
+              1,
+              2,
+              3
+            ],
+            "approved": true
+          }
+        },
+        {
+          "type": "advance",
+          "params": {
+            "ms": 1000
+          }
+        },
+        {
+          "type": "close_chukka",
+          "params": {}
+        },
+        {
+          "type": "advance",
+          "params": {
+            "ms": 180000
+          }
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slots": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "approved": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "rating_peak": [
+          2,
+          0
+        ],
+        "score_half_goals": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "id": "first_yellow_is_warning",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "flag",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "yellow"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "second_yellow_two_minute_sinbin",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "flag",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "yellow"
+          }
+        },
+        {
+          "type": "flag",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "yellow"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "sinbin_ms": [
+          [
+            120000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "double_yellow_immediate_sinbin",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "flag",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "double_yellow"
+          }
+        },
+        {
+          "type": "advance",
+          "params": {
+            "ms": 60000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "sinbin_ms": [
+          [
+            60000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "sinbin_counts_clock_running_goal_break",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "flag",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "double_yellow"
+          }
+        },
+        {
+          "type": "goal",
+          "params": {
+            "team": 1
+          }
+        },
+        {
+          "type": "advance",
+          "params": {
+            "ms": 10000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "sinbin_ms": [
+          [
+            110000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "sinbinned_player_not_replaceable",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "flag",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "double_yellow"
+          }
+        }
+      ],
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "slots": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "approved": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "red_replacement_after_two_minutes",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "flag",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "red"
+          }
+        },
+        {
+          "type": "advance",
+          "params": {
+            "ms": 120000
+          }
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "slots": [
+              4,
+              1,
+              2,
+              3
+            ],
+            "approved": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "red_not_replaceable_immediately",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "flag",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "red"
+          }
+        }
+      ],
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "slots": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "approved": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "unpermitted_exit_red_never_replaceable",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "flag",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "red_unpermitted_exit"
+          }
+        },
+        {
+          "type": "advance",
+          "params": {
+            "ms": 120000
+          }
+        }
+      ],
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "slots": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "approved": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "penalty_one_awards_goal_and_centre_hit",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "award_penalty",
+          "params": {
+            "team": 0,
+            "penalty": "p1"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score_half_goals": [
+          2,
+          0
+        ],
+        "restart": "p5b",
+        "restart_team": 0,
+        "phase": "restart"
+      }
+    },
+    {
+      "id": "penalty_two_goal",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "award_penalty",
+          "params": {
+            "team": 0,
+            "penalty": "p2"
+          }
+        },
+        {
+          "type": "penalty_attempt",
+          "params": {
+            "player": 0,
+            "wait_ms": 0,
+            "result": "goal"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score_half_goals": [
+          2,
+          0
+        ],
+        "restart": "throw_in"
+      }
+    },
+    {
+      "id": "penalty_two_short_or_rebound_gives_opponent_spot_hit",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "award_penalty",
+          "params": {
+            "team": 0,
+            "penalty": "p2"
+          }
+        },
+        {
+          "type": "penalty_attempt",
+          "params": {
+            "player": 0,
+            "wait_ms": 0,
+            "result": "in_play"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "restart": "p5a",
+        "restart_team": 1
+      }
+    },
+    {
+      "id": "penalty_three_mishit_retains_half_shot_restriction",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "award_penalty",
+          "params": {
+            "team": 0,
+            "penalty": "p3"
+          }
+        },
+        {
+          "type": "penalty_attempt",
+          "params": {
+            "player": 0,
+            "wait_ms": 0,
+            "result": "in_play"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "live",
+        "restricted_half_shot": 0
+      }
+    },
+    {
+      "id": "defender_play_clears_half_shot_restriction",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "award_penalty",
+          "params": {
+            "team": 0,
+            "penalty": "p4"
+          }
+        },
+        {
+          "type": "penalty_attempt",
+          "params": {
+            "player": 0,
+            "wait_ms": 0,
+            "result": "in_play"
+          }
+        },
+        {
+          "type": "defender_played",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "restricted_half_shot": null
+      }
+    },
+    {
+      "id": "defender_violation_retake_moves_penalty_five",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "award_penalty",
+          "params": {
+            "team": 0,
+            "penalty": "p5a"
+          }
+        },
+        {
+          "type": "penalty_attempt",
+          "params": {
+            "player": 0,
+            "wait_ms": 0,
+            "result": "defender_violation"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "restart": "p5a",
+        "restart_team": 0,
+        "moved_up_yards": 30
+      }
+    },
+    {
+      "id": "both_violate_retake_without_move",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "award_penalty",
+          "params": {
+            "team": 0,
+            "penalty": "p5b"
+          }
+        },
+        {
+          "type": "penalty_attempt",
+          "params": {
+            "player": 0,
+            "wait_ms": 0,
+            "result": "both_violate"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "restart": "p5b",
+        "restart_team": 0,
+        "moved_up_yards": 0
+      }
+    },
+    {
+      "id": "defender_illegally_prevents_goal_awards_goal",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "award_penalty",
+          "params": {
+            "team": 0,
+            "penalty": "p3"
+          }
+        },
+        {
+          "type": "penalty_attempt",
+          "params": {
+            "player": 0,
+            "wait_ms": 0,
+            "result": "defender_prevents_goal"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score_half_goals": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "id": "penalty_twenty_second_timeout_reverses_entitlement",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "award_penalty",
+          "params": {
+            "team": 0,
+            "penalty": "p2"
+          }
+        },
+        {
+          "type": "penalty_attempt",
+          "params": {
+            "player": 0,
+            "wait_ms": 20001,
+            "result": "goal"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "restart": "p5a",
+        "restart_team": 1,
+        "score_half_goals": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "inactive_penalty_taker_rejected",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "award_penalty",
+          "params": {
+            "team": 0,
+            "penalty": "p2"
+          }
+        }
+      ],
+      "action": {
+        "type": "penalty_attempt",
+        "params": {
+          "player": 7,
+          "wait_ms": 0,
+          "result": "goal"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "last_five_second_penalty_gets_five_seconds",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 6,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 2000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          1,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "award_penalty",
+          "params": {
+            "team": 1,
+            "penalty": "p3"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "remaining_ms": 5000,
+        "phase": "restart"
+      }
+    },
+    {
+      "id": "knock_in_delay_becomes_throw_in",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "official_stop",
+          "params": {
+            "restart": "hit_in",
+            "team": 0,
+            "whistle": false
+          }
+        },
+        {
+          "type": "restart_play",
+          "params": {
+            "team": 0,
+            "wait_ms": 10001
+          }
+        }
+      ],
+      "legal_constraints": {
+        "restart": "throw_in",
+        "restart_team": null
+      }
+    },
+    {
+      "id": "sideline_delay_awards_opponent_spot_hit",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "official_stop",
+          "params": {
+            "restart": "sideline",
+            "team": 0,
+            "whistle": false
+          }
+        },
+        {
+          "type": "restart_play",
+          "params": {
+            "team": 0,
+            "wait_ms": 5001
+          }
+        }
+      ],
+      "legal_constraints": {
+        "restart": "p5a",
+        "restart_team": 1
+      }
+    },
+    {
+      "id": "abandoned_match_can_resume_at_same_clock",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "abandon",
+          "params": {}
+        },
+        {
+          "type": "resume_match",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "live",
+        "remaining_ms": 300000
+      }
+    },
+    {
+      "id": "abandoned_match_awaits_official_decision",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "actions": [
+        {
+          "type": "abandon",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    },
+    {
+      "id": "invalid_duplicate_slots",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "valid": false
+    },
+    {
+      "id": "invalid_extended_tail",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 31000,
+        "pause_ms": 0,
+        "tail": true,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "valid": false
+    },
+    {
+      "id": "invalid_handicap_peak_below_team_rating",
+      "initial_data": {
+        "phase": "live",
+        "chukkas": 6,
+        "chukka": 1,
+        "knockout": true,
+        "handicap": true,
+        "remaining_ms": 300000,
+        "pause_ms": 0,
+        "tail": false,
+        "at_start": false,
+        "clock_running": true,
+        "goals": [
+          0,
+          0
+        ],
+        "handicaps": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rating_peak": [
+          0,
+          0
+        ],
+        "slots": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "played": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "red": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "permanent_gap": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "sinbin_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "restricted": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "restart": "throw_in",
+        "restart_team": null,
+        "restart_delay_ms": 0,
+        "restricted_half_shot": null,
+        "moved_up_yards": 0,
+        "ends_reversed": false,
+        "saved_phase": "restart",
+        "saved_running": false,
+        "winner": null,
+        "reason": "ongoing"
+      },
+      "valid": false
+    }
+  ]
+}

@@ -1,0 +1,1607 @@
+{
+  "profile_id": "S039",
+  "ruleset_id": "builtin.real_tennis.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "player_a"
+    },
+    {
+      "id": "player_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "toss",
+      "actions": [
+        {
+          "type": "choose_server",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "wrong_server",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "start_serve",
+        "params": {
+          "player": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "first_service_fault",
+      "initial_data": {
+        "phase": "serve",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "service_decision",
+          "params": {
+            "result": "fault"
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": true,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "second_fault_point",
+      "initial_data": {
+        "phase": "serve",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": true,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "service_decision",
+          "params": {
+            "result": "fault"
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          1
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "service_let_keeps_fault",
+      "initial_data": {
+        "phase": "serve",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": true,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "service_decision",
+          "params": {
+            "result": "let"
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": true,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "rally_let_keeps_fault",
+      "initial_data": {
+        "phase": "serve",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": true,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "service_decision",
+          "params": {
+            "result": "good"
+          }
+        },
+        {
+          "type": "let",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": true,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "first_chase_defers_point",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "set_chase",
+          "params": {
+            "kind": "service",
+            "mark": "one yard"
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          }
+        ],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "second_chase_requires_change",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          }
+        ],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "set_chase",
+          "params": {
+            "kind": "hazard",
+            "mark": "the door"
+          }
+        }
+      ],
+      "data": {
+        "phase": "change_ends",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          },
+          {
+            "kind": "hazard",
+            "mark": "the door"
+          }
+        ],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "cannot_serve_before_change",
+      "initial_data": {
+        "phase": "change_ends",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          },
+          {
+            "kind": "hazard",
+            "mark": "the door"
+          }
+        ],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "start_serve",
+        "params": {
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "change_switches_service",
+      "initial_data": {
+        "phase": "change_ends",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          },
+          {
+            "kind": "hazard",
+            "mark": "the door"
+          }
+        ],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "change_ends",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          },
+          {
+            "kind": "hazard",
+            "mark": "the door"
+          }
+        ],
+        "playing_chases": true,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "forty_one_chase_change",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          3,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "set_chase",
+          "params": {
+            "kind": "service",
+            "mark": "one yard"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "change_ends"
+      }
+    },
+    {
+      "id": "deuce_one_chase_change",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          3,
+          3
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "set_chase",
+          "params": {
+            "kind": "service",
+            "mark": "one yard"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "change_ends"
+      }
+    },
+    {
+      "id": "point_reaches_forty_with_chase",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          2,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          }
+        ],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_rest",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "change_ends",
+        "points": [
+          3,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          }
+        ],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "ordinary_chase_receiver_attacks",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          },
+          {
+            "kind": "hazard",
+            "mark": "the door"
+          }
+        ],
+        "playing_chases": true,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "chase_result",
+          "params": {
+            "result": "better"
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          1,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [
+          {
+            "kind": "hazard",
+            "mark": "the door"
+          }
+        ],
+        "playing_chases": true,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "hazard_chase_server_attacks",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [
+          {
+            "kind": "hazard",
+            "mark": "the door"
+          }
+        ],
+        "playing_chases": true,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "chase_result",
+          "params": {
+            "result": "better"
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          1
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "worse_loses_chase",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          }
+        ],
+        "playing_chases": true,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "chase_result",
+          "params": {
+            "result": "worse"
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          1
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "opposite_end_loses_chase",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          }
+        ],
+        "playing_chases": true,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "chase_result",
+          "params": {
+            "result": "opposite_end"
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          1
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "equality_consumes_without_point",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          }
+        ],
+        "playing_chases": true,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "chase_result",
+          "params": {
+            "result": "equal"
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "let_retains_chase_and_fault",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          }
+        ],
+        "playing_chases": true,
+        "fault": true,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "let",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          }
+        ],
+        "playing_chases": true,
+        "fault": true,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "double_fault_consumes_chase",
+      "initial_data": {
+        "phase": "serve",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          }
+        ],
+        "playing_chases": true,
+        "fault": true,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "service_decision",
+          "params": {
+            "result": "fault"
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          1,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "rest_winner_consumes_first_only",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          },
+          {
+            "kind": "hazard",
+            "mark": "the door"
+          }
+        ],
+        "playing_chases": true,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_rest",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          1,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [
+          {
+            "kind": "hazard",
+            "mark": "the door"
+          }
+        ],
+        "playing_chases": true,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "no_new_chase_while_playing_chases",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          },
+          {
+            "kind": "hazard",
+            "mark": "the door"
+          }
+        ],
+        "playing_chases": true,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "set_chase",
+        "params": {
+          "kind": "service",
+          "mark": "two yards"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "correct_mark_before_serve",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          }
+        ],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "correct_chase",
+          "params": {
+            "index": 0,
+            "kind": "service",
+            "mark": "two yards"
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "two yards"
+          }
+        ],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "blank_mark_rejected",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "set_chase",
+        "params": {
+          "kind": "service",
+          "mark": " "
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "advantage",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          3,
+          3
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_rest",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          4,
+          3
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "back_to_deuce",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          4,
+          3
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_rest",
+          "params": {
+            "winner": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          3,
+          3
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "game_end_annuls_remaining_chase",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          3,
+          2
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          },
+          {
+            "kind": "hazard",
+            "mark": "the door"
+          }
+        ],
+        "playing_chases": true,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_rest",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          1,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "six_five_set_no_extension",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          3,
+          0
+        ],
+        "games": [
+          5,
+          5
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_rest",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [
+          [
+            6,
+            5
+          ]
+        ],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "match_second_set",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          3,
+          0
+        ],
+        "games": [
+          5,
+          1
+        ],
+        "sets": [
+          [
+            6,
+            5
+          ]
+        ],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_rest",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "player_a"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "concession_before_toss",
+      "actions": [
+        {
+          "type": "concede",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "player_b"
+        ]
+      }
+    },
+    {
+      "id": "disqualification",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "player": 1
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "player_a"
+        ]
+      }
+    },
+    {
+      "id": "abandonment",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "abandon",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    },
+    {
+      "id": "no_contest",
+      "actions": [
+        {
+          "type": "abandon",
+          "params": {}
+        },
+        {
+          "type": "official_result",
+          "params": {
+            "winner": null
+          }
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "invalid_advantage",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          4,
+          1
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "unplayed_required_change_invalid",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          3,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [
+          {
+            "kind": "service",
+            "mark": "one yard"
+          }
+        ],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "empty_playing_chases_invalid",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "chases": [],
+        "playing_chases": true,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "invalid_completed_set",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "sets": [
+          [
+            6,
+            6
+          ]
+        ],
+        "server": 0,
+        "chases": [],
+        "playing_chases": false,
+        "fault": false,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

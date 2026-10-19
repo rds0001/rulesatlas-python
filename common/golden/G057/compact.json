@@ -1,0 +1,1999 @@
+{
+  "profile_id": "G057",
+  "ruleset_id": "builtin.sixty_six.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "alternating_six_card_deal",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "cards": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 1,
+        "leader": 1,
+        "hands": [
+          [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11
+          ],
+          [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ]
+        ],
+        "stock": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": null,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      }
+    },
+    {
+      "id": "duplicate_deck_rejected",
+      "action": {
+        "type": "deal",
+        "params": {
+          "cards": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "open_stock_allows_off_suit",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11
+          ],
+          [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ]
+        ],
+        "stock": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": null,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 1,
+            "marriage": false
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 6,
+            "marriage": false
+          }
+        }
+      ],
+      "legal_mode": "enumerated"
+    },
+    {
+      "id": "closed_stock_requires_following",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11
+          ],
+          [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ]
+        ],
+        "stock": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": 0,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 1,
+            "marriage": false
+          }
+        }
+      ],
+      "action": {
+        "type": "play",
+        "params": {
+          "card": 6,
+          "marriage": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "must_head_when_possible",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            2,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          [
+            0,
+            3,
+            4,
+            11,
+            12,
+            13
+          ]
+        ],
+        "stock": [
+          1,
+          5,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": 0,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 2,
+            "marriage": false
+          }
+        }
+      ],
+      "action": {
+        "type": "play",
+        "params": {
+          "card": 0,
+          "marriage": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "higher_card_legal_when_heading",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            2,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          [
+            0,
+            3,
+            4,
+            11,
+            12,
+            13
+          ]
+        ],
+        "stock": [
+          1,
+          5,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": 0,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 2,
+            "marriage": false
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 3,
+            "marriage": false
+          }
+        }
+      ],
+      "legal_mode": "enumerated"
+    },
+    {
+      "id": "must_trump_when_void",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            2,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          [
+            12,
+            13,
+            14,
+            18,
+            19,
+            20
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          11,
+          15,
+          16,
+          17,
+          21,
+          22,
+          23
+        ],
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": 0,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 2,
+            "marriage": false
+          }
+        }
+      ],
+      "action": {
+        "type": "play",
+        "params": {
+          "card": 12,
+          "marriage": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "trump_when_void_is_legal",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            2,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          [
+            12,
+            13,
+            14,
+            18,
+            19,
+            20
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          11,
+          15,
+          16,
+          17,
+          21,
+          22,
+          23
+        ],
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": 0,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 2,
+            "marriage": false
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 18,
+            "marriage": false
+          }
+        }
+      ],
+      "legal_mode": "enumerated"
+    },
+    {
+      "id": "marriage_waits_for_first_trick",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            2,
+            3,
+            6,
+            7,
+            8,
+            9
+          ],
+          [
+            0,
+            1,
+            4,
+            5,
+            10,
+            11
+          ]
+        ],
+        "stock": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": null,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 2,
+            "marriage": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 1,
+        "leader": 0,
+        "hands": [
+          [
+            3,
+            6,
+            7,
+            8,
+            9
+          ],
+          [
+            0,
+            1,
+            4,
+            5,
+            10,
+            11
+          ]
+        ],
+        "stock": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "won": [
+          [],
+          []
+        ],
+        "trick": [
+          2
+        ],
+        "trump_suit": 3,
+        "marriages": [
+          [
+            0
+          ],
+          []
+        ],
+        "closer": null,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      }
+    },
+    {
+      "id": "follower_cannot_announce",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            2,
+            3,
+            6,
+            7,
+            8,
+            9
+          ],
+          [
+            0,
+            1,
+            4,
+            5,
+            10,
+            11
+          ]
+        ],
+        "stock": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": null,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 6,
+            "marriage": false
+          }
+        }
+      ],
+      "action": {
+        "type": "play",
+        "params": {
+          "card": 4,
+          "marriage": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "trump_jack_exchange",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            19,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        ],
+        "stock": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          20,
+          21,
+          22,
+          23
+        ],
+        "won": [
+          [
+            0,
+            1
+          ],
+          []
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": null,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "exchange_trump",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            2,
+            3,
+            4,
+            5,
+            6,
+            23
+          ],
+          [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        ],
+        "stock": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          20,
+          21,
+          22,
+          19
+        ],
+        "won": [
+          [
+            0,
+            1
+          ],
+          []
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": null,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      }
+    },
+    {
+      "id": "exchange_requires_previous_trick",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 1,
+        "leader": 1,
+        "hands": [
+          [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11
+          ],
+          [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ]
+        ],
+        "stock": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": null,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      },
+      "action": {
+        "type": "exchange_trump",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "closed_stock_prevents_exchange",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            19,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        ],
+        "stock": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          20,
+          21,
+          22,
+          23
+        ],
+        "won": [
+          [
+            0,
+            1
+          ],
+          []
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": 0,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      },
+      "action": {
+        "type": "exchange_trump",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "closure_snapshot_before_lead",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            19,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        ],
+        "stock": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          20,
+          21,
+          22,
+          23
+        ],
+        "won": [
+          [
+            0,
+            1
+          ],
+          []
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": null,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_stock",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            19,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        ],
+        "stock": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          20,
+          21,
+          22,
+          23
+        ],
+        "won": [
+          [
+            0,
+            1
+          ],
+          []
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": 0,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      }
+    },
+    {
+      "id": "only_leader_may_close",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            19,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        ],
+        "stock": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          20,
+          21,
+          22,
+          23
+        ],
+        "won": [
+          [
+            0,
+            1
+          ],
+          []
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": null,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 2,
+            "marriage": false
+          }
+        }
+      ],
+      "action": {
+        "type": "close_stock",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "sixty_six_wins_match_at_seven",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            3,
+            8,
+            9,
+            14,
+            15,
+            18
+          ],
+          [
+            2,
+            16,
+            19,
+            20,
+            21,
+            22
+          ]
+        ],
+        "stock": [],
+        "won": [
+          [
+            5,
+            11,
+            17,
+            23,
+            4,
+            10
+          ],
+          [
+            0,
+            1,
+            6,
+            7,
+            12,
+            13
+          ]
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": null,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          5,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 3,
+            "marriage": false
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 2,
+            "marriage": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "finished",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            8,
+            9,
+            14,
+            15,
+            18
+          ],
+          [
+            16,
+            19,
+            20,
+            21,
+            22
+          ]
+        ],
+        "stock": [],
+        "won": [
+          [
+            5,
+            11,
+            17,
+            23,
+            4,
+            10,
+            3,
+            2
+          ],
+          [
+            0,
+            1,
+            6,
+            7,
+            12,
+            13
+          ]
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": null,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          7,
+          0
+        ],
+        "hand_winner": 0,
+        "hand_value": 2,
+        "reason": "sixty_six"
+      },
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ],
+        "reason": "seven_game_points"
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "marriage_can_end_hand_before_lead",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            2,
+            3,
+            8,
+            9,
+            14,
+            15
+          ],
+          [
+            16,
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        ],
+        "stock": [],
+        "won": [
+          [
+            5,
+            11,
+            17,
+            23,
+            4,
+            10
+          ],
+          [
+            0,
+            1,
+            6,
+            7,
+            12,
+            13
+          ]
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": null,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          5,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 2,
+            "marriage": true
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "last_trick_wins_one_without_sixty_six",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            0
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [],
+        "won": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ]
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": null,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 0,
+            "marriage": false
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 6,
+            "marriage": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "hand_end",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [],
+          []
+        ],
+        "stock": [],
+        "won": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            0,
+            6
+          ],
+          [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ]
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": null,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          1,
+          0
+        ],
+        "hand_winner": 0,
+        "hand_value": 1,
+        "reason": "last_trick"
+      }
+    },
+    {
+      "id": "failed_closure_awards_three_without_prior_opponent_trick",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            0
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          22,
+          23
+        ],
+        "won": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+          ]
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": 0,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 0,
+            "marriage": false
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 6,
+            "marriage": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "hand_end",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [],
+          []
+        ],
+        "stock": [
+          22,
+          23
+        ],
+        "won": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            0,
+            6
+          ],
+          [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+          ]
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": 0,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          3
+        ],
+        "hand_winner": 1,
+        "hand_value": 3,
+        "reason": "closure_failed"
+      }
+    },
+    {
+      "id": "next_hand_rotates_dealer",
+      "initial_data": {
+        "phase": "hand_end",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [],
+          []
+        ],
+        "stock": [],
+        "won": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            0,
+            6
+          ],
+          [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ]
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": null,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          1,
+          0
+        ],
+        "hand_winner": 0,
+        "hand_value": 1,
+        "reason": "last_trick"
+      },
+      "actions": [
+        {
+          "type": "next_hand",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "deal",
+        "dealer": 1,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [],
+          []
+        ],
+        "stock": [],
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "trump_suit": null,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": null,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          1,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      }
+    },
+    {
+      "id": "duplicate_card_inventory_invalid",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "turn": 1,
+        "leader": 1,
+        "hands": [
+          [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11
+          ],
+          [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ]
+        ],
+        "stock": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "won": [
+          [],
+          []
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": null,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          0,
+          0
+        ],
+        "hand_winner": null,
+        "hand_value": 0,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "forged_winning_score_invalid",
+      "initial_data": {
+        "phase": "hand_end",
+        "dealer": 0,
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [],
+          []
+        ],
+        "stock": [],
+        "won": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            0,
+            6
+          ],
+          [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ]
+        ],
+        "trick": [],
+        "trump_suit": 3,
+        "marriages": [
+          [],
+          []
+        ],
+        "closer": null,
+        "close_opponent_score": 0,
+        "close_opponent_tricks": 0,
+        "match_points": [
+          1,
+          0
+        ],
+        "hand_winner": 0,
+        "hand_value": 1,
+        "reason": "sixty_six"
+      },
+      "valid": false
+    }
+  ]
+}

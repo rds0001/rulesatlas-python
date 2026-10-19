@@ -1,0 +1,6675 @@
+{
+  "profile_id": "S004",
+  "ruleset_id": "builtin.flag_football.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "team_a"
+    },
+    {
+      "id": "team_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "first_series",
+      "actions": [
+        {
+          "type": "choose_start",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "ordinary_down",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "result": "advance",
+            "spot": 10,
+            "elapsed_ms": 0,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "spot": 10,
+        "down": 2
+      }
+    },
+    {
+      "id": "midfield_new_first",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 4,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "result": "advance",
+            "spot": 26,
+            "elapsed_ms": 0,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "down": 1,
+        "middle_gained": true,
+        "offense": 0
+      }
+    },
+    {
+      "id": "at_midfield_not_beyond",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 4,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "result": "advance",
+            "spot": 25,
+            "elapsed_ms": 0,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "offense": 1,
+        "spot": 5,
+        "down": 1
+      }
+    },
+    {
+      "id": "midfield_not_twice",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 20,
+        "down": 2,
+        "middle_gained": true,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "result": "advance",
+            "spot": 30,
+            "elapsed_ms": 0,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "down": 3
+      }
+    },
+    {
+      "id": "interception_new_orientation",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "result": "interception",
+            "spot": 12,
+            "elapsed_ms": 0,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "offense": 1,
+        "spot": 12,
+        "down": 1
+      }
+    },
+    {
+      "id": "touchback_own_five",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "result": "touchback",
+            "spot": 0,
+            "elapsed_ms": 0,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "offense": 1,
+        "spot": 5
+      }
+    },
+    {
+      "id": "incomplete_spot_unchanged",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "play",
+        "params": {
+          "result": "incomplete",
+          "spot": 10,
+          "elapsed_ms": 0,
+          "out_of_bounds": false,
+          "forward_pass": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "no_running_zone",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 46,
+        "down": 1,
+        "middle_gained": true,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "play",
+        "params": {
+          "result": "touchdown",
+          "spot": 50,
+          "elapsed_ms": 0,
+          "out_of_bounds": false,
+          "forward_pass": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "touchdown_owes_try",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "result": "touchdown",
+            "spot": 50,
+            "elapsed_ms": 0,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          6,
+          0
+        ],
+        "phase": "try_choice"
+      }
+    },
+    {
+      "id": "two_point_try",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "result": "touchdown",
+            "spot": 50,
+            "elapsed_ms": 0,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        },
+        {
+          "type": "choose_try",
+          "params": {
+            "points": 2
+          }
+        },
+        {
+          "type": "try_result",
+          "params": {
+            "result": "success",
+            "elapsed_ms": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          8,
+          0
+        ],
+        "offense": 1,
+        "spot": 5
+      }
+    },
+    {
+      "id": "defense_try_score",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "result": "touchdown",
+            "spot": 50,
+            "elapsed_ms": 0,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        },
+        {
+          "type": "choose_try",
+          "params": {
+            "points": 1
+          }
+        },
+        {
+          "type": "try_result",
+          "params": {
+            "result": "defensive_touchdown",
+            "elapsed_ms": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          6,
+          2
+        ],
+        "offense": 1
+      }
+    },
+    {
+      "id": "try_safety_one_point",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "result": "touchdown",
+            "spot": 50,
+            "elapsed_ms": 0,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        },
+        {
+          "type": "choose_try",
+          "params": {
+            "points": 1
+          }
+        },
+        {
+          "type": "try_result",
+          "params": {
+            "result": "offense_safety",
+            "elapsed_ms": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "id": "safety_two_and_new_series",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "result": "safety",
+            "spot": 0,
+            "elapsed_ms": 0,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          0,
+          2
+        ],
+        "offense": 1,
+        "spot": 5
+      }
+    },
+    {
+      "id": "half_distance_penalty",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "penalty",
+          "params": {
+            "team": 0,
+            "base_spot": 5,
+            "yards": 5,
+            "effect": "keep",
+            "live": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "spot": 2.5,
+        "down": 1
+      }
+    },
+    {
+      "id": "automatic_first",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 20,
+        "down": 3,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "penalty",
+          "params": {
+            "team": 1,
+            "base_spot": 20,
+            "yards": 10,
+            "effect": "first",
+            "live": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "spot": 30,
+        "down": 1,
+        "middle_gained": true
+      }
+    },
+    {
+      "id": "loss_of_fourth_down",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 4,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "penalty",
+          "params": {
+            "team": 0,
+            "base_spot": 5,
+            "yards": 5,
+            "effect": "loss",
+            "live": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "offense": 1,
+        "spot": 5
+      }
+    },
+    {
+      "id": "try_value_fixed_after_penalty",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "result": "touchdown",
+            "spot": 50,
+            "elapsed_ms": 0,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        },
+        {
+          "type": "choose_try",
+          "params": {
+            "points": 2
+          }
+        },
+        {
+          "type": "penalty",
+          "params": {
+            "team": 1,
+            "base_spot": 40,
+            "yards": 10,
+            "effect": "repeat",
+            "live": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "spot": 45,
+        "try_value": 2,
+        "phase": "try_ready"
+      }
+    },
+    {
+      "id": "try_choice_not_repeatable",
+      "initial_data": {
+        "phase": "try_ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 45,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 1,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "choose_try",
+        "params": {
+          "points": 2
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "penalty_carry_to_try",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "result": "touchdown",
+            "spot": 50,
+            "elapsed_ms": 0,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        },
+        {
+          "type": "carry_penalty",
+          "params": {
+            "team": 1,
+            "yards": 10
+          }
+        },
+        {
+          "type": "choose_try",
+          "params": {
+            "points": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "spot": 47.5
+      }
+    },
+    {
+      "id": "half_expiry",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": true,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "result": "incomplete",
+            "spot": 5,
+            "elapsed_ms": 1,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "period_end",
+        "clock_ms": 0
+      }
+    },
+    {
+      "id": "halftime_start_other_team",
+      "initial_data": {
+        "phase": "period_end",
+        "half": 1,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_period",
+          "params": {}
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "milliseconds": 120000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "half": 2,
+        "offense": 1,
+        "clock_ms": 1200000
+      }
+    },
+    {
+      "id": "interval_penalty_applies_before_restart",
+      "initial_data": {
+        "phase": "period_end",
+        "half": 1,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_period",
+          "params": {}
+        },
+        {
+          "type": "carry_penalty",
+          "params": {
+            "team": 1,
+            "yards": 5
+          }
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "milliseconds": 120000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "offense": 1,
+        "spot": 2.5
+      }
+    },
+    {
+      "id": "touchdown_at_horn_requires_try",
+      "initial_data": {
+        "phase": "ready",
+        "half": 2,
+        "clock_ms": 1,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": true,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "result": "touchdown",
+            "spot": 50,
+            "elapsed_ms": 1,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        },
+        {
+          "type": "choose_try",
+          "params": {
+            "points": 1
+          }
+        },
+        {
+          "type": "try_result",
+          "params": {
+            "result": "success",
+            "elapsed_ms": 0
+          }
+        },
+        {
+          "type": "close_period",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_a"
+        ]
+      }
+    },
+    {
+      "id": "untimed_extension",
+      "initial_data": {
+        "phase": "period_end",
+        "half": 1,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "penalty",
+          "params": {
+            "team": 1,
+            "base_spot": 10,
+            "yards": 5,
+            "effect": "repeat",
+            "live": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "ready",
+        "extension": true
+      }
+    },
+    {
+      "id": "untimed_down_then_end",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": true,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": true,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "result": "incomplete",
+            "spot": 5,
+            "elapsed_ms": 0,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "period_end",
+        "extension": false
+      }
+    },
+    {
+      "id": "no_clock_elapsed_when_stopped",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "elapse_between",
+        "params": {
+          "milliseconds": 1000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "two_timeouts",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          2,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "timeout",
+        "params": {
+          "team": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "timeout_returns_to_try",
+      "initial_data": {
+        "phase": "try_ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 40,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 2,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "milliseconds": 60000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "try_ready",
+        "try_value": 2
+      }
+    },
+    {
+      "id": "two_unsporting_exclude",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "unsporting"
+          }
+        },
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "unsporting"
+          }
+        }
+      ],
+      "action": {
+        "type": "set_lineup",
+        "params": {
+          "team": 0,
+          "players": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "replace_excluded_player",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "flagrant"
+          }
+        },
+        {
+          "type": "set_lineup",
+          "params": {
+            "team": 0,
+            "players": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "result": "advance",
+            "spot": 10,
+            "elapsed_ms": 0,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "down": 2
+      }
+    },
+    {
+      "id": "miss_down_cannot_return_early",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "miss_next_down",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "set_lineup",
+        "params": {
+          "team": 0,
+          "players": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "return_after_missed_down",
+      "initial_data": {
+        "phase": "ready",
+        "half": 1,
+        "clock_ms": 1200000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "miss_next_down",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "result": "advance",
+            "spot": 10,
+            "elapsed_ms": 0,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        },
+        {
+          "type": "set_lineup",
+          "params": {
+            "team": 0,
+            "players": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "down": 2
+      }
+    },
+    {
+      "id": "overtime_no_timeouts",
+      "initial_data": {
+        "phase": "ready",
+        "half": 3,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 25,
+        "down": 1,
+        "middle_gained": true,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 1,
+        "ot_series": 0,
+        "ot_first": 0,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "timeout",
+        "params": {
+          "team": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "overtime_first_defense_score_ends",
+      "initial_data": {
+        "phase": "ready",
+        "half": 3,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 25,
+        "down": 1,
+        "middle_gained": true,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 1,
+        "ot_series": 0,
+        "ot_first": 0,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "result": "defensive_touchdown",
+            "spot": 50,
+            "elapsed_ms": 0,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_b"
+        ],
+        "reason": "overtime"
+      }
+    },
+    {
+      "id": "overtime_both_series",
+      "initial_data": {
+        "phase": "ready",
+        "half": 3,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 25,
+        "down": 4,
+        "middle_gained": true,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 1,
+        "ot_series": 0,
+        "ot_first": 0,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "result": "incomplete",
+            "spot": 25,
+            "elapsed_ms": 0,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "ot_series": 1,
+        "offense": 1
+      }
+    },
+    {
+      "id": "second_overtime_is_one_point_tries",
+      "initial_data": {
+        "phase": "ready",
+        "half": 3,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 1,
+        "spot": 25,
+        "down": 4,
+        "middle_gained": true,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 1,
+        "ot_series": 1,
+        "ot_first": 0,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "result": "incomplete",
+            "spot": 25,
+            "elapsed_ms": 0,
+            "out_of_bounds": false,
+            "forward_pass": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "ot_round": 2,
+        "ot_series": 0,
+        "phase": "try_ready",
+        "try_value": 1
+      }
+    },
+    {
+      "id": "second_overtime_equal_opportunities",
+      "initial_data": {
+        "phase": "try_ready",
+        "half": 3,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 45,
+        "down": 1,
+        "middle_gained": true,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 1,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 2,
+        "ot_series": 0,
+        "ot_first": 0,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "try_result",
+          "params": {
+            "result": "success",
+            "elapsed_ms": 0
+          }
+        },
+        {
+          "type": "try_result",
+          "params": {
+            "result": "miss",
+            "elapsed_ms": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_a"
+        ],
+        "reason": "overtime"
+      }
+    },
+    {
+      "id": "permitted_draw",
+      "initial_data": {
+        "phase": "period_end",
+        "half": 2,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": true,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_period",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw"
+      }
+    },
+    {
+      "id": "invalid_overtime_clock",
+      "initial_data": {
+        "phase": "ready",
+        "half": 3,
+        "clock_ms": 1,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 25,
+        "down": 1,
+        "middle_gained": true,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": false,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 1,
+        "ot_series": 0,
+        "ot_first": 0,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "invalid_expired_period_extension",
+      "initial_data": {
+        "phase": "period_end",
+        "half": 1,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "ready",
+        "notified": false,
+        "mercy_clock": false,
+        "first_team": 0,
+        "offense": 0,
+        "spot": 5,
+        "down": 1,
+        "middle_gained": false,
+        "score": [
+          0,
+          0
+        ],
+        "try_value": 0,
+        "extension": true,
+        "timeouts": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "unsporting": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "sit_out": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "allow_draw": false,
+        "interval_overtime": false,
+        "ot_round": 0,
+        "ot_series": 0,
+        "ot_first": null,
+        "carry": [],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

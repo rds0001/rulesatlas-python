@@ -1,0 +1,857 @@
+{
+  "profile_id": "G077",
+  "ruleset_id": "builtin.craps.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    }
+  ],
+  "cases": [
+    {
+      "id": "pass_natural_seven",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "side": "pass",
+            "stake": 10
+          }
+        },
+        {
+          "type": "close_roll",
+          "params": {}
+        },
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              3,
+              4
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1010,
+            "net": 10
+          }
+        ],
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "pass_craps_two",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "side": "pass",
+            "stake": 10
+          }
+        },
+        {
+          "type": "close_roll",
+          "params": {}
+        },
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 990,
+            "net": -10
+          }
+        ]
+      }
+    },
+    {
+      "id": "dont_pass_craps_three",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "side": "dont_pass",
+            "stake": 10
+          }
+        },
+        {
+          "type": "close_roll",
+          "params": {}
+        },
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              1,
+              2
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1010,
+            "net": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "dont_pass_natural_eleven_loses",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "side": "dont_pass",
+            "stake": 10
+          }
+        },
+        {
+          "type": "close_roll",
+          "params": {}
+        },
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 990,
+            "net": -10
+          }
+        ]
+      }
+    },
+    {
+      "id": "dont_pass_bar_twelve_push",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "side": "dont_pass",
+            "stake": 10
+          }
+        },
+        {
+          "type": "close_roll",
+          "params": {}
+        },
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              6,
+              6
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1000,
+            "net": 0
+          }
+        ],
+        "result_kind": "draw"
+      }
+    },
+    {
+      "id": "comeout_six_sets_point",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "side": "pass",
+            "stake": 10
+          }
+        },
+        {
+          "type": "close_roll",
+          "params": {}
+        },
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              3,
+              3
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "point_betting",
+        "side": "pass",
+        "stake": 10,
+        "odds": 0,
+        "point": 6,
+        "dice": [
+          3,
+          3
+        ],
+        "reason": null
+      }
+    },
+    {
+      "id": "pass_point_six_with_five_times_odds",
+      "initial_data": {
+        "phase": "point_betting",
+        "side": "pass",
+        "stake": 10,
+        "odds": 0,
+        "point": 6,
+        "dice": [
+          3,
+          3
+        ],
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "set_odds",
+          "params": {
+            "stake": 50
+          }
+        },
+        {
+          "type": "close_roll",
+          "params": {}
+        },
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              2,
+              4
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1070,
+            "net": 70
+          }
+        ]
+      }
+    },
+    {
+      "id": "dont_pass_six_seven_out_with_lay_odds",
+      "initial_data": {
+        "phase": "point_betting",
+        "side": "dont_pass",
+        "stake": 10,
+        "odds": 0,
+        "point": 6,
+        "dice": [
+          3,
+          3
+        ],
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "set_odds",
+          "params": {
+            "stake": 60
+          }
+        },
+        {
+          "type": "close_roll",
+          "params": {}
+        },
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              3,
+              4
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1060,
+            "net": 60
+          }
+        ]
+      }
+    },
+    {
+      "id": "pass_point_four_double_odds",
+      "initial_data": {
+        "phase": "point_betting",
+        "side": "pass",
+        "stake": 10,
+        "odds": 0,
+        "point": 4,
+        "dice": [
+          2,
+          2
+        ],
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "set_odds",
+          "params": {
+            "stake": 30
+          }
+        },
+        {
+          "type": "close_roll",
+          "params": {}
+        },
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              1,
+              3
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1070,
+            "net": 70
+          }
+        ]
+      }
+    },
+    {
+      "id": "pass_point_five_three_to_two",
+      "initial_data": {
+        "phase": "point_betting",
+        "side": "pass",
+        "stake": 10,
+        "odds": 0,
+        "point": 5,
+        "dice": [
+          2,
+          3
+        ],
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "set_odds",
+          "params": {
+            "stake": 40
+          }
+        },
+        {
+          "type": "close_roll",
+          "params": {}
+        },
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              1,
+              4
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1070,
+            "net": 70
+          }
+        ]
+      }
+    },
+    {
+      "id": "seven_out_loses_line_and_odds",
+      "initial_data": {
+        "phase": "point_betting",
+        "side": "pass",
+        "stake": 10,
+        "odds": 0,
+        "point": 6,
+        "dice": [
+          3,
+          3
+        ],
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "set_odds",
+          "params": {
+            "stake": 50
+          }
+        },
+        {
+          "type": "close_roll",
+          "params": {}
+        },
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              1,
+              6
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 940,
+            "net": -60
+          }
+        ]
+      }
+    },
+    {
+      "id": "dont_pass_point_made_loses_line_and_odds",
+      "initial_data": {
+        "phase": "point_betting",
+        "side": "dont_pass",
+        "stake": 10,
+        "odds": 0,
+        "point": 6,
+        "dice": [
+          3,
+          3
+        ],
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "set_odds",
+          "params": {
+            "stake": 60
+          }
+        },
+        {
+          "type": "close_roll",
+          "params": {}
+        },
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              3,
+              3
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 930,
+            "net": -70
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonresolving_roll_retains_point",
+      "initial_data": {
+        "phase": "point_betting",
+        "side": "pass",
+        "stake": 10,
+        "odds": 0,
+        "point": 6,
+        "dice": [
+          3,
+          3
+        ],
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_roll",
+          "params": {}
+        },
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              6,
+              6
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "point_betting",
+        "side": "pass",
+        "stake": 10,
+        "odds": 0,
+        "point": 6,
+        "dice": [
+          6,
+          6
+        ],
+        "reason": null
+      }
+    },
+    {
+      "id": "odds_removed_before_next_roll",
+      "initial_data": {
+        "phase": "point_betting",
+        "side": "pass",
+        "stake": 10,
+        "odds": 0,
+        "point": 6,
+        "dice": [
+          3,
+          3
+        ],
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "set_odds",
+          "params": {
+            "stake": 50
+          }
+        },
+        {
+          "type": "set_odds",
+          "params": {
+            "stake": 0
+          }
+        },
+        {
+          "type": "close_roll",
+          "params": {}
+        },
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              1,
+              5
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1010,
+            "net": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "dont_pass_withdraw_returns_all_stakes",
+      "initial_data": {
+        "phase": "point_betting",
+        "side": "dont_pass",
+        "stake": 10,
+        "odds": 0,
+        "point": 6,
+        "dice": [
+          3,
+          3
+        ],
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "set_odds",
+          "params": {
+            "stake": 60
+          }
+        },
+        {
+          "type": "withdraw_dont_pass",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1000,
+            "net": 0
+          }
+        ],
+        "reason": "withdrawn_dont_pass"
+      }
+    },
+    {
+      "id": "pass_contract_cannot_withdraw",
+      "initial_data": {
+        "phase": "point_betting",
+        "side": "pass",
+        "stake": 10,
+        "odds": 0,
+        "point": 6,
+        "dice": [
+          3,
+          3
+        ],
+        "reason": null
+      },
+      "action": {
+        "type": "withdraw_dont_pass",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "no_line_increase_after_point",
+      "initial_data": {
+        "phase": "point_betting",
+        "side": "pass",
+        "stake": 10,
+        "odds": 0,
+        "point": 6,
+        "dice": [
+          3,
+          3
+        ],
+        "reason": null
+      },
+      "action": {
+        "type": "bet",
+        "params": {
+          "side": "pass",
+          "stake": 20
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "odds_limit_enforced",
+      "initial_data": {
+        "phase": "point_betting",
+        "side": "pass",
+        "stake": 10,
+        "odds": 0,
+        "point": 6,
+        "dice": [
+          3,
+          3
+        ],
+        "reason": null
+      },
+      "action": {
+        "type": "set_odds",
+        "params": {
+          "stake": 55
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "exact_chip_increment_required",
+      "initial_data": {
+        "phase": "point_betting",
+        "side": "pass",
+        "stake": 10,
+        "odds": 0,
+        "point": 6,
+        "dice": [
+          3,
+          3
+        ],
+        "reason": null
+      },
+      "action": {
+        "type": "set_odds",
+        "params": {
+          "stake": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "chip_budget_limits_odds",
+      "initial_data": {
+        "phase": "point_betting",
+        "side": "pass",
+        "stake": 900,
+        "odds": 0,
+        "point": 6,
+        "dice": [
+          3,
+          3
+        ],
+        "reason": null
+      },
+      "action": {
+        "type": "set_odds",
+        "params": {
+          "stake": 105
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "cannot_roll_during_betting",
+      "initial_data": {
+        "phase": "point_betting",
+        "side": "pass",
+        "stake": 10,
+        "odds": 0,
+        "point": 6,
+        "dice": [
+          3,
+          3
+        ],
+        "reason": null
+      },
+      "action": {
+        "type": "roll",
+        "params": {
+          "dice": [
+            3,
+            3
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "cannot_change_odds_after_close",
+      "initial_data": {
+        "phase": "point_betting",
+        "side": "pass",
+        "stake": 10,
+        "odds": 0,
+        "point": 6,
+        "dice": [
+          3,
+          3
+        ],
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_roll",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "set_odds",
+        "params": {
+          "stake": 5
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "cancel_before_comeout",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "side": "pass",
+            "stake": 10
+          }
+        },
+        {
+          "type": "cancel",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "betting",
+        "side": null,
+        "stake": 0,
+        "odds": 0,
+        "point": null,
+        "dice": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "point_seven_is_not_valid",
+      "initial_data": {
+        "phase": "point_betting",
+        "side": "pass",
+        "stake": 10,
+        "odds": 0,
+        "point": 7,
+        "dice": [
+          3,
+          3
+        ],
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "forged_point_resolution_invalid",
+      "initial_data": {
+        "phase": "settled",
+        "side": "pass",
+        "stake": 10,
+        "odds": 0,
+        "point": 6,
+        "dice": [
+          6,
+          6
+        ],
+        "reason": "point_resolved"
+      },
+      "valid": false
+    }
+  ]
+}

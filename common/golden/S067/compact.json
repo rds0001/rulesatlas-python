@@ -1,0 +1,865 @@
+{
+  "profile_id": "S067",
+  "ruleset_id": "builtin.judo.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "white"
+    },
+    {
+      "id": "blue"
+    }
+  ],
+  "cases": [
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "resume",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "regulation",
+        "remaining_ms": 240000,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "score_before_start_rejected",
+      "action": {
+        "type": "award_score",
+        "params": {
+          "player": 0,
+          "score": "waza_ari"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "paused_clock_cannot_advance",
+      "initial_data": {
+        "phase": "regulation",
+        "remaining_ms": 240000,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "pause",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "advance_clock",
+        "params": {
+          "elapsed_ms": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "ordinary_ippon",
+      "initial_data": {
+        "phase": "regulation",
+        "remaining_ms": 240000,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_score",
+          "params": {
+            "player": 0,
+            "score": "ippon"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "white"
+        ],
+        "reason": "ippon"
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "two_waza_ari",
+      "initial_data": {
+        "phase": "regulation",
+        "remaining_ms": 240000,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_score",
+          "params": {
+            "player": 1,
+            "score": "waza_ari"
+          }
+        },
+        {
+          "type": "award_score",
+          "params": {
+            "player": 1,
+            "score": "waza_ari"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "blue"
+        ],
+        "reason": "two_waza_ari"
+      }
+    },
+    {
+      "id": "regulation_score_lead",
+      "initial_data": {
+        "phase": "regulation",
+        "remaining_ms": 240000,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          1,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "advance_clock",
+          "params": {
+            "elapsed_ms": 240000
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "white"
+        ],
+        "reason": "regulation_score"
+      }
+    },
+    {
+      "id": "tied_scores_enter_golden",
+      "initial_data": {
+        "phase": "regulation",
+        "remaining_ms": 240000,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "advance_clock",
+          "params": {
+            "elapsed_ms": 240000
+          }
+        }
+      ],
+      "data": {
+        "phase": "golden",
+        "remaining_ms": 0,
+        "golden_ms": 0,
+        "running": false,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "shido_difference_does_not_break_score_tie",
+      "initial_data": {
+        "phase": "regulation",
+        "remaining_ms": 240000,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          2,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "advance_clock",
+          "params": {
+            "elapsed_ms": 240000
+          }
+        }
+      ],
+      "data": {
+        "phase": "golden",
+        "remaining_ms": 0,
+        "golden_ms": 0,
+        "running": false,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          2,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "golden_score",
+      "initial_data": {
+        "phase": "golden",
+        "remaining_ms": 0,
+        "golden_ms": 0,
+        "running": false,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "resume",
+          "params": {}
+        },
+        {
+          "type": "award_score",
+          "params": {
+            "player": 1,
+            "score": "waza_ari"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "blue"
+        ],
+        "reason": "golden_score"
+      }
+    },
+    {
+      "id": "third_shido_ends_contest",
+      "initial_data": {
+        "phase": "regulation",
+        "remaining_ms": 240000,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          2,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "shido",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "blue"
+        ],
+        "reason": "third_shido"
+      }
+    },
+    {
+      "id": "short_hold_has_no_score",
+      "initial_data": {
+        "phase": "regulation",
+        "remaining_ms": 240000,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "start_hold",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "advance_clock",
+          "params": {
+            "elapsed_ms": 9999
+          }
+        },
+        {
+          "type": "end_hold",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "regulation",
+        "remaining_ms": 230001,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "ten_second_hold_awards_once",
+      "initial_data": {
+        "phase": "regulation",
+        "remaining_ms": 240000,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "start_hold",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "advance_clock",
+          "params": {
+            "elapsed_ms": 10000
+          }
+        },
+        {
+          "type": "advance_clock",
+          "params": {
+            "elapsed_ms": 1000
+          }
+        }
+      ],
+      "data": {
+        "phase": "regulation",
+        "remaining_ms": 229000,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          1,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": {
+          "player": 0,
+          "elapsed_ms": 11000,
+          "awarded": true
+        },
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "twenty_second_hold_ippon",
+      "initial_data": {
+        "phase": "regulation",
+        "remaining_ms": 240000,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "start_hold",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "advance_clock",
+          "params": {
+            "elapsed_ms": 20000
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "white"
+        ],
+        "reason": "hold_ippon"
+      }
+    },
+    {
+      "id": "existing_waza_hold_wins_at_ten",
+      "initial_data": {
+        "phase": "regulation",
+        "remaining_ms": 240000,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          1,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "start_hold",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "advance_clock",
+          "params": {
+            "elapsed_ms": 10000
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "white"
+        ],
+        "reason": "two_waza_ari"
+      }
+    },
+    {
+      "id": "cannot_skip_past_winning_hold_time",
+      "initial_data": {
+        "phase": "regulation",
+        "remaining_ms": 240000,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          1,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "start_hold",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "advance_clock",
+        "params": {
+          "elapsed_ms": 10001
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "hold_continues_after_regulation_zero",
+      "initial_data": {
+        "phase": "regulation",
+        "remaining_ms": 1000,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "start_hold",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "advance_clock",
+          "params": {
+            "elapsed_ms": 10000
+          }
+        }
+      ],
+      "data": {
+        "phase": "regulation",
+        "remaining_ms": 0,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          1,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": {
+          "player": 0,
+          "elapsed_ms": 10000,
+          "awarded": true
+        },
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "release_after_zero_resolves_score",
+      "initial_data": {
+        "phase": "regulation",
+        "remaining_ms": 1000,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "start_hold",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "advance_clock",
+          "params": {
+            "elapsed_ms": 10000
+          }
+        },
+        {
+          "type": "end_hold",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "white"
+        ],
+        "reason": "regulation_score"
+      }
+    },
+    {
+      "id": "golden_hold_wins_at_ten",
+      "initial_data": {
+        "phase": "golden",
+        "remaining_ms": 0,
+        "golden_ms": 0,
+        "running": false,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "resume",
+          "params": {}
+        },
+        {
+          "type": "start_hold",
+          "params": {
+            "player": 1
+          }
+        },
+        {
+          "type": "advance_clock",
+          "params": {
+            "elapsed_ms": 10000
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "blue"
+        ],
+        "reason": "golden_score"
+      }
+    },
+    {
+      "id": "no_overlapping_holds",
+      "initial_data": {
+        "phase": "regulation",
+        "remaining_ms": 240000,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "start_hold",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "start_hold",
+        "params": {
+          "player": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "submission_during_hold",
+      "initial_data": {
+        "phase": "regulation",
+        "remaining_ms": 240000,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "start_hold",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "submission",
+          "params": {
+            "loser": 1
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "white"
+        ],
+        "reason": "submission"
+      }
+    },
+    {
+      "id": "credited_golden_hold_cannot_continue",
+      "initial_data": {
+        "phase": "golden",
+        "remaining_ms": 0,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          1,
+          1
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": {
+          "player": 0,
+          "elapsed_ms": 10000,
+          "awarded": true
+        },
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "expired_unresolved_regulation_invalid",
+      "initial_data": {
+        "phase": "regulation",
+        "remaining_ms": 0,
+        "golden_ms": 0,
+        "running": true,
+        "waza": [
+          0,
+          0
+        ],
+        "shido": [
+          0,
+          0
+        ],
+        "hold": null,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

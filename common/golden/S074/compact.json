@@ -1,0 +1,827 @@
+{
+  "profile_id": "S074",
+  "ruleset_id": "builtin.kendo.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "red"
+    },
+    {
+      "id": "white"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "active",
+        "points": [
+          0,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "unstarted_hit_rejected",
+      "action": {
+        "type": "ippon",
+        "params": {
+          "player": 0,
+          "target": "men"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "hit_stops_clock",
+      "initial_data": {
+        "phase": "active",
+        "points": [
+          0,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "ippon",
+          "params": {
+            "player": 0,
+            "target": "men"
+          }
+        }
+      ],
+      "data": {
+        "phase": "paused",
+        "points": [
+          1,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "stopped_clock_rejected",
+      "initial_data": {
+        "phase": "paused",
+        "points": [
+          1,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "elapse",
+        "params": {
+          "milliseconds": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "two_ippon_win",
+      "initial_data": {
+        "phase": "paused",
+        "points": [
+          1,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "resume",
+          "params": {}
+        },
+        {
+          "type": "ippon",
+          "params": {
+            "player": 0,
+            "target": "kote"
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ],
+        "reason": "points"
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "single_hansoku_no_point",
+      "initial_data": {
+        "phase": "active",
+        "points": [
+          0,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "hansoku",
+          "params": {
+            "offenders": [
+              true,
+              false
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "paused",
+        "points": [
+          0,
+          0
+        ],
+        "hansoku": [
+          1,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "pair_hansoku_scores_opponent",
+      "initial_data": {
+        "phase": "active",
+        "points": [
+          0,
+          0
+        ],
+        "hansoku": [
+          1,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "hansoku",
+          "params": {
+            "offenders": [
+              true,
+              false
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "paused",
+        "points": [
+          0,
+          1
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "simultaneous_second_cancellation",
+      "initial_data": {
+        "phase": "active",
+        "points": [
+          1,
+          1
+        ],
+        "hansoku": [
+          1,
+          1
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "hansoku",
+          "params": {
+            "offenders": [
+              true,
+              true
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "paused",
+        "points": [
+          1,
+          1
+        ],
+        "hansoku": [
+          1,
+          1
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "simultaneous_first_penalties",
+      "initial_data": {
+        "phase": "active",
+        "points": [
+          0,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "hansoku",
+          "params": {
+            "offenders": [
+              true,
+              true
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "paused",
+        "points": [
+          0,
+          0
+        ],
+        "hansoku": [
+          1,
+          1
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "empty_offenders_rejected",
+      "initial_data": {
+        "phase": "active",
+        "points": [
+          0,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "hansoku",
+        "params": {
+          "offenders": [
+            false,
+            false
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "time_lead_wins",
+      "initial_data": {
+        "phase": "active",
+        "points": [
+          0,
+          1
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 300000
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "white"
+        ]
+      }
+    },
+    {
+      "id": "tie_opens_encho",
+      "initial_data": {
+        "phase": "active",
+        "points": [
+          0,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 300000
+          }
+        },
+        {
+          "type": "begin_encho",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "paused",
+        "points": [
+          0,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 180000,
+        "encho": true,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "clock_cannot_cross_period",
+      "initial_data": {
+        "phase": "active",
+        "points": [
+          0,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 10,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "elapse",
+        "params": {
+          "milliseconds": 11
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "sudden_death",
+      "initial_data": {
+        "phase": "paused",
+        "points": [
+          0,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 180000,
+        "encho": true,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "resume",
+          "params": {}
+        },
+        {
+          "type": "ippon",
+          "params": {
+            "player": 1,
+            "target": "tsuki"
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "white"
+        ]
+      }
+    },
+    {
+      "id": "penalties_carry",
+      "initial_data": {
+        "phase": "interval",
+        "points": [
+          0,
+          0
+        ],
+        "hansoku": [
+          1,
+          0
+        ],
+        "remaining_ms": 0,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "begin_encho",
+          "params": {}
+        },
+        {
+          "type": "hansoku",
+          "params": {
+            "offenders": [
+              true,
+              false
+            ]
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "white"
+        ]
+      }
+    },
+    {
+      "id": "hantei_majority",
+      "initial_data": {
+        "phase": "decision",
+        "points": [
+          0,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 0,
+        "encho": true,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "hantei",
+          "params": {
+            "votes": [
+              0,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "white"
+        ],
+        "reason": "hantei"
+      }
+    },
+    {
+      "id": "premature_hantei_rejected",
+      "initial_data": {
+        "phase": "paused",
+        "points": [
+          0,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 180000,
+        "encho": true,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "hantei",
+        "params": {
+          "votes": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "revoke_winning_point",
+      "initial_data": {
+        "phase": "review",
+        "points": [
+          2,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": 0,
+        "reason": "points"
+      },
+      "actions": [
+        {
+          "type": "correct_record",
+          "params": {
+            "points": [
+              1,
+              0
+            ],
+            "hansoku": [
+              0,
+              0
+            ],
+            "remaining_ms": 300000
+          }
+        }
+      ],
+      "data": {
+        "phase": "paused",
+        "points": [
+          1,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "withdrawal_retains_point",
+      "initial_data": {
+        "phase": "paused",
+        "points": [
+          1,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "forfeit",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "finished",
+        "points": [
+          1,
+          2
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": 1,
+        "reason": "forfeit"
+      }
+    },
+    {
+      "id": "disqualification_clears_point",
+      "initial_data": {
+        "phase": "paused",
+        "points": [
+          1,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "white"
+        ],
+        "result_kind": "disqualification"
+      }
+    },
+    {
+      "id": "double_disqualification",
+      "initial_data": {
+        "phase": "paused",
+        "points": [
+          1,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "both_disqualified",
+          "params": {}
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [],
+        "losers": [
+          "red",
+          "white"
+        ],
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "live_winning_score_invalid",
+      "initial_data": {
+        "phase": "active",
+        "points": [
+          2,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 300000,
+        "encho": false,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "overtime_clock_invalid",
+      "initial_data": {
+        "phase": "paused",
+        "points": [
+          0,
+          0
+        ],
+        "hansoku": [
+          0,
+          0
+        ],
+        "remaining_ms": 180001,
+        "encho": true,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

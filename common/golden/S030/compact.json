@@ -1,0 +1,183 @@
+{
+  "profile_id": "S030",
+  "ruleset_id": "builtin.table_tennis.best_of_five",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types",
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "service_pair",
+      "actions": [
+        {
+          "type": "award_point",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "award_point",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "games": [],
+        "points": [
+          2,
+          0
+        ],
+        "server": 1,
+        "phase": "game",
+        "decision": null,
+        "expedite": null
+      }
+    },
+    {
+      "id": "deuce_service",
+      "initial_data": {
+        "games": [],
+        "points": [
+          10,
+          10
+        ],
+        "server": 0,
+        "phase": "game",
+        "decision": null,
+        "expedite": null
+      },
+      "actions": [
+        {
+          "type": "award_point",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "games": [],
+        "points": [
+          11,
+          10
+        ],
+        "server": 1,
+        "phase": "game",
+        "decision": null,
+        "expedite": null
+      }
+    },
+    {
+      "id": "match_end",
+      "initial_data": {
+        "games": [
+          [
+            11,
+            0
+          ],
+          [
+            11,
+            0
+          ]
+        ],
+        "points": [
+          10,
+          0
+        ],
+        "server": 1,
+        "phase": "game",
+        "decision": null,
+        "expedite": null
+      },
+      "actions": [
+        {
+          "type": "award_point",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "expedite_between_rallies",
+      "initial_data": {
+        "games": [],
+        "points": [
+          2,
+          1
+        ],
+        "server": 1,
+        "phase": "game",
+        "decision": null,
+        "expedite": null
+      },
+      "actions": [
+        {
+          "type": "start_expedite",
+          "params": {
+            "mode": "timed",
+            "elapsed_seconds": 600,
+            "in_play": false
+          }
+        }
+      ],
+      "data": {
+        "games": [],
+        "points": [
+          2,
+          1
+        ],
+        "server": 0,
+        "phase": "game",
+        "decision": null,
+        "expedite": {
+          "game_index": 0,
+          "point_total": 3,
+          "server": 0,
+          "in_play": false
+        }
+      }
+    },
+    {
+      "id": "expedite_too_early",
+      "action": {
+        "type": "start_expedite",
+        "params": {
+          "mode": "timed",
+          "elapsed_seconds": 599,
+          "in_play": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "invalid_player",
+      "action": {
+        "type": "award_point",
+        "params": {
+          "player": 2
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

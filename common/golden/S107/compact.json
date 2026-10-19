@@ -1,0 +1,2215 @@
+{
+  "profile_id": "S107",
+  "ruleset_id": "builtin.waterski.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "skier_0"
+    },
+    {
+      "id": "skier_1"
+    },
+    {
+      "id": "skier_2"
+    },
+    {
+      "id": "skier_3"
+    },
+    {
+      "id": "skier_4"
+    },
+    {
+      "id": "skier_5"
+    },
+    {
+      "id": "skier_6"
+    },
+    {
+      "id": "skier_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "configure",
+      "actions": [
+        {
+          "type": "configure",
+          "params": {
+            "stages": [
+              {
+                "speed_kmh": 52,
+                "rope_cm": 1825
+              },
+              {
+                "speed_kmh": 55,
+                "rope_cm": 1825
+              },
+              {
+                "speed_kmh": 58,
+                "rope_cm": 1825
+              },
+              {
+                "speed_kmh": 58,
+                "rope_cm": 1600
+              }
+            ],
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": null,
+        "protected": 0,
+        "cap": 24,
+        "ruling": null
+      }
+    },
+    {
+      "id": "duplicate_start_order",
+      "action": {
+        "type": "configure",
+        "params": {
+          "stages": [
+            {
+              "speed_kmh": 52,
+              "rope_cm": 1825
+            },
+            {
+              "speed_kmh": 55,
+              "rope_cm": 1825
+            },
+            {
+              "speed_kmh": 58,
+              "rope_cm": 1825
+            },
+            {
+              "speed_kmh": 58,
+              "rope_cm": 1600
+            }
+          ],
+          "order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "skip_complete_credits_stages",
+      "initial_data": {
+        "phase": "pass_review",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "skiing",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": 2,
+        "protected": 0,
+        "cap": 24,
+        "ruling": {
+          "quarters": 24,
+          "complete": true,
+          "reride": "none",
+          "protected": 0,
+          "cap": 24,
+          "continue_allowed": false
+        }
+      },
+      "actions": [
+        {
+          "type": "accept_pass",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "skiing",
+            "next_stage": 3,
+            "score_quarters": 72
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": null,
+        "protected": 0,
+        "cap": 24,
+        "ruling": null
+      }
+    },
+    {
+      "id": "skip_failure_no_extra_credit",
+      "initial_data": {
+        "phase": "pass_review",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "skiing",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": 2,
+        "protected": 0,
+        "cap": 24,
+        "ruling": {
+          "quarters": 18,
+          "complete": false,
+          "reride": "none",
+          "protected": 0,
+          "cap": 24,
+          "continue_allowed": false
+        }
+      },
+      "actions": [
+        {
+          "type": "accept_pass",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 18
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": null,
+        "protected": 0,
+        "cap": 24,
+        "ruling": null
+      }
+    },
+    {
+      "id": "six_buoys_without_completion",
+      "initial_data": {
+        "phase": "pass_review",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "skiing",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": 0,
+        "protected": 0,
+        "cap": 24,
+        "ruling": {
+          "quarters": 24,
+          "complete": false,
+          "reride": "none",
+          "protected": 0,
+          "cap": 24,
+          "continue_allowed": false
+        }
+      },
+      "actions": [
+        {
+          "type": "accept_pass",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 24
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": null,
+        "protected": 0,
+        "cap": 24,
+        "ruling": null
+      }
+    },
+    {
+      "id": "three_quarters_invalid",
+      "initial_data": {
+        "phase": "pass_review",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "skiing",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": 0,
+        "protected": 0,
+        "cap": 24,
+        "ruling": {
+          "quarters": 3,
+          "complete": false,
+          "reride": "none",
+          "protected": 0,
+          "cap": 24,
+          "continue_allowed": false
+        }
+      },
+      "valid": false
+    },
+    {
+      "id": "mandatory_reride_cannot_accept",
+      "initial_data": {
+        "phase": "pass_review",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "skiing",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": 0,
+        "protected": 0,
+        "cap": 24,
+        "ruling": {
+          "quarters": 16,
+          "complete": false,
+          "reride": "mandatory",
+          "protected": 0,
+          "cap": 16,
+          "continue_allowed": false
+        }
+      },
+      "action": {
+        "type": "accept_pass",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "protected_repeat_minimum",
+      "initial_data": {
+        "phase": "pass_review",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "skiing",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": 0,
+        "protected": 0,
+        "cap": 24,
+        "ruling": {
+          "quarters": 16,
+          "complete": false,
+          "reride": "optional",
+          "protected": 16,
+          "cap": 24,
+          "continue_allowed": false
+        }
+      },
+      "actions": [
+        {
+          "type": "take_reride",
+          "params": {}
+        },
+        {
+          "type": "start_pass",
+          "params": {
+            "stage": 0
+          }
+        },
+        {
+          "type": "judge_pass",
+          "params": {
+            "quarters": 8,
+            "complete": false,
+            "reride": "none",
+            "protected": 0,
+            "cap": 24,
+            "continue_allowed": false
+          }
+        },
+        {
+          "type": "accept_pass",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 16
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": null,
+        "protected": 0,
+        "cap": 24,
+        "ruling": null
+      }
+    },
+    {
+      "id": "repeat_score_cap",
+      "initial_data": {
+        "phase": "pass_review",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "skiing",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": 0,
+        "protected": 0,
+        "cap": 24,
+        "ruling": {
+          "quarters": 16,
+          "complete": false,
+          "reride": "mandatory",
+          "protected": 0,
+          "cap": 16,
+          "continue_allowed": false
+        }
+      },
+      "actions": [
+        {
+          "type": "take_reride",
+          "params": {}
+        },
+        {
+          "type": "start_pass",
+          "params": {
+            "stage": 0
+          }
+        },
+        {
+          "type": "judge_pass",
+          "params": {
+            "quarters": 24,
+            "complete": true,
+            "reride": "none",
+            "protected": 0,
+            "cap": 24,
+            "continue_allowed": false
+          }
+        },
+        {
+          "type": "accept_pass",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 16
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": null,
+        "protected": 0,
+        "cap": 24,
+        "ruling": null
+      }
+    },
+    {
+      "id": "future_withdrawal_preserves_repeat",
+      "initial_data": {
+        "phase": "pass_review",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "skiing",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": 0,
+        "protected": 0,
+        "cap": 24,
+        "ruling": {
+          "quarters": 16,
+          "complete": false,
+          "reride": "optional",
+          "protected": 16,
+          "cap": 24,
+          "continue_allowed": false
+        }
+      },
+      "actions": [
+        {
+          "type": "take_reride",
+          "params": {}
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "participant": 7
+          }
+        }
+      ],
+      "legal_constraints": {
+        "selected_stage": 0,
+        "protected_quarters": 16
+      }
+    },
+    {
+      "id": "reride_stage_fixed",
+      "initial_data": {
+        "phase": "pass_review",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "skiing",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": 0,
+        "protected": 0,
+        "cap": 24,
+        "ruling": {
+          "quarters": 16,
+          "complete": false,
+          "reride": "optional",
+          "protected": 16,
+          "cap": 24,
+          "continue_allowed": false
+        }
+      },
+      "actions": [
+        {
+          "type": "take_reride",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "start_pass",
+        "params": {
+          "stage": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "at_risk_failure_preserves_floor",
+      "initial_data": {
+        "phase": "pass_review",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "skiing",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": 0,
+        "protected": 0,
+        "cap": 24,
+        "ruling": {
+          "quarters": 24,
+          "complete": true,
+          "reride": "mandatory",
+          "protected": 16,
+          "cap": 24,
+          "continue_allowed": true
+        }
+      },
+      "actions": [
+        {
+          "type": "continue_at_risk",
+          "params": {
+            "stage": 2
+          }
+        },
+        {
+          "type": "start_pass",
+          "params": {
+            "stage": 2
+          }
+        },
+        {
+          "type": "judge_pass",
+          "params": {
+            "quarters": 8,
+            "complete": false,
+            "reride": "none",
+            "protected": 0,
+            "cap": 24,
+            "continue_allowed": false
+          }
+        },
+        {
+          "type": "accept_pass",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 16
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": null,
+        "protected": 0,
+        "cap": 24,
+        "ruling": null
+      }
+    },
+    {
+      "id": "at_risk_success_credits_all",
+      "initial_data": {
+        "phase": "pass_review",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "skiing",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": 0,
+        "protected": 0,
+        "cap": 24,
+        "ruling": {
+          "quarters": 24,
+          "complete": true,
+          "reride": "mandatory",
+          "protected": 16,
+          "cap": 24,
+          "continue_allowed": true
+        }
+      },
+      "actions": [
+        {
+          "type": "continue_at_risk",
+          "params": {
+            "stage": 2
+          }
+        },
+        {
+          "type": "start_pass",
+          "params": {
+            "stage": 2
+          }
+        },
+        {
+          "type": "judge_pass",
+          "params": {
+            "quarters": 24,
+            "complete": true,
+            "reride": "none",
+            "protected": 0,
+            "cap": 24,
+            "continue_allowed": false
+          }
+        },
+        {
+          "type": "accept_pass",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "skiing",
+            "next_stage": 3,
+            "score_quarters": 72
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": null,
+        "protected": 0,
+        "cap": 24,
+        "ruling": null
+      }
+    },
+    {
+      "id": "shared_final_rank",
+      "initial_data": {
+        "phase": "review",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 24
+          },
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 24
+          },
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 8
+          },
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 8
+          },
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 8
+          },
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 8
+          },
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 8
+          },
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 8
+          }
+        ],
+        "selected": null,
+        "protected": 0,
+        "cap": 24,
+        "ruling": null
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "skier_0",
+          "skier_1"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "zero_performance_changes_winner",
+      "initial_data": {
+        "phase": "review",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 24
+          },
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 24
+          },
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 8
+          },
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 8
+          },
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 8
+          },
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 8
+          },
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 8
+          },
+          {
+            "status": "finished",
+            "next_stage": 0,
+            "score_quarters": 8
+          }
+        ],
+        "selected": null,
+        "protected": 0,
+        "cap": 24,
+        "ruling": null
+      },
+      "actions": [
+        {
+          "type": "zero_performance",
+          "params": {
+            "participant": 0
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "skier_1"
+        ]
+      }
+    },
+    {
+      "id": "all_dns_no_contest",
+      "initial_data": {
+        "phase": "review",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "dns",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "dns",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "dns",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "dns",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "dns",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "dns",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "dns",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "dns",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": null,
+        "protected": 0,
+        "cap": 24,
+        "ruling": null
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest",
+        "winners": []
+      }
+    },
+    {
+      "id": "premature_confirmation",
+      "initial_data": {
+        "phase": "ready",
+        "stages": [
+          {
+            "speed_kmh": 52,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 55,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1825
+          },
+          {
+            "speed_kmh": 58,
+            "rope_cm": 1600
+          }
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "skiers": [
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          },
+          {
+            "status": "pending",
+            "next_stage": 0,
+            "score_quarters": 0
+          }
+        ],
+        "selected": null,
+        "protected": 0,
+        "cap": 24,
+        "ruling": null
+      },
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

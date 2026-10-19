@@ -1,0 +1,302 @@
+{
+  "profile_id": "S032",
+  "ruleset_id": "builtin.squash.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types",
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "box_required",
+      "action": {
+        "type": "award_rally",
+        "params": {
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "retained_serve_alternates",
+      "actions": [
+        {
+          "type": "choose_box",
+          "params": {
+            "box": "left"
+          }
+        },
+        {
+          "type": "award_rally",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "points": [
+          1,
+          0
+        ],
+        "games_won": [
+          0,
+          0
+        ],
+        "server": 0,
+        "serve_box": "right",
+        "started": true,
+        "finished": false,
+        "decision": null
+      }
+    },
+    {
+      "id": "new_server_chooses",
+      "initial_data": {
+        "points": [
+          0,
+          0
+        ],
+        "games_won": [
+          0,
+          0
+        ],
+        "server": 0,
+        "serve_box": "left",
+        "started": true,
+        "finished": false,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "award_rally",
+          "params": {
+            "player": 1
+          }
+        }
+      ],
+      "data": {
+        "points": [
+          0,
+          1
+        ],
+        "games_won": [
+          0,
+          0
+        ],
+        "server": 1,
+        "serve_box": "choose",
+        "started": true,
+        "finished": false,
+        "decision": null
+      }
+    },
+    {
+      "id": "let_keeps_box",
+      "initial_data": {
+        "points": [
+          0,
+          0
+        ],
+        "games_won": [
+          0,
+          0
+        ],
+        "server": 0,
+        "serve_box": "right",
+        "started": true,
+        "finished": false,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "let",
+          "params": {}
+        }
+      ],
+      "data": {
+        "points": [
+          0,
+          0
+        ],
+        "games_won": [
+          0,
+          0
+        ],
+        "server": 0,
+        "serve_box": "right",
+        "started": true,
+        "finished": false,
+        "decision": null
+      }
+    },
+    {
+      "id": "deuce",
+      "initial_data": {
+        "points": [
+          10,
+          10
+        ],
+        "games_won": [
+          0,
+          0
+        ],
+        "server": 0,
+        "serve_box": "left",
+        "started": true,
+        "finished": false,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "award_rally",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "points": [
+          11,
+          10
+        ],
+        "games_won": [
+          0,
+          0
+        ],
+        "server": 0,
+        "serve_box": "right",
+        "started": true,
+        "finished": false,
+        "decision": null
+      }
+    },
+    {
+      "id": "match_win",
+      "initial_data": {
+        "points": [
+          10,
+          7
+        ],
+        "games_won": [
+          2,
+          0
+        ],
+        "server": 0,
+        "serve_box": "left",
+        "started": true,
+        "finished": false,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "award_rally",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "conduct_game",
+      "initial_data": {
+        "points": [
+          4,
+          9
+        ],
+        "games_won": [
+          2,
+          1
+        ],
+        "server": 0,
+        "serve_box": "left",
+        "started": true,
+        "finished": false,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "award_game",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      }
+    },
+    {
+      "id": "retirement",
+      "initial_data": {
+        "points": [
+          0,
+          0
+        ],
+        "games_won": [
+          0,
+          0
+        ],
+        "server": 0,
+        "serve_box": "left",
+        "started": true,
+        "finished": false,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "end_match",
+          "params": {
+            "player": 0,
+            "kind": "retirement"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "bob"
+        ]
+      }
+    },
+    {
+      "id": "unclosed_game",
+      "initial_data": {
+        "points": [
+          11,
+          7
+        ],
+        "games_won": [
+          0,
+          0
+        ],
+        "server": 0,
+        "serve_box": "left",
+        "started": true,
+        "finished": false,
+        "decision": null
+      },
+      "valid": false
+    }
+  ]
+}

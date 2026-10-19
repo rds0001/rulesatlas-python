@@ -1,0 +1,5063 @@
+{
+  "profile_id": "S122",
+  "ruleset_id": "builtin.decathlon.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "p0"
+    },
+    {
+      "id": "p1"
+    },
+    {
+      "id": "p2"
+    },
+    {
+      "id": "p3"
+    },
+    {
+      "id": "p4"
+    },
+    {
+      "id": "p5"
+    },
+    {
+      "id": "p6"
+    },
+    {
+      "id": "p7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "open_first_event",
+      "actions": [
+        {
+          "type": "start_event",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "event",
+        "event_index": 0,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "id": "hundred_metres_ten_seconds",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 0,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 0,
+            "status": "ok",
+            "mark": 1000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "totals": [
+          1096,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "slow_time_has_zero_points",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 0,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 0,
+            "status": "ok",
+            "mark": 1800
+          }
+        }
+      ],
+      "legal_constraints": {
+        "totals": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "dnf_track_zero_but_may_continue",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 0,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 0,
+            "status": "dnf",
+            "mark": null
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 1,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 2,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 3,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 4,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 5,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 6,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 7,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "confirm_event",
+          "params": {}
+        },
+        {
+          "type": "start_event",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "eligible": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": "no_mark_not_a_track_status",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 0,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "action": {
+        "type": "submit_result",
+        "params": {
+          "player": 0,
+          "status": "nm",
+          "mark": null
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "dnf_not_a_field_status",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 1,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [
+          [
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            }
+          ]
+        ],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "action": {
+        "type": "submit_result",
+        "params": {
+          "player": 0,
+          "status": "dnf",
+          "mark": null
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "no_mark_field_zero_but_continues",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 1,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [
+          [
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            }
+          ]
+        ],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 0,
+            "status": "nm",
+            "mark": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "totals": [
+          1096,
+          1096,
+          1096,
+          1096,
+          1096,
+          1096,
+          1096,
+          1096
+        ],
+        "eligible": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": "dns_excludes_subsequent_events",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 0,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 0,
+            "status": "dns",
+            "mark": null
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 1,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 2,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 3,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 4,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 5,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 6,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 7,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "confirm_event",
+          "params": {}
+        },
+        {
+          "type": "start_event",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "eligible": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": "excluded_athlete_cannot_submit_next_event",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 0,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 0,
+            "status": "dns",
+            "mark": null
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 1,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 2,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 3,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 4,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 5,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 6,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 7,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "confirm_event",
+          "params": {}
+        },
+        {
+          "type": "start_event",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "submit_result",
+        "params": {
+          "player": 0,
+          "status": "ok",
+          "mark": 800
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "event_dq_is_zero_not_overall_dq",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 0,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 0,
+            "status": "dq",
+            "mark": null
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 1,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 2,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 3,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 4,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 5,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 6,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 7,
+            "status": "ok",
+            "mark": 1000
+          }
+        },
+        {
+          "type": "confirm_event",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "eligible": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "totals": [
+          0,
+          1096,
+          1096,
+          1096,
+          1096,
+          1096,
+          1096,
+          1096
+        ]
+      }
+    },
+    {
+      "id": "cannot_confirm_missing_results",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 0,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 0,
+            "status": "ok",
+            "mark": 1000
+          }
+        }
+      ],
+      "action": {
+        "type": "confirm_event",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "cannot_submit_twice",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 0,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 0,
+            "status": "ok",
+            "mark": 1000
+          }
+        }
+      ],
+      "action": {
+        "type": "submit_result",
+        "params": {
+          "player": 0,
+          "status": "ok",
+          "mark": 1000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "confirm_advances_event_order",
+      "initial_data": {
+        "phase": "review",
+        "event_index": 0,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [],
+        "current": [
+          {
+            "status": "ok",
+            "mark": 1000
+          },
+          {
+            "status": "ok",
+            "mark": 1000
+          },
+          {
+            "status": "ok",
+            "mark": 1000
+          },
+          {
+            "status": "ok",
+            "mark": 1000
+          },
+          {
+            "status": "ok",
+            "mark": 1000
+          },
+          {
+            "status": "ok",
+            "mark": 1000
+          },
+          {
+            "status": "ok",
+            "mark": 1000
+          },
+          {
+            "status": "ok",
+            "mark": 1000
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_event",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "event_index": 1,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [
+          [
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            }
+          ]
+        ],
+        "current": []
+      }
+    },
+    {
+      "id": "current_event_may_be_corrected_before_confirm",
+      "initial_data": {
+        "phase": "review",
+        "event_index": 0,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [],
+        "current": [
+          {
+            "status": "ok",
+            "mark": 1000
+          },
+          {
+            "status": "ok",
+            "mark": 1000
+          },
+          {
+            "status": "ok",
+            "mark": 1000
+          },
+          {
+            "status": "ok",
+            "mark": 1000
+          },
+          {
+            "status": "ok",
+            "mark": 1000
+          },
+          {
+            "status": "ok",
+            "mark": 1000
+          },
+          {
+            "status": "ok",
+            "mark": 1000
+          },
+          {
+            "status": "ok",
+            "mark": 1000
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "amend_result",
+          "params": {
+            "player": 0,
+            "status": "ok",
+            "mark": 1800
+          }
+        }
+      ],
+      "legal_constraints": {
+        "totals": [
+          0,
+          1096,
+          1096,
+          1096,
+          1096,
+          1096,
+          1096,
+          1096
+        ]
+      }
+    },
+    {
+      "id": "confirmed_result_is_immutable",
+      "initial_data": {
+        "phase": "ready",
+        "event_index": 1,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [
+          [
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            }
+          ]
+        ],
+        "current": []
+      },
+      "action": {
+        "type": "amend_result",
+        "params": {
+          "player": 0,
+          "status": "ok",
+          "mark": 1100
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "final_points_rank_winner",
+      "initial_data": {
+        "phase": "review",
+        "event_index": 9,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [
+          [
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            }
+          ]
+        ],
+        "current": [
+          {
+            "status": "ok",
+            "mark": 26000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_event",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "p0"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "equal_totals_share_first",
+      "initial_data": {
+        "phase": "review",
+        "event_index": 9,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [
+          [
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            }
+          ]
+        ],
+        "current": [
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_event",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw",
+        "winners": [
+          "p0",
+          "p1",
+          "p2",
+          "p3",
+          "p4",
+          "p5",
+          "p6",
+          "p7"
+        ]
+      }
+    },
+    {
+      "id": "withdrawn_high_scorer_unclassified",
+      "initial_data": {
+        "phase": "review",
+        "event_index": 9,
+        "withdrawn": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [
+          [
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            }
+          ]
+        ],
+        "current": [
+          {
+            "status": "ok",
+            "mark": 26000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_event",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "p1",
+          "p2",
+          "p3",
+          "p4",
+          "p5",
+          "p6",
+          "p7"
+        ]
+      }
+    },
+    {
+      "id": "overall_disqualification_excludes_leader",
+      "initial_data": {
+        "phase": "review",
+        "event_index": 9,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [
+          [
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            }
+          ]
+        ],
+        "current": [
+          {
+            "status": "ok",
+            "mark": 26000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          },
+          {
+            "status": "ok",
+            "mark": 27000
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "confirm_event",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "p1",
+          "p2",
+          "p3",
+          "p4",
+          "p5",
+          "p6",
+          "p7"
+        ]
+      }
+    },
+    {
+      "id": "all_withdrawn_no_classification",
+      "actions": [
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 1
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 2
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 3
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 4
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 5
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 6
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 7
+          }
+        },
+        {
+          "type": "start_event",
+          "params": {}
+        },
+        {
+          "type": "confirm_event",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "valid_mark_requires_value",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 0,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [],
+        "current": [
+          {
+            "status": "ok",
+            "mark": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "event_2_formula_units",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 1,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [
+          [
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            }
+          ]
+        ],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 0,
+            "status": "ok",
+            "mark": 800
+          }
+        }
+      ],
+      "legal_constraints": {
+        "totals": [
+          2157,
+          1096,
+          1096,
+          1096,
+          1096,
+          1096,
+          1096,
+          1096
+        ]
+      }
+    },
+    {
+      "id": "event_3_formula_units",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 2,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [
+          [
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            }
+          ]
+        ],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 0,
+            "status": "ok",
+            "mark": 1600
+          }
+        }
+      ],
+      "legal_constraints": {
+        "totals": [
+          3008,
+          2157,
+          2157,
+          2157,
+          2157,
+          2157,
+          2157,
+          2157
+        ]
+      }
+    },
+    {
+      "id": "event_4_formula_units",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 3,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [
+          [
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            }
+          ]
+        ],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 0,
+            "status": "ok",
+            "mark": 200
+          }
+        }
+      ],
+      "legal_constraints": {
+        "totals": [
+          3811,
+          3008,
+          3008,
+          3008,
+          3008,
+          3008,
+          3008,
+          3008
+        ]
+      }
+    },
+    {
+      "id": "event_5_formula_units",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 4,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [
+          [
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            }
+          ]
+        ],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 0,
+            "status": "ok",
+            "mark": 5000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "totals": [
+          4626,
+          3811,
+          3811,
+          3811,
+          3811,
+          3811,
+          3811,
+          3811
+        ]
+      }
+    },
+    {
+      "id": "event_6_formula_units",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 5,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [
+          [
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            }
+          ]
+        ],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 0,
+            "status": "ok",
+            "mark": 1500
+          }
+        }
+      ],
+      "legal_constraints": {
+        "totals": [
+          5476,
+          4626,
+          4626,
+          4626,
+          4626,
+          4626,
+          4626,
+          4626
+        ]
+      }
+    },
+    {
+      "id": "event_7_formula_units",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 6,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [
+          [
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            }
+          ]
+        ],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 0,
+            "status": "ok",
+            "mark": 5000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "totals": [
+          6346,
+          5476,
+          5476,
+          5476,
+          5476,
+          5476,
+          5476,
+          5476
+        ]
+      }
+    },
+    {
+      "id": "event_8_formula_units",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 7,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [
+          [
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            }
+          ]
+        ],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 0,
+            "status": "ok",
+            "mark": 500
+          }
+        }
+      ],
+      "legal_constraints": {
+        "totals": [
+          7256,
+          6346,
+          6346,
+          6346,
+          6346,
+          6346,
+          6346,
+          6346
+        ]
+      }
+    },
+    {
+      "id": "event_9_formula_units",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 8,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [
+          [
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            }
+          ]
+        ],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 0,
+            "status": "ok",
+            "mark": 6000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "totals": [
+          7994,
+          7256,
+          7256,
+          7256,
+          7256,
+          7256,
+          7256,
+          7256
+        ]
+      }
+    },
+    {
+      "id": "event_10_formula_units",
+      "initial_data": {
+        "phase": "event",
+        "event_index": 9,
+        "withdrawn": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "disqualified": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "results": [
+          [
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            },
+            {
+              "status": "ok",
+              "mark": 1000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            },
+            {
+              "status": "ok",
+              "mark": 800
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            },
+            {
+              "status": "ok",
+              "mark": 1600
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            },
+            {
+              "status": "ok",
+              "mark": 200
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            },
+            {
+              "status": "ok",
+              "mark": 1500
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            },
+            {
+              "status": "ok",
+              "mark": 5000
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            },
+            {
+              "status": "ok",
+              "mark": 500
+            }
+          ],
+          [
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            },
+            {
+              "status": "ok",
+              "mark": 6000
+            }
+          ]
+        ],
+        "current": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "submit_result",
+          "params": {
+            "player": 0,
+            "status": "ok",
+            "mark": 27000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "totals": [
+          8739,
+          7994,
+          7994,
+          7994,
+          7994,
+          7994,
+          7994,
+          7994
+        ]
+      }
+    }
+  ]
+}

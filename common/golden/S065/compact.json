@@ -1,0 +1,4725 @@
+{
+  "profile_id": "S065",
+  "ruleset_id": "builtin.taekwondo.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "blue"
+    },
+    {
+      "id": "red"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start_round",
+      "actions": [
+        {
+          "type": "start_round",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "fighting",
+        "round": 1,
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "technique_values",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 1,
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": 0,
+            "technique": "punch"
+          }
+        },
+        {
+          "type": "score",
+          "params": {
+            "player": 0,
+            "technique": "body"
+          }
+        },
+        {
+          "type": "score",
+          "params": {
+            "player": 0,
+            "technique": "turn_body"
+          }
+        },
+        {
+          "type": "score",
+          "params": {
+            "player": 0,
+            "technique": "head"
+          }
+        },
+        {
+          "type": "score",
+          "params": {
+            "player": 0,
+            "technique": "turn_head"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          15,
+          0
+        ]
+      }
+    },
+    {
+      "id": "invalid_technique",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 1,
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "score",
+        "params": {
+          "player": 0,
+          "technique": "head_punch"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "penalty_opponent_point",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 1,
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "gam_jeom",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          0,
+          1
+        ],
+        "gam_jeom": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "ten_penalties_end_match",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 1,
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "gam_jeom",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "gam_jeom",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "gam_jeom",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "gam_jeom",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "gam_jeom",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "gam_jeom",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "gam_jeom",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "gam_jeom",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "gam_jeom",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "gam_jeom",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ],
+        "reason": "punitive"
+      }
+    },
+    {
+      "id": "gap_not_first_round",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 1,
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": 0,
+            "technique": "turn_head"
+          }
+        },
+        {
+          "type": "score",
+          "params": {
+            "player": 0,
+            "technique": "turn_head"
+          }
+        },
+        {
+          "type": "score",
+          "params": {
+            "player": 0,
+            "technique": "turn_head"
+          }
+        },
+        {
+          "type": "score",
+          "params": {
+            "player": 0,
+            "technique": "turn_head"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "fighting",
+        "scores": [
+          20,
+          0
+        ]
+      }
+    },
+    {
+      "id": "gap_end_second_round",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 2,
+        "remaining_ms": 1,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 4
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ],
+        "reason": "point_gap"
+      }
+    },
+    {
+      "id": "gap_disabled",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 2,
+        "remaining_ms": 1,
+        "break_ms": 0,
+        "point_gap": false,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 4
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "round_review"
+      }
+    },
+    {
+      "id": "gap_during_third_round",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 3,
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 3
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": 0,
+            "technique": "turn_head"
+          }
+        }
+      ],
+      "outcome": {
+        "reason": "point_gap"
+      }
+    },
+    {
+      "id": "round_review_then_rest",
+      "initial_data": {
+        "phase": "round_review",
+        "round": 1,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "break",
+        "round": 2,
+        "break_ms": 60000
+      }
+    },
+    {
+      "id": "rest_must_finish",
+      "initial_data": {
+        "phase": "round_review",
+        "round": 1,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "start_round",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "rest_clock_to_ready",
+      "initial_data": {
+        "phase": "round_review",
+        "round": 1,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 60000
+          }
+        },
+        {
+          "type": "start_round",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "round": 2,
+        "phase": "fighting",
+        "remaining_ms": 120000
+      }
+    },
+    {
+      "id": "regulation_points_win",
+      "initial_data": {
+        "phase": "round_review",
+        "round": 3,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 1,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ],
+        "reason": "points"
+      }
+    },
+    {
+      "id": "tie_enters_golden_rest",
+      "initial_data": {
+        "phase": "round_review",
+        "round": 3,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "round": 4,
+        "phase": "break",
+        "remaining_ms": 60000,
+        "scores": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "golden_body_kick_wins",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 4,
+        "remaining_ms": 60000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": 1,
+            "technique": "body"
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ],
+        "reason": "golden_points"
+      }
+    },
+    {
+      "id": "golden_one_punch_continues",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 4,
+        "remaining_ms": 60000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "player": 0,
+            "technique": "punch"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "golden_two_penalties",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 4,
+        "remaining_ms": 60000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "gam_jeom",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "gam_jeom",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ]
+      }
+    },
+    {
+      "id": "golden_other_player_penalties",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 4,
+        "remaining_ms": 60000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "gam_jeom",
+          "params": {
+            "player": 1
+          }
+        },
+        {
+          "type": "gam_jeom",
+          "params": {
+            "player": 1
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ],
+        "reason": "golden_penalties"
+      }
+    },
+    {
+      "id": "golden_pss_required",
+      "initial_data": {
+        "phase": "round_review",
+        "round": 4,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "close_round",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "punch_before_pss_hits",
+      "initial_data": {
+        "phase": "round_review",
+        "round": 4,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 1,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": [
+          0,
+          5
+        ],
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ],
+        "reason": "superiority"
+      }
+    },
+    {
+      "id": "pss_hits_tie_break",
+      "initial_data": {
+        "phase": "round_review",
+        "round": 4,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": [
+          0,
+          0
+        ],
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "set_pss_hits",
+          "params": {
+            "hits": [
+              0,
+              2
+            ]
+          }
+        },
+        {
+          "type": "close_round",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ]
+      }
+    },
+    {
+      "id": "regulation_round_wins_tie_break",
+      "initial_data": {
+        "phase": "round_review",
+        "round": 4,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 1,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 1,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 1,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": [
+          0,
+          0
+        ],
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "id": "fewer_total_penalties_tie_break",
+      "initial_data": {
+        "phase": "round_review",
+        "round": 4,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 1,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": [
+          0,
+          0
+        ],
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ]
+      }
+    },
+    {
+      "id": "judges_tie_referee_decides",
+      "initial_data": {
+        "phase": "round_review",
+        "round": 4,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": [
+          0,
+          0
+        ],
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        },
+        {
+          "type": "declare_superiority",
+          "params": {
+            "referee": 0,
+            "judges": [
+              0,
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "id": "judges_majority",
+      "initial_data": {
+        "phase": "round_review",
+        "round": 4,
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": [
+          0,
+          0
+        ],
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        },
+        {
+          "type": "declare_superiority",
+          "params": {
+            "referee": 0,
+            "judges": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ]
+      }
+    },
+    {
+      "id": "knockdown_stops_clock",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 1,
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "knockdown",
+          "params": {
+            "players": [
+              0
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "count",
+        "round": 1,
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": {
+          "players": [
+            0
+          ],
+          "number": 0,
+          "ready": [
+            false,
+            false
+          ]
+        },
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "count_clock_not_running",
+      "initial_data": {
+        "phase": "count",
+        "round": 1,
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": {
+          "players": [
+            0
+          ],
+          "number": 0,
+          "ready": [
+            false,
+            false
+          ]
+        },
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "elapse",
+        "params": {
+          "milliseconds": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "cannot_skip_count",
+      "initial_data": {
+        "phase": "count",
+        "round": 1,
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": {
+          "players": [
+            0
+          ],
+          "number": 0,
+          "ready": [
+            false,
+            false
+          ]
+        },
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "advance_count",
+        "params": {
+          "number": 2
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "mandatory_eight",
+      "initial_data": {
+        "phase": "count",
+        "round": 1,
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": {
+          "players": [
+            0
+          ],
+          "number": 0,
+          "ready": [
+            false,
+            false
+          ]
+        },
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "ready_signal",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 1
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 2
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 3
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 4
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 5
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 6
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 7
+          }
+        }
+      ],
+      "action": {
+        "type": "recover",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "recover_at_eight",
+      "initial_data": {
+        "phase": "count",
+        "round": 1,
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": {
+          "players": [
+            0
+          ],
+          "number": 0,
+          "ready": [
+            false,
+            false
+          ]
+        },
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "ready_signal",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 1
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 2
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 3
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 4
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 5
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 6
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 7
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 8
+          }
+        },
+        {
+          "type": "recover",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "fighting",
+        "round": 1,
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "no_late_readiness",
+      "initial_data": {
+        "phase": "count",
+        "round": 1,
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": {
+          "players": [
+            0
+          ],
+          "number": 0,
+          "ready": [
+            false,
+            false
+          ]
+        },
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 1
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 2
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 3
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 4
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 5
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 6
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 7
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 8
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 9
+          }
+        }
+      ],
+      "action": {
+        "type": "ready_signal",
+        "params": {
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "count_ten_stoppage",
+      "initial_data": {
+        "phase": "count",
+        "round": 1,
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": {
+          "players": [
+            0
+          ],
+          "number": 0,
+          "ready": [
+            false,
+            false
+          ]
+        },
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 1
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 2
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 3
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 4
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 5
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 6
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 7
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 8
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 9
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 10
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ],
+        "reason": "referee_stop"
+      }
+    },
+    {
+      "id": "double_count_uses_score",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 1,
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 1,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "knockdown",
+          "params": {
+            "players": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 1
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 2
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 3
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 4
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 5
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 6
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 7
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 8
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 9
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 10
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ],
+        "reason": "double_count_score"
+      }
+    },
+    {
+      "id": "double_count_tie_pending",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 1,
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "knockdown",
+          "params": {
+            "players": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 1
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 2
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 3
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 4
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 5
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 6
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 7
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 8
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 9
+          }
+        },
+        {
+          "type": "advance_count",
+          "params": {
+            "number": 10
+          }
+        }
+      ],
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    },
+    {
+      "id": "withdrawal",
+      "actions": [
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ]
+      }
+    },
+    {
+      "id": "no_contest",
+      "actions": [
+        {
+          "type": "no_contest",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "future_round_score_invalid",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 1,
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 1,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "golden_requires_tied_regulation",
+      "initial_data": {
+        "phase": "fighting",
+        "round": 4,
+        "remaining_ms": 60000,
+        "break_ms": 0,
+        "point_gap": true,
+        "techniques": [
+          [
+            {
+              "punch": 1,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ],
+          [
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            },
+            {
+              "punch": 0,
+              "body": 0,
+              "turn_body": 0,
+              "head": 0,
+              "turn_head": 0
+            }
+          ]
+        ],
+        "gam_jeom": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "pss_hits": null,
+        "count": null,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

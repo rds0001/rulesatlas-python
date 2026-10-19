@@ -1,0 +1,1732 @@
+{
+  "profile_id": "S068",
+  "ruleset_id": "builtin.wrestling.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "red"
+    },
+    {
+      "id": "blue"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "active",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": null,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "mandatory_scoreless_activity_boundary",
+      "initial_data": {
+        "phase": "active",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": null,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 120000
+          }
+        }
+      ],
+      "data": {
+        "phase": "paused",
+        "period": 1,
+        "remaining_ms": 60000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": null,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "cannot_skip_scoreless_boundary",
+      "initial_data": {
+        "phase": "active",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": null,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "elapse",
+        "params": {
+          "milliseconds": 120001
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "must_designate_passive_before_resuming",
+      "initial_data": {
+        "phase": "paused",
+        "period": 1,
+        "remaining_ms": 60000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": null,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "resume",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "mandatory_activity_without_prior_warning",
+      "initial_data": {
+        "phase": "paused",
+        "period": 1,
+        "remaining_ms": 60000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": null,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "start_activity",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "activity": {
+          "player": 0,
+          "remaining_ms": 30000
+        }
+      }
+    },
+    {
+      "id": "early_activity_requires_warning",
+      "initial_data": {
+        "phase": "active",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": null,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "start_activity",
+        "params": {
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "warning_then_activity",
+      "initial_data": {
+        "phase": "active",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": null,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "passivity_warning",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "start_activity",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "paused",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          true,
+          false
+        ],
+        "last_point": null,
+        "activity": {
+          "player": 0,
+          "remaining_ms": 30000
+        },
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "activity_expiry_awaits_completed_action",
+      "initial_data": {
+        "phase": "active",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          true,
+          false
+        ],
+        "last_point": null,
+        "activity": {
+          "player": 0,
+          "remaining_ms": 30000
+        },
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 30000
+          }
+        }
+      ],
+      "data": {
+        "phase": "paused",
+        "period": 1,
+        "remaining_ms": 150000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          true,
+          false
+        ],
+        "last_point": null,
+        "activity": {
+          "player": 0,
+          "remaining_ms": 0
+        },
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "unscored_activity_awards_opponent_point",
+      "initial_data": {
+        "phase": "paused",
+        "period": 1,
+        "remaining_ms": 150000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          true,
+          false
+        ],
+        "last_point": null,
+        "activity": {
+          "player": 0,
+          "remaining_ms": 0
+        },
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "resolve_activity",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "paused",
+        "period": 1,
+        "remaining_ms": 150000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          1
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          true,
+          false
+        ],
+        "last_point": 1,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "opponent_score_does_not_cancel_activity",
+      "initial_data": {
+        "phase": "active",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          true,
+          false
+        ],
+        "last_point": null,
+        "activity": {
+          "player": 0,
+          "remaining_ms": 30000
+        },
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "score_action",
+          "params": {
+            "awards": [
+              {
+                "player": 1,
+                "value": 2
+              }
+            ],
+            "fall_winner": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          0,
+          2
+        ],
+        "activity": {
+          "player": 0,
+          "remaining_ms": 30000
+        }
+      }
+    },
+    {
+      "id": "opponent_score_still_receives_expiry_point",
+      "initial_data": {
+        "phase": "active",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          true,
+          false
+        ],
+        "last_point": null,
+        "activity": {
+          "player": 0,
+          "remaining_ms": 30000
+        },
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "score_action",
+          "params": {
+            "awards": [
+              {
+                "player": 1,
+                "value": 2
+              }
+            ],
+            "fall_winner": null
+          }
+        },
+        {
+          "type": "resume",
+          "params": {}
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 30000
+          }
+        },
+        {
+          "type": "resolve_activity",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          0,
+          3
+        ],
+        "activity": null
+      }
+    },
+    {
+      "id": "passive_wrestler_score_cancels_activity",
+      "initial_data": {
+        "phase": "active",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          true,
+          false
+        ],
+        "last_point": null,
+        "activity": {
+          "player": 0,
+          "remaining_ms": 30000
+        },
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "score_action",
+          "params": {
+            "awards": [
+              {
+                "player": 0,
+                "value": 1
+              }
+            ],
+            "fall_winner": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          1,
+          0
+        ],
+        "activity": null
+      }
+    },
+    {
+      "id": "pending_action_can_score_at_activity_boundary",
+      "initial_data": {
+        "phase": "paused",
+        "period": 1,
+        "remaining_ms": 150000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          true,
+          false
+        ],
+        "last_point": null,
+        "activity": {
+          "player": 0,
+          "remaining_ms": 0
+        },
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "score_action",
+          "params": {
+            "awards": [
+              {
+                "player": 0,
+                "value": 2
+              }
+            ],
+            "fall_winner": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          2,
+          0
+        ],
+        "activity": null
+      }
+    },
+    {
+      "id": "short_period_cannot_start_activity",
+      "initial_data": {
+        "phase": "paused",
+        "period": 1,
+        "remaining_ms": 29999,
+        "holds": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          true,
+          false
+        ],
+        "last_point": 0,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "start_activity",
+        "params": {
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "ten_point_superiority",
+      "initial_data": {
+        "phase": "active",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": null,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "score_action",
+          "params": {
+            "awards": [
+              {
+                "player": 0,
+                "value": 5
+              },
+              {
+                "player": 0,
+                "value": 5
+              }
+            ],
+            "fall_winner": null
+          }
+        }
+      ],
+      "data": {
+        "phase": "review",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": 0,
+        "activity": null,
+        "winner": 0,
+        "reason": "technical_superiority"
+      }
+    },
+    {
+      "id": "whole_action_before_superiority_check",
+      "initial_data": {
+        "phase": "active",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": 0,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "score_action",
+          "params": {
+            "awards": [
+              {
+                "player": 0,
+                "value": 2
+              },
+              {
+                "player": 1,
+                "value": 4
+              }
+            ],
+            "fall_winner": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          11,
+          4
+        ],
+        "phase": "paused"
+      }
+    },
+    {
+      "id": "fall_overrides_action_margin",
+      "initial_data": {
+        "phase": "active",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": 0,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "score_action",
+          "params": {
+            "awards": [
+              {
+                "player": 0,
+                "value": 2
+              }
+            ],
+            "fall_winner": 1
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ],
+        "reason": "fall"
+      }
+    },
+    {
+      "id": "three_cautions",
+      "initial_data": {
+        "phase": "active",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": null,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "caution",
+          "params": {
+            "player": 0,
+            "opponent_points": 1
+          }
+        },
+        {
+          "type": "caution",
+          "params": {
+            "player": 0,
+            "opponent_points": 1
+          }
+        },
+        {
+          "type": "caution",
+          "params": {
+            "player": 0,
+            "opponent_points": 1
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ],
+        "reason": "three_cautions"
+      }
+    },
+    {
+      "id": "highest_value_action_breaks_tie",
+      "initial_data": {
+        "phase": "active",
+        "period": 2,
+        "remaining_ms": 1,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": 1,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ]
+      }
+    },
+    {
+      "id": "count_of_highest_value_actions",
+      "initial_data": {
+        "phase": "active",
+        "period": 2,
+        "remaining_ms": 1,
+        "holds": [
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            1,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": 1,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ]
+      }
+    },
+    {
+      "id": "lower_value_counts_not_extra_tiebreaker",
+      "initial_data": {
+        "phase": "active",
+        "period": 2,
+        "remaining_ms": 1,
+        "holds": [
+          [
+            0,
+            2,
+            1,
+            0
+          ],
+          [
+            4,
+            0,
+            1,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": 1,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "id": "fewer_cautions_before_last_point",
+      "initial_data": {
+        "phase": "active",
+        "period": 2,
+        "remaining_ms": 1,
+        "holds": [
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          1
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": 1,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ]
+      }
+    },
+    {
+      "id": "last_point_final_tiebreaker",
+      "initial_data": {
+        "phase": "active",
+        "period": 2,
+        "remaining_ms": 1,
+        "holds": [
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": 1,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "id": "record_correction_reopens_superiority",
+      "initial_data": {
+        "phase": "review",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": 0,
+        "activity": null,
+        "winner": 0,
+        "reason": "technical_superiority"
+      },
+      "actions": [
+        {
+          "type": "correct_record",
+          "params": {
+            "holds": [
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "penalty_points": [
+              0,
+              0
+            ],
+            "cautions": [
+              0,
+              0
+            ],
+            "last_point": 0,
+            "activity": null,
+            "remaining_ms": 1000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "paused",
+        "scores": [
+          9,
+          0
+        ]
+      }
+    },
+    {
+      "id": "period_break_and_second_period",
+      "initial_data": {
+        "phase": "active",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": 0,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 180000
+          }
+        },
+        {
+          "type": "begin_second_period",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "period": 2,
+        "remaining_ms": 180000
+      }
+    },
+    {
+      "id": "no_video_challenge_event",
+      "initial_data": {
+        "phase": "paused",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": null,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "request_challenge",
+        "params": {
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "double_disqualification",
+      "initial_data": {
+        "phase": "active",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": null,
+        "activity": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "both_disqualified",
+          "params": {}
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "confirmed_result_has_no_actions",
+      "initial_data": {
+        "phase": "review",
+        "period": 1,
+        "remaining_ms": 180000,
+        "holds": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_points": [
+          0,
+          0
+        ],
+        "cautions": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "last_point": 0,
+        "activity": null,
+        "winner": 0,
+        "reason": "technical_superiority"
+      },
+      "actions": [
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "legal_count": 0
+    }
+  ]
+}

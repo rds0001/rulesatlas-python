@@ -1,0 +1,843 @@
+{
+  "profile_id": "S052",
+  "ruleset_id": "builtin.petanque.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "legal_jack_keeps_first_boule",
+      "actions": [
+        {
+          "type": "throw_jack",
+          "params": {
+            "distance_mm": 7000,
+            "clearances_valid": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "boules",
+        "turn": 0,
+        "jack_player": 0,
+        "thrown": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "distances_mm": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "last_end": [
+          0,
+          0
+        ],
+        "end_number": 1,
+        "tie_active": false
+      }
+    },
+    {
+      "id": "failed_jack_gives_opponent_placement",
+      "actions": [
+        {
+          "type": "throw_jack",
+          "params": {
+            "distance_mm": 5000,
+            "clearances_valid": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "jack_place",
+        "turn": 1,
+        "jack_player": 0,
+        "thrown": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "distances_mm": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "last_end": [
+          0,
+          0
+        ],
+        "end_number": 1,
+        "tie_active": false
+      }
+    },
+    {
+      "id": "placed_jack_returns_first_throw_to_original_player",
+      "actions": [
+        {
+          "type": "throw_jack",
+          "params": {
+            "distance_mm": 11000,
+            "clearances_valid": true
+          }
+        },
+        {
+          "type": "place_jack",
+          "params": {
+            "distance_mm": 8000,
+            "clearances_valid": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "boules",
+        "turn": 0,
+        "jack_player": 0,
+        "thrown": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "distances_mm": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "last_end": [
+          0,
+          0
+        ],
+        "end_number": 1,
+        "tie_active": false
+      }
+    },
+    {
+      "id": "invalid_placement_rejected",
+      "actions": [
+        {
+          "type": "throw_jack",
+          "params": {
+            "distance_mm": 11000,
+            "clearances_valid": true
+          }
+        }
+      ],
+      "action": {
+        "type": "place_jack",
+        "params": {
+          "distance_mm": 11000,
+          "clearances_valid": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "three_nearer_boules_score_three",
+      "actions": [
+        {
+          "type": "throw_jack",
+          "params": {
+            "distance_mm": 7000,
+            "clearances_valid": true
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 0,
+            "distances_mm": [
+              100,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "jack_dead": false
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 3,
+            "distances_mm": [
+              100,
+              null,
+              null,
+              200,
+              null,
+              null
+            ],
+            "jack_dead": false
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 4,
+            "distances_mm": [
+              100,
+              null,
+              null,
+              200,
+              150,
+              null
+            ],
+            "jack_dead": false
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 5,
+            "distances_mm": [
+              100,
+              null,
+              null,
+              200,
+              150,
+              300
+            ],
+            "jack_dead": false
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 1,
+            "distances_mm": [
+              100,
+              50,
+              null,
+              200,
+              150,
+              300
+            ],
+            "jack_dead": false
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 2,
+            "distances_mm": [
+              100,
+              50,
+              75,
+              200,
+              150,
+              300
+            ],
+            "jack_dead": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "jack_throw",
+        "turn": 0,
+        "jack_player": 0,
+        "thrown": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "distances_mm": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "scores": [
+          3,
+          0
+        ],
+        "last_end": [
+          3,
+          0
+        ],
+        "end_number": 2,
+        "tie_active": false
+      }
+    },
+    {
+      "id": "equal_distance_rethrows_then_alternates",
+      "actions": [
+        {
+          "type": "throw_jack",
+          "params": {
+            "distance_mm": 7000,
+            "clearances_valid": true
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 0,
+            "distances_mm": [
+              100,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "jack_dead": false
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 3,
+            "distances_mm": [
+              100,
+              null,
+              null,
+              100,
+              null,
+              null
+            ],
+            "jack_dead": false
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 4,
+            "distances_mm": [
+              100,
+              null,
+              null,
+              100,
+              100,
+              null
+            ],
+            "jack_dead": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "turn": 0,
+        "remaining": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "id": "first_dead_boule_rethrows_before_alternation",
+      "actions": [
+        {
+          "type": "throw_jack",
+          "params": {
+            "distance_mm": 7000,
+            "clearances_valid": true
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 0,
+            "distances_mm": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "jack_dead": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "boules",
+        "turn": 0,
+        "jack_player": 0,
+        "thrown": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "distances_mm": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "last_end": [
+          0,
+          0
+        ],
+        "end_number": 1,
+        "tie_active": true
+      }
+    },
+    {
+      "id": "dead_jack_with_both_holding_boules_voids_end",
+      "actions": [
+        {
+          "type": "throw_jack",
+          "params": {
+            "distance_mm": 7000,
+            "clearances_valid": true
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 0,
+            "distances_mm": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "jack_dead": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "jack_throw",
+        "turn": 0,
+        "jack_player": 0,
+        "thrown": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "distances_mm": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "last_end": [
+          0,
+          0
+        ],
+        "end_number": 2,
+        "tie_active": false
+      }
+    },
+    {
+      "id": "dead_jack_awards_only_remaining_boules",
+      "actions": [
+        {
+          "type": "throw_jack",
+          "params": {
+            "distance_mm": 7000,
+            "clearances_valid": true
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 0,
+            "distances_mm": [
+              100,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "jack_dead": false
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 3,
+            "distances_mm": [
+              100,
+              null,
+              null,
+              200,
+              null,
+              null
+            ],
+            "jack_dead": false
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 4,
+            "distances_mm": [
+              100,
+              null,
+              null,
+              200,
+              150,
+              null
+            ],
+            "jack_dead": false
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 5,
+            "distances_mm": [
+              100,
+              null,
+              null,
+              200,
+              150,
+              300
+            ],
+            "jack_dead": false
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 1,
+            "distances_mm": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "jack_dead": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "jack_throw",
+        "turn": 0,
+        "jack_player": 0,
+        "thrown": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "distances_mm": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "scores": [
+          1,
+          0
+        ],
+        "last_end": [
+          1,
+          0
+        ],
+        "end_number": 2,
+        "tie_active": false
+      }
+    },
+    {
+      "id": "thirteen_or_more_wins",
+      "initial_data": {
+        "phase": "jack_throw",
+        "turn": 0,
+        "jack_player": 0,
+        "thrown": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "distances_mm": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "scores": [
+          12,
+          8
+        ],
+        "last_end": [
+          0,
+          0
+        ],
+        "end_number": 9,
+        "tie_active": false
+      },
+      "actions": [
+        {
+          "type": "throw_jack",
+          "params": {
+            "distance_mm": 7000,
+            "clearances_valid": true
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 0,
+            "distances_mm": [
+              100,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "jack_dead": false
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 3,
+            "distances_mm": [
+              100,
+              null,
+              null,
+              200,
+              null,
+              null
+            ],
+            "jack_dead": false
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 4,
+            "distances_mm": [
+              100,
+              null,
+              null,
+              200,
+              150,
+              null
+            ],
+            "jack_dead": false
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 5,
+            "distances_mm": [
+              100,
+              null,
+              null,
+              200,
+              150,
+              300
+            ],
+            "jack_dead": false
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 1,
+            "distances_mm": [
+              100,
+              50,
+              null,
+              200,
+              150,
+              300
+            ],
+            "jack_dead": false
+          }
+        },
+        {
+          "type": "throw",
+          "params": {
+            "boule": 2,
+            "distances_mm": [
+              100,
+              50,
+              75,
+              200,
+              150,
+              300
+            ],
+            "jack_dead": false
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ],
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "score": 15
+          },
+          {
+            "player_id": "bob",
+            "place": 2,
+            "score": 8
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "cannot_restore_dead_boule",
+      "initial_data": {
+        "phase": "boules",
+        "turn": 0,
+        "jack_player": 0,
+        "thrown": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "distances_mm": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "last_end": [
+          0,
+          0
+        ],
+        "end_number": 1,
+        "tie_active": true
+      },
+      "action": {
+        "type": "throw",
+        "params": {
+          "boule": 1,
+          "distances_mm": [
+            10,
+            20,
+            null,
+            null,
+            null,
+            null
+          ],
+          "jack_dead": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "unthrown_boule_distance_invalid",
+      "initial_data": {
+        "phase": "boules",
+        "turn": 0,
+        "jack_player": 0,
+        "thrown": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "distances_mm": [
+          100,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "last_end": [
+          0,
+          0
+        ],
+        "end_number": 1,
+        "tie_active": false
+      },
+      "valid": false
+    }
+  ]
+}

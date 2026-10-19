@@ -1,0 +1,3207 @@
+{
+  "profile_id": "S099",
+  "ruleset_id": "builtin.board_racing_windsurf.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "rider_0"
+    },
+    {
+      "id": "rider_1"
+    },
+    {
+      "id": "rider_2"
+    },
+    {
+      "id": "rider_3"
+    },
+    {
+      "id": "rider_4"
+    },
+    {
+      "id": "rider_5"
+    },
+    {
+      "id": "rider_6"
+    },
+    {
+      "id": "rider_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start_race",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "racing",
+        "races": [],
+        "pending": null
+      }
+    },
+    {
+      "id": "results_require_started_race",
+      "action": {
+        "type": "submit_result",
+        "params": {
+          "results": [
+            {
+              "status": "finished",
+              "order": 1,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 2,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 3,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 4,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 5,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 6,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 7,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 8,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "submit_complete_results",
+      "initial_data": {
+        "phase": "racing",
+        "races": [],
+        "pending": null
+      },
+      "actions": [
+        {
+          "type": "submit_result",
+          "params": {
+            "results": [
+              {
+                "status": "finished",
+                "order": 1,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 2,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 3,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 4,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 5,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 6,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 7,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 8,
+                "redress_numerator": null,
+                "redress_denominator": null
+              }
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "review",
+        "races": [],
+        "pending": [
+          {
+            "status": "finished",
+            "order": 1,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 2,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 3,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 4,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 5,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 6,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 7,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 8,
+            "redress_numerator": null,
+            "redress_denominator": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "average_tied_places",
+      "initial_data": {
+        "phase": "review",
+        "races": [],
+        "pending": [
+          {
+            "status": "finished",
+            "order": 1,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 1,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 3,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 4,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 5,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 6,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 7,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 8,
+            "redress_numerator": null,
+            "redress_denominator": null
+          }
+        ]
+      },
+      "legal_constraints": {
+        "provisional_points_units": [
+          90,
+          90,
+          180,
+          240,
+          300,
+          360,
+          420,
+          480
+        ]
+      }
+    },
+    {
+      "id": "rational_redress",
+      "initial_data": {
+        "phase": "review",
+        "races": [],
+        "pending": [
+          {
+            "status": "redress",
+            "order": null,
+            "redress_numerator": 5,
+            "redress_denominator": 3
+          },
+          {
+            "status": "finished",
+            "order": 2,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 3,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 4,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 5,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 6,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 7,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 8,
+            "redress_numerator": null,
+            "redress_denominator": null
+          }
+        ]
+      },
+      "legal_constraints": {
+        "provisional_points_units": [
+          100,
+          60,
+          120,
+          180,
+          240,
+          300,
+          360,
+          420
+        ]
+      }
+    },
+    {
+      "id": "abandoned_race_does_not_count",
+      "initial_data": {
+        "phase": "review",
+        "races": [],
+        "pending": [
+          {
+            "status": "finished",
+            "order": 1,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 2,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 3,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 4,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 5,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 6,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 7,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 8,
+            "redress_numerator": null,
+            "redress_denominator": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "abandon_race",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "races": [],
+        "pending": null
+      }
+    },
+    {
+      "id": "confirm_one_race",
+      "initial_data": {
+        "phase": "review",
+        "races": [],
+        "pending": [
+          {
+            "status": "finished",
+            "order": 1,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 2,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 3,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 4,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 5,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 6,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 7,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 8,
+            "redress_numerator": null,
+            "redress_denominator": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_race",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "races": [
+          [
+            {
+              "status": "finished",
+              "order": 1,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 2,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 3,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 4,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 5,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 6,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 7,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 8,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ]
+        ],
+        "pending": null
+      }
+    },
+    {
+      "id": "five_race_series_winner",
+      "initial_data": {
+        "phase": "review",
+        "races": [
+          [
+            {
+              "status": "finished",
+              "order": 1,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 2,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 3,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 4,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 5,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 6,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 7,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 8,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "order": 1,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 2,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 3,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 4,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 5,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 6,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 7,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 8,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "order": 1,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 2,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 3,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 4,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 5,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 6,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 7,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 8,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "order": 1,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 2,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 3,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 4,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 5,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 6,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 7,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 8,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ]
+        ],
+        "pending": [
+          {
+            "status": "finished",
+            "order": 1,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 2,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 3,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 4,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 5,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 6,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 7,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 8,
+            "redress_numerator": null,
+            "redress_denominator": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_race",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "rider_0"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "dne_cannot_be_discarded",
+      "initial_data": {
+        "phase": "review",
+        "races": [
+          [
+            {
+              "status": "finished",
+              "order": 1,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 2,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 3,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 4,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 5,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 6,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 7,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 8,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "order": 1,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 2,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 3,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 4,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 5,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 6,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 7,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 8,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "order": 1,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 2,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 3,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 4,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 5,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 6,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 7,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 8,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "order": 1,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 2,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 3,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 4,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 5,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 6,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 7,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 8,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ]
+        ],
+        "pending": [
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 2,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 3,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 4,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 5,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 6,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 7,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 8,
+            "redress_numerator": null,
+            "redress_denominator": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_race",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "rider_1"
+        ]
+      }
+    },
+    {
+      "id": "ordinary_dsq_can_be_discarded",
+      "initial_data": {
+        "phase": "review",
+        "races": [
+          [
+            {
+              "status": "finished",
+              "order": 1,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 2,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 3,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 4,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 5,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 6,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 7,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 8,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "order": 1,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 2,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 3,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 4,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 5,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 6,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 7,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 8,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "order": 1,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 2,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 3,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 4,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 5,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 6,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 7,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 8,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "order": 1,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 2,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 3,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 4,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 5,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 6,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 7,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 8,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ]
+        ],
+        "pending": [
+          {
+            "status": "finished",
+            "order": 1,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 2,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 3,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 4,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 5,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 6,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 7,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 8,
+            "redress_numerator": null,
+            "redress_denominator": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "amend_result",
+          "params": {
+            "results": [
+              {
+                "status": "dsq",
+                "order": null,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 2,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 3,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 4,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 5,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 6,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 7,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 8,
+                "redress_numerator": null,
+                "redress_denominator": null
+              }
+            ]
+          }
+        },
+        {
+          "type": "confirm_race",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "rider_0"
+        ]
+      }
+    },
+    {
+      "id": "best_kept_results_break_tie",
+      "initial_data": {
+        "phase": "review",
+        "races": [
+          [
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 1,
+              "redress_denominator": 1
+            },
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 2,
+              "redress_denominator": 1
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 1,
+              "redress_denominator": 1
+            },
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 2,
+              "redress_denominator": 1
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 4,
+              "redress_denominator": 1
+            },
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 2,
+              "redress_denominator": 1
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 4,
+              "redress_denominator": 1
+            },
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 4,
+              "redress_denominator": 1
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ]
+        ],
+        "pending": [
+          {
+            "status": "redress",
+            "order": null,
+            "redress_numerator": 5,
+            "redress_denominator": 1
+          },
+          {
+            "status": "redress",
+            "order": null,
+            "redress_numerator": 5,
+            "redress_denominator": 1
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_race",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "rider_0"
+        ]
+      }
+    },
+    {
+      "id": "latest_race_breaks_remaining_tie",
+      "initial_data": {
+        "phase": "review",
+        "races": [
+          [
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 1,
+              "redress_denominator": 1
+            },
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 2,
+              "redress_denominator": 1
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 2,
+              "redress_denominator": 1
+            },
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 1,
+              "redress_denominator": 1
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 3,
+              "redress_denominator": 1
+            },
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 4,
+              "redress_denominator": 1
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 4,
+              "redress_denominator": 1
+            },
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 3,
+              "redress_denominator": 1
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ]
+        ],
+        "pending": [
+          {
+            "status": "redress",
+            "order": null,
+            "redress_numerator": 5,
+            "redress_denominator": 1
+          },
+          {
+            "status": "redress",
+            "order": null,
+            "redress_numerator": 5,
+            "redress_denominator": 1
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_race",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "rider_1"
+        ]
+      }
+    },
+    {
+      "id": "exact_series_tie_shared",
+      "initial_data": {
+        "phase": "review",
+        "races": [
+          [
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 2,
+              "redress_denominator": 1
+            },
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 2,
+              "redress_denominator": 1
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 2,
+              "redress_denominator": 1
+            },
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 2,
+              "redress_denominator": 1
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 2,
+              "redress_denominator": 1
+            },
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 2,
+              "redress_denominator": 1
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 2,
+              "redress_denominator": 1
+            },
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 2,
+              "redress_denominator": 1
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ]
+        ],
+        "pending": [
+          {
+            "status": "redress",
+            "order": null,
+            "redress_numerator": 2,
+            "redress_denominator": 1
+          },
+          {
+            "status": "redress",
+            "order": null,
+            "redress_numerator": 2,
+            "redress_denominator": 1
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_race",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "rider_0",
+          "rider_1"
+        ]
+      }
+    },
+    {
+      "id": "finish_without_order_invalid",
+      "initial_data": {
+        "phase": "review",
+        "races": [],
+        "pending": [
+          {
+            "status": "finished",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 2,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 3,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 4,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 5,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 6,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 7,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 8,
+            "redress_numerator": null,
+            "redress_denominator": null
+          }
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "cannot_confirm_unresolved_race",
+      "initial_data": {
+        "phase": "racing",
+        "races": [],
+        "pending": null
+      },
+      "action": {
+        "type": "confirm_race",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "discipline_specific_series_tie",
+      "initial_data": {
+        "phase": "review",
+        "races": [
+          [
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 1,
+              "redress_denominator": 1
+            },
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 2,
+              "redress_denominator": 1
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 1,
+              "redress_denominator": 1
+            },
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 2,
+              "redress_denominator": 1
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 4,
+              "redress_denominator": 1
+            },
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 2,
+              "redress_denominator": 1
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 4,
+              "redress_denominator": 1
+            },
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 4,
+              "redress_denominator": 1
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ]
+        ],
+        "pending": [
+          {
+            "status": "redress",
+            "order": null,
+            "redress_numerator": 8,
+            "redress_denominator": 1
+          },
+          {
+            "status": "redress",
+            "order": null,
+            "redress_numerator": 5,
+            "redress_denominator": 1
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_race",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "rider_1"
+        ]
+      }
+    },
+    {
+      "id": "redress_retains_original_place",
+      "initial_data": {
+        "phase": "review",
+        "races": [],
+        "pending": [
+          {
+            "status": "redress",
+            "order": 1,
+            "redress_numerator": 5,
+            "redress_denominator": 3
+          },
+          {
+            "status": "finished",
+            "order": 2,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 3,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 4,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 5,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 6,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 7,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 8,
+            "redress_numerator": null,
+            "redress_denominator": null
+          }
+        ]
+      },
+      "legal_constraints": {
+        "provisional_points_units": [
+          100,
+          120,
+          180,
+          240,
+          300,
+          360,
+          420,
+          480
+        ]
+      }
+    },
+    {
+      "id": "tenth_point_redress",
+      "initial_data": {
+        "phase": "review",
+        "races": [],
+        "pending": [
+          {
+            "status": "finished",
+            "order": 1,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 2,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 3,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 4,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 5,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 6,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 7,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 8,
+            "redress_numerator": null,
+            "redress_denominator": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "amend_result",
+          "params": {
+            "results": [
+              {
+                "status": "redress",
+                "order": 1,
+                "redress_numerator": 17,
+                "redress_denominator": 10
+              },
+              {
+                "status": "finished",
+                "order": 2,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 3,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 4,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 5,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 6,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 7,
+                "redress_numerator": null,
+                "redress_denominator": null
+              },
+              {
+                "status": "finished",
+                "order": 8,
+                "redress_numerator": null,
+                "redress_denominator": null
+              }
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "provisional_points_units": [
+          102,
+          120,
+          180,
+          240,
+          300,
+          360,
+          420,
+          480
+        ]
+      }
+    },
+    {
+      "id": "unsupported_redress_fraction",
+      "initial_data": {
+        "phase": "review",
+        "races": [],
+        "pending": [
+          {
+            "status": "finished",
+            "order": 1,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 2,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 3,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 4,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 5,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 6,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 7,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 8,
+            "redress_numerator": null,
+            "redress_denominator": null
+          }
+        ]
+      },
+      "action": {
+        "type": "amend_result",
+        "params": {
+          "results": [
+            {
+              "status": "redress",
+              "order": null,
+              "redress_numerator": 10,
+              "redress_denominator": 7
+            },
+            {
+              "status": "finished",
+              "order": 2,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 3,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 4,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 5,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 6,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 7,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "finished",
+              "order": 8,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "redress_cannot_exceed_nine",
+      "initial_data": {
+        "phase": "review",
+        "races": [],
+        "pending": [
+          {
+            "status": "redress",
+            "order": null,
+            "redress_numerator": 10,
+            "redress_denominator": 1
+          },
+          {
+            "status": "finished",
+            "order": 2,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 3,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 4,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 5,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 6,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 7,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "finished",
+            "order": 8,
+            "redress_numerator": null,
+            "redress_denominator": null
+          }
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "all_dne_no_discard",
+      "initial_data": {
+        "phase": "review",
+        "races": [
+          [
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ],
+          [
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            },
+            {
+              "status": "dne",
+              "order": null,
+              "redress_numerator": null,
+              "redress_denominator": null
+            }
+          ]
+        ],
+        "pending": [
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          },
+          {
+            "status": "dne",
+            "order": null,
+            "redress_numerator": null,
+            "redress_denominator": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_race",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "rider_0",
+          "rider_1",
+          "rider_2",
+          "rider_3",
+          "rider_4",
+          "rider_5",
+          "rider_6",
+          "rider_7"
+        ]
+      }
+    }
+  ]
+}

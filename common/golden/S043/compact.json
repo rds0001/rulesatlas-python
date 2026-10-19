@@ -1,0 +1,2733 @@
+{
+  "profile_id": "S043",
+  "ruleset_id": "builtin.golf.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "golfer_0"
+    },
+    {
+      "id": "golfer_1"
+    },
+    {
+      "id": "golfer_2"
+    },
+    {
+      "id": "golfer_3"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start_first_hole",
+      "actions": [
+        {
+          "type": "start_hole",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "round",
+        "golfers": [
+          {
+            "status": "playing",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "stroke_before_start_rejected",
+      "action": {
+        "type": "stroke",
+        "params": {
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "stroke_plus_two_penalty",
+      "initial_data": {
+        "phase": "round",
+        "golfers": [
+          {
+            "status": "playing",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "penalty",
+          "params": {
+            "player": 0,
+            "hole": 0,
+            "strokes": 2
+          }
+        },
+        {
+          "type": "hole_out",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "round",
+        "golfers": [
+          {
+            "status": "ready",
+            "holes": [
+              3
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "penalty_alone_cannot_hole_out",
+      "initial_data": {
+        "phase": "round",
+        "golfers": [
+          {
+            "status": "playing",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "penalty",
+          "params": {
+            "player": 0,
+            "hole": 0,
+            "strokes": 1
+          }
+        }
+      ],
+      "action": {
+        "type": "hole_out",
+        "params": {
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "cannot_penalize_unstarted_hole",
+      "initial_data": {
+        "phase": "round",
+        "golfers": [
+          {
+            "status": "ready",
+            "holes": [
+              3
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          }
+        ]
+      },
+      "action": {
+        "type": "penalty",
+        "params": {
+          "player": 0,
+          "hole": 1,
+          "strokes": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "retroactive_known_penalty",
+      "initial_data": {
+        "phase": "round",
+        "golfers": [
+          {
+            "status": "ready",
+            "holes": [
+              3
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "penalty",
+          "params": {
+            "player": 0,
+            "hole": 0,
+            "strokes": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_holes": [
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "early_card_rejected",
+      "initial_data": {
+        "phase": "round",
+        "golfers": [
+          {
+            "status": "ready",
+            "holes": [
+              3
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          }
+        ]
+      },
+      "action": {
+        "type": "return_card",
+        "params": {
+          "player": 0,
+          "scores": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "certified": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "all_cards_open_review",
+      "initial_data": {
+        "phase": "round",
+        "golfers": [
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              5
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              6
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "card",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "return_card",
+          "params": {
+            "player": 3,
+            "scores": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              7
+            ],
+            "certified": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "review",
+        "golfers": [
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              5
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              6
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              7
+            ],
+            "disqualification_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "lowest_returned_total",
+      "initial_data": {
+        "phase": "review",
+        "golfers": [
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              5
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              6
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              7
+            ],
+            "disqualification_reason": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "golfer_0"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "shared_tie",
+      "initial_data": {
+        "phase": "review",
+        "golfers": [
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              6
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              7
+            ],
+            "disqualification_reason": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "golfer_0",
+          "golfer_1"
+        ]
+      }
+    },
+    {
+      "id": "understated_hole_disqualifies",
+      "initial_data": {
+        "phase": "round",
+        "golfers": [
+          {
+            "status": "card",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "return_card",
+          "params": {
+            "player": 0,
+            "scores": [
+              3,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "certified": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "round",
+        "golfers": [
+          {
+            "status": "dq",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              3,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "disqualification_reason": "understated_hole"
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "missing_hole_disqualifies",
+      "initial_data": {
+        "phase": "round",
+        "golfers": [
+          {
+            "status": "card",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "return_card",
+          "params": {
+            "player": 0,
+            "scores": [
+              null,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "certified": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "round",
+        "golfers": [
+          {
+            "status": "dq",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              null,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "disqualification_reason": "missing_hole"
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "uncertified_card_disqualifies",
+      "initial_data": {
+        "phase": "round",
+        "golfers": [
+          {
+            "status": "card",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "return_card",
+          "params": {
+            "player": 0,
+            "scores": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "certified": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "round",
+        "golfers": [
+          {
+            "status": "dq",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "disqualification_reason": "uncertified_card"
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "unknown_penalty_exception",
+      "initial_data": {
+        "phase": "review",
+        "golfers": [
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              5
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              6
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              7
+            ],
+            "disqualification_reason": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "unknown_penalty",
+          "params": {
+            "player": 0,
+            "hole": 0,
+            "strokes": 2
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "golfer_1"
+        ]
+      }
+    },
+    {
+      "id": "unknown_exception_before_card_rejected",
+      "initial_data": {
+        "phase": "round",
+        "golfers": [
+          {
+            "status": "card",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          }
+        ]
+      },
+      "action": {
+        "type": "unknown_penalty",
+        "params": {
+          "player": 0,
+          "hole": 0,
+          "strokes": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "returned_cards_locked",
+      "initial_data": {
+        "phase": "review",
+        "golfers": [
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              5
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              6
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              7
+            ],
+            "disqualification_reason": null
+          }
+        ]
+      },
+      "action": {
+        "type": "correct_hole",
+        "params": {
+          "player": 0,
+          "hole": 0,
+          "strokes": 3
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "review_disqualification",
+      "initial_data": {
+        "phase": "review",
+        "golfers": [
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              5
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              6
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              7
+            ],
+            "disqualification_reason": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "golfer_1"
+        ]
+      }
+    },
+    {
+      "id": "understated_imported_card_invalid",
+      "initial_data": {
+        "phase": "review",
+        "golfers": [
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              3,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              5
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              6
+            ],
+            "disqualification_reason": null
+          },
+          {
+            "status": "returned",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              7
+            ],
+            "disqualification_reason": null
+          }
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "card_before_eighteen_holes_invalid",
+      "initial_data": {
+        "phase": "round",
+        "golfers": [
+          {
+            "status": "card",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          }
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "all_dns_no_contest",
+      "actions": [
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 1
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 2
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 3
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "confirmation_requires_all_cards",
+      "initial_data": {
+        "phase": "round",
+        "golfers": [
+          {
+            "status": "card",
+            "holes": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          },
+          {
+            "status": "ready",
+            "holes": [],
+            "current_strokes": 0,
+            "current_played": false,
+            "card": null,
+            "disqualification_reason": null
+          }
+        ]
+      },
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

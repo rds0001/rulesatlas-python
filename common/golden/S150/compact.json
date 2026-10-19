@@ -1,0 +1,1850 @@
+{
+  "profile_id": "S150",
+  "ruleset_id": "builtin.show_jumping.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "rider_0"
+    },
+    {
+      "id": "rider_1"
+    },
+    {
+      "id": "rider_2"
+    },
+    {
+      "id": "rider_3"
+    },
+    {
+      "id": "rider_4"
+    },
+    {
+      "id": "rider_5"
+    },
+    {
+      "id": "rider_6"
+    },
+    {
+      "id": "rider_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "review_amendment",
+      "initial_data": {
+        "phase": "review",
+        "bell_remaining_ms": 45000,
+        "start_crossed": false,
+        "riders": [
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 80001,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 71000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 72000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 73000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 74000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 75000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 76000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 77000,
+            "correction_ms": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "amend_result",
+          "params": {
+            "participant": 0,
+            "result": {
+              "status": "finished",
+              "completed": 12,
+              "refusals": 0,
+              "obstacle_faults": 0,
+              "elapsed_ms": 70000,
+              "correction_ms": 0
+            }
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "rider_0"
+        ]
+      }
+    },
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "bell_calls_first",
+      "actions": [
+        {
+          "type": "ring_bell",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "bell",
+        "bell_remaining_ms": 45000,
+        "start_crossed": false,
+        "riders": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "crossing_starts_course",
+      "initial_data": {
+        "phase": "bell",
+        "bell_remaining_ms": 45000,
+        "start_crossed": false,
+        "riders": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "cross_start",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "course",
+        "bell_remaining_ms": 45000,
+        "start_crossed": true,
+        "riders": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "automatic_clock_does_not_skip_start",
+      "initial_data": {
+        "phase": "bell",
+        "bell_remaining_ms": 45000,
+        "start_crossed": false,
+        "riders": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 45000
+          }
+        }
+      ],
+      "action": {
+        "type": "jump_fence",
+        "params": {
+          "fence": 0,
+          "knocked": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "delayed_start_preserves_elapsed",
+      "initial_data": {
+        "phase": "bell",
+        "bell_remaining_ms": 45000,
+        "start_crossed": false,
+        "riders": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 45000
+          }
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1000
+          }
+        },
+        {
+          "type": "cross_start",
+          "params": {}
+        }
+      ]
+    },
+    {
+      "id": "wrong_fence_order_rejected",
+      "initial_data": {
+        "phase": "course",
+        "bell_remaining_ms": 45000,
+        "start_crossed": true,
+        "riders": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          }
+        ]
+      },
+      "action": {
+        "type": "jump_fence",
+        "params": {
+          "fence": 1,
+          "knocked": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "knockdown_four_faults",
+      "initial_data": {
+        "phase": "course",
+        "bell_remaining_ms": 45000,
+        "start_crossed": true,
+        "riders": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "jump_fence",
+          "params": {
+            "fence": 0,
+            "knocked": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "course",
+        "bell_remaining_ms": 45000,
+        "start_crossed": true,
+        "riders": [
+          {
+            "status": "active",
+            "completed": 1,
+            "refusals": 0,
+            "obstacle_faults": 4,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "destroyed_refusal_pauses_and_adds_six_seconds",
+      "initial_data": {
+        "phase": "course",
+        "bell_remaining_ms": 45000,
+        "start_crossed": true,
+        "riders": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "refusal",
+          "params": {
+            "fence": 0,
+            "destroyed": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "rebuild",
+        "bell_remaining_ms": 45000,
+        "start_crossed": true,
+        "riders": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 1,
+            "obstacle_faults": 4,
+            "elapsed_ms": 0,
+            "correction_ms": 6000
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "rebuild_time_is_paused",
+      "initial_data": {
+        "phase": "rebuild",
+        "bell_remaining_ms": 45000,
+        "start_crossed": true,
+        "riders": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 1,
+            "obstacle_faults": 4,
+            "elapsed_ms": 0,
+            "correction_ms": 6000
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          }
+        ]
+      },
+      "action": {
+        "type": "elapse",
+        "params": {
+          "milliseconds": 1000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "second_refusal_eliminates",
+      "initial_data": {
+        "phase": "rebuild",
+        "bell_remaining_ms": 45000,
+        "start_crossed": true,
+        "riders": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 1,
+            "obstacle_faults": 4,
+            "elapsed_ms": 0,
+            "correction_ms": 6000
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "resume_after_rebuild",
+          "params": {}
+        },
+        {
+          "type": "refusal",
+          "params": {
+            "fence": 0,
+            "destroyed": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "current_participant": 1,
+        "phase": "ready"
+      }
+    },
+    {
+      "id": "time_limit_eliminates",
+      "initial_data": {
+        "phase": "course",
+        "bell_remaining_ms": 45000,
+        "start_crossed": true,
+        "riders": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 160001
+          }
+        }
+      ],
+      "legal_constraints": {
+        "current_participant": 1,
+        "phase": "ready"
+      }
+    },
+    {
+      "id": "incomplete_course_cannot_finish",
+      "initial_data": {
+        "phase": "course",
+        "bell_remaining_ms": 45000,
+        "start_crossed": true,
+        "riders": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          }
+        ]
+      },
+      "action": {
+        "type": "finish",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "last_finish_opens_review",
+      "initial_data": {
+        "phase": "course",
+        "bell_remaining_ms": 45000,
+        "start_crossed": true,
+        "riders": [
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 70000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 71000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 72000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 73000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 74000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 75000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 76000,
+            "correction_ms": 0
+          },
+          {
+            "status": "active",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 77000,
+            "correction_ms": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "finish",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "review",
+        "bell_remaining_ms": 45000,
+        "start_crossed": false,
+        "riders": [
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 70000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 71000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 72000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 73000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 74000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 75000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 76000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 77000,
+            "correction_ms": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "fastest_clear_round",
+      "initial_data": {
+        "phase": "review",
+        "bell_remaining_ms": 45000,
+        "start_crossed": false,
+        "riders": [
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 70000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 71000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 72000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 73000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 74000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 75000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 76000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 77000,
+            "correction_ms": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "rider_0"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "started_second_time_fault",
+      "initial_data": {
+        "phase": "review",
+        "bell_remaining_ms": 45000,
+        "start_crossed": false,
+        "riders": [
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 80001,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 71000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 72000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 73000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 74000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 75000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 76000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 77000,
+            "correction_ms": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "rider_1"
+        ]
+      }
+    },
+    {
+      "id": "official_dq_changes_winner",
+      "initial_data": {
+        "phase": "review",
+        "bell_remaining_ms": 45000,
+        "start_crossed": false,
+        "riders": [
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 70000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 71000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 72000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 73000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 74000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 75000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 76000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 77000,
+            "correction_ms": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "participant": 0,
+            "reason": "equipment"
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "rider_1"
+        ]
+      }
+    },
+    {
+      "id": "incomplete_finished_state_invalid",
+      "initial_data": {
+        "phase": "review",
+        "bell_remaining_ms": 45000,
+        "start_crossed": false,
+        "riders": [
+          {
+            "status": "finished",
+            "completed": 11,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 70000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 71000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 72000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 73000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 74000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 75000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 76000,
+            "correction_ms": 0
+          },
+          {
+            "status": "finished",
+            "completed": 12,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 77000,
+            "correction_ms": 0
+          }
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "wrong_course_eliminates",
+      "initial_data": {
+        "phase": "course",
+        "bell_remaining_ms": 45000,
+        "start_crossed": true,
+        "riders": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "obstacle_faults": 0,
+            "elapsed_ms": 0,
+            "correction_ms": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "eliminate",
+          "params": {
+            "reason": "wrong_course"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "current_participant": 1
+      }
+    }
+  ]
+}

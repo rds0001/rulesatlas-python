@@ -1,0 +1,567 @@
+{
+  "profile_id": "G078",
+  "ruleset_id": "builtin.sic_bo.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "one_face",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "kind": "single",
+            "numbers": [
+              2
+            ],
+            "stake": 10
+          }
+        },
+        {
+          "type": "close_bets",
+          "params": {}
+        },
+        {
+          "type": "settle",
+          "params": {
+            "dice": [
+              2,
+              3,
+              4
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1010,
+            "net": 10
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "two_faces",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "kind": "single",
+            "numbers": [
+              2
+            ],
+            "stake": 10
+          }
+        },
+        {
+          "type": "close_bets",
+          "params": {}
+        },
+        {
+          "type": "settle",
+          "params": {
+            "dice": [
+              2,
+              2,
+              4
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1020,
+            "net": 20
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "three_faces",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "kind": "single",
+            "numbers": [
+              2
+            ],
+            "stake": 10
+          }
+        },
+        {
+          "type": "close_bets",
+          "params": {}
+        },
+        {
+          "type": "settle",
+          "params": {
+            "dice": [
+              2,
+              2,
+              2
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1030,
+            "net": 30
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "double_on_triple",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "kind": "double",
+            "numbers": [
+              2
+            ],
+            "stake": 10
+          }
+        },
+        {
+          "type": "close_bets",
+          "params": {}
+        },
+        {
+          "type": "settle",
+          "params": {
+            "dice": [
+              2,
+              2,
+              2
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1100,
+            "net": 100
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "specific_triple",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "kind": "triple",
+            "numbers": [
+              6
+            ],
+            "stake": 10
+          }
+        },
+        {
+          "type": "close_bets",
+          "params": {}
+        },
+        {
+          "type": "settle",
+          "params": {
+            "dice": [
+              6,
+              6,
+              6
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 2800,
+            "net": 1800
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "combination",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "kind": "combination",
+            "numbers": [
+              1,
+              6
+            ],
+            "stake": 10
+          }
+        },
+        {
+          "type": "close_bets",
+          "params": {}
+        },
+        {
+          "type": "settle",
+          "params": {
+            "dice": [
+              1,
+              1,
+              6
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1050,
+            "net": 50
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "total_four",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "kind": "total",
+            "numbers": [
+              4
+            ],
+            "stake": 10
+          }
+        },
+        {
+          "type": "close_bets",
+          "params": {}
+        },
+        {
+          "type": "settle",
+          "params": {
+            "dice": [
+              1,
+              1,
+              2
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1500,
+            "net": 500
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "total_seventeen",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "kind": "total",
+            "numbers": [
+              17
+            ],
+            "stake": 10
+          }
+        },
+        {
+          "type": "close_bets",
+          "params": {}
+        },
+        {
+          "type": "settle",
+          "params": {
+            "dice": [
+              5,
+              6,
+              6
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1500,
+            "net": 500
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "any_triple",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "kind": "any_triple",
+            "numbers": [],
+            "stake": 10
+          }
+        },
+        {
+          "type": "close_bets",
+          "params": {}
+        },
+        {
+          "type": "settle",
+          "params": {
+            "dice": [
+              4,
+              4,
+              4
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1300,
+            "net": 300
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "big",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "kind": "big",
+            "numbers": [],
+            "stake": 10
+          }
+        },
+        {
+          "type": "close_bets",
+          "params": {}
+        },
+        {
+          "type": "settle",
+          "params": {
+            "dice": [
+              6,
+              5,
+              1
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1010,
+            "net": 10
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "small",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "kind": "small",
+            "numbers": [],
+            "stake": 10
+          }
+        },
+        {
+          "type": "close_bets",
+          "params": {}
+        },
+        {
+          "type": "settle",
+          "params": {
+            "dice": [
+              1,
+              2,
+              3
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1010,
+            "net": 10
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "triple_not_big",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "kind": "big",
+            "numbers": [],
+            "stake": 10
+          }
+        },
+        {
+          "type": "close_bets",
+          "params": {}
+        },
+        {
+          "type": "settle",
+          "params": {
+            "dice": [
+              4,
+              4,
+              4
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 990,
+            "net": -10
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "triple_not_small",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "kind": "small",
+            "numbers": [],
+            "stake": 10
+          }
+        },
+        {
+          "type": "close_bets",
+          "params": {}
+        },
+        {
+          "type": "settle",
+          "params": {
+            "dice": [
+              2,
+              2,
+              2
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 990,
+            "net": -10
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "combination_requires_distinct_faces",
+      "action": {
+        "type": "bet",
+        "params": {
+          "kind": "combination",
+          "numbers": [
+            2,
+            2
+          ],
+          "stake": 10
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "unknown_bet",
+      "action": {
+        "type": "bet",
+        "params": {
+          "kind": "unknown",
+          "numbers": [],
+          "stake": 10
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

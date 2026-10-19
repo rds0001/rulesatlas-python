@@ -1,0 +1,2467 @@
+{
+  "profile_id": "S098",
+  "ruleset_id": "builtin.surfing.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "surfer_0"
+    },
+    {
+      "id": "surfer_1"
+    },
+    {
+      "id": "surfer_2"
+    },
+    {
+      "id": "surfer_3"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start_heat",
+      "actions": [
+        {
+          "type": "start_heat",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "live",
+        "duration_ms": 1200000,
+        "remaining_ms": 1200000,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      }
+    },
+    {
+      "id": "start_wave",
+      "initial_data": {
+        "phase": "live",
+        "duration_ms": 1200000,
+        "remaining_ms": 1200000,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "start_wave",
+          "params": {
+            "surfer": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "live",
+        "duration_ms": 1200000,
+        "remaining_ms": 1200000,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            null
+          ],
+          [],
+          [],
+          []
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      }
+    },
+    {
+      "id": "cannot_start_two_rides",
+      "initial_data": {
+        "phase": "live",
+        "duration_ms": 1200000,
+        "remaining_ms": 1200000,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            null
+          ],
+          [],
+          [],
+          []
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "action": {
+        "type": "start_wave",
+        "params": {
+          "surfer": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "marks_require_started_wave",
+      "initial_data": {
+        "phase": "live",
+        "duration_ms": 1200000,
+        "remaining_ms": 1200000,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "action": {
+        "type": "complete_wave",
+        "params": {
+          "surfer": 0,
+          "marks": [
+            800,
+            800,
+            800,
+            800,
+            800
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "finish_started_wave_after_horn",
+      "initial_data": {
+        "phase": "live",
+        "duration_ms": 1200000,
+        "remaining_ms": 1,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            null
+          ],
+          [],
+          [],
+          []
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1
+          }
+        },
+        {
+          "type": "complete_wave",
+          "params": {
+            "surfer": 0,
+            "marks": [
+              800,
+              800,
+              800,
+              800,
+              800
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "review"
+      }
+    },
+    {
+      "id": "no_new_wave_after_horn",
+      "initial_data": {
+        "phase": "live",
+        "duration_ms": 1200000,
+        "remaining_ms": 1,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            null
+          ],
+          [],
+          [],
+          []
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1
+          }
+        }
+      ],
+      "action": {
+        "type": "start_wave",
+        "params": {
+          "surfer": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "pending_marks_block_confirmation",
+      "initial_data": {
+        "phase": "live",
+        "duration_ms": 1200000,
+        "remaining_ms": 1,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            null
+          ],
+          [],
+          [],
+          []
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1
+          }
+        }
+      ],
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "ride_limit",
+      "initial_data": {
+        "phase": "live",
+        "duration_ms": 1200000,
+        "remaining_ms": 1200000,
+        "wave_limit": 1,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            [
+              800,
+              800,
+              800,
+              800,
+              800
+            ]
+          ],
+          [],
+          [],
+          []
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "action": {
+        "type": "start_wave",
+        "params": {
+          "surfer": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "authorized_extra_wave",
+      "initial_data": {
+        "phase": "live",
+        "duration_ms": 1200000,
+        "remaining_ms": 1200000,
+        "wave_limit": 1,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            [
+              800,
+              800,
+              800,
+              800,
+              800
+            ]
+          ],
+          [],
+          [],
+          []
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "grant_extra_wave",
+          "params": {
+            "surfer": 0
+          }
+        },
+        {
+          "type": "start_wave",
+          "params": {
+            "surfer": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "wave_allowance_remaining": [
+          0,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "priority_removed_on_ride",
+      "initial_data": {
+        "phase": "live",
+        "duration_ms": 1200000,
+        "remaining_ms": 1200000,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "set_priority",
+          "params": {
+            "order": [
+              1,
+              0,
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "type": "start_wave",
+          "params": {
+            "surfer": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "priority": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "id": "duplicate_priority_rejected",
+      "initial_data": {
+        "phase": "live",
+        "duration_ms": 1200000,
+        "remaining_ms": 1200000,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "action": {
+        "type": "set_priority",
+        "params": {
+          "order": [
+            0,
+            0
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "pause_stops_clock",
+      "initial_data": {
+        "phase": "live",
+        "duration_ms": 1200000,
+        "remaining_ms": 1200000,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "pause_heat",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "elapse",
+        "params": {
+          "milliseconds": 1000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "top_two_score",
+      "initial_data": {
+        "phase": "review",
+        "duration_ms": 1200000,
+        "remaining_ms": 0,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            [
+              800,
+              800,
+              800,
+              800,
+              800
+            ],
+            [
+              600,
+              600,
+              600,
+              600,
+              600
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              700,
+              700,
+              700,
+              700,
+              700
+            ],
+            [
+              650,
+              650,
+              650,
+              650,
+              650
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ],
+          [
+            [
+              500,
+              500,
+              500,
+              500,
+              500
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ]
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "surfer_0"
+        ],
+        "placements": [
+          {
+            "player_id": "surfer_0",
+            "place": 1,
+            "score_units": 1400,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "surfer_1",
+            "place": 2,
+            "score_units": 1350,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "surfer_2",
+            "place": 3,
+            "score_units": 900,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "surfer_3",
+            "place": 4,
+            "score_units": 700,
+            "score_unit_denominator": 100
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "best_wave_tie_break",
+      "initial_data": {
+        "phase": "review",
+        "duration_ms": 1200000,
+        "remaining_ms": 0,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            [
+              800,
+              800,
+              800,
+              800,
+              800
+            ],
+            [
+              600,
+              600,
+              600,
+              600,
+              600
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              750,
+              750,
+              750,
+              750,
+              750
+            ],
+            [
+              650,
+              650,
+              650,
+              650,
+              650
+            ]
+          ],
+          [
+            [
+              500,
+              500,
+              500,
+              500,
+              500
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ]
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "surfer_0"
+        ]
+      }
+    },
+    {
+      "id": "third_wave_tie_break",
+      "initial_data": {
+        "phase": "review",
+        "duration_ms": 1200000,
+        "remaining_ms": 0,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            [
+              800,
+              800,
+              800,
+              800,
+              800
+            ],
+            [
+              600,
+              600,
+              600,
+              600,
+              600
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              800,
+              800,
+              800,
+              800,
+              800
+            ],
+            [
+              600,
+              600,
+              600,
+              600,
+              600
+            ],
+            [
+              500,
+              500,
+              500,
+              500,
+              500
+            ]
+          ],
+          [
+            [
+              500,
+              500,
+              500,
+              500,
+              500
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ]
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "surfer_1"
+        ]
+      }
+    },
+    {
+      "id": "all_five_judges_tie_break",
+      "initial_data": {
+        "phase": "review",
+        "duration_ms": 1200000,
+        "remaining_ms": 0,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            [
+              0,
+              800,
+              800,
+              800,
+              1000
+            ],
+            [
+              0,
+              800,
+              800,
+              800,
+              1000
+            ]
+          ],
+          [
+            [
+              700,
+              800,
+              800,
+              800,
+              900
+            ],
+            [
+              700,
+              800,
+              800,
+              800,
+              900
+            ]
+          ],
+          [
+            [
+              500,
+              500,
+              500,
+              500,
+              500
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ]
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "surfer_1"
+        ]
+      }
+    },
+    {
+      "id": "local_remaining_tie_shared",
+      "initial_data": {
+        "phase": "review",
+        "duration_ms": 1200000,
+        "remaining_ms": 0,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            [
+              800,
+              800,
+              800,
+              800,
+              800
+            ],
+            [
+              600,
+              600,
+              600,
+              600,
+              600
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              800,
+              800,
+              800,
+              800,
+              800
+            ],
+            [
+              600,
+              600,
+              600,
+              600,
+              600
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              500,
+              500,
+              500,
+              500,
+              500
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ]
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "surfer_0",
+          "surfer_1"
+        ]
+      }
+    },
+    {
+      "id": "nonpriority_halves_second",
+      "initial_data": {
+        "phase": "review",
+        "duration_ms": 1200000,
+        "remaining_ms": 0,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            [
+              800,
+              800,
+              800,
+              800,
+              800
+            ],
+            [
+              600,
+              600,
+              600,
+              600,
+              600
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              700,
+              700,
+              700,
+              700,
+              700
+            ],
+            [
+              650,
+              650,
+              650,
+              650,
+              650
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ],
+          [
+            [
+              500,
+              500,
+              500,
+              500,
+              500
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ]
+        ],
+        "interferences": [
+          [
+            {
+              "kind": "non_priority",
+              "wave": null
+            }
+          ],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "surfer_1"
+        ],
+        "placements": [
+          {
+            "player_id": "surfer_1",
+            "place": 1,
+            "score_units": 1350,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "surfer_0",
+            "place": 2,
+            "score_units": 1100,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "surfer_2",
+            "place": 3,
+            "score_units": 900,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "surfer_3",
+            "place": 4,
+            "score_units": 700,
+            "score_unit_denominator": 100
+          }
+        ]
+      }
+    },
+    {
+      "id": "two_nonpriority_calls_halve_both",
+      "initial_data": {
+        "phase": "review",
+        "duration_ms": 1200000,
+        "remaining_ms": 0,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            [
+              800,
+              800,
+              800,
+              800,
+              800
+            ],
+            [
+              600,
+              600,
+              600,
+              600,
+              600
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              700,
+              700,
+              700,
+              700,
+              700
+            ],
+            [
+              650,
+              650,
+              650,
+              650,
+              650
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ],
+          [
+            [
+              500,
+              500,
+              500,
+              500,
+              500
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ]
+        ],
+        "interferences": [
+          [
+            {
+              "kind": "non_priority",
+              "wave": null
+            },
+            {
+              "kind": "non_priority",
+              "wave": null
+            }
+          ],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "surfer_1"
+        ]
+      }
+    },
+    {
+      "id": "mixed_calls_leave_half_best",
+      "initial_data": {
+        "phase": "review",
+        "duration_ms": 1200000,
+        "remaining_ms": 0,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            [
+              800,
+              800,
+              800,
+              800,
+              800
+            ],
+            [
+              600,
+              600,
+              600,
+              600,
+              600
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              700,
+              700,
+              700,
+              700,
+              700
+            ],
+            [
+              650,
+              650,
+              650,
+              650,
+              650
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ],
+          [
+            [
+              500,
+              500,
+              500,
+              500,
+              500
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ]
+        ],
+        "interferences": [
+          [
+            {
+              "kind": "non_priority",
+              "wave": null
+            },
+            {
+              "kind": "priority",
+              "wave": null
+            }
+          ],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "surfer_1",
+            "place": 1,
+            "score_units": 1350,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "surfer_2",
+            "place": 2,
+            "score_units": 900,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "surfer_3",
+            "place": 3,
+            "score_units": 700,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "surfer_0",
+            "place": 4,
+            "score_units": 400,
+            "score_unit_denominator": 100
+          }
+        ]
+      }
+    },
+    {
+      "id": "two_priority_calls_exclude",
+      "initial_data": {
+        "phase": "review",
+        "duration_ms": 1200000,
+        "remaining_ms": 0,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            [
+              800,
+              800,
+              800,
+              800,
+              800
+            ],
+            [
+              600,
+              600,
+              600,
+              600,
+              600
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              700,
+              700,
+              700,
+              700,
+              700
+            ],
+            [
+              650,
+              650,
+              650,
+              650,
+              650
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ],
+          [
+            [
+              500,
+              500,
+              500,
+              500,
+              500
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ]
+        ],
+        "interferences": [
+          [
+            {
+              "kind": "priority",
+              "wave": null
+            },
+            {
+              "kind": "priority",
+              "wave": null
+            }
+          ],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "surfer_1",
+            "place": 1,
+            "score_units": 1350,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "surfer_2",
+            "place": 2,
+            "score_units": 900,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "surfer_3",
+            "place": 3,
+            "score_units": 700,
+            "score_unit_denominator": 100
+          }
+        ]
+      }
+    },
+    {
+      "id": "interference_ride_is_zero",
+      "initial_data": {
+        "phase": "review",
+        "duration_ms": 1200000,
+        "remaining_ms": 0,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            [
+              800,
+              800,
+              800,
+              800,
+              800
+            ],
+            [
+              600,
+              600,
+              600,
+              600,
+              600
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              700,
+              700,
+              700,
+              700,
+              700
+            ],
+            [
+              650,
+              650,
+              650,
+              650,
+              650
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ],
+          [
+            [
+              500,
+              500,
+              500,
+              500,
+              500
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ]
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "interference",
+          "params": {
+            "surfer": 0,
+            "kind": "non_priority",
+            "wave": 0
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "surfer_1",
+            "place": 1,
+            "score_units": 1350,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "surfer_2",
+            "place": 2,
+            "score_units": 900,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "surfer_0",
+            "place": 3,
+            "score_units": 800,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "surfer_3",
+            "place": 4,
+            "score_units": 700,
+            "score_unit_denominator": 100
+          }
+        ]
+      }
+    },
+    {
+      "id": "second_call_stops_new_rides",
+      "initial_data": {
+        "phase": "live",
+        "duration_ms": 1200000,
+        "remaining_ms": 1200000,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "interference",
+          "params": {
+            "surfer": 0,
+            "kind": "non_priority",
+            "wave": null
+          }
+        },
+        {
+          "type": "interference",
+          "params": {
+            "surfer": 0,
+            "kind": "non_priority",
+            "wave": null
+          }
+        }
+      ],
+      "action": {
+        "type": "start_wave",
+        "params": {
+          "surfer": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "correct_official_interference",
+      "initial_data": {
+        "phase": "review",
+        "duration_ms": 1200000,
+        "remaining_ms": 0,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            [
+              800,
+              800,
+              800,
+              800,
+              800
+            ],
+            [
+              600,
+              600,
+              600,
+              600,
+              600
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              700,
+              700,
+              700,
+              700,
+              700
+            ],
+            [
+              650,
+              650,
+              650,
+              650,
+              650
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ],
+          [
+            [
+              500,
+              500,
+              500,
+              500,
+              500
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ]
+        ],
+        "interferences": [
+          [
+            {
+              "kind": "non_priority",
+              "wave": null
+            }
+          ],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "correct_interference",
+          "params": {
+            "surfer": 0,
+            "index": 0,
+            "kind": null
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "surfer_0"
+        ]
+      }
+    },
+    {
+      "id": "mark_correction_changes_winner",
+      "initial_data": {
+        "phase": "review",
+        "duration_ms": 1200000,
+        "remaining_ms": 0,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            [
+              800,
+              800,
+              800,
+              800,
+              800
+            ],
+            [
+              600,
+              600,
+              600,
+              600,
+              600
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              700,
+              700,
+              700,
+              700,
+              700
+            ],
+            [
+              650,
+              650,
+              650,
+              650,
+              650
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ],
+          [
+            [
+              500,
+              500,
+              500,
+              500,
+              500
+            ],
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ]
+          ],
+          [
+            [
+              400,
+              400,
+              400,
+              400,
+              400
+            ],
+            [
+              300,
+              300,
+              300,
+              300,
+              300
+            ]
+          ]
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "correct_marks",
+          "params": {
+            "surfer": 0,
+            "wave": 0,
+            "marks": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "surfer_1"
+        ]
+      }
+    },
+    {
+      "id": "invalid_imported_priority",
+      "initial_data": {
+        "phase": "live",
+        "duration_ms": 1200000,
+        "remaining_ms": 1200000,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": [
+          0,
+          0
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "only_last_ride_may_await_marks",
+      "initial_data": {
+        "phase": "live",
+        "duration_ms": 1200000,
+        "remaining_ms": 1200000,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            null,
+            [
+              500,
+              500,
+              500,
+              500,
+              500
+            ]
+          ],
+          [],
+          [],
+          []
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "valid": false
+    },
+    {
+      "id": "review_cannot_have_pending_ride",
+      "initial_data": {
+        "phase": "review",
+        "duration_ms": 1200000,
+        "remaining_ms": 0,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "waves": [
+          [
+            null
+          ],
+          [],
+          [],
+          []
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "valid": false
+    },
+    {
+      "id": "all_dns_no_contest",
+      "initial_data": {
+        "phase": "review",
+        "duration_ms": 1200000,
+        "remaining_ms": 0,
+        "wave_limit": 15,
+        "extra_waves": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": [
+          "dns",
+          "dns",
+          "dns",
+          "dns"
+        ],
+        "waves": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "interferences": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "priority": []
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    }
+  ]
+}

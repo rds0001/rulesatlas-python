@@ -1,0 +1,635 @@
+{
+  "profile_id": "G075",
+  "ruleset_id": "builtin.pai_gow.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "player"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "both_hands_win_commission",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100
+          }
+        },
+        {
+          "type": "deal",
+          "params": {
+            "player": [
+              12,
+              25,
+              38,
+              11,
+              24,
+              10,
+              23
+            ],
+            "banker": [
+              9,
+              22,
+              35,
+              8,
+              21,
+              7,
+              20
+            ]
+          }
+        },
+        {
+          "type": "set_player",
+          "params": {
+            "low": [
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "type": "set_banker",
+          "params": {
+            "low": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "player",
+            "place": 1,
+            "balance": 1095,
+            "net": 95
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "banker_wins_exact_copies",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100
+          }
+        },
+        {
+          "type": "deal",
+          "params": {
+            "player": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              11,
+              10
+            ],
+            "banker": [
+              13,
+              14,
+              15,
+              16,
+              17,
+              24,
+              23
+            ]
+          }
+        },
+        {
+          "type": "set_player",
+          "params": {
+            "low": [
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "type": "set_banker",
+          "params": {
+            "low": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "player",
+            "place": 1,
+            "balance": 900,
+            "net": -100
+          }
+        ]
+      }
+    },
+    {
+      "id": "one_hand_each_pushes",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100
+          }
+        },
+        {
+          "type": "deal",
+          "params": {
+            "player": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              0,
+              1
+            ],
+            "banker": [
+              13,
+              14,
+              15,
+              16,
+              17,
+              24,
+              23
+            ]
+          }
+        },
+        {
+          "type": "set_player",
+          "params": {
+            "low": [
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "type": "set_banker",
+          "params": {
+            "low": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "player",
+            "place": 1,
+            "balance": 1000,
+            "net": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "five_aces_outrank_straight_flush",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100
+          }
+        },
+        {
+          "type": "deal",
+          "params": {
+            "player": [
+              12,
+              25,
+              38,
+              51,
+              52,
+              0,
+              1
+            ],
+            "banker": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "type": "set_player",
+          "params": {
+            "low": [
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "type": "set_banker",
+          "params": {
+            "low": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "player",
+            "place": 1,
+            "balance": 1000,
+            "net": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "joker_completes_straight_flush_above_wheel",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100
+          }
+        },
+        {
+          "type": "deal",
+          "params": {
+            "player": [
+              0,
+              1,
+              3,
+              4,
+              52,
+              11,
+              10
+            ],
+            "banker": [
+              25,
+              13,
+              14,
+              15,
+              16,
+              24,
+              23
+            ]
+          }
+        },
+        {
+          "type": "set_player",
+          "params": {
+            "low": [
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "type": "set_banker",
+          "params": {
+            "low": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "player",
+            "place": 1,
+            "balance": 1000,
+            "net": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "joker_completes_ace_high_flush",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100
+          }
+        },
+        {
+          "type": "deal",
+          "params": {
+            "player": [
+              0,
+              2,
+              5,
+              7,
+              52,
+              24,
+              23
+            ],
+            "banker": [
+              37,
+              34,
+              31,
+              28,
+              26,
+              11,
+              10
+            ]
+          }
+        },
+        {
+          "type": "set_player",
+          "params": {
+            "low": [
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "type": "set_banker",
+          "params": {
+            "low": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "player",
+            "place": 1,
+            "balance": 1000,
+            "net": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "joker_is_ace_in_low_pair",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100
+          }
+        },
+        {
+          "type": "deal",
+          "params": {
+            "player": [
+              11,
+              24,
+              37,
+              0,
+              1,
+              52,
+              12
+            ],
+            "banker": [
+              10,
+              23,
+              36,
+              2,
+              3,
+              9,
+              22
+            ]
+          }
+        },
+        {
+          "type": "set_player",
+          "params": {
+            "low": [
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "type": "set_banker",
+          "params": {
+            "low": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "player",
+            "place": 1,
+            "balance": 1095,
+            "net": 95
+          }
+        ]
+      }
+    },
+    {
+      "id": "foul_setting_rejected",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100
+          }
+        },
+        {
+          "type": "deal",
+          "params": {
+            "player": [
+              12,
+              25,
+              0,
+              14,
+              28,
+              42,
+              7
+            ],
+            "banker": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8
+            ]
+          }
+        }
+      ],
+      "action": {
+        "type": "set_player",
+        "params": {
+          "low": [
+            0,
+            1
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "duplicate_setting_index",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100
+          }
+        },
+        {
+          "type": "deal",
+          "params": {
+            "player": [
+              12,
+              25,
+              38,
+              11,
+              24,
+              10,
+              23
+            ],
+            "banker": [
+              9,
+              22,
+              35,
+              8,
+              21,
+              7,
+              20
+            ]
+          }
+        }
+      ],
+      "action": {
+        "type": "set_player",
+        "params": {
+          "low": [
+            5,
+            5
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "banker_cannot_set_first",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100
+          }
+        },
+        {
+          "type": "deal",
+          "params": {
+            "player": [
+              12,
+              25,
+              38,
+              11,
+              24,
+              10,
+              23
+            ],
+            "banker": [
+              9,
+              22,
+              35,
+              8,
+              21,
+              7,
+              20
+            ]
+          }
+        }
+      ],
+      "action": {
+        "type": "set_banker",
+        "params": {
+          "low": [
+            5,
+            6
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "fractional_commission_stake_rejected",
+      "action": {
+        "type": "bet",
+        "params": {
+          "stake": 21
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "duplicate_dealt_cards",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100
+          }
+        }
+      ],
+      "action": {
+        "type": "deal",
+        "params": {
+          "player": [
+            12,
+            25,
+            38,
+            11,
+            24,
+            10,
+            23
+          ],
+          "banker": [
+            12,
+            25,
+            38,
+            11,
+            24,
+            10,
+            23
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

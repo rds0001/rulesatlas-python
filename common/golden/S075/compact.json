@@ -1,0 +1,2755 @@
+{
+  "profile_id": "S075",
+  "ruleset_id": "builtin.sanda.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "red"
+    },
+    {
+      "id": "blue"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start_round",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "fighting",
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "independent_judge_points",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "technical_score",
+          "params": {
+            "player": 0,
+            "points": 2,
+            "judges": [
+              true,
+              false,
+              true,
+              false,
+              true
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "no_judge_award_rejected",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "technical_score",
+        "params": {
+          "player": 0,
+          "points": 1,
+          "judges": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "admonition_one_to_opponent",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "player": 0,
+            "kind": "admonition"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "admonitions": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "warning_two_to_opponent",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "player": 0,
+            "kind": "warning"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "warnings": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "third_warning_disqualification",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "player": 0,
+            "kind": "warning"
+          }
+        },
+        {
+          "type": "sanction",
+          "params": {
+            "player": 0,
+            "kind": "warning"
+          }
+        },
+        {
+          "type": "sanction",
+          "params": {
+            "player": 0,
+            "kind": "warning"
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ],
+        "reason": "three_warnings"
+      }
+    },
+    {
+      "id": "twelve_points_all_five",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "technical_score",
+          "params": {
+            "player": 0,
+            "points": 2,
+            "judges": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ]
+          }
+        },
+        {
+          "type": "technical_score",
+          "params": {
+            "player": 0,
+            "points": 2,
+            "judges": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ]
+          }
+        },
+        {
+          "type": "technical_score",
+          "params": {
+            "player": 0,
+            "points": 2,
+            "judges": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ]
+          }
+        },
+        {
+          "type": "technical_score",
+          "params": {
+            "player": 0,
+            "points": 2,
+            "judges": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ]
+          }
+        },
+        {
+          "type": "technical_score",
+          "params": {
+            "player": 0,
+            "points": 2,
+            "judges": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ]
+          }
+        },
+        {
+          "type": "technical_score",
+          "params": {
+            "player": 0,
+            "points": 2,
+            "judges": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ],
+        "reason": "twelve_point_gap"
+      }
+    },
+    {
+      "id": "four_judges_not_gap_consensus",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "technical_score",
+          "params": {
+            "player": 0,
+            "points": 2,
+            "judges": [
+              true,
+              true,
+              true,
+              true,
+              false
+            ]
+          }
+        },
+        {
+          "type": "technical_score",
+          "params": {
+            "player": 0,
+            "points": 2,
+            "judges": [
+              true,
+              true,
+              true,
+              true,
+              false
+            ]
+          }
+        },
+        {
+          "type": "technical_score",
+          "params": {
+            "player": 0,
+            "points": 2,
+            "judges": [
+              true,
+              true,
+              true,
+              true,
+              false
+            ]
+          }
+        },
+        {
+          "type": "technical_score",
+          "params": {
+            "player": 0,
+            "points": 2,
+            "judges": [
+              true,
+              true,
+              true,
+              true,
+              false
+            ]
+          }
+        },
+        {
+          "type": "technical_score",
+          "params": {
+            "player": 0,
+            "points": 2,
+            "judges": [
+              true,
+              true,
+              true,
+              true,
+              false
+            ]
+          }
+        },
+        {
+          "type": "technical_score",
+          "params": {
+            "player": 0,
+            "points": 2,
+            "judges": [
+              true,
+              true,
+              true,
+              true,
+              false
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "platform_exit_two_points",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "off_platform",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "off_platform": [
+          1,
+          0
+        ],
+        "phase": "paused"
+      }
+    },
+    {
+      "id": "second_exit_loses_round",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "off_platform",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "off_platform",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "rounds_won": [
+          0,
+          1
+        ],
+        "scores": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "phase": "break"
+      }
+    },
+    {
+      "id": "completed_count_points",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "forcible_count",
+          "params": {
+            "player": 0,
+            "continued": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "total_counts": [
+          1,
+          0
+        ],
+        "phase": "paused"
+      }
+    },
+    {
+      "id": "second_count_loses_round",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "forcible_count",
+          "params": {
+            "player": 0,
+            "continued": true
+          }
+        },
+        {
+          "type": "forcible_count",
+          "params": {
+            "player": 0,
+            "continued": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "rounds_won": [
+          0,
+          1
+        ],
+        "phase": "break"
+      }
+    },
+    {
+      "id": "third_count_loses_match",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [
+          1
+        ],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          2,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "forcible_count",
+          "params": {
+            "player": 0,
+            "continued": true
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ],
+        "reason": "three_counts"
+      }
+    },
+    {
+      "id": "knockout",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "forcible_count",
+          "params": {
+            "player": 0,
+            "continued": false
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ],
+        "reason": "knockout"
+      }
+    },
+    {
+      "id": "three_judge_majority",
+      "initial_data": {
+        "phase": "judging",
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "rounds_won": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "scorecard_tie_fewer_warnings",
+      "initial_data": {
+        "phase": "judging",
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "warnings": [
+          1,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          1,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "rounds_won": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "id": "scorecard_tie_fewer_admonitions",
+      "initial_data": {
+        "phase": "judging",
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          1,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          1,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "rounds_won": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "id": "scorecard_tie_lighter_weight",
+      "initial_data": {
+        "phase": "judging",
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          59900,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "rounds_won": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exact_tied_round",
+      "initial_data": {
+        "phase": "judging",
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "rounds_won": [
+          0,
+          0
+        ],
+        "phase": "break"
+      }
+    },
+    {
+      "id": "split_panel_requires_official_ruling",
+      "initial_data": {
+        "phase": "judging",
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "split_review"
+      },
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    },
+    {
+      "id": "split_panel_ruling",
+      "initial_data": {
+        "phase": "split_review",
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "head_judge_decision",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "rounds_won": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "two_rounds_win",
+      "initial_data": {
+        "phase": "judging",
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [
+          0
+        ],
+        "scores": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ],
+        "reason": "two_rounds"
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "more_rounds_after_three",
+      "initial_data": {
+        "phase": "judging",
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [
+          0,
+          null
+        ],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ],
+        "reason": "rounds"
+      }
+    },
+    {
+      "id": "round_robin_draw",
+      "initial_data": {
+        "phase": "judging",
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "round_robin": true,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [
+          0,
+          1
+        ],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw"
+      }
+    },
+    {
+      "id": "knockout_bout_warning_tie_break",
+      "initial_data": {
+        "phase": "judging",
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [
+          0,
+          1
+        ],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          1,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ],
+        "reason": "fewer_warnings"
+      }
+    },
+    {
+      "id": "knockout_extra_round",
+      "initial_data": {
+        "phase": "judging",
+        "remaining_ms": 0,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [
+          0,
+          1
+        ],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_round",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "break",
+        "round": 3
+      }
+    },
+    {
+      "id": "rest_resets_round_counters",
+      "initial_data": {
+        "phase": "break",
+        "remaining_ms": 120000,
+        "break_ms": 60000,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [
+          1
+        ],
+        "scores": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          2,
+          0
+        ],
+        "total_counts": [
+          2,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 60000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "ready",
+        "round": 2,
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          2,
+          0
+        ],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "paused_clock_rejected",
+      "initial_data": {
+        "phase": "paused",
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "elapse",
+        "params": {
+          "milliseconds": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "default",
+      "actions": [
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 1
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ]
+      }
+    },
+    {
+      "id": "no_contest",
+      "actions": [
+        {
+          "type": "no_contest",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "round_counter_exceeds_total",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          1,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "two_exits_cannot_continue",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 120000,
+        "break_ms": 0,
+        "round_robin": false,
+        "weights_grams": [
+          60000,
+          60000
+        ],
+        "rounds": [],
+        "scores": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "warnings": [
+          0,
+          0
+        ],
+        "admonitions": [
+          0,
+          0
+        ],
+        "round_warnings": [
+          0,
+          0
+        ],
+        "round_admonitions": [
+          0,
+          0
+        ],
+        "round_counts": [
+          0,
+          0
+        ],
+        "total_counts": [
+          0,
+          0
+        ],
+        "off_platform": [
+          2,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

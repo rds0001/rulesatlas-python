@@ -1,0 +1,1510 @@
+{
+  "profile_id": "S055",
+  "ruleset_id": "builtin.shuffleboard.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "player_a"
+    },
+    {
+      "id": "player_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "choose_first",
+      "actions": [
+        {
+          "type": "choose_first",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "shooting",
+        "first_team": 0,
+        "shots": 0,
+        "pucks": [
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "frame": 1,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "first_puck",
+      "initial_data": {
+        "phase": "shooting",
+        "first_team": 0,
+        "shots": 0,
+        "pucks": [
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "frame": 1,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "shoot",
+          "params": {
+            "pucks": [
+              {
+                "status": "live",
+                "zone": 3,
+                "order": 1
+              },
+              {
+                "status": "unplayed",
+                "zone": null,
+                "order": null
+              },
+              {
+                "status": "unplayed",
+                "zone": null,
+                "order": null
+              },
+              {
+                "status": "unplayed",
+                "zone": null,
+                "order": null
+              },
+              {
+                "status": "unplayed",
+                "zone": null,
+                "order": null
+              },
+              {
+                "status": "unplayed",
+                "zone": null,
+                "order": null
+              },
+              {
+                "status": "unplayed",
+                "zone": null,
+                "order": null
+              },
+              {
+                "status": "unplayed",
+                "zone": null,
+                "order": null
+              }
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "shooting",
+        "first_team": 0,
+        "shots": 1,
+        "pucks": [
+          {
+            "status": "live",
+            "zone": 3,
+            "order": 1
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "frame": 1,
+        "winner": null,
+        "reason": null
+      },
+      "legal_constraints": {
+        "next_puck": 4
+      }
+    },
+    {
+      "id": "opponent_knocks_first_off",
+      "initial_data": {
+        "phase": "shooting",
+        "first_team": 0,
+        "shots": 1,
+        "pucks": [
+          {
+            "status": "live",
+            "zone": 3,
+            "order": 1
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "frame": 1,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "shoot",
+          "params": {
+            "pucks": [
+              {
+                "status": "dead",
+                "zone": null,
+                "order": null
+              },
+              {
+                "status": "unplayed",
+                "zone": null,
+                "order": null
+              },
+              {
+                "status": "unplayed",
+                "zone": null,
+                "order": null
+              },
+              {
+                "status": "unplayed",
+                "zone": null,
+                "order": null
+              },
+              {
+                "status": "live",
+                "zone": 3,
+                "order": 1
+              },
+              {
+                "status": "unplayed",
+                "zone": null,
+                "order": null
+              },
+              {
+                "status": "unplayed",
+                "zone": null,
+                "order": null
+              },
+              {
+                "status": "unplayed",
+                "zone": null,
+                "order": null
+              }
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "shooting",
+        "first_team": 0,
+        "shots": 2,
+        "pucks": [
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "live",
+            "zone": 3,
+            "order": 1
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "frame": 1,
+        "winner": null,
+        "reason": null
+      },
+      "legal_constraints": {
+        "next_puck": 1
+      }
+    },
+    {
+      "id": "dead_puck_cannot_return",
+      "initial_data": {
+        "phase": "shooting",
+        "first_team": 0,
+        "shots": 2,
+        "pucks": [
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "live",
+            "zone": 3,
+            "order": 1
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "frame": 1,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "shoot",
+        "params": {
+          "pucks": [
+            {
+              "status": "live",
+              "zone": 3,
+              "order": 2
+            },
+            {
+              "status": "dead",
+              "zone": null,
+              "order": null
+            },
+            {
+              "status": "unplayed",
+              "zone": null,
+              "order": null
+            },
+            {
+              "status": "unplayed",
+              "zone": null,
+              "order": null
+            },
+            {
+              "status": "live",
+              "zone": 3,
+              "order": 1
+            },
+            {
+              "status": "unplayed",
+              "zone": null,
+              "order": null
+            },
+            {
+              "status": "unplayed",
+              "zone": null,
+              "order": null
+            },
+            {
+              "status": "unplayed",
+              "zone": null,
+              "order": null
+            }
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "wrong_puck_before_its_turn",
+      "initial_data": {
+        "phase": "shooting",
+        "first_team": 0,
+        "shots": 0,
+        "pucks": [
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "frame": 1,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "shoot",
+        "params": {
+          "pucks": [
+            {
+              "status": "dead",
+              "zone": null,
+              "order": null
+            },
+            {
+              "status": "unplayed",
+              "zone": null,
+              "order": null
+            },
+            {
+              "status": "unplayed",
+              "zone": null,
+              "order": null
+            },
+            {
+              "status": "unplayed",
+              "zone": null,
+              "order": null
+            },
+            {
+              "status": "live",
+              "zone": 3,
+              "order": 1
+            },
+            {
+              "status": "unplayed",
+              "zone": null,
+              "order": null
+            },
+            {
+              "status": "unplayed",
+              "zone": null,
+              "order": null
+            },
+            {
+              "status": "unplayed",
+              "zone": null,
+              "order": null
+            }
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "last_shot_opens_review",
+      "initial_data": {
+        "phase": "shooting",
+        "first_team": 0,
+        "shots": 7,
+        "pucks": [
+          {
+            "status": "live",
+            "zone": 4,
+            "order": 1
+          },
+          {
+            "status": "live",
+            "zone": 3,
+            "order": 2
+          },
+          {
+            "status": "live",
+            "zone": 1,
+            "order": 4
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "live",
+            "zone": 2,
+            "order": 3
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "frame": 1,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "shoot",
+          "params": {
+            "pucks": [
+              {
+                "status": "live",
+                "zone": 4,
+                "order": 1
+              },
+              {
+                "status": "live",
+                "zone": 3,
+                "order": 2
+              },
+              {
+                "status": "live",
+                "zone": 1,
+                "order": 4
+              },
+              {
+                "status": "dead",
+                "zone": null,
+                "order": null
+              },
+              {
+                "status": "live",
+                "zone": 2,
+                "order": 3
+              },
+              {
+                "status": "dead",
+                "zone": null,
+                "order": null
+              },
+              {
+                "status": "dead",
+                "zone": null,
+                "order": null
+              },
+              {
+                "status": "dead",
+                "zone": null,
+                "order": null
+              }
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "review",
+        "first_team": 0,
+        "shots": 8,
+        "pucks": [
+          {
+            "status": "live",
+            "zone": 4,
+            "order": 1
+          },
+          {
+            "status": "live",
+            "zone": 3,
+            "order": 2
+          },
+          {
+            "status": "live",
+            "zone": 1,
+            "order": 4
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "live",
+            "zone": 2,
+            "order": 3
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "frame": 1,
+        "winner": null,
+        "reason": null
+      },
+      "legal_constraints": {
+        "provisional_frame_points": [
+          7,
+          0
+        ]
+      }
+    },
+    {
+      "id": "only_pucks_ahead_of_opponent_score",
+      "initial_data": {
+        "phase": "review",
+        "first_team": 0,
+        "shots": 8,
+        "pucks": [
+          {
+            "status": "live",
+            "zone": 4,
+            "order": 1
+          },
+          {
+            "status": "live",
+            "zone": 3,
+            "order": 2
+          },
+          {
+            "status": "live",
+            "zone": 1,
+            "order": 4
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "live",
+            "zone": 2,
+            "order": 3
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "frame": 1,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "confirm_frame",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "shooting",
+        "first_team": 0,
+        "shots": 0,
+        "pucks": [
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          7,
+          0
+        ],
+        "frame": 2,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "leading_distance_tie_scores_zero",
+      "initial_data": {
+        "phase": "review",
+        "first_team": 0,
+        "shots": 8,
+        "pucks": [
+          {
+            "status": "live",
+            "zone": 4,
+            "order": 1
+          },
+          {
+            "status": "live",
+            "zone": 3,
+            "order": 2
+          },
+          {
+            "status": "live",
+            "zone": 1,
+            "order": 4
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "live",
+            "zone": 4,
+            "order": 1
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "frame": 1,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "confirm_frame",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "shooting",
+        "first_team": 0,
+        "shots": 0,
+        "pucks": [
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "frame": 2,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "reach_target_after_full_frame",
+      "initial_data": {
+        "phase": "review",
+        "first_team": 0,
+        "shots": 8,
+        "pucks": [
+          {
+            "status": "live",
+            "zone": 4,
+            "order": 1
+          },
+          {
+            "status": "live",
+            "zone": 3,
+            "order": 2
+          },
+          {
+            "status": "live",
+            "zone": 1,
+            "order": 4
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "live",
+            "zone": 2,
+            "order": 3
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          14,
+          20
+        ],
+        "frame": 1,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "confirm_frame",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "player_a"
+        ],
+        "reason": "target"
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "overshoot_allowed",
+      "initial_data": {
+        "phase": "review",
+        "first_team": 0,
+        "shots": 8,
+        "pucks": [
+          {
+            "status": "live",
+            "zone": 4,
+            "order": 1
+          },
+          {
+            "status": "live",
+            "zone": 3,
+            "order": 2
+          },
+          {
+            "status": "live",
+            "zone": 1,
+            "order": 4
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "live",
+            "zone": 2,
+            "order": 3
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          20,
+          0
+        ],
+        "frame": 1,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "confirm_frame",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "finished",
+        "first_team": 0,
+        "shots": 8,
+        "pucks": [
+          {
+            "status": "live",
+            "zone": 4,
+            "order": 1
+          },
+          {
+            "status": "live",
+            "zone": 3,
+            "order": 2
+          },
+          {
+            "status": "live",
+            "zone": 1,
+            "order": 4
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "live",
+            "zone": 2,
+            "order": 3
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          27,
+          0
+        ],
+        "frame": 1,
+        "winner": 0,
+        "reason": "target"
+      }
+    },
+    {
+      "id": "cannot_confirm_incomplete_frame",
+      "initial_data": {
+        "phase": "shooting",
+        "first_team": 0,
+        "shots": 7,
+        "pucks": [
+          {
+            "status": "live",
+            "zone": 4,
+            "order": 1
+          },
+          {
+            "status": "live",
+            "zone": 3,
+            "order": 2
+          },
+          {
+            "status": "live",
+            "zone": 1,
+            "order": 4
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "live",
+            "zone": 2,
+            "order": 3
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "frame": 1,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "confirm_frame",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "official_correction_before_scoring",
+      "initial_data": {
+        "phase": "review",
+        "first_team": 0,
+        "shots": 8,
+        "pucks": [
+          {
+            "status": "live",
+            "zone": 4,
+            "order": 1
+          },
+          {
+            "status": "live",
+            "zone": 3,
+            "order": 2
+          },
+          {
+            "status": "live",
+            "zone": 1,
+            "order": 4
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "live",
+            "zone": 2,
+            "order": 3
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "frame": 1,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "correct_board",
+          "params": {
+            "pucks": [
+              {
+                "status": "live",
+                "zone": 4,
+                "order": 1
+              },
+              {
+                "status": "live",
+                "zone": 3,
+                "order": 2
+              },
+              {
+                "status": "live",
+                "zone": 1,
+                "order": 4
+              },
+              {
+                "status": "dead",
+                "zone": null,
+                "order": null
+              },
+              {
+                "status": "live",
+                "zone": 4,
+                "order": 1
+              },
+              {
+                "status": "dead",
+                "zone": null,
+                "order": null
+              },
+              {
+                "status": "dead",
+                "zone": null,
+                "order": null
+              },
+              {
+                "status": "dead",
+                "zone": null,
+                "order": null
+              }
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "provisional_frame_points": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "zone_order_conflict_invalid",
+      "initial_data": {
+        "phase": "review",
+        "first_team": 0,
+        "shots": 8,
+        "pucks": [
+          {
+            "status": "live",
+            "zone": 4,
+            "order": 1
+          },
+          {
+            "status": "live",
+            "zone": 3,
+            "order": 2
+          },
+          {
+            "status": "live",
+            "zone": 1,
+            "order": 4
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "live",
+            "zone": 2,
+            "order": 1
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "dead",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "frame": 1,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "concession",
+      "initial_data": {
+        "phase": "shooting",
+        "first_team": 0,
+        "shots": 1,
+        "pucks": [
+          {
+            "status": "live",
+            "zone": 3,
+            "order": 1
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          },
+          {
+            "status": "unplayed",
+            "zone": null,
+            "order": null
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "frame": 1,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "concede",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "player_b"
+        ],
+        "reason": "concede"
+      }
+    }
+  ]
+}

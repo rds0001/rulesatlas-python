@@ -1,0 +1,566 @@
+{
+  "profile_id": "S059",
+  "ruleset_id": "builtin.archery.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "winning_end_closes_match",
+      "initial_data": {
+        "phase": "set",
+        "ends": [
+          [
+            30,
+            29
+          ],
+          [
+            28,
+            27
+          ]
+        ],
+        "arrows": [
+          [
+            10,
+            10,
+            10
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "winner": null,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "arrow",
+          "params": {
+            "player": 1,
+            "score": 9
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "cannot_record_fourth_arrow",
+      "initial_data": {
+        "phase": "set",
+        "ends": [
+          [
+            30,
+            29
+          ],
+          [
+            28,
+            27
+          ]
+        ],
+        "arrows": [
+          [
+            10,
+            10,
+            10
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "winner": null,
+        "decision": null
+      },
+      "action": {
+        "type": "arrow",
+        "params": {
+          "player": 0,
+          "score": 10
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "tied_end_one_point_each",
+      "actions": [
+        {
+          "type": "arrow",
+          "params": {
+            "player": 0,
+            "score": 9
+          }
+        },
+        {
+          "type": "arrow",
+          "params": {
+            "player": 0,
+            "score": 9
+          }
+        },
+        {
+          "type": "arrow",
+          "params": {
+            "player": 0,
+            "score": 9
+          }
+        },
+        {
+          "type": "arrow",
+          "params": {
+            "player": 1,
+            "score": 9
+          }
+        },
+        {
+          "type": "arrow",
+          "params": {
+            "player": 1,
+            "score": 9
+          }
+        },
+        {
+          "type": "arrow",
+          "params": {
+            "player": 1,
+            "score": 9
+          }
+        }
+      ],
+      "data": {
+        "phase": "set",
+        "ends": [
+          [
+            27,
+            27
+          ]
+        ],
+        "arrows": [
+          [],
+          []
+        ],
+        "winner": null,
+        "decision": null
+      }
+    },
+    {
+      "id": "shoot_off_higher_arrow",
+      "initial_data": {
+        "phase": "shoot_off",
+        "ends": [
+          [
+            30,
+            30
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            26,
+            26
+          ]
+        ],
+        "arrows": [
+          [],
+          []
+        ],
+        "winner": null,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "arrow",
+          "params": {
+            "player": 1,
+            "score": 9
+          }
+        },
+        {
+          "type": "arrow",
+          "params": {
+            "player": 0,
+            "score": 10
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      }
+    },
+    {
+      "id": "equal_scores_need_judge",
+      "initial_data": {
+        "phase": "shoot_off",
+        "ends": [
+          [
+            30,
+            30
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            26,
+            26
+          ]
+        ],
+        "arrows": [
+          [],
+          []
+        ],
+        "winner": null,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "arrow",
+          "params": {
+            "player": 0,
+            "score": 10
+          }
+        },
+        {
+          "type": "arrow",
+          "params": {
+            "player": 1,
+            "score": 10
+          }
+        }
+      ],
+      "data": {
+        "phase": "judge",
+        "ends": [
+          [
+            30,
+            30
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            26,
+            26
+          ]
+        ],
+        "arrows": [
+          [
+            10
+          ],
+          [
+            10
+          ]
+        ],
+        "winner": null,
+        "decision": null
+      }
+    },
+    {
+      "id": "equidistant_repeats",
+      "initial_data": {
+        "phase": "judge",
+        "ends": [
+          [
+            30,
+            30
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            26,
+            26
+          ]
+        ],
+        "arrows": [
+          [
+            10
+          ],
+          [
+            10
+          ]
+        ],
+        "winner": null,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "closest",
+          "params": {
+            "winner": null
+          }
+        }
+      ],
+      "data": {
+        "phase": "shoot_off",
+        "ends": [
+          [
+            30,
+            30
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            26,
+            26
+          ]
+        ],
+        "arrows": [
+          [],
+          []
+        ],
+        "winner": null,
+        "decision": null
+      }
+    },
+    {
+      "id": "closest_arrow_wins",
+      "initial_data": {
+        "phase": "judge",
+        "ends": [
+          [
+            30,
+            30
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            26,
+            26
+          ]
+        ],
+        "arrows": [
+          [
+            10
+          ],
+          [
+            10
+          ]
+        ],
+        "winner": null,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "closest",
+          "params": {
+            "winner": 1
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "bob"
+        ]
+      }
+    },
+    {
+      "id": "no_arrow_while_judging",
+      "initial_data": {
+        "phase": "judge",
+        "ends": [
+          [
+            30,
+            30
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            26,
+            26
+          ]
+        ],
+        "arrows": [
+          [
+            10
+          ],
+          [
+            10
+          ]
+        ],
+        "winner": null,
+        "decision": null
+      },
+      "action": {
+        "type": "arrow",
+        "params": {
+          "player": 0,
+          "score": 10
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "walkover",
+      "actions": [
+        {
+          "type": "end_match",
+          "params": {
+            "player": 0,
+            "kind": "walkover"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "forfeit",
+        "winners": [
+          "bob"
+        ]
+      }
+    },
+    {
+      "id": "late_walkover_invalid",
+      "initial_data": {
+        "phase": "set",
+        "ends": [
+          [
+            30,
+            29
+          ],
+          [
+            28,
+            27
+          ]
+        ],
+        "arrows": [
+          [
+            10,
+            10,
+            10
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "winner": null,
+        "decision": null
+      },
+      "action": {
+        "type": "end_match",
+        "params": {
+          "player": 1,
+          "kind": "walkover"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "continued_after_win_invalid",
+      "initial_data": {
+        "phase": "set",
+        "ends": [
+          [
+            30,
+            0
+          ],
+          [
+            30,
+            0
+          ],
+          [
+            30,
+            0
+          ],
+          [
+            30,
+            0
+          ]
+        ],
+        "arrows": [
+          [],
+          []
+        ],
+        "winner": null,
+        "decision": null
+      },
+      "valid": false
+    }
+  ]
+}

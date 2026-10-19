@@ -1,0 +1,1052 @@
+{
+  "profile_id": "G072",
+  "ruleset_id": "builtin.blackjack.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "player"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "natural_pays_three_to_two",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100,
+            "deck": [
+              12,
+              4,
+              8,
+              9,
+              0,
+              1,
+              2,
+              3,
+              5,
+              6,
+              7,
+              10,
+              11,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "player",
+            "place": 1,
+            "balance_half_chips": 2150,
+            "net_half_chips": 150
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "dealer_blackjack_peek",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100,
+            "deck": [
+              6,
+              8,
+              7,
+              12,
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              9,
+              10,
+              11,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "player",
+            "place": 1,
+            "balance_half_chips": 1900,
+            "net_half_chips": -100
+          }
+        ]
+      }
+    },
+    {
+      "id": "insurance_covers_lost_main_bet",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100,
+            "deck": [
+              6,
+              12,
+              7,
+              8,
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              9,
+              10,
+              11,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ]
+          }
+        },
+        {
+          "type": "insurance",
+          "params": {
+            "take": true
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "player",
+            "place": 1,
+            "balance_half_chips": 2000,
+            "net_half_chips": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "insurance_loss_dealer_stands_soft_seventeen",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100,
+            "deck": [
+              6,
+              12,
+              7,
+              4,
+              0,
+              1,
+              2,
+              3,
+              5,
+              8,
+              9,
+              10,
+              11,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ]
+          }
+        },
+        {
+          "type": "insurance",
+          "params": {
+            "take": true
+          }
+        },
+        {
+          "type": "stand",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "player",
+            "place": 1,
+            "balance_half_chips": 1950,
+            "net_half_chips": -50
+          }
+        ]
+      }
+    },
+    {
+      "id": "ace_demotes_after_hit",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100,
+            "deck": [
+              12,
+              8,
+              4,
+              5,
+              9,
+              0,
+              1,
+              2,
+              3,
+              6,
+              7,
+              10,
+              11,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ]
+          }
+        },
+        {
+          "type": "hit",
+          "params": {}
+        },
+        {
+          "type": "stand",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "player",
+            "place": 1,
+            "balance_half_chips": 2000,
+            "net_half_chips": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "double_exactly_one_card",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100,
+            "deck": [
+              3,
+              8,
+              4,
+              5,
+              9,
+              0,
+              1,
+              2,
+              6,
+              7,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ]
+          }
+        },
+        {
+          "type": "double",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "player",
+            "place": 1,
+            "balance_half_chips": 2200,
+            "net_half_chips": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "split_aces_twenty_one_not_natural",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100,
+            "deck": [
+              12,
+              8,
+              25,
+              5,
+              9,
+              10,
+              0,
+              1,
+              2,
+              3,
+              4,
+              6,
+              7,
+              11,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ]
+          }
+        },
+        {
+          "type": "split",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "player",
+            "place": 1,
+            "balance_half_chips": 2200,
+            "net_half_chips": 200
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "later_split_hand_waits_for_its_card",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100,
+            "deck": [
+              6,
+              8,
+              19,
+              5,
+              0,
+              7,
+              9,
+              1,
+              2,
+              3,
+              4,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ]
+          }
+        },
+        {
+          "type": "split",
+          "params": {}
+        },
+        {
+          "type": "hit",
+          "params": {}
+        },
+        {
+          "type": "stand",
+          "params": {}
+        },
+        {
+          "type": "stand",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "player",
+            "place": 1,
+            "balance_half_chips": 2200,
+            "net_half_chips": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "late_surrender_half_loss",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100,
+            "deck": [
+              6,
+              8,
+              7,
+              5,
+              0,
+              1,
+              2,
+              3,
+              4,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ]
+          }
+        },
+        {
+          "type": "surrender",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "player",
+            "place": 1,
+            "balance_half_chips": 1950,
+            "net_half_chips": -50
+          }
+        ]
+      }
+    },
+    {
+      "id": "cannot_surrender_after_hit",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100,
+            "deck": [
+              0,
+              8,
+              1,
+              5,
+              2,
+              3,
+              4,
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ]
+          }
+        },
+        {
+          "type": "hit",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "surrender",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "split_requires_same_rank",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 100,
+            "deck": [
+              8,
+              4,
+              9,
+              5,
+              0,
+              1,
+              2,
+              3,
+              6,
+              7,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ]
+          }
+        }
+      ],
+      "action": {
+        "type": "split",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "double_requires_bankroll",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "stake": 1000,
+            "deck": [
+              6,
+              8,
+              19,
+              5,
+              0,
+              1,
+              2,
+              3,
+              4,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ]
+          }
+        },
+        {
+          "type": "split",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "double",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "odd_half_chip_stake_rejected",
+      "action": {
+        "type": "bet",
+        "params": {
+          "stake": 101,
+          "deck": [
+            0,
+            8,
+            1,
+            5,
+            2,
+            3,
+            4,
+            6,
+            7,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "initial_bankroll_cannot_be_invented",
+      "initial_data": {
+        "phase": "bet",
+        "balance": 2001,
+        "base_wager": 0,
+        "insurance": 0,
+        "insurance_return": 0,
+        "returns": [],
+        "hands": [],
+        "dealer": [],
+        "deck": [],
+        "current": 0
+      },
+      "valid": false
+    }
+  ]
+}

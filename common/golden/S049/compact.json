@@ -1,0 +1,391 @@
+{
+  "profile_id": "S049",
+  "ruleset_id": "builtin.carom.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "three_cushion_carom_scores_and_continues",
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "contacts": [
+              "red",
+              "opponent"
+            ],
+            "cushions_before_second": 3,
+            "foul": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "turn": 0,
+        "points": [
+          1,
+          0
+        ],
+        "innings": [
+          1,
+          0
+        ],
+        "shots": 1,
+        "equalizing": false,
+        "opening_required": false,
+        "decision": null
+      }
+    },
+    {
+      "id": "two_cushions_do_not_score",
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "contacts": [
+              "red",
+              "opponent"
+            ],
+            "cushions_before_second": 2,
+            "foul": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "turn": 1,
+        "points": [
+          0,
+          0
+        ],
+        "innings": [
+          1,
+          1
+        ],
+        "shots": 1,
+        "equalizing": false,
+        "opening_required": false,
+        "decision": null
+      }
+    },
+    {
+      "id": "opening_requires_red_first",
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "contacts": [
+              "opponent",
+              "red"
+            ],
+            "cushions_before_second": 3,
+            "foul": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "turn": 1,
+        "points": [
+          0,
+          0
+        ],
+        "innings": [
+          1,
+          1
+        ],
+        "shots": 1,
+        "equalizing": false,
+        "opening_required": false,
+        "decision": null
+      }
+    },
+    {
+      "id": "later_shot_can_contact_opponent_first",
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "contacts": [
+              "red",
+              "opponent"
+            ],
+            "cushions_before_second": 3,
+            "foul": false
+          }
+        },
+        {
+          "type": "shot",
+          "params": {
+            "contacts": [
+              "opponent",
+              "red"
+            ],
+            "cushions_before_second": 3,
+            "foul": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "turn": 0,
+        "points": [
+          2,
+          0
+        ],
+        "innings": [
+          1,
+          0
+        ],
+        "shots": 2,
+        "equalizing": false,
+        "opening_required": false,
+        "decision": null
+      }
+    },
+    {
+      "id": "foul_cancels_otherwise_valid_carom",
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "contacts": [
+              "red",
+              "opponent"
+            ],
+            "cushions_before_second": 3,
+            "foul": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "turn": 1,
+        "points": [
+          0,
+          0
+        ],
+        "innings": [
+          1,
+          1
+        ],
+        "shots": 1,
+        "equalizing": false,
+        "opening_required": false,
+        "decision": null
+      }
+    },
+    {
+      "id": "first_player_target_opens_equalizing_inning",
+      "initial_data": {
+        "phase": "playing",
+        "turn": 0,
+        "points": [
+          39,
+          39
+        ],
+        "innings": [
+          10,
+          9
+        ],
+        "shots": 100,
+        "equalizing": false,
+        "opening_required": false,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "contacts": [
+              "red",
+              "opponent"
+            ],
+            "cushions_before_second": 3,
+            "foul": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "turn": 1,
+        "points": [
+          40,
+          39
+        ],
+        "innings": [
+          10,
+          10
+        ],
+        "shots": 101,
+        "equalizing": true,
+        "opening_required": true,
+        "decision": null
+      },
+      "legal_constraints": {
+        "equalizing": true,
+        "opening_required": true
+      }
+    },
+    {
+      "id": "equalizing_point_produces_draw",
+      "initial_data": {
+        "phase": "playing",
+        "turn": 1,
+        "points": [
+          40,
+          39
+        ],
+        "innings": [
+          10,
+          10
+        ],
+        "shots": 101,
+        "equalizing": true,
+        "opening_required": true,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "contacts": [
+              "red",
+              "opponent"
+            ],
+            "cushions_before_second": 3,
+            "foul": false
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "draw",
+        "winners": [
+          "alice",
+          "bob"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "equalizing_miss_loses",
+      "initial_data": {
+        "phase": "playing",
+        "turn": 1,
+        "points": [
+          40,
+          39
+        ],
+        "innings": [
+          10,
+          10
+        ],
+        "shots": 101,
+        "equalizing": true,
+        "opening_required": true,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "contacts": [],
+            "cushions_before_second": 0,
+            "foul": false
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      }
+    },
+    {
+      "id": "second_player_target_finishes_without_extra_inning",
+      "initial_data": {
+        "phase": "playing",
+        "turn": 1,
+        "points": [
+          37,
+          39
+        ],
+        "innings": [
+          10,
+          10
+        ],
+        "shots": 100,
+        "equalizing": false,
+        "opening_required": false,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "contacts": [
+              "red",
+              "opponent"
+            ],
+            "cushions_before_second": 3,
+            "foul": false
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "bob"
+        ]
+      }
+    },
+    {
+      "id": "duplicate_object_contact_rejected",
+      "action": {
+        "type": "shot",
+        "params": {
+          "contacts": [
+            "red",
+            "red"
+          ],
+          "cushions_before_second": 3,
+          "foul": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "premature_terminal_without_equalizing_invalid",
+      "initial_data": {
+        "phase": "finished",
+        "turn": 0,
+        "points": [
+          40,
+          39
+        ],
+        "innings": [
+          10,
+          9
+        ],
+        "shots": 100,
+        "equalizing": false,
+        "opening_required": false,
+        "decision": null
+      },
+      "valid": false
+    }
+  ]
+}

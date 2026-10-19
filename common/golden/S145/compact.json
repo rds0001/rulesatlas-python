@@ -1,0 +1,3842 @@
+{
+  "profile_id": "S145",
+  "ruleset_id": "builtin.rally.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "crew_0"
+    },
+    {
+      "id": "crew_1"
+    },
+    {
+      "id": "crew_2"
+    },
+    {
+      "id": "crew_3"
+    },
+    {
+      "id": "crew_4"
+    },
+    {
+      "id": "crew_5"
+    },
+    {
+      "id": "crew_6"
+    },
+    {
+      "id": "crew_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start_order",
+      "actions": [
+        {
+          "type": "set_start_order",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "run",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "control_required_before_start",
+      "initial_data": {
+        "phase": "run",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "action": {
+        "type": "start_next",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "on_time_checkin",
+      "initial_data": {
+        "phase": "run",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "actions": [
+        {
+          "type": "check_in",
+          "params": {
+            "delta_minutes": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "run",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "start_after_checkin",
+      "initial_data": {
+        "phase": "run",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "actions": [
+        {
+          "type": "start_next",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "active",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "duplicate_control_rejected",
+      "initial_data": {
+        "phase": "run",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "action": {
+        "type": "check_in",
+        "params": {
+          "delta_minutes": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "early_minute_costs_sixty_seconds",
+      "initial_data": {
+        "phase": "run",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "actions": [
+        {
+          "type": "check_in",
+          "params": {
+            "delta_minutes": -2
+          }
+        }
+      ],
+      "legal_constraints": {
+        "road_penalty_seconds": [
+          120,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "late_minute_costs_ten_seconds",
+      "initial_data": {
+        "phase": "run",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "actions": [
+        {
+          "type": "check_in",
+          "params": {
+            "delta_minutes": 2
+          }
+        }
+      ],
+      "legal_constraints": {
+        "road_penalty_seconds": [
+          20,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "single_lateness_limit_inclusive",
+      "initial_data": {
+        "phase": "run",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "actions": [
+        {
+          "type": "check_in",
+          "params": {
+            "delta_minutes": 15
+          }
+        },
+        {
+          "type": "start_next",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "single_lateness_excludes",
+      "initial_data": {
+        "phase": "run",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "actions": [
+        {
+          "type": "check_in",
+          "params": {
+            "delta_minutes": 16
+          }
+        }
+      ],
+      "data": {
+        "phase": "run",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "dq",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            16,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "cumulative_limit_excludes",
+      "initial_data": {
+        "phase": "run",
+        "heat": 2,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60100000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60100000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ],
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "finished",
+              "time_us": 60100000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            15,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            15,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            null,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "actions": [
+        {
+          "type": "check_in",
+          "params": {
+            "delta_minutes": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "review"
+      }
+    },
+    {
+      "id": "all_stages_classified",
+      "initial_data": {
+        "phase": "review",
+        "heat": 2,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60100000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60100000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60100000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_heat",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "crew_0"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "road_penalty_changes_winner",
+      "initial_data": {
+        "phase": "review",
+        "heat": 2,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60100000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60100000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60100000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "actions": [
+        {
+          "type": "correct_check_in",
+          "params": {
+            "participant": 0,
+            "delta_minutes": 1
+          }
+        },
+        {
+          "type": "confirm_heat",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "crew_1"
+        ]
+      }
+    },
+    {
+      "id": "other_penalty_changes_winner",
+      "initial_data": {
+        "phase": "review",
+        "heat": 2,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60100000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60100000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60100000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "actions": [
+        {
+          "type": "assess_penalty",
+          "params": {
+            "participant": 0,
+            "seconds": 1
+          }
+        },
+        {
+          "type": "confirm_heat",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "crew_1"
+        ]
+      }
+    },
+    {
+      "id": "penalty_correction",
+      "initial_data": {
+        "phase": "review",
+        "heat": 2,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60100000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60100000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60100000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "actions": [
+        {
+          "type": "assess_penalty",
+          "params": {
+            "participant": 0,
+            "seconds": 1
+          }
+        },
+        {
+          "type": "correct_penalty",
+          "params": {
+            "participant": 0,
+            "seconds": 0
+          }
+        },
+        {
+          "type": "confirm_heat",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "crew_0"
+        ]
+      }
+    },
+    {
+      "id": "first_stage_breaks_total_tie",
+      "initial_data": {
+        "phase": "review",
+        "heat": 2,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 59000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 61000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_heat",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "crew_1"
+        ]
+      }
+    },
+    {
+      "id": "complete_tie_shared",
+      "initial_data": {
+        "phase": "review",
+        "heat": 2,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_heat",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "crew_0",
+          "crew_1"
+        ]
+      }
+    },
+    {
+      "id": "missing_control_invalid",
+      "initial_data": {
+        "phase": "review",
+        "heat": 2,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60100000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60100000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ],
+          [
+            {
+              "status": "finished",
+              "time_us": 60000000
+            },
+            {
+              "status": "finished",
+              "time_us": 60100000
+            },
+            {
+              "status": "finished",
+              "time_us": 60200000
+            },
+            {
+              "status": "finished",
+              "time_us": 60300000
+            },
+            {
+              "status": "finished",
+              "time_us": 60400000
+            },
+            {
+              "status": "finished",
+              "time_us": 60500000
+            },
+            {
+              "status": "finished",
+              "time_us": 60600000
+            },
+            {
+              "status": "finished",
+              "time_us": 60700000
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            null,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "all_dns_no_contest",
+      "initial_data": {
+        "phase": "review",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "dns",
+              "time_us": null
+            },
+            {
+              "status": "dns",
+              "time_us": null
+            },
+            {
+              "status": "dns",
+              "time_us": null
+            },
+            {
+              "status": "dns",
+              "time_us": null
+            },
+            {
+              "status": "dns",
+              "time_us": null
+            },
+            {
+              "status": "dns",
+              "time_us": null
+            },
+            {
+              "status": "dns",
+              "time_us": null
+            },
+            {
+              "status": "dns",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_heat",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "early_confirmation",
+      "initial_data": {
+        "phase": "active",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ],
+          [
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            },
+            {
+              "status": "not_eligible",
+              "time_us": null
+            }
+          ]
+        ],
+        "checkins": [
+          [
+            0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "other_penalty_seconds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "action": {
+        "type": "confirm_heat",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

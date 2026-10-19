@@ -1,0 +1,6975 @@
+{
+  "profile_id": "S082",
+  "ruleset_id": "builtin.figure_skating.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "skater_0"
+    },
+    {
+      "id": "skater_1"
+    },
+    {
+      "id": "skater_2"
+    },
+    {
+      "id": "skater_3"
+    },
+    {
+      "id": "skater_4"
+    },
+    {
+      "id": "skater_5"
+    },
+    {
+      "id": "skater_6"
+    },
+    {
+      "id": "skater_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "official_order",
+      "actions": [
+        {
+          "type": "set_start_order",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "complete_then_score",
+      "initial_data": {
+        "phase": "routine",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "complete_routine",
+          "params": {}
+        },
+        {
+          "type": "record_marks",
+          "params": {
+            "elements": [
+              {
+                "slot": "axel",
+                "base_units": 330,
+                "bonus": false,
+                "goe_units": [
+                  -99,
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  99
+                ]
+              },
+              {
+                "slot": "solo_jump",
+                "base_units": 875,
+                "bonus": true,
+                "goe_units": [
+                  -99,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  99
+                ]
+              },
+              {
+                "slot": "flying_spin",
+                "base_units": 300,
+                "bonus": false,
+                "goe_units": [
+                  -30,
+                  -20,
+                  -10,
+                  -5,
+                  0,
+                  10,
+                  30
+                ]
+              }
+            ],
+            "components": [
+              [
+                4,
+                20,
+                24,
+                28,
+                32,
+                36,
+                40
+              ],
+              [
+                4,
+                20,
+                24,
+                28,
+                32,
+                36,
+                40
+              ],
+              [
+                4,
+                20,
+                24,
+                28,
+                32,
+                36,
+                40
+              ],
+              [
+                4,
+                20,
+                24,
+                28,
+                32,
+                36,
+                40
+              ],
+              [
+                4,
+                20,
+                24,
+                28,
+                32,
+                36,
+                40
+              ]
+            ],
+            "deductions_units": 100
+          }
+        }
+      ],
+      "legal_constraints": {
+        "current_participant": 1
+      }
+    },
+    {
+      "id": "score_requires_completion",
+      "initial_data": {
+        "phase": "routine",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "record_marks",
+        "params": {
+          "elements": [
+            {
+              "slot": "axel",
+              "base_units": 330,
+              "bonus": false,
+              "goe_units": [
+                -99,
+                0,
+                1,
+                2,
+                3,
+                4,
+                99
+              ]
+            },
+            {
+              "slot": "solo_jump",
+              "base_units": 875,
+              "bonus": true,
+              "goe_units": [
+                -99,
+                0,
+                0,
+                0,
+                0,
+                0,
+                99
+              ]
+            },
+            {
+              "slot": "flying_spin",
+              "base_units": 300,
+              "bonus": false,
+              "goe_units": [
+                -30,
+                -20,
+                -10,
+                -5,
+                0,
+                10,
+                30
+              ]
+            }
+          ],
+          "components": [
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ]
+          ],
+          "deductions_units": 100
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "trim_goe_bonus_rounding_and_components",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 100
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 200
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 300
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 400
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 500
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 600
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 700
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 800
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "skater_0"
+        ],
+        "placements": [
+          {
+            "player_id": "skater_0",
+            "place": 1,
+            "score_units": 4990,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skater_1",
+            "place": 2,
+            "score_units": 4890,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skater_2",
+            "place": 3,
+            "score_units": 4790,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skater_3",
+            "place": 4,
+            "score_units": 4690,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skater_4",
+            "place": 5,
+            "score_units": 4590,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skater_5",
+            "place": 6,
+            "score_units": 4490,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skater_6",
+            "place": 7,
+            "score_units": 4390,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skater_7",
+            "place": 8,
+            "score_units": 4290,
+            "score_unit_denominator": 100
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "technical_score_breaks_total_tie",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 100
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 430,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 200
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 300
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 400
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 500
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 600
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 700
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 800
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "skater_1"
+        ]
+      }
+    },
+    {
+      "id": "exact_tie_shared",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 100
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 100
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 300
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 400
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 500
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 600
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 700
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 800
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "skater_0",
+          "skater_1"
+        ]
+      }
+    },
+    {
+      "id": "zero_base_requires_zero_goe",
+      "initial_data": {
+        "phase": "judging",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "awaiting_marks",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "record_marks",
+        "params": {
+          "elements": [
+            {
+              "slot": "axel",
+              "base_units": 0,
+              "bonus": false,
+              "goe_units": [
+                -99,
+                0,
+                1,
+                2,
+                3,
+                4,
+                99
+              ]
+            },
+            {
+              "slot": "solo_jump",
+              "base_units": 875,
+              "bonus": true,
+              "goe_units": [
+                -99,
+                0,
+                0,
+                0,
+                0,
+                0,
+                99
+              ]
+            },
+            {
+              "slot": "flying_spin",
+              "base_units": 300,
+              "bonus": false,
+              "goe_units": [
+                -30,
+                -20,
+                -10,
+                -5,
+                0,
+                10,
+                30
+              ]
+            }
+          ],
+          "components": [
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ]
+          ],
+          "deductions_units": 100
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "no_earlier_jump_bonus",
+      "initial_data": {
+        "phase": "judging",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "awaiting_marks",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "record_marks",
+        "params": {
+          "elements": [
+            {
+              "slot": "axel",
+              "base_units": 330,
+              "bonus": true,
+              "goe_units": [
+                -99,
+                0,
+                1,
+                2,
+                3,
+                4,
+                99
+              ]
+            },
+            {
+              "slot": "solo_jump",
+              "base_units": 875,
+              "bonus": true,
+              "goe_units": [
+                -99,
+                0,
+                0,
+                0,
+                0,
+                0,
+                99
+              ]
+            },
+            {
+              "slot": "flying_spin",
+              "base_units": 300,
+              "bonus": false,
+              "goe_units": [
+                -30,
+                -20,
+                -10,
+                -5,
+                0,
+                10,
+                30
+              ]
+            }
+          ],
+          "components": [
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ]
+          ],
+          "deductions_units": 100
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "no_spin_bonus",
+      "initial_data": {
+        "phase": "judging",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "awaiting_marks",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "record_marks",
+        "params": {
+          "elements": [
+            {
+              "slot": "axel",
+              "base_units": 330,
+              "bonus": false,
+              "goe_units": [
+                -99,
+                0,
+                1,
+                2,
+                3,
+                4,
+                99
+              ]
+            },
+            {
+              "slot": "solo_jump",
+              "base_units": 875,
+              "bonus": true,
+              "goe_units": [
+                -99,
+                0,
+                0,
+                0,
+                0,
+                0,
+                99
+              ]
+            },
+            {
+              "slot": "flying_spin",
+              "base_units": 300,
+              "bonus": true,
+              "goe_units": [
+                -30,
+                -20,
+                -10,
+                -5,
+                0,
+                10,
+                30
+              ]
+            }
+          ],
+          "components": [
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ]
+          ],
+          "deductions_units": 100
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "no_duplicate_element_slot",
+      "initial_data": {
+        "phase": "judging",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "awaiting_marks",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "record_marks",
+        "params": {
+          "elements": [
+            {
+              "slot": "axel",
+              "base_units": 330,
+              "bonus": false,
+              "goe_units": [
+                -99,
+                0,
+                1,
+                2,
+                3,
+                4,
+                99
+              ]
+            },
+            {
+              "slot": "solo_jump",
+              "base_units": 875,
+              "bonus": true,
+              "goe_units": [
+                -99,
+                0,
+                0,
+                0,
+                0,
+                0,
+                99
+              ]
+            },
+            {
+              "slot": "flying_spin",
+              "base_units": 300,
+              "bonus": false,
+              "goe_units": [
+                -30,
+                -20,
+                -10,
+                -5,
+                0,
+                10,
+                30
+              ]
+            },
+            {
+              "slot": "axel",
+              "base_units": 330,
+              "bonus": false,
+              "goe_units": [
+                -99,
+                0,
+                1,
+                2,
+                3,
+                4,
+                99
+              ]
+            }
+          ],
+          "components": [
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ],
+            [
+              4,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40
+            ]
+          ],
+          "deductions_units": 100
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "component_cap",
+      "initial_data": {
+        "phase": "judging",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "awaiting_marks",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "record_marks",
+        "params": {
+          "elements": [
+            {
+              "slot": "axel",
+              "base_units": 330,
+              "bonus": false,
+              "goe_units": [
+                -99,
+                0,
+                1,
+                2,
+                3,
+                4,
+                99
+              ]
+            },
+            {
+              "slot": "solo_jump",
+              "base_units": 875,
+              "bonus": true,
+              "goe_units": [
+                -99,
+                0,
+                0,
+                0,
+                0,
+                0,
+                99
+              ]
+            },
+            {
+              "slot": "flying_spin",
+              "base_units": 300,
+              "bonus": false,
+              "goe_units": [
+                -30,
+                -20,
+                -10,
+                -5,
+                0,
+                10,
+                30
+              ]
+            }
+          ],
+          "components": [
+            [
+              41,
+              41,
+              41,
+              41,
+              41,
+              41,
+              41
+            ],
+            [
+              41,
+              41,
+              41,
+              41,
+              41,
+              41,
+              41
+            ],
+            [
+              41,
+              41,
+              41,
+              41,
+              41,
+              41,
+              41
+            ],
+            [
+              41,
+              41,
+              41,
+              41,
+              41,
+              41,
+              41
+            ],
+            [
+              41,
+              41,
+              41,
+              41,
+              41,
+              41,
+              41
+            ]
+          ],
+          "deductions_units": 100
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "seven_judges_required",
+      "initial_data": {
+        "phase": "judging",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "awaiting_marks",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "record_marks",
+        "params": {
+          "elements": [
+            {
+              "slot": "axel",
+              "base_units": 330,
+              "bonus": false,
+              "goe_units": [
+                -99,
+                0,
+                1,
+                2,
+                3,
+                4,
+                99
+              ]
+            },
+            {
+              "slot": "solo_jump",
+              "base_units": 875,
+              "bonus": true,
+              "goe_units": [
+                -99,
+                0,
+                0,
+                0,
+                0,
+                0,
+                99
+              ]
+            },
+            {
+              "slot": "flying_spin",
+              "base_units": 300,
+              "bonus": false,
+              "goe_units": [
+                -30,
+                -20,
+                -10,
+                -5,
+                0,
+                10,
+                30
+              ]
+            }
+          ],
+          "components": [
+            [
+              20,
+              20,
+              20,
+              20,
+              20,
+              20
+            ],
+            [
+              20,
+              20,
+              20,
+              20,
+              20,
+              20
+            ],
+            [
+              20,
+              20,
+              20,
+              20,
+              20,
+              20
+            ],
+            [
+              20,
+              20,
+              20,
+              20,
+              20,
+              20
+            ],
+            [
+              20,
+              20,
+              20,
+              20,
+              20,
+              20
+            ]
+          ],
+          "deductions_units": 100
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "negative_segment_totals_preserved",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [],
+              "components": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "deductions_units": 100
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [],
+              "components": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "deductions_units": 200
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [],
+              "components": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "deductions_units": 300
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [],
+              "components": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "deductions_units": 400
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [],
+              "components": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "deductions_units": 500
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [],
+              "components": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "deductions_units": 600
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [],
+              "components": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "deductions_units": 700
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [],
+              "components": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "deductions_units": 800
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "skater_0"
+        ],
+        "placements": [
+          {
+            "player_id": "skater_0",
+            "place": 1,
+            "score_units": -100,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skater_1",
+            "place": 2,
+            "score_units": -200,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skater_2",
+            "place": 3,
+            "score_units": -300,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skater_3",
+            "place": 4,
+            "score_units": -400,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skater_4",
+            "place": 5,
+            "score_units": -500,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skater_5",
+            "place": 6,
+            "score_units": -600,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skater_6",
+            "place": 7,
+            "score_units": -700,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skater_7",
+            "place": 8,
+            "score_units": -800,
+            "score_unit_denominator": 100
+          }
+        ]
+      }
+    },
+    {
+      "id": "review_correction",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 100
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 200
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 300
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 400
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 500
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 600
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 700
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 800
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "correct_marks",
+          "params": {
+            "participant": 0,
+            "elements": [
+              {
+                "slot": "axel",
+                "base_units": 330,
+                "bonus": false,
+                "goe_units": [
+                  -99,
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  99
+                ]
+              },
+              {
+                "slot": "solo_jump",
+                "base_units": 875,
+                "bonus": true,
+                "goe_units": [
+                  -99,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  99
+                ]
+              },
+              {
+                "slot": "flying_spin",
+                "base_units": 300,
+                "bonus": false,
+                "goe_units": [
+                  -30,
+                  -20,
+                  -10,
+                  -5,
+                  0,
+                  10,
+                  30
+                ]
+              }
+            ],
+            "components": [
+              [
+                4,
+                20,
+                24,
+                28,
+                32,
+                36,
+                40
+              ],
+              [
+                4,
+                20,
+                24,
+                28,
+                32,
+                36,
+                40
+              ],
+              [
+                4,
+                20,
+                24,
+                28,
+                32,
+                36,
+                40
+              ],
+              [
+                4,
+                20,
+                24,
+                28,
+                32,
+                36,
+                40
+              ],
+              [
+                4,
+                20,
+                24,
+                28,
+                32,
+                36,
+                40
+              ]
+            ],
+            "deductions_units": 1000
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "skater_1"
+        ]
+      }
+    },
+    {
+      "id": "disqualification",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 100
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 200
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 300
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 400
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 500
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 600
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 700
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 800
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "participant": 0
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "skater_1"
+        ]
+      }
+    },
+    {
+      "id": "restart_before_marks",
+      "initial_data": {
+        "phase": "routine",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "authorized_restart",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "abandonment",
+      "initial_data": {
+        "phase": "routine",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "abandon_routine",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "current_participant": 1
+      }
+    },
+    {
+      "id": "missing_sheet_invalid",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": null
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 200
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 300
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 400
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 500
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 600
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 700
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "elements": [
+                {
+                  "slot": "axel",
+                  "base_units": 330,
+                  "bonus": false,
+                  "goe_units": [
+                    -99,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    99
+                  ]
+                },
+                {
+                  "slot": "solo_jump",
+                  "base_units": 875,
+                  "bonus": true,
+                  "goe_units": [
+                    -99,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    99
+                  ]
+                },
+                {
+                  "slot": "flying_spin",
+                  "base_units": 300,
+                  "bonus": false,
+                  "goe_units": [
+                    -30,
+                    -20,
+                    -10,
+                    -5,
+                    0,
+                    10,
+                    30
+                  ]
+                }
+              ],
+              "components": [
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                [
+                  4,
+                  20,
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ]
+              ],
+              "deductions_units": 800
+            }
+          }
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "no_contest",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "no_early_confirmation",
+      "initial_data": {
+        "phase": "routine",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

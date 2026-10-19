@@ -1,0 +1,253 @@
+{
+  "profile_id": "G073",
+  "ruleset_id": "builtin.baccarat.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "lock_bet",
+      "actions": [
+        {
+          "type": "bet",
+          "params": {
+            "target": "banker",
+            "stake": 20
+          }
+        }
+      ],
+      "data": {
+        "phase": "dealing",
+        "bet": {
+          "target": "banker",
+          "stake": 20
+        },
+        "cards": []
+      }
+    },
+    {
+      "id": "fractional_commission_avoided",
+      "action": {
+        "type": "bet",
+        "params": {
+          "target": "banker",
+          "stake": 21
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "wrong_initial_hand",
+      "initial_data": {
+        "phase": "dealing",
+        "bet": {
+          "target": "player",
+          "stake": 20
+        },
+        "cards": []
+      },
+      "action": {
+        "type": "deal_card",
+        "params": {
+          "hand": "banker",
+          "value": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "natural_stops_draws",
+      "initial_data": {
+        "phase": "dealing",
+        "bet": {
+          "target": "player",
+          "stake": 20
+        },
+        "cards": [
+          4,
+          2,
+          5
+        ]
+      },
+      "actions": [
+        {
+          "type": "deal_card",
+          "params": {
+            "hand": "banker",
+            "value": 3
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1020,
+            "net": 20
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "banker_three_stands_on_eight",
+      "initial_data": {
+        "phase": "dealing",
+        "bet": {
+          "target": "player",
+          "stake": 20
+        },
+        "cards": [
+          2,
+          1,
+          3,
+          2
+        ]
+      },
+      "actions": [
+        {
+          "type": "deal_card",
+          "params": {
+            "hand": "player",
+            "value": 8
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "draw",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1000,
+            "net": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "banker_six_draws_on_six",
+      "initial_data": {
+        "phase": "dealing",
+        "bet": {
+          "target": "banker",
+          "stake": 20
+        },
+        "cards": [
+          2,
+          3,
+          3,
+          3,
+          6
+        ]
+      },
+      "actions": [
+        {
+          "type": "deal_card",
+          "params": {
+            "hand": "banker",
+            "value": 3
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1019,
+            "net": 19
+          }
+        ]
+      }
+    },
+    {
+      "id": "tie_payout",
+      "initial_data": {
+        "phase": "dealing",
+        "bet": {
+          "target": "tie",
+          "stake": 20
+        },
+        "cards": [
+          4,
+          3,
+          4
+        ]
+      },
+      "actions": [
+        {
+          "type": "deal_card",
+          "params": {
+            "hand": "banker",
+            "value": 5
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "balance": 1160,
+            "net": 160
+          }
+        ]
+      }
+    },
+    {
+      "id": "extra_natural_card_invalid",
+      "initial_data": {
+        "phase": "settled",
+        "bet": {
+          "target": "player",
+          "stake": 20
+        },
+        "cards": [
+          4,
+          2,
+          5,
+          3,
+          1
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "banker_waits_for_player_draw",
+      "initial_data": {
+        "phase": "dealing",
+        "bet": {
+          "target": "player",
+          "stake": 20
+        },
+        "cards": [
+          2,
+          1,
+          3,
+          2
+        ]
+      },
+      "action": {
+        "type": "deal_card",
+        "params": {
+          "hand": "banker",
+          "value": 8
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

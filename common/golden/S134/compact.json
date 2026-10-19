@@ -1,0 +1,2067 @@
+{
+  "profile_id": "S134",
+  "ruleset_id": "builtin.gymnastics_s134.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "athlete_0"
+    },
+    {
+      "id": "athlete_1"
+    },
+    {
+      "id": "athlete_2"
+    },
+    {
+      "id": "athlete_3"
+    },
+    {
+      "id": "athlete_4"
+    },
+    {
+      "id": "athlete_5"
+    },
+    {
+      "id": "athlete_6"
+    },
+    {
+      "id": "athlete_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "official_start_order",
+      "actions": [
+        {
+          "type": "set_start_order",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "wrong_next_entrant",
+      "initial_data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "start_routine",
+        "params": {
+          "participant": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "marks_require_completion",
+      "initial_data": {
+        "phase": "routine",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "record_marks",
+        "params": {
+          "difficulty": [
+            5000
+          ],
+          "execution": [
+            1000,
+            2000,
+            2000,
+            2000,
+            9000
+          ],
+          "artistry": [
+            1000,
+            1000,
+            1000,
+            1000,
+            9000
+          ],
+          "penalty": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "completed_routine_receives_marks",
+      "initial_data": {
+        "phase": "routine",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "complete_routine",
+          "params": {}
+        },
+        {
+          "type": "record_marks",
+          "params": {
+            "difficulty": [
+              5000
+            ],
+            "execution": [
+              1000,
+              2000,
+              2000,
+              2000,
+              9000
+            ],
+            "artistry": [
+              1000,
+              1000,
+              1000,
+              1000,
+              9000
+            ],
+            "penalty": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 0
+            }
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "restart_unresolved_routine",
+      "initial_data": {
+        "phase": "routine",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "authorized_restart",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "abandon_advances",
+      "initial_data": {
+        "phase": "routine",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "abandon_routine",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "current_participant": 1
+      }
+    },
+    {
+      "id": "trimmed_weighted_score",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 100
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 200
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 300
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 400
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 500
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 600
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 700
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "athlete_0"
+        ],
+        "placements": [
+          {
+            "player_id": "athlete_0",
+            "place": 1,
+            "score_units": 66000,
+            "score_unit_denominator": 3000
+          },
+          {
+            "player_id": "athlete_1",
+            "place": 2,
+            "score_units": 65700,
+            "score_unit_denominator": 3000
+          },
+          {
+            "player_id": "athlete_2",
+            "place": 3,
+            "score_units": 65400,
+            "score_unit_denominator": 3000
+          },
+          {
+            "player_id": "athlete_3",
+            "place": 4,
+            "score_units": 65100,
+            "score_unit_denominator": 3000
+          },
+          {
+            "player_id": "athlete_4",
+            "place": 5,
+            "score_units": 64800,
+            "score_unit_denominator": 3000
+          },
+          {
+            "player_id": "athlete_5",
+            "place": 6,
+            "score_units": 64500,
+            "score_unit_denominator": 3000
+          },
+          {
+            "player_id": "athlete_6",
+            "place": 7,
+            "score_units": 64200,
+            "score_unit_denominator": 3000
+          },
+          {
+            "player_id": "athlete_7",
+            "place": 8,
+            "score_units": 63900,
+            "score_unit_denominator": 3000
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "execution_breaks_total_tie",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                6000
+              ],
+              "execution": [
+                2000,
+                3000,
+                3000,
+                3000,
+                10000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 200
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 300
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 400
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 500
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 600
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 700
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "athlete_0"
+        ]
+      }
+    },
+    {
+      "id": "artistry_breaks_remaining_tie",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                6000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                2000,
+                2000,
+                2000,
+                2000,
+                10000
+              ],
+              "penalty": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 200
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 300
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 400
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 500
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 600
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 700
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "athlete_0"
+        ]
+      }
+    },
+    {
+      "id": "exact_tie_shared",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 200
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 300
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 400
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 500
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 600
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 700
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "athlete_0",
+          "athlete_1"
+        ]
+      }
+    },
+    {
+      "id": "review_correction_changes_winner",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 100
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 200
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 300
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 400
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 500
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 600
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 700
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "correct_marks",
+          "params": {
+            "participant": 0,
+            "difficulty": [
+              5000
+            ],
+            "execution": [
+              1000,
+              2000,
+              2000,
+              2000,
+              9000
+            ],
+            "artistry": [
+              1000,
+              1000,
+              1000,
+              1000,
+              9000
+            ],
+            "penalty": 1000
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "athlete_1"
+        ]
+      }
+    },
+    {
+      "id": "exclusion_changes_winner",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 100
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 200
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 300
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 400
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 500
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 600
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": [
+                5000
+              ],
+              "execution": [
+                1000,
+                2000,
+                2000,
+                2000,
+                9000
+              ],
+              "artistry": [
+                1000,
+                1000,
+                1000,
+                1000,
+                9000
+              ],
+              "penalty": 700
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "participant": 0
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "athlete_1"
+        ]
+      }
+    },
+    {
+      "id": "scored_entry_needs_marks",
+      "initial_data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "all_dns_no_contest",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "early_confirmation_rejected",
+      "initial_data": {
+        "phase": "routine",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

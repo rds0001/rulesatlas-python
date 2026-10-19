@@ -1,0 +1,2574 @@
+{
+  "profile_id": "S089",
+  "ruleset_id": "builtin.aerials.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "skier_0"
+    },
+    {
+      "id": "skier_1"
+    },
+    {
+      "id": "skier_2"
+    },
+    {
+      "id": "skier_3"
+    },
+    {
+      "id": "skier_4"
+    },
+    {
+      "id": "skier_5"
+    },
+    {
+      "id": "skier_6"
+    },
+    {
+      "id": "skier_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "official_order",
+      "actions": [
+        {
+          "type": "set_start_order",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "duplicate_order",
+      "action": {
+        "type": "set_start_order",
+        "params": {
+          "order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "wrong_next_skier",
+      "initial_data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "start_jump",
+        "params": {
+          "participant": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "start_next_skier",
+      "initial_data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "start_jump",
+          "params": {
+            "participant": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "jump",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "marks_require_completion",
+      "initial_data": {
+        "phase": "jump",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "record_marks",
+        "params": {
+          "difficulty": 3525,
+          "air": [
+            10,
+            15,
+            16,
+            17,
+            20
+          ],
+          "form": [
+            50,
+            40,
+            41,
+            42,
+            0
+          ],
+          "landing": [
+            20,
+            0,
+            21,
+            30,
+            22
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "complete_then_score",
+      "initial_data": {
+        "phase": "jump",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "complete_jump",
+          "params": {}
+        },
+        {
+          "type": "record_marks",
+          "params": {
+            "difficulty": 3525,
+            "air": [
+              10,
+              15,
+              16,
+              17,
+              20
+            ],
+            "form": [
+              50,
+              40,
+              41,
+              42,
+              0
+            ],
+            "landing": [
+              20,
+              0,
+              21,
+              30,
+              22
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3525,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "air_cap",
+      "initial_data": {
+        "phase": "judging",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "awaiting_marks",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "record_marks",
+        "params": {
+          "difficulty": 3525,
+          "air": [
+            21,
+            21,
+            21,
+            21,
+            21
+          ],
+          "form": [
+            50,
+            40,
+            41,
+            42,
+            0
+          ],
+          "landing": [
+            20,
+            0,
+            21,
+            30,
+            22
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "form_cap",
+      "initial_data": {
+        "phase": "judging",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "awaiting_marks",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "record_marks",
+        "params": {
+          "difficulty": 3525,
+          "air": [
+            10,
+            15,
+            16,
+            17,
+            20
+          ],
+          "form": [
+            51,
+            51,
+            51,
+            51,
+            51
+          ],
+          "landing": [
+            20,
+            0,
+            21,
+            30,
+            22
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "landing_cap",
+      "initial_data": {
+        "phase": "judging",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "awaiting_marks",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "record_marks",
+        "params": {
+          "difficulty": 3525,
+          "air": [
+            10,
+            15,
+            16,
+            17,
+            20
+          ],
+          "form": [
+            50,
+            40,
+            41,
+            42,
+            0
+          ],
+          "landing": [
+            31,
+            31,
+            31,
+            31,
+            31
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "positive_difficulty",
+      "initial_data": {
+        "phase": "judging",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "awaiting_marks",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "record_marks",
+        "params": {
+          "difficulty": 0,
+          "air": [
+            10,
+            15,
+            16,
+            17,
+            20
+          ],
+          "form": [
+            50,
+            40,
+            41,
+            42,
+            0
+          ],
+          "landing": [
+            20,
+            0,
+            21,
+            30,
+            22
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "five_judges",
+      "initial_data": {
+        "phase": "judging",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "awaiting_marks",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "record_marks",
+        "params": {
+          "difficulty": 3525,
+          "air": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "form": [
+            50,
+            40,
+            41,
+            42,
+            0
+          ],
+          "landing": [
+            20,
+            0,
+            21,
+            30,
+            22
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "zero_marks_remain_scored",
+      "initial_data": {
+        "phase": "judging",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "awaiting_marks",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "record_marks",
+          "params": {
+            "difficulty": 3525,
+            "air": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "form": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "landing": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "current_participant": 1
+      }
+    },
+    {
+      "id": "independent_component_trimming_and_truncation",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3525,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3425,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3325,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3225,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3125,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3025,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 2925,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 2825,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "skier_0"
+        ],
+        "placements": [
+          {
+            "player_id": "skier_0",
+            "place": 1,
+            "score_units": 8248,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skier_1",
+            "place": 2,
+            "score_units": 8014,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skier_2",
+            "place": 3,
+            "score_units": 7780,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skier_3",
+            "place": 4,
+            "score_units": 7546,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skier_4",
+            "place": 5,
+            "score_units": 7312,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skier_5",
+            "place": 6,
+            "score_units": 7078,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skier_6",
+            "place": 7,
+            "score_units": 6844,
+            "score_unit_denominator": 100
+          },
+          {
+            "player_id": "skier_7",
+            "place": 8,
+            "score_units": 6610,
+            "score_unit_denominator": 100
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "local_shared_tie",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3525,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3525,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3325,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3225,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3125,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3025,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 2925,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 2825,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "skier_0",
+          "skier_1"
+        ]
+      }
+    },
+    {
+      "id": "review_correction",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3525,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3425,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3325,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3225,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3125,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3025,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 2925,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 2825,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "correct_marks",
+          "params": {
+            "participant": 0,
+            "difficulty": 3525,
+            "air": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "form": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "landing": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "skier_1"
+        ]
+      }
+    },
+    {
+      "id": "disqualification_removes_score_from_ranking",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3525,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3425,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3325,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3225,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3125,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3025,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 2925,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 2825,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "participant": 0
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "skier_1"
+        ]
+      }
+    },
+    {
+      "id": "restart",
+      "initial_data": {
+        "phase": "jump",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "authorized_restart",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "abandonment",
+      "initial_data": {
+        "phase": "jump",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "abandon_jump",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "current_participant": 1
+      }
+    },
+    {
+      "id": "invalid_planned_jump",
+      "initial_data": {
+        "phase": "judging",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "awaiting_marks",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "invalidate_jump",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "current_participant": 1
+      }
+    },
+    {
+      "id": "withdraw_next",
+      "initial_data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "withdraw",
+          "params": {
+            "participant": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "current_participant": 1
+      }
+    },
+    {
+      "id": "scored_requires_marks",
+      "initial_data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "phase_requires_pending_judgment",
+      "initial_data": {
+        "phase": "judging",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "difficulty": 3525,
+              "air": [
+                10,
+                15,
+                16,
+                17,
+                20
+              ],
+              "form": [
+                50,
+                40,
+                41,
+                42,
+                0
+              ],
+              "landing": [
+                20,
+                0,
+                21,
+                30,
+                22
+              ]
+            }
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "no_premature_confirmation",
+      "initial_data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ]
+      },
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "all_dns",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    }
+  ]
+}

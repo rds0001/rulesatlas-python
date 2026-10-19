@@ -1,0 +1,606 @@
+{
+  "profile_id": "S051",
+  "ruleset_id": "builtin.bowling.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "strike_ends_frame",
+      "actions": [
+        {
+          "type": "roll",
+          "params": {
+            "pins": 10,
+            "foul": false
+          }
+        }
+      ],
+      "data": {
+        "current": 1,
+        "frames": [
+          [
+            [
+              10
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        ]
+      }
+    },
+    {
+      "id": "foul_with_pins",
+      "action": {
+        "type": "roll",
+        "params": {
+          "pins": 1,
+          "foul": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "too_many_second_ball",
+      "actions": [
+        {
+          "type": "roll",
+          "params": {
+            "pins": 7,
+            "foul": false
+          }
+        }
+      ],
+      "action": {
+        "type": "roll",
+        "params": {
+          "pins": 4,
+          "foul": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "perfect_300",
+      "initial_data": {
+        "current": 19,
+        "frames": [
+          [
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10,
+              10,
+              10
+            ]
+          ],
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0
+            ]
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "roll",
+          "params": {
+            "pins": 0,
+            "foul": false
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ],
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "score": 300
+          },
+          {
+            "player_id": "bob",
+            "place": 2,
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "all_spares_150",
+      "initial_data": {
+        "current": 19,
+        "frames": [
+          [
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              5,
+              5
+            ]
+          ],
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0
+            ]
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "roll",
+          "params": {
+            "pins": 0,
+            "foul": false
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "score": 150
+          },
+          {
+            "player_id": "bob",
+            "place": 2,
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "tenth_strike_partial_rack",
+      "initial_data": {
+        "current": 19,
+        "frames": [
+          [
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10,
+              10,
+              10
+            ]
+          ],
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              10,
+              7
+            ]
+          ]
+        ]
+      },
+      "action": {
+        "type": "roll",
+        "params": {
+          "pins": 4,
+          "foul": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "tenth_bonus_finish",
+      "initial_data": {
+        "current": 19,
+        "frames": [
+          [
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10,
+              10,
+              10
+            ]
+          ],
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              10,
+              7
+            ]
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "roll",
+          "params": {
+            "pins": 3,
+            "foul": false
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "score": 300
+          },
+          {
+            "player_id": "bob",
+            "place": 2,
+            "score": 20
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "invalid_bonus_rack",
+      "initial_data": {
+        "current": 19,
+        "frames": [
+          [
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              10,
+              10,
+              10
+            ]
+          ],
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              10,
+              7,
+              4
+            ]
+          ]
+        ]
+      },
+      "valid": false
+    }
+  ]
+}

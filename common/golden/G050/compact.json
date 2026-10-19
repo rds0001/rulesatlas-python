@@ -1,0 +1,6088 @@
+{
+  "profile_id": "G050",
+  "ruleset_id": "builtin.canasta.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "p0"
+    },
+    {
+      "id": "p1"
+    },
+    {
+      "id": "p2"
+    },
+    {
+      "id": "p3"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "deal_external_double_deck",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "deck": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              67,
+              68,
+              69,
+              70,
+              71,
+              72,
+              73,
+              74,
+              75,
+              76,
+              77,
+              78,
+              79,
+              80,
+              81,
+              82,
+              83,
+              84,
+              85,
+              86,
+              87,
+              88,
+              89,
+              90,
+              91,
+              92,
+              93,
+              94,
+              95,
+              96,
+              97,
+              98,
+              99,
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "draw",
+        "hand_counts": [
+          11,
+          11,
+          11,
+          11
+        ]
+      }
+    },
+    {
+      "id": "duplicate_deck_rejected",
+      "action": {
+        "type": "deal",
+        "params": {
+          "deck": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "opening_minimum_negative_score",
+      "initial_data": {
+        "phase": "setup",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          -5,
+          0
+        ],
+        "round_start_scores": [
+          -5,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "stock": [],
+        "discard": [],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": null,
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "legal_constraints": {
+        "initial_minimum": 15
+      }
+    },
+    {
+      "id": "opening_minimum_ninety",
+      "initial_data": {
+        "phase": "setup",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          1500,
+          0
+        ],
+        "round_start_scores": [
+          1500,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "stock": [],
+        "discard": [],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": null,
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "legal_constraints": {
+        "initial_minimum": 90
+      }
+    },
+    {
+      "id": "opening_minimum_one_twenty",
+      "initial_data": {
+        "phase": "setup",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          3000,
+          0
+        ],
+        "round_start_scores": [
+          3000,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "stock": [],
+        "discard": [],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": null,
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "legal_constraints": {
+        "initial_minimum": 120
+      }
+    },
+    {
+      "id": "two_naturals_and_joker_valid",
+      "initial_data": {
+        "phase": "meld",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            3,
+            16,
+            52,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": "stock",
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "actions": [
+        {
+          "type": "meld",
+          "params": {
+            "groups": [
+              {
+                "rank": 4,
+                "cards": [
+                  3,
+                  16,
+                  52
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "hand_counts": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "below_opening_minimum_rejected",
+      "initial_data": {
+        "phase": "meld",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            3,
+            16,
+            29,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": "stock",
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "action": {
+        "type": "meld",
+        "params": {
+          "groups": [
+            {
+              "rank": 4,
+              "cards": [
+                3,
+                16,
+                29
+              ]
+            }
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "all_wild_meld_rejected",
+      "initial_data": {
+        "phase": "meld",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            1,
+            14,
+            52,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          2,
+          3,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": "stock",
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "action": {
+        "type": "meld",
+        "params": {
+          "groups": [
+            {
+              "rank": 4,
+              "cards": [
+                1,
+                14,
+                52
+              ]
+            }
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "three_wild_cards_with_two_naturals_allowed",
+      "initial_data": {
+        "phase": "meld",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            3,
+            16,
+            52,
+            53,
+            106,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          107
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": "stock",
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "actions": [
+        {
+          "type": "meld",
+          "params": {
+            "groups": [
+              {
+                "rank": 4,
+                "cards": [
+                  3,
+                  16,
+                  52,
+                  53,
+                  106
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "hand_counts": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "four_wild_cards_rejected",
+      "initial_data": {
+        "phase": "meld",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            3,
+            16,
+            52,
+            53,
+            106,
+            107,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": "stock",
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "action": {
+        "type": "meld",
+        "params": {
+          "groups": [
+            {
+              "rank": 4,
+              "cards": [
+                3,
+                16,
+                52,
+                53,
+                106,
+                107
+              ]
+            }
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "cannot_empty_without_canasta",
+      "initial_data": {
+        "phase": "meld",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            3,
+            16,
+            52,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": "stock",
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "actions": [
+        {
+          "type": "meld",
+          "params": {
+            "groups": [
+              {
+                "rank": 4,
+                "cards": [
+                  3,
+                  16,
+                  52
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "action": {
+        "type": "discard",
+        "params": {
+          "card": 7
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "concealed_canasta_waives_opening_minimum_from_stock",
+      "initial_data": {
+        "phase": "meld",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            3,
+            16,
+            29,
+            42,
+            57,
+            70,
+            83,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": "stock",
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "actions": [
+        {
+          "type": "meld",
+          "params": {
+            "groups": [
+              {
+                "rank": 4,
+                "cards": [
+                  3,
+                  16,
+                  29,
+                  42,
+                  57,
+                  70,
+                  83
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "discard",
+          "params": {
+            "card": 7
+          }
+        }
+      ],
+      "data": {
+        "phase": "round_end",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          730,
+          -10
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          730,
+          -10
+        ],
+        "hands": [
+          [],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          8,
+          7
+        ],
+        "melds": [
+          [
+            {
+              "rank": 4,
+              "cards": [
+                3,
+                16,
+                29,
+                42,
+                57,
+                70,
+                83
+              ]
+            }
+          ],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "draw_source": "stock",
+        "turn_cards_melded": [
+          3,
+          16,
+          29,
+          42,
+          57,
+          70,
+          83
+        ],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": true,
+        "out_team": 0,
+        "concealed": true,
+        "end_reason": "go_out"
+      }
+    },
+    {
+      "id": "five_thousand_checked_after_hand",
+      "initial_data": {
+        "phase": "meld",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          4500,
+          0
+        ],
+        "round_start_scores": [
+          4500,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            3,
+            16,
+            29,
+            42,
+            57,
+            70,
+            83,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": "stock",
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "actions": [
+        {
+          "type": "meld",
+          "params": {
+            "groups": [
+              {
+                "rank": 4,
+                "cards": [
+                  3,
+                  16,
+                  29,
+                  42,
+                  57,
+                  70,
+                  83
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "discard",
+          "params": {
+            "card": 7
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "p0",
+          "p2"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "wild_added_to_natural_canasta_reduces_bonus",
+      "initial_data": {
+        "phase": "meld",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            52,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          53,
+          54,
+          55,
+          56,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [
+            {
+              "rank": 4,
+              "cards": [
+                3,
+                16,
+                29,
+                42,
+                57,
+                70,
+                83
+              ]
+            }
+          ],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          true,
+          false
+        ],
+        "draw_source": "stock",
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "actions": [
+        {
+          "type": "meld",
+          "params": {
+            "groups": [
+              {
+                "rank": 4,
+                "cards": [
+                  52
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "discard",
+          "params": {
+            "card": 7
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "round_end"
+      }
+    },
+    {
+      "id": "frozen_pile_requires_natural_pair",
+      "initial_data": {
+        "phase": "draw",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          -5,
+          0
+        ],
+        "round_start_scores": [
+          -5,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            3,
+            16,
+            52,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          2,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          1,
+          29
+        ],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": null,
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "action": {
+        "type": "take_discard",
+        "params": {
+          "groups": [
+            {
+              "rank": 4,
+              "cards": [
+                3,
+                52,
+                29
+              ]
+            }
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "frozen_pile_natural_pair_takes_rest",
+      "initial_data": {
+        "phase": "draw",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          -5,
+          0
+        ],
+        "round_start_scores": [
+          -5,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            3,
+            16,
+            52,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          2,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          1,
+          29
+        ],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": null,
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "actions": [
+        {
+          "type": "take_discard",
+          "params": {
+            "groups": [
+              {
+                "rank": 4,
+                "cards": [
+                  3,
+                  16,
+                  29
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "hand_counts": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "stock_count": 99
+      }
+    },
+    {
+      "id": "existing_meld_can_take_unfrozen_top",
+      "initial_data": {
+        "phase": "draw",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            42,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          9,
+          57
+        ],
+        "melds": [
+          [
+            {
+              "rank": 4,
+              "cards": [
+                3,
+                16,
+                29
+              ]
+            }
+          ],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          true,
+          false
+        ],
+        "draw_source": null,
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "actions": [
+        {
+          "type": "take_discard",
+          "params": {
+            "groups": [
+              {
+                "rank": 4,
+                "cards": [
+                  57
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "hand_counts": [
+          3,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "buried_black_three_freezes_selected_variant",
+      "initial_data": {
+        "phase": "draw",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            42,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          2,
+          57
+        ],
+        "melds": [
+          [
+            {
+              "rank": 4,
+              "cards": [
+                3,
+                16,
+                29
+              ]
+            }
+          ],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          true,
+          false
+        ],
+        "draw_source": null,
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "action": {
+        "type": "take_discard",
+        "params": {
+          "groups": [
+            {
+              "rank": 4,
+              "cards": [
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "wild_top_cannot_be_taken",
+      "initial_data": {
+        "phase": "draw",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            3,
+            16,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          52
+        ],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": null,
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "action": {
+        "type": "take_discard",
+        "params": {
+          "groups": [
+            {
+              "rank": 4,
+              "cards": [
+                3,
+                16,
+                52
+              ]
+            }
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "one_card_hand_cannot_take_single_discard",
+      "initial_data": {
+        "phase": "draw",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          96
+        ],
+        "melds": [
+          [
+            {
+              "rank": 4,
+              "cards": [
+                3,
+                16,
+                29,
+                42,
+                57,
+                70,
+                83
+              ]
+            }
+          ],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          true,
+          false
+        ],
+        "draw_source": null,
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "action": {
+        "type": "take_discard",
+        "params": {
+          "groups": [
+            {
+              "rank": 4,
+              "cards": [
+                96
+              ]
+            }
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "must_answer_partner_before_play",
+      "initial_data": {
+        "phase": "meld",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [
+            {
+              "rank": 4,
+              "cards": [
+                3,
+                16,
+                29,
+                42,
+                57,
+                70,
+                83
+              ]
+            }
+          ],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          true,
+          false
+        ],
+        "draw_source": "stock",
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "actions": [
+        {
+          "type": "ask_to_go_out",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "discard",
+        "params": {
+          "card": 7
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "only_partner_may_answer",
+      "initial_data": {
+        "phase": "meld",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [
+            {
+              "rank": 4,
+              "cards": [
+                3,
+                16,
+                29,
+                42,
+                57,
+                70,
+                83
+              ]
+            }
+          ],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          true,
+          false
+        ],
+        "draw_source": "stock",
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "actions": [
+        {
+          "type": "ask_to_go_out",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "answer_permission",
+        "params": {
+          "player": 1,
+          "allow": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "partner_no_blocks_going_out",
+      "initial_data": {
+        "phase": "meld",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [
+            {
+              "rank": 4,
+              "cards": [
+                3,
+                16,
+                29,
+                42,
+                57,
+                70,
+                83
+              ]
+            }
+          ],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          true,
+          false
+        ],
+        "draw_source": "stock",
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "actions": [
+        {
+          "type": "ask_to_go_out",
+          "params": {}
+        },
+        {
+          "type": "answer_permission",
+          "params": {
+            "player": 2,
+            "allow": false
+          }
+        }
+      ],
+      "action": {
+        "type": "discard",
+        "params": {
+          "card": 7
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "partner_yes_requires_going_out_this_turn",
+      "initial_data": {
+        "phase": "meld",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            52,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          53,
+          54,
+          55,
+          56,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [
+            {
+              "rank": 4,
+              "cards": [
+                3,
+                16,
+                29,
+                42,
+                57,
+                70,
+                83
+              ]
+            }
+          ],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          true,
+          false
+        ],
+        "draw_source": "stock",
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "actions": [
+        {
+          "type": "ask_to_go_out",
+          "params": {}
+        },
+        {
+          "type": "answer_permission",
+          "params": {
+            "player": 2,
+            "allow": true
+          }
+        }
+      ],
+      "action": {
+        "type": "discard",
+        "params": {
+          "card": 7
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "black_threes_only_in_final_meld",
+      "initial_data": {
+        "phase": "meld",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            2,
+            41,
+            56,
+            7,
+            9
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [
+            {
+              "rank": 4,
+              "cards": [
+                3,
+                16,
+                29,
+                42,
+                57,
+                70,
+                83
+              ]
+            }
+          ],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          true,
+          false
+        ],
+        "draw_source": "stock",
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "action": {
+        "type": "meld",
+        "params": {
+          "groups": [
+            {
+              "rank": 3,
+              "cards": [
+                2,
+                41,
+                56
+              ]
+            }
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "black_threes_allowed_while_going_out",
+      "initial_data": {
+        "phase": "meld",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            2,
+            41,
+            56,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [
+            {
+              "rank": 4,
+              "cards": [
+                3,
+                16,
+                29,
+                42,
+                57,
+                70,
+                83
+              ]
+            }
+          ],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          true,
+          false
+        ],
+        "draw_source": "stock",
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "actions": [
+        {
+          "type": "meld",
+          "params": {
+            "groups": [
+              {
+                "rank": 3,
+                "cards": [
+                  2,
+                  41,
+                  56
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "discard",
+          "params": {
+            "card": 7
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "round_end"
+      }
+    },
+    {
+      "id": "mandatory_discard_pickup_when_stock_empty",
+      "initial_data": {
+        "phase": "draw",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            42,
+            7
+          ],
+          [
+            4,
+            0,
+            1,
+            2,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [],
+        "discard": [
+          57
+        ],
+        "melds": [
+          [
+            {
+              "rank": 4,
+              "cards": [
+                3,
+                16,
+                29
+              ]
+            }
+          ],
+          []
+        ],
+        "red_threes": [
+          [],
+          [
+            15,
+            28,
+            69,
+            82
+          ]
+        ],
+        "has_melded": [
+          false,
+          false,
+          true,
+          false
+        ],
+        "draw_source": null,
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "action": {
+        "type": "end_stock",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "unmatched_discard_allows_exhaustion",
+      "initial_data": {
+        "phase": "draw",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            42,
+            7
+          ],
+          [
+            4,
+            0,
+            1,
+            2,
+            8,
+            10,
+            11,
+            12,
+            13,
+            14,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [],
+        "discard": [
+          9
+        ],
+        "melds": [
+          [
+            {
+              "rank": 4,
+              "cards": [
+                3,
+                16,
+                29
+              ]
+            }
+          ],
+          []
+        ],
+        "red_threes": [
+          [],
+          [
+            15,
+            28,
+            69,
+            82
+          ]
+        ],
+        "has_melded": [
+          false,
+          false,
+          true,
+          false
+        ],
+        "draw_source": null,
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "actions": [
+        {
+          "type": "end_stock",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "round_end"
+      }
+    },
+    {
+      "id": "last_stock_red_three_ends_without_meld",
+      "initial_data": {
+        "phase": "draw",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            7
+          ],
+          [
+            4,
+            0,
+            1,
+            2,
+            3,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          15
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          [
+            28,
+            69,
+            82
+          ]
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": null,
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "actions": [
+        {
+          "type": "draw_stock",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "round_end"
+      }
+    },
+    {
+      "id": "red_three_draw_replaced",
+      "initial_data": {
+        "phase": "draw",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            7
+          ],
+          [
+            4,
+            0,
+            1,
+            2,
+            3,
+            9,
+            11,
+            12,
+            13,
+            14,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          15,
+          10
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          [
+            28,
+            69,
+            82
+          ]
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": null,
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "actions": [
+        {
+          "type": "draw_stock",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "meld",
+        "hand_counts": [
+          2,
+          99,
+          1,
+          1
+        ],
+        "stock_count": 0
+      }
+    },
+    {
+      "id": "red_three_in_discard_no_replacement",
+      "initial_data": {
+        "phase": "draw",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          -5,
+          0
+        ],
+        "round_start_scores": [
+          -5,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            3,
+            16,
+            52,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          15,
+          29
+        ],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": null,
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "actions": [
+        {
+          "type": "take_discard",
+          "params": {
+            "groups": [
+              {
+                "rank": 4,
+                "cards": [
+                  3,
+                  16,
+                  29
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "hand_counts": [
+          2,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "card_inventory_duplicate_invalid",
+      "initial_data": {
+        "phase": "meld",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            3,
+            16,
+            52,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          1,
+          1,
+          2,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": "stock",
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "next_round_rotates_dealer",
+      "initial_data": {
+        "phase": "meld",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            3,
+            16,
+            29,
+            42,
+            57,
+            70,
+            83,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": "stock",
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "actions": [
+        {
+          "type": "meld",
+          "params": {
+            "groups": [
+              {
+                "rank": 4,
+                "cards": [
+                  3,
+                  16,
+                  29,
+                  42,
+                  57,
+                  70,
+                  83
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "discard",
+          "params": {
+            "card": 7
+          }
+        },
+        {
+          "type": "next_round",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "setup",
+        "turn": 1
+      }
+    },
+    {
+      "id": "cannot_ask_after_melding",
+      "initial_data": {
+        "phase": "meld",
+        "round": 1,
+        "dealer": 3,
+        "turn": 0,
+        "scores": [
+          0,
+          0
+        ],
+        "round_start_scores": [
+          0,
+          0
+        ],
+        "last_round_scores": [
+          0,
+          0
+        ],
+        "hands": [
+          [
+            3,
+            16,
+            52,
+            7
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "discard": [
+          8
+        ],
+        "melds": [
+          [],
+          []
+        ],
+        "red_threes": [
+          [],
+          []
+        ],
+        "has_melded": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "draw_source": "stock",
+        "turn_cards_melded": [],
+        "concealed_candidate": true,
+        "permission": null,
+        "permission_asked": false,
+        "permission_pending": false,
+        "must_go_out": false,
+        "out_team": null,
+        "concealed": false,
+        "end_reason": null
+      },
+      "actions": [
+        {
+          "type": "meld",
+          "params": {
+            "groups": [
+              {
+                "rank": 4,
+                "cards": [
+                  3,
+                  16,
+                  52
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "action": {
+        "type": "ask_to_go_out",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

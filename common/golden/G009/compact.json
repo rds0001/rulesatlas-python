@@ -1,0 +1,486 @@
+{
+  "profile_id": "G009",
+  "ruleset_id": "builtin.morris.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_count": 24
+    },
+    {
+      "id": "form_mill",
+      "initial_data": {
+        "board": [
+          0,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "placed": [
+          2,
+          2
+        ],
+        "turn": 0,
+        "pending": false,
+        "quiet_turns": 0,
+        "history": [
+          "002222221122222222222222|0|2|2"
+        ]
+      },
+      "actions": [
+        {
+          "type": "place",
+          "params": {
+            "cell": 2
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      },
+      "legal_params": [
+        {
+          "cell": 8
+        },
+        {
+          "cell": 9
+        }
+      ]
+    },
+    {
+      "id": "capture_required",
+      "initial_data": {
+        "board": [
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "placed": [
+          3,
+          2
+        ],
+        "turn": 0,
+        "pending": true,
+        "quiet_turns": 0,
+        "history": [
+          "000222221122222222222222|0|3|2"
+        ]
+      },
+      "action": {
+        "type": "place",
+        "params": {
+          "cell": 3
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "protected_stone",
+      "initial_data": {
+        "board": [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          -1,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          -1,
+          0,
+          -1,
+          -1,
+          -1,
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "placed": [
+          6,
+          5
+        ],
+        "turn": 0,
+        "pending": true,
+        "quiet_turns": 0,
+        "history": [
+          "000202021112122202221222|0|6|5"
+        ]
+      },
+      "action": {
+        "type": "capture",
+        "params": {
+          "cell": 8
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "unprotected_only",
+      "initial_data": {
+        "board": [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          -1,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          -1,
+          0,
+          -1,
+          -1,
+          -1,
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "placed": [
+          6,
+          5
+        ],
+        "turn": 0,
+        "pending": true,
+        "quiet_turns": 0,
+        "history": [
+          "000202021112122202221222|0|6|5"
+        ]
+      },
+      "legal_params": [
+        {
+          "cell": 12
+        },
+        {
+          "cell": 20
+        }
+      ]
+    },
+    {
+      "id": "all_in_mill_capture_wins",
+      "initial_data": {
+        "board": [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          -1,
+          -1,
+          -1,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "placed": [
+          9,
+          9
+        ],
+        "turn": 0,
+        "pending": true,
+        "quiet_turns": 0,
+        "history": [
+          "000202221112222222222222|0|9|9"
+        ]
+      },
+      "actions": [
+        {
+          "type": "capture",
+          "params": {
+            "cell": 8
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "fly_with_three",
+      "initial_data": {
+        "board": [
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          -1,
+          -1,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "placed": [
+          9,
+          9
+        ],
+        "turn": 0,
+        "pending": false,
+        "quiet_turns": 0,
+        "history": [
+          "020202221212121222222222|0|9|9"
+        ]
+      },
+      "actions": [
+        {
+          "type": "move",
+          "params": {
+            "source": 0,
+            "target": 22
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "four_cannot_fly",
+      "initial_data": {
+        "board": [
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "placed": [
+          9,
+          9
+        ],
+        "turn": 0,
+        "pending": false,
+        "quiet_turns": 0,
+        "history": [
+          "020202021212121222222222|0|9|9"
+        ]
+      },
+      "action": {
+        "type": "move",
+        "params": {
+          "source": 0,
+          "target": 22
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "threefold_draw",
+      "initial_data": {
+        "board": [
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "placed": [
+          9,
+          9
+        ],
+        "turn": 0,
+        "pending": false,
+        "quiet_turns": 0,
+        "history": [
+          "020202021212121222222222|0|9|9"
+        ]
+      },
+      "actions": [
+        {
+          "type": "move",
+          "params": {
+            "source": 0,
+            "target": 7
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 10,
+            "target": 11
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 7,
+            "target": 0
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 11,
+            "target": 10
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 0,
+            "target": 7
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 10,
+            "target": 11
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 7,
+            "target": 0
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 11,
+            "target": 10
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "draw"
+      },
+      "legal_count": 0
+    }
+  ]
+}

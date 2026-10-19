@@ -1,0 +1,5023 @@
+{
+  "profile_id": "S012",
+  "ruleset_id": "builtin.handball.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "home"
+    },
+    {
+      "id": "away"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start_and_resume",
+      "actions": [
+        {
+          "type": "start_match",
+          "params": {}
+        },
+        {
+          "type": "resume_play",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "live",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "goal",
+      "initial_data": {
+        "phase": "live",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "bench_cannot_score",
+      "initial_data": {
+        "phase": "live",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "goal",
+        "params": {
+          "team": 0,
+          "player": 7
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "rolling_return_substitution",
+      "initial_data": {
+        "phase": "live",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "outgoing": 0,
+            "incoming": 7
+          }
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "outgoing": 7,
+            "incoming": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "live",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "cannot_enter_full_lineup",
+      "initial_data": {
+        "phase": "live",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "enter",
+        "params": {
+          "team": 0,
+          "player": 7
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "two_minute_suspension",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "suspend",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "remove_player": null
+          }
+        }
+      ],
+      "data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "suspended",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [
+          {
+            "team": 0,
+            "player": 0,
+            "remaining_ms": 120000,
+            "unserved": true
+          }
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "cannot_fill_suspended_slot",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "suspended",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [
+          {
+            "team": 0,
+            "player": 0,
+            "remaining_ms": 120000,
+            "unserved": true
+          }
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "enter",
+        "params": {
+          "team": 0,
+          "player": 7
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "playing_clock_releases_capacity",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "suspended",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [
+          {
+            "team": 0,
+            "player": 0,
+            "remaining_ms": 120000,
+            "unserved": true
+          }
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "resume_play",
+          "params": {}
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 120000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          7,
+          7
+        ]
+      }
+    },
+    {
+      "id": "suspended_player_reenters_after_release",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "suspended",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [
+          {
+            "team": 0,
+            "player": 0,
+            "remaining_ms": 120000,
+            "unserved": true
+          }
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "resume_play",
+          "params": {}
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 120000
+          }
+        },
+        {
+          "type": "enter",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "active_players": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stopped_clock_cannot_serve_penalty",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "suspended",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [
+          {
+            "team": 0,
+            "player": 0,
+            "remaining_ms": 120000,
+            "unserved": true
+          }
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "elapse",
+        "params": {
+          "milliseconds": 120000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "third_suspension_disqualifies",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "suspend",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "remove_player": null
+          }
+        },
+        {
+          "type": "resume_play",
+          "params": {}
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 120000
+          }
+        }
+      ],
+      "action": {
+        "type": "enter",
+        "params": {
+          "team": 0,
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "replacement_after_disqualification_reduction",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "suspend",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "remove_player": null
+          }
+        },
+        {
+          "type": "resume_play",
+          "params": {}
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 120000
+          }
+        },
+        {
+          "type": "enter",
+          "params": {
+            "team": 0,
+            "player": 7
+          }
+        }
+      ],
+      "legal_constraints": {
+        "active_players": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fourth_team_warning_is_suspension",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "caution",
+          "params": {
+            "team": 0,
+            "player": 3,
+            "remove_player": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": "repeated_player_warning_is_suspension",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "caution",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "remove_player": null
+          }
+        },
+        {
+          "type": "caution",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "remove_player": null
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": "bench_sanction_requires_active_removal",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "suspend",
+        "params": {
+          "team": 0,
+          "player": 7,
+          "remove_player": null
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "bench_sanction_reduces_team",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "suspend",
+          "params": {
+            "team": 0,
+            "player": 7,
+            "remove_player": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          6,
+          7
+        ],
+        "active_players": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "id": "official_team_reduction",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "team_reduction",
+          "params": {
+            "team": 1,
+            "remove_player": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          7,
+          6
+        ]
+      }
+    },
+    {
+      "id": "additional_misconduct_extends_one_reduction",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "suspended",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [
+          {
+            "team": 0,
+            "player": 0,
+            "remaining_ms": 120000,
+            "unserved": true
+          }
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "additional_misconduct",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "disqualify": true
+          }
+        },
+        {
+          "type": "resume_play",
+          "params": {}
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 120000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": "no_pre_restart_extension_after_resumption",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "suspended",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [
+          {
+            "team": 0,
+            "player": 0,
+            "remaining_ms": 120000,
+            "unserved": true
+          }
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "resume_play",
+          "params": {}
+        },
+        {
+          "type": "stop_clock",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "additional_misconduct",
+        "params": {
+          "team": 0,
+          "player": 0,
+          "disqualify": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "penalty_carries_across_half_time",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 60000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "suspended",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [
+          {
+            "team": 0,
+            "player": 0,
+            "remaining_ms": 120000,
+            "unserved": true
+          }
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "resume_play",
+          "params": {}
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 60000
+          }
+        },
+        {
+          "type": "end_half",
+          "params": {}
+        },
+        {
+          "type": "start_second_half",
+          "params": {}
+        },
+        {
+          "type": "resume_play",
+          "params": {}
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 59999
+          }
+        }
+      ],
+      "legal_constraints": {
+        "half": 2,
+        "capacity": [
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": "one_timeout_per_half",
+      "initial_data": {
+        "phase": "live",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "grant_timeout",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "grant_timeout",
+        "params": {
+          "team": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "pending_throw_blocks_end",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 2,
+        "remaining_ms": 0,
+        "score": [
+          20,
+          19
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": {
+          "team": 1,
+          "thrower": 0,
+          "kind": "seven_metre"
+        },
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "end_half",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "last_throw_levels_match",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 2,
+        "remaining_ms": 0,
+        "score": [
+          20,
+          19
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": {
+          "team": 1,
+          "thrower": 0,
+          "kind": "seven_metre"
+        },
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "resolve_throw",
+          "params": {
+            "scored": true
+          }
+        },
+        {
+          "type": "end_half",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw"
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "last_throw_miss_keeps_winner",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 2,
+        "remaining_ms": 0,
+        "score": [
+          20,
+          19
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": {
+          "team": 1,
+          "thrower": 0,
+          "kind": "seven_metre"
+        },
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "resolve_throw",
+          "params": {
+            "scored": false
+          }
+        },
+        {
+          "type": "end_half",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "home"
+        ]
+      }
+    },
+    {
+      "id": "free_throw_after_buzzer",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 2,
+        "remaining_ms": 0,
+        "score": [
+          20,
+          19
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_throw",
+          "params": {
+            "team": 1,
+            "thrower": 0,
+            "kind": "free_throw"
+          }
+        },
+        {
+          "type": "resolve_throw",
+          "params": {
+            "scored": true
+          }
+        },
+        {
+          "type": "end_half",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw"
+      }
+    },
+    {
+      "id": "free_throw_only_at_half_end",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "award_throw",
+        "params": {
+          "team": 0,
+          "thrower": 0,
+          "kind": "free_throw"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "regulation_win",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 2,
+        "remaining_ms": 0,
+        "score": [
+          20,
+          19
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "end_half",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "home"
+        ]
+      }
+    },
+    {
+      "id": "regulation_draw",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 2,
+        "remaining_ms": 0,
+        "score": [
+          20,
+          20
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "end_half",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw"
+      }
+    },
+    {
+      "id": "abandonment_requires_decision",
+      "initial_data": {
+        "phase": "live",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "abandon",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    },
+    {
+      "id": "abandoned_no_contest",
+      "initial_data": {
+        "phase": "live",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "abandon",
+          "params": {}
+        },
+        {
+          "type": "official_result",
+          "params": {
+            "winner": null
+          }
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "concession",
+      "initial_data": {
+        "phase": "live",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "concede",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "away"
+        ]
+      }
+    },
+    {
+      "id": "over_capacity_invalid",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "suspended",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [
+          {
+            "team": 0,
+            "player": 0,
+            "remaining_ms": 120000,
+            "unserved": true
+          }
+        ],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "suspension_requires_timer",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "suspended",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "third_suspension_requires_dq",
+      "initial_data": {
+        "phase": "stopped",
+        "half": 1,
+        "remaining_ms": 1800000,
+        "score": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "warned": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "reductions": [],
+        "timeouts": [
+          false,
+          false
+        ],
+        "pending": null,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

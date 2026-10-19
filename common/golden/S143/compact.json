@@ -1,0 +1,1436 @@
+{
+  "profile_id": "S143",
+  "ruleset_id": "builtin.rope_skipping.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "skipper_0"
+    },
+    {
+      "id": "skipper_1"
+    },
+    {
+      "id": "skipper_2"
+    },
+    {
+      "id": "skipper_3"
+    },
+    {
+      "id": "skipper_4"
+    },
+    {
+      "id": "skipper_5"
+    },
+    {
+      "id": "skipper_6"
+    },
+    {
+      "id": "skipper_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "configure_order",
+      "actions": [
+        {
+          "type": "set_start_order",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ],
+        "remaining_ms": 0
+      }
+    },
+    {
+      "id": "start_trial_clock",
+      "initial_data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ],
+        "remaining_ms": 0
+      },
+      "actions": [
+        {
+          "type": "start_trial",
+          "params": {
+            "participant": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "trial",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ],
+        "remaining_ms": 30000
+      }
+    },
+    {
+      "id": "early_completion_rejected",
+      "initial_data": {
+        "phase": "trial",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ],
+        "remaining_ms": 30000
+      },
+      "action": {
+        "type": "complete_trial",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "full_interval_elapses",
+      "initial_data": {
+        "phase": "trial",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ],
+        "remaining_ms": 30000
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 30000
+          }
+        }
+      ],
+      "data": {
+        "phase": "trial",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ],
+        "remaining_ms": 0
+      }
+    },
+    {
+      "id": "expired_trial_can_complete",
+      "initial_data": {
+        "phase": "trial",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ],
+        "remaining_ms": 0
+      },
+      "actions": [
+        {
+          "type": "complete_trial",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "judging",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "awaiting_marks",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ],
+        "remaining_ms": 0
+      }
+    },
+    {
+      "id": "no_time_after_expiry",
+      "initial_data": {
+        "phase": "trial",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ],
+        "remaining_ms": 0
+      },
+      "action": {
+        "type": "elapse",
+        "params": {
+          "milliseconds": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "record_valid_count_and_deduction",
+      "initial_data": {
+        "phase": "judging",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "awaiting_marks",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ],
+        "remaining_ms": 0
+      },
+      "actions": [
+        {
+          "type": "record_marks",
+          "params": {
+            "valid_counts": 80,
+            "deductions": 2
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 80,
+              "deductions": 2
+            }
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ],
+        "remaining_ms": 0
+      }
+    },
+    {
+      "id": "marks_before_completion_rejected",
+      "initial_data": {
+        "phase": "trial",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ],
+        "remaining_ms": 30000
+      },
+      "action": {
+        "type": "record_marks",
+        "params": {
+          "valid_counts": 80,
+          "deductions": 2
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "authorized_restart_resets_clock",
+      "initial_data": {
+        "phase": "trial",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ],
+        "remaining_ms": 30000
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 10000
+          }
+        },
+        {
+          "type": "authorized_restart",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ],
+        "remaining_ms": 0
+      }
+    },
+    {
+      "id": "abandon_clears_clock",
+      "initial_data": {
+        "phase": "trial",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ],
+        "remaining_ms": 30000
+      },
+      "actions": [
+        {
+          "type": "abandon_trial",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "remaining_ms": 0,
+        "current_participant": 1
+      }
+    },
+    {
+      "id": "dq_clears_active_clock",
+      "initial_data": {
+        "phase": "trial",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ],
+        "remaining_ms": 30000
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "participant": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "remaining_ms": 0,
+        "current_participant": 1
+      }
+    },
+    {
+      "id": "future_dq_preserves_active_clock",
+      "initial_data": {
+        "phase": "trial",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "active",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ],
+        "remaining_ms": 30000
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "participant": 7
+          }
+        }
+      ],
+      "legal_constraints": {
+        "remaining_ms": 30000,
+        "current_participant": 0
+      }
+    },
+    {
+      "id": "highest_count_wins",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 80,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 79,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 78,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 77,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 76,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 75,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 74,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 73,
+              "deductions": 0
+            }
+          }
+        ],
+        "remaining_ms": 0
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "skipper_0"
+        ],
+        "placements": [
+          {
+            "player_id": "skipper_0",
+            "place": 1,
+            "score_units": 80,
+            "score_unit_denominator": 1
+          },
+          {
+            "player_id": "skipper_1",
+            "place": 2,
+            "score_units": 79,
+            "score_unit_denominator": 1
+          },
+          {
+            "player_id": "skipper_2",
+            "place": 3,
+            "score_units": 78,
+            "score_unit_denominator": 1
+          },
+          {
+            "player_id": "skipper_3",
+            "place": 4,
+            "score_units": 77,
+            "score_unit_denominator": 1
+          },
+          {
+            "player_id": "skipper_4",
+            "place": 5,
+            "score_units": 76,
+            "score_unit_denominator": 1
+          },
+          {
+            "player_id": "skipper_5",
+            "place": 6,
+            "score_units": 75,
+            "score_unit_denominator": 1
+          },
+          {
+            "player_id": "skipper_6",
+            "place": 7,
+            "score_units": 74,
+            "score_unit_denominator": 1
+          },
+          {
+            "player_id": "skipper_7",
+            "place": 8,
+            "score_units": 73,
+            "score_unit_denominator": 1
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "deduction_changes_winner",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 80,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 79,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 78,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 77,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 76,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 75,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 74,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 73,
+              "deductions": 0
+            }
+          }
+        ],
+        "remaining_ms": 0
+      },
+      "actions": [
+        {
+          "type": "correct_marks",
+          "params": {
+            "participant": 0,
+            "valid_counts": 80,
+            "deductions": 2
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "skipper_1"
+        ]
+      }
+    },
+    {
+      "id": "equal_counts_share_rank",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 80,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 80,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 78,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 77,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 76,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 75,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 74,
+              "deductions": 0
+            }
+          },
+          {
+            "status": "scored",
+            "marks": {
+              "valid_counts": 73,
+              "deductions": 0
+            }
+          }
+        ],
+        "remaining_ms": 0
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "skipper_0",
+          "skipper_1"
+        ]
+      }
+    },
+    {
+      "id": "clock_without_active_trial_invalid",
+      "initial_data": {
+        "phase": "ready",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          },
+          {
+            "status": "pending",
+            "marks": null
+          }
+        ],
+        "remaining_ms": 1
+      },
+      "valid": false
+    },
+    {
+      "id": "all_dns_no_contest",
+      "initial_data": {
+        "phase": "review",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "entrants": [
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          },
+          {
+            "status": "dns",
+            "marks": null
+          }
+        ],
+        "remaining_ms": 0
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1313 @@
+{
+  "profile_id": "S141",
+  "ruleset_id": "builtin.dancesport.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "couple_0"
+    },
+    {
+      "id": "couple_1"
+    },
+    {
+      "id": "couple_2"
+    },
+    {
+      "id": "couple_3"
+    },
+    {
+      "id": "couple_4"
+    },
+    {
+      "id": "couple_5"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start_dance",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "dancing",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "id": "complete",
+      "initial_data": {
+        "phase": "dancing",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "complete_dance",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "judging",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "id": "ballots_after_dance_only",
+      "initial_data": {
+        "phase": "dancing",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "action": {
+        "type": "record_ballot",
+        "params": {
+          "judge": 0,
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "submit_all_five",
+      "initial_data": {
+        "phase": "judging",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "record_ballot",
+          "params": {
+            "judge": 0,
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "record_ballot",
+          "params": {
+            "judge": 1,
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "record_ballot",
+          "params": {
+            "judge": 2,
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "record_ballot",
+          "params": {
+            "judge": 3,
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "record_ballot",
+          "params": {
+            "judge": 4,
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "review",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "judge_submits_once",
+      "initial_data": {
+        "phase": "judging",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "record_ballot",
+          "params": {
+            "judge": 0,
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        }
+      ],
+      "action": {
+        "type": "record_ballot",
+        "params": {
+          "judge": 0,
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "no_duplicate_couple",
+      "initial_data": {
+        "phase": "judging",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "action": {
+        "type": "record_ballot",
+        "params": {
+          "judge": 0,
+          "order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "no_omission",
+      "initial_data": {
+        "phase": "judging",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "action": {
+        "type": "record_ballot",
+        "params": {
+          "judge": 0,
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "unanimous_final",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "couple_0"
+        ],
+        "placements": [
+          {
+            "player_id": "couple_0",
+            "place": 1,
+            "placement_numerator": 2,
+            "placement_denominator": 2
+          },
+          {
+            "player_id": "couple_1",
+            "place": 2,
+            "placement_numerator": 4,
+            "placement_denominator": 2
+          },
+          {
+            "player_id": "couple_2",
+            "place": 3,
+            "placement_numerator": 6,
+            "placement_denominator": 2
+          },
+          {
+            "player_id": "couple_3",
+            "place": 4,
+            "placement_numerator": 8,
+            "placement_denominator": 2
+          },
+          {
+            "player_id": "couple_4",
+            "place": 5,
+            "placement_numerator": 10,
+            "placement_denominator": 2
+          },
+          {
+            "player_id": "couple_5",
+            "place": 6,
+            "placement_numerator": 12,
+            "placement_denominator": 2
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "larger_majority_wins_not_raw_first_marks",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            0,
+            3,
+            4,
+            5
+          ],
+          [
+            2,
+            1,
+            0,
+            3,
+            4,
+            5
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "couple_1"
+        ]
+      }
+    },
+    {
+      "id": "equal_majority_lower_sum",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            3,
+            1,
+            2,
+            4,
+            5
+          ],
+          [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            2,
+            1,
+            0,
+            3,
+            4,
+            5
+          ],
+          [
+            2,
+            3,
+            0,
+            1,
+            4,
+            5
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "couple_0"
+        ]
+      }
+    },
+    {
+      "id": "inseparable_tie_mean_of_occupied_places",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            0,
+            5
+          ],
+          [
+            2,
+            3,
+            4,
+            0,
+            1,
+            5
+          ],
+          [
+            3,
+            4,
+            0,
+            1,
+            2,
+            5
+          ],
+          [
+            4,
+            0,
+            1,
+            2,
+            3,
+            5
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "couple_0",
+          "couple_1",
+          "couple_2",
+          "couple_3",
+          "couple_4"
+        ],
+        "placements": [
+          {
+            "player_id": "couple_0",
+            "place": 1,
+            "placement_numerator": 6,
+            "placement_denominator": 2
+          },
+          {
+            "player_id": "couple_1",
+            "place": 1,
+            "placement_numerator": 6,
+            "placement_denominator": 2
+          },
+          {
+            "player_id": "couple_2",
+            "place": 1,
+            "placement_numerator": 6,
+            "placement_denominator": 2
+          },
+          {
+            "player_id": "couple_3",
+            "place": 1,
+            "placement_numerator": 6,
+            "placement_denominator": 2
+          },
+          {
+            "player_id": "couple_4",
+            "place": 1,
+            "placement_numerator": 6,
+            "placement_denominator": 2
+          },
+          {
+            "player_id": "couple_5",
+            "place": 6,
+            "placement_numerator": 12,
+            "placement_denominator": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "corrected_majority_changes_winner",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "correct_ballot",
+          "params": {
+            "judge": 0,
+            "order": [
+              1,
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "correct_ballot",
+          "params": {
+            "judge": 1,
+            "order": [
+              1,
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "correct_ballot",
+          "params": {
+            "judge": 2,
+            "order": [
+              1,
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "couple_1"
+        ]
+      }
+    },
+    {
+      "id": "exclusion_requires_revised_ballots",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "couple": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "judging",
+        "eligible_couples": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "judges_remaining": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "id": "exclude_and_rejudge",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "couple": 0
+          }
+        },
+        {
+          "type": "record_ballot",
+          "params": {
+            "judge": 0,
+            "order": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "record_ballot",
+          "params": {
+            "judge": 1,
+            "order": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "record_ballot",
+          "params": {
+            "judge": 2,
+            "order": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "record_ballot",
+          "params": {
+            "judge": 3,
+            "order": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "record_ballot",
+          "params": {
+            "judge": 4,
+            "order": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "couple_1"
+        ]
+      }
+    },
+    {
+      "id": "withdraw_before_dance",
+      "actions": [
+        {
+          "type": "withdraw",
+          "params": {
+            "couple": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "eligible_couples": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "id": "authorized_restart",
+      "initial_data": {
+        "phase": "dancing",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "authorized_restart",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "setup",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "id": "invalid_imported_ballot",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "review_requires_all_judges",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          null,
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "no_early_confirmation",
+      "initial_data": {
+        "phase": "judging",
+        "status": [
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible",
+          "eligible"
+        ],
+        "ballots": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "all_withdrawn",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          "dns",
+          "dns",
+          "dns",
+          "dns",
+          "dns",
+          "dns"
+        ],
+        "ballots": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    }
+  ]
+}

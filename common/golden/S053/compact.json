@@ -1,0 +1,3849 @@
+{
+  "profile_id": "S053",
+  "ruleset_id": "builtin.boccia.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "red"
+    },
+    {
+      "id": "blue"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start_match",
+      "actions": [
+        {
+          "type": "start_match",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "jack",
+        "balls": [
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      }
+    },
+    {
+      "id": "invalid_jack_passes_turn",
+      "initial_data": {
+        "phase": "jack",
+        "balls": [
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "play_jack",
+          "params": {
+            "valid": false,
+            "elapsed_ms": 1000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_team": 1
+      }
+    },
+    {
+      "id": "valid_jack_side_plays_first",
+      "initial_data": {
+        "phase": "jack",
+        "balls": [
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "play_jack",
+          "params": {
+            "valid": true,
+            "elapsed_ms": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "balls": [
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      }
+    },
+    {
+      "id": "first_ball_leaves_other_side_to_play",
+      "initial_data": {
+        "phase": "play",
+        "balls": [
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "play_ball",
+          "params": {
+            "ball": 0,
+            "board": [
+              {
+                "status": "live",
+                "rank": 1,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              }
+            ],
+            "elapsed_ms": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "balls": [
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 1,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      }
+    },
+    {
+      "id": "first_equal_score_repeats_last_side",
+      "initial_data": {
+        "phase": "play",
+        "balls": [
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 1,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "play_ball",
+          "params": {
+            "ball": 6,
+            "board": [
+              {
+                "status": "live",
+                "rank": 1,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "live",
+                "rank": 1,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              }
+            ],
+            "elapsed_ms": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "balls": [
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 1,
+        "equal_chain": true,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      }
+    },
+    {
+      "id": "continuing_equal_score_alternates",
+      "initial_data": {
+        "phase": "play",
+        "balls": [
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 1,
+        "equal_chain": true,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "play_ball",
+          "params": {
+            "ball": 7,
+            "board": [
+              {
+                "status": "live",
+                "rank": 1,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "live",
+                "rank": 1,
+                "retracted": false
+              },
+              {
+                "status": "dead",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              },
+              {
+                "status": "unplayed",
+                "rank": null,
+                "retracted": false
+              }
+            ],
+            "elapsed_ms": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_team": 0
+      }
+    },
+    {
+      "id": "unequal_tied_ball_counts_fewer_plays",
+      "initial_data": {
+        "phase": "play",
+        "balls": [
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 1,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "legal_constraints": {
+        "next_team": 1,
+        "provisional_points": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "id": "equidistant_scoring_both_sides",
+      "initial_data": {
+        "phase": "end_review",
+        "balls": [
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "confirm_board",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "end_ready",
+        "balls": [
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          2,
+          1
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      }
+    },
+    {
+      "id": "penalties_alternate_without_cancelling",
+      "initial_data": {
+        "phase": "end_review",
+        "balls": [
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          2,
+          1
+        ],
+        "penalty_first": 0,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "confirm_board",
+          "params": {}
+        },
+        {
+          "type": "resolve_penalty",
+          "params": {
+            "scored": true,
+            "elapsed_ms": 1000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_team": 1,
+        "pending_penalties": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "pending_penalty_prevents_end",
+      "initial_data": {
+        "phase": "end_review",
+        "balls": [
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          2,
+          1
+        ],
+        "penalty_first": 0,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "confirm_board",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "confirm_end",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "penalty_timeout_bound",
+      "initial_data": {
+        "phase": "end_review",
+        "balls": [
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          2,
+          1
+        ],
+        "penalty_first": 0,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "confirm_board",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "resolve_penalty",
+        "params": {
+          "scored": false,
+          "elapsed_ms": 60001
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "time_expiry_retires_remaining_balls",
+      "initial_data": {
+        "phase": "play",
+        "balls": [
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          1,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_team": 1,
+        "remaining_balls": [
+          [],
+          [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "id": "declining_remaining_balls",
+      "initial_data": {
+        "phase": "play",
+        "balls": [
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "decline_remaining",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "next_team": 1,
+        "remaining_balls": [
+          [],
+          [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "id": "regular_next_end_alternates_jack",
+      "initial_data": {
+        "phase": "end_ready",
+        "balls": [
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          2,
+          1
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "confirm_end",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "jack",
+        "next_team": 1
+      }
+    },
+    {
+      "id": "disrupted_end_keeps_retractions_and_opponent_penalties",
+      "initial_data": {
+        "phase": "play",
+        "balls": [
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": true
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          1,
+          2
+        ],
+        "penalty_first": 0,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "replay_end",
+          "params": {
+            "offender": 0,
+            "jack_thrower": 0,
+            "clocks_ms": [
+              210000,
+              210000
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "jack",
+        "balls": [
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": true
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          2
+        ],
+        "penalty_first": 0,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      }
+    },
+    {
+      "id": "simultaneous_release_retraction",
+      "initial_data": {
+        "phase": "play",
+        "balls": [
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "retract_release",
+          "params": {
+            "balls": [
+              0,
+              1
+            ],
+            "elapsed_ms": 1000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_team": 0,
+        "remaining_balls": [
+          [
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fourth_end_decides_match",
+      "initial_data": {
+        "phase": "end_ready",
+        "balls": [
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          2,
+          1
+        ],
+        "scores": [
+          3,
+          1
+        ],
+        "ends_completed": 3,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "confirm_end",
+          "params": {}
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ],
+        "placements": [
+          {
+            "player_id": "red",
+            "place": 1,
+            "score": 5
+          },
+          {
+            "player_id": "blue",
+            "place": 2,
+            "score": 2
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "regulation_tie_requires_tiebreak",
+      "initial_data": {
+        "phase": "end_ready",
+        "balls": [
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          2,
+          1
+        ],
+        "scores": [
+          0,
+          1
+        ],
+        "ends_completed": 3,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "confirm_end",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "tiebreak_setup"
+      }
+    },
+    {
+      "id": "initial_tiebreak_choice",
+      "initial_data": {
+        "phase": "end_ready",
+        "balls": [
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          2,
+          1
+        ],
+        "scores": [
+          0,
+          1
+        ],
+        "ends_completed": 3,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "confirm_end",
+          "params": {}
+        },
+        {
+          "type": "start_tiebreak",
+          "params": {
+            "first_team": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "play",
+        "next_team": 1
+      }
+    },
+    {
+      "id": "tied_tiebreak_alternates_start",
+      "initial_data": {
+        "phase": "end_ready",
+        "balls": [
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          1,
+          1
+        ],
+        "scores": [
+          2,
+          2
+        ],
+        "ends_completed": 4,
+        "tiebreak": true,
+        "tiebreak_first": 0,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "confirm_end",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "play",
+        "next_team": 1
+      }
+    },
+    {
+      "id": "tiebreak_does_not_add_to_regulation_score",
+      "initial_data": {
+        "phase": "end_ready",
+        "balls": [
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          2,
+          1
+        ],
+        "scores": [
+          2,
+          2
+        ],
+        "ends_completed": 4,
+        "tiebreak": true,
+        "tiebreak_first": 0,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "confirm_end",
+          "params": {}
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ],
+        "placements": [
+          {
+            "player_id": "red",
+            "place": 1,
+            "score": 2
+          },
+          {
+            "player_id": "blue",
+            "place": 2,
+            "score": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "two_yellows_forfeit",
+      "initial_data": {
+        "phase": "play",
+        "balls": [
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "actions": [
+        {
+          "type": "card",
+          "params": {
+            "team": 0,
+            "color": "yellow"
+          }
+        },
+        {
+          "type": "card",
+          "params": {
+            "team": 0,
+            "color": "yellow"
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "id": "prior_competition_yellow_counts",
+      "actions": [
+        {
+          "type": "configure",
+          "params": {
+            "prior_yellow": [
+              1,
+              0
+            ],
+            "forfeit_margin": 8
+          }
+        },
+        {
+          "type": "start_match",
+          "params": {}
+        },
+        {
+          "type": "card",
+          "params": {
+            "team": 0,
+            "color": "yellow"
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "red",
+            "place": 2,
+            "score": 0
+          },
+          {
+            "player_id": "blue",
+            "place": 1,
+            "score": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "double_forfeit_needs_official_decision",
+      "actions": [
+        {
+          "type": "forfeit",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "forfeit",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "double_forfeit_no_contest",
+      "actions": [
+        {
+          "type": "forfeit",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "forfeit",
+          "params": {
+            "team": 1
+          }
+        },
+        {
+          "type": "confirm_no_contest",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "pre_match_penalty_survives_start",
+      "actions": [
+        {
+          "type": "award_penalty",
+          "params": {
+            "team": 1
+          }
+        },
+        {
+          "type": "start_match",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "pending_penalties": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "id": "end_points_cannot_omit_board_score",
+      "initial_data": {
+        "phase": "end_ready",
+        "balls": [
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "dead",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "valid": false
+    },
+    {
+      "id": "wrong_side_import_invalid",
+      "initial_data": {
+        "phase": "play",
+        "balls": [
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 0,
+        "equal_chain": false,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "valid": false
+    },
+    {
+      "id": "played_ball_cannot_become_unplayed",
+      "initial_data": {
+        "phase": "play",
+        "balls": [
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "live",
+            "rank": 1,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          },
+          {
+            "status": "unplayed",
+            "rank": null,
+            "retracted": false
+          }
+        ],
+        "clocks_ms": [
+          210000,
+          210000
+        ],
+        "turn": 1,
+        "equal_chain": true,
+        "pending_penalties": [
+          0,
+          0
+        ],
+        "penalty_first": null,
+        "end_points": [
+          0,
+          0
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "ends_completed": 0,
+        "tiebreak": false,
+        "tiebreak_first": null,
+        "prior_yellow": [
+          0,
+          0
+        ],
+        "yellow": [
+          0,
+          0
+        ],
+        "forfeited": [
+          false,
+          false
+        ],
+        "forfeit_margin": 6,
+        "winner": null,
+        "no_contest": false
+      },
+      "action": {
+        "type": "play_ball",
+        "params": {
+          "ball": 7,
+          "board": [
+            {
+              "status": "unplayed",
+              "rank": null,
+              "retracted": false
+            },
+            {
+              "status": "unplayed",
+              "rank": null,
+              "retracted": false
+            },
+            {
+              "status": "unplayed",
+              "rank": null,
+              "retracted": false
+            },
+            {
+              "status": "unplayed",
+              "rank": null,
+              "retracted": false
+            },
+            {
+              "status": "unplayed",
+              "rank": null,
+              "retracted": false
+            },
+            {
+              "status": "unplayed",
+              "rank": null,
+              "retracted": false
+            },
+            {
+              "status": "live",
+              "rank": 1,
+              "retracted": false
+            },
+            {
+              "status": "live",
+              "rank": 2,
+              "retracted": false
+            },
+            {
+              "status": "unplayed",
+              "rank": null,
+              "retracted": false
+            },
+            {
+              "status": "unplayed",
+              "rank": null,
+              "retracted": false
+            },
+            {
+              "status": "unplayed",
+              "rank": null,
+              "retracted": false
+            },
+            {
+              "status": "unplayed",
+              "rank": null,
+              "retracted": false
+            }
+          ],
+          "elapsed_ms": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

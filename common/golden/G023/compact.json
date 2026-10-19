@@ -1,0 +1,319 @@
+{
+  "profile_id": "G023",
+  "ruleset_id": "builtin.chinese_checkers.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "adjacent_step",
+      "actions": [
+        {
+          "type": "move",
+          "params": {
+            "path": [
+              65,
+              66
+            ]
+          }
+        }
+      ],
+      "data": {
+        "pawns": [
+          [
+            66,
+            75,
+            76,
+            86,
+            87,
+            88,
+            98,
+            99,
+            100,
+            101
+          ],
+          [
+            19,
+            20,
+            21,
+            22,
+            32,
+            33,
+            34,
+            44,
+            45,
+            55
+          ]
+        ],
+        "turn": 1
+      }
+    },
+    {
+      "id": "single_jump",
+      "actions": [
+        {
+          "type": "move",
+          "params": {
+            "path": [
+              75,
+              77
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "two_jump_chain",
+      "initial_data": {
+        "pawns": [
+          [
+            65,
+            75,
+            76,
+            86,
+            87,
+            88,
+            98,
+            99,
+            100,
+            101
+          ],
+          [
+            19,
+            20,
+            21,
+            22,
+            32,
+            33,
+            34,
+            44,
+            45,
+            78
+          ]
+        ],
+        "turn": 0
+      },
+      "actions": [
+        {
+          "type": "move",
+          "params": {
+            "path": [
+              75,
+              77,
+              79
+            ]
+          }
+        }
+      ],
+      "data": {
+        "pawns": [
+          [
+            65,
+            76,
+            79,
+            86,
+            87,
+            88,
+            98,
+            99,
+            100,
+            101
+          ],
+          [
+            19,
+            20,
+            21,
+            22,
+            32,
+            33,
+            34,
+            44,
+            45,
+            78
+          ]
+        ],
+        "turn": 1
+      }
+    },
+    {
+      "id": "cannot_skip_two_holes",
+      "initial_data": {
+        "pawns": [
+          [
+            65,
+            75,
+            76,
+            86,
+            87,
+            88,
+            98,
+            99,
+            100,
+            101
+          ],
+          [
+            19,
+            20,
+            21,
+            22,
+            32,
+            33,
+            34,
+            44,
+            45,
+            78
+          ]
+        ],
+        "turn": 0
+      },
+      "action": {
+        "type": "move",
+        "params": {
+          "path": [
+            75,
+            79
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "target_cannot_be_left",
+      "initial_data": {
+        "pawns": [
+          [
+            19,
+            20,
+            21,
+            22,
+            32,
+            33,
+            34,
+            44,
+            45,
+            54
+          ],
+          [
+            14,
+            27,
+            39,
+            50,
+            60,
+            61,
+            70,
+            81,
+            93,
+            106
+          ]
+        ],
+        "turn": 0
+      },
+      "action": {
+        "type": "move",
+        "params": {
+          "path": [
+            44,
+            43
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "camp_filled",
+      "initial_data": {
+        "pawns": [
+          [
+            19,
+            20,
+            21,
+            22,
+            32,
+            33,
+            34,
+            44,
+            45,
+            54
+          ],
+          [
+            14,
+            27,
+            39,
+            50,
+            60,
+            61,
+            70,
+            81,
+            93,
+            106
+          ]
+        ],
+        "turn": 0
+      },
+      "actions": [
+        {
+          "type": "move",
+          "params": {
+            "path": [
+              54,
+              55
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "overlapping_marbles",
+      "initial_data": {
+        "pawns": [
+          [
+            19,
+            75,
+            76,
+            86,
+            87,
+            88,
+            98,
+            99,
+            100,
+            101
+          ],
+          [
+            19,
+            20,
+            21,
+            22,
+            32,
+            33,
+            34,
+            44,
+            45,
+            55
+          ]
+        ],
+        "turn": 0
+      },
+      "valid": false
+    }
+  ]
+}

@@ -1,0 +1,3178 @@
+{
+  "profile_id": "S021",
+  "ruleset_id": "builtin.ultimate.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "home"
+    },
+    {
+      "id": "away"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start_game",
+      "actions": [
+        {
+          "type": "start_game",
+          "params": {
+            "first_receiving": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "between_points",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "start_point",
+      "initial_data": {
+        "phase": "between_points",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "start_point",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "point",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "goal_changes_receiving_team",
+      "initial_data": {
+        "phase": "point",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "scorer": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "between_points",
+        "scores": [
+          1,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 1,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "bench_player_cannot_score",
+      "initial_data": {
+        "phase": "point",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "action": {
+        "type": "goal",
+        "params": {
+          "team": 0,
+          "scorer": 7
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "no_goal_between_points",
+      "initial_data": {
+        "phase": "between_points",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "action": {
+        "type": "goal",
+        "params": {
+          "team": 0,
+          "scorer": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "returning_substitutions_between_points",
+      "initial_data": {
+        "phase": "between_points",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "out": [
+              0
+            ],
+            "in": [
+              7
+            ]
+          }
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "out": [
+              7
+            ],
+            "in": [
+              0
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "between_points",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "ordinary_substitution_forbidden_midpoint",
+      "initial_data": {
+        "phase": "point",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "out": [
+            0
+          ],
+          "in": [
+            7
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "authorized_replacement_opens_matching_window",
+      "initial_data": {
+        "phase": "point",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "authorized_replacement",
+          "params": {
+            "team": 0,
+            "out": 0,
+            "in": 7
+          }
+        }
+      ],
+      "data": {
+        "phase": "replacement_break",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "bench",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 1,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "opponent_can_match_one_replacement",
+      "initial_data": {
+        "phase": "replacement_break",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "bench",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 1,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "matching_replacement",
+          "params": {
+            "team": 1,
+            "out": 0,
+            "in": 7
+          }
+        }
+      ],
+      "legal_constraints": {
+        "matching_replacements": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "no_extra_matching_replacement",
+      "initial_data": {
+        "phase": "replacement_break",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "bench",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 1,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "matching_replacement",
+          "params": {
+            "team": 1,
+            "out": 0,
+            "in": 7
+          }
+        }
+      ],
+      "action": {
+        "type": "matching_replacement",
+        "params": {
+          "team": 1,
+          "out": 1,
+          "in": 8
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "resume_closes_matching_right",
+      "initial_data": {
+        "phase": "replacement_break",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "bench",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 1,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "resume_point",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "matching_replacement",
+        "params": {
+          "team": 1,
+          "out": 0,
+          "in": 7
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "outgoing_player_blocked_for_current_point",
+      "initial_data": {
+        "phase": "replacement_break",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "bench",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 1,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "action": {
+        "type": "authorized_replacement",
+        "params": {
+          "team": 0,
+          "out": 1,
+          "in": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "goal_requires_stoppage_to_end",
+      "initial_data": {
+        "phase": "replacement_break",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "bench",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 1,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "action": {
+        "type": "goal",
+        "params": {
+          "team": 0,
+          "scorer": 7
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "next_point_restores_outgoing_eligibility",
+      "initial_data": {
+        "phase": "replacement_break",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "bench",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 1,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "resume_point",
+          "params": {}
+        },
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "scorer": 7
+          }
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "out": [
+              7
+            ],
+            "in": [
+              0
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "between_points",
+        "scores": [
+          1,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 1,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "halftime_at_eight",
+      "initial_data": {
+        "phase": "point",
+        "scores": [
+          3,
+          7
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 1,
+            "scorer": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "halftime",
+        "scores": [
+          3,
+          8
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "second_half_reverses_initial_receiving_team",
+      "initial_data": {
+        "phase": "halftime",
+        "scores": [
+          3,
+          8
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "begin_second_half",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "between_points",
+        "scores": [
+          3,
+          8
+        ],
+        "half": 2,
+        "first_receiving": 0,
+        "next_receiver": 1,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "cannot_start_point_during_halftime",
+      "initial_data": {
+        "phase": "halftime",
+        "scores": [
+          3,
+          8
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "action": {
+        "type": "start_point",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "timeout_blocks_scoring",
+      "initial_data": {
+        "phase": "point",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "goal",
+        "params": {
+          "team": 0,
+          "scorer": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "two_timeouts_per_half",
+      "initial_data": {
+        "phase": "point",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "end_timeout",
+          "params": {}
+        },
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "end_timeout",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "timeout",
+        "params": {
+          "team": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "timeouts_reset_at_second_half",
+      "initial_data": {
+        "phase": "halftime",
+        "scores": [
+          3,
+          8
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 2
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "begin_second_half",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "between_points",
+        "scores": [
+          3,
+          8
+        ],
+        "half": 2,
+        "first_receiving": 0,
+        "next_receiver": 1,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "fifteen_fourteen_wins",
+      "initial_data": {
+        "phase": "point",
+        "scores": [
+          14,
+          14
+        ],
+        "half": 2,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "scorer": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "home"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "eight_active_players_invalid",
+      "initial_data": {
+        "phase": "point",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "valid": false
+    },
+    {
+      "id": "concession_during_timeout",
+      "initial_data": {
+        "phase": "point",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "concede",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "away"
+        ],
+        "reason": "concession"
+      }
+    },
+    {
+      "id": "roster_configuration",
+      "actions": [
+        {
+          "type": "set_lineup",
+          "params": {
+            "team": 0,
+            "roster_size": 7,
+            "active": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "type": "start_game",
+          "params": {
+            "first_receiving": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "receiving_team": 1
+      }
+    },
+    {
+      "id": "cannot_change_roster_after_start",
+      "initial_data": {
+        "phase": "between_points",
+        "scores": [
+          0,
+          0
+        ],
+        "half": 1,
+        "first_receiving": 0,
+        "next_receiver": 0,
+        "teams": [
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          },
+          {
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "blocked_this_point": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "matching_allowance": 0,
+            "timeouts_used": 0
+          }
+        ],
+        "timeout_team": null,
+        "conceded_by": null
+      },
+      "action": {
+        "type": "set_lineup",
+        "params": {
+          "team": 0,
+          "roster_size": 7,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

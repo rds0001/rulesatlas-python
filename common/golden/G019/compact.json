@@ -1,0 +1,326 @@
+{
+  "profile_id": "G019",
+  "ruleset_id": "builtin.oware.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_count": 8
+    },
+    {
+      "id": "opening",
+      "actions": [
+        {
+          "type": "sow",
+          "params": {
+            "pit": 0
+          }
+        }
+      ],
+      "data": {
+        "pits": [
+          0,
+          5,
+          5,
+          5,
+          5,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "scores": [
+          0,
+          0
+        ],
+        "turn": 1,
+        "agreement": [
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "id": "capture_two",
+      "initial_data": {
+        "pits": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "scores": [
+          3,
+          3
+        ],
+        "turn": 0,
+        "agreement": [
+          false,
+          false
+        ]
+      },
+      "actions": [
+        {
+          "type": "sow",
+          "params": {
+            "pit": 5
+          }
+        }
+      ],
+      "data": {
+        "pits": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          0,
+          0,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "scores": [
+          5,
+          3
+        ],
+        "turn": 1,
+        "agreement": [
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "id": "grand_slam_cancelled",
+      "initial_data": {
+        "pits": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scores": [
+          10,
+          11
+        ],
+        "turn": 0,
+        "agreement": [
+          false,
+          false
+        ]
+      },
+      "actions": [
+        {
+          "type": "sow",
+          "params": {
+            "pit": 5
+          }
+        }
+      ],
+      "data": {
+        "pits": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scores": [
+          10,
+          11
+        ],
+        "turn": 1,
+        "agreement": [
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "id": "must_feed",
+      "initial_data": {
+        "pits": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scores": [
+          21,
+          21
+        ],
+        "turn": 0,
+        "agreement": [
+          false,
+          false
+        ]
+      },
+      "action": {
+        "type": "sow",
+        "params": {
+          "pit": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "feeding_move_only",
+      "initial_data": {
+        "pits": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scores": [
+          21,
+          21
+        ],
+        "turn": 0,
+        "agreement": [
+          false,
+          false
+        ]
+      },
+      "legal_params": [
+        {
+          "pit": 5
+        },
+        {
+          "player": 0
+        },
+        {
+          "player": 1
+        }
+      ]
+    },
+    {
+      "id": "agreed_equal_end",
+      "actions": [
+        {
+          "type": "agree_end",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "agree_end",
+          "params": {
+            "player": 1
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "draw"
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "cannot_play_opposing_pit",
+      "action": {
+        "type": "sow",
+        "params": {
+          "pit": 6
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "majority_wins",
+      "initial_data": {
+        "pits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scores": [
+          24,
+          20
+        ],
+        "turn": 0,
+        "agreement": [
+          false,
+          false
+        ]
+      },
+      "actions": [
+        {
+          "type": "sow",
+          "params": {
+            "pit": 5
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      },
+      "legal_count": 0
+    }
+  ]
+}

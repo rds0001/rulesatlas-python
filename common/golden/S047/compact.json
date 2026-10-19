@@ -1,0 +1,851 @@
+{
+  "profile_id": "S047",
+  "ruleset_id": "builtin.nine_ball.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "legal_dry_break_offers_push_to_opponent",
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "first_contact": 1,
+            "pocketed": [],
+            "off_table": [],
+            "rail_after_contact": true,
+            "break_rail_count": 4,
+            "foul": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "turn": 1,
+        "remaining": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "shots": 1,
+        "push_available": true,
+        "pusher": null,
+        "ball_in_hand": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "three_rail_dry_break_is_foul",
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "first_contact": 1,
+            "pocketed": [],
+            "off_table": [],
+            "rail_after_contact": true,
+            "break_rail_count": 3,
+            "foul": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "turn": 1,
+        "remaining": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fouls": [
+          1,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "shots": 1,
+        "push_available": false,
+        "pusher": null,
+        "ball_in_hand": true,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "nine_on_legal_break_wins",
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "first_contact": 1,
+            "pocketed": [
+              9
+            ],
+            "off_table": [],
+            "rail_after_contact": true,
+            "break_rail_count": 0,
+            "foul": false
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "nine_with_foul_is_respotted",
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "first_contact": 1,
+            "pocketed": [
+              9
+            ],
+            "off_table": [],
+            "rail_after_contact": true,
+            "break_rail_count": 0,
+            "foul": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "turn": 1,
+        "remaining": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fouls": [
+          1,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "shots": 1,
+        "push_available": false,
+        "pusher": null,
+        "ball_in_hand": true,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "wrong_lowest_contact_is_foul",
+      "initial_data": {
+        "phase": "play",
+        "turn": 0,
+        "remaining": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "shots": 5,
+        "push_available": false,
+        "pusher": null,
+        "ball_in_hand": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "first_contact": 2,
+            "pocketed": [],
+            "off_table": [],
+            "rail_after_contact": true,
+            "break_rail_count": 0,
+            "foul": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "turn": 1,
+        "remaining": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fouls": [
+          1,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "shots": 6,
+        "push_available": false,
+        "pusher": null,
+        "ball_in_hand": true,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "no_pocket_or_rail_is_foul",
+      "initial_data": {
+        "phase": "play",
+        "turn": 0,
+        "remaining": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "shots": 5,
+        "push_available": false,
+        "pusher": null,
+        "ball_in_hand": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "first_contact": 1,
+            "pocketed": [],
+            "off_table": [],
+            "rail_after_contact": false,
+            "break_rail_count": 0,
+            "foul": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "turn": 1,
+        "remaining": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fouls": [
+          1,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "shots": 6,
+        "push_available": false,
+        "pusher": null,
+        "ball_in_hand": true,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "push_waives_contact_and_rail_and_respots_nine",
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "first_contact": 1,
+            "pocketed": [],
+            "off_table": [],
+            "rail_after_contact": true,
+            "break_rail_count": 4,
+            "foul": false
+          }
+        },
+        {
+          "type": "push",
+          "params": {
+            "first_contact": null,
+            "pocketed": [
+              9
+            ],
+            "off_table": [],
+            "rail_after_contact": false,
+            "break_rail_count": 0,
+            "foul": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "push_choice",
+        "turn": 0,
+        "remaining": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "shots": 2,
+        "push_available": false,
+        "pusher": 1,
+        "ball_in_hand": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "push_choice_can_return_shot",
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "first_contact": 1,
+            "pocketed": [],
+            "off_table": [],
+            "rail_after_contact": true,
+            "break_rail_count": 4,
+            "foul": false
+          }
+        },
+        {
+          "type": "push",
+          "params": {
+            "first_contact": null,
+            "pocketed": [],
+            "off_table": [],
+            "rail_after_contact": false,
+            "break_rail_count": 0,
+            "foul": false
+          }
+        },
+        {
+          "type": "choose_push",
+          "params": {
+            "take_shot": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "turn": 1,
+        "remaining": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "shots": 2,
+        "push_available": false,
+        "pusher": null,
+        "ball_in_hand": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "push_not_available_later",
+      "initial_data": {
+        "phase": "play",
+        "turn": 0,
+        "remaining": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "shots": 5,
+        "push_available": false,
+        "pusher": null,
+        "ball_in_hand": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "push",
+        "params": {
+          "first_contact": 1,
+          "pocketed": [],
+          "off_table": [],
+          "rail_after_contact": true,
+          "break_rail_count": 0,
+          "foul": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "warned_third_foul_loses",
+      "initial_data": {
+        "phase": "play",
+        "turn": 0,
+        "remaining": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fouls": [
+          2,
+          0
+        ],
+        "warned": [
+          true,
+          false
+        ],
+        "shots": 5,
+        "push_available": false,
+        "pusher": null,
+        "ball_in_hand": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "first_contact": 1,
+            "pocketed": [],
+            "off_table": [],
+            "rail_after_contact": true,
+            "break_rail_count": 0,
+            "foul": true
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "bob"
+        ],
+        "reason": "three_fouls"
+      }
+    },
+    {
+      "id": "unwarned_third_foul_does_not_lose",
+      "initial_data": {
+        "phase": "play",
+        "turn": 0,
+        "remaining": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fouls": [
+          2,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "shots": 5,
+        "push_available": false,
+        "pusher": null,
+        "ball_in_hand": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "first_contact": 1,
+            "pocketed": [],
+            "off_table": [],
+            "rail_after_contact": true,
+            "break_rail_count": 0,
+            "foul": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "turn": 1,
+        "remaining": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fouls": [
+          2,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "shots": 6,
+        "push_available": false,
+        "pusher": null,
+        "ball_in_hand": true,
+        "winner": null,
+        "reason": null
+      },
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "legal_shot_resets_fouls_and_warning",
+      "initial_data": {
+        "phase": "play",
+        "turn": 0,
+        "remaining": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fouls": [
+          2,
+          0
+        ],
+        "warned": [
+          true,
+          false
+        ],
+        "shots": 5,
+        "push_available": false,
+        "pusher": null,
+        "ball_in_hand": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "first_contact": 1,
+            "pocketed": [],
+            "off_table": [],
+            "rail_after_contact": true,
+            "break_rail_count": 0,
+            "foul": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "turn": 1,
+        "remaining": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "shots": 6,
+        "push_available": false,
+        "pusher": null,
+        "ball_in_hand": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "object_ball_off_table_stays_down",
+      "initial_data": {
+        "phase": "play",
+        "turn": 0,
+        "remaining": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "shots": 5,
+        "push_available": false,
+        "pusher": null,
+        "ball_in_hand": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "first_contact": 1,
+            "pocketed": [],
+            "off_table": [
+              1
+            ],
+            "rail_after_contact": true,
+            "break_rail_count": 0,
+            "foul": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "turn": 1,
+        "remaining": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fouls": [
+          1,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "shots": 6,
+        "push_available": false,
+        "pusher": null,
+        "ball_in_hand": true,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "duplicate_removed_ball_rejected",
+      "initial_data": {
+        "phase": "play",
+        "turn": 0,
+        "remaining": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "shots": 5,
+        "push_available": false,
+        "pusher": null,
+        "ball_in_hand": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "shot",
+        "params": {
+          "first_contact": 1,
+          "pocketed": [
+            1
+          ],
+          "off_table": [
+            1
+          ],
+          "rail_after_contact": true,
+          "break_rail_count": 0,
+          "foul": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "missing_nine_before_finish_invalid",
+      "initial_data": {
+        "phase": "play",
+        "turn": 0,
+        "remaining": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "warned": [
+          false,
+          false
+        ],
+        "shots": 5,
+        "push_available": false,
+        "pusher": null,
+        "ball_in_hand": false,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

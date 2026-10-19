@@ -1,0 +1,661 @@
+{
+  "profile_id": "S140",
+  "ruleset_id": "builtin.breaking.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "breaker_a"
+    },
+    {
+      "id": "breaker_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "choose_round_order",
+      "actions": [
+        {
+          "type": "start_round",
+          "params": {
+            "first": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "first": 0,
+        "completed": [],
+        "votes": null,
+        "rounds": [],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "wrong_breaker_cannot_start",
+      "initial_data": {
+        "phase": "ready",
+        "first": 0,
+        "completed": [],
+        "votes": null,
+        "rounds": [],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "start_performance",
+        "params": {
+          "player": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "first_performance_advances",
+      "initial_data": {
+        "phase": "performing",
+        "first": 0,
+        "completed": [],
+        "votes": null,
+        "rounds": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "complete_performance",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "first": 0,
+        "completed": [
+          0
+        ],
+        "votes": null,
+        "rounds": [],
+        "winner": null,
+        "reason": null
+      },
+      "legal_constraints": {
+        "next_performer": 1
+      }
+    },
+    {
+      "id": "both_perform_before_judging",
+      "initial_data": {
+        "phase": "ready",
+        "first": 0,
+        "completed": [
+          0
+        ],
+        "votes": null,
+        "rounds": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "start_performance",
+          "params": {
+            "player": 1
+          }
+        },
+        {
+          "type": "complete_performance",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "judging",
+        "first": 0,
+        "completed": [
+          0,
+          1
+        ],
+        "votes": null,
+        "rounds": [],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "premature_votes_rejected",
+      "initial_data": {
+        "phase": "ready",
+        "first": 0,
+        "completed": [
+          0
+        ],
+        "votes": null,
+        "rounds": [],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "record_votes",
+        "params": {
+          "votes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "majority_vote",
+      "initial_data": {
+        "phase": "judging",
+        "first": 0,
+        "completed": [
+          0,
+          1
+        ],
+        "votes": null,
+        "rounds": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "record_votes",
+          "params": {
+            "votes": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "round_review",
+        "first": 0,
+        "completed": [
+          0,
+          1
+        ],
+        "votes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "rounds": [],
+        "winner": null,
+        "reason": null
+      },
+      "legal_constraints": {
+        "provisional_round_winner": 0
+      }
+    },
+    {
+      "id": "missing_judge_rejected",
+      "initial_data": {
+        "phase": "judging",
+        "first": 0,
+        "completed": [
+          0,
+          1
+        ],
+        "votes": null,
+        "rounds": [],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "record_votes",
+        "params": {
+          "votes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "jury_correction_changes_round",
+      "initial_data": {
+        "phase": "round_review",
+        "first": 0,
+        "completed": [
+          0,
+          1
+        ],
+        "votes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "rounds": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "correct_vote",
+          "params": {
+            "judge": 0,
+            "player": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "provisional_round_winner": 1
+      }
+    },
+    {
+      "id": "confirm_opens_next_round",
+      "initial_data": {
+        "phase": "round_review",
+        "first": 0,
+        "completed": [
+          0,
+          1
+        ],
+        "votes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "rounds": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "confirm_round",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "setup",
+        "first": null,
+        "completed": [],
+        "votes": null,
+        "rounds": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "two_rounds_end_battle",
+      "initial_data": {
+        "phase": "round_review",
+        "first": 0,
+        "completed": [
+          0,
+          1
+        ],
+        "votes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "rounds": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "confirm_round",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "breaker_a"
+        ],
+        "reason": "two_rounds"
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "third_round_decides",
+      "initial_data": {
+        "phase": "round_review",
+        "first": 0,
+        "completed": [
+          0,
+          1
+        ],
+        "votes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "rounds": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "confirm_round",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "finished",
+        "first": null,
+        "completed": [],
+        "votes": null,
+        "rounds": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "winner": 0,
+        "reason": "two_rounds"
+      }
+    },
+    {
+      "id": "vote_margin_does_not_carry",
+      "initial_data": {
+        "phase": "round_review",
+        "first": 0,
+        "completed": [
+          0,
+          1
+        ],
+        "votes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "rounds": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "confirm_round",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "round_wins": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cannot_correct_unrecorded_vote",
+      "initial_data": {
+        "phase": "judging",
+        "first": 0,
+        "completed": [
+          0,
+          1
+        ],
+        "votes": null,
+        "rounds": [],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "correct_vote",
+        "params": {
+          "judge": 0,
+          "player": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "forfeit_before_first_round",
+      "actions": [
+        {
+          "type": "forfeit",
+          "params": {
+            "player": 1
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "breaker_a"
+        ],
+        "result_kind": "forfeit"
+      }
+    },
+    {
+      "id": "official_disqualification",
+      "initial_data": {
+        "phase": "performing",
+        "first": 0,
+        "completed": [],
+        "votes": null,
+        "rounds": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "breaker_b"
+        ],
+        "result_kind": "disqualification"
+      }
+    },
+    {
+      "id": "wrong_completed_order_invalid",
+      "initial_data": {
+        "phase": "ready",
+        "first": 0,
+        "completed": [
+          1
+        ],
+        "votes": null,
+        "rounds": [],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "round_after_match_win_invalid",
+      "initial_data": {
+        "phase": "setup",
+        "first": null,
+        "completed": [],
+        "votes": null,
+        "rounds": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

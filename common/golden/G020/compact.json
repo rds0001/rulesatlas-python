@@ -1,0 +1,355 @@
+{
+  "profile_id": "G020",
+  "ruleset_id": "builtin.toguz.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_count": 9
+    },
+    {
+      "id": "opening_even_capture",
+      "actions": [
+        {
+          "type": "sow",
+          "params": {
+            "pit": 8,
+            "claim_tuzdyk": false
+          }
+        }
+      ],
+      "data": {
+        "pits": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          1,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          0,
+          9
+        ],
+        "scores": [
+          10,
+          0
+        ],
+        "turn": 1,
+        "tuzdyk": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "id": "create_tuzdyk",
+      "initial_data": {
+        "pits": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          2,
+          2,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "scores": [
+          7,
+          7
+        ],
+        "turn": 0,
+        "tuzdyk": [
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "sow",
+          "params": {
+            "pit": 8,
+            "claim_tuzdyk": true
+          }
+        }
+      ],
+      "data": {
+        "pits": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          1,
+          0,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "scores": [
+          10,
+          7
+        ],
+        "turn": 1,
+        "tuzdyk": [
+          9,
+          null
+        ]
+      }
+    },
+    {
+      "id": "cannot_claim_ninth_pit",
+      "initial_data": {
+        "pits": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          10,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          2
+        ],
+        "scores": [
+          3,
+          3
+        ],
+        "turn": 0,
+        "tuzdyk": [
+          null,
+          null
+        ]
+      },
+      "action": {
+        "type": "sow",
+        "params": {
+          "pit": 8,
+          "claim_tuzdyk": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "opposing_tuzdyk_number",
+      "initial_data": {
+        "pits": [
+          0,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          2,
+          2,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "scores": [
+          7,
+          16
+        ],
+        "turn": 0,
+        "tuzdyk": [
+          null,
+          0
+        ]
+      },
+      "action": {
+        "type": "sow",
+        "params": {
+          "pit": 8,
+          "claim_tuzdyk": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "tuzdyk_receives_seed",
+      "initial_data": {
+        "pits": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          0,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          6,
+          12
+        ],
+        "scores": [
+          9,
+          0
+        ],
+        "turn": 1,
+        "tuzdyk": [
+          9,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "sow",
+          "params": {
+            "pit": 17,
+            "claim_tuzdyk": false
+          }
+        }
+      ],
+      "data": {
+        "pits": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          0,
+          10,
+          9,
+          9,
+          9,
+          9,
+          9,
+          6,
+          1
+        ],
+        "scores": [
+          10,
+          0
+        ],
+        "turn": 0,
+        "tuzdyk": [
+          9,
+          null
+        ]
+      }
+    },
+    {
+      "id": "no_arbitrary_tuzdyk",
+      "action": {
+        "type": "sow",
+        "params": {
+          "pit": 0,
+          "claim_tuzdyk": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "majority_wins",
+      "initial_data": {
+        "pits": [
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scores": [
+          80,
+          70
+        ],
+        "turn": 0,
+        "tuzdyk": [
+          null,
+          null
+        ]
+      },
+      "actions": [
+        {
+          "type": "sow",
+          "params": {
+            "pit": 8,
+            "claim_tuzdyk": false
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      },
+      "legal_count": 0
+    }
+  ]
+}

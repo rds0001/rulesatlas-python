@@ -1,0 +1,944 @@
+{
+  "profile_id": "G049",
+  "ruleset_id": "builtin.euchre.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    },
+    {
+      "id": "carol"
+    },
+    {
+      "id": "dan"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "deal",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "deck": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "bid_first",
+        "dealer": 3,
+        "turn": 0,
+        "hands": [
+          [
+            0,
+            4,
+            8,
+            12,
+            16
+          ],
+          [
+            1,
+            5,
+            9,
+            13,
+            17
+          ],
+          [
+            2,
+            6,
+            10,
+            14,
+            18
+          ],
+          [
+            3,
+            7,
+            11,
+            15,
+            19
+          ]
+        ],
+        "stock": [
+          21,
+          22,
+          23
+        ],
+        "upcard": 20,
+        "trump": null,
+        "maker": null,
+        "alone": false,
+        "passes": 0,
+        "won": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "trick": [],
+        "scores": [
+          0,
+          0
+        ]
+      },
+      "legal_count": 3
+    },
+    {
+      "id": "ordered_up_dealer_discards",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "deck": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "trump": 3,
+            "alone": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "discard",
+        "dealer": 3,
+        "turn": 3,
+        "hands": [
+          [
+            0,
+            4,
+            8,
+            12,
+            16
+          ],
+          [
+            1,
+            5,
+            9,
+            13,
+            17
+          ],
+          [
+            2,
+            6,
+            10,
+            14,
+            18
+          ],
+          [
+            3,
+            7,
+            11,
+            15,
+            19,
+            20
+          ]
+        ],
+        "stock": [
+          21,
+          22,
+          23
+        ],
+        "upcard": null,
+        "trump": 3,
+        "maker": 0,
+        "alone": false,
+        "passes": 0,
+        "won": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "trick": [],
+        "scores": [
+          0,
+          0
+        ]
+      },
+      "legal_count": 6
+    },
+    {
+      "id": "wrong_first_round_suit",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "deck": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ]
+          }
+        }
+      ],
+      "action": {
+        "type": "call",
+        "params": {
+          "trump": 0,
+          "alone": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "stick_dealer_no_eighth_pass",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "deck": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ]
+          }
+        },
+        {
+          "type": "pass",
+          "params": {}
+        },
+        {
+          "type": "pass",
+          "params": {}
+        },
+        {
+          "type": "pass",
+          "params": {}
+        },
+        {
+          "type": "pass",
+          "params": {}
+        },
+        {
+          "type": "pass",
+          "params": {}
+        },
+        {
+          "type": "pass",
+          "params": {}
+        },
+        {
+          "type": "pass",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "pass",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "second_round_cannot_repeat_suit",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "deck": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ]
+          }
+        },
+        {
+          "type": "pass",
+          "params": {}
+        },
+        {
+          "type": "pass",
+          "params": {}
+        },
+        {
+          "type": "pass",
+          "params": {}
+        },
+        {
+          "type": "pass",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "call",
+        "params": {
+          "trump": 3,
+          "alone": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "left_bower_must_follow_trump",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 1,
+        "hands": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            8,
+            6,
+            7,
+            9,
+            10
+          ],
+          [
+            5,
+            11,
+            12,
+            13,
+            14
+          ],
+          [
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        ],
+        "stock": [
+          20,
+          21,
+          22,
+          23
+        ],
+        "upcard": null,
+        "trump": 0,
+        "maker": 0,
+        "alone": false,
+        "passes": 0,
+        "won": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "trick": [
+          {
+            "player": 0,
+            "card": 0
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ]
+      },
+      "legal_params": [
+        {
+          "card": 8
+        }
+      ]
+    },
+    {
+      "id": "left_bower_is_not_printed_suit",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 1,
+        "hands": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            8,
+            6,
+            7,
+            9,
+            10
+          ],
+          [
+            5,
+            11,
+            12,
+            13,
+            14
+          ],
+          [
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        ],
+        "stock": [
+          20,
+          21,
+          22,
+          23
+        ],
+        "upcard": null,
+        "trump": 0,
+        "maker": 0,
+        "alone": false,
+        "passes": 0,
+        "won": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "trick": [
+          {
+            "player": 0,
+            "card": 0
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ]
+      },
+      "action": {
+        "type": "play",
+        "params": {
+          "card": 6
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "left_bower_leads_effective_trump",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 1,
+        "hands": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            0,
+            6,
+            7,
+            9,
+            10
+          ],
+          [
+            5,
+            11,
+            12,
+            13,
+            14
+          ],
+          [
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        ],
+        "stock": [
+          20,
+          21,
+          22,
+          23
+        ],
+        "upcard": null,
+        "trump": 0,
+        "maker": 0,
+        "alone": false,
+        "passes": 0,
+        "won": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "trick": [
+          {
+            "player": 0,
+            "card": 8
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ]
+      },
+      "legal_params": [
+        {
+          "card": 0
+        }
+      ]
+    },
+    {
+      "id": "partnership_sweep",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 0,
+        "hands": [
+          [
+            2
+          ],
+          [
+            8
+          ],
+          [
+            5
+          ],
+          [
+            11
+          ]
+        ],
+        "stock": [
+          20,
+          21,
+          22,
+          23
+        ],
+        "upcard": null,
+        "trump": 0,
+        "maker": 0,
+        "alone": false,
+        "passes": 0,
+        "won": [
+          [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            9,
+            10,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          [],
+          [],
+          []
+        ],
+        "trick": [],
+        "scores": [
+          8,
+          0
+        ]
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 2
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 8
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 5
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 11
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice",
+          "carol"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "lone_sweep_four_points",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 0,
+        "hands": [
+          [
+            2
+          ],
+          [
+            8
+          ],
+          [
+            0,
+            1,
+            3,
+            4,
+            5
+          ],
+          [
+            11
+          ]
+        ],
+        "stock": [
+          20,
+          21,
+          22,
+          23
+        ],
+        "upcard": null,
+        "trump": 0,
+        "maker": 0,
+        "alone": true,
+        "passes": 0,
+        "won": [
+          [
+            6,
+            7,
+            9,
+            10,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          [],
+          [],
+          []
+        ],
+        "trick": [],
+        "scores": [
+          6,
+          0
+        ]
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 2
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 8
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 11
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice",
+          "carol"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "euchred_makers",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 0,
+        "hands": [
+          [
+            2
+          ],
+          [
+            8
+          ],
+          [
+            5
+          ],
+          [
+            11
+          ]
+        ],
+        "stock": [
+          20,
+          21,
+          22,
+          23
+        ],
+        "upcard": null,
+        "trump": 0,
+        "maker": 0,
+        "alone": false,
+        "passes": 0,
+        "won": [
+          [],
+          [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            9,
+            10,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          [],
+          []
+        ],
+        "trick": [],
+        "scores": [
+          0,
+          8
+        ]
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 2
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 8
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 5
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 11
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "bob",
+          "dan"
+        ]
+      }
+    },
+    {
+      "id": "duplicate_card_invalid",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 3,
+        "turn": 1,
+        "hands": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            0,
+            6,
+            7,
+            9,
+            10
+          ],
+          [
+            5,
+            11,
+            12,
+            13,
+            14
+          ],
+          [
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        ],
+        "stock": [
+          20,
+          21,
+          22,
+          23
+        ],
+        "upcard": null,
+        "trump": 0,
+        "maker": 0,
+        "alone": false,
+        "passes": 0,
+        "won": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "trick": [
+          {
+            "player": 0,
+            "card": 0
+          }
+        ],
+        "scores": [
+          0,
+          0
+        ]
+      },
+      "valid": false
+    }
+  ]
+}

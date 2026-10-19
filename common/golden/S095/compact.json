@@ -1,0 +1,8092 @@
+{
+  "profile_id": "S095",
+  "ruleset_id": "builtin.diving.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "diver_0"
+    },
+    {
+      "id": "diver_1"
+    },
+    {
+      "id": "diver_2"
+    },
+    {
+      "id": "diver_3"
+    },
+    {
+      "id": "diver_4"
+    },
+    {
+      "id": "diver_5"
+    },
+    {
+      "id": "diver_6"
+    },
+    {
+      "id": "diver_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "declare_programs",
+      "actions": [
+        {
+          "type": "declare_programs",
+          "params": {
+            "catalog": [
+              {
+                "number": 101,
+                "position": "B",
+                "group": 1,
+                "difficulty_tenths": 20
+              },
+              {
+                "number": 201,
+                "position": "B",
+                "group": 2,
+                "difficulty_tenths": 20
+              },
+              {
+                "number": 301,
+                "position": "B",
+                "group": 3,
+                "difficulty_tenths": 20
+              },
+              {
+                "number": 401,
+                "position": "B",
+                "group": 4,
+                "difficulty_tenths": 20
+              },
+              {
+                "number": 5111,
+                "position": "B",
+                "group": 5,
+                "difficulty_tenths": 20
+              },
+              {
+                "number": 103,
+                "position": "B",
+                "group": 1,
+                "difficulty_tenths": 20
+              }
+            ],
+            "programs": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          }
+        ],
+        "balks": 0
+      }
+    },
+    {
+      "id": "same_number_in_another_position_rejected",
+      "action": {
+        "type": "declare_programs",
+        "params": {
+          "catalog": [
+            {
+              "number": 101,
+              "position": "B",
+              "group": 1,
+              "difficulty_tenths": 20
+            },
+            {
+              "number": 201,
+              "position": "B",
+              "group": 2,
+              "difficulty_tenths": 20
+            },
+            {
+              "number": 301,
+              "position": "B",
+              "group": 3,
+              "difficulty_tenths": 20
+            },
+            {
+              "number": 401,
+              "position": "B",
+              "group": 4,
+              "difficulty_tenths": 20
+            },
+            {
+              "number": 5111,
+              "position": "B",
+              "group": 5,
+              "difficulty_tenths": 20
+            },
+            {
+              "number": 103,
+              "position": "B",
+              "group": 1,
+              "difficulty_tenths": 20
+            },
+            {
+              "number": 101,
+              "position": "A",
+              "group": 1,
+              "difficulty_tenths": 20
+            }
+          ],
+          "programs": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6
+            ]
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "correct_diver_starts",
+      "initial_data": {
+        "phase": "ready",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          }
+        ],
+        "balks": 0
+      },
+      "actions": [
+        {
+          "type": "start_dive",
+          "params": {
+            "participant": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "dive",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          }
+        ],
+        "balks": 0
+      }
+    },
+    {
+      "id": "wrong_diver_rejected",
+      "initial_data": {
+        "phase": "ready",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          }
+        ],
+        "balks": 0
+      },
+      "action": {
+        "type": "start_dive",
+        "params": {
+          "participant": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "judge_first_dive",
+      "initial_data": {
+        "phase": "dive",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          }
+        ],
+        "balks": 0
+      },
+      "actions": [
+        {
+          "type": "judge_dive",
+          "params": {
+            "marks": [
+              10,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          }
+        ],
+        "balks": 0
+      },
+      "legal_constraints": {
+        "current_participant": 1,
+        "next_dive": 0
+      }
+    },
+    {
+      "id": "first_balk_deducted_later",
+      "initial_data": {
+        "phase": "dive",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          }
+        ],
+        "balks": 0
+      },
+      "actions": [
+        {
+          "type": "balk",
+          "params": {}
+        },
+        {
+          "type": "judge_dive",
+          "params": {
+            "marks": [
+              10,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 1
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          }
+        ],
+        "balks": 0
+      }
+    },
+    {
+      "id": "second_balk_fails_dive",
+      "initial_data": {
+        "phase": "dive",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          }
+        ],
+        "balks": 0
+      },
+      "actions": [
+        {
+          "type": "balk",
+          "params": {}
+        },
+        {
+          "type": "balk",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": null,
+                "failed": true,
+                "balks": 2
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          }
+        ],
+        "balks": 0
+      }
+    },
+    {
+      "id": "last_dive_opens_review",
+      "initial_data": {
+        "phase": "dive",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          }
+        ],
+        "balks": 0
+      },
+      "actions": [
+        {
+          "type": "judge_dive",
+          "params": {
+            "marks": [
+              10,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "review",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          }
+        ],
+        "balks": 0
+      }
+    },
+    {
+      "id": "trimming_two_high_and_two_low",
+      "initial_data": {
+        "phase": "review",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  0,
+                  2,
+                  10,
+                  12,
+                  14,
+                  18,
+                  20
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          }
+        ],
+        "balks": 0
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "diver_0"
+        ],
+        "placements": [
+          {
+            "player_id": "diver_0",
+            "place": 1,
+            "score_units": 3720,
+            "score_unit_denominator": 20
+          },
+          {
+            "player_id": "diver_1",
+            "place": 2,
+            "score_units": 3600,
+            "score_unit_denominator": 20
+          },
+          {
+            "player_id": "diver_2",
+            "place": 2,
+            "score_units": 3600,
+            "score_unit_denominator": 20
+          },
+          {
+            "player_id": "diver_3",
+            "place": 2,
+            "score_units": 3600,
+            "score_unit_denominator": 20
+          },
+          {
+            "player_id": "diver_4",
+            "place": 2,
+            "score_units": 3600,
+            "score_unit_denominator": 20
+          },
+          {
+            "player_id": "diver_5",
+            "place": 2,
+            "score_units": 3600,
+            "score_unit_denominator": 20
+          },
+          {
+            "player_id": "diver_6",
+            "place": 2,
+            "score_units": 3600,
+            "score_unit_denominator": 20
+          },
+          {
+            "player_id": "diver_7",
+            "place": 2,
+            "score_units": 3600,
+            "score_unit_denominator": 20
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "exact_tie_shared",
+      "initial_data": {
+        "phase": "review",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          }
+        ],
+        "balks": 0
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "diver_0",
+          "diver_1",
+          "diver_2",
+          "diver_3",
+          "diver_4",
+          "diver_5",
+          "diver_6",
+          "diver_7"
+        ]
+      }
+    },
+    {
+      "id": "balk_changes_total",
+      "initial_data": {
+        "phase": "review",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 1
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          }
+        ],
+        "balks": 0
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "diver_1",
+          "diver_2",
+          "diver_3",
+          "diver_4",
+          "diver_5",
+          "diver_6",
+          "diver_7"
+        ]
+      }
+    },
+    {
+      "id": "two_balks_cannot_receive_marks",
+      "initial_data": {
+        "phase": "review",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 2
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          }
+        ],
+        "balks": 0
+      },
+      "valid": false
+    },
+    {
+      "id": "missing_judge_rejected",
+      "initial_data": {
+        "phase": "dive",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          }
+        ],
+        "balks": 0
+      },
+      "action": {
+        "type": "judge_dive",
+        "params": {
+          "marks": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "withdraw_first_diver",
+      "initial_data": {
+        "phase": "ready",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          }
+        ],
+        "balks": 0
+      },
+      "actions": [
+        {
+          "type": "withdraw",
+          "params": {
+            "participant": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "current_participant": 1
+      }
+    },
+    {
+      "id": "result_review_correction",
+      "initial_data": {
+        "phase": "review",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          },
+          {
+            "status": "eligible",
+            "results": [
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              },
+              {
+                "marks": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "failed": false,
+                "balks": 0
+              }
+            ]
+          }
+        ],
+        "balks": 0
+      },
+      "actions": [
+        {
+          "type": "correct_dive",
+          "params": {
+            "participant": 0,
+            "dive": 0,
+            "result": {
+              "marks": [
+                0,
+                2,
+                10,
+                12,
+                14,
+                18,
+                20
+              ],
+              "failed": false,
+              "balks": 0
+            }
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "diver_0"
+        ]
+      }
+    },
+    {
+      "id": "program_cannot_change_after_start",
+      "initial_data": {
+        "phase": "ready",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          }
+        ],
+        "balks": 0
+      },
+      "action": {
+        "type": "declare_programs",
+        "params": {
+          "catalog": [
+            {
+              "number": 101,
+              "position": "B",
+              "group": 1,
+              "difficulty_tenths": 20
+            },
+            {
+              "number": 201,
+              "position": "B",
+              "group": 2,
+              "difficulty_tenths": 20
+            },
+            {
+              "number": 301,
+              "position": "B",
+              "group": 3,
+              "difficulty_tenths": 20
+            },
+            {
+              "number": 401,
+              "position": "B",
+              "group": 4,
+              "difficulty_tenths": 20
+            },
+            {
+              "number": 5111,
+              "position": "B",
+              "group": 5,
+              "difficulty_tenths": 20
+            },
+            {
+              "number": 103,
+              "position": "B",
+              "group": 1,
+              "difficulty_tenths": 20
+            }
+          ],
+          "programs": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "premature_confirmation",
+      "initial_data": {
+        "phase": "ready",
+        "catalog": [
+          {
+            "number": 101,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 201,
+            "position": "B",
+            "group": 2,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 301,
+            "position": "B",
+            "group": 3,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 401,
+            "position": "B",
+            "group": 4,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 5111,
+            "position": "B",
+            "group": 5,
+            "difficulty_tenths": 20
+          },
+          {
+            "number": 103,
+            "position": "B",
+            "group": 1,
+            "difficulty_tenths": 20
+          }
+        ],
+        "programs": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          },
+          {
+            "status": "eligible",
+            "results": []
+          }
+        ],
+        "balks": 0
+      },
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

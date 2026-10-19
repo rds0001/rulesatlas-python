@@ -1,0 +1,2895 @@
+{
+  "profile_id": "S151",
+  "ruleset_id": "builtin.dressage.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "entry_0"
+    },
+    {
+      "id": "entry_1"
+    },
+    {
+      "id": "entry_2"
+    },
+    {
+      "id": "entry_3"
+    },
+    {
+      "id": "entry_4"
+    },
+    {
+      "id": "entry_5"
+    },
+    {
+      "id": "entry_6"
+    },
+    {
+      "id": "entry_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "configure_test",
+      "actions": [
+        {
+          "type": "configure_test",
+          "params": {
+            "test": [
+              {
+                "name": "Prescribed movement",
+                "coefficient": 1,
+                "collective": false
+              },
+              {
+                "name": "Collective assessment",
+                "coefficient": 2,
+                "collective": true
+              }
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "start_next_entrant",
+      "initial_data": {
+        "phase": "ready",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "start_test",
+          "params": {
+            "participant": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "test",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "wrong_start_order",
+      "initial_data": {
+        "phase": "ready",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      },
+      "action": {
+        "type": "start_test",
+        "params": {
+          "participant": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "first_movement",
+      "initial_data": {
+        "phase": "test",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "score_movement",
+          "params": {
+            "movement": 0,
+            "marks": [
+              10,
+              10,
+              10,
+              10,
+              10
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "test",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "cannot_skip_movement",
+      "initial_data": {
+        "phase": "test",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      },
+      "action": {
+        "type": "score_movement",
+        "params": {
+          "movement": 1,
+          "marks": [
+            10,
+            10,
+            10,
+            10,
+            10
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "all_five_judges_required",
+      "initial_data": {
+        "phase": "test",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      },
+      "action": {
+        "type": "score_movement",
+        "params": {
+          "movement": 0,
+          "marks": [
+            10,
+            10,
+            10,
+            10
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "second_course_error_eliminates",
+      "initial_data": {
+        "phase": "test",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "course_error",
+          "params": {}
+        },
+        {
+          "type": "course_error",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "current_participant": 1,
+        "phase": "ready"
+      }
+    },
+    {
+      "id": "final_mark_opens_review",
+      "initial_data": {
+        "phase": "test",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "score_movement",
+          "params": {
+            "movement": 1,
+            "marks": [
+              10,
+              10,
+              10,
+              10,
+              10
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "review",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "exact_weighted_fraction",
+      "initial_data": {
+        "phase": "review",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                12,
+                12,
+                12,
+                12,
+                12
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "entry_0"
+        ],
+        "placements": [
+          {
+            "player_id": "entry_0",
+            "place": 1,
+            "basis_points_numerator": 1600000,
+            "denominator": 300,
+            "collective_half_points": 100
+          },
+          {
+            "player_id": "entry_1",
+            "place": 2,
+            "basis_points_numerator": 1500000,
+            "denominator": 300,
+            "collective_half_points": 100
+          },
+          {
+            "player_id": "entry_2",
+            "place": 2,
+            "basis_points_numerator": 1500000,
+            "denominator": 300,
+            "collective_half_points": 100
+          },
+          {
+            "player_id": "entry_3",
+            "place": 2,
+            "basis_points_numerator": 1500000,
+            "denominator": 300,
+            "collective_half_points": 100
+          },
+          {
+            "player_id": "entry_4",
+            "place": 2,
+            "basis_points_numerator": 1500000,
+            "denominator": 300,
+            "collective_half_points": 100
+          },
+          {
+            "player_id": "entry_5",
+            "place": 2,
+            "basis_points_numerator": 1500000,
+            "denominator": 300,
+            "collective_half_points": 100
+          },
+          {
+            "player_id": "entry_6",
+            "place": 2,
+            "basis_points_numerator": 1500000,
+            "denominator": 300,
+            "collective_half_points": 100
+          },
+          {
+            "player_id": "entry_7",
+            "place": 2,
+            "basis_points_numerator": 1500000,
+            "denominator": 300,
+            "collective_half_points": 100
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "collective_breaks_equal_percentage",
+      "initial_data": {
+        "phase": "review",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                6,
+                6,
+                6,
+                6,
+                6
+              ],
+              [
+                12,
+                12,
+                12,
+                12,
+                12
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "entry_0"
+        ]
+      }
+    },
+    {
+      "id": "first_error_deducts_two_percent",
+      "initial_data": {
+        "phase": "review",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 1,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "entry_1",
+          "entry_2",
+          "entry_3",
+          "entry_4",
+          "entry_5",
+          "entry_6",
+          "entry_7"
+        ]
+      }
+    },
+    {
+      "id": "second_error_cannot_remain_eligible",
+      "initial_data": {
+        "phase": "review",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 2,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "review_corrects_error_count",
+      "initial_data": {
+        "phase": "review",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 1,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "correct_errors",
+          "params": {
+            "participant": 0,
+            "errors": 0
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "entry_0",
+          "entry_1",
+          "entry_2",
+          "entry_3",
+          "entry_4",
+          "entry_5",
+          "entry_6",
+          "entry_7"
+        ]
+      }
+    },
+    {
+      "id": "technical_deduction_changes_rank",
+      "initial_data": {
+        "phase": "review",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                12,
+                12,
+                12,
+                12,
+                12
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "assess_penalty",
+          "params": {
+            "participant": 0,
+            "basis_points": 400
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "entry_1",
+          "entry_2",
+          "entry_3",
+          "entry_4",
+          "entry_5",
+          "entry_6",
+          "entry_7"
+        ]
+      }
+    },
+    {
+      "id": "mark_review_changes_winner",
+      "initial_data": {
+        "phase": "review",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "correct_mark",
+          "params": {
+            "participant": 0,
+            "movement": 0,
+            "marks": [
+              12,
+              12,
+              12,
+              12,
+              12
+            ]
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "entry_0"
+        ]
+      }
+    },
+    {
+      "id": "official_disqualification",
+      "initial_data": {
+        "phase": "review",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                12,
+                12,
+                12,
+                12,
+                12
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "participant": 0
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "entry_1",
+          "entry_2",
+          "entry_3",
+          "entry_4",
+          "entry_5",
+          "entry_6",
+          "entry_7"
+        ]
+      }
+    },
+    {
+      "id": "incomplete_test_cannot_confirm",
+      "initial_data": {
+        "phase": "ready",
+        "test": [
+          {
+            "name": "Prescribed movement",
+            "coefficient": 1,
+            "collective": false
+          },
+          {
+            "name": "Collective assessment",
+            "coefficient": 2,
+            "collective": true
+          }
+        ],
+        "entrants": [
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          },
+          {
+            "status": "eligible",
+            "marks": [],
+            "errors": 0,
+            "penalty_basis_points": 0
+          }
+        ]
+      },
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

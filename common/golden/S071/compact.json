@@ -1,0 +1,195 @@
+{
+  "profile_id": "S071",
+  "ruleset_id": "builtin.sumo.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "false_start_restarts",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "false_start",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "decision": null,
+        "false_starts": 1,
+        "rematches": 0
+      }
+    },
+    {
+      "id": "no_contact_win_before_start",
+      "action": {
+        "type": "declare",
+        "params": {
+          "winner": 0,
+          "reason": "ground_contact"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "pause_resume",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "pause",
+          "params": {}
+        },
+        {
+          "type": "resume",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "active",
+        "decision": null,
+        "false_starts": 0,
+        "rematches": 0
+      }
+    },
+    {
+      "id": "provisional_not_terminal",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "declare",
+          "params": {
+            "winner": 0,
+            "reason": "out_of_ring"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "review_overturn",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "declare",
+          "params": {
+            "winner": 0,
+            "reason": "out_of_ring"
+          }
+        },
+        {
+          "type": "request_review",
+          "params": {}
+        },
+        {
+          "type": "overturn",
+          "params": {
+            "winner": 1,
+            "reason": "ground_contact"
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "bob"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "rematch_clears_result",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "declare",
+          "params": {
+            "winner": 0,
+            "reason": "out_of_ring"
+          }
+        },
+        {
+          "type": "request_review",
+          "params": {}
+        },
+        {
+          "type": "rematch",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "decision": null,
+        "false_starts": 0,
+        "rematches": 1
+      }
+    },
+    {
+      "id": "walkover",
+      "actions": [
+        {
+          "type": "declare",
+          "params": {
+            "winner": 0,
+            "reason": "forfeit"
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "forfeit",
+        "winners": [
+          "alice"
+        ]
+      }
+    },
+    {
+      "id": "inconsistent_decision",
+      "initial_data": {
+        "phase": "active",
+        "decision": {
+          "winner": 0,
+          "reason": "ground_contact"
+        },
+        "false_starts": 0,
+        "rematches": 0
+      },
+      "valid": false
+    }
+  ]
+}

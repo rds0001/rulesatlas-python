@@ -1,0 +1,1494 @@
+{
+  "profile_id": "S155",
+  "ruleset_id": "builtin.agility.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "dog_0"
+    },
+    {
+      "id": "dog_1"
+    },
+    {
+      "id": "dog_2"
+    },
+    {
+      "id": "dog_3"
+    },
+    {
+      "id": "dog_4"
+    },
+    {
+      "id": "dog_5"
+    },
+    {
+      "id": "dog_6"
+    },
+    {
+      "id": "dog_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "course",
+        "dogs": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "wrong_order_rejected",
+      "initial_data": {
+        "phase": "course",
+        "dogs": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          }
+        ]
+      },
+      "action": {
+        "type": "complete_obstacle",
+        "params": {
+          "obstacle": 1,
+          "execution_faults": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "bar_fault",
+      "initial_data": {
+        "phase": "course",
+        "dogs": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "complete_obstacle",
+          "params": {
+            "obstacle": 0,
+            "execution_faults": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "course",
+        "dogs": [
+          {
+            "status": "active",
+            "completed": 1,
+            "refusals": 0,
+            "faults": 5,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "two_contact_faults",
+      "initial_data": {
+        "phase": "course",
+        "dogs": [
+          {
+            "status": "active",
+            "completed": 4,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "complete_obstacle",
+          "params": {
+            "obstacle": 4,
+            "execution_faults": 2
+          }
+        }
+      ],
+      "data": {
+        "phase": "course",
+        "dogs": [
+          {
+            "status": "active",
+            "completed": 5,
+            "refusals": 0,
+            "faults": 10,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "tunnel_has_no_execution_fault",
+      "initial_data": {
+        "phase": "course",
+        "dogs": [
+          {
+            "status": "active",
+            "completed": 2,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          }
+        ]
+      },
+      "action": {
+        "type": "complete_obstacle",
+        "params": {
+          "obstacle": 2,
+          "execution_faults": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "third_refusal_eliminates",
+      "initial_data": {
+        "phase": "course",
+        "dogs": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "refusal",
+          "params": {
+            "obstacle": 0
+          }
+        },
+        {
+          "type": "refusal",
+          "params": {
+            "obstacle": 0
+          }
+        },
+        {
+          "type": "refusal",
+          "params": {
+            "obstacle": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "current_participant": 1,
+        "phase": "ready"
+      }
+    },
+    {
+      "id": "refusal_does_not_skip_obstacle",
+      "initial_data": {
+        "phase": "course",
+        "dogs": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "refusal",
+          "params": {
+            "obstacle": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "complete_obstacle",
+        "params": {
+          "obstacle": 1,
+          "execution_faults": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "maximum_time_eliminates",
+      "initial_data": {
+        "phase": "course",
+        "dogs": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 120010
+          }
+        }
+      ],
+      "legal_constraints": {
+        "current_participant": 1
+      }
+    },
+    {
+      "id": "hundredth_precision_required",
+      "initial_data": {
+        "phase": "course",
+        "dogs": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          }
+        ]
+      },
+      "action": {
+        "type": "elapse",
+        "params": {
+          "milliseconds": 11
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "invalid_precision_state",
+      "initial_data": {
+        "phase": "review",
+        "dogs": [
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 50001
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 51000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 52000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 53000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 54000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 55000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 56000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 57000
+          }
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "early_finish_rejected",
+      "initial_data": {
+        "phase": "course",
+        "dogs": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          }
+        ]
+      },
+      "action": {
+        "type": "finish",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "last_finish_opens_review",
+      "initial_data": {
+        "phase": "course",
+        "dogs": [
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 50000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 51000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 52000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 53000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 54000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 55000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 56000
+          },
+          {
+            "status": "active",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 57000
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "finish",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "review",
+        "dogs": [
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 50000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 51000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 52000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 53000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 54000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 55000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 56000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 57000
+          }
+        ]
+      }
+    },
+    {
+      "id": "clear_fastest_wins",
+      "initial_data": {
+        "phase": "review",
+        "dogs": [
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 50000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 51000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 52000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 53000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 54000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 55000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 56000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 57000
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "dog_0"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "course_faults_before_time_tiebreak",
+      "initial_data": {
+        "phase": "review",
+        "dogs": [
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 5,
+            "elapsed_ms": 50000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 65000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 10,
+            "elapsed_ms": 52000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 10,
+            "elapsed_ms": 53000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 10,
+            "elapsed_ms": 54000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 10,
+            "elapsed_ms": 55000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 10,
+            "elapsed_ms": 56000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 10,
+            "elapsed_ms": 57000
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "dog_1"
+        ]
+      }
+    },
+    {
+      "id": "official_exclusion",
+      "initial_data": {
+        "phase": "course",
+        "dogs": [
+          {
+            "status": "active",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          },
+          {
+            "status": "pending",
+            "completed": 0,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "eliminate",
+          "params": {
+            "reason": "wrong_course"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "current_participant": 1
+      }
+    },
+    {
+      "id": "review_dq",
+      "initial_data": {
+        "phase": "review",
+        "dogs": [
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 50000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 51000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 52000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 53000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 54000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 55000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 56000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 57000
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "participant": 0,
+            "reason": "equipment"
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "dog_1"
+        ]
+      }
+    },
+    {
+      "id": "review_corrects_result",
+      "initial_data": {
+        "phase": "review",
+        "dogs": [
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 5,
+            "elapsed_ms": 50000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 0,
+            "elapsed_ms": 65000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 10,
+            "elapsed_ms": 52000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 10,
+            "elapsed_ms": 53000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 10,
+            "elapsed_ms": 54000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 10,
+            "elapsed_ms": 55000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 10,
+            "elapsed_ms": 56000
+          },
+          {
+            "status": "finished",
+            "completed": 20,
+            "refusals": 0,
+            "faults": 10,
+            "elapsed_ms": 57000
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "amend_result",
+          "params": {
+            "participant": 0,
+            "result": {
+              "status": "finished",
+              "completed": 20,
+              "refusals": 0,
+              "faults": 0,
+              "elapsed_ms": 50000
+            }
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "dog_0"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,3050 @@
+{
+  "profile_id": "S013",
+  "ruleset_id": "builtin.volleyball.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "team_a"
+    },
+    {
+      "id": "team_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "configure_lineups_and_toss",
+      "actions": [
+        {
+          "type": "set_lineup",
+          "params": {
+            "team": 0,
+            "players": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "set_lineup",
+          "params": {
+            "team": 1,
+            "players": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "choose_server",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "duplicate_player_in_lineup",
+      "action": {
+        "type": "set_lineup",
+        "params": {
+          "team": 0,
+          "players": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "cannot_begin_without_lineups",
+      "action": {
+        "type": "start_rally",
+        "params": {
+          "server": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "wrong_service_player_rejected",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "start_rally",
+        "params": {
+          "server": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "receiver_wins_and_rotates",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_rally",
+          "params": {
+            "winner": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          1
+        ],
+        "sets": [],
+        "serving_team": 1,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            0
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "legal_constraints": {
+        "server": 7
+      }
+    },
+    {
+      "id": "server_wins_without_rotating",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          1,
+          0
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "legal_constraints": {
+        "server": 0
+      }
+    },
+    {
+      "id": "rally_replay_changes_no_score",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "replay_rally",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "no_score_without_started_rally",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "award_rally",
+        "params": {
+          "winner": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "two_timeouts_per_set",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "timeout",
+        "params": {
+          "team": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "timeout_not_during_rally",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "timeout",
+        "params": {
+          "team": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "twenty_five_needs_two_point_margin",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          24,
+          24
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          25,
+          24
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "completed_set_resets_timeouts_and_lineups",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          24,
+          23
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          2,
+          1
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "setup",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [
+          [
+            25,
+            23
+          ]
+        ],
+        "serving_team": 1,
+        "set_first_server": 1,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          false,
+          false
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "fifth_set_requires_new_toss",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          24
+        ],
+        "sets": [
+          [
+            25,
+            20
+          ],
+          [
+            20,
+            25
+          ],
+          [
+            25,
+            20
+          ]
+        ],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_rally",
+          "params": {
+            "winner": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "set_number": 5,
+        "target": 15,
+        "serving_team": null
+      }
+    },
+    {
+      "id": "fifth_set_fourteen_all_requires_two_more",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          14,
+          14
+        ],
+        "sets": [
+          [
+            25,
+            20
+          ],
+          [
+            20,
+            25
+          ],
+          [
+            25,
+            20
+          ],
+          [
+            20,
+            25
+          ]
+        ],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_rally",
+          "params": {
+            "winner": 0
+          }
+        },
+        {
+          "type": "start_rally",
+          "params": {
+            "server": 0
+          }
+        },
+        {
+          "type": "award_rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "finished",
+        "points": [
+          16,
+          14
+        ],
+        "sets": [
+          [
+            25,
+            20
+          ],
+          [
+            20,
+            25
+          ],
+          [
+            25,
+            20
+          ],
+          [
+            20,
+            25
+          ],
+          [
+            16,
+            14
+          ]
+        ],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": 0,
+        "reason": "three_sets"
+      },
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "team_a"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "fifth_set_end_change_at_eight",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          8,
+          7
+        ],
+        "sets": [
+          [
+            25,
+            20
+          ],
+          [
+            20,
+            25
+          ],
+          [
+            25,
+            20
+          ],
+          [
+            20,
+            25
+          ]
+        ],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "legal_constraints": {
+        "change_ends": true
+      }
+    },
+    {
+      "id": "second_delay_awards_point_and_service",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delay",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "delay",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          1
+        ],
+        "sets": [],
+        "serving_team": 1,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            0
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          2,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "improper_request_warning_then_delay_escalation",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "improper_request",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "improper_request",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "improper_request",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          1
+        ],
+        "sets": [],
+        "serving_team": 1,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            0
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          2,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          true,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "first_rude_conduct_costs_point",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "misconduct",
+          "params": {
+            "player": 0,
+            "kind": "rude"
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          1
+        ],
+        "sets": [],
+        "serving_team": 1,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            0
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "second_rude_conduct_expels_for_set",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "misconduct",
+          "params": {
+            "player": 0,
+            "kind": "rude"
+          }
+        }
+      ],
+      "data": {
+        "phase": "setup",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [
+          [
+            0,
+            25
+          ]
+        ],
+        "serving_team": 1,
+        "set_first_server": 1,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          false,
+          false
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "offensive_conduct_immediate_set_expulsion",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "misconduct",
+          "params": {
+            "player": 0,
+            "kind": "offensive"
+          }
+        }
+      ],
+      "data": {
+        "phase": "setup",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [
+          [
+            0,
+            25
+          ]
+        ],
+        "serving_team": 1,
+        "set_first_server": 1,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          false,
+          false
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "aggression_makes_fixed_roster_incomplete_for_match",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "misconduct",
+          "params": {
+            "player": 0,
+            "kind": "aggression"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "team_b"
+        ],
+        "reason": "incomplete_team"
+      }
+    },
+    {
+      "id": "concession_awards_remaining_sets",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          12,
+          15
+        ],
+        "sets": [
+          [
+            25,
+            10
+          ],
+          [
+            10,
+            25
+          ]
+        ],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "concede",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "team_b"
+        ],
+        "placements": [
+          {
+            "player_id": "team_a",
+            "place": 2,
+            "sets": 1
+          },
+          {
+            "player_id": "team_b",
+            "place": 1,
+            "sets": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "set_without_two_point_margin_invalid",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [
+          [
+            25,
+            24
+          ]
+        ],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "disqualified_player_cannot_continue",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "serving_team": 0,
+        "set_first_server": 0,
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "configured": [
+          true,
+          true
+        ],
+        "timeouts": [
+          0,
+          0
+        ],
+        "delays": [
+          0,
+          0
+        ],
+        "conduct_warned": [
+          false,
+          false
+        ],
+        "improper_requested": [
+          false,
+          false
+        ],
+        "sanctions": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expelled": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

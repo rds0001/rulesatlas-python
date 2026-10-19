@@ -1,0 +1,490 @@
+{
+  "profile_id": "S103",
+  "ruleset_id": "builtin.race_s103.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "boat_0"
+    },
+    {
+      "id": "boat_1"
+    },
+    {
+      "id": "boat_2"
+    },
+    {
+      "id": "boat_3"
+    },
+    {
+      "id": "boat_4"
+    },
+    {
+      "id": "boat_5"
+    },
+    {
+      "id": "boat_6"
+    },
+    {
+      "id": "boat_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "first_false_start_warns_whole_race",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "false_start",
+          "params": {
+            "participant": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "start_warning": true,
+        "runners": [
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "different_second_offender_is_disqualified",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "false_start",
+          "params": {
+            "participant": 0
+          }
+        },
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "false_start",
+          "params": {
+            "participant": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "start_warning": true,
+        "runners": [
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "dq",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "global_warning_persists_after_second_recall",
+      "initial_data": {
+        "phase": "ready",
+        "start_warning": true,
+        "runners": [
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "dq",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "false_start",
+          "params": {
+            "participant": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "individual_conduct_warning_unavailable",
+      "action": {
+        "type": "warn",
+        "params": {
+          "participant": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "finish_before_start_rejected",
+      "action": {
+        "type": "record_finish",
+        "params": {
+          "participant": 0,
+          "time_us": 100000000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "last_finish_enters_review",
+      "initial_data": {
+        "phase": "racing",
+        "start_warning": false,
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100001000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100002000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100003000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100004000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100005000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100006000,
+            "warnings": 0
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "record_finish",
+          "params": {
+            "participant": 7,
+            "time_us": 100007000
+          }
+        }
+      ],
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    },
+    {
+      "id": "confirm_classification",
+      "initial_data": {
+        "phase": "review",
+        "start_warning": false,
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100001000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100002000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100003000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100004000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100005000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100006000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100007000,
+            "warnings": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "boat_0"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "review_exclusion_changes_ranking",
+      "initial_data": {
+        "phase": "review",
+        "start_warning": false,
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 100000000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100001000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100002000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100003000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100004000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100005000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100006000,
+            "warnings": 0
+          },
+          {
+            "status": "finished",
+            "time_us": 100007000,
+            "warnings": 0
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "participant": 0
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "boat_1"
+        ]
+      }
+    },
+    {
+      "id": "individual_warning_invalid",
+      "initial_data": {
+        "phase": "ready",
+        "start_warning": false,
+        "runners": [
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 1
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          },
+          {
+            "status": "ready",
+            "time_us": null,
+            "warnings": 0
+          }
+        ]
+      },
+      "valid": false
+    }
+  ]
+}

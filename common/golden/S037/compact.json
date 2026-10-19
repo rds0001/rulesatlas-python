@@ -1,0 +1,339 @@
+{
+  "profile_id": "S037",
+  "ruleset_id": "builtin.crossminton.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types",
+      "legal_constraints": {
+        "server": 0,
+        "service_block_size": 3
+      }
+    },
+    {
+      "id": "three_point_service_blocks",
+      "initial_data": {
+        "phase": "playing",
+        "games": [],
+        "points": [
+          2,
+          0
+        ],
+        "first_server": 0,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "service_fault",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "games": [],
+        "points": [
+          2,
+          1
+        ],
+        "first_server": 0,
+        "decision": null
+      },
+      "legal_constraints": {
+        "server": 1
+      }
+    },
+    {
+      "id": "next_service_fault_scores_other_side",
+      "initial_data": {
+        "phase": "playing",
+        "games": [],
+        "points": [
+          2,
+          1
+        ],
+        "first_server": 0,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "service_fault",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "games": [],
+        "points": [
+          3,
+          1
+        ],
+        "first_server": 0,
+        "decision": null
+      }
+    },
+    {
+      "id": "deuce_alternates_each_point",
+      "initial_data": {
+        "phase": "playing",
+        "games": [],
+        "points": [
+          15,
+          15
+        ],
+        "first_server": 0,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "service_fault",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "games": [],
+        "points": [
+          15,
+          16
+        ],
+        "first_server": 0,
+        "decision": null
+      },
+      "legal_constraints": {
+        "server": 1,
+        "service_block_size": 1
+      }
+    },
+    {
+      "id": "deuce_requires_two_point_lead",
+      "initial_data": {
+        "phase": "playing",
+        "games": [],
+        "points": [
+          15,
+          15
+        ],
+        "first_server": 0,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 0
+          }
+        },
+        {
+          "type": "rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "games": [
+          [
+            17,
+            15
+          ]
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "first_server": 0,
+        "decision": null
+      },
+      "legal_constraints": {
+        "server": 1
+      }
+    },
+    {
+      "id": "loser_serves_next_game",
+      "initial_data": {
+        "phase": "playing",
+        "games": [
+          [
+            16,
+            0
+          ]
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "first_server": 0,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "service_fault",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "games": [
+          [
+            16,
+            0
+          ]
+        ],
+        "points": [
+          1,
+          0
+        ],
+        "first_server": 0,
+        "decision": null
+      }
+    },
+    {
+      "id": "third_game_wins_match",
+      "initial_data": {
+        "phase": "playing",
+        "games": [
+          [
+            16,
+            5
+          ],
+          [
+            16,
+            9
+          ]
+        ],
+        "points": [
+          15,
+          14
+        ],
+        "first_server": 0,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "deciding_game_end_change",
+      "initial_data": {
+        "phase": "playing",
+        "games": [
+          [
+            16,
+            5
+          ],
+          [
+            5,
+            16
+          ],
+          [
+            16,
+            5
+          ],
+          [
+            5,
+            16
+          ]
+        ],
+        "points": [
+          3,
+          3
+        ],
+        "first_server": 0,
+        "decision": null
+      },
+      "legal_constraints": {
+        "deciding_game_end_changes": 1
+      }
+    },
+    {
+      "id": "replay_preserves_score",
+      "initial_data": {
+        "phase": "playing",
+        "games": [],
+        "points": [
+          15,
+          15
+        ],
+        "first_server": 0,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "replay",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "games": [],
+        "points": [
+          15,
+          15
+        ],
+        "first_server": 0,
+        "decision": null
+      }
+    },
+    {
+      "id": "late_initial_server_choice",
+      "initial_data": {
+        "phase": "playing",
+        "games": [],
+        "points": [
+          15,
+          15
+        ],
+        "first_server": 0,
+        "decision": null
+      },
+      "action": {
+        "type": "choose_first_server",
+        "params": {
+          "player": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "invalid_game_margin",
+      "initial_data": {
+        "phase": "playing",
+        "games": [
+          [
+            16,
+            15
+          ]
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "first_server": 0,
+        "decision": null
+      },
+      "valid": false
+    }
+  ]
+}

@@ -1,0 +1,5654 @@
+{
+  "profile_id": "S014",
+  "ruleset_id": "builtin.fistball.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "team_a"
+    },
+    {
+      "id": "team_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "toss",
+      "actions": [
+        {
+          "type": "choose_server",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "any_active_player_serves",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "serve",
+          "params": {
+            "team": 0,
+            "player": 4
+          }
+        }
+      ],
+      "data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "wrong_serving_team",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "serve",
+        "params": {
+          "team": 1,
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "faulting_team_serves",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "fault",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          1,
+          0
+        ],
+        "sets": [],
+        "server": 1,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": true,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "replay_retains_service",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "replay",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": true,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eleven_needs_two_margin",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          10,
+          10
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "fault",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "ready",
+        "points": [
+          11,
+          10
+        ]
+      }
+    },
+    {
+      "id": "twelve_ten_finishes_set",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          11,
+          10
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "fault",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "interval",
+        "sets_won": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "fifteen_fourteen_cap",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          14,
+          14
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "fault",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "interval",
+        "points": [
+          15,
+          14
+        ]
+      }
+    },
+    {
+      "id": "three_sets_win",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          10,
+          0
+        ],
+        "sets": [
+          [
+            11,
+            0
+          ],
+          [
+            11,
+            0
+          ]
+        ],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "fault",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_a"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "next_set_service_alternation",
+      "initial_data": {
+        "phase": "interval",
+        "points": [
+          11,
+          0
+        ],
+        "sets": [
+          [
+            11,
+            0
+          ]
+        ],
+        "server": 1,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "next_set",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "server": 1,
+        "points": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "decider_new_toss",
+      "initial_data": {
+        "phase": "interval",
+        "points": [
+          0,
+          11
+        ],
+        "sets": [
+          [
+            11,
+            0
+          ],
+          [
+            0,
+            11
+          ],
+          [
+            11,
+            0
+          ],
+          [
+            0,
+            11
+          ]
+        ],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "next_set",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "choose_server",
+        "server": null
+      }
+    },
+    {
+      "id": "decider_six_changes_service",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          5,
+          2
+        ],
+        "sets": [
+          [
+            11,
+            0
+          ],
+          [
+            0,
+            11
+          ],
+          [
+            11,
+            0
+          ],
+          [
+            0,
+            11
+          ]
+        ],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "fault",
+          "params": {
+            "team": 1
+          }
+        },
+        {
+          "type": "change_ends",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "ready",
+        "server": 0,
+        "points": [
+          6,
+          2
+        ]
+      }
+    },
+    {
+      "id": "both_teams_can_substitute_2019",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 1,
+            "out": 1,
+            "in": 5
+          }
+        }
+      ],
+      "legal_constraints": {
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            0,
+            2,
+            3,
+            4,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "no_rally_substitution",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "out": 1,
+          "in": 5
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "stoppage_allows_substitution",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stop",
+          "params": {}
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "out": 1,
+            "in": 5
+          }
+        },
+        {
+          "type": "resume",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "ready"
+      }
+    },
+    {
+      "id": "captain_remains_when_substituted",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "out": 0,
+            "in": 5
+          }
+        }
+      ],
+      "legal_constraints": {
+        "captains": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "suspension_ten_points",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "suspension"
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "suspended",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            10,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          null,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "new_captain_required",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "suspended",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            10,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          null,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "serve",
+        "params": {
+          "team": 0,
+          "player": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "suspended_player_not_replaceable",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "suspended",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            10,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          null,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "enter",
+        "params": {
+          "team": 0,
+          "player": 5
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "suspension_expires_after_point",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          2,
+          3
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "suspended",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          1,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "fault",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          3,
+          3
+        ],
+        "sets": [],
+        "server": 1,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": true,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "bench",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          1,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "return_after_expiry",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          3,
+          3
+        ],
+        "sets": [],
+        "server": 1,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": true,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "bench",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          1,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "enter",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          5,
+          5
+        ],
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "id": "suspension_carries_set_boundary",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          10,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 1,
+            "kind": "suspension"
+          }
+        },
+        {
+          "type": "resume",
+          "params": {}
+        },
+        {
+          "type": "serve",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        },
+        {
+          "type": "fault",
+          "params": {
+            "team": 1
+          }
+        },
+        {
+          "type": "next_set",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "suspensions": [
+          [
+            0,
+            9,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "second_suspension_abandons",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "suspended",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            10,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          null,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 1,
+            "kind": "suspension"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    },
+    {
+      "id": "permanent_expulsion_capacity",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 1,
+            "kind": "expulsion"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "id": "bench_expulsion_no_field_reduction",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 5,
+            "kind": "expulsion"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "id": "no_timeout_before_rally",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "timeout",
+        "params": {
+          "team": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "timeout_thirty_seconds",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": true,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "timeout",
+          "params": {
+            "team": 1
+          }
+        },
+        {
+          "type": "elapse_timeout",
+          "params": {
+            "milliseconds": 30000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "ready",
+        "timeout_ms": 0
+      }
+    },
+    {
+      "id": "one_timeout_per_set",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": true,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "timeout",
+          "params": {
+            "team": 1
+          }
+        },
+        {
+          "type": "elapse_timeout",
+          "params": {
+            "milliseconds": 30000
+          }
+        }
+      ],
+      "action": {
+        "type": "timeout",
+        "params": {
+          "team": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "delay_warning_then_point",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "delay",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "delay",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "points": [
+          0,
+          1
+        ],
+        "server": 0
+      }
+    },
+    {
+      "id": "improper_substitution_point",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "substitution_fault",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "points": [
+          1,
+          0
+        ],
+        "server": 1
+      }
+    },
+    {
+      "id": "abandonment_official_result",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "suspended",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            10,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          null,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 1,
+            "kind": "suspension"
+          }
+        },
+        {
+          "type": "official_result",
+          "params": {
+            "winner": 1
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_b"
+        ]
+      }
+    },
+    {
+      "id": "concession",
+      "actions": [
+        {
+          "type": "concede",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_b"
+        ]
+      }
+    },
+    {
+      "id": "invalid_completed_set",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [
+          [
+            15,
+            0
+          ]
+        ],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          0,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "missing_suspension_counter",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "sets": [],
+        "server": 0,
+        "set_starter": 0,
+        "decider_changed": false,
+        "has_rally": false,
+        "timeouts": [
+          false,
+          false
+        ],
+        "timeout_ms": 0,
+        "status": [
+          [
+            "suspended",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "cautions": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "suspensions": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "lost_place": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "captains": [
+          null,
+          0
+        ],
+        "delay_warned": [
+          false,
+          false
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

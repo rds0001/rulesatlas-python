@@ -1,0 +1,1872 @@
+{
+  "profile_id": "S040",
+  "ruleset_id": "builtin.tamburello.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "team_a"
+    },
+    {
+      "id": "team_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "initial_toss",
+      "actions": [
+        {
+          "type": "choose_service",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          null,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "nominate_server",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          null,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "nominate_server",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "nomination_required",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          null,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "authorize_service",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "authorize_service",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "authorize_service",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "service",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 10000,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "serve_after_authorization",
+      "initial_data": {
+        "phase": "service",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 10000,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "serve",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "wrong_player_cannot_serve",
+      "initial_data": {
+        "phase": "service",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 10000,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "serve",
+        "params": {
+          "player": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "ten_second_deadline_loses_point",
+      "initial_data": {
+        "phase": "service",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 10000,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse_service",
+          "params": {
+            "milliseconds": 10000
+          }
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          1
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "service_fault_has_no_retry",
+      "initial_data": {
+        "phase": "service",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 10000,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "service_fault",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          1
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "server_fixed_during_game",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "outgoing": 0,
+          "incoming": 3
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "other_player_can_substitute",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "outgoing": 1,
+            "incoming": 3
+          }
+        }
+      ],
+      "legal_constraints": {
+        "server": 0
+      }
+    },
+    {
+      "id": "unavailable_server_may_be_replaced",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "withdraw_player",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        },
+        {
+          "type": "nominate_server",
+          "params": {
+            "team": 0,
+            "player": 1
+          }
+        },
+        {
+          "type": "authorize_service",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "server": 1
+      }
+    },
+    {
+      "id": "two_players_can_continue",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "exclude_player",
+          "params": {
+            "team": 0,
+            "player": 2
+          }
+        },
+        {
+          "type": "authorize_service",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "one_player_cannot_serve",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "exclude_player",
+          "params": {
+            "team": 0,
+            "player": 1
+          }
+        },
+        {
+          "type": "exclude_player",
+          "params": {
+            "team": 0,
+            "player": 2
+          }
+        }
+      ],
+      "action": {
+        "type": "authorize_service",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "reserve_restores_two_players",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "exclude_player",
+          "params": {
+            "team": 0,
+            "player": 1
+          }
+        },
+        {
+          "type": "exclude_player",
+          "params": {
+            "team": 0,
+            "player": 2
+          }
+        },
+        {
+          "type": "enter",
+          "params": {
+            "team": 0,
+            "player": 3
+          }
+        },
+        {
+          "type": "authorize_service",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "no_substitution_during_rally",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "outgoing": 1,
+          "incoming": 3
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "replayed_point_preserves_server",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "replay_point",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "next_game_switches_service",
+      "initial_data": {
+        "phase": "game_break",
+        "points": [
+          4,
+          2
+        ],
+        "games": [
+          1,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "next_game",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "serving_team": 1,
+        "server": null
+      }
+    },
+    {
+      "id": "decider_new_toss",
+      "initial_data": {
+        "phase": "game_break",
+        "points": [
+          4,
+          2
+        ],
+        "games": [
+          12,
+          12
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "next_game",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "toss",
+        "serving_team": null
+      }
+    },
+    {
+      "id": "decider_alternates_every_point",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          12,
+          12
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          0
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "authorize_service",
+          "params": {}
+        },
+        {
+          "type": "serve",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "award_rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "serving_team": 1
+      }
+    },
+    {
+      "id": "decider_returns_service_after_two_points",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          12,
+          12
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          0
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "authorize_service",
+          "params": {}
+        },
+        {
+          "type": "serve",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "award_rally",
+          "params": {
+            "winner": 0
+          }
+        },
+        {
+          "type": "authorize_service",
+          "params": {}
+        },
+        {
+          "type": "serve",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "award_rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "serving_team": 0
+      }
+    },
+    {
+      "id": "no_deuce_and_three_championship_points",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          3,
+          3
+        ],
+        "games": [
+          12,
+          10
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_a"
+        ],
+        "placements": [
+          {
+            "player_id": "team_a",
+            "place": 1,
+            "games": 13,
+            "championship_points": 3
+          },
+          {
+            "player_id": "team_b",
+            "place": 2,
+            "games": 10,
+            "championship_points": 0
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "close_match_two_and_one_points",
+      "initial_data": {
+        "phase": "rally",
+        "points": [
+          3,
+          3
+        ],
+        "games": [
+          12,
+          11
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 1,
+        "servers": [
+          null,
+          0
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "outcome": {
+        "placements": [
+          {
+            "player_id": "team_a",
+            "place": 1,
+            "games": 13,
+            "championship_points": 2
+          },
+          {
+            "player_id": "team_b",
+            "place": 2,
+            "games": 11,
+            "championship_points": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "end_change_every_three_games",
+      "initial_data": {
+        "phase": "game_break",
+        "points": [
+          4,
+          2
+        ],
+        "games": [
+          2,
+          1
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "legal_constraints": {
+        "change_ends": true
+      }
+    },
+    {
+      "id": "two_timeouts_per_match",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          null,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "timeout",
+        "params": {
+          "team": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "timeout_cancels_current_service_countdown",
+      "initial_data": {
+        "phase": "service",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 10000,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "ready",
+        "service_ms": 0
+      }
+    },
+    {
+      "id": "incomplete_team_result",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          null,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "declare_incomplete",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_b"
+        ]
+      }
+    },
+    {
+      "id": "zero_service_clock_invalid",
+      "initial_data": {
+        "phase": "service",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          0,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "bench_server_invalid",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          4,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "four_active_players_invalid",
+      "initial_data": {
+        "phase": "ready",
+        "points": [
+          0,
+          0
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "players": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench"
+          ]
+        ],
+        "first_server": 0,
+        "game_first_server": 0,
+        "servers": [
+          null,
+          null
+        ],
+        "service_ms": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

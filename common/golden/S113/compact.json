@@ -1,0 +1,646 @@
+{
+  "profile_id": "S113",
+  "ruleset_id": "builtin.race_s113.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "walker_0"
+    },
+    {
+      "id": "walker_1"
+    },
+    {
+      "id": "walker_2"
+    },
+    {
+      "id": "walker_3"
+    },
+    {
+      "id": "walker_4"
+    },
+    {
+      "id": "walker_5"
+    },
+    {
+      "id": "walker_6"
+    },
+    {
+      "id": "walker_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "three_independent_red_cards_exclude",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "red_card",
+          "params": {
+            "participant": 0,
+            "judge": 0,
+            "offence": "loss_of_contact"
+          }
+        },
+        {
+          "type": "red_card",
+          "params": {
+            "participant": 0,
+            "judge": 1,
+            "offence": "bent_knee"
+          }
+        },
+        {
+          "type": "red_card",
+          "params": {
+            "participant": 0,
+            "judge": 2,
+            "offence": "loss_of_contact"
+          }
+        }
+      ],
+      "data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "dq",
+            "time_us": null,
+            "warnings": 0,
+            "red_cards": [
+              {
+                "judge": 0,
+                "offence": "loss_of_contact"
+              },
+              {
+                "judge": 1,
+                "offence": "bent_knee"
+              },
+              {
+                "judge": 2,
+                "offence": "loss_of_contact"
+              }
+            ],
+            "yellow_paddles": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "same_judge_cannot_supply_two_cards",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "red_card",
+          "params": {
+            "participant": 0,
+            "judge": 0,
+            "offence": "loss_of_contact"
+          }
+        }
+      ],
+      "action": {
+        "type": "red_card",
+        "params": {
+          "participant": 0,
+          "judge": 0,
+          "offence": "bent_knee"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "yellow_paddles_do_not_replace_red_cards",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "yellow_paddle",
+          "params": {
+            "participant": 0,
+            "judge": 0,
+            "offence": "loss_of_contact"
+          }
+        },
+        {
+          "type": "yellow_paddle",
+          "params": {
+            "participant": 0,
+            "judge": 0,
+            "offence": "bent_knee"
+          }
+        },
+        {
+          "type": "red_card",
+          "params": {
+            "participant": 0,
+            "judge": 0,
+            "offence": "loss_of_contact"
+          }
+        },
+        {
+          "type": "red_card",
+          "params": {
+            "participant": 0,
+            "judge": 1,
+            "offence": "loss_of_contact"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "repeated_same_paddle_rejected",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        },
+        {
+          "type": "yellow_paddle",
+          "params": {
+            "participant": 0,
+            "judge": 0,
+            "offence": "bent_knee"
+          }
+        }
+      ],
+      "action": {
+        "type": "yellow_paddle",
+        "params": {
+          "participant": 0,
+          "judge": 0,
+          "offence": "bent_knee"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "no_card_before_start",
+      "action": {
+        "type": "red_card",
+        "params": {
+          "participant": 0,
+          "judge": 0,
+          "offence": "loss_of_contact"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "third_card_after_finish_changes_winner",
+      "initial_data": {
+        "phase": "review",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 3600000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3601000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3602000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3603000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3604000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3605000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3606000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3607000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "red_card",
+          "params": {
+            "participant": 0,
+            "judge": 0,
+            "offence": "loss_of_contact"
+          }
+        },
+        {
+          "type": "red_card",
+          "params": {
+            "participant": 0,
+            "judge": 1,
+            "offence": "bent_knee"
+          }
+        },
+        {
+          "type": "red_card",
+          "params": {
+            "participant": 0,
+            "judge": 2,
+            "offence": "loss_of_contact"
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "walker_1"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "corrected_card_then_result_can_reinstate",
+      "initial_data": {
+        "phase": "review",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 3600000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3601000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3602000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3603000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3604000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3605000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3606000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3607000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "red_card",
+          "params": {
+            "participant": 0,
+            "judge": 0,
+            "offence": "loss_of_contact"
+          }
+        },
+        {
+          "type": "red_card",
+          "params": {
+            "participant": 0,
+            "judge": 1,
+            "offence": "bent_knee"
+          }
+        },
+        {
+          "type": "red_card",
+          "params": {
+            "participant": 0,
+            "judge": 2,
+            "offence": "loss_of_contact"
+          }
+        },
+        {
+          "type": "remove_red_card",
+          "params": {
+            "participant": 0,
+            "judge": 2
+          }
+        },
+        {
+          "type": "amend_result",
+          "params": {
+            "participant": 0,
+            "status": "finished",
+            "time_us": 3600000000,
+            "warnings": 0
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "walker_0"
+        ]
+      }
+    },
+    {
+      "id": "cannot_reinstate_while_three_cards_remain",
+      "initial_data": {
+        "phase": "review",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 3600000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3601000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3602000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3603000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3604000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3605000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3606000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3607000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "red_card",
+          "params": {
+            "participant": 0,
+            "judge": 0,
+            "offence": "loss_of_contact"
+          }
+        },
+        {
+          "type": "red_card",
+          "params": {
+            "participant": 0,
+            "judge": 1,
+            "offence": "bent_knee"
+          }
+        },
+        {
+          "type": "red_card",
+          "params": {
+            "participant": 0,
+            "judge": 2,
+            "offence": "loss_of_contact"
+          }
+        }
+      ],
+      "action": {
+        "type": "amend_result",
+        "params": {
+          "participant": 0,
+          "status": "finished",
+          "time_us": 3600000000,
+          "warnings": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "three_cards_without_exclusion_invalid",
+      "initial_data": {
+        "phase": "review",
+        "runners": [
+          {
+            "status": "finished",
+            "time_us": 3600000000,
+            "warnings": 0,
+            "red_cards": [
+              {
+                "judge": 0,
+                "offence": "loss_of_contact"
+              },
+              {
+                "judge": 1,
+                "offence": "bent_knee"
+              },
+              {
+                "judge": 2,
+                "offence": "loss_of_contact"
+              }
+            ],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3601000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3602000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3603000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3604000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3605000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3606000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          },
+          {
+            "status": "finished",
+            "time_us": 3607000000,
+            "warnings": 0,
+            "red_cards": [],
+            "yellow_paddles": []
+          }
+        ]
+      },
+      "valid": false
+    }
+  ]
+}

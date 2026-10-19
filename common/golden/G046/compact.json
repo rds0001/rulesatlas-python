@@ -1,0 +1,2931 @@
+{
+  "profile_id": "G046",
+  "ruleset_id": "builtin.bridge.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "north"
+    },
+    {
+      "id": "east"
+    },
+    {
+      "id": "south"
+    },
+    {
+      "id": "west"
+    }
+  ],
+  "cases": [
+    {
+      "id": "deal",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "vulnerable": [
+              false,
+              false
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "auction",
+        "dealer": 0,
+        "vulnerable": [
+          false,
+          false
+        ],
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            0,
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28,
+            32,
+            36,
+            40,
+            44,
+            48
+          ],
+          [
+            1,
+            5,
+            9,
+            13,
+            17,
+            21,
+            25,
+            29,
+            33,
+            37,
+            41,
+            45,
+            49
+          ],
+          [
+            2,
+            6,
+            10,
+            14,
+            18,
+            22,
+            26,
+            30,
+            34,
+            38,
+            42,
+            46,
+            50
+          ],
+          [
+            3,
+            7,
+            11,
+            15,
+            19,
+            23,
+            27,
+            31,
+            35,
+            39,
+            43,
+            47,
+            51
+          ]
+        ],
+        "won": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "trick": [],
+        "auction": [],
+        "claim": null
+      }
+    },
+    {
+      "id": "passed_out_board",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "vulnerable": [
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "draw",
+        "reason": "passed_out"
+      }
+    },
+    {
+      "id": "cannot_double_without_contract",
+      "initial_data": {
+        "phase": "auction",
+        "dealer": 0,
+        "vulnerable": [
+          false,
+          false
+        ],
+        "turn": 0,
+        "leader": 0,
+        "hands": [
+          [
+            0,
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28,
+            32,
+            36,
+            40,
+            44,
+            48
+          ],
+          [
+            1,
+            5,
+            9,
+            13,
+            17,
+            21,
+            25,
+            29,
+            33,
+            37,
+            41,
+            45,
+            49
+          ],
+          [
+            2,
+            6,
+            10,
+            14,
+            18,
+            22,
+            26,
+            30,
+            34,
+            38,
+            42,
+            46,
+            50
+          ],
+          [
+            3,
+            7,
+            11,
+            15,
+            19,
+            23,
+            27,
+            31,
+            35,
+            39,
+            43,
+            47,
+            51
+          ]
+        ],
+        "won": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "trick": [],
+        "auction": [],
+        "claim": null
+      },
+      "action": {
+        "type": "call",
+        "params": {
+          "call": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "cannot_double_own_side",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "vulnerable": [
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 3
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "call",
+        "params": {
+          "call": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "cannot_repeat_bid",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "vulnerable": [
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 7
+          }
+        }
+      ],
+      "action": {
+        "type": "call",
+        "params": {
+          "call": 7
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "first_strain_bidder_declares",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "vulnerable": [
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 5
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 20
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "declarer": 0,
+        "dummy": 2,
+        "turn": 1,
+        "dummy_exposed": false
+      }
+    },
+    {
+      "id": "dummy_exposed_after_opening_lead",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "vulnerable": [
+          false,
+          false
+        ],
+        "turn": 1,
+        "leader": 1,
+        "hands": [
+          [
+            0,
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28,
+            32,
+            36,
+            40,
+            44,
+            48
+          ],
+          [
+            1,
+            5,
+            9,
+            13,
+            17,
+            21,
+            25,
+            29,
+            33,
+            37,
+            41,
+            45,
+            49
+          ],
+          [
+            2,
+            6,
+            10,
+            14,
+            18,
+            22,
+            26,
+            30,
+            34,
+            38,
+            42,
+            46,
+            50
+          ],
+          [
+            3,
+            7,
+            11,
+            15,
+            19,
+            23,
+            27,
+            31,
+            35,
+            39,
+            43,
+            47,
+            51
+          ]
+        ],
+        "won": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "trick": [],
+        "auction": [
+          7,
+          0,
+          0,
+          0
+        ],
+        "claim": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 1
+          }
+        }
+      ],
+      "legal_constraints": {
+        "dummy_exposed": true,
+        "controller": 0,
+        "turn": 2
+      }
+    },
+    {
+      "id": "must_follow_suit",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "vulnerable": [
+          false,
+          false
+        ],
+        "turn": 1,
+        "leader": 1,
+        "hands": [
+          [
+            0,
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28,
+            32,
+            36,
+            40,
+            44,
+            48
+          ],
+          [
+            1,
+            5,
+            9,
+            13,
+            17,
+            21,
+            25,
+            29,
+            33,
+            37,
+            41,
+            45,
+            49
+          ],
+          [
+            2,
+            6,
+            10,
+            14,
+            18,
+            22,
+            26,
+            30,
+            34,
+            38,
+            42,
+            46,
+            50
+          ],
+          [
+            3,
+            7,
+            11,
+            15,
+            19,
+            23,
+            27,
+            31,
+            35,
+            39,
+            43,
+            47,
+            51
+          ]
+        ],
+        "won": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "trick": [],
+        "auction": [
+          7,
+          0,
+          0,
+          0
+        ],
+        "claim": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 1
+          }
+        }
+      ],
+      "action": {
+        "type": "play",
+        "params": {
+          "card": 14
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "declarer_controls_dummy",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "vulnerable": [
+          false,
+          false
+        ],
+        "turn": 1,
+        "leader": 1,
+        "hands": [
+          [
+            0,
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28,
+            32,
+            36,
+            40,
+            44,
+            48
+          ],
+          [
+            1,
+            5,
+            9,
+            13,
+            17,
+            21,
+            25,
+            29,
+            33,
+            37,
+            41,
+            45,
+            49
+          ],
+          [
+            2,
+            6,
+            10,
+            14,
+            18,
+            22,
+            26,
+            30,
+            34,
+            38,
+            42,
+            46,
+            50
+          ],
+          [
+            3,
+            7,
+            11,
+            15,
+            19,
+            23,
+            27,
+            31,
+            35,
+            39,
+            43,
+            47,
+            51
+          ]
+        ],
+        "won": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "trick": [],
+        "auction": [
+          7,
+          0,
+          0,
+          0
+        ],
+        "claim": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 1
+          }
+        }
+      ],
+      "action": {
+        "type": "play",
+        "params": {
+          "card": 2
+        },
+        "actor": "south"
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "highest_led_card_takes_trick",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "vulnerable": [
+          false,
+          false
+        ],
+        "turn": 1,
+        "leader": 1,
+        "hands": [
+          [
+            0,
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28,
+            32,
+            36,
+            40,
+            44,
+            48
+          ],
+          [
+            1,
+            5,
+            9,
+            13,
+            17,
+            21,
+            25,
+            29,
+            33,
+            37,
+            41,
+            45,
+            49
+          ],
+          [
+            2,
+            6,
+            10,
+            14,
+            18,
+            22,
+            26,
+            30,
+            34,
+            38,
+            42,
+            46,
+            50
+          ],
+          [
+            3,
+            7,
+            11,
+            15,
+            19,
+            23,
+            27,
+            31,
+            35,
+            39,
+            43,
+            47,
+            51
+          ]
+        ],
+        "won": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "trick": [],
+        "auction": [
+          7,
+          0,
+          0,
+          0
+        ],
+        "claim": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 1
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 2
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 3
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "turn": 3
+      }
+    },
+    {
+      "id": "trump_beats_led_suit",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "vulnerable": [
+          false,
+          false
+        ],
+        "turn": 1,
+        "leader": 1,
+        "hands": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38
+          ],
+          [
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51
+          ]
+        ],
+        "won": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "trick": [],
+        "auction": [
+          5,
+          0,
+          0,
+          0
+        ],
+        "claim": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 13
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 26
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 39
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "turn": 2
+      }
+    },
+    {
+      "id": "claim_cannot_exceed_remaining",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "vulnerable": [
+          false,
+          false
+        ],
+        "turn": 1,
+        "leader": 1,
+        "hands": [
+          [
+            0,
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28,
+            32,
+            36,
+            40,
+            44,
+            48
+          ],
+          [
+            1,
+            5,
+            9,
+            13,
+            17,
+            21,
+            25,
+            29,
+            33,
+            37,
+            41,
+            45,
+            49
+          ],
+          [
+            2,
+            6,
+            10,
+            14,
+            18,
+            22,
+            26,
+            30,
+            34,
+            38,
+            42,
+            46,
+            50
+          ],
+          [
+            3,
+            7,
+            11,
+            15,
+            19,
+            23,
+            27,
+            31,
+            35,
+            39,
+            43,
+            47,
+            51
+          ]
+        ],
+        "won": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "trick": [],
+        "auction": [
+          7,
+          0,
+          0,
+          0
+        ],
+        "claim": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 1
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 2
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 3
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "settle_claim",
+        "params": {
+          "ns_remaining": 13
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "minor_partscore",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "vulnerable": [
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 8
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "settle_claim",
+          "params": {
+            "ns_remaining": 8
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "side": "NS",
+            "score": 90
+          },
+          {
+            "side": "EW",
+            "score": -90
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "minor_game",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "vulnerable": [
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 24
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "settle_claim",
+          "params": {
+            "ns_remaining": 11
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "side": "NS",
+            "score": 400
+          },
+          {
+            "side": "EW",
+            "score": -400
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "major_game_overtrick",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "vulnerable": [
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 21
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "settle_claim",
+          "params": {
+            "ns_remaining": 11
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "side": "NS",
+            "score": 450
+          },
+          {
+            "side": "EW",
+            "score": -450
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "vulnerable_notrump_game",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "vulnerable": [
+              true,
+              false
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 17
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "settle_claim",
+          "params": {
+            "ns_remaining": 9
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "side": "NS",
+            "score": 600
+          },
+          {
+            "side": "EW",
+            "score": -600
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "doubled_contract_reaches_game",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "vulnerable": [
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 10
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 1
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "settle_claim",
+          "params": {
+            "ns_remaining": 8
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "side": "NS",
+            "score": 470
+          },
+          {
+            "side": "EW",
+            "score": -470
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "redoubled_notrump_overtricks",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "vulnerable": [
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 7
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 1
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 2
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "settle_claim",
+          "params": {
+            "ns_remaining": 9
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "side": "NS",
+            "score": 960
+          },
+          {
+            "side": "EW",
+            "score": -960
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "small_slam",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "vulnerable": [
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 32
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "settle_claim",
+          "params": {
+            "ns_remaining": 12
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "side": "NS",
+            "score": 990
+          },
+          {
+            "side": "EW",
+            "score": -990
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "vulnerable_grand_slam",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "vulnerable": [
+              true,
+              false
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 37
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "settle_claim",
+          "params": {
+            "ns_remaining": 13
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "side": "NS",
+            "score": 2220
+          },
+          {
+            "side": "EW",
+            "score": -2220
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "nonvulnerable_doubled_down_four",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "vulnerable": [
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 21
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 1
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "settle_claim",
+          "params": {
+            "ns_remaining": 6
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "side": "NS",
+            "score": -800
+          },
+          {
+            "side": "EW",
+            "score": 800
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "vulnerable_doubled_down_two",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "vulnerable": [
+              true,
+              false
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 21
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 1
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "settle_claim",
+          "params": {
+            "ns_remaining": 8
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "side": "NS",
+            "score": -500
+          },
+          {
+            "side": "EW",
+            "score": 500
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "vulnerable_redoubled_down_two",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 0,
+            "vulnerable": [
+              true,
+              false
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 21
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 1
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 2
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "settle_claim",
+          "params": {
+            "ns_remaining": 8
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "side": "NS",
+            "score": -1000
+          },
+          {
+            "side": "EW",
+            "score": 1000
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "thirteenth_trick_completes_board",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "vulnerable": [
+          false,
+          false
+        ],
+        "turn": 1,
+        "leader": 1,
+        "hands": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "won": [
+          [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51
+          ],
+          [],
+          [],
+          []
+        ],
+        "trick": [],
+        "auction": [
+          7,
+          0,
+          0,
+          0
+        ],
+        "claim": null
+      },
+      "actions": [
+        {
+          "type": "play",
+          "params": {
+            "card": 1
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 2
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 3
+          }
+        },
+        {
+          "type": "play",
+          "params": {
+            "card": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "placements": [
+          {
+            "side": "NS",
+            "score": 240
+          },
+          {
+            "side": "EW",
+            "score": -240
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "east_west_contract_score_sign",
+      "actions": [
+        {
+          "type": "deal",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "dealer": 1,
+            "vulnerable": [
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 17
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "call",
+          "params": {
+            "call": 0
+          }
+        },
+        {
+          "type": "settle_claim",
+          "params": {
+            "ns_remaining": 4
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "east",
+          "west"
+        ],
+        "placements": [
+          {
+            "side": "NS",
+            "score": -400
+          },
+          {
+            "side": "EW",
+            "score": 400
+          }
+        ]
+      }
+    },
+    {
+      "id": "impossible_turn_invalid",
+      "initial_data": {
+        "phase": "play",
+        "dealer": 0,
+        "vulnerable": [
+          false,
+          false
+        ],
+        "turn": 0,
+        "leader": 1,
+        "hands": [
+          [
+            0,
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28,
+            32,
+            36,
+            40,
+            44,
+            48
+          ],
+          [
+            1,
+            5,
+            9,
+            13,
+            17,
+            21,
+            25,
+            29,
+            33,
+            37,
+            41,
+            45,
+            49
+          ],
+          [
+            2,
+            6,
+            10,
+            14,
+            18,
+            22,
+            26,
+            30,
+            34,
+            38,
+            42,
+            46,
+            50
+          ],
+          [
+            3,
+            7,
+            11,
+            15,
+            19,
+            23,
+            27,
+            31,
+            35,
+            39,
+            43,
+            47,
+            51
+          ]
+        ],
+        "won": [
+          [],
+          [],
+          [],
+          []
+        ],
+        "trick": [],
+        "auction": [
+          7,
+          0,
+          0,
+          0
+        ],
+        "claim": null
+      },
+      "valid": false
+    }
+  ]
+}

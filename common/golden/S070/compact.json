@@ -1,0 +1,1120 @@
+{
+  "profile_id": "S070",
+  "ruleset_id": "builtin.sambo.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "red"
+    },
+    {
+      "id": "blue"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "fighting",
+        "remaining_ms": 300000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "throw_points",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 300000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "throw",
+          "params": {
+            "player": 0,
+            "points": 2
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "id": "invalid_three_point_throw",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 300000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "throw",
+        "params": {
+          "player": 0,
+          "points": 3
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "eight_point_superiority",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 300000,
+        "techniques": [
+          {
+            "player": 0,
+            "points": 4,
+            "kind": "throw"
+          }
+        ],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "throw",
+          "params": {
+            "player": 0,
+            "points": 4
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ],
+        "reason": "superiority"
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "short_hold_no_score",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 280000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "hold_down",
+          "params": {
+            "player": 0,
+            "duration_ms": 9999
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "ten_second_hold_two",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 280000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "hold_down",
+          "params": {
+            "player": 0,
+            "duration_ms": 10000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          2,
+          0
+        ],
+        "hold_points_remaining": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "id": "full_hold_replaces_partial",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 260000,
+        "techniques": [
+          {
+            "player": 0,
+            "points": 2,
+            "kind": "hold_down"
+          },
+          {
+            "player": 1,
+            "points": 2,
+            "kind": "throw"
+          }
+        ],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "hold_down",
+          "params": {
+            "player": 0,
+            "duration_ms": 20000
+          }
+        }
+      ],
+      "data": {
+        "phase": "fighting",
+        "remaining_ms": 260000,
+        "techniques": [
+          {
+            "player": 1,
+            "points": 2,
+            "kind": "throw"
+          },
+          {
+            "player": 0,
+            "points": 4,
+            "kind": "hold_down"
+          }
+        ],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "two_partial_holds_cap",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 260000,
+        "techniques": [
+          {
+            "player": 0,
+            "points": 2,
+            "kind": "hold_down"
+          }
+        ],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "hold_down",
+          "params": {
+            "player": 0,
+            "duration_ms": 11000
+          }
+        }
+      ],
+      "action": {
+        "type": "hold_down",
+        "params": {
+          "player": 0,
+          "duration_ms": 20000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "hold_exceeds_elapsed_time",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 300000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "hold_down",
+        "params": {
+          "player": 0,
+          "duration_ms": 10000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "first_warning_zero",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 300000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "warning",
+          "params": {
+            "players": [
+              0
+            ],
+            "kind": "ordinary"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          0,
+          0
+        ],
+        "warnings": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "second_third_warnings_one_each",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 300000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "warning",
+          "params": {
+            "players": [
+              0
+            ],
+            "kind": "ordinary"
+          }
+        },
+        {
+          "type": "warning",
+          "params": {
+            "players": [
+              0
+            ],
+            "kind": "ordinary"
+          }
+        },
+        {
+          "type": "warning",
+          "params": {
+            "players": [
+              0
+            ],
+            "kind": "ordinary"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          0,
+          2
+        ],
+        "warnings": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "fourth_warning_withdrawal",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 300000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "warning",
+          "params": {
+            "players": [
+              0
+            ],
+            "kind": "ordinary"
+          }
+        },
+        {
+          "type": "warning",
+          "params": {
+            "players": [
+              0
+            ],
+            "kind": "ordinary"
+          }
+        },
+        {
+          "type": "warning",
+          "params": {
+            "players": [
+              0
+            ],
+            "kind": "ordinary"
+          }
+        },
+        {
+          "type": "warning",
+          "params": {
+            "players": [
+              0
+            ],
+            "kind": "ordinary"
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ],
+        "reason": "warnings"
+      }
+    },
+    {
+      "id": "prohibited_initial_scored",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 300000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "warning",
+          "params": {
+            "players": [
+              0
+            ],
+            "kind": "prohibited"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "scores": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "id": "repeat_prohibited_withdrawal",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 300000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "warning",
+          "params": {
+            "players": [
+              0
+            ],
+            "kind": "prohibited"
+          }
+        },
+        {
+          "type": "warning",
+          "params": {
+            "players": [
+              0
+            ],
+            "kind": "prohibited"
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "id": "simultaneous_fourth_double_defeat",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 300000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "warning",
+          "params": {
+            "players": [
+              0,
+              1
+            ],
+            "kind": "ordinary"
+          }
+        },
+        {
+          "type": "warning",
+          "params": {
+            "players": [
+              0,
+              1
+            ],
+            "kind": "ordinary"
+          }
+        },
+        {
+          "type": "warning",
+          "params": {
+            "players": [
+              0,
+              1
+            ],
+            "kind": "ordinary"
+          }
+        },
+        {
+          "type": "warning",
+          "params": {
+            "players": [
+              0,
+              1
+            ],
+            "kind": "ordinary"
+          }
+        }
+      ],
+      "outcome": {
+        "result_kind": "disqualification",
+        "losers": [
+          "red",
+          "blue"
+        ]
+      }
+    },
+    {
+      "id": "duplicate_warning_recipient",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 300000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "warning",
+        "params": {
+          "players": [
+            0,
+            0
+          ],
+          "kind": "ordinary"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "perfect_throw",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 300000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "total_victory",
+          "params": {
+            "player": 0,
+            "method": "perfect_throw"
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ]
+      }
+    },
+    {
+      "id": "submission",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 300000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "total_victory",
+          "params": {
+            "player": 1,
+            "method": "submission"
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "id": "clock_stop",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 300000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "pause",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "elapse",
+        "params": {
+          "milliseconds": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "assistance_exact_limit",
+      "initial_data": {
+        "phase": "paused",
+        "remaining_ms": 300000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "assistance",
+          "params": {
+            "player": 0,
+            "milliseconds": 120000
+          }
+        },
+        {
+          "type": "resume",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "assistance_over_limit",
+      "initial_data": {
+        "phase": "paused",
+        "remaining_ms": 300000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          120000,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "assistance",
+          "params": {
+            "player": 0,
+            "milliseconds": 1
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ],
+        "reason": "assistance_limit"
+      }
+    },
+    {
+      "id": "gong_review",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 300000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 300000
+          }
+        }
+      ],
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    },
+    {
+      "id": "unresolved_activity_not_invented",
+      "initial_data": {
+        "phase": "review",
+        "remaining_ms": 0,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "late_pre_gong_technique",
+      "initial_data": {
+        "phase": "review",
+        "remaining_ms": 0,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "throw",
+          "params": {
+            "player": 0,
+            "points": 1
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ]
+      }
+    },
+    {
+      "id": "technical_points_before_recency",
+      "initial_data": {
+        "phase": "review",
+        "remaining_ms": 0,
+        "techniques": [
+          {
+            "player": 0,
+            "points": 2,
+            "kind": "throw"
+          },
+          {
+            "player": 1,
+            "points": 1,
+            "kind": "throw"
+          }
+        ],
+        "warnings": [
+          {
+            "players": [
+              0
+            ],
+            "kind": "ordinary"
+          },
+          {
+            "players": [
+              0
+            ],
+            "kind": "ordinary"
+          }
+        ],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ]
+      }
+    },
+    {
+      "id": "higher_value_action_wins",
+      "initial_data": {
+        "phase": "review",
+        "remaining_ms": 0,
+        "techniques": [
+          {
+            "player": 0,
+            "points": 4,
+            "kind": "throw"
+          },
+          {
+            "player": 1,
+            "points": 2,
+            "kind": "throw"
+          },
+          {
+            "player": 1,
+            "points": 2,
+            "kind": "throw"
+          }
+        ],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ]
+      }
+    },
+    {
+      "id": "last_equal_technique_wins",
+      "initial_data": {
+        "phase": "review",
+        "remaining_ms": 0,
+        "techniques": [
+          {
+            "player": 0,
+            "points": 2,
+            "kind": "throw"
+          },
+          {
+            "player": 1,
+            "points": 2,
+            "kind": "throw"
+          }
+        ],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "id": "last_asymmetric_warning_loses",
+      "initial_data": {
+        "phase": "review",
+        "remaining_ms": 0,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "warning",
+          "params": {
+            "players": [
+              0
+            ],
+            "kind": "ordinary"
+          }
+        },
+        {
+          "type": "warning",
+          "params": {
+            "players": [
+              1
+            ],
+            "kind": "ordinary"
+          }
+        },
+        {
+          "type": "warning",
+          "params": {
+            "players": [
+              0,
+              1
+            ],
+            "kind": "ordinary"
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ]
+      }
+    },
+    {
+      "id": "withdraw_before_start",
+      "actions": [
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "id": "disqualification",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 300000,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "player": 1
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "red"
+        ]
+      }
+    },
+    {
+      "id": "hold_total_invalid",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 300000,
+        "techniques": [
+          {
+            "player": 0,
+            "points": 4,
+            "kind": "hold_down"
+          },
+          {
+            "player": 0,
+            "points": 2,
+            "kind": "hold_down"
+          }
+        ],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "expired_live_bout_invalid",
+      "initial_data": {
+        "phase": "fighting",
+        "remaining_ms": 0,
+        "techniques": [],
+        "warnings": [],
+        "assistance_ms": [
+          0,
+          0
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

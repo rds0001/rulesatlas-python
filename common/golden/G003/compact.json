@@ -1,0 +1,1895 @@
+{
+  "profile_id": "G003",
+  "ruleset_id": "builtin.shogi.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "black"
+    },
+    {
+      "id": "white"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_count": 32
+    },
+    {
+      "id": "initial_pawn_move",
+      "actions": [
+        {
+          "type": "move",
+          "params": {
+            "source": 18,
+            "destination": 27,
+            "promote": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "mandatory_last_rank_promotion",
+      "initial_data": {
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hands": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            4,
+            4,
+            4,
+            2,
+            2,
+            17
+          ]
+        ],
+        "turn": 0,
+        "history": [
+          "QQQQRQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQYQQQQQQQQQQQQPQQQQ|0|0,0,0,0,0,0,0,4,4,4,4,2,2,17"
+        ],
+        "checks": [
+          false
+        ],
+        "impasse_offer": null,
+        "decision": null
+      },
+      "action": {
+        "type": "move",
+        "params": {
+          "source": 63,
+          "destination": 72,
+          "promote": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "promoted_pawn_reaches_last_rank",
+      "initial_data": {
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hands": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            4,
+            4,
+            4,
+            2,
+            2,
+            17
+          ]
+        ],
+        "turn": 0,
+        "history": [
+          "QQQQRQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQYQQQQQQQQQQQQPQQQQ|0|0,0,0,0,0,0,0,4,4,4,4,2,2,17"
+        ],
+        "checks": [
+          false
+        ],
+        "impasse_offer": null,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "move",
+          "params": {
+            "source": 63,
+            "destination": 72,
+            "promote": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "capture_unpromotes_into_hand",
+      "initial_data": {
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hands": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            4,
+            4,
+            4,
+            2,
+            1,
+            17
+          ]
+        ],
+        "turn": 0,
+        "history": [
+          "QQQQRQQQQQQQQQQQQQQQQQQQQQQQQQQXQQQQQQQQAQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQPQQQQ|0|0,0,0,0,0,0,0,4,4,4,4,2,1,17"
+        ],
+        "checks": [
+          false
+        ],
+        "impasse_offer": null,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "move",
+          "params": {
+            "source": 31,
+            "destination": 40,
+            "promote": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "held_gold_can_be_dropped",
+      "initial_data": {
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hands": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            4,
+            4,
+            4,
+            2,
+            2,
+            18
+          ]
+        ],
+        "turn": 0,
+        "history": [
+          "QQQQRQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQPQQQQ|0|1,0,0,0,0,0,0,3,4,4,4,2,2,18"
+        ],
+        "checks": [
+          false
+        ],
+        "impasse_offer": null,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "drop",
+          "params": {
+            "piece": 2,
+            "destination": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "doubled_pawn_drop_rejected",
+      "initial_data": {
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hands": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            4,
+            4,
+            4,
+            4,
+            2,
+            2,
+            16
+          ]
+        ],
+        "turn": 0,
+        "history": [
+          "QQQQRQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQYQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQPQQQQ|0|0,0,0,0,0,0,1,4,4,4,4,2,2,16"
+        ],
+        "checks": [
+          false
+        ],
+        "impasse_offer": null,
+        "decision": null
+      },
+      "action": {
+        "type": "drop",
+        "params": {
+          "piece": 8,
+          "destination": 49
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "pawn_cannot_drop_on_last_rank",
+      "initial_data": {
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hands": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            4,
+            4,
+            4,
+            4,
+            2,
+            2,
+            17
+          ]
+        ],
+        "turn": 0,
+        "history": [
+          "QQQQRQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQPQQQQ|0|0,0,0,0,0,0,1,4,4,4,4,2,2,17"
+        ],
+        "checks": [
+          false
+        ],
+        "impasse_offer": null,
+        "decision": null
+      },
+      "action": {
+        "type": "drop",
+        "params": {
+          "piece": 8,
+          "destination": 72
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "knight_cannot_drop_on_last_two_ranks",
+      "initial_data": {
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hands": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            4,
+            3,
+            4,
+            2,
+            2,
+            18
+          ]
+        ],
+        "turn": 0,
+        "history": [
+          "QQQQRQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQPQQQQ|0|0,0,1,0,0,0,0,4,4,3,4,2,2,18"
+        ],
+        "checks": [
+          false
+        ],
+        "impasse_offer": null,
+        "decision": null
+      },
+      "action": {
+        "type": "drop",
+        "params": {
+          "piece": 4,
+          "destination": 63
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "pawn_drop_mate_forbidden",
+      "initial_data": {
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hands": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            3,
+            4,
+            4,
+            2,
+            2,
+            2,
+            17
+          ]
+        ],
+        "turn": 0,
+        "history": [
+          "QQQQRQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQSQQQQQQQVQVQQQQQQQPQQQQ|0|0,0,0,0,0,0,1,3,4,4,2,2,2,17"
+        ],
+        "checks": [
+          false
+        ],
+        "impasse_offer": null,
+        "decision": null
+      },
+      "action": {
+        "type": "drop",
+        "params": {
+          "piece": 8,
+          "destination": 67
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "gold_drop_mate_allowed",
+      "initial_data": {
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hands": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            4,
+            4,
+            2,
+            2,
+            2,
+            18
+          ]
+        ],
+        "turn": 0,
+        "history": [
+          "QQQQRQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQSQQQQQQQVQVQQQQQQQPQQQQ|0|1,0,0,0,0,0,0,2,4,4,2,2,2,18"
+        ],
+        "checks": [
+          false
+        ],
+        "impasse_offer": null,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "drop",
+          "params": {
+            "piece": 2,
+            "destination": 67
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "black"
+        ],
+        "reason": "no_legal_move"
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "fourfold_repetition_draws",
+      "actions": [
+        {
+          "type": "move",
+          "params": {
+            "source": 4,
+            "destination": 13,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 76,
+            "destination": 67,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 13,
+            "destination": 4,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 67,
+            "destination": 76,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 4,
+            "destination": 13,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 76,
+            "destination": 67,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 13,
+            "destination": 4,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 67,
+            "destination": 76,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 4,
+            "destination": 13,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 76,
+            "destination": 67,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 13,
+            "destination": 4,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 67,
+            "destination": 76,
+            "promote": false
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "draw",
+        "reason": "fourfold_repetition"
+      }
+    },
+    {
+      "id": "perpetual_checker_loses",
+      "initial_data": {
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hands": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            4,
+            4,
+            4,
+            2,
+            1,
+            18
+          ]
+        ],
+        "turn": 1,
+        "history": [
+          "QQQQRQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQXQQQQQQQQPQQQQ|1|0,0,0,0,0,0,0,4,4,4,4,2,1,18"
+        ],
+        "checks": [
+          true
+        ],
+        "impasse_offer": null,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "move",
+          "params": {
+            "source": 76,
+            "destination": 75,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 67,
+            "destination": 66,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 75,
+            "destination": 76,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 66,
+            "destination": 67,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 76,
+            "destination": 75,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 67,
+            "destination": 66,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 75,
+            "destination": 76,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 66,
+            "destination": 67,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 76,
+            "destination": 75,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 67,
+            "destination": 66,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 75,
+            "destination": 76,
+            "promote": false
+          }
+        },
+        {
+          "type": "move",
+          "params": {
+            "source": 66,
+            "destination": 67,
+            "promote": false
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "white"
+        ],
+        "reason": "perpetual_check"
+      }
+    },
+    {
+      "id": "agreed_impasse_counts_board_and_hands",
+      "initial_data": {
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hands": [
+          [
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            9
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            9
+          ]
+        ],
+        "turn": 0,
+        "history": [
+          "QQQQQQQQPQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQRQQQQQQQQ|0|2,2,2,2,1,1,9,2,2,2,2,1,1,9"
+        ],
+        "checks": [
+          false
+        ],
+        "impasse_offer": null,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "offer_impasse",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "accept_impasse",
+          "params": {
+            "player": 1
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "draw",
+        "reason": "agreed_twenty_four_point_impasse"
+      }
+    },
+    {
+      "id": "cannot_unilaterally_accept_impasse",
+      "initial_data": {
+        "board": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hands": [
+          [
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            9
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            9
+          ]
+        ],
+        "turn": 0,
+        "history": [
+          "QQQQQQQQPQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQRQQQQQQQQ|0|2,2,2,2,1,1,9,2,2,2,2,1,1,9"
+        ],
+        "checks": [
+          false
+        ],
+        "impasse_offer": null,
+        "decision": null
+      },
+      "action": {
+        "type": "accept_impasse",
+        "params": {
+          "player": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "resignation",
+      "actions": [
+        {
+          "type": "resign",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "white"
+        ]
+      }
+    },
+    {
+      "id": "excess_material_invalid",
+      "initial_data": {
+        "board": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          2,
+          3,
+          4,
+          5,
+          0,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -8,
+          -8,
+          -8,
+          -8,
+          -8,
+          -8,
+          -8,
+          -8,
+          -8,
+          0,
+          -6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -7,
+          0,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          -2,
+          -3,
+          -4,
+          -5
+        ],
+        "hands": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "turn": 0,
+        "history": [
+          "VUTSRSTUVQXQQQQQWQYYYYYYYYYQQQQQQQQQQQQQQQQQQQQQQQQQQQIIIIIIIIIQKQQQQQJQLMNOPONML|0|0,0,0,0,0,0,1,0,0,0,0,0,0,0"
+        ],
+        "checks": [
+          false
+        ],
+        "impasse_offer": null,
+        "decision": null
+      },
+      "valid": false
+    }
+  ]
+}

@@ -1,0 +1,906 @@
+{
+  "profile_id": "S125",
+  "ruleset_id": "builtin.timed_heats_s125.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "rider_0"
+    },
+    {
+      "id": "rider_1"
+    },
+    {
+      "id": "rider_2"
+    },
+    {
+      "id": "rider_3"
+    },
+    {
+      "id": "rider_4"
+    },
+    {
+      "id": "rider_5"
+    },
+    {
+      "id": "rider_6"
+    },
+    {
+      "id": "rider_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start_order",
+      "actions": [
+        {
+          "type": "set_start_order",
+          "params": {
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "run",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "duplicate_order_rejected",
+      "action": {
+        "type": "set_start_order",
+        "params": {
+          "order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "finish_requires_start",
+      "initial_data": {
+        "phase": "run",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ]
+        ]
+      },
+      "action": {
+        "type": "record_result",
+        "params": {
+          "status": "finished",
+          "time_us": 120000000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "authorized_restart",
+      "initial_data": {
+        "phase": "active",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "void_start",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "run",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "dns_after_start_rejected",
+      "initial_data": {
+        "phase": "active",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ]
+        ]
+      },
+      "action": {
+        "type": "record_result",
+        "params": {
+          "status": "dns",
+          "time_us": null
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "millisecond_precision",
+      "initial_data": {
+        "phase": "active",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ]
+        ]
+      },
+      "action": {
+        "type": "record_result",
+        "params": {
+          "status": "finished",
+          "time_us": 120000001
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "last_finish",
+      "initial_data": {
+        "phase": "active",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "finished",
+              "time_us": 120000000
+            },
+            {
+              "status": "finished",
+              "time_us": 120001000
+            },
+            {
+              "status": "finished",
+              "time_us": 120002000
+            },
+            {
+              "status": "finished",
+              "time_us": 120003000
+            },
+            {
+              "status": "finished",
+              "time_us": 120004000
+            },
+            {
+              "status": "finished",
+              "time_us": 120005000
+            },
+            {
+              "status": "finished",
+              "time_us": 120006000
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "record_result",
+          "params": {
+            "status": "finished",
+            "time_us": 120007000
+          }
+        }
+      ],
+      "data": {
+        "phase": "review",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "finished",
+              "time_us": 120000000
+            },
+            {
+              "status": "finished",
+              "time_us": 120001000
+            },
+            {
+              "status": "finished",
+              "time_us": 120002000
+            },
+            {
+              "status": "finished",
+              "time_us": 120003000
+            },
+            {
+              "status": "finished",
+              "time_us": 120004000
+            },
+            {
+              "status": "finished",
+              "time_us": 120005000
+            },
+            {
+              "status": "finished",
+              "time_us": 120006000
+            },
+            {
+              "status": "finished",
+              "time_us": 120007000
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fastest_wins",
+      "initial_data": {
+        "phase": "review",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "finished",
+              "time_us": 120000000
+            },
+            {
+              "status": "finished",
+              "time_us": 120001000
+            },
+            {
+              "status": "finished",
+              "time_us": 120002000
+            },
+            {
+              "status": "finished",
+              "time_us": 120003000
+            },
+            {
+              "status": "finished",
+              "time_us": 120004000
+            },
+            {
+              "status": "finished",
+              "time_us": 120005000
+            },
+            {
+              "status": "finished",
+              "time_us": 120006000
+            },
+            {
+              "status": "finished",
+              "time_us": 120007000
+            }
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_heat",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "rider_0"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "shared_tie_policy",
+      "initial_data": {
+        "phase": "review",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "finished",
+              "time_us": 120000000
+            },
+            {
+              "status": "finished",
+              "time_us": 120000000
+            },
+            {
+              "status": "finished",
+              "time_us": 120002000
+            },
+            {
+              "status": "finished",
+              "time_us": 120003000
+            },
+            {
+              "status": "finished",
+              "time_us": 120004000
+            },
+            {
+              "status": "finished",
+              "time_us": 120005000
+            },
+            {
+              "status": "finished",
+              "time_us": 120006000
+            },
+            {
+              "status": "finished",
+              "time_us": 120007000
+            }
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_heat",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "rider_0",
+          "rider_1"
+        ]
+      }
+    },
+    {
+      "id": "review_exclusion",
+      "initial_data": {
+        "phase": "review",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "finished",
+              "time_us": 120000000
+            },
+            {
+              "status": "finished",
+              "time_us": 120001000
+            },
+            {
+              "status": "finished",
+              "time_us": 120002000
+            },
+            {
+              "status": "finished",
+              "time_us": 120003000
+            },
+            {
+              "status": "finished",
+              "time_us": 120004000
+            },
+            {
+              "status": "finished",
+              "time_us": 120005000
+            },
+            {
+              "status": "finished",
+              "time_us": 120006000
+            },
+            {
+              "status": "finished",
+              "time_us": 120007000
+            }
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "amend_result",
+          "params": {
+            "participant": 0,
+            "status": "dq",
+            "time_us": null
+          }
+        },
+        {
+          "type": "confirm_heat",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "rider_1"
+        ]
+      }
+    },
+    {
+      "id": "no_classified_finisher",
+      "initial_data": {
+        "phase": "review",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "dns",
+              "time_us": null
+            },
+            {
+              "status": "dns",
+              "time_us": null
+            },
+            {
+              "status": "dns",
+              "time_us": null
+            },
+            {
+              "status": "dns",
+              "time_us": null
+            },
+            {
+              "status": "dns",
+              "time_us": null
+            },
+            {
+              "status": "dns",
+              "time_us": null
+            },
+            {
+              "status": "dns",
+              "time_us": null
+            },
+            {
+              "status": "dns",
+              "time_us": null
+            }
+          ]
+        ]
+      },
+      "actions": [
+        {
+          "type": "confirm_heat",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "early_confirmation_rejected",
+      "initial_data": {
+        "phase": "run",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            },
+            {
+              "status": "pending",
+              "time_us": null
+            }
+          ]
+        ]
+      },
+      "action": {
+        "type": "confirm_heat",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "invalid_imported_precision",
+      "initial_data": {
+        "phase": "review",
+        "heat": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "results": [
+          [
+            {
+              "status": "finished",
+              "time_us": 120000001
+            },
+            {
+              "status": "finished",
+              "time_us": 120001000
+            },
+            {
+              "status": "finished",
+              "time_us": 120002000
+            },
+            {
+              "status": "finished",
+              "time_us": 120003000
+            },
+            {
+              "status": "finished",
+              "time_us": 120004000
+            },
+            {
+              "status": "finished",
+              "time_us": 120005000
+            },
+            {
+              "status": "finished",
+              "time_us": 120006000
+            },
+            {
+              "status": "finished",
+              "time_us": 120007000
+            }
+          ]
+        ]
+      },
+      "valid": false
+    }
+  ]
+}

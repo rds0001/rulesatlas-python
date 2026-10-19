@@ -1,0 +1,1064 @@
+{
+  "profile_id": "S022",
+  "ruleset_id": "builtin.dodgeball.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "home"
+    },
+    {
+      "id": "away"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start_set",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ]
+        ],
+        "out_order": [
+          [],
+          []
+        ],
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "ordered_out_queue",
+      "initial_data": {
+        "phase": "playing",
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ]
+        ],
+        "out_order": [
+          [],
+          []
+        ],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "resolve_exchange",
+          "params": {
+            "events": [
+              {
+                "kind": "hit",
+                "team": 0,
+                "player": 2,
+                "thrower": null
+              },
+              {
+                "kind": "boundary",
+                "team": 0,
+                "player": 4,
+                "thrower": null
+              }
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "status": [
+          [
+            "active",
+            "active",
+            "out",
+            "active",
+            "out",
+            "active"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ]
+        ],
+        "out_order": [
+          [
+            2,
+            4
+          ],
+          []
+        ],
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "catch_revives_first_out",
+      "initial_data": {
+        "phase": "playing",
+        "status": [
+          [
+            "active",
+            "active",
+            "out",
+            "active",
+            "out",
+            "active"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ]
+        ],
+        "out_order": [
+          [
+            2,
+            4
+          ],
+          []
+        ],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "resolve_exchange",
+          "params": {
+            "events": [
+              {
+                "kind": "catch",
+                "team": 0,
+                "player": 0,
+                "thrower": 3
+              }
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "out",
+            "active"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "out",
+            "active",
+            "active"
+          ]
+        ],
+        "out_order": [
+          [
+            4
+          ],
+          [
+            3
+          ]
+        ],
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "already_out_player_not_hit_again",
+      "initial_data": {
+        "phase": "playing",
+        "status": [
+          [
+            "active",
+            "active",
+            "out",
+            "active",
+            "out",
+            "active"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ]
+        ],
+        "out_order": [
+          [
+            2,
+            4
+          ],
+          []
+        ],
+        "conceded_by": null
+      },
+      "action": {
+        "type": "resolve_exchange",
+        "params": {
+          "events": [
+            {
+              "kind": "hit",
+              "team": 0,
+              "player": 2,
+              "thrower": null
+            }
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "out_player_cannot_catch",
+      "initial_data": {
+        "phase": "playing",
+        "status": [
+          [
+            "active",
+            "active",
+            "out",
+            "active",
+            "out",
+            "active"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ]
+        ],
+        "out_order": [
+          [
+            2,
+            4
+          ],
+          []
+        ],
+        "conceded_by": null
+      },
+      "action": {
+        "type": "resolve_exchange",
+        "params": {
+          "events": [
+            {
+              "kind": "catch",
+              "team": 0,
+              "player": 2,
+              "thrower": 3
+            }
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "catch_requires_thrower",
+      "initial_data": {
+        "phase": "playing",
+        "status": [
+          [
+            "active",
+            "active",
+            "out",
+            "active",
+            "out",
+            "active"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ]
+        ],
+        "out_order": [
+          [
+            2,
+            4
+          ],
+          []
+        ],
+        "conceded_by": null
+      },
+      "action": {
+        "type": "resolve_exchange",
+        "params": {
+          "events": [
+            {
+              "kind": "catch",
+              "team": 0,
+              "player": 0,
+              "thrower": null
+            }
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "hit_must_not_supply_catch_thrower",
+      "initial_data": {
+        "phase": "playing",
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ]
+        ],
+        "out_order": [
+          [],
+          []
+        ],
+        "conceded_by": null
+      },
+      "action": {
+        "type": "resolve_exchange",
+        "params": {
+          "events": [
+            {
+              "kind": "hit",
+              "team": 0,
+              "player": 0,
+              "thrower": 3
+            }
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "catch_from_already_out_thrower_still_revives",
+      "initial_data": {
+        "phase": "playing",
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "out",
+            "active"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "out",
+            "active",
+            "active"
+          ]
+        ],
+        "out_order": [
+          [
+            4
+          ],
+          [
+            3
+          ]
+        ],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "resolve_exchange",
+          "params": {
+            "events": [
+              {
+                "kind": "catch",
+                "team": 0,
+                "player": 0,
+                "thrower": 3
+              }
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "out",
+            "active",
+            "active"
+          ]
+        ],
+        "out_order": [
+          [],
+          [
+            3
+          ]
+        ],
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "dismissed_player_skipped_in_reentry",
+      "initial_data": {
+        "phase": "playing",
+        "status": [
+          [
+            "active",
+            "active",
+            "out",
+            "active",
+            "out",
+            "active"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ]
+        ],
+        "out_order": [
+          [
+            2,
+            4
+          ],
+          []
+        ],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "disqualify_player",
+          "params": {
+            "team": 0,
+            "player": 2
+          }
+        },
+        {
+          "type": "resolve_exchange",
+          "params": {
+            "events": [
+              {
+                "kind": "catch",
+                "team": 0,
+                "player": 0,
+                "thrower": 3
+              }
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "next_reentry": [
+          null,
+          3
+        ]
+      }
+    },
+    {
+      "id": "invalid_duplicate_queue",
+      "initial_data": {
+        "phase": "playing",
+        "status": [
+          [
+            "active",
+            "active",
+            "out",
+            "active",
+            "out",
+            "active"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ]
+        ],
+        "out_order": [
+          [
+            4,
+            4
+          ],
+          []
+        ],
+        "conceded_by": null
+      },
+      "valid": false
+    },
+    {
+      "id": "last_out_requires_review",
+      "initial_data": {
+        "phase": "playing",
+        "status": [
+          [
+            "active",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out"
+          ],
+          [
+            "active",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out"
+          ]
+        ],
+        "out_order": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "resolve_exchange",
+          "params": {
+            "events": [
+              {
+                "kind": "hit",
+                "team": 1,
+                "player": 0,
+                "thrower": null
+              }
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "review",
+        "status": [
+          [
+            "active",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out"
+          ],
+          [
+            "out",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out"
+          ]
+        ],
+        "out_order": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            0
+          ]
+        ],
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "confirm_set_winner",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          [
+            "active",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out"
+          ],
+          [
+            "out",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out"
+          ]
+        ],
+        "out_order": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            0
+          ]
+        ],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "home"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "simultaneous_last_outs_not_premature_win",
+      "initial_data": {
+        "phase": "playing",
+        "status": [
+          [
+            "active",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out"
+          ],
+          [
+            "active",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out"
+          ]
+        ],
+        "out_order": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "resolve_exchange",
+          "params": {
+            "events": [
+              {
+                "kind": "hit",
+                "team": 0,
+                "player": 0,
+                "thrower": null
+              },
+              {
+                "kind": "hit",
+                "team": 1,
+                "player": 0,
+                "thrower": null
+              }
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "review",
+        "status": [
+          [
+            "out",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out"
+          ],
+          [
+            "out",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out"
+          ]
+        ],
+        "out_order": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            0
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            0
+          ]
+        ],
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "simultaneous_elimination_can_draw",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          [
+            "out",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out"
+          ],
+          [
+            "out",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out"
+          ]
+        ],
+        "out_order": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            0
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            0
+          ]
+        ],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw",
+        "winners": []
+      }
+    },
+    {
+      "id": "draw_can_restart",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          [
+            "out",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out"
+          ],
+          [
+            "out",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out"
+          ]
+        ],
+        "out_order": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            0
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            0
+          ]
+        ],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "restart_drawn_set",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "playing",
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ]
+        ],
+        "out_order": [
+          [],
+          []
+        ],
+        "conceded_by": null
+      }
+    },
+    {
+      "id": "decisive_set_cannot_restart",
+      "initial_data": {
+        "phase": "review",
+        "status": [
+          [
+            "active",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out"
+          ],
+          [
+            "out",
+            "out",
+            "out",
+            "out",
+            "out",
+            "out"
+          ]
+        ],
+        "out_order": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            0
+          ]
+        ],
+        "conceded_by": null
+      },
+      "action": {
+        "type": "restart_drawn_set",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "no_premature_confirmation",
+      "initial_data": {
+        "phase": "playing",
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ]
+        ],
+        "out_order": [
+          [],
+          []
+        ],
+        "conceded_by": null
+      },
+      "action": {
+        "type": "confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "concession",
+      "initial_data": {
+        "phase": "playing",
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active"
+          ]
+        ],
+        "out_order": [
+          [],
+          []
+        ],
+        "conceded_by": null
+      },
+      "actions": [
+        {
+          "type": "concede",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "away"
+        ],
+        "reason": "concession"
+      }
+    }
+  ]
+}

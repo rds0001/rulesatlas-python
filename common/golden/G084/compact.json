@@ -1,0 +1,307 @@
+{
+  "profile_id": "G084",
+  "ruleset_id": "builtin.maexchen.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    },
+    {
+      "id": "carol"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "first_claim_choices",
+      "actions": [
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              3,
+              1
+            ]
+          }
+        }
+      ],
+      "legal_count": 21
+    },
+    {
+      "id": "double_beats_ordinary",
+      "actions": [
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "claim",
+          "params": {
+            "value": 65
+          }
+        },
+        {
+          "type": "challenge",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "roll",
+        "turn": 1,
+        "lives": [
+          3,
+          2,
+          3
+        ],
+        "dice": [],
+        "bid": null
+      }
+    },
+    {
+      "id": "false_claim_loses_claimant",
+      "actions": [
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              6,
+              5
+            ]
+          }
+        },
+        {
+          "type": "claim",
+          "params": {
+            "value": 11
+          }
+        },
+        {
+          "type": "challenge",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "roll",
+        "turn": 0,
+        "lives": [
+          2,
+          3,
+          3
+        ],
+        "dice": [],
+        "bid": null
+      }
+    },
+    {
+      "id": "maexchen_double_penalty",
+      "actions": [
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              1,
+              2
+            ]
+          }
+        },
+        {
+          "type": "claim",
+          "params": {
+            "value": 21
+          }
+        },
+        {
+          "type": "challenge",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "roll",
+        "turn": 1,
+        "lives": [
+          3,
+          1,
+          3
+        ],
+        "dice": [],
+        "bid": null
+      }
+    },
+    {
+      "id": "cannot_reroll_maexchen",
+      "initial_data": {
+        "phase": "respond",
+        "turn": 1,
+        "lives": [
+          1,
+          1,
+          0
+        ],
+        "dice": [],
+        "bid": {
+          "player": 0,
+          "claim": 21,
+          "actual": 66
+        }
+      },
+      "action": {
+        "type": "roll",
+        "params": {
+          "dice": [
+            1,
+            2
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "final_elimination",
+      "initial_data": {
+        "phase": "respond",
+        "turn": 1,
+        "lives": [
+          1,
+          1,
+          0
+        ],
+        "dice": [],
+        "bid": {
+          "player": 0,
+          "claim": 21,
+          "actual": 66
+        }
+      },
+      "actions": [
+        {
+          "type": "challenge",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "bob"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "accepted_claim_cannot_be_challenged",
+      "actions": [
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              3,
+              2
+            ]
+          }
+        },
+        {
+          "type": "claim",
+          "params": {
+            "value": 32
+          }
+        },
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              4,
+              1
+            ]
+          }
+        }
+      ],
+      "action": {
+        "type": "challenge",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "claim_must_increase_rank",
+      "actions": [
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              2,
+              2
+            ]
+          }
+        },
+        {
+          "type": "claim",
+          "params": {
+            "value": 22
+          }
+        },
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              6,
+              5
+            ]
+          }
+        }
+      ],
+      "action": {
+        "type": "claim",
+        "params": {
+          "value": 65
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "invalid_digit_order",
+      "actions": [
+        {
+          "type": "roll",
+          "params": {
+            "dice": [
+              3,
+              2
+            ]
+          }
+        }
+      ],
+      "action": {
+        "type": "claim",
+        "params": {
+          "value": 23
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "dead_current_player",
+      "initial_data": {
+        "phase": "roll",
+        "turn": 0,
+        "lives": [
+          0,
+          3,
+          3
+        ],
+        "dice": [],
+        "bid": null
+      },
+      "valid": false
+    }
+  ]
+}

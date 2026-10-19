@@ -1,0 +1,481 @@
+{
+  "profile_id": "S036",
+  "ruleset_id": "builtin.beach_tennis.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_constraints": {
+        "server": 0,
+        "service_attempts": 1,
+        "deciding_point": false
+      }
+    },
+    {
+      "id": "choose_first_server",
+      "actions": [
+        {
+          "type": "choose_first_server",
+          "params": {
+            "player": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 1,
+        "first_server": 1,
+        "started": false,
+        "decision": null
+      }
+    },
+    {
+      "id": "single_fault_loses_point",
+      "actions": [
+        {
+          "type": "service_fault",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          0,
+          1
+        ],
+        "server": 0,
+        "first_server": 0,
+        "started": true,
+        "decision": null
+      }
+    },
+    {
+      "id": "no_ad_deciding_point",
+      "initial_data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          3,
+          3
+        ],
+        "server": 0,
+        "first_server": 0,
+        "started": true,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          1,
+          0
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 1,
+        "first_server": 0,
+        "started": true,
+        "decision": null
+      },
+      "legal_constraints": {
+        "current_set_end_changes": 1
+      }
+    },
+    {
+      "id": "forty_all_is_deciding",
+      "initial_data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          3,
+          3
+        ],
+        "server": 0,
+        "first_server": 0,
+        "started": true,
+        "decision": null
+      },
+      "legal_constraints": {
+        "deciding_point": true
+      }
+    },
+    {
+      "id": "unclosed_tiebreak_set_invalid",
+      "initial_data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          7,
+          6
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 1,
+        "first_server": 0,
+        "started": true,
+        "decision": null
+      },
+      "valid": false
+    },
+    {
+      "id": "advantage_state_invalid",
+      "initial_data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          4,
+          3
+        ],
+        "server": 0,
+        "first_server": 0,
+        "started": true,
+        "decision": null
+      },
+      "valid": false
+    },
+    {
+      "id": "tiebreak_requires_two_point_margin",
+      "initial_data": {
+        "phase": "tiebreak",
+        "sets": [],
+        "games": [
+          6,
+          6
+        ],
+        "points": [
+          6,
+          6
+        ],
+        "server": 0,
+        "first_server": 0,
+        "started": true,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "tiebreak",
+        "sets": [],
+        "games": [
+          6,
+          6
+        ],
+        "points": [
+          7,
+          6
+        ],
+        "server": 1,
+        "first_server": 0,
+        "started": true,
+        "decision": null
+      }
+    },
+    {
+      "id": "tiebreak_ends_at_eight_six",
+      "initial_data": {
+        "phase": "tiebreak",
+        "sets": [],
+        "games": [
+          6,
+          6
+        ],
+        "points": [
+          6,
+          6
+        ],
+        "server": 0,
+        "first_server": 0,
+        "started": true,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 0
+          }
+        },
+        {
+          "type": "rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "game",
+        "sets": [
+          [
+            7,
+            6
+          ]
+        ],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 1,
+        "first_server": 0,
+        "started": true,
+        "decision": null
+      }
+    },
+    {
+      "id": "second_set_wins_match",
+      "initial_data": {
+        "phase": "game",
+        "sets": [
+          [
+            6,
+            0
+          ]
+        ],
+        "games": [
+          5,
+          0
+        ],
+        "points": [
+          3,
+          0
+        ],
+        "server": 1,
+        "first_server": 0,
+        "started": true,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "six_all_enters_tiebreak",
+      "initial_data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          5,
+          6
+        ],
+        "points": [
+          3,
+          0
+        ],
+        "server": 1,
+        "first_server": 0,
+        "started": true,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "rally",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "tiebreak",
+        "sets": [],
+        "games": [
+          6,
+          6
+        ],
+        "points": [
+          0,
+          0
+        ],
+        "server": 0,
+        "first_server": 0,
+        "started": true,
+        "decision": null
+      }
+    },
+    {
+      "id": "replay_retains_score",
+      "initial_data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          3,
+          3
+        ],
+        "server": 0,
+        "first_server": 0,
+        "started": true,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "replay",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          3,
+          3
+        ],
+        "server": 0,
+        "first_server": 0,
+        "started": true,
+        "decision": null
+      }
+    },
+    {
+      "id": "replayed_started_match_no_walkover",
+      "actions": [
+        {
+          "type": "replay",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "end_match",
+        "params": {
+          "kind": "walkover",
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "late_service_selection_rejected",
+      "initial_data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          3,
+          3
+        ],
+        "server": 0,
+        "first_server": 0,
+        "started": true,
+        "decision": null
+      },
+      "action": {
+        "type": "choose_first_server",
+        "params": {
+          "player": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "retirement",
+      "initial_data": {
+        "phase": "game",
+        "sets": [],
+        "games": [
+          0,
+          0
+        ],
+        "points": [
+          3,
+          3
+        ],
+        "server": 0,
+        "first_server": 0,
+        "started": true,
+        "decision": null
+      },
+      "actions": [
+        {
+          "type": "end_match",
+          "params": {
+            "kind": "retirement",
+            "player": 1
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ],
+        "reason": "retirement"
+      }
+    }
+  ]
+}

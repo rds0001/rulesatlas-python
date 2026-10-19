@@ -1,0 +1,468 @@
+{
+  "profile_id": "G100",
+  "ruleset_id": "builtin.categories.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "configure",
+      "actions": [
+        {
+          "type": "configure",
+          "params": {
+            "categories": [
+              "City",
+              "Country",
+              "Animal"
+            ],
+            "letters": [
+              "A"
+            ]
+          }
+        }
+      ],
+      "data": {
+        "configured": true,
+        "categories": [
+          "City",
+          "Country",
+          "Animal"
+        ],
+        "letters": [
+          "A"
+        ],
+        "current": 0,
+        "phase": "writing",
+        "rounds": [
+          {
+            "answers": [
+              [
+                "",
+                "",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ]
+            ],
+            "judgments": [
+              [
+                -1,
+                -1,
+                -1
+              ],
+              [
+                -1,
+                -1,
+                -1
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "wrong_initial_letter",
+      "initial_data": {
+        "configured": true,
+        "categories": [
+          "City",
+          "Country",
+          "Animal"
+        ],
+        "letters": [
+          "A"
+        ],
+        "current": 0,
+        "phase": "writing",
+        "rounds": [
+          {
+            "answers": [
+              [
+                "",
+                "",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ]
+            ],
+            "judgments": [
+              [
+                -1,
+                -1,
+                -1
+              ],
+              [
+                -1,
+                -1,
+                -1
+              ]
+            ]
+          }
+        ]
+      },
+      "action": {
+        "type": "write",
+        "params": {
+          "player": 0,
+          "category": 0,
+          "word": "BERLIN"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "cannot_stop_incomplete",
+      "initial_data": {
+        "configured": true,
+        "categories": [
+          "City",
+          "Country",
+          "Animal"
+        ],
+        "letters": [
+          "A"
+        ],
+        "current": 0,
+        "phase": "writing",
+        "rounds": [
+          {
+            "answers": [
+              [
+                "",
+                "",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ]
+            ],
+            "judgments": [
+              [
+                -1,
+                -1,
+                -1
+              ],
+              [
+                -1,
+                -1,
+                -1
+              ]
+            ]
+          }
+        ]
+      },
+      "action": {
+        "type": "stop",
+        "params": {
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "scoring_20_10_5",
+      "initial_data": {
+        "configured": true,
+        "categories": [
+          "City",
+          "Country",
+          "Animal"
+        ],
+        "letters": [
+          "A"
+        ],
+        "current": 0,
+        "phase": "judging",
+        "rounds": [
+          {
+            "answers": [
+              [
+                "AMSTERDAM",
+                "AUSTRALIA",
+                "ANT"
+              ],
+              [
+                "ATHENS",
+                "AUSTRALIA",
+                ""
+              ]
+            ],
+            "judgments": [
+              [
+                1,
+                1,
+                -1
+              ],
+              [
+                1,
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "judge",
+          "params": {
+            "player": 0,
+            "category": 2,
+            "valid": true
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ],
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "score": 35
+          },
+          {
+            "player_id": "bob",
+            "place": 2,
+            "score": 15
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "frozen_answers",
+      "initial_data": {
+        "configured": true,
+        "categories": [
+          "City",
+          "Country",
+          "Animal"
+        ],
+        "letters": [
+          "A"
+        ],
+        "current": 0,
+        "phase": "judging",
+        "rounds": [
+          {
+            "answers": [
+              [
+                "AMSTERDAM",
+                "AUSTRALIA",
+                "ANT"
+              ],
+              [
+                "ATHENS",
+                "AUSTRALIA",
+                ""
+              ]
+            ],
+            "judgments": [
+              [
+                1,
+                1,
+                -1
+              ],
+              [
+                1,
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "action": {
+        "type": "write",
+        "params": {
+          "player": 0,
+          "category": 0,
+          "word": "ATHENS"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "invalid_imported_letter",
+      "initial_data": {
+        "configured": true,
+        "categories": [
+          "City",
+          "Country",
+          "Animal"
+        ],
+        "letters": [
+          "A"
+        ],
+        "current": 0,
+        "phase": "writing",
+        "rounds": [
+          {
+            "answers": [
+              [
+                "BERLIN",
+                "",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ]
+            ],
+            "judgments": [
+              [
+                -1,
+                -1,
+                -1
+              ],
+              [
+                -1,
+                -1,
+                -1
+              ]
+            ]
+          }
+        ]
+      },
+      "valid": false
+    },
+    {
+      "id": "empty_timed_round",
+      "initial_data": {
+        "configured": true,
+        "categories": [
+          "City",
+          "Country",
+          "Animal"
+        ],
+        "letters": [
+          "A"
+        ],
+        "current": 0,
+        "phase": "writing",
+        "rounds": [
+          {
+            "answers": [
+              [
+                "",
+                "",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ]
+            ],
+            "judgments": [
+              [
+                -1,
+                -1,
+                -1
+              ],
+              [
+                -1,
+                -1,
+                -1
+              ]
+            ]
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "time_expired",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "draw"
+      }
+    },
+    {
+      "id": "two_rounds_advance",
+      "actions": [
+        {
+          "type": "configure",
+          "params": {
+            "categories": [
+              "Animal"
+            ],
+            "letters": [
+              "A",
+              "B"
+            ]
+          }
+        },
+        {
+          "type": "time_expired",
+          "params": {}
+        },
+        {
+          "type": "write",
+          "params": {
+            "player": 0,
+            "category": 0,
+            "word": "BEAR"
+          }
+        },
+        {
+          "type": "stop",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "judge",
+          "params": {
+            "player": 0,
+            "category": 0,
+            "valid": true
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ],
+        "placements": [
+          {
+            "player_id": "alice",
+            "place": 1,
+            "score": 20
+          },
+          {
+            "player_id": "bob",
+            "place": 2,
+            "score": 0
+          }
+        ]
+      }
+    }
+  ]
+}

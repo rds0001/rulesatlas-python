@@ -1,0 +1,3132 @@
+{
+  "profile_id": "S087",
+  "ruleset_id": "builtin.nordic_combined.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "athlete_0"
+    },
+    {
+      "id": "athlete_1"
+    },
+    {
+      "id": "athlete_2"
+    },
+    {
+      "id": "athlete_3"
+    },
+    {
+      "id": "athlete_4"
+    },
+    {
+      "id": "athlete_5"
+    },
+    {
+      "id": "athlete_6"
+    },
+    {
+      "id": "athlete_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "ski_before_jump_rejected",
+      "action": {
+        "type": "ski_start",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "jump_confirmation_opens_ski",
+      "initial_data": {
+        "stage": "jumping",
+        "jump": {
+          "phase": "review",
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "entrants": [
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 180,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 179,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 178,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 177,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 176,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 175,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 174,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 173,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            }
+          ]
+        },
+        "ski": null
+      },
+      "actions": [
+        {
+          "type": "jump_confirm_result",
+          "params": {}
+        }
+      ],
+      "data": {
+        "stage": "skiing",
+        "jump": {
+          "phase": "finished",
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "entrants": [
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 180,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 179,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 178,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 177,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 176,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 175,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 174,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 173,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            }
+          ]
+        },
+        "ski": {
+          "phase": "ready",
+          "runners": [
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            }
+          ],
+          "route": [],
+          "route_locked": false,
+          "time_limit_us": null,
+          "cutoffs_us": []
+        }
+      }
+    },
+    {
+      "id": "four_seconds_per_jump_point",
+      "initial_data": {
+        "stage": "skiing",
+        "jump": {
+          "phase": "finished",
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "entrants": [
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 180,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 179,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 178,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 177,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 176,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 175,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 174,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 173,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            }
+          ]
+        },
+        "ski": {
+          "phase": "ready",
+          "runners": [
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            }
+          ],
+          "route": [],
+          "route_locked": false,
+          "time_limit_us": null,
+          "cutoffs_us": []
+        }
+      },
+      "legal_constraints": {
+        "start_deficits_us": [
+          0,
+          4000000,
+          8000000,
+          12000000,
+          16000000,
+          20000000,
+          24000000,
+          28000000
+        ]
+      }
+    },
+    {
+      "id": "excluded_jumper_cannot_start",
+      "initial_data": {
+        "stage": "skiing",
+        "jump": {
+          "phase": "finished",
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "entrants": [
+            {
+              "status": "dq",
+              "marks": {
+                "distance_half_m": 180,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 179,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 178,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 177,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 176,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 175,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 174,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 173,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            }
+          ]
+        },
+        "ski": {
+          "phase": "ready",
+          "runners": [
+            {
+              "status": "dns",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            }
+          ],
+          "route": [],
+          "route_locked": false,
+          "time_limit_us": null,
+          "cutoffs_us": []
+        }
+      },
+      "action": {
+        "type": "ski_start_participant",
+        "params": {
+          "participant": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "jump_exclusion_transfers",
+      "initial_data": {
+        "stage": "jumping",
+        "jump": {
+          "phase": "review",
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "entrants": [
+            {
+              "status": "dq",
+              "marks": {
+                "distance_half_m": 180,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 179,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 178,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 177,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 176,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 175,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 174,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 173,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            }
+          ]
+        },
+        "ski": null
+      },
+      "actions": [
+        {
+          "type": "jump_confirm_result",
+          "params": {}
+        }
+      ],
+      "data": {
+        "stage": "skiing",
+        "jump": {
+          "phase": "finished",
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "entrants": [
+            {
+              "status": "dq",
+              "marks": {
+                "distance_half_m": 180,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 179,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 178,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 177,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 176,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 175,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 174,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 173,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            }
+          ]
+        },
+        "ski": {
+          "phase": "ready",
+          "runners": [
+            {
+              "status": "dns",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            }
+          ],
+          "route": [],
+          "route_locked": false,
+          "time_limit_us": null,
+          "cutoffs_us": []
+        }
+      }
+    },
+    {
+      "id": "route_required_before_ski_start",
+      "initial_data": {
+        "stage": "skiing",
+        "jump": {
+          "phase": "finished",
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "entrants": [
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 180,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 179,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 178,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 177,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 176,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 175,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 174,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 173,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            }
+          ]
+        },
+        "ski": {
+          "phase": "ready",
+          "runners": [
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            }
+          ],
+          "route": [],
+          "route_locked": false,
+          "time_limit_us": null,
+          "cutoffs_us": []
+        }
+      },
+      "action": {
+        "type": "ski_start",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "locked_jumping_result",
+      "initial_data": {
+        "stage": "skiing",
+        "jump": {
+          "phase": "finished",
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "entrants": [
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 180,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 179,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 178,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 177,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 176,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 175,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 174,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 173,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            }
+          ]
+        },
+        "ski": {
+          "phase": "ready",
+          "runners": [
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            }
+          ],
+          "route": [],
+          "route_locked": false,
+          "time_limit_us": null,
+          "cutoffs_us": []
+        }
+      },
+      "action": {
+        "type": "jump_confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "combined_score_deficit_matters",
+      "initial_data": {
+        "stage": "skiing",
+        "jump": {
+          "phase": "finished",
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "entrants": [
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 180,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 179,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 178,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 177,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 176,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 175,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 174,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 173,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            }
+          ]
+        },
+        "ski": {
+          "phase": "review",
+          "runners": [
+            {
+              "status": "finished",
+              "time_us": 1800000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1799000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1798000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1797000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1796000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1795000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1794000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1793000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            }
+          ],
+          "route": [
+            "lap_one",
+            "lap_two"
+          ],
+          "route_locked": true,
+          "time_limit_us": null,
+          "cutoffs_us": [
+            null,
+            null
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "ski_confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "athlete_0"
+        ],
+        "placements": [
+          {
+            "player_id": "athlete_0",
+            "place": 1,
+            "time_us": 1800000000,
+            "elapsed_us": 1800000000,
+            "penalty_us": 0,
+            "start_deficit_us": 0
+          },
+          {
+            "player_id": "athlete_1",
+            "place": 2,
+            "time_us": 1803000000,
+            "elapsed_us": 1799000000,
+            "penalty_us": 0,
+            "start_deficit_us": 4000000
+          },
+          {
+            "player_id": "athlete_2",
+            "place": 3,
+            "time_us": 1806000000,
+            "elapsed_us": 1798000000,
+            "penalty_us": 0,
+            "start_deficit_us": 8000000
+          },
+          {
+            "player_id": "athlete_3",
+            "place": 4,
+            "time_us": 1809000000,
+            "elapsed_us": 1797000000,
+            "penalty_us": 0,
+            "start_deficit_us": 12000000
+          },
+          {
+            "player_id": "athlete_4",
+            "place": 5,
+            "time_us": 1812000000,
+            "elapsed_us": 1796000000,
+            "penalty_us": 0,
+            "start_deficit_us": 16000000
+          },
+          {
+            "player_id": "athlete_5",
+            "place": 6,
+            "time_us": 1815000000,
+            "elapsed_us": 1795000000,
+            "penalty_us": 0,
+            "start_deficit_us": 20000000
+          },
+          {
+            "player_id": "athlete_6",
+            "place": 7,
+            "time_us": 1818000000,
+            "elapsed_us": 1794000000,
+            "penalty_us": 0,
+            "start_deficit_us": 24000000
+          },
+          {
+            "player_id": "athlete_7",
+            "place": 8,
+            "time_us": 1821000000,
+            "elapsed_us": 1793000000,
+            "penalty_us": 0,
+            "start_deficit_us": 28000000
+          }
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "ski_gain_can_overcome_deficit",
+      "initial_data": {
+        "stage": "skiing",
+        "jump": {
+          "phase": "finished",
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "entrants": [
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 180,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 179,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 178,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 177,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 176,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 175,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 174,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 173,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            }
+          ]
+        },
+        "ski": {
+          "phase": "review",
+          "runners": [
+            {
+              "status": "finished",
+              "time_us": 1800000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1790000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1798000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1797000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1796000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1795000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1794000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1793000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            }
+          ],
+          "route": [
+            "lap_one",
+            "lap_two"
+          ],
+          "route_locked": true,
+          "time_limit_us": null,
+          "cutoffs_us": [
+            null,
+            null
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "ski_confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "athlete_1"
+        ]
+      }
+    },
+    {
+      "id": "equal_adjusted_finish_shared",
+      "initial_data": {
+        "stage": "skiing",
+        "jump": {
+          "phase": "finished",
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "entrants": [
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 180,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 179,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 178,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 177,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 176,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 175,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 174,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 173,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            }
+          ]
+        },
+        "ski": {
+          "phase": "review",
+          "runners": [
+            {
+              "status": "finished",
+              "time_us": 1800000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1796000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1798000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1797000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1796000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1795000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1794000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1793000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            }
+          ],
+          "route": [
+            "lap_one",
+            "lap_two"
+          ],
+          "route_locked": true,
+          "time_limit_us": null,
+          "cutoffs_us": [
+            null,
+            null
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "ski_confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "athlete_0",
+          "athlete_1"
+        ]
+      }
+    },
+    {
+      "id": "ski_penalty_changes_winner",
+      "initial_data": {
+        "stage": "skiing",
+        "jump": {
+          "phase": "finished",
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "entrants": [
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 180,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 179,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 178,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 177,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 176,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 175,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 174,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 173,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            }
+          ]
+        },
+        "ski": {
+          "phase": "review",
+          "runners": [
+            {
+              "status": "finished",
+              "time_us": 1800000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1799000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1798000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1797000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1796000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1795000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1794000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            },
+            {
+              "status": "finished",
+              "time_us": 1793000000,
+              "warnings": 0,
+              "checkpoints_completed": 2,
+              "last_checkpoint_time": 1700000000,
+              "penalty_us": 0,
+              "started": true
+            }
+          ],
+          "route": [
+            "lap_one",
+            "lap_two"
+          ],
+          "route_locked": true,
+          "time_limit_us": null,
+          "cutoffs_us": [
+            null,
+            null
+          ]
+        }
+      },
+      "actions": [
+        {
+          "type": "ski_assess_penalty",
+          "params": {
+            "participant": 0,
+            "time_us": 5000000
+          }
+        },
+        {
+          "type": "ski_confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "athlete_1"
+        ]
+      }
+    },
+    {
+      "id": "excluded_jumper_in_race_invalid",
+      "initial_data": {
+        "stage": "skiing",
+        "jump": {
+          "phase": "finished",
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "entrants": [
+            {
+              "status": "dq",
+              "marks": {
+                "distance_half_m": 180,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 179,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 178,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 177,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 176,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 175,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 174,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 173,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            }
+          ]
+        },
+        "ski": {
+          "phase": "ready",
+          "runners": [
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            }
+          ],
+          "route": [],
+          "route_locked": false,
+          "time_limit_us": null,
+          "cutoffs_us": []
+        }
+      },
+      "valid": false
+    },
+    {
+      "id": "all_jump_dns_no_contest",
+      "initial_data": {
+        "stage": "jumping",
+        "jump": {
+          "phase": "review",
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "entrants": [
+            {
+              "status": "dns",
+              "marks": null
+            },
+            {
+              "status": "dns",
+              "marks": null
+            },
+            {
+              "status": "dns",
+              "marks": null
+            },
+            {
+              "status": "dns",
+              "marks": null
+            },
+            {
+              "status": "dns",
+              "marks": null
+            },
+            {
+              "status": "dns",
+              "marks": null
+            },
+            {
+              "status": "dns",
+              "marks": null
+            },
+            {
+              "status": "dns",
+              "marks": null
+            }
+          ]
+        },
+        "ski": null
+      },
+      "actions": [
+        {
+          "type": "jump_confirm_result",
+          "params": {}
+        },
+        {
+          "type": "ski_confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "unfinished_ski_prevents_confirmation",
+      "initial_data": {
+        "stage": "skiing",
+        "jump": {
+          "phase": "finished",
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "entrants": [
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 180,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 179,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 178,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 177,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 176,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 175,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 174,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            },
+            {
+              "status": "scored",
+              "marks": {
+                "distance_half_m": 173,
+                "style_half_points": [
+                  30,
+                  35,
+                  36,
+                  37,
+                  40
+                ],
+                "penalty_tenths": 0
+              }
+            }
+          ]
+        },
+        "ski": {
+          "phase": "ready",
+          "runners": [
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            },
+            {
+              "status": "ready",
+              "time_us": null,
+              "warnings": 0,
+              "checkpoints_completed": 0,
+              "last_checkpoint_time": null,
+              "penalty_us": 0,
+              "started": false
+            }
+          ],
+          "route": [],
+          "route_locked": false,
+          "time_limit_us": null,
+          "cutoffs_us": []
+        }
+      },
+      "action": {
+        "type": "ski_confirm_result",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "game_id": "user.transactions",
+  "name": "Atomic transaction oracle",
+  "ruleset_id": "user.transactions.standard",
+  "ruleset_version": "1.0.0",
+  "family": "custom",
+  "participants": {
+    "min": 1,
+    "max": 1
+  },
+  "state": {
+    "fields": {
+      "x": {
+        "type": "integer"
+      },
+      "y": {
+        "type": "integer"
+      },
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        },
+        "maxItems": 3
+      }
+    },
+    "initial": {
+      "x": 1,
+      "y": 2,
+      "items": [
+        10,
+        20
+      ]
+    }
+  },
+  "actions": [
+    {
+      "type": "swap",
+      "params": {},
+      "when": true,
+      "effects": [
+        {
+          "op": "set",
+          "path": "/x",
+          "value": {
+            "ref": "state.y"
+          }
+        },
+        {
+          "op": "set",
+          "path": "/y",
+          "value": {
+            "ref": "state.x"
+          }
+        }
+      ]
+    },
+    {
+      "type": "append",
+      "params": {
+        "value": {
+          "type": "integer"
+        }
+      },
+      "when": true,
+      "effects": [
+        {
+          "op": "append",
+          "path": "/items",
+          "value": {
+            "ref": "params.value"
+          }
+        }
+      ]
+    },
+    {
+      "type": "remove",
+      "params": {
+        "index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2
+        }
+      },
+      "when": true,
+      "effects": [
+        {
+          "op": "remove_at",
+          "path": "/items",
+          "index": {
+            "ref": "params.index"
+          }
+        }
+      ]
+    },
+    {
+      "type": "fail_atomic",
+      "params": {},
+      "when": true,
+      "effects": [
+        {
+          "op": "inc",
+          "path": "/x",
+          "by": 1
+        },
+        {
+          "op": "set",
+          "path": "/y",
+          "value": "bad"
+        }
+      ]
+    }
+  ],
+  "outcomes": [],
+  "provenance": {
+    "basis": "explicit_user_defined",
+    "verification_status": "user_defined"
+  }
+}

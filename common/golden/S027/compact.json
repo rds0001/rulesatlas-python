@@ -1,0 +1,4259 @@
+{
+  "profile_id": "S027",
+  "ruleset_id": "builtin.tchoukball.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "team_a"
+    },
+    {
+      "id": "team_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start_game",
+          "params": {
+            "first_team": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "restart",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "restart",
+      "initial_data": {
+        "phase": "restart",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "restart",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "wrong_restart_team",
+      "initial_data": {
+        "phase": "restart",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "restart",
+        "params": {
+          "team": 1,
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "restart_fault_transfers",
+      "initial_data": {
+        "phase": "restart",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "restart_fault",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "next_team": 1
+      }
+    },
+    {
+      "id": "median_required",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "shot",
+        "params": {
+          "team": 0,
+          "player": 0,
+          "frame": 0,
+          "passes": 0,
+          "median_crossed": false,
+          "result": "scored"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "four_passes_rejected",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "shot",
+        "params": {
+          "team": 0,
+          "player": 0,
+          "frame": 0,
+          "passes": 4,
+          "median_crossed": true,
+          "result": "scored"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "score_and_restart",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "frame": 0,
+            "passes": 0,
+            "median_crossed": true,
+            "result": "scored"
+          }
+        }
+      ],
+      "data": {
+        "phase": "restart",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          1,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 1,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "conceded_shot_point",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "frame": 0,
+            "passes": 0,
+            "median_crossed": true,
+            "result": "conceded"
+          }
+        }
+      ],
+      "data": {
+        "phase": "restart",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          1
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "catch_transfers_attack",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "frame": 0,
+            "passes": 0,
+            "median_crossed": true,
+            "result": "caught"
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 1,
+        "attack_origin": "catch",
+        "last_frame": 0,
+        "frame_count": 1,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "fourth_same_frame_rejected",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "frame": 0,
+            "passes": 0,
+            "median_crossed": true,
+            "result": "caught"
+          }
+        },
+        {
+          "type": "shot",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "frame": 0,
+            "passes": 0,
+            "median_crossed": true,
+            "result": "caught"
+          }
+        },
+        {
+          "type": "shot",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "frame": 0,
+            "passes": 0,
+            "median_crossed": true,
+            "result": "caught"
+          }
+        }
+      ],
+      "action": {
+        "type": "shot",
+        "params": {
+          "team": 1,
+          "player": 0,
+          "frame": 0,
+          "passes": 0,
+          "median_crossed": true,
+          "result": "caught"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "other_frame_resets_streak",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "catch",
+        "last_frame": 0,
+        "frame_count": 3,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "frame": 1,
+            "passes": 0,
+            "median_crossed": true,
+            "result": "caught"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "last_frame": 1,
+        "frame_count": 1
+      }
+    },
+    {
+      "id": "faulty_rebound_breakdown",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "frame": 0,
+            "passes": 0,
+            "median_crossed": true,
+            "result": "faulty_rebound"
+          }
+        }
+      ],
+      "data": {
+        "phase": "breakdown",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 1,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "incorrect_breakdown_repeated",
+      "initial_data": {
+        "phase": "breakdown",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 1,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "take_breakdown",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "correct": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "breakdown",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 1,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "breakdown_requires_pass",
+      "initial_data": {
+        "phase": "breakdown",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 1,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "take_breakdown",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "correct": true
+          }
+        }
+      ],
+      "action": {
+        "type": "shot",
+        "params": {
+          "team": 1,
+          "player": 0,
+          "frame": 0,
+          "passes": 0,
+          "median_crossed": true,
+          "result": "scored"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "breakdown_one_pass_no_median_requirement",
+      "initial_data": {
+        "phase": "breakdown",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 1,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "take_breakdown",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "correct": true
+          }
+        },
+        {
+          "type": "shot",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "frame": 0,
+            "passes": 1,
+            "median_crossed": false,
+            "result": "scored"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "restart",
+        "next_team": 0
+      }
+    },
+    {
+      "id": "no_substitution_during_attack",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "substitute",
+        "params": {
+          "team": 0,
+          "out": 0,
+          "in": 7
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "return_substitution_after_point",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "shot",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "frame": 0,
+            "passes": 0,
+            "median_crossed": true,
+            "result": "scored"
+          }
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "out": 0,
+            "in": 7
+          }
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "out": 7,
+            "in": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "restart",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          1,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 1,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "red_player_reduction",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "red"
+          }
+        }
+      ],
+      "data": {
+        "phase": "breakdown",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 1,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "excluded",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          6,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "red_no_immediate_replacement",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "red"
+          }
+        }
+      ],
+      "action": {
+        "type": "enter",
+        "params": {
+          "team": 0,
+          "player": 7
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "red_replacement_after_point",
+      "initial_data": {
+        "phase": "breakdown",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 1,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "excluded",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          6,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "take_breakdown",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "correct": true
+          }
+        },
+        {
+          "type": "shot",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "frame": 0,
+            "passes": 1,
+            "median_crossed": true,
+            "result": "scored"
+          }
+        },
+        {
+          "type": "enter",
+          "params": {
+            "team": 0,
+            "player": 7
+          }
+        }
+      ],
+      "data": {
+        "phase": "restart",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          1
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "breakdown",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "excluded",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "two_yellow_expulsion",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "yellow"
+          }
+        },
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "yellow"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "active": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "entry_limit": [
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": "third_active_expulsion_forfeits",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "red"
+          }
+        },
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 1,
+            "kind": "red"
+          }
+        },
+        {
+          "type": "sanction",
+          "params": {
+            "team": 0,
+            "player": 2,
+            "kind": "red"
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_b"
+        ],
+        "reason": "forfeit"
+      }
+    },
+    {
+      "id": "withdrawal_eligibility_only",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "withdraw",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "legal_constraints": {
+        "entry_limit": [
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": "clock_runs_during_restart",
+      "initial_data": {
+        "phase": "restart",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "remaining_ms": 899000
+      }
+    },
+    {
+      "id": "official_clock_stop",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "stop_clock",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "elapse",
+        "params": {
+          "milliseconds": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "period_horn_immediate",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "remaining_ms": 1,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1
+          }
+        }
+      ],
+      "action": {
+        "type": "shot",
+        "params": {
+          "team": 0,
+          "player": 0,
+          "frame": 0,
+          "passes": 0,
+          "median_crossed": true,
+          "result": "scored"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "second_period_other_starter",
+      "initial_data": {
+        "phase": "interval",
+        "period": 1,
+        "remaining_ms": 0,
+        "clock_running": false,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "next_period",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "period": 2,
+        "next_team": 1
+      }
+    },
+    {
+      "id": "third_period_trailing_starter",
+      "initial_data": {
+        "phase": "interval",
+        "period": 2,
+        "remaining_ms": 0,
+        "clock_running": false,
+        "allow_draw": true,
+        "scores": [
+          5,
+          7
+        ],
+        "first_team": 0,
+        "period_starter": 1,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "next_period",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "period": 3,
+        "next_team": 0
+      }
+    },
+    {
+      "id": "third_period_tie_original_starter",
+      "initial_data": {
+        "phase": "interval",
+        "period": 2,
+        "remaining_ms": 0,
+        "clock_running": false,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 1,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "next_period",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "period": 3,
+        "next_team": 0
+      }
+    },
+    {
+      "id": "regulation_draw",
+      "initial_data": {
+        "phase": "restart",
+        "period": 3,
+        "remaining_ms": 1,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1
+          }
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw"
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "knockout_extra_period",
+      "initial_data": {
+        "phase": "restart",
+        "period": 3,
+        "remaining_ms": 1,
+        "clock_running": true,
+        "allow_draw": false,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1
+          }
+        },
+        {
+          "type": "next_period",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "period": 4,
+        "remaining_ms": 300000,
+        "next_team": 1
+      }
+    },
+    {
+      "id": "extra_period_winner",
+      "initial_data": {
+        "phase": "restart",
+        "period": 4,
+        "remaining_ms": 1,
+        "clock_running": true,
+        "allow_draw": false,
+        "scores": [
+          4,
+          5
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_b"
+        ],
+        "reason": "extra_time"
+      }
+    },
+    {
+      "id": "concede",
+      "actions": [
+        {
+          "type": "concede",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_a"
+        ],
+        "reason": "forfeit"
+      }
+    },
+    {
+      "id": "abandon_no_contest",
+      "actions": [
+        {
+          "type": "abandon",
+          "params": {}
+        },
+        {
+          "type": "official_result",
+          "params": {
+            "winner": null
+          }
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "inconsistent_frame_count",
+      "initial_data": {
+        "phase": "restart",
+        "period": 1,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": 0,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "invalid_extra_period_clock",
+      "initial_data": {
+        "phase": "restart",
+        "period": 4,
+        "remaining_ms": 900000,
+        "clock_running": true,
+        "allow_draw": true,
+        "scores": [
+          0,
+          0
+        ],
+        "first_team": 0,
+        "period_starter": 0,
+        "next_team": 0,
+        "attack_origin": "restart",
+        "last_frame": null,
+        "frame_count": 0,
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "yellow": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "entry_limit": [
+          7,
+          7
+        ],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "profile_id": "S054",
+  "ruleset_id": "builtin.cornhole.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "foul_consumes_bag",
+      "actions": [
+        {
+          "type": "pitch",
+          "params": {
+            "foul": true
+          }
+        }
+      ],
+      "data": {
+        "scores": [
+          0,
+          0
+        ],
+        "first": 0,
+        "pitched": 1,
+        "fouls": [
+          1,
+          0
+        ],
+        "innings": 0
+      }
+    },
+    {
+      "id": "early_scoring",
+      "action": {
+        "type": "score_inning",
+        "params": {
+          "board": [
+            0,
+            0
+          ],
+          "hole": [
+            0,
+            0
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "cancellation",
+      "initial_data": {
+        "scores": [
+          0,
+          0
+        ],
+        "first": 0,
+        "pitched": 8,
+        "fouls": [
+          0,
+          0
+        ],
+        "innings": 0
+      },
+      "actions": [
+        {
+          "type": "score_inning",
+          "params": {
+            "board": [
+              1,
+              2
+            ],
+            "hole": [
+              2,
+              1
+            ]
+          }
+        }
+      ],
+      "data": {
+        "scores": [
+          2,
+          0
+        ],
+        "first": 0,
+        "pitched": 0,
+        "fouls": [
+          0,
+          0
+        ],
+        "innings": 1
+      }
+    },
+    {
+      "id": "tie_keeps_first",
+      "initial_data": {
+        "scores": [
+          0,
+          0
+        ],
+        "first": 0,
+        "pitched": 8,
+        "fouls": [
+          0,
+          0
+        ],
+        "innings": 0
+      },
+      "actions": [
+        {
+          "type": "score_inning",
+          "params": {
+            "board": [
+              1,
+              1
+            ],
+            "hole": [
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "data": {
+        "scores": [
+          0,
+          0
+        ],
+        "first": 0,
+        "pitched": 0,
+        "fouls": [
+          0,
+          0
+        ],
+        "innings": 1
+      }
+    },
+    {
+      "id": "other_player_leads",
+      "initial_data": {
+        "scores": [
+          0,
+          0
+        ],
+        "first": 0,
+        "pitched": 8,
+        "fouls": [
+          0,
+          0
+        ],
+        "innings": 0
+      },
+      "actions": [
+        {
+          "type": "score_inning",
+          "params": {
+            "board": [
+              0,
+              0
+            ],
+            "hole": [
+              0,
+              1
+            ]
+          }
+        }
+      ],
+      "data": {
+        "scores": [
+          0,
+          3
+        ],
+        "first": 1,
+        "pitched": 0,
+        "fouls": [
+          0,
+          0
+        ],
+        "innings": 1
+      }
+    },
+    {
+      "id": "over_21_wins",
+      "initial_data": {
+        "scores": [
+          20,
+          18
+        ],
+        "first": 0,
+        "pitched": 8,
+        "fouls": [
+          0,
+          0
+        ],
+        "innings": 4
+      },
+      "actions": [
+        {
+          "type": "score_inning",
+          "params": {
+            "board": [
+              1,
+              2
+            ],
+            "hole": [
+              2,
+              1
+            ]
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "foul_bag_cannot_score",
+      "initial_data": {
+        "scores": [
+          0,
+          0
+        ],
+        "first": 0,
+        "pitched": 8,
+        "fouls": [
+          1,
+          0
+        ],
+        "innings": 0
+      },
+      "action": {
+        "type": "score_inning",
+        "params": {
+          "board": [
+            1,
+            0
+          ],
+          "hole": [
+            3,
+            0
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "ninth_pitch",
+      "initial_data": {
+        "scores": [
+          0,
+          0
+        ],
+        "first": 0,
+        "pitched": 8,
+        "fouls": [
+          0,
+          0
+        ],
+        "innings": 0
+      },
+      "action": {
+        "type": "pitch",
+        "params": {
+          "foul": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

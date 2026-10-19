@@ -1,0 +1,117 @@
+{
+  "profile_id": "G099",
+  "ruleset_id": "builtin.hangman.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types",
+      "outcome": {
+        "status": "ongoing",
+        "reason": "awaiting_word"
+      }
+    },
+    {
+      "id": "repeated_word_letter",
+      "initial_data": {
+        "word": "EEL",
+        "guesses": []
+      },
+      "actions": [
+        {
+          "type": "guess",
+          "params": {
+            "letter": "E"
+          }
+        }
+      ],
+      "legal_count": 25,
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "solved",
+      "initial_data": {
+        "word": "EEL",
+        "guesses": [
+          "E"
+        ]
+      },
+      "actions": [
+        {
+          "type": "guess",
+          "params": {
+            "letter": "L"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "bob"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "sixth_miss",
+      "initial_data": {
+        "word": "EEL",
+        "guesses": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "F"
+        ]
+      },
+      "actions": [
+        {
+          "type": "guess",
+          "params": {
+            "letter": "G"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ]
+      }
+    },
+    {
+      "id": "repeated_guess",
+      "initial_data": {
+        "word": "EEL",
+        "guesses": [
+          "E"
+        ]
+      },
+      "action": {
+        "type": "guess",
+        "params": {
+          "letter": "E"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "invalid_word",
+      "initial_data": {
+        "word": "eEl",
+        "guesses": []
+      },
+      "valid": false
+    }
+  ]
+}

@@ -1,0 +1,846 @@
+{
+  "profile_id": "S044",
+  "ruleset_id": "builtin.minigolf.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial_actions",
+      "legal_count": 5
+    },
+    {
+      "id": "hole_in_one",
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "result": "holed"
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "turn": 1,
+        "hole": 0,
+        "scores": [
+          [
+            1
+          ],
+          []
+        ],
+        "attempts": 0,
+        "reset_required": false,
+        "status": [
+          "active",
+          "active"
+        ],
+        "playoff_round": 0,
+        "playoff_scores": [
+          null,
+          null
+        ],
+        "winner": null
+      }
+    },
+    {
+      "id": "two_completed_holes_advance",
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "result": "holed"
+          }
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "result": "in_play"
+          }
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "result": "holed"
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "turn": 1,
+        "hole": 1,
+        "scores": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "attempts": 0,
+        "reset_required": false,
+        "status": [
+          "active",
+          "active"
+        ],
+        "playoff_round": 0,
+        "playoff_scores": [
+          null,
+          null
+        ],
+        "winner": null
+      }
+    },
+    {
+      "id": "six_misses_score_seven",
+      "initial_data": {
+        "phase": "play",
+        "turn": 0,
+        "hole": 0,
+        "scores": [
+          [],
+          []
+        ],
+        "attempts": 5,
+        "reset_required": false,
+        "status": [
+          "active",
+          "active"
+        ],
+        "playoff_round": 0,
+        "playoff_scores": [
+          null,
+          null
+        ],
+        "winner": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "result": "in_play"
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "turn": 1,
+        "hole": 0,
+        "scores": [
+          [
+            7
+          ],
+          []
+        ],
+        "attempts": 0,
+        "reset_required": false,
+        "status": [
+          "active",
+          "active"
+        ],
+        "playoff_round": 0,
+        "playoff_scores": [
+          null,
+          null
+        ],
+        "winner": null
+      }
+    },
+    {
+      "id": "sixth_success_scores_six",
+      "initial_data": {
+        "phase": "play",
+        "turn": 0,
+        "hole": 0,
+        "scores": [
+          [],
+          []
+        ],
+        "attempts": 5,
+        "reset_required": false,
+        "status": [
+          "active",
+          "active"
+        ],
+        "playoff_round": 0,
+        "playoff_scores": [
+          null,
+          null
+        ],
+        "winner": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "result": "holed"
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "turn": 1,
+        "hole": 0,
+        "scores": [
+          [
+            6
+          ],
+          []
+        ],
+        "attempts": 0,
+        "reset_required": false,
+        "status": [
+          "active",
+          "active"
+        ],
+        "playoff_round": 0,
+        "playoff_scores": [
+          null,
+          null
+        ],
+        "winner": null
+      }
+    },
+    {
+      "id": "out_of_bounds_needs_replacement",
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "result": "out_of_bounds"
+          }
+        }
+      ],
+      "action": {
+        "type": "stroke",
+        "params": {
+          "result": "holed"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "replacement_does_not_add_stroke",
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "result": "out_of_bounds"
+          }
+        },
+        {
+          "type": "replace_ball",
+          "params": {}
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "result": "holed"
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "turn": 1,
+        "hole": 0,
+        "scores": [
+          [
+            2
+          ],
+          []
+        ],
+        "attempts": 0,
+        "reset_required": false,
+        "status": [
+          "active",
+          "active"
+        ],
+        "playoff_round": 0,
+        "playoff_scores": [
+          null,
+          null
+        ],
+        "winner": null
+      }
+    },
+    {
+      "id": "no_unnecessary_replacement",
+      "action": {
+        "type": "replace_ball",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "lower_total_wins",
+      "initial_data": {
+        "phase": "play",
+        "turn": 1,
+        "hole": 17,
+        "scores": [
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        ],
+        "attempts": 0,
+        "reset_required": false,
+        "status": [
+          "active",
+          "active"
+        ],
+        "playoff_round": 0,
+        "playoff_scores": [
+          null,
+          null
+        ],
+        "winner": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "result": "holed"
+          }
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "result": "in_play"
+          }
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "result": "holed"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "bob"
+        ],
+        "reason": "lowest_total"
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "tied_totals_enter_playoff",
+      "initial_data": {
+        "phase": "play",
+        "turn": 1,
+        "hole": 17,
+        "scores": [
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        ],
+        "attempts": 0,
+        "reset_required": false,
+        "status": [
+          "active",
+          "active"
+        ],
+        "playoff_round": 0,
+        "playoff_scores": [
+          null,
+          null
+        ],
+        "winner": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "result": "in_play"
+          }
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "result": "holed"
+          }
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "result": "in_play"
+          }
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "result": "holed"
+          }
+        }
+      ],
+      "data": {
+        "phase": "playoff",
+        "turn": 0,
+        "hole": 17,
+        "scores": [
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        ],
+        "attempts": 0,
+        "reset_required": false,
+        "status": [
+          "active",
+          "active"
+        ],
+        "playoff_round": 0,
+        "playoff_scores": [
+          null,
+          null
+        ],
+        "winner": null
+      }
+    },
+    {
+      "id": "tied_playoff_repeats",
+      "initial_data": {
+        "phase": "playoff",
+        "turn": 0,
+        "hole": 17,
+        "scores": [
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        ],
+        "attempts": 0,
+        "reset_required": false,
+        "status": [
+          "active",
+          "active"
+        ],
+        "playoff_round": 0,
+        "playoff_scores": [
+          null,
+          null
+        ],
+        "winner": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "result": "holed"
+          }
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "result": "holed"
+          }
+        }
+      ],
+      "data": {
+        "phase": "playoff",
+        "turn": 1,
+        "hole": 17,
+        "scores": [
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        ],
+        "attempts": 0,
+        "reset_required": false,
+        "status": [
+          "active",
+          "active"
+        ],
+        "playoff_round": 1,
+        "playoff_scores": [
+          null,
+          null
+        ],
+        "winner": null
+      }
+    },
+    {
+      "id": "sudden_death_compares_both",
+      "initial_data": {
+        "phase": "playoff",
+        "turn": 0,
+        "hole": 17,
+        "scores": [
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        ],
+        "attempts": 0,
+        "reset_required": false,
+        "status": [
+          "active",
+          "active"
+        ],
+        "playoff_round": 0,
+        "playoff_scores": [
+          null,
+          null
+        ],
+        "winner": null
+      },
+      "actions": [
+        {
+          "type": "stroke",
+          "params": {
+            "result": "holed"
+          }
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "result": "in_play"
+          }
+        },
+        {
+          "type": "stroke",
+          "params": {
+            "result": "holed"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ],
+        "reason": "sudden_death"
+      }
+    },
+    {
+      "id": "withdrawal",
+      "actions": [
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "bob"
+        ],
+        "reason": "withdrawal"
+      }
+    },
+    {
+      "id": "already_scored_current_turn_invalid",
+      "initial_data": {
+        "phase": "play",
+        "turn": 0,
+        "hole": 0,
+        "scores": [
+          [
+            1
+          ],
+          []
+        ],
+        "attempts": 0,
+        "reset_required": false,
+        "status": [
+          "active",
+          "active"
+        ],
+        "playoff_round": 0,
+        "playoff_scores": [
+          null,
+          null
+        ],
+        "winner": null
+      },
+      "valid": false
+    },
+    {
+      "id": "incorrect_imported_winner",
+      "initial_data": {
+        "phase": "finished",
+        "turn": 0,
+        "hole": 17,
+        "scores": [
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        ],
+        "attempts": 0,
+        "reset_required": false,
+        "status": [
+          "active",
+          "active"
+        ],
+        "playoff_round": 0,
+        "playoff_scores": [
+          3,
+          2
+        ],
+        "winner": 0
+      },
+      "valid": false
+    }
+  ]
+}

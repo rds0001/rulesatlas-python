@@ -1,0 +1,20 @@
+{
+  "profile_id": "G105",
+  "ruleset_id": "builtin.tic_tac_toe.standard",
+  "ruleset_version": "1.0.0",
+  "players": [{"id":"alice"},{"id":"bob"}],
+  "cases": [
+    {"id":"initial","moves":[],"expected_board":[-1,-1,-1,-1,-1,-1,-1,-1,-1],"expected_turn":0,"expected_status":"ongoing","expected_winners":[],"expected_legal_cells":[0,1,2,3,4,5,6,7,8]},
+    {"id":"one_move","moves":[4],"expected_board":[-1,-1,-1,-1,0,-1,-1,-1,-1],"expected_turn":1,"expected_status":"ongoing","expected_winners":[],"expected_legal_cells":[0,1,2,3,5,6,7,8]},
+    {"id":"alice_row_win","moves":[0,3,1,4,2],"expected_board":[0,0,0,1,1,-1,-1,-1,-1],"expected_turn":1,"expected_status":"terminal","expected_kind":"win","expected_winners":["alice"],"expected_legal_cells":[]},
+    {"id":"bob_row_win","moves":[0,3,1,4,8,5],"expected_board":[0,0,-1,1,1,1,-1,-1,0],"expected_turn":0,"expected_status":"terminal","expected_kind":"win","expected_winners":["bob"],"expected_legal_cells":[]},
+    {"id":"diagonal_win","moves":[0,1,4,2,8],"expected_board":[0,1,1,-1,0,-1,-1,-1,0],"expected_turn":1,"expected_status":"terminal","expected_kind":"win","expected_winners":["alice"],"expected_legal_cells":[]},
+    {"id":"draw","moves":[0,1,2,4,3,5,7,6,8],"expected_board":[0,1,0,0,1,1,1,0,0],"expected_turn":1,"expected_status":"terminal","expected_kind":"draw","expected_winners":[],"expected_legal_cells":[]}
+  ],
+  "invalid_data": [
+    {"board":[1,-1,-1,-1,-1,-1,-1,-1,-1],"turn":0},
+    {"board":[0,-1,-1,-1,-1,-1,-1,-1,-1],"turn":0},
+    {"board":[0,0,0,1,1,1,-1,-1,-1],"turn":0},
+    {"board":[0,0,0,1,1,-1,1,-1,-1],"turn":0}
+  ]
+}

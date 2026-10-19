@@ -1,0 +1,1775 @@
+{
+  "profile_id": "S007",
+  "ruleset_id": "builtin.australian_football.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "home"
+    },
+    {
+      "id": "away"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start_quarter",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "goal_and_behind_values",
+      "initial_data": {
+        "phase": "play",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "goal"
+          }
+        },
+        {
+          "type": "score",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "kind": "behind"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "totals": [
+          7,
+          0
+        ]
+      }
+    },
+    {
+      "id": "rushed_behind_without_scorer",
+      "initial_data": {
+        "phase": "play",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "score",
+          "params": {
+            "team": 0,
+            "player": null,
+            "kind": "behind"
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          1,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "goal_requires_active_scorer",
+      "initial_data": {
+        "phase": "play",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "score",
+        "params": {
+          "team": 0,
+          "player": null,
+          "kind": "goal"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "bench_player_cannot_score",
+      "initial_data": {
+        "phase": "play",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "score",
+        "params": {
+          "team": 0,
+          "player": 18,
+          "kind": "goal"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "returning_interchange",
+      "initial_data": {
+        "phase": "play",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "interchange",
+          "params": {
+            "team": 0,
+            "out": 0,
+            "in": 18
+          }
+        },
+        {
+          "type": "interchange",
+          "params": {
+            "team": 0,
+            "out": 18,
+            "in": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "no_duplicate_active_player",
+      "initial_data": {
+        "phase": "play",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "interchange",
+        "params": {
+          "team": 0,
+          "out": 0,
+          "in": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "siren_stops_live_scores",
+      "initial_data": {
+        "phase": "play",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sound_siren",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "score",
+        "params": {
+          "team": 0,
+          "player": 0,
+          "kind": "goal"
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "quarter_requires_siren",
+      "initial_data": {
+        "phase": "play",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "end_quarter",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "quarter_transition",
+      "initial_data": {
+        "phase": "play",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sound_siren",
+          "params": {}
+        },
+        {
+          "type": "end_quarter",
+          "params": {}
+        },
+        {
+          "type": "start_quarter",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "quarter": 2,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "interchange_allowed_at_interval",
+      "initial_data": {
+        "phase": "interval",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "interchange",
+          "params": {
+            "team": 0,
+            "out": 0,
+            "in": 18
+          }
+        }
+      ],
+      "legal_constraints": {
+        "bench": [
+          [
+            0,
+            19,
+            20,
+            21
+          ],
+          [
+            18,
+            19,
+            20,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pending_after_siren_kick_blocks_end",
+      "initial_data": {
+        "phase": "siren",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_after_siren_kick",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "end_quarter",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "after_siren_goal_decides_match",
+      "initial_data": {
+        "phase": "play",
+        "quarter": 4,
+        "goals": [
+          10,
+          9
+        ],
+        "behinds": [
+          3,
+          9
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sound_siren",
+          "params": {}
+        },
+        {
+          "type": "award_after_siren_kick",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        },
+        {
+          "type": "resolve_after_siren_kick",
+          "params": {
+            "kind": "goal"
+          }
+        },
+        {
+          "type": "end_quarter",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "home"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "after_siren_behind_also_decides",
+      "initial_data": {
+        "phase": "play",
+        "quarter": 4,
+        "goals": [
+          10,
+          9
+        ],
+        "behinds": [
+          3,
+          9
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sound_siren",
+          "params": {}
+        },
+        {
+          "type": "award_after_siren_kick",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        },
+        {
+          "type": "resolve_after_siren_kick",
+          "params": {
+            "kind": "behind"
+          }
+        },
+        {
+          "type": "end_quarter",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "home"
+        ]
+      }
+    },
+    {
+      "id": "equal_totals_not_equal_goal_counts_draw",
+      "initial_data": {
+        "phase": "play",
+        "quarter": 4,
+        "goals": [
+          10,
+          9
+        ],
+        "behinds": [
+          3,
+          9
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "sound_siren",
+          "params": {}
+        },
+        {
+          "type": "end_quarter",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw"
+      }
+    },
+    {
+      "id": "only_one_after_siren_decision",
+      "initial_data": {
+        "phase": "siren",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_after_siren_kick",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        },
+        {
+          "type": "resolve_after_siren_kick",
+          "params": {
+            "kind": "none"
+          }
+        }
+      ],
+      "action": {
+        "type": "award_after_siren_kick",
+        "params": {
+          "team": 1,
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "no_interchange_during_after_siren_attempt",
+      "initial_data": {
+        "phase": "siren",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "interchange",
+        "params": {
+          "team": 0,
+          "out": 0,
+          "in": 18
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "abandonment_requires_competition_result",
+      "initial_data": {
+        "phase": "play",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "abandon",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "awaiting_adjudication"
+      }
+    },
+    {
+      "id": "official_abandoned_result",
+      "initial_data": {
+        "phase": "play",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "abandon",
+          "params": {}
+        },
+        {
+          "type": "official_result",
+          "params": {
+            "winner": 1
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "away"
+        ]
+      }
+    },
+    {
+      "id": "duplicate_lineup_invalid",
+      "initial_data": {
+        "phase": "play",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "concession",
+      "initial_data": {
+        "phase": "play",
+        "quarter": 1,
+        "goals": [
+          0,
+          0
+        ],
+        "behinds": [
+          0,
+          0
+        ],
+        "lineups": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "pending_kick": null,
+        "expiry_decided": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "concede",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "away"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,5142 @@
+{
+  "profile_id": "S010",
+  "ruleset_id": "builtin.netball.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "home"
+    },
+    {
+      "id": "away"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start_match",
+          "params": {
+            "first_centre": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 0,
+        "centre_due": true,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "first_centre_pass",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 0,
+        "centre_due": true,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "centre_pass",
+          "params": {
+            "team": 0,
+            "player": 3
+          }
+        }
+      ],
+      "data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "wrong_centre_team",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 0,
+        "centre_due": true,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "centre_pass",
+        "params": {
+          "team": 1,
+          "player": 3
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "wrong_centre_player",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 0,
+        "centre_due": true,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "centre_pass",
+        "params": {
+          "team": 0,
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "goal_requires_centre_pass",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 0,
+        "centre_due": true,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "goal",
+        "params": {
+          "team": 0,
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "goal_shooter_scores",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": true,
+        "scores": [
+          1,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": true,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "goal_attack_scores",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "player": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": true,
+        "scores": [
+          1,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": true,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "wing_attack_cannot_score",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "goal",
+        "params": {
+          "team": 0,
+          "player": 2
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "centre_pass_alternates_not_losing_team",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 1,
+            "player": 0
+          }
+        },
+        {
+          "type": "centre_pass",
+          "params": {
+            "team": 1,
+            "player": 3
+          }
+        }
+      ],
+      "legal_constraints": {
+        "centre_team": 0,
+        "centre_due": false
+      }
+    },
+    {
+      "id": "cannot_substitute_while_clock_runs",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "change_lineup",
+        "params": {
+          "team": 0,
+          "lineup": [
+            7,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "returning_substitutions",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "change_lineup",
+          "params": {
+            "team": 0,
+            "lineup": [
+              7,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "type": "change_lineup",
+          "params": {
+            "team": 0,
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "two_minute_suspension",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "suspend",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              120000,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "suspended_scorer_ineligible",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              120000,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "goal",
+        "params": {
+          "team": 0,
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "suspension_cannot_be_substituted",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              120000,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "change_lineup",
+        "params": {
+          "team": 0,
+          "lineup": [
+            7,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "positions_can_change_around_sanctioned_vacancy",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              120000,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "change_lineup",
+          "params": {
+            "team": 0,
+            "lineup": [
+              1,
+              2,
+              0,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "shooters": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "suspension_expires_in_playing_time",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              120000,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "resume",
+          "params": {}
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 120000
+          }
+        }
+      ],
+      "data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 780000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "stopped_clock_cannot_serve_suspension",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              120000,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "elapse",
+        "params": {
+          "milliseconds": 120000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "suspension_carries_across_interval",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 30000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              120000,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "resume",
+          "params": {}
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 30000
+          }
+        },
+        {
+          "type": "end_quarter",
+          "params": {}
+        },
+        {
+          "type": "start_next_quarter",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "quarter",
+        "quarter": 2,
+        "remaining_ms": 900000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              90000,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": true,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "permanent_dismissal_cannot_return",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "dismiss",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "change_lineup",
+        "params": {
+          "team": 0,
+          "lineup": [
+            7,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "third_unavailable_player_defaults",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "dismiss",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        },
+        {
+          "type": "dismiss",
+          "params": {
+            "team": 0,
+            "player": 1
+          }
+        },
+        {
+          "type": "suspend",
+          "params": {
+            "team": 0,
+            "player": 2
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "away"
+        ],
+        "reason": "default"
+      }
+    },
+    {
+      "id": "bench_dismissal_keeps_seven",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "dismiss",
+          "params": {
+            "team": 0,
+            "player": 7
+          }
+        }
+      ],
+      "legal_constraints": {
+        "active": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "id": "quarter_end_preserves_next_centre",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 0,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": true,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "end_quarter",
+          "params": {}
+        },
+        {
+          "type": "start_next_quarter",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "quarter",
+        "quarter": 2,
+        "remaining_ms": 900000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": true,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "expiry_shot_blocks_quarter_end",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 4,
+        "remaining_ms": 0,
+        "running": false,
+        "scores": [
+          20,
+          20
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": true,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_expiry_shot",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "end_quarter",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "expiry_penalty_decides_match",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 4,
+        "remaining_ms": 0,
+        "running": false,
+        "scores": [
+          20,
+          20
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": true,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_expiry_shot",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        },
+        {
+          "type": "expiry_shot",
+          "params": {
+            "scored": true
+          }
+        },
+        {
+          "type": "end_quarter",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "home"
+        ],
+        "reason": "points"
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "missed_expiry_penalty_draws",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 4,
+        "remaining_ms": 0,
+        "running": false,
+        "scores": [
+          20,
+          20
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": true,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_expiry_shot",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        },
+        {
+          "type": "expiry_shot",
+          "params": {
+            "scored": false
+          }
+        },
+        {
+          "type": "end_quarter",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "draw"
+      }
+    },
+    {
+      "id": "only_one_expiry_decision",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 4,
+        "remaining_ms": 0,
+        "running": false,
+        "scores": [
+          20,
+          20
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": true,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "award_expiry_shot",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        },
+        {
+          "type": "expiry_shot",
+          "params": {
+            "scored": false
+          }
+        }
+      ],
+      "action": {
+        "type": "award_expiry_shot",
+        "params": {
+          "team": 1,
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "duplicate_positions_invalid",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              0,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "concession",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": true,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "concede",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "away"
+        ]
+      }
+    },
+    {
+      "id": "formal_warning_not_repeatable",
+      "initial_data": {
+        "phase": "quarter",
+        "quarter": 1,
+        "remaining_ms": 900000,
+        "running": false,
+        "scores": [
+          0,
+          0
+        ],
+        "teams": [
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "lineup": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "warned": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "suspension_ms": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dismissed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          }
+        ],
+        "centre_team": 1,
+        "centre_due": false,
+        "pending_shot": null,
+        "expiry_open": false,
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "warn",
+          "params": {
+            "team": 0,
+            "player": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "warn",
+        "params": {
+          "team": 0,
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

@@ -1,0 +1,6494 @@
+{
+  "profile_id": "S002",
+  "ruleset_id": "builtin.futsal.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "home"
+    },
+    {
+      "id": "away"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "kickoff",
+      "actions": [
+        {
+          "type": "start_period",
+          "params": {}
+        }
+      ],
+      "data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      }
+    },
+    {
+      "id": "rolling_substitute_can_return",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "out": 4,
+            "in": 5
+          }
+        },
+        {
+          "type": "substitute",
+          "params": {
+            "team": 0,
+            "out": 5,
+            "in": 4
+          }
+        }
+      ],
+      "data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      }
+    },
+    {
+      "id": "no_sixth_player",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "action": {
+        "type": "enter_player",
+        "params": {
+          "team": 0,
+          "player": 5
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "active_red_creates_two_minute_reduction",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "card",
+          "params": {
+            "team": 1,
+            "player": 4,
+            "color": "red"
+          }
+        }
+      ],
+      "data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "dismissed",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [
+              120000
+            ],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      }
+    },
+    {
+      "id": "bench_red_does_not_reduce_team",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "card",
+          "params": {
+            "team": 0,
+            "player": 5,
+            "color": "red"
+          }
+        }
+      ],
+      "data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "dismissed",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      }
+    },
+    {
+      "id": "cannot_replace_before_expiry",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "dismissed",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [
+              120000
+            ],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "action": {
+        "type": "enter_player",
+        "params": {
+          "team": 1,
+          "player": 5
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "expiry_allows_substitute_not_dismissed_player",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "dismissed",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [
+              120000
+            ],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "elapsed_play",
+          "params": {
+            "milliseconds": 120000
+          }
+        },
+        {
+          "type": "enter_player",
+          "params": {
+            "team": 1,
+            "player": 5
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "dismissed_player_cannot_return",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "dismissed",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [
+              120000
+            ],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "elapsed_play",
+          "params": {
+            "milliseconds": 120000
+          }
+        }
+      ],
+      "action": {
+        "type": "enter_player",
+        "params": {
+          "team": 1,
+          "player": 4
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "opponent_goal_releases_reduction",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "dismissed",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [
+              120000
+            ],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "data": {
+        "goals": [
+          1,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "dismissed",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      }
+    },
+    {
+      "id": "equal_strength_goal_does_not_release",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "dismissed",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [
+              120000
+            ],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "dismissed",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [
+              120000
+            ],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "data": {
+        "goals": [
+          1,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "dismissed",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [
+              120000
+            ],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "dismissed",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [
+              120000
+            ],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      }
+    },
+    {
+      "id": "second_yellow_dismisses",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "card",
+          "params": {
+            "team": 0,
+            "player": 4,
+            "color": "yellow"
+          }
+        },
+        {
+          "type": "card",
+          "params": {
+            "team": 0,
+            "player": 4,
+            "color": "yellow"
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "first_half"
+      }
+    },
+    {
+      "id": "fewer_than_three_abandons",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "card",
+          "params": {
+            "team": 0,
+            "player": 4,
+            "color": "red"
+          }
+        },
+        {
+          "type": "card",
+          "params": {
+            "team": 0,
+            "player": 3,
+            "color": "red"
+          }
+        },
+        {
+          "type": "card",
+          "params": {
+            "team": 0,
+            "player": 2,
+            "color": "red"
+          }
+        }
+      ],
+      "outcome": {
+        "status": "awaiting_adjudication",
+        "reason": "match_abandoned"
+      }
+    },
+    {
+      "id": "sixth_accumulated_foul_requires_kick",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 5,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "accumulated_foul",
+          "params": {
+            "team": 0,
+            "penalty_area": false
+          }
+        }
+      ],
+      "data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 6,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": {
+          "team": 1,
+          "kind": "sixth_foul"
+        }
+      }
+    },
+    {
+      "id": "pending_kick_extends_period",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 6,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": {
+          "team": 1,
+          "kind": "sixth_foul"
+        }
+      },
+      "action": {
+        "type": "end_period",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "resolve_sixth_foul_kick",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 6,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": {
+          "team": 1,
+          "kind": "sixth_foul"
+        }
+      },
+      "actions": [
+        {
+          "type": "resolve_kick",
+          "params": {
+            "scored": true
+          }
+        },
+        {
+          "type": "end_period",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "penalty_counts_as_accumulated_foul",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "award_penalty",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 1,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": {
+          "team": 1,
+          "kind": "penalty"
+        }
+      }
+    },
+    {
+      "id": "half_resets_fouls",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 5,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "end_period",
+          "params": {}
+        },
+        {
+          "type": "start_period",
+          "params": {}
+        }
+      ],
+      "data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "second_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      }
+    },
+    {
+      "id": "extra_time_carries_second_half_fouls",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "second_half",
+        "rules": {
+          "knockout": true,
+          "extra_time": true
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 5,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "end_period",
+          "params": {}
+        }
+      ],
+      "data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "extra_break",
+        "rules": {
+          "knockout": true,
+          "extra_time": true
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 5,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": true,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      }
+    },
+    {
+      "id": "extra_time_sixth_foul",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "extra_break",
+        "rules": {
+          "knockout": true,
+          "extra_time": true
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 5,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": true,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "start_period",
+          "params": {}
+        },
+        {
+          "type": "accumulated_foul",
+          "params": {
+            "team": 0,
+            "penalty_area": false
+          }
+        }
+      ],
+      "action": {
+        "type": "end_period",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "no_extra_time_timeout",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "extra_break",
+        "rules": {
+          "knockout": true,
+          "extra_time": true
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 5,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": true,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "start_period",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "timeout",
+        "params": {
+          "team": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "only_one_timeout_per_half",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "end_timeout",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "timeout",
+        "params": {
+          "team": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "timeout_stops_reduction_clock",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "dismissed",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [
+              120000
+            ],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "action": {
+        "type": "elapsed_play",
+        "params": {
+          "milliseconds": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "timeout_renews_next_half",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "end_timeout",
+          "params": {}
+        },
+        {
+          "type": "end_period",
+          "params": {}
+        },
+        {
+          "type": "start_period",
+          "params": {}
+        },
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "reduction_capacity_invalid",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "dismissed",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [
+              120000
+            ],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "valid": false
+    },
+    {
+      "id": "shootout_bench_player_eligible",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "shootout_setup",
+        "rules": {
+          "knockout": true,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "start_shootout",
+          "params": {
+            "first_team": 0,
+            "excluded": [
+              [],
+              []
+            ]
+          }
+        },
+        {
+          "type": "shootout_kick",
+          "params": {
+            "team": 0,
+            "player": 10,
+            "scored": true
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "shootout_goalkeeper_from_bench",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "shootout",
+        "rules": {
+          "knockout": true,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": true,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "set_goalkeeper",
+          "params": {
+            "team": 0,
+            "player": 10
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "shootout_no_duplicate_before_cycle",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "shootout",
+        "rules": {
+          "knockout": true,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": true,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "shootout_kick",
+          "params": {
+            "team": 0,
+            "player": 10,
+            "scored": true
+          }
+        },
+        {
+          "type": "shootout_kick",
+          "params": {
+            "team": 1,
+            "player": 10,
+            "scored": true
+          }
+        }
+      ],
+      "action": {
+        "type": "shootout_kick",
+        "params": {
+          "team": 0,
+          "player": 10,
+          "scored": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "shootout_early_majority",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "shootout",
+        "rules": {
+          "knockout": true,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": true,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "shootout_kick",
+          "params": {
+            "team": 0,
+            "player": 0,
+            "scored": true
+          }
+        },
+        {
+          "type": "shootout_kick",
+          "params": {
+            "team": 1,
+            "player": 0,
+            "scored": false
+          }
+        },
+        {
+          "type": "shootout_kick",
+          "params": {
+            "team": 0,
+            "player": 1,
+            "scored": true
+          }
+        },
+        {
+          "type": "shootout_kick",
+          "params": {
+            "team": 1,
+            "player": 1,
+            "scored": false
+          }
+        },
+        {
+          "type": "shootout_kick",
+          "params": {
+            "team": 0,
+            "player": 2,
+            "scored": true
+          }
+        },
+        {
+          "type": "shootout_kick",
+          "params": {
+            "team": 1,
+            "player": 2,
+            "scored": false
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "home"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "regulation_draw",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "first_half",
+        "rules": {
+          "knockout": false,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "end_period",
+          "params": {}
+        },
+        {
+          "type": "start_period",
+          "params": {}
+        },
+        {
+          "type": "end_period",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "result_kind": "draw"
+      }
+    },
+    {
+      "id": "extra_time_then_shootout",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "second_half",
+        "rules": {
+          "knockout": true,
+          "extra_time": true
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 5,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "actions": [
+        {
+          "type": "end_period",
+          "params": {}
+        },
+        {
+          "type": "start_period",
+          "params": {}
+        },
+        {
+          "type": "end_period",
+          "params": {}
+        },
+        {
+          "type": "start_period",
+          "params": {}
+        },
+        {
+          "type": "end_period",
+          "params": {}
+        }
+      ],
+      "data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "shootout_setup",
+        "rules": {
+          "knockout": true,
+          "extra_time": true
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 5,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": true,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      }
+    },
+    {
+      "id": "smaller_eligible_roster",
+      "actions": [
+        {
+          "type": "set_lineup",
+          "params": {
+            "team": 0,
+            "roster_size": 7,
+            "starters": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "goalkeeper": 0
+          }
+        },
+        {
+          "type": "start_period",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "cannot_shrink_both_shootout_squads",
+      "initial_data": {
+        "goals": [
+          0,
+          0
+        ],
+        "phase": "shootout_setup",
+        "rules": {
+          "knockout": true,
+          "extra_time": false
+        },
+        "teams": [
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          },
+          {
+            "yellow": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "red": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "status": [
+              "active",
+              "active",
+              "active",
+              "active",
+              "active",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench",
+              "bench"
+            ],
+            "goalkeeper": 0,
+            "eligible": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "taken": [],
+            "reductions_ms": [],
+            "fouls": 0,
+            "timeout_used": false
+          }
+        ],
+        "extra_started": false,
+        "shootout_started": false,
+        "shootout_first": 0,
+        "shootout_attempts": [
+          0,
+          0
+        ],
+        "shootout_goals": [
+          0,
+          0
+        ],
+        "timeout_team": null,
+        "pending_kick": null
+      },
+      "action": {
+        "type": "start_shootout",
+        "params": {
+          "first_team": 0,
+          "excluded": [
+            [
+              13
+            ],
+            [
+              13
+            ]
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

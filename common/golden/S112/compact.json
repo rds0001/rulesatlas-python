@@ -1,0 +1,418 @@
+{
+  "profile_id": "S112",
+  "ruleset_id": "builtin.race_s112.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "athlete_0"
+    },
+    {
+      "id": "athlete_1"
+    },
+    {
+      "id": "athlete_2"
+    },
+    {
+      "id": "athlete_3"
+    },
+    {
+      "id": "athlete_4"
+    },
+    {
+      "id": "athlete_5"
+    },
+    {
+      "id": "athlete_6"
+    },
+    {
+      "id": "athlete_7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types",
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "exchange_in_order",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "visit_control",
+          "params": {
+            "participant": 0,
+            "control": "exchange_1",
+            "time_us": 10000000
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "skipped_exchange",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          }
+        ]
+      },
+      "action": {
+        "type": "visit_control",
+        "params": {
+          "participant": 0,
+          "control": "exchange_2",
+          "time_us": 20000000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "missing_final_exchange",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 2,
+            "last_checkpoint_time": 20000000
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          },
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 0,
+            "last_checkpoint_time": null
+          }
+        ]
+      },
+      "action": {
+        "type": "record_finish",
+        "params": {
+          "participant": 0,
+          "time_us": 40000000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "finish_and_confirm",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 3,
+            "last_checkpoint_time": 30000000
+          },
+          {
+            "status": "finished",
+            "time_us": 40100000,
+            "warnings": 0,
+            "checkpoints_completed": 3,
+            "last_checkpoint_time": 30000000
+          },
+          {
+            "status": "finished",
+            "time_us": 40200000,
+            "warnings": 0,
+            "checkpoints_completed": 3,
+            "last_checkpoint_time": 30000000
+          },
+          {
+            "status": "finished",
+            "time_us": 40300000,
+            "warnings": 0,
+            "checkpoints_completed": 3,
+            "last_checkpoint_time": 30000000
+          },
+          {
+            "status": "finished",
+            "time_us": 40400000,
+            "warnings": 0,
+            "checkpoints_completed": 3,
+            "last_checkpoint_time": 30000000
+          },
+          {
+            "status": "finished",
+            "time_us": 40500000,
+            "warnings": 0,
+            "checkpoints_completed": 3,
+            "last_checkpoint_time": 30000000
+          },
+          {
+            "status": "finished",
+            "time_us": 40600000,
+            "warnings": 0,
+            "checkpoints_completed": 3,
+            "last_checkpoint_time": 30000000
+          },
+          {
+            "status": "finished",
+            "time_us": 40700000,
+            "warnings": 0,
+            "checkpoints_completed": 3,
+            "last_checkpoint_time": 30000000
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "record_finish",
+          "params": {
+            "participant": 0,
+            "time_us": 40000000
+          }
+        },
+        {
+          "type": "confirm_result",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "athlete_0"
+        ]
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "finish_before_exchange",
+      "initial_data": {
+        "phase": "racing",
+        "runners": [
+          {
+            "status": "running",
+            "time_us": null,
+            "warnings": 0,
+            "checkpoints_completed": 3,
+            "last_checkpoint_time": 30000000
+          },
+          {
+            "status": "finished",
+            "time_us": 40100000,
+            "warnings": 0,
+            "checkpoints_completed": 3,
+            "last_checkpoint_time": 30000000
+          },
+          {
+            "status": "finished",
+            "time_us": 40200000,
+            "warnings": 0,
+            "checkpoints_completed": 3,
+            "last_checkpoint_time": 30000000
+          },
+          {
+            "status": "finished",
+            "time_us": 40300000,
+            "warnings": 0,
+            "checkpoints_completed": 3,
+            "last_checkpoint_time": 30000000
+          },
+          {
+            "status": "finished",
+            "time_us": 40400000,
+            "warnings": 0,
+            "checkpoints_completed": 3,
+            "last_checkpoint_time": 30000000
+          },
+          {
+            "status": "finished",
+            "time_us": 40500000,
+            "warnings": 0,
+            "checkpoints_completed": 3,
+            "last_checkpoint_time": 30000000
+          },
+          {
+            "status": "finished",
+            "time_us": 40600000,
+            "warnings": 0,
+            "checkpoints_completed": 3,
+            "last_checkpoint_time": 30000000
+          },
+          {
+            "status": "finished",
+            "time_us": 40700000,
+            "warnings": 0,
+            "checkpoints_completed": 3,
+            "last_checkpoint_time": 30000000
+          }
+        ]
+      },
+      "action": {
+        "type": "record_finish",
+        "params": {
+          "participant": 0,
+          "time_us": 29000000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    }
+  ]
+}

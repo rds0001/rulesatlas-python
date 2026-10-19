@@ -1,0 +1,1900 @@
+{
+  "profile_id": "S144",
+  "ruleset_id": "builtin.circuit_race_circuit.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "p0"
+    },
+    {
+      "id": "p1"
+    },
+    {
+      "id": "p2"
+    },
+    {
+      "id": "p3"
+    },
+    {
+      "id": "p4"
+    },
+    {
+      "id": "p5"
+    },
+    {
+      "id": "p6"
+    },
+    {
+      "id": "p7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "start",
+      "actions": [
+        {
+          "type": "start",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "racing",
+        "target_laps": 10,
+        "runners": [
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 0,
+        "checkered_ms": null,
+        "cutoff_ms": null,
+        "end_mode": null
+      }
+    },
+    {
+      "id": "distance_locks_after_start",
+      "initial_data": {
+        "phase": "racing",
+        "target_laps": 10,
+        "runners": [
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 0,
+        "checkered_ms": null,
+        "cutoff_ms": null,
+        "end_mode": null
+      },
+      "action": {
+        "type": "configure",
+        "params": {
+          "laps": 20
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "ordered_lap_crossings",
+      "initial_data": {
+        "phase": "racing",
+        "target_laps": 10,
+        "runners": [
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 0,
+        "checkered_ms": null,
+        "cutoff_ms": null,
+        "end_mode": null
+      },
+      "actions": [
+        {
+          "type": "cross_line",
+          "params": {
+            "player": 0,
+            "elapsed_ms": 10000
+          }
+        },
+        {
+          "type": "cross_line",
+          "params": {
+            "player": 1,
+            "elapsed_ms": 11000
+          }
+        },
+        {
+          "type": "cross_line",
+          "params": {
+            "player": 0,
+            "elapsed_ms": 20000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "completed_laps": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "out_of_order_global_timing_rejected",
+      "initial_data": {
+        "phase": "racing",
+        "target_laps": 10,
+        "runners": [
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 0,
+        "checkered_ms": null,
+        "cutoff_ms": null,
+        "end_mode": null
+      },
+      "actions": [
+        {
+          "type": "cross_line",
+          "params": {
+            "player": 0,
+            "elapsed_ms": 10000
+          }
+        }
+      ],
+      "action": {
+        "type": "cross_line",
+        "params": {
+          "player": 1,
+          "elapsed_ms": 9999
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "same_driver_cannot_repeat_timestamp",
+      "initial_data": {
+        "phase": "racing",
+        "target_laps": 10,
+        "runners": [
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 0,
+        "checkered_ms": null,
+        "cutoff_ms": null,
+        "end_mode": null
+      },
+      "actions": [
+        {
+          "type": "cross_line",
+          "params": {
+            "player": 0,
+            "elapsed_ms": 10000
+          }
+        }
+      ],
+      "action": {
+        "type": "cross_line",
+        "params": {
+          "player": 0,
+          "elapsed_ms": 10000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "leader_reaching_distance_gets_flag",
+      "initial_data": {
+        "phase": "racing",
+        "target_laps": 1,
+        "runners": [
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 0,
+        "checkered_ms": null,
+        "cutoff_ms": null,
+        "end_mode": null
+      },
+      "actions": [
+        {
+          "type": "cross_line",
+          "params": {
+            "player": 0,
+            "elapsed_ms": 10000
+          }
+        }
+      ],
+      "data": {
+        "phase": "racing",
+        "target_laps": 1,
+        "runners": [
+          {
+            "status": "finished",
+            "laps": [
+              10000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 10000,
+        "checkered_ms": 10000,
+        "cutoff_ms": null,
+        "end_mode": "normal"
+      }
+    },
+    {
+      "id": "others_finish_on_next_crossing",
+      "initial_data": {
+        "phase": "racing",
+        "target_laps": 1,
+        "runners": [
+          {
+            "status": "finished",
+            "laps": [
+              10000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 10000,
+        "checkered_ms": 10000,
+        "cutoff_ms": null,
+        "end_mode": "normal"
+      },
+      "actions": [
+        {
+          "type": "cross_line",
+          "params": {
+            "player": 1,
+            "elapsed_ms": 10001
+          }
+        },
+        {
+          "type": "cross_line",
+          "params": {
+            "player": 2,
+            "elapsed_ms": 10002
+          }
+        },
+        {
+          "type": "cross_line",
+          "params": {
+            "player": 3,
+            "elapsed_ms": 10003
+          }
+        },
+        {
+          "type": "cross_line",
+          "params": {
+            "player": 4,
+            "elapsed_ms": 10004
+          }
+        },
+        {
+          "type": "cross_line",
+          "params": {
+            "player": 5,
+            "elapsed_ms": 10005
+          }
+        },
+        {
+          "type": "cross_line",
+          "params": {
+            "player": 6,
+            "elapsed_ms": 10006
+          }
+        },
+        {
+          "type": "cross_line",
+          "params": {
+            "player": 7,
+            "elapsed_ms": 10007
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "review"
+      }
+    },
+    {
+      "id": "no_second_crossing_after_finish",
+      "initial_data": {
+        "phase": "racing",
+        "target_laps": 1,
+        "runners": [
+          {
+            "status": "finished",
+            "laps": [
+              10000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 10000,
+        "checkered_ms": 10000,
+        "cutoff_ms": null,
+        "end_mode": "normal"
+      },
+      "action": {
+        "type": "cross_line",
+        "params": {
+          "player": 0,
+          "elapsed_ms": 20000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "classification_threshold",
+      "initial_data": {
+        "phase": "review",
+        "target_laps": 10,
+        "runners": [
+          {
+            "status": "finished",
+            "laps": [
+              10000,
+              20000,
+              30000,
+              40000,
+              50000,
+              60000,
+              70000,
+              80000,
+              90000,
+              100000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "finished",
+            "laps": [
+              10500,
+              20500,
+              30500,
+              40500,
+              50500,
+              60500,
+              70500,
+              80500,
+              90500,
+              100500
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "retired",
+            "laps": [
+              10000,
+              20000,
+              30000,
+              40000,
+              50000,
+              60000,
+              70000,
+              80000,
+              90000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "retired",
+            "laps": [
+              10000,
+              20000,
+              30000,
+              40000,
+              50000,
+              60000,
+              70000,
+              80000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 100500,
+        "checkered_ms": 100000,
+        "cutoff_ms": null,
+        "end_mode": "normal"
+      },
+      "legal_constraints": {
+        "provisionally_classified": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "id": "retired_driver_can_be_classified",
+      "initial_data": {
+        "phase": "review",
+        "target_laps": 10,
+        "runners": [
+          {
+            "status": "finished",
+            "laps": [
+              10000,
+              20000,
+              30000,
+              40000,
+              50000,
+              60000,
+              70000,
+              80000,
+              90000,
+              100000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "finished",
+            "laps": [
+              10500,
+              20500,
+              30500,
+              40500,
+              50500,
+              60500,
+              70500,
+              80500,
+              90500,
+              100500
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "retired",
+            "laps": [
+              10000,
+              20000,
+              30000,
+              40000,
+              50000,
+              60000,
+              70000,
+              80000,
+              90000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "retired",
+            "laps": [
+              10000,
+              20000,
+              30000,
+              40000,
+              50000,
+              60000,
+              70000,
+              80000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 100500,
+        "checkered_ms": 100000,
+        "cutoff_ms": null,
+        "end_mode": "normal"
+      },
+      "actions": [
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "p0"
+        ],
+        "placements": [
+          {
+            "player_id": "p0",
+            "place": 1,
+            "laps": 10,
+            "adjusted_ms": 100000
+          },
+          {
+            "player_id": "p1",
+            "place": 2,
+            "laps": 10,
+            "adjusted_ms": 100500
+          },
+          {
+            "player_id": "p2",
+            "place": 3,
+            "laps": 9,
+            "adjusted_ms": 90000
+          }
+        ]
+      }
+    },
+    {
+      "id": "penalty_reorders_equal_laps",
+      "initial_data": {
+        "phase": "review",
+        "target_laps": 10,
+        "runners": [
+          {
+            "status": "finished",
+            "laps": [
+              10000,
+              20000,
+              30000,
+              40000,
+              50000,
+              60000,
+              70000,
+              80000,
+              90000,
+              100000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "finished",
+            "laps": [
+              10500,
+              20500,
+              30500,
+              40500,
+              50500,
+              60500,
+              70500,
+              80500,
+              90500,
+              100500
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "retired",
+            "laps": [
+              10000,
+              20000,
+              30000,
+              40000,
+              50000,
+              60000,
+              70000,
+              80000,
+              90000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "retired",
+            "laps": [
+              10000,
+              20000,
+              30000,
+              40000,
+              50000,
+              60000,
+              70000,
+              80000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 100500,
+        "checkered_ms": 100000,
+        "cutoff_ms": null,
+        "end_mode": "normal"
+      },
+      "actions": [
+        {
+          "type": "time_penalty",
+          "params": {
+            "player": 0,
+            "milliseconds": 1000
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "p1"
+        ]
+      }
+    },
+    {
+      "id": "laps_take_precedence_over_penalized_time",
+      "initial_data": {
+        "phase": "review",
+        "target_laps": 10,
+        "runners": [
+          {
+            "status": "finished",
+            "laps": [
+              10000,
+              20000,
+              30000,
+              40000,
+              50000,
+              60000,
+              70000,
+              80000,
+              90000,
+              100000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "finished",
+            "laps": [
+              10500,
+              20500,
+              30500,
+              40500,
+              50500,
+              60500,
+              70500,
+              80500,
+              90500,
+              100500
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "retired",
+            "laps": [
+              10000,
+              20000,
+              30000,
+              40000,
+              50000,
+              60000,
+              70000,
+              80000,
+              90000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "retired",
+            "laps": [
+              10000,
+              20000,
+              30000,
+              40000,
+              50000,
+              60000,
+              70000,
+              80000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 100500,
+        "checkered_ms": 100000,
+        "cutoff_ms": null,
+        "end_mode": "normal"
+      },
+      "actions": [
+        {
+          "type": "time_penalty",
+          "params": {
+            "player": 0,
+            "milliseconds": 1000000
+          }
+        },
+        {
+          "type": "time_penalty",
+          "params": {
+            "player": 1,
+            "milliseconds": 1000000
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "p0"
+        ]
+      }
+    },
+    {
+      "id": "disqualified_winner_removed",
+      "initial_data": {
+        "phase": "review",
+        "target_laps": 10,
+        "runners": [
+          {
+            "status": "finished",
+            "laps": [
+              10000,
+              20000,
+              30000,
+              40000,
+              50000,
+              60000,
+              70000,
+              80000,
+              90000,
+              100000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "finished",
+            "laps": [
+              10500,
+              20500,
+              30500,
+              40500,
+              50500,
+              60500,
+              70500,
+              80500,
+              90500,
+              100500
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "retired",
+            "laps": [
+              10000,
+              20000,
+              30000,
+              40000,
+              50000,
+              60000,
+              70000,
+              80000,
+              90000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "retired",
+            "laps": [
+              10000,
+              20000,
+              30000,
+              40000,
+              50000,
+              60000,
+              70000,
+              80000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 100500,
+        "checkered_ms": 100000,
+        "cutoff_ms": null,
+        "end_mode": "normal"
+      },
+      "actions": [
+        {
+          "type": "disqualify",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "p1"
+        ]
+      }
+    },
+    {
+      "id": "suspension_blocks_crossings",
+      "initial_data": {
+        "phase": "racing",
+        "target_laps": 10,
+        "runners": [
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 0,
+        "checkered_ms": null,
+        "cutoff_ms": null,
+        "end_mode": null
+      },
+      "actions": [
+        {
+          "type": "suspend",
+          "params": {}
+        }
+      ],
+      "action": {
+        "type": "cross_line",
+        "params": {
+          "player": 0,
+          "elapsed_ms": 10000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "resume_retains_laps",
+      "initial_data": {
+        "phase": "suspended",
+        "target_laps": 10,
+        "runners": [
+          {
+            "status": "running",
+            "laps": [
+              10000,
+              20000,
+              30000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [
+              11000,
+              21000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 30000,
+        "checkered_ms": null,
+        "cutoff_ms": null,
+        "end_mode": null
+      },
+      "actions": [
+        {
+          "type": "resume",
+          "params": {}
+        },
+        {
+          "type": "cross_line",
+          "params": {
+            "player": 1,
+            "elapsed_ms": 31000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "completed_laps": [
+          3,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "early_countback_discards_later_crossings",
+      "initial_data": {
+        "phase": "suspended",
+        "target_laps": 10,
+        "runners": [
+          {
+            "status": "running",
+            "laps": [
+              10000,
+              20000,
+              30000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [
+              11000,
+              21000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 30000,
+        "checkered_ms": null,
+        "cutoff_ms": null,
+        "end_mode": null
+      },
+      "actions": [
+        {
+          "type": "end_early",
+          "params": {
+            "cutoff_ms": 20500
+          }
+        }
+      ],
+      "legal_constraints": {
+        "completed_laps": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": "review"
+      }
+    },
+    {
+      "id": "future_countback_rejected",
+      "initial_data": {
+        "phase": "suspended",
+        "target_laps": 10,
+        "runners": [
+          {
+            "status": "running",
+            "laps": [
+              10000,
+              20000,
+              30000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [
+              11000,
+              21000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 30000,
+        "checkered_ms": null,
+        "cutoff_ms": null,
+        "end_mode": null
+      },
+      "action": {
+        "type": "end_early",
+        "params": {
+          "cutoff_ms": 40000
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "all_retired_needs_explicit_end_decision",
+      "initial_data": {
+        "phase": "racing",
+        "target_laps": 10,
+        "runners": [
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 0,
+        "checkered_ms": null,
+        "cutoff_ms": null,
+        "end_mode": null
+      },
+      "actions": [
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 1
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 2
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 3
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 4
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 5
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 6
+          }
+        },
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 7
+          }
+        }
+      ],
+      "legal_constraints": {
+        "phase": "suspended"
+      }
+    },
+    {
+      "id": "cancelled_race_no_contest",
+      "actions": [
+        {
+          "type": "cancel_race",
+          "params": {}
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "result_kind": "no_contest"
+      }
+    },
+    {
+      "id": "cannot_confirm_unresolved_racers",
+      "initial_data": {
+        "phase": "racing",
+        "target_laps": 10,
+        "runners": [
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 0,
+        "checkered_ms": null,
+        "cutoff_ms": null,
+        "end_mode": null
+      },
+      "action": {
+        "type": "confirm",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "time_correction_during_review",
+      "initial_data": {
+        "phase": "review",
+        "target_laps": 10,
+        "runners": [
+          {
+            "status": "finished",
+            "laps": [
+              10000,
+              20000,
+              30000,
+              40000,
+              50000,
+              60000,
+              70000,
+              80000,
+              90000,
+              100000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "finished",
+            "laps": [
+              10500,
+              20500,
+              30500,
+              40500,
+              50500,
+              60500,
+              70500,
+              80500,
+              90500,
+              100500
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "retired",
+            "laps": [
+              10000,
+              20000,
+              30000,
+              40000,
+              50000,
+              60000,
+              70000,
+              80000,
+              90000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "retired",
+            "laps": [
+              10000,
+              20000,
+              30000,
+              40000,
+              50000,
+              60000,
+              70000,
+              80000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "dns",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 100500,
+        "checkered_ms": 100000,
+        "cutoff_ms": null,
+        "end_mode": "normal"
+      },
+      "actions": [
+        {
+          "type": "amend_timing",
+          "params": {
+            "player": 1,
+            "laps": [
+              10000,
+              20000,
+              30000,
+              40000,
+              50000,
+              60000,
+              70000,
+              80000,
+              90000,
+              100000
+            ],
+            "status": "finished"
+          }
+        },
+        {
+          "type": "confirm",
+          "params": {}
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "p0",
+          "p1"
+        ]
+      }
+    },
+    {
+      "id": "nonmonotone_laps_invalid",
+      "initial_data": {
+        "phase": "racing",
+        "target_laps": 10,
+        "runners": [
+          {
+            "status": "running",
+            "laps": [
+              20000,
+              10000
+            ],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          },
+          {
+            "status": "running",
+            "laps": [],
+            "penalty_ms": 0
+          }
+        ],
+        "elapsed_ms": 20000,
+        "checkered_ms": null,
+        "cutoff_ms": null,
+        "end_mode": null
+      },
+      "valid": false
+    }
+  ]
+}

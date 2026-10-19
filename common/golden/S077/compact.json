@@ -1,0 +1,761 @@
+{
+  "profile_id": "S077",
+  "ruleset_id": "builtin.armwrestling.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "alice"
+    },
+    {
+      "id": "bob"
+    }
+  ],
+  "cases": [
+    {
+      "id": "legal_grip_then_go",
+      "actions": [
+        {
+          "type": "confirm_grip",
+          "params": {}
+        },
+        {
+          "type": "go",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "pull",
+        "grip": "free",
+        "setup_ms": 0,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bouts": [],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      }
+    },
+    {
+      "id": "go_requires_confirmed_grip",
+      "action": {
+        "type": "go",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "setup_minute_requires_referee_grip",
+      "actions": [
+        {
+          "type": "advance_setup",
+          "params": {
+            "milliseconds": 60000
+          }
+        }
+      ],
+      "data": {
+        "phase": "setup",
+        "grip": "referee",
+        "setup_ms": 60000,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bouts": [],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      }
+    },
+    {
+      "id": "setup_clock_cannot_overrun",
+      "actions": [
+        {
+          "type": "advance_setup",
+          "params": {
+            "milliseconds": 59000
+          }
+        }
+      ],
+      "action": {
+        "type": "advance_setup",
+        "params": {
+          "milliseconds": 1001
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "early_start_is_first_foul",
+      "initial_data": {
+        "phase": "ready",
+        "grip": "free",
+        "setup_ms": 0,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bouts": [],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      },
+      "actions": [
+        {
+          "type": "early_start",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "setup",
+        "grip": "referee",
+        "setup_ms": 60000,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          1,
+          0
+        ],
+        "bouts": [],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      }
+    },
+    {
+      "id": "referee_grip_movement_is_foul",
+      "initial_data": {
+        "phase": "setup",
+        "grip": "referee",
+        "setup_ms": 60000,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bouts": [],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      },
+      "actions": [
+        {
+          "type": "grip_movement",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "setup",
+        "grip": "referee",
+        "setup_ms": 60000,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          1,
+          0
+        ],
+        "bouts": [],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      }
+    },
+    {
+      "id": "free_grip_movement_not_same_event",
+      "action": {
+        "type": "grip_movement",
+        "params": {
+          "player": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "two_warnings_convert_to_foul",
+      "initial_data": {
+        "phase": "pull",
+        "grip": "free",
+        "setup_ms": 0,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bouts": [],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      },
+      "actions": [
+        {
+          "type": "warning",
+          "params": {
+            "player": 0
+          }
+        },
+        {
+          "type": "warning",
+          "params": {
+            "player": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "setup",
+        "grip": "referee",
+        "setup_ms": 60000,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          1,
+          0
+        ],
+        "bouts": [],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      }
+    },
+    {
+      "id": "two_fouls_lose_bout",
+      "initial_data": {
+        "phase": "setup",
+        "grip": "referee",
+        "setup_ms": 60000,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          1,
+          0
+        ],
+        "bouts": [],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "player": 0,
+            "losing_position": false
+          }
+        }
+      ],
+      "data": {
+        "phase": "break",
+        "grip": "referee",
+        "setup_ms": 60000,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          2,
+          0
+        ],
+        "bouts": [
+          1
+        ],
+        "break_ms": 60000,
+        "last_reason": "two_fouls",
+        "winner": null
+      }
+    },
+    {
+      "id": "losing_position_foul_immediate_bout_loss",
+      "initial_data": {
+        "phase": "pull",
+        "grip": "free",
+        "setup_ms": 0,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bouts": [],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      },
+      "actions": [
+        {
+          "type": "foul",
+          "params": {
+            "player": 0,
+            "losing_position": true
+          }
+        }
+      ],
+      "data": {
+        "phase": "break",
+        "grip": "free",
+        "setup_ms": 0,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          1,
+          0
+        ],
+        "bouts": [
+          1
+        ],
+        "break_ms": 60000,
+        "last_reason": "losing_position_foul",
+        "winner": null
+      }
+    },
+    {
+      "id": "losing_position_requires_started_pull",
+      "initial_data": {
+        "phase": "ready",
+        "grip": "free",
+        "setup_ms": 0,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bouts": [],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      },
+      "action": {
+        "type": "foul",
+        "params": {
+          "player": 0,
+          "losing_position": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "unpenalized_slip_requires_strap_restart",
+      "initial_data": {
+        "phase": "pull",
+        "grip": "free",
+        "setup_ms": 0,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bouts": [],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      },
+      "actions": [
+        {
+          "type": "slip",
+          "params": {}
+        }
+      ],
+      "data": {
+        "phase": "setup",
+        "grip": "referee",
+        "setup_ms": 60000,
+        "strapped": true,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bouts": [],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      }
+    },
+    {
+      "id": "strapped_pull_cannot_add_second_strap",
+      "initial_data": {
+        "phase": "pull",
+        "grip": "free",
+        "setup_ms": 0,
+        "strapped": true,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bouts": [],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      },
+      "action": {
+        "type": "slip",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "pin_requires_go",
+      "initial_data": {
+        "phase": "ready",
+        "grip": "free",
+        "setup_ms": 0,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bouts": [],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      },
+      "action": {
+        "type": "pin",
+        "params": {
+          "winner": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "pin_opens_between_bout_break",
+      "initial_data": {
+        "phase": "pull",
+        "grip": "free",
+        "setup_ms": 0,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bouts": [],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      },
+      "actions": [
+        {
+          "type": "pin",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "data": {
+        "phase": "break",
+        "grip": "free",
+        "setup_ms": 0,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bouts": [
+          0
+        ],
+        "break_ms": 60000,
+        "last_reason": "pin",
+        "winner": null
+      }
+    },
+    {
+      "id": "break_expiry_resets_bout",
+      "initial_data": {
+        "phase": "break",
+        "grip": "free",
+        "setup_ms": 0,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bouts": [
+          0
+        ],
+        "break_ms": 60000,
+        "last_reason": "pin",
+        "winner": null
+      },
+      "actions": [
+        {
+          "type": "advance_break",
+          "params": {
+            "milliseconds": 60000
+          }
+        }
+      ],
+      "data": {
+        "phase": "setup",
+        "grip": "free",
+        "setup_ms": 0,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bouts": [
+          0
+        ],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      }
+    },
+    {
+      "id": "partial_break_cannot_restart",
+      "initial_data": {
+        "phase": "break",
+        "grip": "free",
+        "setup_ms": 0,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bouts": [
+          0
+        ],
+        "break_ms": 60000,
+        "last_reason": "pin",
+        "winner": null
+      },
+      "actions": [
+        {
+          "type": "advance_break",
+          "params": {
+            "milliseconds": 59999
+          }
+        }
+      ],
+      "action": {
+        "type": "confirm_grip",
+        "params": {}
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "second_win_ends_match",
+      "initial_data": {
+        "phase": "pull",
+        "grip": "free",
+        "setup_ms": 0,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bouts": [
+          0
+        ],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      },
+      "actions": [
+        {
+          "type": "pin",
+          "params": {
+            "winner": 0
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ],
+        "reason": "two_bout_wins"
+      },
+      "legal_count": 0
+    },
+    {
+      "id": "split_bouts_need_decider",
+      "initial_data": {
+        "phase": "pull",
+        "grip": "free",
+        "setup_ms": 0,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bouts": [
+          0
+        ],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      },
+      "actions": [
+        {
+          "type": "pin",
+          "params": {
+            "winner": 1
+          }
+        }
+      ],
+      "outcome": {
+        "status": "ongoing"
+      }
+    },
+    {
+      "id": "withdrawal_awards_match",
+      "actions": [
+        {
+          "type": "withdraw",
+          "params": {
+            "player": 1
+          }
+        }
+      ],
+      "outcome": {
+        "status": "terminal",
+        "winners": [
+          "alice"
+        ],
+        "reason": "withdrawal"
+      }
+    },
+    {
+      "id": "two_fouls_cannot_remain_active",
+      "initial_data": {
+        "phase": "pull",
+        "grip": "free",
+        "setup_ms": 0,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          2,
+          0
+        ],
+        "bouts": [],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      },
+      "valid": false
+    },
+    {
+      "id": "extra_bout_after_two_wins_invalid",
+      "initial_data": {
+        "phase": "pull",
+        "grip": "free",
+        "setup_ms": 0,
+        "strapped": false,
+        "warnings": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "bouts": [
+          0,
+          0,
+          1
+        ],
+        "break_ms": 0,
+        "last_reason": null,
+        "winner": null
+      },
+      "valid": false
+    }
+  ]
+}

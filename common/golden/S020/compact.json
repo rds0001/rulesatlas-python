@@ -1,0 +1,6858 @@
+{
+  "profile_id": "S020",
+  "ruleset_id": "builtin.lacrosse_sixes.standard",
+  "ruleset_version": "1.0.0",
+  "players": [
+    {
+      "id": "team_a"
+    },
+    {
+      "id": "team_b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "legal_mode": "event_types"
+    },
+    {
+      "id": "toss_and_draw",
+      "actions": [
+        {
+          "type": "choose_alternate",
+          "params": {
+            "team": 0
+          }
+        },
+        {
+          "type": "draw",
+          "params": {
+            "winner": 1
+          }
+        }
+      ],
+      "data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "goal_restart_other_team",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "player": 3
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          1,
+          0
+        ],
+        "phase": "restart",
+        "restart_team": 1
+      }
+    },
+    {
+      "id": "wrong_restart_team",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 0,
+            "player": 3
+          }
+        }
+      ],
+      "action": {
+        "type": "restart",
+        "params": {
+          "team": 0
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "minor_reduces_capacity",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 3,
+                "server": 3,
+                "kind": "minor",
+                "timed": true
+              }
+            ],
+            "prior_team": null,
+            "coincidental": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          5,
+          6
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            30000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "penalty_clock_starts_at_restart",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 3,
+                "server": 3,
+                "kind": "minor",
+                "timed": true
+              }
+            ],
+            "prior_team": null,
+            "coincidental": false
+          }
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            30000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "penalty_expiry",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 3,
+                "server": 3,
+                "kind": "minor",
+                "timed": true
+              }
+            ],
+            "prior_team": null,
+            "coincidental": false
+          }
+        },
+        {
+          "type": "restart",
+          "params": {
+            "team": 1
+          }
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 30000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          6,
+          6
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "goal_does_not_release_served_minor",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 3,
+                "server": 3,
+                "kind": "minor",
+                "timed": true
+              }
+            ],
+            "prior_team": null,
+            "coincidental": false
+          }
+        },
+        {
+          "type": "restart",
+          "params": {
+            "team": 1
+          }
+        },
+        {
+          "type": "goal",
+          "params": {
+            "team": 1,
+            "player": 3
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "id": "non_timed_minor_only_restart",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 3,
+                "server": 3,
+                "kind": "minor",
+                "timed": false
+              }
+            ],
+            "prior_team": null,
+            "coincidental": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          6,
+          6
+        ],
+        "restart_team": 1
+      }
+    },
+    {
+      "id": "goalkeeper_penalty_served_by_inhome",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 0,
+                "server": 2,
+                "kind": "major",
+                "timed": true
+              }
+            ],
+            "prior_team": null,
+            "coincidental": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "major_fouls": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            60000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "wrong_delegated_server",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "assess_fouls",
+        "params": {
+          "fouls": [
+            {
+              "team": 0,
+              "player": 0,
+              "server": 3,
+              "kind": "major",
+              "timed": true
+            }
+          ],
+          "prior_team": null,
+          "coincidental": false
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "third_major_excludes",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 3,
+                "server": 3,
+                "kind": "major",
+                "timed": true
+              }
+            ],
+            "prior_team": null,
+            "coincidental": false
+          }
+        },
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 3,
+                "server": 3,
+                "kind": "major",
+                "timed": true
+              }
+            ],
+            "prior_team": null,
+            "coincidental": false
+          }
+        },
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 3,
+                "server": 3,
+                "kind": "major",
+                "timed": true
+              }
+            ],
+            "prior_team": null,
+            "coincidental": false
+          }
+        }
+      ],
+      "action": {
+        "type": "set_lineup",
+        "params": {
+          "team": 0,
+          "players": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "major_total_clock",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 3,
+                "server": 3,
+                "kind": "major",
+                "timed": true
+              }
+            ],
+            "prior_team": null,
+            "coincidental": false
+          }
+        },
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 3,
+                "server": 3,
+                "kind": "major",
+                "timed": true
+              }
+            ],
+            "prior_team": null,
+            "coincidental": false
+          }
+        },
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 3,
+                "server": 3,
+                "kind": "major",
+                "timed": true
+              }
+            ],
+            "prior_team": null,
+            "coincidental": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            180000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "expulsion_inhome_two_minutes",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 3,
+                "server": 2,
+                "kind": "expulsion",
+                "timed": true
+              }
+            ],
+            "prior_team": null,
+            "coincidental": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          5,
+          6
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            120000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "expulsion_transfers_old_penalty",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 3,
+                "server": 3,
+                "kind": "minor",
+                "timed": true
+              }
+            ],
+            "prior_team": null,
+            "coincidental": false
+          }
+        },
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 3,
+                "server": 2,
+                "kind": "expulsion",
+                "timed": true
+              }
+            ],
+            "prior_team": null,
+            "coincidental": false
+          }
+        }
+      ],
+      "legal_constraints": {
+        "penalty_ms": [
+          [
+            0,
+            0,
+            150000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "delayed_minor_cancelled_by_goal",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "signal_foul",
+          "params": {
+            "team": 0,
+            "player": 3,
+            "server": 3,
+            "kind": "minor",
+            "timed": true
+          }
+        },
+        {
+          "type": "goal",
+          "params": {
+            "team": 1,
+            "player": 3
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          0,
+          1
+        ],
+        "capacity": [
+          6,
+          6
+        ],
+        "restart_team": 0
+      }
+    },
+    {
+      "id": "delayed_major_goal_retains_restart",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "signal_foul",
+          "params": {
+            "team": 0,
+            "player": 3,
+            "server": 3,
+            "kind": "major",
+            "timed": true
+          }
+        },
+        {
+          "type": "goal",
+          "params": {
+            "team": 1,
+            "player": 3
+          }
+        }
+      ],
+      "legal_constraints": {
+        "score": [
+          0,
+          1
+        ],
+        "capacity": [
+          5,
+          6
+        ],
+        "restart_team": 1
+      }
+    },
+    {
+      "id": "coincidental_minors_cancel",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 3,
+                "server": 3,
+                "kind": "minor",
+                "timed": true
+              },
+              {
+                "team": 1,
+                "player": 3,
+                "server": 3,
+                "kind": "minor",
+                "timed": true
+              }
+            ],
+            "prior_team": 0,
+            "coincidental": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          6,
+          6
+        ],
+        "restart_team": 0
+      }
+    },
+    {
+      "id": "coincidental_less_time_gets_restart",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 3,
+                "server": 3,
+                "kind": "major",
+                "timed": true
+              },
+              {
+                "team": 1,
+                "player": 3,
+                "server": 3,
+                "kind": "minor",
+                "timed": true
+              }
+            ],
+            "prior_team": null,
+            "coincidental": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          5,
+          5
+        ],
+        "restart_team": 1
+      }
+    },
+    {
+      "id": "coincidental_equal_uses_arrow",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 3,
+                "server": 3,
+                "kind": "major",
+                "timed": true
+              },
+              {
+                "team": 1,
+                "player": 3,
+                "server": 3,
+                "kind": "major",
+                "timed": true
+              }
+            ],
+            "prior_team": null,
+            "coincidental": true
+          }
+        }
+      ],
+      "legal_constraints": {
+        "restart_team": 0,
+        "alternate": 1
+      }
+    },
+    {
+      "id": "two_redraws_alternate",
+      "initial_data": {
+        "phase": "draw",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "redraw",
+          "params": {}
+        },
+        {
+          "type": "redraw",
+          "params": {}
+        }
+      ],
+      "legal_constraints": {
+        "phase": "restart",
+        "restart_team": 0,
+        "alternate": 1
+      }
+    },
+    {
+      "id": "penalty_carries_quarter",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 1000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 3,
+                "server": 3,
+                "kind": "minor",
+                "timed": true
+              }
+            ],
+            "prior_team": null,
+            "coincidental": false
+          }
+        },
+        {
+          "type": "restart",
+          "params": {
+            "team": 1
+          }
+        },
+        {
+          "type": "elapse",
+          "params": {
+            "milliseconds": 1000
+          }
+        },
+        {
+          "type": "close_period",
+          "params": {
+            "retain_team": 1
+          }
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "milliseconds": 120000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "period": 2,
+        "phase": "restart",
+        "restart_team": 1,
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            29000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ordinary_quarter_requires_draw",
+      "initial_data": {
+        "phase": "period_review",
+        "period": 1,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_period",
+          "params": {
+            "retain_team": 1
+          }
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "milliseconds": 120000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "period": 2,
+        "phase": "draw",
+        "restart_team": null
+      }
+    },
+    {
+      "id": "halftime_resets_timeouts",
+      "initial_data": {
+        "phase": "period_review",
+        "period": 2,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          2,
+          1
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_period",
+          "params": {
+            "retain_team": null
+          }
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "milliseconds": 300000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "period": 3,
+        "timeouts": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "regulation_win",
+      "initial_data": {
+        "phase": "period_review",
+        "period": 4,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          1,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_period",
+          "params": {
+            "retain_team": null
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_a"
+        ]
+      }
+    },
+    {
+      "id": "late_goal_equalizes",
+      "initial_data": {
+        "phase": "period_review",
+        "period": 4,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          1,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "late_goal",
+          "params": {
+            "team": 1,
+            "player": 3
+          }
+        },
+        {
+          "type": "close_period",
+          "params": {
+            "retain_team": null
+          }
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "milliseconds": 120000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "period": 5,
+        "phase": "ot_toss",
+        "clock_ms": 240000
+      }
+    },
+    {
+      "id": "sudden_victory",
+      "initial_data": {
+        "phase": "play",
+        "period": 5,
+        "clock_ms": 240000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "goal",
+          "params": {
+            "team": 1,
+            "player": 3
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_b"
+        ],
+        "reason": "sudden_victory"
+      }
+    },
+    {
+      "id": "delayed_foul_stops_overtime_clock",
+      "initial_data": {
+        "phase": "play",
+        "period": 5,
+        "clock_ms": 240000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "signal_foul",
+          "params": {
+            "team": 0,
+            "player": 3,
+            "server": 3,
+            "kind": "minor",
+            "timed": true
+          }
+        },
+        {
+          "type": "resolve_delayed",
+          "params": {
+            "team": 1
+          }
+        }
+      ],
+      "action": {
+        "type": "elapse",
+        "params": {
+          "milliseconds": 1
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "one_timeout_per_overtime",
+      "initial_data": {
+        "phase": "play",
+        "period": 5,
+        "clock_ms": 240000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          1,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "timeout",
+        "params": {
+          "team": 0,
+          "authorized": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "timeout_cannot_repeat_without_play",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0,
+            "authorized": true
+          }
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "milliseconds": 30000
+          }
+        }
+      ],
+      "action": {
+        "type": "timeout",
+        "params": {
+          "team": 0,
+          "authorized": true
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "timeout_inside_interval_preserves_break",
+      "initial_data": {
+        "phase": "period_review",
+        "period": 1,
+        "clock_ms": 0,
+        "clock_running": false,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "close_period",
+          "params": {
+            "retain_team": null
+          }
+        },
+        {
+          "type": "timeout",
+          "params": {
+            "team": 0,
+            "authorized": true
+          }
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "milliseconds": 30000
+          }
+        },
+        {
+          "type": "elapse_break",
+          "params": {
+            "milliseconds": 120000
+          }
+        }
+      ],
+      "legal_constraints": {
+        "period": 2,
+        "phase": "draw",
+        "timeouts": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "goalkeeper_cannot_be_removed_without_reassignment",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "action": {
+        "type": "set_lineup",
+        "params": {
+          "team": 0,
+          "players": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "goalkeeper_reassignment",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "appoint",
+          "params": {
+            "team": 0,
+            "role": "goalkeeper",
+            "player": 3
+          }
+        },
+        {
+          "type": "set_lineup",
+          "params": {
+            "team": 0,
+            "players": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "legal_constraints": {
+        "capacity": [
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "id": "no_penalized_entry",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "actions": [
+        {
+          "type": "assess_fouls",
+          "params": {
+            "fouls": [
+              {
+                "team": 0,
+                "player": 3,
+                "server": 3,
+                "kind": "minor",
+                "timed": true
+              }
+            ],
+            "prior_team": null,
+            "coincidental": false
+          }
+        }
+      ],
+      "action": {
+        "type": "set_lineup",
+        "params": {
+          "team": 0,
+          "players": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      "error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "concession",
+      "actions": [
+        {
+          "type": "concede",
+          "params": {
+            "team": 0
+          }
+        }
+      ],
+      "outcome": {
+        "winners": [
+          "team_b"
+        ],
+        "reason": "forfeit"
+      }
+    },
+    {
+      "id": "invalid_penalty_status",
+      "initial_data": {
+        "phase": "play",
+        "period": 1,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            1000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    },
+    {
+      "id": "invalid_overtime_duration",
+      "initial_data": {
+        "phase": "play",
+        "period": 5,
+        "clock_ms": 480000,
+        "clock_running": true,
+        "break_ms": 0,
+        "resume_phase": "pre_game",
+        "resume_clock": false,
+        "resume_break_ms": 0,
+        "score": [
+          0,
+          0
+        ],
+        "status": [
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ],
+          [
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "active",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench",
+            "bench"
+          ]
+        ],
+        "penalty_ms": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "penalty_started": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "major_fouls": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "goalkeeper": [
+          0,
+          0
+        ],
+        "captain": [
+          1,
+          1
+        ],
+        "in_home": [
+          2,
+          2
+        ],
+        "alternate": 0,
+        "restart_team": null,
+        "redraws": 0,
+        "timeouts": [
+          0,
+          0
+        ],
+        "timeout_since_restart": false,
+        "late_used": false,
+        "delayed": [],
+        "winner": null,
+        "reason": null
+      },
+      "valid": false
+    }
+  ]
+}

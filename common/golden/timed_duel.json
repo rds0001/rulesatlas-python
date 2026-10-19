@@ -1,0 +1,106 @@
+{
+  "players": [
+    {
+      "id": "a"
+    },
+    {
+      "id": "b"
+    }
+  ],
+  "cases": [
+    {
+      "id": "initial",
+      "initial_data": {
+        "time_a": 0,
+        "time_b": 0
+      },
+      "expected_status": "ongoing",
+      "expected_mode": "event_types"
+    },
+    {
+      "id": "record_first",
+      "initial_data": {
+        "time_a": 0,
+        "time_b": 0
+      },
+      "action": {
+        "type": "record_a",
+        "params": {
+          "milliseconds": 1000
+        }
+      },
+      "expected_data": {
+        "time_a": 1000,
+        "time_b": 0
+      }
+    },
+    {
+      "id": "no_early_winner",
+      "initial_data": {
+        "time_a": 1000,
+        "time_b": 0
+      },
+      "expected_status": "ongoing"
+    },
+    {
+      "id": "a_wins",
+      "initial_data": {
+        "time_a": 1000,
+        "time_b": 1001
+      },
+      "expected_status": "terminal",
+      "expected_winners": [
+        "a"
+      ]
+    },
+    {
+      "id": "b_wins",
+      "initial_data": {
+        "time_a": 1001,
+        "time_b": 1000
+      },
+      "expected_status": "terminal",
+      "expected_winners": [
+        "b"
+      ]
+    },
+    {
+      "id": "draw",
+      "initial_data": {
+        "time_a": 1000,
+        "time_b": 1000
+      },
+      "expected_status": "terminal",
+      "expected_winners": [],
+      "expected_kind": "draw"
+    },
+    {
+      "id": "duplicate_measurement",
+      "initial_data": {
+        "time_a": 1000,
+        "time_b": 0
+      },
+      "action": {
+        "type": "record_a",
+        "params": {
+          "milliseconds": 900
+        }
+      },
+      "expected_error": "ILLEGAL_ACTION"
+    },
+    {
+      "id": "zero_measurement",
+      "initial_data": {
+        "time_a": 0,
+        "time_b": 0
+      },
+      "action": {
+        "type": "record_a",
+        "params": {
+          "milliseconds": 0
+        }
+      },
+      "expected_error": "ILLEGAL_ACTION"
+    }
+  ]
+}

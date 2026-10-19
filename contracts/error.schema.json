@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ruleatlas/error.schema.json",
+  "title": "Normalized error for parity harness",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "code",
+    "message"
+  ],
+  "properties": {
+    "code": {
+      "enum": [
+        "UNKNOWN_GAME",
+        "UNKNOWN_RULESET",
+        "UNSUPPORTED_CAPABILITY",
+        "INVALID_STATE",
+        "ILLEGAL_ACTION",
+        "MISSING_INFORMATION",
+        "RULESET_CONFLICT",
+        "INVALID_RULEPACK",
+        "RESOURCE_LIMIT",
+        "INTERNAL_ERROR"
+      ]
+    },
+    "message": {
+      "type": "string",
+      "minLength": 1
+    },
+    "path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "context": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ruleatlas/legal_actions.schema.json",
+  "title": "LegalActionResult",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "mode",
+    "actions",
+    "action_types",
+    "constraints",
+    "completeness",
+    "reason"
+  ],
+  "properties": {
+    "mode": {
+      "enum": [
+        "enumerated",
+        "event_types",
+        "adjudication_required",
+        "insufficient_information",
+        "unsupported"
+      ]
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "params"
+        ],
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "params": {
+            "type": "object"
+          },
+          "actor": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "metadata": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "action_types": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "params_schema"
+        ],
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "params_schema": {
+            "type": "object"
+          },
+          "preconditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "external_observations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "constraints": {
+      "type": "object"
+    },
+    "completeness": {
+      "type": "boolean"
+    },
+    "reason": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ruleatlas/profile_record.schema.json",
+  "title": "Verified profile registry entry (not a candidate catalog row)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile_id",
+    "name",
+    "family",
+    "implementation_status",
+    "default_ruleset_id",
+    "rulesets",
+    "capabilities",
+    "coverage_scope",
+    "provenance",
+    "evidence"
+  ],
+  "properties": {
+    "profile_id": {
+      "type": "string",
+      "pattern": "^(S[0-9]{3}|G[0-9]{3}|B[0-9]{3}|user\\.[a-z0-9_.-]+)$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "family": {
+      "enum": [
+        "finite_turn",
+        "event_scoring",
+        "measured_rank",
+        "adjudicated",
+        "custom"
+      ]
+    },
+    "implementation_status": {
+      "enum": [
+        "candidate",
+        "in_progress",
+        "verified",
+        "accepted",
+        "unsupported"
+      ]
+    },
+    "default_ruleset_id": {
+      "type": "string"
+    },
+    "rulesets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "ruleset_id",
+          "ruleset_version",
+          "variant_id"
+        ],
+        "properties": {
+          "ruleset_id": {
+            "type": "string"
+          },
+          "ruleset_version": {
+            "type": "string"
+          },
+          "variant_id": {
+            "type": "string"
+          },
+          "canonical_rule_epoch": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "capabilities": {
+      "type": "object",
+      "required": [
+        "new_state",
+        "validate_state",
+        "legal_actions",
+        "apply_action",
+        "outcome"
+      ],
+      "properties": {
+        "new_state": {
+          "type": "boolean"
+        },
+        "validate_state": {
+          "type": "boolean"
+        },
+        "legal_actions": {
+          "enum": [
+            "enumerated",
+            "event_types",
+            "adjudication_required",
+            "insufficient_information",
+            "unsupported"
+          ]
+        },
+        "apply_action": {
+          "type": "boolean"
+        },
+        "outcome": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": true
+    },
+    "coverage_scope": {
+      "type": "string",
+      "minLength": 10
+    },
+    "known_limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "source_status",
+        "rule_basis"
+      ],
+      "properties": {
+        "source_status": {
+          "enum": [
+            "official_verified",
+            "internally_reviewed",
+            "user_defined",
+            "needs_verification",
+            "unsupported"
+          ]
+        },
+        "rule_basis": {
+          "type": "string"
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  }
+}

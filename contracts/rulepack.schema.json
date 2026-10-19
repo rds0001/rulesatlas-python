@@ -1,0 +1,397 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ruleatlas/rulepack.schema.json",
+  "title": "Minimal data-driven rule pack contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "game_id",
+    "name",
+    "ruleset_id",
+    "ruleset_version",
+    "family",
+    "participants",
+    "state",
+    "actions",
+    "outcomes",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "game_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_.-]{2,79}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ruleset_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ruleset_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "family": {
+      "enum": [
+        "finite_turn",
+        "event_scoring",
+        "measured_rank",
+        "adjudicated",
+        "custom"
+      ]
+    },
+    "participants": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "min",
+        "max"
+      ],
+      "properties": {
+        "min": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "state": {
+      "type": "object",
+      "required": [
+        "fields",
+        "initial"
+      ],
+      "properties": {
+        "fields": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "$ref": "#/$defs/typed_field"
+          }
+        },
+        "initial": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "params",
+          "when",
+          "effects"
+        ],
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "params": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/$defs/typed_field"
+            }
+          },
+          "when": {
+            "$ref": "#/$defs/expression"
+          },
+          "effects": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 100,
+            "items": {
+              "$ref": "#/$defs/effect"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "outcomes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "when",
+          "result_kind",
+          "winners"
+        ],
+        "properties": {
+          "when": {
+            "$ref": "#/$defs/expression"
+          },
+          "result_kind": {
+            "type": "string"
+          },
+          "winners": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/expression"
+            }
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "variants": {
+      "type": "object"
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "basis",
+        "verification_status"
+      ],
+      "properties": {
+        "basis": {
+          "type": "string"
+        },
+        "verification_status": {
+          "type": "string"
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "capabilities": {
+      "type": "object"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "expression": {
+      "oneOf": [
+        {
+          "type": [
+            "string",
+            "number",
+            "boolean",
+            "null"
+          ]
+        },
+        {
+          "type": "object",
+          "required": [
+            "ref"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "ref": {
+              "type": "string",
+              "pattern": "^(state|params)\\.[A-Za-z0-9_.]+$"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "op",
+            "args"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "op": {
+              "enum": [
+                "eq",
+                "ne",
+                "lt",
+                "lte",
+                "gt",
+                "gte",
+                "and",
+                "or",
+                "not",
+                "add",
+                "sub",
+                "mul",
+                "mod",
+                "in",
+                "len"
+              ]
+            },
+            "args": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 32,
+              "items": {
+                "$ref": "#/$defs/expression"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "typed_field": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "integer",
+            "number",
+            "boolean",
+            "string",
+            "enum",
+            "array",
+            "object"
+          ]
+        },
+        "minimum": {
+          "type": "number"
+        },
+        "maximum": {
+          "type": "number"
+        },
+        "minLength": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "maxLength": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "minItems": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "maxItems": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "values": {
+          "type": "array"
+        },
+        "items": {
+          "$ref": "#/$defs/typed_field"
+        },
+        "properties": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/typed_field"
+          }
+        },
+        "required": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "nullable": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "effect": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "op",
+            "path",
+            "value"
+          ],
+          "properties": {
+            "op": {
+              "const": "set"
+            },
+            "path": {
+              "type": "string",
+              "pattern": "^/"
+            },
+            "value": {
+              "$ref": "#/$defs/expression"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "op",
+            "path",
+            "by"
+          ],
+          "properties": {
+            "op": {
+              "const": "inc"
+            },
+            "path": {
+              "type": "string",
+              "pattern": "^/"
+            },
+            "by": {
+              "$ref": "#/$defs/expression"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "op",
+            "path",
+            "value"
+          ],
+          "properties": {
+            "op": {
+              "const": "append"
+            },
+            "path": {
+              "type": "string",
+              "pattern": "^/"
+            },
+            "value": {
+              "$ref": "#/$defs/expression"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "op",
+            "path",
+            "index"
+          ],
+          "properties": {
+            "op": {
+              "const": "remove_at"
+            },
+            "path": {
+              "type": "string",
+              "pattern": "^/"
+            },
+            "index": {
+              "$ref": "#/$defs/expression"
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    }
+  }
+}

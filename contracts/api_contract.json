@@ -1,0 +1,118 @@
+{
+  "contract_version": "1.0.0",
+  "package_name_provisional": "ruleatlas",
+  "functions": [
+    {
+      "name": "list_games",
+      "arguments": [
+        "include_candidates=False"
+      ],
+      "returns": "array of GameSummary"
+    },
+    {
+      "name": "get_game",
+      "arguments": [
+        "game_id",
+        "ruleset_version=None",
+        "variant=None",
+        "ruleset_id=None"
+      ],
+      "returns": "GameMetadata"
+    },
+    {
+      "name": "get_capabilities",
+      "arguments": [
+        "game_id",
+        "ruleset_version=None",
+        "ruleset_id=None"
+      ],
+      "returns": "CapabilityMetadata"
+    },
+    {
+      "name": "new_state",
+      "arguments": [
+        "game_id",
+        "players=None",
+        "variant=None",
+        "ruleset_version=None",
+        "ruleset_id=None"
+      ],
+      "returns": "StateEnvelope"
+    },
+    {
+      "name": "validate_state",
+      "arguments": [
+        "state"
+      ],
+      "returns": "ValidationResult"
+    },
+    {
+      "name": "legal_actions",
+      "arguments": [
+        "state"
+      ],
+      "returns": "LegalActionResult"
+    },
+    {
+      "name": "apply_action",
+      "arguments": [
+        "state",
+        "action"
+      ],
+      "returns": "StateEnvelope or documented RuleError"
+    },
+    {
+      "name": "outcome",
+      "arguments": [
+        "state"
+      ],
+      "returns": "OutcomeResult"
+    },
+    {
+      "name": "validate_rules",
+      "arguments": [
+        "rules_or_path"
+      ],
+      "returns": "ValidationResult"
+    },
+    {
+      "name": "register_rules",
+      "arguments": [
+        "rules_or_path",
+        "overwrite=False"
+      ],
+      "returns": "RulePackInfo"
+    },
+    {
+      "name": "unregister_rules",
+      "arguments": [
+        "game_id",
+        "ruleset_version=None",
+        "ruleset_id=None"
+      ],
+      "returns": "boolean"
+    }
+  ],
+  "types": {
+    "identifiers": "UTF-8 normalized stable string IDs",
+    "missing": "JSON null; never NaN/Inf or language-native NA in JSON",
+    "boolean": "JSON true/false",
+    "integers": "JSON integers only where exact",
+    "collections": "JSON arrays and string-key objects",
+    "datetime": "ISO-8601 with offset if used",
+    "units": "explicit and versioned; time in integer ticks or seconds per ruleset",
+    "ordering": "deterministic normalized action ordering; players indexes 0-based in external JSON"
+  },
+  "error_codes": [
+    "UNKNOWN_GAME",
+    "UNKNOWN_RULESET",
+    "UNSUPPORTED_CAPABILITY",
+    "INVALID_STATE",
+    "ILLEGAL_ACTION",
+    "MISSING_INFORMATION",
+    "RULESET_CONFLICT",
+    "INVALID_RULEPACK",
+    "RESOURCE_LIMIT",
+    "INTERNAL_ERROR"
+  ]
+}

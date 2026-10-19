@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ruleatlas/outcome.schema.json",
+  "title": "Outcome",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "status",
+    "result_kind",
+    "winners",
+    "losers",
+    "placements",
+    "reason"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "ongoing",
+        "terminal",
+        "awaiting_adjudication",
+        "indeterminate"
+      ]
+    },
+    "result_kind": {
+      "enum": [
+        "none",
+        "win",
+        "draw",
+        "tie",
+        "ranking",
+        "disqualification",
+        "forfeit",
+        "no_contest",
+        "technical",
+        "other"
+      ]
+    },
+    "winners": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "losers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "placements": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "reason": {
+      "type": "string"
+    },
+    "evidence_required": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rule_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

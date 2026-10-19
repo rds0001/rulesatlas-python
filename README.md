@@ -1,4 +1,4 @@
-# ruleatlas-python
+# rulesatlas
 
 All and only the state needed to check game rules: plausible states, permitted next events, rule consequences and outcomes. No simulation or physical model.
 
@@ -11,15 +11,15 @@ commercial or federation edition.
 
 
 ```python
-import ruleatlas
+import rulesatlas
 
-ruleatlas.register_rules("first_to_three.json")
-state = ruleatlas.new_state(
+rulesatlas.register_rules("first_to_three.json")
+state = rulesatlas.new_state(
     "user.first_to_three", players=[{"id": "alice"}, {"id": "bob"}],
     ruleset_version="1.0.0",
 )
-state = ruleatlas.apply_action(state, {"type": "score", "params": {"player": 0}})
-print(ruleatlas.outcome(state))
+state = rulesatlas.apply_action(state, {"type": "score", "params": {"player": 0}})
+print(rulesatlas.outcome(state))
 ```
 
 Supply a local JSON rulepack matching the bundled contract examples. Registration
@@ -38,8 +38,11 @@ Finite parameter domains are enumerated up to 512 combinations; larger domains
 return guarded event types with `completeness=False`. Winners are participant
 IDs. Built-in candidates are visible only with `list_games(True)` until accepted.
 
-This development package is not published. Release identity and license-holder
-placeholders still require real project-owner details before distribution.
+The PyPI distribution and Python import name are both `rulesatlas`.
+
+```sh
+python -m pip install rulesatlas
+```
 
 ## Built-in match rules
 
@@ -64,4 +67,4 @@ Source repository: https://github.com/rds0001/rulesatlas-python
 
 CI results: https://github.com/rds0001/rulesatlas-python/actions
 
-This source publication is not a PyPI or CRAN release.
+Release artifacts are checked before publication to PyPI.

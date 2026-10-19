@@ -14,13 +14,13 @@ funktionierende Library. Nach Implementierung der APIs soll dies möglich sein:
 ## Python
 
 ```python
-import ruleatlas
-ruleatlas.register_rules("examples/rulepacks/first_to_three.json")
-s = ruleatlas.new_state("user.first_to_three", players=[{"id":"p0"},{"id":"p1"}],
+import rulesatlas
+rulesatlas.register_rules("examples/rulepacks/first_to_three.json")
+s = rulesatlas.new_state("user.first_to_three", players=[{"id":"p0"},{"id":"p1"}],
                         ruleset_version="1.0.0")
-print(ruleatlas.legal_actions(s))
-s2 = ruleatlas.apply_action(s, {"type":"score", "params":{"player":0}})
-print(ruleatlas.outcome(s2))
+print(rulesatlas.legal_actions(s))
+s2 = rulesatlas.apply_action(s, {"type":"score", "params":{"player":0}})
+print(rulesatlas.outcome(s2))
 ```
 
 ## R

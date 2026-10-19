@@ -2,7 +2,7 @@ from copy import deepcopy
 import json
 from pathlib import Path
 import pytest
-import ruleatlas as r
+import rulesatlas as r
 
 ROOT=Path(__file__).resolve().parents[1]
 PACK=json.loads((ROOT/'examples/rulepacks/first_to_three.json').read_text())
@@ -10,7 +10,7 @@ GOLDEN=json.loads((ROOT/'examples/golden/first_to_three_cases.json').read_text()
 
 @pytest.fixture(autouse=True)
 def reset():
-    from ruleatlas.core import _REGISTRY
+    from rulesatlas.core import _REGISTRY
     _REGISTRY.clear()
     r.register_rules(PACK)
     yield
@@ -107,7 +107,7 @@ def test_removed_profiles_are_unavailable():
                 function(game_id)
             assert error.value.code=='UNKNOWN_GAME'
     for adapter in scope['removed_adapters']:
-        assert importlib.util.find_spec('ruleatlas.adapters.'+adapter) is None
+        assert importlib.util.find_spec('rulesatlas.adapters.'+adapter) is None
 
 
 @pytest.mark.parametrize('case',json.loads((ROOT/'common/golden/security_packs.json').read_text()),ids=lambda c:c['id'])

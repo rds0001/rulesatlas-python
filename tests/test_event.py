@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 import pytest
-import ruleatlas as r
+import rulesatlas as r
 ROOT=Path(__file__).resolve().parents[1]
 PACK=ROOT/'common/rulepacks/timed_duel.json'
 CASES=json.loads((ROOT/'common/golden/timed_duel.json').read_text())

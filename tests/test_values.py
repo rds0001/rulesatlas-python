@@ -1,6 +1,6 @@
 from copy import deepcopy
 import pytest
-from ruleatlas.values import expression, check_expr, RuleError, typed, bounded
+from rulesatlas.values import expression, check_expr, RuleError, typed, bounded
 
 @pytest.mark.parametrize('op,args,expected',[
  ('eq',[1,1],True),('ne',[1,2],True),('lt',[1,2],True),('lte',[2,2],True),
@@ -40,7 +40,7 @@ def test_numeric_limits(v):
 
 
 def test_native_enum_constraint_preserves_base_type():
-    from ruleatlas.values import typed, RuleError
+    from rulesatlas.values import typed, RuleError
     import pytest
     typed('clear', {'type': 'string', 'enum': ['clear', 'fail', 'pass']})
     with pytest.raises(RuleError):

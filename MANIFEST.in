@@ -1,0 +1,7 @@
+include conftest.py
+recursive-include common *.json
+recursive-include contracts *.json
+recursive-include catalog *.json
+recursive-include examples *.py *.json *.md
+recursive-include tools *.py
+global-exclude *.py[cod]

@@ -3,7 +3,7 @@ from copy import deepcopy
 import json
 from pathlib import Path
 import pytest
-import ruleatlas as r
+import rulesatlas as r
 ROOT=Path(__file__).resolve().parents[1]
 GOLDEN=json.loads((ROOT/'common/golden/G105/standard.json').read_text())
 

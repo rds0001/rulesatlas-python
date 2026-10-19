@@ -49,12 +49,12 @@ def test_payload_oracles(schema_name,payload):
 
 
 def test_installed_builtin_profile_metadata_matches_contract():
-    import ruleatlas
+    import rulesatlas
     schema=json.loads((ROOT/'contracts/profile_record.schema.json').read_text())
     validator=Draft202012Validator(schema)
-    for game in ruleatlas.list_games():
+    for game in rulesatlas.list_games():
         if game['implementation_status']=='accepted':
-            validator.validate(ruleatlas.get_game(game['game_id']))
+            validator.validate(rulesatlas.get_game(game['game_id']))
 
 
 def test_profile_id_namespaces():

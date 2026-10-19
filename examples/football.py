@@ -1,5 +1,5 @@
-"""ruleatlas-python: referee-confirmed events and automatic rule consequences."""
-from ruleatlas import new_state, apply_action, legal_actions, outcome
+"""rulesatlas: referee-confirmed events and automatic rule consequences."""
+from rulesatlas import new_state, apply_action, legal_actions, outcome
 
 state = new_state('S001', players=[{'id': 'home'}, {'id': 'away'}])
 state = apply_action(state, {'type': 'start_period', 'params': {}})
